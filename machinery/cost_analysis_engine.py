@@ -3,11 +3,15 @@ Machinery Cost & Build Optimization Engine (GPU Accelerated).
 Analyzes 'Make vs Buy' decisions for 100kg/h production lines using Monte Carlo Simulation.
 Focuses on Stainless Steel (SS304/316) fabrication, Motor efficiency, and Thermal Design.
 """
-import torch
 import time
+import torch
 
 
 class MachineryMonteCarloOptimizer:
+    """
+    Simulates machinery cost and build vs buy decisions.
+    """
+
     def __init__(self, capacity_kg_hr=100.0, batches=10_000_000):
         self.capacity_kg_hr = capacity_kg_hr
         self.batches = batches  # 10 Million Scenarios for robust optimization
@@ -98,13 +102,14 @@ class MachineryMonteCarloOptimizer:
         }
 
     def analyze_cold_press_expeller(self):
+        """Analyzes Cold Press Expeller Build vs Buy."""
         costs = self._generate_costs()
 
         # BOM Wooden Ghani
         wood_log = torch.normal(
             45000.0, 5000.0, (self.batches,), device=self.device)
         # 5 motors? No, 5HP motor price approx 5x? No, linear scaling implies 1 unit.
-        motor = 5.0 * costs["motor_ie2"]
+
         # Actually motor cost logic earlier was per unit. 5HP is more expensive.
         # Let's approx 5HP motor = 3x 1HP cost
         motor_cost = 3.0 * costs["motor_ie2"]
@@ -136,6 +141,7 @@ class MachineryMonteCarloOptimizer:
         }
 
     def analyze_bilona_churner(self):
+        """Analyzes Bilona Churner Build vs Buy."""
         costs = self._generate_costs()
 
         ss_tank = 80.0 * costs["ss316_sheet"]
@@ -159,6 +165,7 @@ class MachineryMonteCarloOptimizer:
         }
 
     def generate_report(self):
+        """Generates the full optimization report."""
         print("\n=== MACHINERY OPTIMIZATION REPORT (GPU MONTE CARLO - 10M SCENARIOS) ===")
         print("Objective: Maximize ROI via Robust Make vs Buy Analysis.\n")
 
@@ -179,7 +186,7 @@ class MachineryMonteCarloOptimizer:
             print(
                 f"   - Probability of Savings: {item['Prob of Savings']:.1f}%")
             if item['Decision'] == "BUILD (DIY)":
-                print(f"   - Critical Components:\n     " +
+                print("   - Critical Components:\n     " +
                       "\n     ".join(item.get('Components', [])))
             print("")
         print(

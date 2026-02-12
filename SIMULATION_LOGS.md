@@ -1,4 +1,7 @@
-﻿Toor Dal Physics Engine Initialized on cuda
+﻿# Simulation Execution Logs
+
+```text
+Toor Dal Physics Engine Initialized on cuda
 
 --- INITIATING TOOR DAL SIX SIGMA VALIDATION PROTOCOL ---
    [GPU OPTIMIZATION] Tuning Extrusion Thermodynamics...
@@ -133,7 +136,7 @@ Objective: Maximize ROI via Robust Make vs Buy Analysis.
    - Market Price (P50):   INR 120,000
    - Probability of Savings: 100.0%
    - Critical Components:
-     
+
 
    [PERF] Monte Carlo Optimization Time: 0.1630s
 --- FINNO PROJECTS: ADVANCED R&D SIMULATION SUITE ---
@@ -176,3 +179,4 @@ Initializing GPU Acceleration Clusters...
 ============================================================
 
 All 6 Modules Validated. Ready for Pilot Production.
+```

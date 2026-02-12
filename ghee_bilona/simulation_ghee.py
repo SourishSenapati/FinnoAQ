@@ -47,20 +47,11 @@ class GheeProductionSimulator:
 
         print(
             f"      - [FAULT] Initial Setpoint 14.0C (Yield ~ {30 + 8*0.88:.2f} g/L).")
-        print(f"      - [SWEEP] Analyzing Phase Inversion across 10-18C...")
-        print(
-            f"      - [OPTIMAL] Detected Peak Yield at {best_temp:.1f}C (Predicted Yield: {yield_curve[max_idx]:.2f} g/L).")
+        print("      - [SWEEP] Analyzing Phase Inversion across 10-18C...")
+        print(f"      - [OPTIMAL] Detected Peak Yield at {best_temp:.1f}C "
+              f"(Predicted Yield: {yield_curve[max_idx]:.2f} g/L).")
 
         self.churn_temp_setpoint = best_temp
-
-    def run_full_suite(self):
-        """Executes the full Ghee simulation suite."""
-        print("\n--- GHEE BILONA: PROCESS & COMPOSITION ANALYSIS ---")
-        self.optimize_churning_physics()
-        self._simulate_structure_texture()
-        self._simulate_lipid_profile()
-        self._test_churning_yield()
-        self._test_maillard_flavor()
 
     def _simulate_structure_texture(self):
         """Simulates Graininess and 'Danedar' Texture."""
@@ -134,7 +125,6 @@ class GheeProductionSimulator:
         # Heat Source Control (Flame/Induction)
         heat_input_kw = torch.normal(
             5.0, 0.2, (self.batches,), device=self.device)
-        viscosity_hot = 0.5  # cP (Very thin when hot)
 
         # Heat Transfer Coefficient (h)
         # Nusselts Number correlation for natural convection boiling

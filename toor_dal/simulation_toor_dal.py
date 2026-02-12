@@ -61,7 +61,7 @@ class ToorDalSixSigmaSimulator:
         print(
             f"      - [FAULT] Standard Temp 85C (Cook Time ~ {560/((85-60)*1.5):.1f}m).")
         print(
-            f"      - [SWEEP] Balancing Cook Speed vs Protein Denaturation...")
+            "      - [SWEEP] Balancing Cook Speed vs Protein Denaturation...")
         print(f"      - [OPTIMAL] Detected Optimal Extrusion Temp: {best_temp:.1f}C "
               f"(Predicted Cook Time: {cook_time[min_idx]:.1f}m)")
 
@@ -114,7 +114,8 @@ class ToorDalSixSigmaSimulator:
         amylose_content = self._generate_normal(30.0, 1.2)
 
         # 3. DENSITY (Bulk Density)
-        # Natural Toor Dal ~ 0.85 g/cc. Analogue must match to avoid "floating" or "sinking" weirdness.
+        # Natural Toor Dal ~ 0.85 g/cc. Analogue must match to avoid "floating"
+        # or "sinking" weirdness.
         # Density depends on extrusion expansion (Poiseuille Flow in die).
         expansion_index = self._generate_normal(1.15, 0.05)
         bulk_density = 1.0 / expansion_index  # Approx.

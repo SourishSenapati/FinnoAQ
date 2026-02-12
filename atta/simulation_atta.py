@@ -51,7 +51,7 @@ class AttaSixSigmaSimulator:
         best_malt = candidates[min_loss_idx].item()
 
         print(
-            f"      - [FAULT DETECTED] Initial Falling Number ~325s (Target 250s).")
+            "      - [FAULT DETECTED] Initial Falling Number ~325s (Target 250s).")
         print("      - [TUNING] Sweeping Malt Dosage 0.4% - 1.5%...")
         print(f"      - [CONVERGED] Optimal Malt Dosage: {best_malt:.3f}% "
               f"(Predicted FN: {400 - best_malt*150:.1f}s)")

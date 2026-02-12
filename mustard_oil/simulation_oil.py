@@ -159,13 +159,15 @@ class MustardOilLabSimulator:
         final_do = initial_do * (1.0 - nitrogen_sparge_efficiency)
 
         # Arrhenius eq for Oxidation
-        temp = 110.0  # Rancimat Temp (Accelerated)
+
         base_induction = 12.0  # Hours
         # Lower DO = Higher Induction
         induction_time = base_induction / (final_do + 0.1) * 0.5
 
-        print(f"   [PHYS] Induction Time: {torch.mean(induction_time):.2f} hours "
-              f"(Shelf Life > 12M: {torch.sum(induction_time > 10.0).item()/self.batches*100:.1f}%)")
+        pass_rate = (torch.sum(induction_time > 10.0).item() /
+                     self.batches) * 100
+        print(f"   [PHYS] Induction Time: {torch.mean(induction_time):.2f} h "
+              f"(Shelf Life > 12M: {pass_rate:.1f}%)")
 
 
 if __name__ == "__main__":

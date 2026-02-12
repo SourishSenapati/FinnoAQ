@@ -8,7 +8,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 1. TOOR DAL ANALOGUE (Reconstituted Legume)
 
-**Goal:** Create a uniform, quick-cooking dal with natural texture using plant proteins and starches.
+### Goal: Create a uniform, quick-cooking dal with natural texture using plant proteins and starches.
 
 ### A. Raw Material Composition (% w/w)
 
@@ -23,22 +23,22 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ### B. Process Physics (The "How")
 
-1.  **Mixing:** High-shear blending of dry powders. Hydrate with water to form a dough (35% moisture).
-2.  **Extrusion:**
-    - **Temp:** **85°C** (Partial Gelatinization).
-    - **Die Pressure:** **40 Bar** (Expands starch for porosity).
-    - **Cutter Speed:** 1500 RPM (Creates uniform 3mm shape).
-3.  **Cross-Linking (Gelation):** Extruded dal falls into a **Calcium Bath (0.6%)** for **30 seconds**. This forms the "skin" (alginate shell) that holds shape during cooking.
-4.  **Drying:**
-    - **Temp:** **55°C** (Low heat preserves protein).
-    - **Target Moisture:** **10.0%** (Shelf stable).
-    - **PID Control:** Maintained within ±0.1% via adaptive feedback loop.
+1. **Mixing:** High-shear blending of dry powders. Hydrate with water to form a dough (35% moisture).
+2. **Extrusion:**
+   - **Temp:** **85°C** (Partial Gelatinization).
+   - **Die Pressure:** **40 Bar** (Expands starch for porosity).
+   - **Cutter Speed:** 1500 RPM (Creates uniform 3mm shape).
+3. **Cross-Linking (Gelation):** Extruded dal falls into a **Calcium Bath (0.6%)** for **30 seconds**. This forms the "skin" (alginate shell) that holds shape during cooking.
+4. **Drying:**
+   - **Temp:** **55°C** (Low heat preserves protein).
+   - **Target Moisture:** **10.0%** (Shelf stable).
+   - **PID Control:** Maintained within ±0.1% via adaptive feedback loop.
 
 ---
 
 ## 2. SUNDARBAN HONEY (Raw & Tech-Processed)
 
-**Goal:** Reduce moisture without heating (preserving enzymes/flavor) and prevent fermentation.
+### Goal: Reduce moisture without heating (preserving enzymes/flavor) and prevent fermentation.
 
 ### A. Critical Parameters
 
@@ -50,17 +50,17 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ### B. Process Logic
 
-1.  **Filtration:** 200-micron mesh (removes bee parts, keeps pollen).
-2.  **Vacuum Dehydration:** Honey flows over thin-film evaporator plates under vacuum.
-    - **Fick's Diffusion:** Moisture diffuses out rapidly due to pressure differential.
-    - **Time:** Approx **7-8 hours** per batch to drop from 24% to 19%.
-3.  **HMF Control:** Arrhenius kinetics ensure HMF accumulation is < 0.2 mg/kg/hr at 38°C. Total HMF stays < 10 mg/kg (Export Grade).
+1. **Filtration:** 200-micron mesh (removes bee parts, keeps pollen).
+2. **Vacuum Dehydration:** Honey flows over thin-film evaporator plates under vacuum.
+   - **Fick's Diffusion:** Moisture diffuses out rapidly due to pressure differential.
+   - **Time:** Approx **7-8 hours** per batch to drop from 24% to 19%.
+3. **HMF Control:** Arrhenius kinetics ensure HMF accumulation is < 0.2 mg/kg/hr at 38°C. Total HMF stays < 10 mg/kg (Export Grade).
 
 ---
 
 ## 3. MUSTARD HONEY (Value-Added)
 
-**Goal:** Controlled crystallization (Creamed Honey) and Fermentation (Mead).
+### Goal: Controlled crystallization (Creamed Honey) and Fermentation (Mead).
 
 ### A. Creamed Honey (Controlled Crystallization)
 
@@ -81,7 +81,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 4. GHEE BILONA (Cultured & Churned)
 
-**Goal:** Maximize Fat Recovery (FRE) and authentic flavor profile.
+### Goal: Maximize Fat Recovery (FRE) and authentic flavor profile.
 
 ### A. Composition
 
@@ -90,20 +90,20 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ### B. Process Physics
 
-1.  **Culturing (Dahi):** Milk fermented at **42°C** for 6 hours (pH drops to **4.6**).
-    - _Physics:_ Isoelectric point of Casein (4.6) releases fat globules from protein matrix.
-2.  **Churning (Bilona):**
-    - **Temp:** **13°C** (Critical). Fat solidifies slightly, clumping efficiency maximizes.
-    - **Yield:** **35 g/L** fat recovery (vs 30 g/L at wrong temp).
-3.  **Boiling (Ghee Making):**
-    - **Temp:** **118°C** (Maillard Reaction Peak).
-    - **Time:** **15 mins**. Browns milk solids (Lactose + Amino Acids) -> Nutty flavor.
+1. **Culturing (Dahi):** Milk fermented at **42°C** for 6 hours (pH drops to **4.6**).
+   - _Physics:_ Isoelectric point of Casein (4.6) releases fat globules from protein matrix.
+2. **Churning (Bilona):**
+   - **Temp:** **13°C** (Critical). Fat solidifies slightly, clumping efficiency maximizes.
+   - **Yield:** **35 g/L** fat recovery (vs 30 g/L at wrong temp).
+3. **Boiling (Ghee Making):**
+   - **Temp:** **118°C** (Maillard Reaction Peak).
+   - **Time:** **15 mins**. Browns milk solids (Lactose + Amino Acids) -> Nutty flavor.
 
 ---
 
 ## 5. ATTA (Bio-Enzymatic Whole Wheat)
 
-**Goal:** Soft roti for 12+ hours using natural enzymes.
+### Goal: Soft roti for 12+ hours using natural enzymes.
 
 ### A. Blending Formulation
 
@@ -113,18 +113,18 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ### B. Enzymatic Action
 
-1.  **Malted Flour:** Source of **Alpha-Amylase** enzyme.
-2.  **Logic:** Amylase breaks down damaged starch into dextrins (sugars) during dough resting.
-3.  **Effect:**
-    - **Falling Number:** Drops from 400s (Hard) to **250s** (Optimal).
-    - **Softness:** Dextrins hold water, keeping roti soft.
-    - **Browning:** Extra sugars improve roasting color (Maillard).
+1. **Malted Flour:** Source of **Alpha-Amylase** enzyme.
+2. **Logic:** Amylase breaks down damaged starch into dextrins (sugars) during dough resting.
+3. **Effect:**
+   - **Falling Number:** Drops from 400s (Hard) to **250s** (Optimal).
+   - **Softness:** Dextrins hold water, keeping roti soft.
+   - **Browning:** Extra sugars improve roasting color (Maillard).
 
 ---
 
 ## 6. MUSTARD OIL (Herbal Blend)
 
-**Goal:** Cost reduction (~50% of pure mustard) with improved stability and retained pungency.
+### Goal: Cost reduction (~50% of pure mustard) with improved stability and retained pungency.
 
 ### A. Blending Formulation (% v/v)
 
@@ -138,6 +138,6 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ### B. Quality Parameters
 
-1.  **Pungency (AITC):** Target **0.45%** (Matches pure mustard oil). Achieved by 1400 ppm EO addition.
-2.  **Nutrition:** Erucic Acid drops from ~45% (Unsafe) to **<10%** (Heart Safe) due to dilution.
-3.  **Shelf Life:** Clove + Turmeric provide synergistic oxidative stability (**Induction Time > 6 hours**).
+1. **Pungency (AITC):** Target **0.45%** (Matches pure mustard oil). Achieved by 1400 ppm EO addition.
+2. **Nutrition:** Erucic Acid drops from ~45% (Unsafe) to **<10%** (Heart Safe) due to dilution.
+3. **Shelf Life:** Clove + Turmeric provide synergistic oxidative stability (**Induction Time > 6 hours**).
