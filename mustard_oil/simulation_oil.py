@@ -23,10 +23,51 @@ class MustardOilLabSimulator:
     def run_full_suite(self):
         """Executes the full simulation suite."""
         print("\n--- MUSTARD OIL: QUALITY & NUTRITION ANALYSIS ---")
+        self._simulate_cold_press_mechanics()
         self._simulate_sensory_viscosity()
         self._simulate_fatty_acid_profile()
         self._test_pungency_aitc()
         self._simulate_rancimat()
+
+    def _simulate_cold_press_mechanics(self):
+        """
+        Simulates Cold Press Extraction (Kachi Ghani).
+        Physics: Friction Heat Generation vs Cooling Rate.
+        Constraint: Temp < 45C (True Cold Press).
+        Material: Wood/SS304 Friction Coefficient.
+        """
+        print("   [MACHINERY] Simulating Cold Press Extraction Physics...")
+
+        # Machine Parameters (Wooden vs SS Ghani - User Prefers Wood/Cold Press)
+        # Slow RPM for minimal heat
+        rpm = torch.normal(12.0, 1.5, (self.batches,), device=self.device)
+        pressure_bar = torch.normal(
+            250.0, 20.0, (self.batches,), device=self.device)
+
+        # Friction Heat Generation (Q_gen = mu * P * v)
+        # Using Wooden Pestle Friction (Higher Torque, Lower Heat Transfer)
+        ambient_temp = 28.0
+        friction_coeff = 0.35  # Wood on Seed
+        heat_gen_factor = (rpm * pressure_bar * friction_coeff) / \
+            100.0  # Watts approx per unit mass flow
+        cooling_capacity = 2.0  # Natural convection + Water Jacket (if any)
+
+        exit_temp = ambient_temp + (heat_gen_factor / cooling_capacity)
+
+        # Critical Limit: 50C (Enzyme Deactivation / Flavor Loss / Non-Cold Press)
+        is_burnt = exit_temp > 50.0
+        is_cold_pressed = exit_temp < 45.0
+
+        cold_press_rate = (
+            torch.sum(is_cold_pressed).item() / self.batches) * 100
+        burn_rate = (torch.sum(is_burnt).item() / self.batches) * 100
+
+        print(
+            f"      - Mean Press Temperature: {torch.mean(exit_temp):.1f}C (Limit < 45C)")
+        print(
+            f"      - Cold Press Compliance: {cold_press_rate:.2f}% (True Kachi Ghani)")
+        print(
+            f"      - Burn Defect Rate: {burn_rate:.4f}% (RPM Control Vital)")
 
     def _simulate_sensory_viscosity(self):
         """

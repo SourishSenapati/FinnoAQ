@@ -12,12 +12,12 @@
    [COMP] Simulating Proximate Analysis & Physical Properties...
       - Mean Protein: 23.50% (Pass: 99.73%)
       - Mean Amylose: 30.00% (Texture Driver)
-      - Mean Density: 0.871 g/cc (Natural mimicry: 75.85%)
+      - Mean Density: 0.871 g/cc (Natural mimicry: 75.90%)
       - Avg Cooking Time: 35.9 mins (Quick Cook: 0.00%)
    [CHEM] Hydration Kinetics Pass Rate: 100.0000% (Target 99.99%)
    [PHYS] Texture/Shear Stress Sigma: 2.84 Sigma
-   [ENG]  Drying Process Cpk: 3.297 (Target > 1.67 for 5-Sigma)
-   [PERF] Simulation Time: 0.1620s
+   [ENG]  Drying Process Cpk: 3.295 (Target > 1.67 for 5-Sigma)
+   [PERF] Simulation Time: 0.1577s
 ---------------------------------------------------------
 Sundarban Honey Physics Engine Initialized on cuda
 
@@ -28,11 +28,11 @@ Sundarban Honey Physics Engine Initialized on cuda
    [CHEM] Checking Natural Composition & Authenticity...
       - F/G Ratio Mean: 1.23 (Target > 1.0: 99.99%)
       - Sucrose: 1.50% (Target < 5%)
-      - Diastase Activity: 12.0 DN (Freshness: 97.73%)
-      - C4 Adulteration Check: 99.9967% Passed (Isotope Analysis)
+      - Diastase Activity: 12.0 DN (Freshness: 97.72%)
+      - C4 Adulteration Check: 99.9969% Passed (Isotope Analysis)
    [PHYS] Vacuum Process Time: 7.74 hours
    [CHEM] Final HMF Level: 6.17 mg/kg (Limit < 10)
-   [QUAL] HMF Violation Rate: 0.0167% (Target < 0.1%)
+   [QUAL] HMF Violation Rate: 0.0189% (Target < 0.1%)
    [BIO]  Fermentation Safety: 100.0000% Batches Secure
 Mustard Value-Add Physics Engine Initialized on cuda
 
@@ -61,10 +61,13 @@ Ghee Bilona Physics Engine Initialized on cuda
       - Butyric Acid Content: 3.50% (Authenticity Marker)
       - Oleic Acid Content: 28.00% (Texture)
       - Free Fatty Acids (FFA): 0.250% (Rancidity Check: 100.00%)
-   [PHYS] Fat Recovery Yield: 35.32 g/L
-   [ECON] Churning Process Cpk: 0.583 (Improved via Optimal Temp 13C)
-   [SENS] Flavor Profile Score: 90.4/100
-   [RISK] Burning Probability: 0.0218% (Critical Control Point)
+   [PHYS] Fat Recovery Yield: 35.31 g/L
+   [ECON] Churning Process Cpk: 0.581 (Improved via Optimal Temp 13C)
+   [MACHINERY] Simulating Vessel Thermodynamics (SS316)...
+      - Mean Wall Temperature: 122.2C (Burn Limit 130C)
+      - Nucleate Boiling Efficiency: 800 W/m2K
+      - Burn Defect Rate: 0.0000% (Scraper/Agitator Needed)
+      - Flavor Profile Score: 96.0/100
 Atta Physics Engine Initialized on cuda
 
 --- ATTA: QUALITY & RHEOLOGY ANALYSIS ---
@@ -82,29 +85,64 @@ Atta Physics Engine Initialized on cuda
       - Gluten Index: 85.0 (Dough Strength)
       - Alveograph P/L: 0.76 (Extensibility Pass: 98.20%)
    [BIO]  Falling Number: 250.0 s (Target 250s)
-   [QUAL] Enzymatic Softness Cpk: 0.323 (Significantly Improved)
-   [ECON] Blended Cost Mean: INR 29.00/kg (Profitable < INR 27: 5.48%)
+   [QUAL] Enzymatic Softness Cpk: 0.324 (Significantly Improved)
+   [ECON] Blended Cost Mean: INR 29.00/kg (Profitable < INR 27: 5.49%)
 Mustard Oil R&D Engine Initialized on cuda
 
 --- MUSTARD OIL: QUALITY & NUTRITION ANALYSIS ---
+   [MACHINERY] Simulating Cold Press Extraction Physics...
+      - Mean Press Temperature: 33.2C (Limit < 45C)
+      - Cold Press Compliance: 100.00% (True Kachi Ghani)
+      - Burn Defect Rate: 0.0000% (RPM Control Vital)
    [SENS] Simulating Mouthfeel & Taste Preservation...
       - Viscosity (20C): 54.0 cP (Rich Mouthfeel)
       - Dissolved Oxygen: 0.40 ppm (Target < 0.5 ppm)
       - Taste Integrity Score: 96.0/100 (No Rancidity)
    [CHEM] Analyzing Lipid Profile (SFA/MUFA/PUFA & Erucic Acid)...
-      - Erucic Acid: 9.00% (Safety: 99.39%)
+      - Erucic Acid: 9.00% (Safety: 99.38%)
       - Gamma Oryzanol: 8000 ppm (Natural Antioxidant)
       - Lipid Profile (SFA/MUFA): 16.8% / 44.0%
    [CHEM] AITC Pungency: 45.001% (Target 0.45%)
    [QUAL] Pungency Cpk: 1.333
-   [PHYS] Induction Time: 13.97 hours (Shelf Life > 12M: 73.3%)
+   [PHYS] Induction Time: 13.55 hours (Shelf Life > 12M: 73.3%)
+Machinery Optimization Engine Initialized on cuda
+
+=== MACHINERY OPTIMIZATION REPORT (GPU MONTE CARLO - 10M SCENARIOS) ===
+Objective: Maximize ROI via Robust Make vs Buy Analysis.
+
+--- Industrial Tray Dryer (500kg/Batch) ---
+   [DECISION]: BUILD (DIY)
+   - DIY Build Cost (P50): INR 330,403
+   - Market Price (P50):   INR 450,004
+   - Probability of Savings: 100.0%
+   - Critical Components:
+     SS304 Sheet 18G: 450kg
+     SS304 Wire Mesh Trays: 100 Units
+     Fin Heaters: 12x 1.5kW
+     Motors: 2x 2HP 1440RPM IE2
+
+--- Wooden Cold Press (Mara Chekku) ---
+   [DECISION]: BUY (Market)
+   - DIY Build Cost (P50): INR 134,999
+   - Market Price (P50):   INR 179,996
+   - Probability of Savings: 100.0%
+
+--- Bilona Churner (500L SS316) ---
+   [DECISION]: BUILD (DIY)
+   - DIY Build Cost (P50): INR 60,499
+   - Market Price (P50):   INR 120,000
+   - Probability of Savings: 100.0%
+   - Critical Components:
+     
+
+   [PERF] Monte Carlo Optimization Time: 0.1630s
 --- FINNO PROJECTS: ADVANCED R&D SIMULATION SUITE ---
 Initializing GPU Acceleration Clusters...
 
 
 [TOOR DAL ANALOGUE] >>> LAUNCHING DIGITAL TWIN <<<
 ============================================================
->>> Toor Dal Analogue Simulation Complete in 2.28s <<<
+>>> Toor Dal Analogue Simulation Complete in 2.30s <<<
 ============================================================
 
 [SUNDARBAN HONEY] >>> LAUNCHING DIGITAL TWIN <<<
@@ -114,12 +152,12 @@ Initializing GPU Acceleration Clusters...
 
 [MUSTARD HONEY VALUE ADD] >>> LAUNCHING DIGITAL TWIN <<<
 ============================================================
->>> Mustard Honey Value Add Simulation Complete in 2.28s <<<
+>>> Mustard Honey Value Add Simulation Complete in 2.36s <<<
 ============================================================
 
 [GHEE BILONA OPTIMIZATION] >>> LAUNCHING DIGITAL TWIN <<<
 ============================================================
->>> Ghee Bilona Optimization Simulation Complete in 2.19s <<<
+>>> Ghee Bilona Optimization Simulation Complete in 2.33s <<<
 ============================================================
 
 [ATTA BIO-ENZYMATIC] >>> LAUNCHING DIGITAL TWIN <<<
@@ -130,6 +168,11 @@ Initializing GPU Acceleration Clusters...
 [MUSTARD OIL HERBAL] >>> LAUNCHING DIGITAL TWIN <<<
 ============================================================
 >>> Mustard Oil Herbal Simulation Complete in 2.25s <<<
+============================================================
+
+[MACHINERY & BUILD-VS-BUY] >>> LAUNCHING DIGITAL TWIN <<<
+============================================================
+>>> Machinery & Build-vs-Buy Simulation Complete in 2.25s <<<
 ============================================================
 
 All 6 Modules Validated. Ready for Pilot Production.

@@ -123,21 +123,62 @@ class GheeProductionSimulator:
         print(f"   [ECON] Churning Process Cpk: {cpk:.3f} "
               f"(Improved via Optimal Temp 13C)")
 
-    def _test_maillard_flavor(self):
-        """Simulates Maillard Reaction Kinetics."""
-        boil_temp = torch.normal(
-            118.0, 2.0, (self.batches,), device=self.device)
-        time_mins = torch.normal(
-            15.0, 1.0, (self.batches,), device=self.device)
-        temp_deviation = torch.abs(boil_temp - 118.0)
-        flavor_score = 100.0 - (temp_deviation * 5.0) - \
-            (torch.abs(time_mins - 15.0) * 2.0)
-        flavor_score = torch.clamp(flavor_score, min=0.0)
-        burnt_prob = (torch.sum(boil_temp > 125.0).item() / self.batches) * 100
+    def _simulate_boiling_physics(self):
+        """
+        Simulates Maillard Reaction Kinetics & Vessel Thermodynamics.
+        Physics: Heat Transfer from SS316 Wall to Makhan.
+        Constraint: Wall Superheat < 5C to prevent bottom scorching.
+        """
+        print("   [MACHINERY] Simulating Vessel Thermodynamics (SS316)...")
+
+        # Heat Source Control (Flame/Induction)
+        heat_input_kw = torch.normal(
+            5.0, 0.2, (self.batches,), device=self.device)
+        viscosity_hot = 0.5  # cP (Very thin when hot)
+
+        # Heat Transfer Coefficient (h)
+        # Nusselts Number correlation for natural convection boiling
+        # h ~ 500-1000 W/m2K for nucleate boiling
+        h_coeff = torch.normal(
+            800.0, 50.0, (self.batches,), device=self.device)
+
+        # Temperatures
+        # Bulk liquid temp varies slightly due to control loop
+        bulk_temp = torch.normal(
+            118.0, 1.0, (self.batches,), device=self.device)
+
+        # Wall Temp = Bulk + (Heat_Flux / h)
+        # Assuming minimal fouling initially
+        wall_superheat = (heat_input_kw * 1000.0 / 1.5) / h_coeff  # Area 1.5m2
+        wall_temp = bulk_temp + wall_superheat
+
+        # Burn Risk: Wall Temp > 130C implies rapid protein carbonization at interface
+        is_burnt = wall_temp > 130.0
+        burn_rate = (torch.sum(is_burnt).item() / self.batches) * 100
+
+        # Flavor Development (Maillard)
+        # Rate doubles every 10C. Optimal at 118-122C.
+        flavor_score = 100.0 - torch.abs(bulk_temp - 118.0) * 5.0
+        # Penalty for wall burns
+        flavor_score[is_burnt] *= 0.5
+
         print(
-            f"   [SENS] Flavor Profile Score: {torch.mean(flavor_score):.1f}/100")
-        print(f"   [RISK] Burning Probability: {burnt_prob:.4f}% "
-              f"(Critical Control Point)")
+            f"      - Mean Wall Temperature: {torch.mean(wall_temp):.1f}C (Burn Limit 130C)")
+        print(
+            f"      - Nucleate Boiling Efficiency: {torch.mean(h_coeff):.0f} W/m2K")
+        print(
+            f"      - Burn Defect Rate: {burn_rate:.4f}% (Scraper/Agitator Needed)")
+        print(
+            f"      - Flavor Profile Score: {torch.mean(flavor_score):.1f}/100")
+
+    def run_full_suite(self):
+        """Executes the full Ghee simulation suite."""
+        print("\n--- GHEE BILONA: PROCESS & COMPOSITION ANALYSIS ---")
+        self.optimize_churning_physics()
+        self._simulate_structure_texture()
+        self._simulate_lipid_profile()
+        self._test_churning_yield()
+        self._simulate_boiling_physics()
 
 
 if __name__ == "__main__":

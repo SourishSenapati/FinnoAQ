@@ -22,6 +22,8 @@ projects = [
      "d:/PROJECT/FINNO PROJECTS/ghee_bilona/simulation_ghee.py"),
     ("Atta Bio-Enzymatic", "d:/PROJECT/FINNO PROJECTS/atta/simulation_atta.py"),
     ("Mustard Oil Herbal", "d:/PROJECT/FINNO PROJECTS/mustard_oil/simulation_oil.py"),
+    ("Machinery & Build-vs-Buy",
+     "d:/PROJECT/FINNO PROJECTS/machinery/cost_analysis_engine.py"),
 ]
 
 for name, path in projects:
