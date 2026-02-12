@@ -17,7 +17,7 @@ Advanced Physics-Based Simulations and Machinery Optimization Engine for:
 ## Reports
 
 - [**Simulation Logs**](./SIMULATION_LOGS.md): Detailed output of the latest validation run.
-- [**Machinery Optimization Report**](./MACHINERY_REPORT.md): Cost analysis for Tray Dryers, Cold Press, and Churners.
+- [**Machinery Optimization Report**](./machinery/MACHINERY_REPORT.md): Cost analysis for Tray Dryers, Cold Press, and Churners.
 - [**Optimization Results**](./OPTIMIZATION_RESULTS.md): Summary of process parameter tuning.
 
 ## Usage
