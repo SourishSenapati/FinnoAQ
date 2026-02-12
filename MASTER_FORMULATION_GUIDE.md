@@ -1,6 +1,6 @@
 # MASTER FORMULATION & PROCESS GUIDE: FINNO PROJECTS
 
-_Technical Specifications for Six Sigma Manufacturing_
+### Technical Specifications for Six Sigma Manufacturing
 
 This document reveals the exact compositions, process parameters, and scientific logic used in the Digital Twin simulations to achieve consistent, high-fidelity results. **All parameters are derived from valid food physics (e.g., Avrami equation, Arrhenius kinetics).**
 
@@ -8,7 +8,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 1. TOOR DAL ANALOGUE (Reconstituted Legume)
 
-### Goal: Create a uniform, quick-cooking dal with natural texture using plant proteins and starches.
+### Goal: Create a uniform, quick-cooking dal with natural texture using plant proteins and starches
 
 ### A. Raw Material Composition (% w/w)
 
@@ -38,7 +38,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 2. SUNDARBAN HONEY (Raw & Tech-Processed)
 
-### Goal: Reduce moisture without heating (preserving enzymes/flavor) and prevent fermentation.
+### Goal: Reduce moisture without heating (preserving enzymes/flavor) and prevent fermentation
 
 ### A. Critical Parameters
 
@@ -60,7 +60,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 3. MUSTARD HONEY (Value-Added)
 
-### Goal: Controlled crystallization (Creamed Honey) and Fermentation (Mead).
+### Goal: Controlled crystallization (Creamed Honey) and Fermentation (Mead)
 
 ### A. Creamed Honey (Controlled Crystallization)
 
@@ -81,7 +81,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 4. GHEE BILONA (Cultured & Churned)
 
-### Goal: Maximize Fat Recovery (FRE) and authentic flavor profile.
+### Goal: Maximize Fat Recovery (FRE) and authentic flavor profile
 
 ### A. Composition
 
@@ -103,7 +103,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 5. ATTA (Bio-Enzymatic Whole Wheat)
 
-### Goal: Soft roti for 12+ hours using natural enzymes.
+### Goal: Soft roti for 12+ hours using natural enzymes
 
 ### A. Blending Formulation
 
@@ -124,7 +124,7 @@ This document reveals the exact compositions, process parameters, and scientific
 
 ## 6. MUSTARD OIL (Herbal Blend)
 
-### Goal: Cost reduction (~50% of pure mustard) with improved stability and retained pungency.
+### Goal: Cost reduction (~50% of pure mustard) with improved stability and retained pungency
 
 ### A. Blending Formulation (% v/v)
 

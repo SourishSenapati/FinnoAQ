@@ -42,6 +42,6 @@ Develop a "Raw & Unfiltered" Sundarban Honey product with <19% moisture and zero
 
 ## 5. Simulation Goals
 
-1.  **HMF Kinetics**: Predict HMF rise per hour at 35°C vs 45°C vs 60°C.
-2.  **Moisture Diffusion**: Time required to drop from 24% to 19% under vacuum.
-3.  **Fermentation Probability**: Yeast growth risk vs. Moisture % curve.
+1. **HMF Kinetics**: Predict HMF rise per hour at 35°C vs 45°C vs 60°C.
+2. **Moisture Diffusion**: Time required to drop from 24% to 19% under vacuum.
+3. **Fermentation Probability**: Yeast growth risk vs. Moisture % curve.

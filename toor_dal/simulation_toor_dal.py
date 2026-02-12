@@ -6,6 +6,7 @@ Includes GPU-Accelerated SME Optimization.
 import time
 import math
 import torch
+from lca_analysis import LcaAnalyzer
 
 
 class ToorDalSixSigmaSimulator:
@@ -121,11 +122,19 @@ class ToorDalSixSigmaSimulator:
         bulk_density = 1.0 / expansion_index  # Approx.
 
         # 4. COOKING TIME PREDICTION (Thermodynamics)
-        # Cook time should drop if we increased temp.
-        # But here 'porosity' is expansion.
+        # Gelatinization increases water diffusivity significantly.
+        # Temp Setpoint ~85C -> Gelatinization ~37.5%
+        gelatinization = (self.extrusion_temp_setpoint - 60.0) * 1.5
+        gelatinization = max(10.0, min(gelatinization, 90.0))
+
         porosity = (1.0 - bulk_density) * 100.0
-        diffusivity = (0.5e-9) * (1.0 + porosity/50.0)
+        # Diffusivity enhanced by Porosity AND Gelatinization
+        diffusivity = (0.5e-9) * (1.0 + porosity/50.0) * \
+            (1.0 + gelatinization/15.0)
+
         thickness_mm = 1.5
+        # Time = L^2 / D (simplified Fick's Law approx)
+        # Factor 1e8 adjusts for uM/seconds scaling constants
         cooking_time_mins = (thickness_mm**2) / (diffusivity * 1e8)
 
         # Validation
@@ -144,6 +153,8 @@ class ToorDalSixSigmaSimulator:
               f"(Natural mimicry: {valid_density:.2f}%)")
         print(f"      - Avg Cooking Time: {torch.mean(cooking_time_mins):.1f} mins "
               f"(Quick Cook: {quick_cook:.2f}%)")
+
+        return torch.mean(cooking_time_mins).item()
 
     def test_hydration_kinetics(self):
         """Test 1: Hydration Uniformity."""
@@ -204,7 +215,13 @@ class ToorDalSixSigmaSimulator:
         t0 = time.time()
         self.optimize_extrusion_process()
         self.simulate_organoleptic_properties()
-        self.simulate_composition_physics()
+        avg_cook_time = self.simulate_composition_physics()
+
+        # LCA Impact Analysis
+        print("\n   [SUSTAINABILITY] Running Life Cycle Assessment...")
+        lca = LcaAnalyzer()
+        lca.analyze_impact(batch_size_kg=1000,
+                           actual_cooking_time=avg_cook_time)
         self.test_hydration_kinetics()
         self.test_textural_integrity()
         self.test_moisture_control_loop()
