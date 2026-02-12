@@ -12,9 +12,9 @@ class MachineryMonteCarloOptimizer:
     Simulates machinery cost and build vs buy decisions.
     """
 
-    def __init__(self, capacity_kg_hr=100.0, batches=10_000_000):
+    def __init__(self, capacity_kg_hr=100.0, batches=100_000_000):
         self.capacity_kg_hr = capacity_kg_hr
-        self.batches = batches  # 10 Million Scenarios for robust optimization
+        self.batches = batches  # 100 Million Scenarios for heavy GPU load
         self.device = torch.device(
             'cuda' if torch.cuda.is_available() else 'cpu')
         print(f"Machinery Optimization Engine Initialized on {self.device}")
@@ -166,7 +166,7 @@ class MachineryMonteCarloOptimizer:
 
     def generate_report(self):
         """Generates the full optimization report."""
-        print("\n=== MACHINERY OPTIMIZATION REPORT (GPU MONTE CARLO - 10M SCENARIOS) ===")
+        print("\n=== MACHINERY OPTIMIZATION REPORT (GPU MONTE CARLO - 100M SCENARIOS) ===")
         print("Objective: Maximize ROI via Robust Make vs Buy Analysis.\n")
 
         t0 = time.time()
