@@ -6,7 +6,14 @@ Validates:
 3. Fermentation & Authenticity.
 4. Organoleptic Preservation (Viscosity, Volatiles).
 """
+import sys
+import os
 import torch
+
+# Ensure project root is in path
+project_root = r"d:\PROJECT\FINNO PROJECTS"
+if project_root not in sys.path:
+    sys.path.append(project_root)
 
 
 class HoneyProcessingSim:

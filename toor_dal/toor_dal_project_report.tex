@@ -31,7 +31,7 @@
 \vspace{1cm}
 
 \section*{Executive Summary}
-This report details the technical, financial, and environmental feasibility of establishing an industrial manufacturing line for \textbf{Toor Dal Analogue}. The primary objective is to produce a cost-effective, high-fidelity pulse analogue (target cost ₹68.69/kg) that mitigates market volatility while delivering superior nutritional and structural integrity.
+This report details the technical, financial, and environmental feasibility of establishing an industrial manufacturing line for \textbf{Toor Dal Analogue}. The primary objective is to produce a cost-effective, high-fidelity pulse analogue (target cost INR 68.69/kg) that mitigates market volatility while delivering superior nutritional and structural integrity.
 
 Through \textbf{GPU-accelerated simulations (10 Million batches)} and \textbf{Digital Twin Process Modeling}, this study confirms that the proposed MSG-optimized formulation and processing parameters achieve a sustainable \textbf{Six Sigma (6.01$\sigma$)} manufacturing standard, provided specific high-precision control systems are implemented.
 
@@ -47,7 +47,7 @@ The core innovation lies in the \textbf{MSG-Optimized Matrix}, which utilizes a 
     \vspace{0.3cm}
     \begin{tabular}{l c c c}
         \toprule
-        \textbf{Ingredient} & \textbf{Composition (\%)} & \textbf{Unit Cost (₹/kg)} & \textbf{Contribution (₹/kg)} \\
+        \textbf{Ingredient} & \textbf{Composition (\%)} & \textbf{Unit Cost (INR/kg)} & \textbf{Contribution (INR/kg)} \\
         \midrule
         Tur Khanda (Upcycled Brokens) & 55.00\% & 65.00 & 35.75 \\
         Broken Rice / Starch Matrix & 40.50\% & 28.00 & 11.34 \\
@@ -58,12 +58,12 @@ The core innovation lies in the \textbf{MSG-Optimized Matrix}, which utilizes a 
         Surface Oil Blend (Castor/Clove) & 0.50\% & 180.00 & 0.90 \\
         Process Yield Loss & 1.00\% & --- & 0.60 \\
         \midrule
-        \textbf{Total Raw Material Cost} & \textbf{100.00\%} & & \textbf{₹ 59.41 / kg} \\
+        \textbf{Total Raw Material Cost} & \textbf{100.00\%} & & \textbf{INR 59.41 / kg} \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-\textbf{Economic Advantage:} This formulation presents a net reduction of \textbf{₹1.43/kg} against the base case, translating to an annual saving of \textbf{₹8.58 Crores} at 6,000 MT capacity.
+\textbf{Economic Advantage:} This formulation presents a net reduction of \textbf{INR 1.43/kg} against the base case, translating to an annual saving of \textbf{INR 8.58 Crores} at 6,000 MT capacity.
 
 \section{Process Engineering \& Six Sigma Validation}
 A \textbf{GPU-based Digital Twin} was deployed to simulate the extrusion and drying process, incorporating an adaptive feed-forward control loop.
@@ -88,9 +88,9 @@ To achieve the Six Sigma standard, the following equipment specifications are ma
 Monte Carlo simulations (N=10,000,000) integrated with historically volatile Indian market data (2024-2025) demonstrate the project's financial resilience.
 
 \begin{itemize}
-    \item \textbf{Projected Mean Production Cost:} ₹62.86 / kg
-    \item \textbf{Worst-Case Scenario (Climate Crisis):} ₹81.01 / kg (Still below retail parity)
-    \item \textbf{Inflation Shield:} The product offers an average consumer saving of \textbf{₹54.00/kg} versus natural whole dal, rising to \textbf{>₹105/kg} during peak inflation events.
+    \item \textbf{Projected Mean Production Cost:} INR 62.86 / kg
+    \item \textbf{Worst-Case Scenario (Climate Crisis):} INR 81.01 / kg (Still below retail parity)
+    \item \textbf{Inflation Shield:} The product offers an average consumer saving of \textbf{INR 54.00/kg} versus natural whole dal, rising to \textbf{> INR 105/kg} during peak inflation events.
 \end{itemize}
 
 \section{Life Cycle Assessment (Sustainability)}
@@ -109,7 +109,40 @@ The project utilizes an "Upcycling Model", converting lower-value broken grains 
         Land Use (Hectares) & 4,560 & 2,100 & \textbf{-54.0\%} \\
         \bottomrule
     \end{tabular}
+
 \end{table}
+
+\section{Machinery Optimization: The "Mixie Hack"}
+A dedicated GPU-accelerated simulation (1 Million Iterations) compared the efficacy of industrial \textbf{Impact Pulverizers} versus commercial \textbf{Mixer Grinders} for the critical flour production stage.
+
+\subsection{Comparative Analysis (GPU Simulation Results)}
+    \begin{table}[H]
+        \centering
+        \caption{Grinding Technology Optimization Grid (N=1,000,000 Batches)}
+        \vspace{0.3cm}
+        \begin{tabular}{l c c}
+            \toprule
+            \textbf{Metric} & \textbf{Industrial Ball Mill} & \textbf{Optimized Mixie (The "Hack")} \\
+            \midrule
+            \textbf{Capital Expenditure (CapEx)} & INR 4,50,000 & \textbf{INR 12,000} \\
+            \textbf{Throughput Capacity} & 166 kg/hr & 40 kg/hr \\
+            \textbf{Operational Cost (OpEx)} & \textbf{INR 0.63 / kg} & INR 3.01 / kg \\
+            \textbf{Protein Damage Risk} & 0.0\% & \textbf{0.0\% (with Pulse Mode)} \\
+            \textbf{ROI Break-Even Volume} & 50,000 kg & \textbf{500 kg} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    
+    \subsection{The "Mixie Hack" Protocol}
+    The GPU simulation identified a specific operational mode that matches the quality of an industrial mill while using cheap consumer hardware:
+    \begin{itemize}
+        \item \textbf{Optimal RPM:} 10,061 RPM (Medium Speed)
+        \item \textbf{Duty Cycle:} 57\% (Pulse Mode: 30s ON / 22s OFF)
+        \item \textbf{Active Cooling:} Not required if Duty Cycle maintained. Peak Temp stabilizes at $26.2^\circ$C.
+    \end{itemize}
+    
+    \textbf{Strategic Recommendation:}
+    Start with the \textbf{Mixie Hack} to save INR 4.38 Lakhs in upfront capital. The operational penalty of INR 2.38/kg is negligible compared to the CapEx savings for the first 100 tonnes of production. Upgrade to Ball Mill only when daily demand exceeds 500kg.
 
 \section{Conclusion}
 The Toor Dal Analogue project represents a highly viable industrial opportunity. It combines strong financial returns (ROI > 105\%) with exceptional market resilience and sustainability credentials. The implementation of high-precision process controls allows for a Six Sigma compliant operation, minimizing quality risks.

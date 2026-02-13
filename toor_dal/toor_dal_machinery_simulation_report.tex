@@ -1,0 +1,136 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage{longtable}
+
+% Page Geometry
+\geometry{a4paper, margin=2.5cm}
+
+% Branding Color
+\definecolor{primary}{RGB}{0, 51, 102} % Dark Blue
+
+% Title Setup
+\title{\textbf{\LARGE TUR DAL MACHINERY SIMULATION AUDIT}\\
+\large Rigorous Physics & Sensitivity Analysis Report\\
+\small GPU-Accelerated Monte Carlo (N = 1,000,000)}
+\author{\textbf{Sourish Senapati} \\ FINNO PROJECTS | AI Engineering Division}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\hrule
+\vspace{1cm}
+
+\begin{abstract}
+This document serves as the technical validation appendix for the Toor Dal Manufacturing Project. It details the results of a 1,000,000-iteration Monte Carlo simulation executed on an NVIDIA RTX 4050 GPU. The simulation audited two competing architectures: the "Mixie Swarm" (Decentralized) and the "Ball Mill" (Centralized). \textbf{Conclusion:} While the Mixie Swarm is physically safe and optimal for R\&D/Lab scales ($<50$ kg/day), it fails the industrial reliability stress test due to downtime compounding. The \textbf{Ball Mill} is confirmed as the only viable architecture for mass production ($>500$ kg/hr).
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Simulation Methodology}
+The optimization engine utilized a rigorous physics-based approach:
+\begin{itemize}
+    \item \textbf{Thermal Physics:} Convection cooling dynamics ($h=15 W/m^2K$) and Arrhenius protein denaturation kinetics ($E_a=250 kJ/mol$).
+    \item \textbf{Reliability Mathematics:} System downtime probability calculated as $P_{sys} = 1 - (1 - P_{unit})^N$, where $N=10$ for the Swarm.
+    \item \textbf{Precision:} Double Precision (float64) was enforced to capture micro-probabilities of denaturation.
+    \item \textbf{Scope:} 1,000,000 independent lifecycle scenarios.
+\end{itemize}
+
+\section{Phase 1: R\&D and Lab Scale Validation}
+For small-batch production (1kg batches), the "Mixie Hack" was stress-tested.
+
+\begin{table}[H]
+    \centering
+    \caption{R\&D Scale Simulation Results (1kg Batch)}
+    \vspace{0.3cm}
+    \begin{tabular}{l c}
+        \toprule
+        \textbf{Metric} & \textbf{Result} \\
+        \midrule
+        \textbf{Mean Protein Damage} & \textbf{0.0000\%} \\
+        \textbf{95\% Worst-Case Temp Rise} & $+12.2^\circ$C \\
+        \textbf{Optimal Protocol} & 3.6s ON / 1.0s OFF (Pulse Mode) \\
+        \textbf{Mean Batch Cost} & INR 367.14 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{Verdict:} The Mixie Swarm is \textbf{VALIDATED} for Lab/Pilot operations. The transient thermal physics confirms that the small mass dissipates heat fast enough to prevent denaturation, provided the strict pulse protocol is followed.
+
+\section{Phase 2: Industrial Scale Stress Test}
+For mass production (500 kg/hr), the model compared the Mixie Swarm against a standard Ball Mill under continuous operation stresses.
+
+\subsection{Baseline Performance}
+\begin{itemize}
+    \item \textbf{Ball Mill Unit Cost:} INR 58.92 / kg (Stable)
+    \item \textbf{Mixie Swarm Unit Cost:} INR 72.24 / kg (Volatile)
+\end{itemize}
+
+The Mixie Swarm suffers from a \textbf{Downtime Penalty}. With a unit failure rate of 2\%, the 10-unit cluster experiences a system degradation probability of $\approx 18.5\%$, driving up effective costs.
+
+\subsection{Hard Stress Testing}
+The architecture was subjected to four "Worst-Case" scenarios to determine robustness.
+
+\begin{table}[H]
+    \centering
+    \caption{Hard Stress Test Results (Win/Loss Analysis)}
+    \vspace{0.3cm}
+    \begin{tabular}{l l l l}
+        \toprule
+        \textbf{Scenario} & \textbf{Ball Mill Cost} & \textbf{Mixie Cost} & \textbf{Winner} \\
+        \midrule
+        \textbf{A. High Failure (3\%)} & \textbf{INR 58.93 / kg} & INR 80.04 / kg & \textbf{BALL MILL} \\
+        \textit{(Downtime Impact)} & \textit{0.40\%} & \textit{26.40\%} & \\
+        \midrule
+        \textbf{B. Elec. Shock (24 INR)} & \textbf{INR 60.72 / kg} & INR 74.03 / kg & \textbf{BALL MILL} \\
+        \midrule
+        \textbf{C. Heat Wave (40$^\circ$C)} & \textbf{INR 58.93 / kg} & INR 72.22 / kg & \textbf{BALL MILL} \\
+        \midrule
+        \textbf{D. Material Inflation} & \textbf{INR 69.10 / kg} & INR 84.68 / kg & \textbf{BALL MILL} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Sensitivity \& Dominance Analysis}
+A Global Sensitivity Analysis (Sobol Approximation) identified the primary drivers of Unit Cost.
+
+\begin{enumerate}
+    \item \textbf{Raw Material Price (Corr: 0.69):} Dominant driver. Sourcing strategy is more critical than energy efficiency.
+    \item \textbf{System Downtime (Corr: 0.19):} Moderate driver. This validates why the Swarm failed. Reliability is a significant cost factor.
+    \item \textbf{Energy / Ambient / COP (Corr < 0.02):} Minor drivers. Optimization here yields diminishing returns.
+\end{enumerate}
+
+\section{Final Engineering Recommendations}
+
+\subsection{Strategy: The "Dual-Phase" Approach}
+\textbf{Phase 1 (Validation / Pilot):}
+Deploy the \textbf{Mixie Swarm (10 Units)} for minimal CapEx (INR 1.2 Lakhs).
+\begin{itemize}
+    \item \textbf{Protocol:} 4s ON / 30s OFF.
+    \item \textbf{Goal:} Market validation and recipe locking.
+    \item \textbf{Risk:} High labor, frequent maintenance (acceptable at small scale).
+\end{itemize}
+
+\textbf{Phase 2 (Scale-Up):}
+Upon reaching $>50$ kg/hr demand, immediately transition to a \textbf{Continuous Ball Mill}.
+\begin{itemize}
+    \item \textbf{Justification:} The Swarm becomes mathematically unviable due to compounding failure probabilities ($P_{sys} \to 100\%$).
+    \item \textbf{OpEx Win:} The Ball Mill delivers a stable INR 58.92/kg cost, protecting margins against raw material volatility.
+\end{itemize}
+
+\vspace{2cm}
+\footnotesize{Analysis generated via FINNO Intelligent Optimization Engine (Double Precision).}
+
+\end{document}

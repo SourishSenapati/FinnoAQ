@@ -1,0 +1,12 @@
+{
+    "best_feed_rate": 491.6302185058594,
+    "best_grinder_type": 2.0,
+    "best_duty_cycle": 0.10690025240182877,
+    "best_dryer_type": 1.0,
+    "best_output": 473.33868408203125,
+    "best_cost_hr": 29847.8359375,
+    "unit_cost_inr_kg": 63.0580940246582,
+    "score": 0.015858391299843788,
+    "protein_damage": 3.694603023518539e-06,
+    "temp_rise": 30.772382736206055
+}

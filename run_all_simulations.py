@@ -14,7 +14,7 @@ print("Initializing GPU Acceleration Clusters...\n")
 time.sleep(1)
 
 projects = [
-    ("Toor Dal Analogue", "d:/PROJECT/FINNO PROJECTS/toor_dal/simulation_toor_dal.py"),
+    ("Toor Dal Analogue", "d:/PROJECT/FINNO PROJECTS/toor_dal/simulation_toor_dal_v3.py"),
     ("Sundarban Honey", "d:/PROJECT/FINNO PROJECTS/sundarban_honey/simulation_honey.py"),
     ("Mustard Honey Value Add",
      "d:/PROJECT/FINNO PROJECTS/mustard_honey/simulation_value_add.py"),
@@ -23,7 +23,7 @@ projects = [
     ("Atta Bio-Enzymatic", "d:/PROJECT/FINNO PROJECTS/atta/simulation_atta.py"),
     ("Mustard Oil Herbal", "d:/PROJECT/FINNO PROJECTS/mustard_oil/simulation_oil.py"),
     ("Machinery & Build-vs-Buy",
-     "d:/PROJECT/FINNO PROJECTS/machinery/cost_analysis_engine.py"),
+     "d:/PROJECT/FINNO PROJECTS/machinery/cost_analysis_engine_v3.py"),
 ]
 
 for name, path in projects:

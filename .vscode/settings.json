@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "C:\\Python313\\python.exe",
+  "python.analysis.extraPaths": ["d:/PROJECT/FINNO PROJECTS"],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
+}

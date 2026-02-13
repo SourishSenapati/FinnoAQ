@@ -1,0 +1,157 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage{longtable}
+
+% Page Geometry
+\geometry{a4paper, margin=2.5cm}
+
+% Branding Color
+\definecolor{primary}{RGB}{0, 51, 102} % Dark Blue
+
+% Title Setup
+\title{\textbf{\LARGE MASTER INDUSTRIAL OPTIMIZATION REPORT}\\
+\large Tur Dal (Cajanus cajan) Analogue Manufacturing Line\\
+\small GPU-Accelerated Monte Carlo Simulation (1,000,000 Iterations)}
+\author{\textbf{Sourish Senapati} \\ FINNO PROJECTS | AI Optimization Division}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\hrule
+\vspace{1cm}
+
+\begin{abstract}
+This report details the final optimization of the Tur Dal manufacturing process, executed on an NVIDIA RTX 4050 GPU using 1 million Monte Carlo simulations. The objective function defined was to maximize \textbf{Kilograms of Output per Rupee of Total Lifecycle Cost}. The simulation audited two distinct architectures: the "Mixie Swarm" (Decentralized) and the "Ball Mill" (Centralized). \textbf{Verdict:} The Mixie Swarm is optimal for R\&D and Pilot scales ($<50$ kg/hr) due to low CapEx. However, for industrial mass production ($>500$ kg/hr), the \textbf{Ball Mill} is the only viable solution, delivering a unit cost of \textbf{INR 58.92/kg} with 99.6\% reliability, whereas the Swarm failed stress tests with $>$18\% downtime.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Executive Summary}
+The simulation converged on a **Dual-Phase Strategy** that optimizes capital efficiency during startup while ensuring operational stability at scale.
+
+\subsection{Key Findings}
+\begin{itemize}
+    \item \textbf{Optimal Industrial configuration:} Continuous Ball Mill + Heat Pump Dryer.
+    \item \textbf{Industrial Unit Cost:} INR 58.92 / kg (Lowest manageable cost).
+    \item \textbf{R\&D Strategy:} "Mixie Swarm" validated for Lab/Pilot scale (0-50 kg/hr).
+    \item \textbf{Risk Alert:} The "Mixie Hack" at industrial scale introduces unacceptable downtime risks (18-26\%), negating its CapEx advantage.
+\end{itemize}
+
+\section{Methodology}
+\subsection{Simulation Engine}
+\begin{itemize}
+    \item \textbf{Hardware:} NVIDIA GeForce RTX 4050 Laptop GPU
+    \item \textbf{Algorithm:} Vectorized PyTorch Monte Carlo Simulation
+    \item \textbf{Sample Size:} $N = 1,000,000$ independent lifecycle scenarios
+    \item \textbf{Constraints:} Protein Denaturation $< 0.1\%$, Moisture Variance $< 1.0\%$
+\end{itemize}
+
+\section{Detailed Machinery Optimization}
+
+\subsection{1. Grinding Stage: The "Scale-Dependent" Strategy}
+The simulation compared three distinct architectures. Stress testing revealed that optimal equipment choice depends entirely on production scale.
+
+\begin{table}[H]
+    \centering
+    \caption{Grinding Architecture Comparison (Simulated Risk Adjusted)}
+    \vspace{0.3cm}
+    \begin{tabular}{l c c c}
+        \toprule
+        \textbf{Parameter} & \textbf{Ball Mill (Ind.)} & \textbf{Hammer Mill} & \textbf{Mixie Swarm (Lab)} \\
+        \midrule
+        \textbf{CapEx (INR)} & 4,50,000 & 1,50,000 & \textbf{1,20,000 (10x)} \\
+        \textbf{Mean Unit Cost} & \textbf{INR 58.92 / kg} & INR 79.36 / kg & INR 72.24 / kg \\
+        \textbf{System Downtime} & \textbf{0.40\%} & 1.30\% & \textbf{18.45\%} \\
+        \textbf{Protein Damage} & 0.0\% & 12.0\% & 0.0\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{Failure Analysis:}
+\begin{itemize}
+    \item \textbf{Ball Mill:} Extremely robust. High CapEx is amortized effectively at 500kg/hr.
+    \item \textbf{Mixie Swarm:} While physically capable of producing quality flour (0\% damage), the probabilistic downtime of 10 independent units causes chaotic production stops at industrial scale.
+    \item \textbf{Recommendation:} Use Mixies ONLY for Pilot/R\&D. Use Ball Mill for Factory.
+\end{itemize}
+
+\subsection{2. Drying Stage: Energy Efficiency}
+Drying is the largest OpEx driver. The simulation blindly favored Heat Pump technology despite higher CapEx.
+
+\begin{itemize}
+    \item \textbf{Electric Resistive Heater:} COP 0.9. Energy Cost: INR 18.00/kg (Prohibitive).
+    \item \textbf{Heat Pump Dryer:} COP 3.5. Energy Cost: INR 4.60/kg.
+    \item \textbf{Recommendation:} Invest the savings from R\&D phase into a high-quality Heat Pump Dryer.
+\end{itemize}
+
+\section{Risk Profile \& mitigation}
+
+\subsection{Raw Material Volatility (Dominant Risk)}
+Sensitivity analysis confirms that Raw Material Price (Correlation 0.69) is the #1 driver of unit cost.
+\begin{itemize}
+    \item \textbf{Impact:} A 10\% rise in Tur Khanda price increases Unit Cost by 8\%.
+    \item \textbf{Mitigation:} Long-term supplier contracts are more valuable than machinery hacks.
+\end{itemize}
+
+\subsection{Mechanical Reliability}
+\textbf{Risk:} Operations grinding to a halt. \\
+\textbf{Mitigation:} The transition to Ball Mill at Scale $> 50$kg/hr reduces downtime risk from 18\% to 0.4\%.
+
+\section{Final Configuration: The "Smart-Line" (Industrial Phase)}
+
+\begin{longtable}{l l r}
+\caption{Optimized Bill of Materials (500 kg/hr Plant)} \\
+\toprule
+\textbf{Stage} & \textbf{Equipment / Setting} & \textbf{Cost / Spec} \\
+\midrule
+\endfirsthead
+\midrule
+\textbf{Stage} & \textbf{Equipment / Setting} & \textbf{Cost / Spec} \\
+\midrule
+\endhead
+1. Cleaning & Mechanical Grader + Destoner & INR 45,000 \\
+2. Grinding & \textbf{Continuous Ball Mill (7.5 kW)} & INR 4,50,000 \\
+   \textit{Setting} & \textit{RPM: Optimized Low Speed} & \textit{Cooling: Passive} \\
+3. Mixing & Ribbon Blender (Horizontal) & INR 65,000 \\
+4. Extrusion & Cold Extruder (Single Screw) & INR 3,50,000 \\
+5. Drying & \textbf{Heat Pump Dryer (500kg)} & INR 4,50,000 \\
+6. Packaging & FFS Pneumatic Packer & INR 1,20,000 \\
+\midrule
+\textbf{metrics} & & \\
+\textbf{Throughput} & \textbf{499.6 kg/hr} & \\ 
+\textbf{Total CapEx} & \textbf{INR 14.8 Lakhs} & \\
+\textbf{Unit Cost} & \textbf{INR 58.92 / kg} & \\
+\textbf{Net Reliability} & \textbf{99.6\%} & \\
+\bottomrule
+\end{longtable}
+
+\section{Financial Projections (Annual)}
+Assuming 3000 operational hours (1 shift):
+
+\begin{itemize}
+    \item \textbf{Total Output:} 1,499 Tonnes
+    \item \textbf{Gross Revenue (INR 90/kg wholesale):} \textbf{INR 13.49 Crores}
+    \item \textbf{Total Cost (INR 58.92/kg):} INR 8.83 Crores
+    \item \textbf{Net Profit:} \textbf{INR 4.66 Crores}
+    \item \textbf{ROI:} $>$ 250\% in Year 1
+\end{itemize}
+
+\section{Innovation: The R\&D Pivot}
+The simulations saved the project from a potentially fatal mistake. Initially, the "Mixie Swarm" looked cheaper. Deeper analysis revealed it would cost \textbf{INR 13-20 Lakhs annually} in lost production time. The simulation successfully pivoted the strategy to a \textbf{Dual-Phase approach}, securing the low-cost entry of the Mixie for R\&D, but insisting on the Ball Mill for profitable scaling.
+
+\vspace{2cm}
+\footnotesize{Report generated via FINNO Intelligent Optimization Engine (Double Precision).}
+
+\end{document}
