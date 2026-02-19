@@ -31,3 +31,33 @@ python main_optimizer.py
 - **Modular Physics**: Temperature rise and protein denaturation modeled explicitly.
 - **Risk-Weighted**: Includes catastrophic failure probabilities in the objective.
 - **Cost-Benefit Analysis**: Amortizes R&D and Capital expenses correctly.
+
+## Phase 1 Screening (Formulation Optimization)
+
+To run the formulation screening simulation:
+
+```bash
+python -m production_optimizer.phase1_screening
+```
+
+This module targets the optimal recipe balance (Cost < ₹57/kg, Protein > 15%, Binding Score > 3.0).
+
+## Phase 2 Bench Validation (Manual Process Variability)
+
+To simulate manual bench trial conditions (mixing inconsistency, drying defects):
+
+```bash
+python -m production_optimizer.phase2_bench
+```
+
+This module identifies failure points (18% risk of disintegration) due to manual handling, leading to a safer recommended formulation for physical trials.
+
+## Phase 3 Contract Extrusion (Virtual Process Window)
+
+To validate industrial feasibility without buying a machine:
+
+```bash
+python -m production_optimizer.phase3_extrusion
+```
+
+Simulates 1,000,000 machine runs to find "Safe Operating Parameters" for a rented extruder (~350 RPM, 123°C).

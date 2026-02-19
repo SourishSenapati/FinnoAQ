@@ -4,12 +4,20 @@ Optimizes the process for 1kg Laboratory Scales.
 Focuses on transient thermal effects and manual variability.
 """
 import torch
-from .core.config import (
-    SPECIFIC_HEAT_PULSE_KJ_KG_C,
-    ACTIVATION_ENERGY_J_MOL,
-    FREQUENCY_FACTOR_A,
-    GAS_CONSTANT_J_MOL_K
-)
+try:
+    from .core.config import (
+        SPECIFIC_HEAT_PULSE_KJ_KG_C,
+        ACTIVATION_ENERGY_J_MOL,
+        FREQUENCY_FACTOR_A,
+        GAS_CONSTANT_J_MOL_K
+    )
+except ImportError:
+    from core.config import (
+        SPECIFIC_HEAT_PULSE_KJ_KG_C,
+        ACTIVATION_ENERGY_J_MOL,
+        FREQUENCY_FACTOR_A,
+        GAS_CONSTANT_J_MOL_K
+    )
 
 
 class RndSimulationModule:
@@ -125,30 +133,63 @@ class RndSimulationModule:
             "temp_rise_c": delta_t
         }
 
-    def run_analysis(self, num_samples=100_000):
-        """Runs the R&D analysis."""
+    def run_analysis(self, num_samples=100_000_000):
+        """Runs the R&D analysis with Batching for 100M simulations."""
+        BATCH_SIZE = 5_000_000  # 5M per chunk to be safe on 4050
+        num_batches = (num_samples // BATCH_SIZE) + 1
+
         print(
-            f"\nRunning R&D Simulation (1kg Batch) - {num_samples} Iterations...")
-        results = self.simulate_1kg_batch(num_samples)
+            f"\nRunning R&D Simulation (1kg Batch) - {num_samples} Iterations ({num_batches} Chunks)...")
 
-        # Metrics
-        mean_denat = torch.mean(results["denaturation"]).item()
-        p95_denat = torch.quantile(results["denaturation"], 0.95).item()
+        # Aggregators
+        total_denat = 0.0
+        max_denat = 0.0
+        total_cv = 0.0
+        total_cost = 0.0
+        total_temp = 0.0
+        max_temp = 0.0
 
-        mean_cv = torch.mean(results["cv"]).item()
-        # p95_cv = torch.quantile(results["cv"], 0.95).item() # Unused
+        processed_samples = 0
 
-        mean_cost = torch.mean(results["total_cost_batch"]).item()
+        for i in range(num_batches):
+            current_batch = min(BATCH_SIZE, num_samples - processed_samples)
+            if current_batch <= 0:
+                break
 
-        mean_temp_rise = torch.mean(results["temp_rise_c"]).item()
-        p95_temp = torch.quantile(results["temp_rise_c"], 0.95).item()
+            results = self.simulate_1kg_batch(current_batch)
 
-        print("\n=== R&D METRICS (1kg Scale) ===")
+            # Accumulate Means (Weighted)
+            total_denat += torch.sum(results["denaturation"]).item()
+            total_cv += torch.sum(results["cv"]).item()
+            total_cost += torch.sum(results["total_cost_batch"]).item()
+            total_temp += torch.sum(results["temp_rise_c"]).item()
+
+            # Track Extremes
+            max_denat = max(max_denat, torch.max(
+                results["denaturation"]).item())
+            max_temp = max(max_temp, torch.max(results["temp_rise_c"]).item())
+
+            processed_samples += current_batch
+            # print(f"   Chunk {i+1}/{num_batches} done...", end='\r')
+
+        mean_denat = total_denat / processed_samples
+        mean_cv = total_cv / processed_samples
+        mean_cost = total_cost / processed_samples
+        mean_temp_rise = total_temp / processed_samples
+
+        print("\n=== R&D METRICS (1kg Scale - 100M Extreme Sim) ===")
         print(f"Mean Denaturation: {mean_denat*100:.4f}%")
-        print(f"95% Worst-Case Denaturation: {p95_denat*100:.4f}%")
+        print(f"Worst-Case Denaturation Seen: {max_denat*100:.4f}%")
         print(f"Mean Mixing CV: {mean_cv*100:.2f}% (Target < 5%)")
         print(f"Mean Batch Cost: INR {mean_cost:.2f}")
         print(f"Mean Temp Rise: +{mean_temp_rise:.1f} C")
-        print(f"95% Max Temp Rise: +{p95_temp:.1f} C")
+        print(f"Absolute Max Temp Rise: +{max_temp:.1f} C")
 
-        return results
+        return results  # Returns last batch results for structure compatibility
+
+
+if __name__ == "__main__":
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f"R&D Simulation Engine Initialized on {device}")
+    sim = RndSimulationModule(device)
+    sim.run_analysis()

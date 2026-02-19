@@ -1,50 +1,71 @@
-"""
-Unified Six Sigma Simulation Dashboard.
-Executes high-fidelity digital twins for all 5 project verticals.
-Validates:
-1. Physico-Chemical compliance.
-2. Process Capability (Cpk/Sigma).
-3. Economic viability.
-"""
+
+import subprocess
+import sys
 import os
 import time
 
-print("--- FINNO PROJECTS: ADVANCED R&D SIMULATION SUITE ---")
-print("Initializing GPU Acceleration Clusters...\n")
-time.sleep(1)
-
-projects = [
-    ("Toor Dal Analogue", "d:/PROJECT/FINNO PROJECTS/toor_dal/simulation_toor_dal_v3.py"),
-    ("Sundarban Honey", "d:/PROJECT/FINNO PROJECTS/sundarban_honey/simulation_honey.py"),
-    ("Mustard Honey Value Add",
-     "d:/PROJECT/FINNO PROJECTS/mustard_honey/simulation_value_add.py"),
-    ("Ghee Bilona Optimization",
-     "d:/PROJECT/FINNO PROJECTS/ghee_bilona/simulation_ghee.py"),
-    ("Atta Bio-Enzymatic", "d:/PROJECT/FINNO PROJECTS/atta/simulation_atta.py"),
-    ("Mustard Oil Herbal", "d:/PROJECT/FINNO PROJECTS/mustard_oil/simulation_oil.py"),
-    ("Machinery & Build-vs-Buy",
-     "d:/PROJECT/FINNO PROJECTS/machinery/cost_analysis_engine_v3.py"),
+# List of simulation scripts to run
+simulations = [
+    r"d:\PROJECT\FINNO PROJECTS\toor_dal\production_optimizer\rnd_simulation.py",  # Toor Dal R&D
+    # Toor Dal Bench
+    r"d:\PROJECT\FINNO PROJECTS\toor_dal\production_optimizer\phase2_bench.py",
+    # Atta (Wheat/Cassava)
+    r"d:\PROJECT\FINNO PROJECTS\atta\simulation_atta.py",
+    # Sundarban Honey
+    r"d:\PROJECT\FINNO PROJECTS\sundarban_honey\simulation_honey.py",
+    # Mustard Honey (Diversified)
+    r"d:\PROJECT\FINNO PROJECTS\mustard_honey\simulation_mustard_honey.py",
+    # Ghee Bilona
+    r"d:\PROJECT\FINNO PROJECTS\ghee_bilona\simulation_ghee.py",
+    # Mustard Oil (Herbal)
+    r"d:\PROJECT\FINNO PROJECTS\mustard_oil\simulation_oil.py"
 ]
 
-for name, path in projects:
-    print(f"\n[{name.upper()}] >>> LAUNCHING DIGITAL TWIN <<<")
-    print("=" * 60)
 
-    if os.path.exists(path):
-        start_t = time.time()
-        # Using 'py' launcher for Windows compatibility
-        ret = os.system(f'py "{path}"')
+def run_simulation(script_path):
+    print(f"\n{'='*60}")
+    print(f"RUNNING: {os.path.basename(script_path)}")
+    print(f"{'='*60}")
 
-        if ret != 0:
-            print(
-                f"!!! CRITICAL FAIL: SIMULATION CRASHED (Exit Code {ret}) !!!")
-        else:
-            print(
-                f">>> {name} Simulation Complete in {time.time()-start_t:.2f}s <<<")
-    else:
-        print(f"Error: Simulation file not found at {path}")
+    if not os.path.exists(script_path):
+        print(f"ERROR: File not found: {script_path}")
+        return
 
-    print("=" * 60)
-    time.sleep(0.5)
+    # Use the same python interpreter
+    python_exe = sys.executable
 
-print("\nAll 6 Modules Validated. Ready for Pilot Production.")
+    start_time = time.time()
+    try:
+        # Run as subprocess to isolate environments
+        result = subprocess.run(
+            [python_exe, script_path],
+            check=True,
+            capture_output=True,
+            text=True,
+            cwd=os.path.dirname(script_path)  # Run from the script's directory
+        )
+        print(result.stdout)
+        if result.stderr:
+            print("STDERR Warning/Error:")
+            print(result.stderr)
+
+    except subprocess.CalledProcessError as e:
+        print(f"FAILED: {script_path}")
+        print("OUTPUT:")
+        print(e.stdout)
+        print("ERROR:")
+        print(e.stderr)
+
+    print(f"Finished in {time.time() - start_time:.2f} seconds.")
+
+
+if __name__ == "__main__":
+    print("STARTING FULL R&D SIMULATION SUITE (GPU ACCELERATED)")
+    print("Targeting: Toor Dal, Honey, Ghee, Atta, Mustard Oil")
+
+    total_start = time.time()
+    for sim in simulations:
+        run_simulation(sim)
+
+    print(
+        f"\nALL SIMULATIONS COMPLETED in {time.time() - total_start:.2f} seconds.")

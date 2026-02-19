@@ -1,0 +1,38 @@
+--- MULTIGRAIN ATTA SIMULATION (GPU: cuda) ---
+Phase 1: Formula Optimization (100000000 Iterations in 20 chunks)...
+--- RESULTS ---
+Simulated Blends: 100000000
+Valid Blends Found: 3781480 (3.7815%)
+Execution Time: 0.83s
+
+--- OPTIMAL 'JUGAAD' FORMULATION ---
+Cost: INR 24.71/kg (Target < 30)
+Composition:
+  - Wheat Soft: 65.0%
+  - Wheat Hard: 10.6%
+  - Maize: 12.0%
+  - Bajra: 2.2%
+  - Jowar: 0.1%
+  - Ragi: 0.4%
+  - Soybean Nongmo: 0.6%
+  - Vital Wheat Gluten: 0.2%
+  - Oats: 0.3%
+  - Spent Turmeric: 2.0%
+  - Spent Fenugreek: 5.8%
+  - Spent Cumin: 0.8%
+
+--- FINAL MACROS ---
+Protein: 11.6% (Target > 12%)
+Fiber:   4.5% (Target > 10%) - Boosted by Spent Spices!
+
+--- MACHINERY ECONOMICS ---
+Lab Scale (5kg/hr):
+  - Power: 0.50 kW
+  - Cost:  INR 1.20/kg
+Industrial Scale (2000kg/hr):
+  - Power: 34.6 kW
+  - Cost:  INR 0.21/kg
+
+--- FINAL VERDICT ---
+Total Factory Gate Cost: INR 26.42/kg
+Retail Feasibility @ 30 INR: TIGHT margin (Direct to Consumer only)

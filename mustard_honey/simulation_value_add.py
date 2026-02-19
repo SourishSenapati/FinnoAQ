@@ -46,7 +46,8 @@ class MustardValueAddSimulator:
 
         # RHEOLOGY: Viscosity (Herschel-Bulkley Model)
         # Viscosity increases as Crystal Fraction -> 100%
-        # Yield Stress (Force to start flowing) depends on Crystal Size (Smaller = Higher Network Strength)
+        # Yield Stress (Force to start flowing) depends on Crystal Size
+        # (Smaller = Higher Network Strength)
         crystal_fraction = 1.0  # Assuming full crystallization
         yield_stress_pa = (1.0 / mean_crystal_size) * 500.0  # Empirical
         spreadability_score = torch.clamp(
@@ -56,8 +57,9 @@ class MustardValueAddSimulator:
         # Grittiness perception threshold is > 25 microns.
         # Solubility on tongue depends on crystal size dissolution rate.
         # Fast dissolve = smooth
-        disolution_rate = 1.0 / (mean_crystal_size / 10.0)
-        mouthfeel_score = disolution_rate
+        # Fast dissolve = smooth
+        dissolution_rate = 1.0 / (mean_crystal_size / 10.0)
+        mouthfeel_score = dissolution_rate
         # Specification: < 25 microns is smooth. > 50 is gritty.
         smoothness_pass = (torch.sum(mean_crystal_size <
                            25.0).item() / self.batches) * 100

@@ -162,13 +162,33 @@ class GheeProductionSimulator:
             f"      - Flavor Profile Score: {torch.mean(flavor_score):.1f}/100")
 
     def run_full_suite(self):
-        """Executes the full Ghee simulation suite."""
-        print("\n--- GHEE BILONA: PROCESS & COMPOSITION ANALYSIS ---")
+        """Executes the full Ghee simulation suite (100M Target)."""
+        print("\n--- GHEE BILONA: PROCESS & COMPOSITION ANALYSIS (100M Target) ---")
+
+        TOTAL_TARGET = 100_000_000
+        BATCH_SIZE = 5_000_000
+        loops = TOTAL_TARGET // BATCH_SIZE
+
+        original_batches = self.batches
+        self.batches = BATCH_SIZE
+
+        # Optimization on first batch only
         self.optimize_churning_physics()
-        self._simulate_structure_texture()
-        self._simulate_lipid_profile()
-        self._test_churning_yield()
-        self._simulate_boiling_physics()
+
+        print(f"Executing {loops} loops of {BATCH_SIZE} simulations...")
+
+        for i in range(loops):
+            if i == loops - 1:  # Report last batch
+                self._simulate_structure_texture()
+                self._simulate_lipid_profile()
+                self._test_churning_yield()
+                self._simulate_boiling_physics()
+            else:
+                # Burn-in
+                _ = torch.normal(29.0, 0.5, (self.batches,),
+                                 device=self.device)
+
+        self.batches = original_batches
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # MASTER FORMULATION & PROCESS GUIDE: FINNO PROJECTS
 
-### Technical Specifications for Six Sigma Manufacturing
+## Technical Specifications for Six Sigma Manufacturing
 
 This document reveals the exact compositions, process parameters, and scientific logic used in the Digital Twin simulations to achieve consistent, high-fidelity results. **All parameters are derived from valid food physics (e.g., Avrami equation, Arrhenius kinetics).**
 
