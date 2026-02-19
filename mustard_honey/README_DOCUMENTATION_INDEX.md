@@ -12,9 +12,9 @@
 
 ## Product Portfolio (Simulated)
 
-1.  **Creamed Honey** (Spreadable): Smooth texture <20 microns.
-2.  **Honey Mead** (Alcoholic): 12-14% ABV, Low fermentation risk.
-3.  **Honey Jelly** (Vegan): High-pectin spread, stable gel structure.
+1. **Creamed Honey** (Spreadable): Smooth texture <20 microns.
+2. **Honey Mead** (Alcoholic): 12-14% ABV, Low fermentation risk.
+3. **Honey Jelly** (Vegan): High-pectin spread, stable gel structure.
 
 ## Value Engineering (Cost vs. Price)
 
