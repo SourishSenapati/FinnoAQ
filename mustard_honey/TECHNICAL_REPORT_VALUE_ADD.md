@@ -21,7 +21,7 @@
 ## 4. Product 3: Honey Jelly (Vegan)
 - **Chemistry:** HM Pectin Gelation at Low pH (3.2).
 - **Key Metric:** Bloom Strength 91.3 g.
-- **Stability:** Syneresis Risk 2.24% (Safe).
+- **Stability:** Syneresis Risk 2.31% (Safe).
 - **Competitive Edge:** 100% Clean Label (No Gelatin, No Corn Syrup).
 
 ## 5. Conclusion
