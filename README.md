@@ -19,6 +19,8 @@ Advanced Physics-Based Simulations and Machinery Optimization Engine for:
 - [**Simulation Logs**](./SIMULATION_LOGS.md): Detailed output of the latest validation run.
 - [**Machinery Optimization Report**](./machinery/MACHINERY_REPORT.md): Cost analysis for Tray Dryers, Cold Press, and Churners.
 - [**Optimization Results**](./OPTIMIZATION_RESULTS.md): Summary of process parameter tuning.
+- [**Ghee Bilona Technical Report**](./ghee_bilona/TECHNICAL_REPORT_GHEE.md): 6-Sigma validation of 100M batch simulation.
+- [**Mustard Value-Add Report**](./mustard_honey/TECHNICAL_REPORT_VALUE_ADD.md): Feasibility study for Creamed Honey, Mead, and Jelly.
 
 ## Usage
 
