@@ -38,4 +38,4 @@
 
 ---
 
-_Maintained by Finno Digital Twin Engine_
+**Maintained by Finno Digital Twin Engine**
