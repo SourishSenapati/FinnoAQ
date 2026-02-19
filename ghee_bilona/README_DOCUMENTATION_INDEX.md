@@ -42,4 +42,4 @@
 
 ---
 
-**Maintained by Finno Digital Twin Engine**
+Maintained by Finno Digital Twin Engine
