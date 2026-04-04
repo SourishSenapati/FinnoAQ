@@ -1,0 +1,6 @@
+[MASTER]
+extension-pkg-whitelist=torch
+init-hook='import sys; sys.path.append("d:/PROJECT/FINNO PROJECTS")'
+
+[MESSAGES CONTROL]
+disable=C0111, R0903, C0103, W0611
