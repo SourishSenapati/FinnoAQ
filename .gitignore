@@ -55,5 +55,10 @@ $RECYCLE.BIN/
 
 # Temporary & Locks
 run.lock
+*.lock
 *.tmp
 *.log
+logs/
+toor_dal_optimization/logs/
+state/*.lock
+

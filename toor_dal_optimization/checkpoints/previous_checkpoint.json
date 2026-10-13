@@ -1,7 +1,7 @@
 {
   "run_id": "TEST_RECOVERY_01",
-  "step": 1,
-  "data": "initial",
-  "checkpoint_timestamp": "2026-10-13T15:01:27.219662+00:00",
-  "checkpoint_sha256": "36566755be91e77b91b082862e74efa2d5bea939e35f7ea36e68c648b0c85019"
+  "step": 2,
+  "data": "updated",
+  "checkpoint_timestamp": "2026-10-13T15:41:00.722079+00:00",
+  "checkpoint_sha256": "b9562c97f0dfe2852fa414a470846ce2e9cb381e4a852fbd90fd39bb70b858d1"
 }

@@ -256,6 +256,8 @@ class ClosedLoopDigitalTwin:
         return {
             "throughput_tonnes_per_hour": throughput_tonnes_per_hour,
             "treatment_name": treatment_name,
+            "twin_operational_level": "OFFLINE_SIMULATION",
+            "empirical_verification_status": "DATA_READINESS_ONLY_PENDING_PILOT",
             "mass_balance": {
                 "raw_grain_feed_kg_hr": feed_rate_kg_hr,
                 "tempering_water_added_kg_hr": round(tempered_water_added_kg_hr, 1),

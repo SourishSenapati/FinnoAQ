@@ -13,11 +13,14 @@ class DatasetKind(str, Enum):
     OBSERVED_RAW = "observed_raw"
     DERIVED_FROM_OBSERVED = "derived_from_observed"
     PUBLISHED_LITERATURE = "published_literature"
+    DIGITIZED_FROM_FIGURE = "digitized_from_figure"
+    OFFICIAL_STATISTICS = "official_statistics"
     ASSUMPTION = "assumption"
     HYPOTHESIS = "hypothesis"
     SIMULATION = "simulation"
     SYNTHETIC_TEST_ONLY = "synthetic_test_only"
     MISSING = "missing"
+    UNVERIFIED = "unverified"
 
 class ProvenanceRecord(BaseModel):
     source_file: str

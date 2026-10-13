@@ -1,0 +1,49 @@
+{
+  "dataset_metadata": {
+    "title": "Peleg Hydration Model Constants for Legumes Literature Reference",
+    "dataset_kind": "derived_from_observed",
+    "peleg_equation": "M(t) = M0 + t / (k1 + k2 * t)",
+    "k1_definition": "Peleg rate constant (min / % moisture dry basis)",
+    "k2_definition": "Peleg capacity constant (% moisture dry basis ^ -1)",
+    "equilibrium_moisture_equation": "M_eq = M0 + 1 / k2",
+    "quarantine_status": "LITERATURE_EXTERNAL_DATA"
+  },
+  "literature_constants": [
+    {
+      "species": "Cajanus cajan (Pigeon pea cotyledon)",
+      "temperature_c": 25.0,
+      "k1_min_per_pct": 0.88,
+      "k2_per_pct": 0.0078,
+      "m0_pct_db": 10.5,
+      "m_eq_calc_pct_db": 138.7,
+      "reference": "Singh & Goswami (2000), J. Food Eng."
+    },
+    {
+      "species": "Cajanus cajan (Pigeon pea cotyledon)",
+      "temperature_c": 50.0,
+      "k1_min_per_pct": 0.36,
+      "k2_per_pct": 0.0075,
+      "m0_pct_db": 10.5,
+      "m_eq_calc_pct_db": 143.8,
+      "reference": "Singh & Goswami (2000), J. Food Eng."
+    },
+    {
+      "species": "Cicer arietinum (Chickpea)",
+      "temperature_c": 25.0,
+      "k1_min_per_pct": 1.12,
+      "k2_per_pct": 0.0082,
+      "m0_pct_db": 9.8,
+      "m_eq_calc_pct_db": 131.7,
+      "reference": "Turhan et al. (2002), J. Food Eng."
+    },
+    {
+      "species": "Phaseolus vulgaris (Common bean)",
+      "temperature_c": 25.0,
+      "k1_min_per_pct": 1.45,
+      "k2_per_pct": 0.0071,
+      "m0_pct_db": 11.2,
+      "m_eq_calc_pct_db": 152.0,
+      "reference": "Sayar et al. (2001), J. Food Eng."
+    }
+  ]
+}

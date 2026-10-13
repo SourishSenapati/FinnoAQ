@@ -1,0 +1,55 @@
+{
+  "regulatory_framework": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011",
+  "authority": "Food Safety and Standards Authority of India (FSSAI)",
+  "category": "Regulation 2.4: Cereals and Cereal Products - Pulses",
+  "applicable_commodity": "Toor Dal (Dehulled split Cajanus cajan / Red gram)",
+  "dataset_kind": "official_statistics",
+  "standards": {
+    "moisture_max_pct": {
+      "limit": 14.0,
+      "units": "m/m pct",
+      "test_method": "IS 4333 (Part 2) / Hot air oven 103C 72h",
+      "mandatory": true
+    },
+    "foreign_matter_total_max_pct": {
+      "limit": 1.0,
+      "units": "m/m pct",
+      "sub_limits": {
+        "inorganic_matter_max_pct": 0.25
+      },
+      "mandatory": true
+    },
+    "other_edible_grains_max_pct": {
+      "limit": 3.0,
+      "units": "m/m pct",
+      "mandatory": true
+    },
+    "damaged_or_discoloured_grains_max_pct": {
+      "limit": 5.0,
+      "units": "m/m pct",
+      "mandatory": true
+    },
+    "weevilled_grains_max_pct": {
+      "limit": 3.0,
+      "units": "count pct",
+      "mandatory": true
+    },
+    "uric_acid_max_mg_per_kg": {
+      "limit": 100.0,
+      "units": "mg/kg",
+      "mandatory": true
+    },
+    "total_aflatoxins_b1_b2_g1_g2_max_ppb": {
+      "limit": 15.0,
+      "units": "micrograms/kg (ppb)",
+      "regulation_ref": "Food Safety and Standards (Contaminants, Toxins and Residues) Regulations, 2011",
+      "mandatory": true
+    },
+    "prohibited_substances": [
+      "Artificial food colors (Tartrazine, Sunset Yellow, etc.)",
+      "Mineral oil polishing",
+      "Non-food-grade polishing agents",
+      "Chemical preservatives not permitted under FSSAI Schedule"
+    ]
+  }
+}

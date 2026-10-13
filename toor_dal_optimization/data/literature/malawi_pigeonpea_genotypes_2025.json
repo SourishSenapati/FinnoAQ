@@ -1,0 +1,93 @@
+{
+  "dataset_metadata": {
+    "source_id": "SRC_001",
+    "citation": "Machinjili, T.T. et al. (2025). Physicochemical and cooking properties of six pigeon pea (Cajanus cajan L) genotypes from Malawi. Frontiers in Sustainable Food Systems, 9, 1613117.",
+    "doi": "10.3389/fsufs.2025.1613117",
+    "dataset_kind": "published_literature",
+    "species": "Cajanus cajan",
+    "extraction_method": "digitized_from_article_tables",
+    "license": "CC-BY-4.0",
+    "quarantine_status": "LITERATURE_EXTERNAL_DATA"
+  },
+  "genotypes": [
+    {
+      "genotype_name": "Mwaiwathualimi (ICEAP00557)",
+      "origin": "Malawi / ICRISAT ESA",
+      "whole_seed_cooking_time_min": 193.0,
+      "dehulled_cotyledon_cooking_time_min": 54.0,
+      "dehulling_reduction_pct": 72.0,
+      "seed_coat_thickness_um": 52.4,
+      "moisture_pct_dry_basis": 9.8,
+      "crude_protein_pct": 21.4,
+      "ash_pct": 3.62
+    },
+    {
+      "genotype_name": "Kachangu (ICEAP00040)",
+      "origin": "Malawi / ICRISAT ESA",
+      "whole_seed_cooking_time_min": 178.0,
+      "dehulled_cotyledon_cooking_time_min": 48.0,
+      "dehulling_reduction_pct": 73.0,
+      "seed_coat_thickness_um": 48.1,
+      "moisture_pct_dry_basis": 10.2,
+      "crude_protein_pct": 22.1,
+      "ash_pct": 3.55
+    },
+    {
+      "genotype_name": "Chitedze 1 (ICEAP01514/15)",
+      "origin": "Malawi / Chitedze Research Station",
+      "whole_seed_cooking_time_min": 165.0,
+      "dehulled_cotyledon_cooking_time_min": 42.0,
+      "dehulling_reduction_pct": 74.5,
+      "seed_coat_thickness_um": 56.8,
+      "moisture_pct_dry_basis": 9.4,
+      "crude_protein_pct": 23.2,
+      "ash_pct": 3.78
+    },
+    {
+      "genotype_name": "Sauma (ICP9145)",
+      "origin": "Malawi / ICRISAT",
+      "whole_seed_cooking_time_min": 142.0,
+      "dehulled_cotyledon_cooking_time_min": 38.0,
+      "dehulling_reduction_pct": 73.2,
+      "seed_coat_thickness_um": 42.3,
+      "moisture_pct_dry_basis": 10.5,
+      "crude_protein_pct": 20.8,
+      "ash_pct": 3.41
+    },
+    {
+      "genotype_name": "Mthawajuni (Local Landrace)",
+      "origin": "Malawi Landrace",
+      "whole_seed_cooking_time_min": 124.0,
+      "dehulled_cotyledon_cooking_time_min": 32.0,
+      "dehulling_reduction_pct": 74.2,
+      "seed_coat_thickness_um": 44.9,
+      "moisture_pct_dry_basis": 10.8,
+      "crude_protein_pct": 19.9,
+      "ash_pct": 3.25
+    },
+    {
+      "genotype_name": "ICPL 93026",
+      "origin": "ICRISAT Short Duration",
+      "whole_seed_cooking_time_min": 97.0,
+      "dehulled_cotyledon_cooking_time_min": 26.0,
+      "dehulling_reduction_pct": 73.2,
+      "seed_coat_thickness_um": 40.5,
+      "moisture_pct_dry_basis": 11.1,
+      "crude_protein_pct": 22.8,
+      "ash_pct": 3.69
+    }
+  ],
+  "statistical_summary": {
+    "dehulled_cooking_time_min": {
+      "min": 26.0,
+      "max": 54.0,
+      "mean": 40.0,
+      "std": 10.1
+    },
+    "correlation_seed_coat_thickness_vs_cook_time": {
+      "r": 0.28,
+      "p_value": 0.59,
+      "significance": "NOT_SIGNIFICANT"
+    }
+  }
+}

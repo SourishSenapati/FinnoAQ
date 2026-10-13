@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "system": "Dream-RSI-inspired discovery layer",
-  "updated_at": "2026-10-13T14:20:42.794787",
+  "updated_at": "2026-10-13T15:42:01.565956+00:00",
   "nodes": {
     "NODE_P1_001": {
       "node_id": "NODE_P1_001",
@@ -18,7 +18,7 @@
         "passed": 36
       },
       "failure_cause": null,
-      "created_at": "2026-10-13T14:20:41.924921"
+      "created_at": "2026-10-13T15:41:59.436884+00:00"
     },
     "NODE_P4_002": {
       "node_id": "NODE_P4_002",
@@ -35,7 +35,69 @@
         "passed": 2
       },
       "failure_cause": null,
-      "created_at": "2026-10-13T14:20:42.794709"
+      "created_at": "2026-10-13T15:41:59.436900+00:00"
+    },
+    "DETERM_001": {
+      "node_id": "DETERM_001",
+      "parent_id": null,
+      "task_hypothesis": "Test replay determinism",
+      "policy_version": "1.0.0",
+      "command_or_action": "deterministic_eval",
+      "config_hash": "HASH_A",
+      "data_hash": "HASH_B",
+      "cost_seconds": 0.0,
+      "status": "SUCCESS",
+      "test_results": {
+        "total": 5,
+        "passed": 5
+      },
+      "failure_cause": null,
+      "created_at": "2026-10-13T15:41:59.436904+00:00"
+    },
+    "FAIL_NODE_001": {
+      "node_id": "FAIL_NODE_001",
+      "parent_id": null,
+      "task_hypothesis": "Same failing hypothesis",
+      "policy_version": "1.0.0",
+      "command_or_action": "failing_action",
+      "config_hash": "SAME_CONFIG",
+      "data_hash": "SAME_DATA",
+      "cost_seconds": 0.0,
+      "status": "FAILED",
+      "test_results": {},
+      "failure_cause": "Same numerical divergence error",
+      "created_at": "2026-10-13T15:41:59.436906+00:00"
+    },
+    "FAIL_NODE_002": {
+      "node_id": "FAIL_NODE_002",
+      "parent_id": null,
+      "task_hypothesis": "Same failing hypothesis",
+      "policy_version": "1.0.0",
+      "command_or_action": "failing_action",
+      "config_hash": "SAME_CONFIG",
+      "data_hash": "SAME_DATA",
+      "cost_seconds": 0.0,
+      "status": "FAILED",
+      "test_results": {},
+      "failure_cause": "Same numerical divergence error",
+      "created_at": "2026-10-13T15:41:59.436908+00:00"
+    },
+    "NODE_P6_001": {
+      "node_id": "NODE_P6_001",
+      "parent_id": null,
+      "task_hypothesis": "Offline Pareto candidate discovery under strict zero-leakage gating",
+      "policy_version": "1.0.0",
+      "command_or_action": "virtual_screening.py -> screen_and_optimize()",
+      "config_hash": "DA0DDFABBA294D118782EF1B9916349B8BD9CFB7CF9A093803CB409117454AA3",
+      "data_hash": "HARMONIZED_DATASETS",
+      "cost_seconds": 0.0,
+      "status": "SUCCESS",
+      "test_results": {
+        "pareto": 8,
+        "survivors": 47
+      },
+      "failure_cause": null,
+      "created_at": "2026-10-13T15:42:01.565867+00:00"
     }
   }
 }

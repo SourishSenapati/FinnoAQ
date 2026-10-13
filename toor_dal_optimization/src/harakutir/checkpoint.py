@@ -87,15 +87,18 @@ class CheckpointManager:
                 with open(self.lock_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
                 pid = data.get("pid")
-                # Check if process is actually running
-                if sys.platform == "win32":
-                    import ctypes
-                    kernel32 = ctypes.windll.kernel32
-                    handle = kernel32.OpenProcess(1, False, pid)
-                    if handle != 0:
-                        kernel32.CloseHandle(handle)
-                        print(f"Supervisor lock active by running PID {pid}. Cannot acquire lock.")
-                        return False
+                stored_run = data.get("run_id")
+                
+                import psutil
+                if pid and psutil.pid_exists(pid):
+                    try:
+                        proc = psutil.Process(pid)
+                        if proc.is_running() and proc.status() != psutil.STATUS_ZOMBIE:
+                            if stored_run != run_id or pid != os.getpid():
+                                print(f"Supervisor lock active by running PID {pid} (Run ID: {stored_run}). Cannot acquire lock.")
+                                return False
+                    except (psutil.NoSuchProcess, psutil.AccessDenied):
+                        pass
             except Exception:
                 pass
         

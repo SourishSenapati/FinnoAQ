@@ -1,0 +1,108 @@
+{
+  "graph_version": "4.0.0",
+  "project": "Harakutir Autonomous Pulse Engineering",
+  "updated_at": "2026-10-13T15:20:00Z",
+  "nodes": [
+    {
+      "id": "SRC_001",
+      "type": "Source",
+      "label": "Frontiers Sust Food Syst 2025 (Machinjili et al.)",
+      "doi": "10.3389/fsufs.2025.1613117",
+      "evidence_class": "DIRECT_CAJANUS_EVIDENCE"
+    },
+    {
+      "id": "STUDY_001",
+      "type": "Study",
+      "label": "Malawi Pigeon Pea Genotypes Physicochemical Study",
+      "parent_source": "SRC_001"
+    },
+    {
+      "id": "SPEC_001",
+      "type": "Species",
+      "name": "Cajanus cajan",
+      "variety_group": "East African ICRISAT ICEAP Lines"
+    },
+    {
+      "id": "MAT_001",
+      "type": "Material",
+      "description": "Dehulled split cotyledons (Toor Dal)"
+    },
+    {
+      "id": "MEAS_001",
+      "type": "Measurement",
+      "method": "Open boiling tactile softening endpoint"
+    },
+    {
+      "id": "RES_001",
+      "type": "Result",
+      "finding": "Cooking time 26.0 to 54.0 min dehulled; seed coat thickness has no correlation with cotyledon cooking time"
+    },
+    {
+      "id": "SRC_003",
+      "type": "Source",
+      "label": "Food Res Int 2022 (Wainaina et al.)",
+      "doi": "10.1016/j.foodres.2021.110862",
+      "evidence_class": "RELATED_PULSE_EVIDENCE"
+    },
+    {
+      "id": "HYP_001",
+      "type": "Hypothesis",
+      "label": "Middle Lamella Pectin-Cation Crosslinking Hypothesis",
+      "statement": "Pectin demethoxylation and calcium crosslinking in middle lamella matrix rate-limits cell separation during cooking"
+    },
+    {
+      "id": "PARAM_001",
+      "type": "ModelParameter",
+      "name": "Untreated softening rate constant k_soft_untreated",
+      "value": 0.0006685,
+      "units": "s^-1",
+      "basis": "Calibrated against 29.0 min (6 whistles) Tanzanian baseline"
+    },
+    {
+      "id": "PARAM_002",
+      "type": "ModelParameter",
+      "name": "Thermal diffusivity alpha_th",
+      "value": 1.3e-7,
+      "units": "m^2/s",
+      "basis": "Carslaw & Jaeger 1D slab Fourier series"
+    },
+    {
+      "id": "CAND_001",
+      "type": "CandidateDesign",
+      "name": "TRT_CATALYTIC_IR_001",
+      "parameters": {
+        "emitter_temp_c": 186.7,
+        "exposure_time_s": 38.1,
+        "tempering_moisture_pct": 5.32
+      },
+      "rationale": "High-intensity infrared induces micro-fissures and thermal softening of pectin gel without Maillard browning"
+    },
+    {
+      "id": "EXP_001",
+      "type": "ExperimentPlan",
+      "code": "PHASE2_OED_RUN_01",
+      "status": "PROPOSED_NOT_YET_EXECUTED",
+      "objective": "Discriminate middle lamella calcium-pectate vs starch retrogradation mechanisms on certified Tanzanian lot"
+    },
+    {
+      "id": "DEC_001",
+      "type": "Decision",
+      "status": "APPROVED_STAGE_GATE_STAGE_0",
+      "statement": "Advance catalytic infrared conditioning candidate to Phase 2 lab experimental validation; maintain DATA_READINESS_ONLY for physical assays"
+    }
+  ],
+  "edges": [
+    {"from": "SRC_001", "to": "STUDY_001", "relationship": "contains"},
+    {"from": "STUDY_001", "to": "SPEC_001", "relationship": "investigates"},
+    {"from": "SPEC_001", "to": "MAT_001", "relationship": "prepared_as"},
+    {"from": "MAT_001", "to": "MEAS_001", "relationship": "measured_by"},
+    {"from": "MEAS_001", "to": "RES_001", "relationship": "yields"},
+    {"from": "SRC_003", "to": "HYP_001", "relationship": "theoretically_supports"},
+    {"from": "RES_001", "to": "HYP_001", "relationship": "empirically_narrows"},
+    {"from": "HYP_001", "to": "PARAM_001", "relationship": "quantifies"},
+    {"from": "PARAM_001", "to": "CAND_001", "relationship": "informs_envelope"},
+    {"from": "PARAM_002", "to": "CAND_001", "relationship": "bounds_heat_transfer"},
+    {"from": "CAND_001", "to": "EXP_001", "relationship": "prioritizes_testing"},
+    {"from": "EXP_001", "to": "DEC_001", "relationship": "gates"}
+  ]
+}
