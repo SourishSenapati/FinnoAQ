@@ -64,7 +64,7 @@ def test_corrupted_checkpoint_recovery():
     shutil.rmtree(cp_mgr.checkpoint_dir, ignore_errors=True)
 
 def test_run_lock_acquisition_and_duplicate_prevention():
-    cp_mgr = CheckpointManager()
+    cp_mgr = CheckpointManager(state_dir="state/test_state")
     run_id_a = "RUN_PROCESS_A"
     run_id_b = "RUN_PROCESS_B"
     

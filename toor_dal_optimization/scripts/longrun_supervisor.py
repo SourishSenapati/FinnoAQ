@@ -74,6 +74,7 @@ from src.harakutir.digital_twin import ClosedLoopDigitalTwin
 from src.harakutir.harness import HarnessEngineeringManager
 from src.harakutir.research_registry import ResearchRegistry
 from src.harakutir.open_data_ingest import OpenDataIngestionEngine
+from src.harakutir.gpu_continuous_engine import ContinuousGPUEngine
 
 stop_requested = False
 
@@ -117,6 +118,9 @@ class LongrunSupervisor:
         self.discovery_tree = DiscoveryTree()
         self.report_gen = ReportGenerator()
         self.policy_evaluator = DreamRSIPolicyEvaluator()
+        self.gpu_engine = ContinuousGPUEngine(device="cuda:0")
+        self.total_grains_simulated = 0
+        self.last_gpu_result: Dict[str, Any] = {}
         
         # Anti-loop state
         self.task_attempts: Dict[str, int] = {}
@@ -146,6 +150,8 @@ class LongrunSupervisor:
             "current_task": current_task,
             "cycle_count": self.cycle_count,
             "status": status,
+            "total_grains_simulated": self.total_grains_simulated,
+            "last_gpu_result": self.last_gpu_result,
             "telemetry": telemetry
         }
         try:
@@ -174,10 +180,21 @@ class LongrunSupervisor:
                 
         # RAM memory pressure guard
         ram_pct = telemetry["ram_percent"]
-        if ram_pct >= 92.0:
-            print(f"[GUARD] Critical RAM pressure ({ram_pct}% >= 92%). Checkpointing and cooling down...")
+        if ram_pct >= 95.0:
+            print(f"[GUARD] Critical RAM pressure ({ram_pct}% >= 95%). Checkpointing and cooling down...")
+            import gc
+            gc.collect()
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+            except Exception:
+                pass
             time.sleep(15)
             return False
+        elif ram_pct >= 92.0:
+            import gc
+            gc.collect()
             
         return True
 
@@ -354,13 +371,15 @@ class LongrunSupervisor:
     def run_autonomous_loop(self):
         """
         Detached continuous execution loop.
-        Monitors hardware, writes atomic checkpoints every checkpoint_interval_sec,
+        Executes real vectorized coupled heat/mass transfer PDEs on NVIDIA CUDA hardware,
+        monitors hardware telemetry, writes atomic checkpoints every checkpoint_interval_sec,
         re-evaluates discovery tree, and updates heartbeat until duration expires or stopped.
         """
         global stop_requested
         print(f"\n[LONGRUN_SUPERVISOR] Entering autonomous background execution loop.")
         print(f"Target duration: {self.duration_hours}h | Hard deadline: {time.ctime(self.hard_deadline)}")
         print(f"Atomic checkpoint interval: {self.checkpoint_interval_sec}s")
+        print(f"GPU Compute Engine: {self.gpu_engine.device} (CUDA batch size: 50,000 grains/cycle)")
 
         last_checkpoint_time = time.time()
 
@@ -371,30 +390,60 @@ class LongrunSupervisor:
                 break
 
             # 1. Thermal and memory check
-            self.check_thermal_and_memory_guards()
+            if not self.check_thermal_and_memory_guards():
+                time.sleep(5)
+                continue
 
-            # 2. Update heartbeat
+            # 2. Execute GPU continuous physics simulation batch
             self.cycle_count += 1
-            self.write_heartbeat("Autonomous_Loop", f"CYCLE_{self.cycle_count}", "ACTIVE_BACKGROUND")
+            batch_size = 50000
+            try:
+                gpu_res = self.gpu_engine.execute_simulation_batch(
+                    batch_size=batch_size,
+                    time_steps=20,
+                    dt_seconds=2.0,
+                    bath_temp_c=100.0
+                )
+                self.total_grains_simulated = self.gpu_engine.total_grains_computed
+                self.last_gpu_result = gpu_res
 
-            # 3. Checkpoint check
+                # Periodic log output every 5 cycles
+                if self.cycle_count % 5 == 1 or (now - last_checkpoint_time) >= 60:
+                    gpu_t = gpu_res.get("telemetry", {})
+                    print(
+                        f"[GPU COMPUTE] Cycle {self.cycle_count} | Batch: {batch_size:,} grains in {gpu_res.get('elapsed_sec')}s "
+                        f"({gpu_res.get('grains_per_sec'):,.0f} gr/s) | Total: {self.total_grains_simulated:,} grains | "
+                        f"GPU Temp: {gpu_t.get('temp_c')}°C | VRAM: {gpu_t.get('vram_allocated_mb')}MB | "
+                        f"Moist(wb): {gpu_res.get('mean_moisture_wb_pct')}% | Median Firmness: {gpu_res.get('firmness_median_n')}N | "
+                        f"Est Cook Time: {gpu_res.get('projected_cooking_time_min')}min"
+                    )
+            except Exception as e:
+                print(f"[LONGRUN_SUPERVISOR] GPU Batch Warning: {e}")
+                traceback.print_exc()
+
+            # 3. Update heartbeat
+            self.write_heartbeat("Continuous_GPU_Physics", f"CYCLE_{self.cycle_count}", "ACTIVE_GPU_COMPUTE")
+
+            # 4. Checkpoint check
             if (now - last_checkpoint_time) >= self.checkpoint_interval_sec:
-                print(f"[LONGRUN_SUPERVISOR] Cycle {self.cycle_count} | Uptime: {round((now - self.start_time)/3600.0, 2)}h | Writing periodic atomic checkpoint...")
+                print(f"[LONGRUN_SUPERVISOR] Cycle {self.cycle_count} | Uptime: {round((now - self.start_time)/3600.0, 2)}h | Total Grains: {self.total_grains_simulated:,} | Writing periodic atomic checkpoint...")
                 cp_payload = {
                     "run_id": self.run_id,
-                    "current_phase": "Autonomous_Loop",
+                    "current_phase": "Continuous_GPU_Physics",
                     "cycle_count": self.cycle_count,
+                    "total_grains_simulated": self.total_grains_simulated,
+                    "last_gpu_result": self.last_gpu_result,
                     "uptime_seconds": round(now - self.start_time, 1),
                     "uptime_hours": round((now - self.start_time) / 3600.0, 4),
                     "system_telemetry": get_system_telemetry(),
-                    "status": "ACTIVE_BACKGROUND"
+                    "status": "ACTIVE_GPU_COMPUTE"
                 }
                 cp_file = self.checkpoint_mgr.write_atomic_checkpoint(cp_payload)
-                self.checkpoint_mgr.log_event(self.run_id, "Autonomous_Loop", f"CYCLE_{self.cycle_count}", "CHECKPOINT", {"file": cp_file}, "SUCCESS")
+                self.checkpoint_mgr.log_event(self.run_id, "Continuous_GPU_Physics", f"CYCLE_{self.cycle_count}", "CHECKPOINT", {"file": cp_file, "total_grains": self.total_grains_simulated}, "SUCCESS")
                 last_checkpoint_time = now
 
-            # Sleep short interval (e.g., 5 seconds) to maintain responsive heartbeat and interrupt checks
-            time.sleep(5)
+            # Throttle slightly (1.5s) to preserve thermal headroom on laptop RTX 4050
+            time.sleep(1.5)
 
         # Final loop cleanup
         self._shutdown()
@@ -407,6 +456,8 @@ class LongrunSupervisor:
             "uptime_seconds": round(time.time() - self.start_time, 1),
             "status": "STOPPED_CLEAN",
             "cycle_count": self.cycle_count,
+            "total_grains_simulated": self.total_grains_simulated,
+            "last_gpu_result": self.last_gpu_result,
             "timestamp": datetime.now(timezone.utc).isoformat()
         }
         cp_file = self.checkpoint_mgr.write_atomic_checkpoint(final_cp)
@@ -451,6 +502,7 @@ def main():
     if init_res.get("status") == "READY_FOR_BACKGROUND_LOOP" and not args.single_pass:
         supervisor.run_autonomous_loop()
     else:
+        supervisor.checkpoint_mgr.release_lock()
         print("\nPreflight & Initial Pass Result:\n", json.dumps(init_res, indent=2, default=str))
 
 if __name__ == "__main__":
