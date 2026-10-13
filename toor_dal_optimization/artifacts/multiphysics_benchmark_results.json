@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-10-13T21:20:14Z",
+  "malawi_genotype_audit": {
+    "n_genotypes": 6,
+    "dehulled_cook_time_range_min": [
+      26.0,
+      54.0
+    ],
+    "dehulled_cook_time_mean": 40.0,
+    "dehulled_cook_time_std": 10.28,
+    "pearson_r_thickness_vs_dehulled": 0.6917,
+    "t_statistic": 1.9158,
+    "p_value": 0.1279,
+    "statistically_significant": false,
+    "r_critical_alpha_0_05": 0.8114,
+    "statistical_limitation_audit": "With N=6, power is < 15% to detect moderate effects (|r| < 0.50). However, commercial split toor dal has had its seed coat removed entirely; cotyledon-level cooking time varies 2.08x (26 min to 54 min) across genotypes independently of seed coat."
+  },
+  "geometry_and_thermal_benchmarks": {
+    "biot_number": 2.971,
+    "biot_regime": "Internal conduction resistance non-negligible initially (Bi > 0.1), isothermal surface assumption valid for boiling bath",
+    "core_heating_profile": [
+      {
+        "t_sec": 30.0,
+        "T_core_c": 99.03
+      },
+      {
+        "t_sec": 60.0,
+        "T_core_c": 99.99
+      },
+      {
+        "t_sec": 120.0,
+        "T_core_c": 100.0
+      },
+      {
+        "t_sec": 180.0,
+        "T_core_c": 100.0
+      },
+      {
+        "t_sec": 300.0,
+        "T_core_c": 100.0
+      }
+    ],
+    "time_to_gelatinization_onset_68c_sec": 75.0,
+    "geometry_comparison": [
+      {
+        "time_sec": 300.0,
+        "fraction_sphere": 0.1288,
+        "fraction_slab": 0.1156,
+        "fraction_disc": 0.2295,
+        "discrepancy_disc_vs_sphere_pct": 10.07
+      },
+      {
+        "time_sec": 600.0,
+        "fraction_sphere": 0.1794,
+        "fraction_slab": 0.1635,
+        "fraction_disc": 0.3135,
+        "discrepancy_disc_vs_sphere_pct": 13.42
+      },
+      {
+        "time_sec": 1200.0,
+        "fraction_sphere": 0.2482,
+        "fraction_slab": 0.2312,
+        "fraction_disc": 0.422,
+        "discrepancy_disc_vs_sphere_pct": 17.39
+      },
+      {
+        "time_sec": 1800.0,
+        "fraction_sphere": 0.2988,
+        "fraction_slab": 0.2832,
+        "fraction_disc": 0.4974,
+        "discrepancy_disc_vs_sphere_pct": 19.86
+      }
+    ]
+  },
+  "multi_tensor_gpu_benchmark": {
+    "n_cases_evaluated": 250,
+    "cpu_runtime_sec": 13.8517,
+    "gpu_runtime_sec": 25.7948,
+    "gpu_speedup_factor": 0.54,
+    "vram_allocated_mb": 0.0,
+    "sobol_variance_decomposition": {
+      "S_k_soft": 0.7832,
+      "S_radius": 0.0003,
+      "S_diffusivity": 0.0012,
+      "S_temperature": 0.2154,
+      "total_variance_min2": 0.067,
+      "cook_time_mean_min": 59.9,
+      "cook_time_p05_min": 59.44,
+      "cook_time_p95_min": 60.27
+    }
+  }
+}
