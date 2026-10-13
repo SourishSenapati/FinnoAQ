@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-13T22:00:12Z",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "cpu_threads": 20
+  },
+  "crossover_batch_size_n": 1000,
+  "benchmark_data": [
+    {
+      "batch_size_n": 50,
+      "cpu_time_sec": 0.4168,
+      "gpu_time_sec": 1.7918,
+      "gpu_speedup_factor": 0.233,
+      "vram_allocated_mb": 0.0,
+      "gpu_advantage": false
+    },
+    {
+      "batch_size_n": 250,
+      "cpu_time_sec": 1.2442,
+      "gpu_time_sec": 2.0512,
+      "gpu_speedup_factor": 0.607,
+      "vram_allocated_mb": 0.0,
+      "gpu_advantage": false
+    },
+    {
+      "batch_size_n": 1000,
+      "cpu_time_sec": 2.6611,
+      "gpu_time_sec": 2.1427,
+      "gpu_speedup_factor": 1.242,
+      "vram_allocated_mb": 0.0,
+      "gpu_advantage": true
+    },
+    {
+      "batch_size_n": 5000,
+      "cpu_time_sec": 4.1698,
+      "gpu_time_sec": 2.0989,
+      "gpu_speedup_factor": 1.987,
+      "vram_allocated_mb": 0.0,
+      "gpu_advantage": true
+    },
+    {
+      "batch_size_n": 15000,
+      "cpu_time_sec": 7.5959,
+      "gpu_time_sec": 2.4235,
+      "gpu_speedup_factor": 3.134,
+      "vram_allocated_mb": 0.0,
+      "gpu_advantage": true
+    }
+  ],
+  "scientific_conclusion": "GPU acceleration becomes advantageous over AMD Ryzen AI 9 when batch size exceeds ~1000 parameter cases. For small exploratory batches (N < 1,000), CPU execution avoids CUDA driver kernel dispatch latency and is faster. For high-dimensional Monte Carlo uncertainty propagation (N >= 5,000), GPU tensor parallelism yields superior throughput."
+}
