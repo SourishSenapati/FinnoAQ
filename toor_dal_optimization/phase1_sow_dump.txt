@@ -1,0 +1,516 @@
+# DUMP OF Phase1_Scope_of_Work_Toor_Dal.docx
+
+## PARAGRAPHS
+
+[0] HARAKUTIR
+[1] R&D Scope of Work  |  Technical Proposal
+[2] PHASE 1 — DETAILED SCOPE OF WORK
+[3] Comparative R&D Study of Tanzanian Toor Dal vs. Indian Benchmark Toor Dal
+[4] Diagnostic Study of Physicochemical, Structural, Hydration and Cooking Performance
+[5] Prepared for: Harakutir
+[6] Project Contact: Dr. Archisman Ray
+[7] Location: Kolkata, West Bengal, India
+[8] ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै ।
+[9] तेजस्विनावधीतमस्तु मा विद्विषावहै ॥
+[10] “May He protect us both. May He nourish us both. May we work together with great energy. May our study be vigorous and effective. May we not hate each other.”
+[11] — Taittiriya Upanishad, Shanti Mantra
+[12] CONTENTS
+[13] 1.  Project Background
+[14] Tanzanian Toor Dal has been observed to exhibit substantially longer cooking requirements compared with a comparable Indian Toor Dal benchmark. Under the currently observed household cooking conditions:
+[17] Pressure-cooker whistle count is an initial practical observation, not a scientific measurement. The Phase 1 study will use standardized laboratory cooking endpoints defined by objective, measurable criteria.
+[18] The purpose of this Phase 1 R&D study is to determine the scientific and measurable factors that may explain the difference. The study will investigate raw material characteristics, hydration behaviour, seed-coat/cotyledon structure, cell-wall and pectin characteristics, mineral composition, starch behaviour, hardness and controlled cooking performance of both samples.
+[19] The study will move beyond simple household cooking observations and establish a standardized laboratory framework for identifying the principal factors associated with delayed cooking and softening.
+[20] 2.  Project Objective
+[21] The primary objective is to scientifically identify the physical, chemical, structural, hydration and functional factors associated with the observed difference in cooking performance between Tanzanian Toor Dal and an Indian benchmark Toor Dal.
+[22] 2.1  Phase 1 Will
+[23] Establish a technical baseline for both samples.
+[24] Characterize important physical and chemical differences.
+[25] Measure hydration and water-absorption behaviour.
+[26] Investigate seed-coat and cotyledon characteristics.
+[27] Examine pectin/cell-wall characteristics.
+[28] Assess mineral and phytate profiles.
+[29] Characterize starch and gelatinization behaviour.
+[30] Quantify raw, hydrated and cooked hardness/texture.
+[31] Conduct standardized cooking-performance experiments.
+[32] Integrate the results into a root-cause assessment.
+[33] Identify the most scientifically relevant mechanisms for Phase 2 investigation.
+[34] Recommend potential processing and conditioning approaches for subsequent trials.
+[35] 2.2  Interpretation Principle
+[36] Findings will be reported using a strict evidence hierarchy. No causal mechanism will be presented as established unless it is experimentally demonstrated.
+[37] Measured difference
+[38] ↓
+[39] Association
+[40] ↓
+[41] Potential mechanism
+[42] ↓
+[43] Phase 2 validation
+[45] 2.3  Important Scope Limitation
+[47] Guarantee a final fast-cooking product.
+[48] Optimize a commercial processing method.
+[49] Establish final industrial processing parameters.
+[50] Conduct full pilot-scale production.
+[51] Validate commercial shelf life.
+[52] Conduct complete regulatory or consumer-market validation.
+[53] These activities may form part of a subsequent Phase 2 program.
+[54] 3.  Sample Requirements
+[55] 3.1  Samples
+[56] Where possible, the study should include two independent lots of each sample to determine whether observed differences are batch-specific or more consistent characteristics.
+[57] 3.2  Recommended Quantity
+[58] For a comprehensive Phase 1 program, approximately 2.5–3.0 kg per sample is recommended. This quantity allows for:
+[59] 3.3  Sample Information
+[60] Each sample should be accompanied by the following information, where available:
+[61] Additional information, where available:
+[62] 4.  Overall Technical Approach
+[63] The investigation will follow an integrated analytical pathway:
+[64] The objective is not simply to generate individual laboratory values. The R&D partner should integrate the results to determine which measurable characteristics are most strongly associated with the observed cooking-time difference.
+[65] 4.1  Technical Investigation Matrix
+[66] 5.  Physical & Preliminary Characterization
+[67] The laboratory will compare the physical characteristics of Tanzanian and Indian Toor Dal.
+[68] Parameters
+[69] Objective
+[70] To determine whether differences in grain dimensions, density, physical integrity, surface properties or initial hardness may contribute to differences in hydration and cooking behaviour.
+[71] Output
+[72] A comparative physical-characterization table with measured values for both samples.
+[73] 6.  Proximate Chemical Characterization
+[74] Both samples will undergo comparative proximate analysis.
+[75] Parameters
+[76] Methodology
+[77] Recognized and validated analytical procedures should be used, as applicable: AOAC, ISO, BIS, FSSAI-compatible methods, or other validated laboratory methods. The final report should identify the analytical method used for each parameter.
+[78] Objective
+[79] To determine whether major compositional differences exist between the Tanzanian and Indian samples that may influence hydration, texture or cooking performance.
+[80] 7.  Starch & Gelatinization Characterization
+[81] Starch behaviour may influence structural softening and cooking performance. The study should investigate, where technically feasible:
+[82] Preferred Techniques
+[83] Differential Scanning Calorimetry (DSC)
+[84] Rapid Visco Analysis / pasting analysis (RVA)
+[85] Validated equivalent methods
+[86] Objective
+[87] To determine whether the starch system of the Tanzanian sample exhibits measurable differences that may be associated with delayed cooking or softening.
+[88] 8.  Hydration & Water-Absorption Study
+[89] Hydration is a major component of cooking performance and will therefore be investigated systematically.
+[90] 8.1  Hydration Conditions
+[91] Both samples should be tested under identical controlled conditions. Suggested time points:
+[92] The final time points may be modified by the laboratory depending on the validated experimental protocol.
+[93] 8.2  Measurements
+[94] 8.3  Output
+[95] Objective
+[96] To determine whether slower water uptake or reduced hydration is associated with the longer cooking time of the Tanzanian sample.
+[97] 9.  Seed-Coat & Cotyledon Structural Investigation
+[98] Where laboratory capability permits, structural analysis should be conducted.
+[99] Potential Parameters
+[100] Techniques
+[101] Optical microscopy
+[102] Image analysis
+[103] Scanning Electron Microscopy (SEM)
+[104] Other validated microscopy techniques
+[105] Objective
+[106] To determine whether structural differences may affect water penetration, hydration, heat transfer or softening.
+[107] 10.  Pectin & Cell-Wall Characterization
+[108] The study should investigate whether cell-wall characteristics may contribute to delayed softening. Where feasible:
+[109] Interpretation
+[110] The laboratory should distinguish clearly between the following levels of evidence:
+[111] No causal mechanism should be presented as established unless it is experimentally demonstrated.
+[112] 11.  Mineral & Phytate Profile
+[113] The study should assess selected minerals and phytate that may be relevant to structural and cooking behaviour.
+[114] Parameters
+[115] Potential Analytical Techniques
+[116] Depending on laboratory capability: ICP-OES, AAS, validated spectrophotometric methods, or other recognized analytical procedures.
+[117] Objective
+[118] To investigate whether meaningful compositional differences exist that could be associated with hydration, cell-wall behaviour or softening.
+[119] 12.  Hardness & Texture Analysis
+[120] Hardness will be assessed at multiple stages using a Texture Analyzer or equivalent validated instrument.
+[121] Objective
+[122] To replace subjective assessment alone with measurable physical indicators of cooking and softening.
+[123] 13.  Standardized Cooking-Performance Study
+[124] Household pressure-cooker whistle count will be treated as an initial observation rather than the sole scientific measure of cooking performance. A controlled laboratory cooking protocol should therefore be established.
+[125] 13.1  Variables to Standardize
+[126] 14.  Comparative Cooking Test Design
+[127] 15.  Cooking Performance Measurements
+[128] The following measurements should be considered:
+[130] 16.  Root-Cause Analysis Framework
+[131] All analytical and cooking results should be integrated into a structured root-cause assessment. Findings should be classified into four categories:
+[132] 17.  Root-Cause Analytical Pathway
+[133] The R&D partner should examine the following investigative sequence and identify which factors show the strongest measurable relationship with the observed cooking difference.
+[134] Raw Material
+[135] ↓
+[136] Physical Characteristics
+[137] ↓
+[138] Hydration Behaviour
+[139] ↓
+[140] Seed-Coat / Cotyledon Structure
+[141] ↓
+[142] Cell-Wall / Pectin Characteristics
+[143] ↓
+[144] Mineral Interactions
+[145] ↓
+[146] Starch Gelatinization
+[147] ↓
+[148] Hardness & Structural Softening
+[149] ↓
+[150] Controlled Cooking Performance
+[151] ↓
+[152] Root-Cause Assessment
+[153] ↓
+[154] Phase 2 Processing Strategy
+[155] This diagram shows the sequence of investigation only. It does not assert that any step is causally responsible; causality will be assessed from the Phase 1 data.
+[156] 18.  Phase 2 Technology Recommendations
+[158] Based on Phase 1 results, the R&D partner should provide high-level recommendations for Phase 2 experimental work. The categories below are candidate technologies; their relevance will be confirmed or discarded by the Phase 1 evidence. For each proposed technology, the report should state:
+[167] Phase 2 optimization, pilot processing and commercial validation are outside the Phase 1 scope.
+[168] 19.  Quality Control & Statistical Requirements
+[169] The study should preferably include:
+[170] Where statistically appropriate, the final report should indicate whether observed differences are meaningful rather than simply reporting numerical differences.
+[171] 20.  Integrated Data Analysis
+[172] The R&D partner should not report the analytical parameters in isolation. The final assessment should integrate:
+[173] Integrated Interpretation
+[174] The report should identify which variables are:
+[175] Different — measured difference between samples
+[176] Associated — related to the cooking difference
+[177] Potentially causal — hypothesis requiring Phase 2 validation
+[178] Unlikely to explain the observed difference
+[179] 21.  Key Deliverables
+[180] The laboratory/R&D partner will provide:
+[181] Sample Characterization Report
+[182] Proximate Composition Report
+[183] Starch & Gelatinization Report
+[184] Hydration & Water Absorption Report
+[185] Structural/Seed-Coat Assessment
+[186] Pectin/Cell-Wall Assessment
+[187] Mineral/Phytate Assessment
+[188] Hardness & Texture Analysis
+[189] Standardized Cooking Performance Report
+[190] Indian vs Tanzanian Benchmarking Matrix
+[191] Integrated Root-Cause Analysis
+[192] Phase 2 Technology Recommendations
+[193] Executive Management Summary
+[194] Final Technical R&D Report
+[195] 22.  Final Technical Report Structure
+[196] The final report should preferably contain:
+[197] 23.  Preferred Laboratory / R&D Partners
+[198] The following institutions may be considered for relevant portions of the work, subject to confirmation of current capabilities, availability, methodology and quotation.
+[199] Kolkata / West Bengal
+[200] Eureka Analytical Services Pvt. Ltd.
+[201] Mitra S.K. Private Limited
+[202] CSIR-Central Glass & Ceramic Research Institute (CGCRI)
+[203] Relevant food-testing and analytical laboratories in Kolkata/West Bengal
+[204] Academic / Research Institutions
+[205] IIT Kharagpur — relevant departments, laboratories or central research facilities
+[206] Other accredited academic/research laboratories with relevant food, agricultural, chemical or materials-testing capabilities
+[207] Laboratory Selection Criteria
+[208] 24.  Indicative Technical Cost Structure
+[210] Calculation: ₹20,000 + ₹7,000 + ₹5,000 + ₹20,000 + ₹10,000 + ₹18,000 + ₹16,000 + ₹17,000 + ₹20,000 + ₹20,000 + ₹20,000 = ₹1,73,000
+[211] 25.  Indicative Cost Range for Individual Testing
+[212] The following ranges may be used for preliminary laboratory discussions and should not be treated as confirmed quotations:
+[213] Final pricing will depend on methodology, number of samples, number of replicates, equipment requirements and whether any testing is outsourced.
+[214] 26.  Commercial Ceiling
+[216] For procurement and quotation purposes, a working ceiling of up to ₹2,00,000 + applicable GST is suggested. Any amount above the agreed Phase 1 fee, and any additional testing, specialized analysis or outsourcing, requires prior written approval from the client.
+[217] 27.  Project Timeline
+[219] 28.  Payment Schedule
+[220] For a total professional fee of ₹1,73,000, the proposed payment schedule is:
+[221] Applicable GST will be charged additionally.
+[222] 29.  Commercial Notes
+[223] The recommended professional fee is ₹1.73 lakh + applicable GST.
+[224] The suggested commercial ceiling is up to ₹2.00 lakh + applicable GST.
+[225] Applicable GST will be charged additionally. No GST rate is assumed in this document.
+[226] Any additional testing, specialized analysis or outsourcing beyond the agreed scope requires prior written approval from the client.
+[227] The indicative fees and ranges in this document are for planning and quotation purposes and are not confirmed quotations from any laboratory.
+[228] Final pricing depends on methodology, number of samples and replicates, equipment requirements and outsourced testing.
+[229] 30.  Sample Handling & Retention
+[230] Samples will be received, coded and recorded on arrival, with each sample and lot traceable through a unique code.
+[231] Where possible, two independent lots of each sample will be handled and reported separately.
+[232] Samples should be stored under documented, consistent conditions throughout the study.
+[233] Reference/retention samples of each lot will be set aside before testing begins.
+[234] The retention period and the disposal or return of residual material will be agreed in writing with the client.
+[235] Any deviation from sample handling procedures should be documented in the final report.
+[236] 31.  Confidentiality & Data Ownership
+[237] All project information, sample details, data and results are confidential to the client and are to be used only for this project.
+[238] The laboratory/R&D partner should not disclose or publish any information or results without prior written consent from the client.
+[239] Raw data, analytical results and reports generated under this scope are intended to be available to the client.
+[240] Any outsourcing of testing to a third party requires prior written approval and should carry equivalent confidentiality obligations.
+[241] Formal confidentiality and data-ownership terms will be confirmed in a written agreement with the selected partner.
+[242] 32.  Study Limitations
+[243] Phase 1 is a diagnostic R&D study. It is not intended to:
+[244] Guarantee a final fast-cooking product.
+[245] Optimize a commercial processing method.
+[246] Establish final industrial processing parameters.
+[247] Conduct full pilot-scale production.
+[248] Validate commercial shelf life.
+[249] Conduct complete regulatory or consumer-market validation.
+[250] Further limitations to be noted in the final report:
+[251] Results relate to the specific lots tested and may not represent all Tanzanian or Indian Toor Dal.
+[252] Structural analysis is subject to laboratory capability.
+[253] Associations observed between measurements and cooking behaviour do not by themselves establish causation.
+[254] Household whistle count is an initial observation and is not used as the sole scientific endpoint.
+[255] 33.  Phase 1 Success Definition
+[256] Phase 1 will be considered successful if it delivers:
+[257] A complete, well-documented comparison of Tanzanian and Indian Toor Dal across the scoped physical, chemical, structural, hydration, thermal, mineral, texture and cooking parameters.
+[258] A standardized cooking protocol with an objective, measurable endpoint.
+[259] Replicated data with statistical comparison, indicating which differences are meaningful.
+[260] An integrated root-cause assessment that classifies findings as confirmed differences, strongly associated factors, potential mechanisms or unlikely factors.
+[261] A prioritized set of mechanisms and candidate treatments for Phase 2 investigation.
+[262] All deliverables listed in Section 21, including the Executive Management Summary and Final Technical R&D Report.
+[263] Success is defined by the quality and clarity of the diagnostic evidence, not by achieving a particular cooking-time reduction.
+[264] 34.  Proposed Phase 2 Direction
+[265] Depending on the Phase 1 findings, Phase 2 may comprise a controlled experimental program to test the most relevant mechanisms and candidate treatments identified in Section 18. Phase 2 may address:
+[266] Validation of potential mechanisms identified in Phase 1.
+[267] Laboratory-scale trials of selected treatment categories.
+[268] Optimization of the most promising treatments.
+[269] Assessment of nutritional and organoleptic quality.
+[270] Later-stage pilot processing, shelf-life and commercial validation, as separately scoped.
+[271] Phase 2 will be scoped, budgeted and approved separately after review of the Phase 1 report.
+[272] 35.  Project Contact — Harakutir
+[273] 36.  Final Technical Statement
+[274] This Phase 1 study is designed as a rigorous, diagnostic comparison of Tanzanian and Indian benchmark Toor Dal. Its purpose is to replace household observation with standardized, measurable evidence, and to distinguish carefully between measured differences, statistical associations and scientific hypotheses.
+[275] No mechanism is presumed in advance. Conclusions will be drawn only from the data generated, and hypotheses that cannot be settled in Phase 1 will be carried forward as clearly stated candidates for controlled validation in Phase 2.
+
+## TABLES
+
+### Table 1
+| 1Project Background 2Project Objective 3Sample Requirements 4Overall Technical Approach 5Physical & Preliminary Characterization 6Proximate Chemical Characterization 7Starch & Gelatinization Characterization 8Hydration & Water-Absorption Study 9Seed-Coat & Cotyledon Structural Investigation 10Pectin & Cell-Wall Characterization 11Mineral & Phytate Profile 12Hardness & Texture Analysis 13Standardized Cooking-Performance Study 14Comparative Cooking Test Design 15Cooking Performance Measurements 16Root-Cause Analysis Framework 17Root-Cause Analytical Pathway 18Phase 2 Technology Recommendations | 19Quality Control & Statistical Requirements 20Integrated Data Analysis 21Key Deliverables 22Final Technical Report Structure 23Preferred Laboratory / R&D Partners 24Indicative Technical Cost Structure 25Indicative Cost Range for Individual Testing 26Commercial Ceiling 27Project Timeline 28Payment Schedule 29Commercial Notes 30Sample Handling & Retention 31Confidentiality & Data Ownership 32Study Limitations 33Phase 1 Success Definition 34Proposed Phase 2 Direction 35Project Contact — Harakutir 36Final Technical Statement |
+
+### Table 2
+| Sample | Observed pressure-cooker whistles (approx.) |
+| Tanzanian Toor Dal | ≈ 6 whistles |
+| Indian benchmark Toor Dal | ≈ 3 whistles |
+
+### Table 3
+| Central Research Question “Why does Tanzanian Toor Dal require approximately 6 pressure-cooker whistles while the Indian benchmark requires approximately 3 whistles under comparable conditions?” |
+
+### Table 4
+| Phase 1 is a diagnostic R&D study, not commercial optimization. It is not intended to: |
+
+### Table 5
+| Sample A | Tanzanian Toor Dal — current commercial/imported Tanzanian Toor Dal batch. |
+| Sample B | Indian Toor Dal — comparable Indian commercial benchmark Toor Dal. |
+
+### Table 6
+| Physical characterization Chemical testing Replicate analysis Hydration experiments Cooking experiments | Texture analysis External laboratory testing Reference/retention samples Repeat measurements where necessary |
+
+### Table 7
+| Item | Tanzanian Sample | Indian Benchmark |
+| Origin | To be provided | To be provided |
+| Variety | To be provided | To be provided |
+| Lot/Batch | To be provided | To be provided |
+| Processing/Dehulling | To be provided | To be provided |
+| Storage History | To be provided | To be provided |
+
+### Table 8
+| Date of processing Date of import, where applicable Polishing information Packaging information | Storage temperature and humidity Previous cooking/processing information Supplier information, where relevant |
+
+### Table 9
+| Raw Material → Physical Characteristics → Chemical Composition → Hydration → Seed-Coat/Cotyledon Structure → Cell-Wall/Pectin → Minerals/Phytate → Starch Behaviour → Hardness → Controlled Cooking → Softening → Root-Cause Assessment → Phase 2 Recommendations |
+
+### Table 10
+| Work Area | Key Parameters | Purpose | Indicative Method / Equipment |
+| Physical & preliminary characterization | Colour, dimensions, L/W ratio, size distribution, 1000-grain weight, bulk density, broken grain %, defects, surface and seed-coat characteristics, raw hardness | Determine whether grain size, density, integrity, surface or initial hardness contribute to hydration and cooking differences | Calipers/image analysis, sieving, balance, density measurement, texture analyzer |
+| Proximate composition | Moisture, protein, fat, crude fibre, ash, total carbohydrate, starch | Identify major compositional differences that may influence hydration, texture or cooking | AOAC / ISO / BIS / FSSAI-compatible validated methods |
+| Starch & gelatinization | Total starch, amylose, amylose/amylopectin relationship, initial/peak/final gelatinization temperature, range, enthalpy, pasting behaviour | Determine whether the starch system differs measurably | DSC, RVA/pasting analysis, validated equivalents |
+| Hydration & water absorption | Water uptake, hydration rate, WAI, weight and volume increase, swelling, moisture gain | Determine whether slower or reduced hydration is associated with longer cooking | Controlled soaking at 0–480 min, gravimetric and volumetric methods |
+| Seed-coat & cotyledon structure | Seed-coat thickness, surface morphology, cracking, integrity, permeability-related traits, cellular compactness, changes after hydration/cooking | Assess whether structure affects water penetration, heat transfer or softening | Optical microscopy, image analysis, SEM |
+| Pectin & cell wall | Total, soluble and insoluble pectin; pectin-associated Ca and Mg; cell-wall integrity | Investigate whether cell-wall characteristics contribute to delayed softening | Pectin fractionation, spectrophotometric assays, ICP-OES/AAS |
+| Minerals & phytate | Calcium, magnesium, iron, phosphorus, phytate/phytic acid | Investigate compositional differences related to hydration, cell-wall behaviour or softening | ICP-OES, AAS, validated spectrophotometric methods |
+| Hardness & texture | Raw hardness/breaking force; hydrated firmness; cooked firmness, softness, texture profile, hard-core %, disintegration | Replace subjective assessment with measurable physical indicators | Texture analyzer or equivalent validated instrument |
+| Controlled cooking | Time to objective endpoint, pressure/temperature profile, hard-core %, texture, cooking loss, swelling, final moisture | Quantify cooking performance under standardized conditions | Instrumented pressure vessel with temperature/pressure logging |
+| Root-cause analysis | Integrated physical, chemical, structural, hydration, thermal, mineral and cooking data | Classify factors as different, associated, potentially causal or unlikely | Statistical comparison and integrated interpretation |
+
+### Table 11
+| Grain colour Visual appearance Uniformity Length Width Thickness Length-to-width ratio Size distribution | 1000-grain weight Bulk density Broken grain percentage Visible defects Surface characteristics Seed-coat characteristics Raw grain hardness |
+
+### Table 12
+| Moisture Protein Fat Crude fibre | Ash Total carbohydrate Starch |
+
+### Table 13
+| Total starch Amylose content Amylose/amylopectin relationship Initial gelatinization temperature Peak gelatinization temperature | Final gelatinization temperature Gelatinization temperature range Gelatinization enthalpy, where applicable Pasting/viscosity behaviour, where available and relevant |
+
+### Table 14
+| 0 min | 15 min | 30 min | 60 min | 120 min | 240 min | 480 min |
+
+### Table 15
+| Water uptake Hydration rate Water Absorption Index (WAI) Grain weight increase | Grain volume increase Swelling capacity Moisture gain Hydration percentage |
+
+### Table 16
+| Comparative hydration table Hydration curve Water-absorption profile | Relative hydration rate Interpretation of major differences |
+
+### Table 17
+| Seed-coat thickness Surface morphology Surface cracking Structural integrity Permeability-related characteristics | Cotyledon structure Cellular compactness Internal structural organization Structural changes following hydration/cooking |
+
+### Table 18
+| Total pectin Soluble pectin Insoluble pectin Pectin-associated calcium | Pectin-associated magnesium Relevant cell-wall characteristics Cell-wall structural integrity |
+
+### Table 19
+| Measured result | Statistical / observed association | Scientific hypothesis |
+| What was directly measured | Relationship observed between measurements and cooking behaviour | Proposed explanation requiring controlled validation |
+
+### Table 20
+| Calcium Magnesium Iron | Phosphorus Phytate/phytic acid |
+
+### Table 21
+| Stage | Measurements |
+| 12.1  Raw dal | Initial hardness; compression force; breaking force; fracture behaviour |
+| 12.2  Hydrated dal | Firmness; softening behaviour; structural integrity; texture profile |
+| 12.3  Cooked dal | Firmness; softness; texture profile; hard-core percentage; degree of disintegration; cooking endpoint |
+
+### Table 22
+| Sample weight Water-to-dal ratio Soaking conditions Soaking duration Cooking vessel Pressure | Temperature Heating rate Cooking duration Cooling conditions Sample preparation Measurement endpoint |
+
+### Table 23
+| Test | Design | Purpose |
+| Test A — No Soaking | Indian benchmark vs Tanzanian sample | Determine intrinsic differences in hydration and cooking behaviour without pre-soaking. |
+| Test B — Standardized Soaking | Both samples subjected to identical controlled soaking conditions | Determine whether standardized hydration reduces the cooking-time difference. |
+| Test C — Controlled Pressure Cooking | Both samples cooked under controlled pressure/temperature conditions | Quantify actual cooking performance under standardized conditions. |
+
+### Table 24
+| Time to predefined cooking endpoint Pressure/temperature profile Hard-core percentage Cooked texture Softness Firmness Water absorption | Grain swelling Cooking loss Degree of disintegration Visual quality Final moisture Texture endpoint |
+
+### Table 25
+| Critical Requirement The final cooking endpoint should be defined using an objective measurable criterion wherever possible. Pressure-cooker whistle count should not be the sole endpoint. |
+
+### Table 26
+|  | Category | Definition |
+| A | Confirmed Differences | Differences directly demonstrated through analytical or experimental measurements. |
+| B | Strongly Associated Factors | Parameters showing meaningful association with cooking performance. |
+| C | Potential Mechanisms | Scientific hypotheses that require controlled experimental validation in Phase 2. |
+| D | Factors Unlikely to Be Responsible | Parameters where no meaningful difference is observed or where the data do not support a relationship with cooking performance. |
+
+### Table 27
+| Phase 2 is a future experimental program. Phase 2 optimization, pilot processing and commercial validation are NOT included in Phase 1. |
+
+### Table 28
+| Technology | 1. Controlled Hydration / Tempering |
+| Reason for Recommendation | If Phase 1 shows slower water uptake to be associated with the delayed cooking, controlled pre-hydration addresses the first step of the pathway. |
+| Target Mechanism | Water penetration and moisture distribution within the cotyledon. |
+| Expected Effect | Potentially reduced cooking time through more uniform pre-hydration (hypothesis to be validated). |
+| Technical / Quality Risk | Microbial risk during soaking; leaching of solids; possible re-drying requirement; process cost. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 29
+| Technology | 2. Hydrothermal Treatment |
+| Reason for Recommendation | Combined moisture and heat may act on structural and starch-related factors identified in Phase 1. |
+| Target Mechanism | Cell-wall/pectin structure and starch state. |
+| Expected Effect | Potential structural softening and shorter subsequent cooking time (hypothesis). |
+| Technical / Quality Risk | Over-processing, texture loss, colour change, energy demand; possible effect on nutritional quality. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 30
+| Technology | 3. Targeted Thermal Pre-Treatment |
+| Reason for Recommendation | Controlled heat exposure may modify structural resistance in the seed coat or cotyledon. |
+| Target Mechanism | Seed-coat resistance and heat-sensitive structural components. |
+| Expected Effect | Potential improvement in heat and water penetration (hypothesis). |
+| Technical / Quality Risk | Heat damage, protein denaturation, nutrient loss, colour and flavour change. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 31
+| Technology | 4. Food-Grade Conditioning |
+| Reason for Recommendation | If mineral/pectin associations are supported by Phase 1 data, food-grade conditioning agents may be relevant. |
+| Target Mechanism | Mineral–pectin interactions and cell-wall cohesion. |
+| Expected Effect | Potential facilitation of softening (hypothesis dependent on Phase 1 findings). |
+| Technical / Quality Risk | Regulatory acceptability, residuals, taste/sensory impact, labelling and consumer acceptance. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 32
+| Technology | 5. Enzyme-Assisted Treatment |
+| Reason for Recommendation | Cell-wall polymers may be targeted directly if cell-wall factors show a meaningful association. |
+| Target Mechanism | Pectin and other cell-wall polymers. |
+| Expected Effect | Potential softening of cell-wall structure (hypothesis). |
+| Technical / Quality Risk | Enzyme cost and activity control; uneven penetration; over-softening; regulatory and labelling considerations. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 33
+| Technology | 6. Controlled Drying |
+| Reason for Recommendation | Any pre-treated dal must be dried to a stable form without losing the intended effect. |
+| Target Mechanism | Final moisture, structural stress and surface condition. |
+| Expected Effect | Retention of improved cooking behaviour in a shelf-stable form (hypothesis). |
+| Technical / Quality Risk | Cracking or case-hardening, broken grain, energy demand, re-hardening. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 34
+| Technology | 7. Extrusion / Structural Modification |
+| Reason for Recommendation | Structural modification may substantially change cooking behaviour where conventional treatments are insufficient. |
+| Target Mechanism | Grain structure and starch state. |
+| Expected Effect | Potentially large reduction in cooking time (hypothesis). |
+| Technical / Quality Risk | Product may no longer resemble traditional dal; flavour and nutritional changes; equipment and cost. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 35
+| Technology | 8. Combination Treatments |
+| Reason for Recommendation | Multiple factors may act together; combined approaches may be needed. |
+| Target Mechanism | Several mechanisms identified in Phase 1, in combination. |
+| Expected Effect | Potential cumulative effect (hypothesis). |
+| Technical / Quality Risk | Interaction effects, greater process complexity, increased cost, cumulative quality risk. |
+| Phase 2 Validation | Suggested experimental direction to be defined from Phase 1 findings. |
+
+### Table 36
+| Duplicate or triplicate measurements for key parameters Standardized sample preparation Appropriate analytical controls Instrument calibration Defined analytical methods | Replicate data Comparative statistical analysis Mean and variation reporting Raw or summarized replicate data Documentation of deviations from the agreed protocol |
+
+### Table 37
+| Data Type | Content |
+| Physical Data | Grain size, density, hardness and physical integrity. |
+| Chemical Data | Protein, fat, fibre, ash, starch and moisture. |
+| Structural Data | Seed-coat, cotyledon and cell-wall characteristics. |
+| Hydration Data | Water uptake, hydration rate and swelling. |
+| Thermal Data | Gelatinization and pasting behaviour. |
+| Mineral Data | Calcium, magnesium, iron, phosphorus and phytate. |
+| Cooking Data | Cooking time, hard-core percentage and final texture. |
+
+### Table 38
+| 1.Executive Summary 2.Project Background 3.Objective & Scope 4.Sample Information 5.Experimental Design 6.Analytical Methodology 7.Physical Characterization 8.Proximate Chemical Composition 9.Starch Characterization 10.Thermal/Gelatinization Behaviour 11.Hydration Behaviour 12.Seed-Coat/Cotyledon Structure | 13.Cell-Wall/Pectin Analysis 14.Mineral/Phytate Analysis 15.Hardness & Texture 16.Standardized Cooking Performance 17.Statistical Analysis 18.Integrated Benchmark Comparison 19.Root-Cause Assessment 20.Phase 2 Technology Recommendations 21.Study Limitations 22.Conclusions 23.Raw/Summary Data Appendix |
+
+### Table 39
+| Technical capability Method validity Equipment availability Sample throughput | Accreditation/quality systems where applicable Cost Turnaround time Ability to coordinate multiple analytical modules |
+| Note: The above institutions are proposed candidates for investigation/quotation and should not be treated as confirmed service providers or confirmed quotations unless separately verified. |
+
+### Table 40
+| TOTAL PHASE 1 PROFESSIONAL FEE ₹1,73,000 + applicable GST Recommended professional fee: ₹1.73 lakh + applicable GST |
+
+### Table 41
+| Component | Indicative Fee |
+| Sample preparation & physical characterization | ₹20,000 |
+| Proximate analysis | ₹7,000 |
+| Starch/Amylose analysis | ₹5,000 |
+| DSC/Gelatinization | ₹20,000 |
+| Hydration/WAI | ₹10,000 |
+| Pectin/Cell-wall analysis | ₹18,000 |
+| Mineral/Phytate analysis | ₹16,000 |
+| Texture/Hardness | ₹17,000 |
+| Cooking-performance study | ₹20,000 |
+| Data analysis & root-cause assessment | ₹20,000 |
+| Technical report | ₹20,000 |
+| TOTAL | ₹1,73,000 |
+
+### Table 42
+| Work Area | Indicative Range |
+| Physical & Proximate Characterization | ₹3,500–₹5,000 / sample |
+| Starch Characterization | ₹4,500–₹7,000 / sample |
+| Thermal/Pasting Behaviour | ₹6,000–₹10,000 / sample |
+| Structural/Cell-Wall Assessment | ₹5,000–₹8,000 / sample |
+| Phytate & Mineral Analysis | ₹4,000–₹6,500 / sample |
+| Hydration Study | ₹2,000–₹4,000 / sample |
+| Controlled Cooking Study | ₹2,500–₹4,500 / sample |
+| Texture/Hardness Assessment | ₹3,000–₹6,000 / sample |
+
+### Table 43
+| SUGGESTED COMMERCIAL CEILING Up to ₹2,00,000 + applicable GST |
+
+### Table 44
+| Overall indicative turnaround: 20–25 business days |
+
+### Table 45
+| Stage | Timeline | Key Activities |
+| Stage 1 | Days 1–3 | Sample receipt, coding, preparation and laboratory allocation |
+| Stage 2 | Days 4–14 | Proximate, starch, mineral and thermal/analytical testing |
+| Stage 3 | Days 10–18 | Hydration, controlled cooking and texture assessment |
+| Stage 4 | Days 18–22 | Data consolidation, cross-verification and R&D interpretation |
+| Stage 5 | Days 22–25 | Final technical report preparation and submission |
+
+### Table 46
+| Milestone | Percentage | Amount |
+| Project initiation / confirmation | 40% | ₹69,200 |
+| Completion of agreed analytical work | 40% | ₹69,200 |
+| Submission of final technical report | 20% | ₹34,600 |
+| TOTAL | 100% | ₹1,73,000 |
+
+### Table 47
+| Dr. Archisman Ray PhD (Dunster Business School), MASc (Waterloo, Canada), B.Tech (WBUT) Senior Research Fellow, Department of Chemical Engineering, IIT Kharagpur CEO & Director, Harakutir Mobile: +91 98316 42006 Email: archismanray@kgpian.iitkgp.ac.in Address: Harakutir 53, Pathuriaghata Street Kolkata – 700006 West Bengal, India |
+
+### Table 48
+| Measured difference  →  Association  →  Potential mechanism  →  Phase 2 validation |
+

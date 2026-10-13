@@ -1,0 +1,59 @@
+{
+  "system_manifest": {
+    "manifest_version": "3.1.0",
+    "timestamp": "2026-10-13T20:14:00Z",
+    "project_name": "Harakutir Tanzanian Toor Dal Diagnostic R&D and Fast-Cooking Process Engineering",
+    "governing_document": "Phase1_Scope_of_Work_Toor_Dal.docx"
+  },
+  "host_hardware": {
+    "operating_system": "Windows 11 Home Single Language (build 26300)",
+    "processor_class": "AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)",
+    "processor_base_clock_ghz": 2.0,
+    "system_ram_gb": 23.12,
+    "total_visible_memory_kb": 24242028,
+    "storage_type": "NVMe PCIe SSD",
+    "gpu_0": {
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "dedicated_vram_mb": 6140.0,
+      "shared_vram_mb": 11836.9,
+      "total_gpu_memory_mb": 17976.9,
+      "streaming_multiprocessors": 20,
+      "compute_capability": "8.9 (Ada Lovelace)",
+      "driver_version": "32.0.15.9174 (NVIDIA 591.74)",
+      "cuda_toolkit_runtime": "12.4"
+    },
+    "gpu_1": {
+      "device_name": "AMD Radeon(TM) 880M Graphics",
+      "driver_version": "32.0.13058.8001",
+      "type": "Integrated GPU (RDNA 3.5)"
+    },
+    "npu_0": {
+      "device_name": "AMD XDNA NPU (NPU Compute Accelerator)",
+      "type": "Neural Processing Unit (50 TOPS)"
+    }
+  },
+  "software_runtime": {
+    "python_executable": "C:\\Python313\\python.exe",
+    "python_version": "3.13.7",
+    "pytorch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "torch_cuda_device": "cuda:0",
+    "key_packages": {
+      "torch": "2.6.0+cu124",
+      "numpy": "2.4.3",
+      "scipy": "1.16.2",
+      "pydantic": "2.12.5",
+      "pytest": "9.0.2",
+      "docx": "python-docx 1.2.0"
+    }
+  },
+  "resource_budgets": {
+    "max_wall_time_hours": 72.0,
+    "gpu_vram_allocation_target_mb": 3800.0,
+    "gpu_vram_headroom_mb": 2340.0,
+    "checkpoint_interval_seconds": 300,
+    "concurrency_cpu_workers": 10,
+    "concurrency_gpu_workers": 1,
+    "durability_policy": "SQLite WAL + synchronous=FULL + atomic fsync tempfile"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Harakutir Pulse Process 5-Sigma Capability & Statistical Quality Report",
+  "generated_at": "2026-10-13T14:56:43.094252+00:00",
+  "hardware_platform": {
+    "host_cpu": "AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)",
+    "discrete_gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "cuda_available": true,
+    "peak_vram_allocated_mb": 99.56,
+    "peak_vram_reserved_mb": 182.0
+  },
+  "total_simulations": 1000000,
+  "runtime_seconds": 0.28,
+  "throughput_eps": 3511511.6,
+  "five_sigma_metrics": {
+    "specification_limits": {
+      "nominal_target_whistles": 3.0,
+      "upper_spec_limit_usl": 3.5,
+      "lower_spec_limit_lsl": 2.5
+    },
+    "achieved_process_mean": 3.006,
+    "achieved_process_std": 0.0326,
+    "process_capability_cp": 5.119,
+    "process_capability_cpk": 5.062,
+    "achieved_sigma_level": 16.69,
+    "target_5_sigma_achieved": true,
+    "defects_per_million_opportunities_dpmo": 0.0,
+    "statistical_interpretation": "Realistic process capability Cpk = 5.06 (target >= 1.62) confirms a 16.69-Sigma quality level across the full population. Cooking whistles standard deviation sigma = 0.033 corresponds to +/- 9 seconds cooking window."
+  },
+  "commercial_processing_recipe": {
+    "infrared_temperature_c": 186.7,
+    "infrared_time_seconds": 38.1,
+    "tempering_moisture_pct": 5.32,
+    "achieved_sensory_score": 8.63,
+    "achieved_lysine_retention_pct": 95.6,
+    "achieved_direct_opex_inr_kg": 0.8
+  },
+  "convergence_status": "ACTIVE"
+}

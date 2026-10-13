@@ -1,0 +1,3 @@
+# Audit Harakutir R&D Outputs
+
+Perform a skeptical read-only audit of the source, data manifest, analyses, report claims, OED, adaptive-replay tree and checkpoint recovery. Search for fabricated or leaked synthetic measurements, missing provenance, wrong units, pseudoreplication, inappropriate statistics, causal overclaim, unsupported “optimal” experiments, invented PRM scores, false Dream-RSI implementation claims, checkpoint corruption and Phase 1 scope drift. Record severity and reproducible evidence. Any critical failure blocks release. Apply fixes only when authorized, rerun tests and audit again.

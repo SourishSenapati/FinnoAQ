@@ -1,0 +1,15 @@
+DREAM-RSI-INSPIRED DISCOVERY CYCLE PROMPT
+
+Run one bounded improvement cycle in the existing local discovery system. Do not reset its tree, evaluator, policy history, measurements or checkpoints.
+
+1. Read current run state, scoring config, baseline policy and latest validated tree. Verify checkpoint integrity first.
+2. Check the current official status of Dream-RSI at https://arxiv.org/abs/2609.14858 and https://github.com/kudoej/dream-rsi. Only use an official implementation if it is genuinely released, license-compatible, reviewed and resource-compatible. Otherwise remain explicit that the local component is Dream-RSI-inspired, not official Dream-RSI.
+3. Select a small, diverse batch of candidate exploration policies that differ in a clear way: task priority, branching, bounded parallelism, failure retry, validation ordering, or stopping criteria. State the hypothesis and measurable success criteria before execution.
+4. Run online candidates only against valid coding/data-engineering tasks. Do not use fabricated sample data to choose a scientific mechanism. Respect GPU serialization and resource ceilings.
+5. Persist each action as a tree node: parent ID, action/policy version, input/config/code hashes, command, observed output, exit status, test results, runtime, resource profile, output hashes and failure class.
+6. Replay candidate policies over recorded historical trees only. Never invent outputs for unvisited branches. Evaluate each candidate with the same fixed score and held-out traces/time window; report the replay's limited off-policy meaning.
+7. Reject any candidate with a provenance leak, fabricated data, failed critical tests, untracked state, report overclaim or unsafe resource use, regardless of its average score.
+8. Promote a policy only if it passes the hard gates and beats the baseline by the configured minimum on held-out traces. Otherwise keep the current policy. Keep rollback artifacts.
+9. Checkpoint, update status, and log whether to continue based on information gain per cost, plateau rules and the overall budget.
+
+Deliver: candidates considered; policy diffs; scores by component; replay limitations; best validated policy; failed branches and reasons; resource usage; checkpoint integrity; exact resume command. Never report a numeric PRM score unless an actual documented PRM evaluator generated it.

@@ -1,0 +1,23 @@
+INDEPENDENT RED-TEAM / SCIENTIFIC AUDIT PROMPT
+
+Act as an independent skeptical auditor. Assume the current report, code and orchestration may be wrong until evidence shows otherwise. Audit read-only first; do not make silent edits or delete artifacts.
+
+Inspect the SOW §§1–36 compliance matrix, actual source files, raw-data manifests, code/config hashes, normalized/derived tables, statistical outputs, report claims, figures, OED recommendations, discovery tree, checkpoints and logs.
+
+Critical questions:
+- Are any random, simulated, hand-entered, literature-derived, guessed or hard-coded values represented as actual lab data?
+- Can every empirical sentence, value, chart and conclusion be traced to actual source rows and reproduce from code?
+- Are synthetic fixtures segregated from real-data tables and report pipelines?
+- Are units, methods, sample/lot identity, replicate independence, censoring, QC/calibration and missing values handled correctly?
+- Are statistics appropriate to the experimental unit, with effect sizes, uncertainty, assumptions and multiplicity addressed? Is a p-value or “5-sigma” label being misrepresented as causal proof?
+- Is the hydration/Peleg model dimensionally correct, identifiable and validated against observations? Did any PINN merely learn a generated target curve?
+- Is OED truly based on specified data/priors/candidate designs/costs/utility, or is a fixed matrix being misnamed “optimal”?
+- Does a Dream-RSI/replay score use only stored outcomes? Are unvisited physical outcomes invented? Was a policy held out from evaluation? Is official implementation status represented accurately?
+- Do interruption/restart, partial-file recovery, idempotency, locking and child-process cleanup tests pass?
+- Are unneeded downloads, external API calls, data transfers, destructive commands, privacy leaks, credential leaks or uncontrolled background processes present?
+- Does the report respect all Phase 1 exclusions and differentiate measured differences, associations, hypotheses and Phase 2 validation?
+- Are partner capability, lab accreditation, quotations, timeline and commercial figures incorrectly represented as confirmed/current?
+
+Assign severity (critical/high/medium/low), provide exact file/line or data-row references, supporting evidence and a reproducible test for each issue. Critical gates include fabricated empirical data, data leakage, broken provenance, invalid causal claim, corrupt/unrecoverable checkpoints, and false success status. Do not accept a high aggregate quality score if any critical gate fails.
+
+Output `reports/INDEPENDENT_AUDIT.md` with findings first, then tests run, passed/failed gates, unverified assumptions, required fixes and release recommendation (`PASS`, `PASS_WITH_LIMITATIONS`, `FAIL`, or `BLOCKED`). If fixes are authorized by the main task, implement only targeted fixes, rerun the relevant and complete test suites, then audit again. Preserve the initial report and audit history.

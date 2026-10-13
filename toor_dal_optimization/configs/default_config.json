@@ -1,0 +1,52 @@
+{
+  "project_name": "Harakutir Toor Dal Diagnostic R&D Study",
+  "project_phase": "Phase 1 Diagnostic Comparison",
+  "version": "1.0.0",
+  "python_interpreter": "C:\\Python313\\python.exe",
+  "hardware": {
+    "target_platform": "Windows 11 AMD Ryzen 9 + NVIDIA RTX 4050 Laptop GPU",
+    "cuda_device_id": 0,
+    "max_parallel_gpu_workers": 1,
+    "target_vram_mb": 4096,
+    "max_vram_mb": 5120,
+    "max_cpu_workers": 4,
+    "fp_precision": "FP32"
+  },
+  "runtime_budget": {
+    "max_wall_hours": 72.0,
+    "checkpoint_interval_seconds": 300,
+    "checkpoint_every_completed_nodes": 10,
+    "heartbeat_interval_seconds": 30
+  },
+  "data_paths": {
+    "inputs_dir": "inputs",
+    "raw_dir": "data/raw",
+    "normalized_dir": "data/normalized",
+    "derived_dir": "data/derived",
+    "synthetic_dir": "data/synthetic",
+    "checkpoints_dir": "checkpoints",
+    "state_dir": "state",
+    "logs_dir": "logs",
+    "reports_dir": "reports",
+    "research_dir": "research",
+    "artifacts_dir": "artifacts"
+  },
+  "scoring_weights": {
+    "task_acceptance": 0.25,
+    "test_pass_rate": 0.25,
+    "reproducibility": 0.20,
+    "evidence_quality": 0.15,
+    "scope_coverage": 0.10,
+    "resource_efficiency": 0.05
+  },
+  "commercial_parameters": {
+    "indicative_professional_fee_inr": 173000,
+    "commercial_ceiling_inr": 200000,
+    "milestone_schedule": {
+      "milestone_1_initiation_pct": 40,
+      "milestone_2_analytical_work_pct": 40,
+      "milestone_3_final_report_pct": 20
+    },
+    "timeline_business_days": "20-25"
+  }
+}

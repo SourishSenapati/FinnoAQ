@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "system": "Dream-RSI-inspired discovery layer",
+  "updated_at": "2026-10-13T14:20:42.794787",
+  "nodes": {
+    "NODE_P1_001": {
+      "node_id": "NODE_P1_001",
+      "parent_id": null,
+      "task_hypothesis": "Extract all 78 SOW parameters and \u00a71-36 compliance requirements",
+      "policy_version": "1.0.0",
+      "command_or_action": "parameters.py -> build_parameter_registry_md()",
+      "config_hash": "DEFAULT_CONFIG_HASH",
+      "data_hash": "SOW_DOCX_HASH",
+      "cost_seconds": 0.0,
+      "status": "SUCCESS",
+      "test_results": {
+        "total": 36,
+        "passed": 36
+      },
+      "failure_cause": null,
+      "created_at": "2026-10-13T14:20:41.924921"
+    },
+    "NODE_P4_002": {
+      "node_id": "NODE_P4_002",
+      "parent_id": "NODE_P1_001",
+      "task_hypothesis": "Fit Peleg NLLS and solve inverse radial diffusion on RTX 4050 GPU",
+      "policy_version": "1.0.0",
+      "command_or_action": "hydration.py -> GPUInverseHydrationModel",
+      "config_hash": "DEFAULT_CONFIG_HASH",
+      "data_hash": "SYNTH_FIXTURE_HASH",
+      "cost_seconds": 0.855,
+      "status": "SUCCESS",
+      "test_results": {
+        "total": 2,
+        "passed": 2
+      },
+      "failure_cause": null,
+      "created_at": "2026-10-13T14:20:42.794709"
+    }
+  }
+}

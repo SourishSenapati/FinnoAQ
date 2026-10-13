@@ -1,0 +1,12 @@
+INGEST NEW LAB DATA PROMPT
+
+Ingest newly supplied Harakutir Toor Dal laboratory data into the existing project without modifying the original files.
+
+- First identify the exact new input files, hash them, inspect structure/sheets/pages and produce an import preview. Do not guess units or group labels. Record ambiguities.
+- Map each field to the existing typed data contract: sample_id, lot_id, group/origin, analyte/parameter, reported value/unit, normalized value/unit, method, replicate, experimental conditions, date, QC flags and exact source-row/page/cell pointer.
+- Distinguish actual observations from supplier summaries, literature values, calculations, assumptions and synthetic examples. Mark source provenance for every imported record.
+- Check duplicates/conflicts, row reconciliation, impossible values, units, percent basis, missing values, detection limits, replicate structure, method metadata and source-group consistency. Do not silently drop or impute. Produce a quarantine file for ambiguous/invalid rows with reason codes.
+- Import valid records into a new versioned normalized dataset using a transaction; never replace raw inputs or prior valid datasets. Record schema/version, import timestamp, hashes and code version.
+- Run data validation tests, verify all imported records link back to source rows, and test that synthetic fixtures remain isolated.
+- Recompute only downstream tasks invalidated by the new dataset hash. Preserve previous runs/reports for comparison. Refresh data readiness, quality-control, statistical-analysis and claim-ledger artifacts only where their dependencies are now satisfied.
+- Do not assume that a new file represents independent lots; verify the experimental unit. Avoid pseudoreplication. Report any results that remain blocked.

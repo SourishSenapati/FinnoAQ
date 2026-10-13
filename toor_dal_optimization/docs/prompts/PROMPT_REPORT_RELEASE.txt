@@ -1,0 +1,10 @@
+EVIDENCE-BACKED REPORT RELEASE PROMPT
+
+Build or refresh the Harakutir Phase 1 technical report from the latest validated immutable dataset and analysis run only. Do not alter the source document or raw data. Do not run new scientific analyses unless the data and tests show they are required; if rerunning is necessary, do so through the supervisor so results remain traceable.
+
+- Read SOW compliance status and `reports/INDEPENDENT_AUDIT.md` first.
+- Use the 23-part §22 report structure and all §21 deliverables; include limitations, actual methods, QC, experimental design, data-quality deviations, statistical methods, integrated comparison, evidence hierarchy, Phase 2 recommendations, source data appendix and reproducibility manifest.
+- For every claim, resolve its claim ID to raw/derived data provenance. Separate empirical findings, calculations, literature context, assumptions and hypotheses. Cite literature with verified sources and dates. Do not report fake lab results, guessed costs, invented credentials, or made-up model performance.
+- If actual lab data are absent or critical gates fail, output a professional `DATA_READINESS_ONLY` or `BLOCKED` report, not a completed empirical report.
+- Render Markdown first. Generate DOCX/PDF only with available and tested tools. Open/check the rendered outputs for page breaks, missing fonts/math/tables, truncation, broken figures, unresolved placeholders and metadata leakage. Preserve the prior report/version.
+- Verify output existence, non-zero size, hashes, data/config/code provenance, and reproducible build command. Update final status and exact tested resume command.

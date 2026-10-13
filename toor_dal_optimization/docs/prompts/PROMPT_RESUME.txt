@@ -1,0 +1,13 @@
+RESUME / CONTINUE PROMPT
+
+Resume the existing Harakutir Phase 1 R&D computation from its most recent valid checkpoint. Do not start a new run and do not reset state, rebuild databases destructively, overwrite inputs, or rerun completed expensive tasks.
+
+1. Locate the project root, read `AGENTS.md`/runbook, inspect the manifest, SQLite event journal, `status.md`, logs and all checkpoint candidates.
+2. Validate checkpoint hashes and input/config/code hashes. If the newest checkpoint is corrupt, fall back to the latest verified previous checkpoint and document the recovery.
+3. Reconcile tasks marked `running` but with no live process. Confirm partial outputs before resuming. Preserve committed tasks and all raw data.
+4. Run required quick integrity tests and check disk, RAM, GPU/VRAM and active child processes. Do not run duplicate supervisors.
+5. Resume the next safe idempotent task using the documented supervisor command. Keep checkpointing at the configured interval and after each completed task/node.
+6. If real laboratory measurements are absent, continue the software/readiness/discovery work only; do not generate or infer fake measurements. Never promote synthetic test fixtures into scientific results.
+7. On exit, update status, last checkpoint, failures, exact resume command and output hashes. If blocked, save state and name the precise blocker.
+
+Report only the current state, what resumed, what passed/failed, files changed and how to continue. Do not claim completion unless the release gates pass.

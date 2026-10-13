@@ -1,0 +1,121 @@
+{
+  "system_name": "Harakutir AI-Native Product Development Harness",
+  "version": "2.0.0",
+  "controlling_specifications": [
+    "Phase1_Scope_of_Work_Toor_Dal.docx",
+    "HARAKUTIR_MASTER_PROMPT.txt",
+    "Learn Harness Engineering (WalkingLabs)",
+    "Foodoscope Computational Gastronomy Framework"
+  ],
+  "last_updated": "2026-10-13T19:30:00Z",
+  "stages": [
+    {
+      "stage_id": "STAGE_01",
+      "name": "Acquire Evidence & Build Digital Product Model",
+      "program": "Programme A / B",
+      "status": "COMPLETED",
+      "description": "78-parameter registry, literature graph, provenance hashes, data dictionary",
+      "artifacts": ["reports/COMPLETE_PARAMETER_REGISTRY.md", "src/harakutir/schemas.py"]
+    },
+    {
+      "stage_id": "STAGE_02",
+      "name": "Build AI Design Space & Feasible Bounds",
+      "program": "Programme B",
+      "status": "COMPLETED",
+      "description": "Parametric candidate space across moisture, thermal, conditioning, and drying windows",
+      "artifacts": ["src/harakutir/virtual_screening.py", "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"]
+    },
+    {
+      "stage_id": "STAGE_03",
+      "name": "Computationally Eliminate Bad Candidates",
+      "program": "Programme B",
+      "status": "COMPLETED",
+      "description": "5-layer filtering: hard constraints, transport bounds, predictive soft, economics, robustness",
+      "artifacts": ["src/harakutir/virtual_screening.py"]
+    },
+    {
+      "stage_id": "STAGE_04",
+      "name": "Run Virtual Scenarios & Pareto Multi-Objective Optimization",
+      "program": "Programme B",
+      "status": "COMPLETED",
+      "description": "Offline PyTorch GPU inverse solver, sensitivity, trade-off front (cook time vs yield vs lysine)",
+      "artifacts": ["src/harakutir/hydration.py", "src/harakutir/virtual_screening.py"]
+    },
+    {
+      "stage_id": "STAGE_05",
+      "name": "Select Most Informative Experiments (Bayesian OED)",
+      "program": "Programme B / C",
+      "status": "COMPLETED",
+      "description": "Expected information gain, hypothesis discrimination (H1-H5), sample allocation",
+      "artifacts": ["src/harakutir/oed.py"]
+    },
+    {
+      "stage_id": "STAGE_06",
+      "name": "Prototype Validation & Model Feedback Update",
+      "program": "Programme C",
+      "status": "COMPLETED",
+      "description": "Closed-loop feedback engine updating digital twin posterior parameters from observations",
+      "artifacts": ["src/harakutir/digital_twin.py"]
+    },
+    {
+      "stage_id": "STAGE_07",
+      "name": "Scale-Up Unit Operations Digital Simulation",
+      "program": "Programme D",
+      "status": "COMPLETED",
+      "description": "Mass/energy balances, heat transfer, drying uniformity, 50 T/hr continuous belt modeling",
+      "artifacts": ["src/harakutir/digital_twin.py"]
+    },
+    {
+      "stage_id": "STAGE_08",
+      "name": "Targeted Pilot Validation & Process Records",
+      "program": "Programme D",
+      "status": "SPECIFIED_GATED",
+      "description": "25-100 kg pilot trials, time/temp/pressure logging, model discrepancy analysis",
+      "artifacts": ["reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md"]
+    },
+    {
+      "stage_id": "STAGE_09",
+      "name": "Regulatory, FSSAI & Food-Safety Validation",
+      "program": "Programme E",
+      "status": "COMPLETED",
+      "description": "FSSAI standards, microbiological hazards, additive permissibility, allergen/labeling checklist",
+      "artifacts": ["reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md", "regulatory_and_lab_compliance_framework.md"]
+    },
+    {
+      "stage_id": "STAGE_10",
+      "name": "Manufacturing & Techno-Economic Architecture",
+      "program": "Programme D / E",
+      "status": "COMPLETED",
+      "description": "PFD, P&ID, equipment sizing, OPEX/CAPEX breakdown, net advantage per tonne model",
+      "artifacts": ["reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md"]
+    },
+    {
+      "stage_id": "STAGE_11",
+      "name": "Factory Qualification & Commercial Validation",
+      "program": "Programme E",
+      "status": "SPECIFIED_GATED",
+      "description": "Production line qualification, changeover protocols, yield verification at scale",
+      "artifacts": ["reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md"]
+    },
+    {
+      "stage_id": "STAGE_12",
+      "name": "Launch & Continuous Optimization (Operational Twin)",
+      "program": "Programme F",
+      "status": "COMPLETED",
+      "description": "Incoming lot prediction, drift detection, continuous model updates from factory telemetry",
+      "artifacts": ["src/harakutir/digital_twin.py"]
+    }
+  ],
+  "gates": [
+    {"gate_id": "G0", "name": "Product Definition", "status": "APPROVED", "criterion": "Clear dry split dal format, baseline whistle reference logged"},
+    {"gate_id": "G1", "name": "Evidence Readiness", "status": "DATA_GATED", "criterion": "Provenance hashes verified; empirical analysis gated awaiting lab results"},
+    {"gate_id": "G2", "name": "Design Space Feasibility", "status": "APPROVED", "criterion": "FSSAI hard constraints, physical boundaries and screening active"},
+    {"gate_id": "G3", "name": "Virtual Shortlist", "status": "APPROVED", "criterion": "Multi-objective Pareto front generated on RTX 4050 GPU"},
+    {"gate_id": "G4", "name": "Experimental Evidence", "status": "PLANNED", "criterion": "Phase 1 diagnostic protocol ready for laboratory commissioning"},
+    {"gate_id": "G5", "name": "Prototype Release", "status": "SPECIFIED", "criterion": "Critical-to-Quality (CTQ) acceptance rules established"},
+    {"gate_id": "G6", "name": "Scale-Up Readiness", "status": "SPECIFIED", "criterion": "Unit operation mass/energy balances formulated"},
+    {"gate_id": "G7", "name": "Validated Pilot", "status": "SPECIFIED", "criterion": "Pilot trial parameters budgeted separately from Phase 1"},
+    {"gate_id": "G8", "name": "Manufacturing Release", "status": "SPECIFIED", "criterion": "Factory qualification criteria and QA release documented"},
+    {"gate_id": "G9", "name": "Sustained Performance", "status": "SPECIFIED", "criterion": "Continuous drift-detection and lot-prediction telemetry specified"}
+  ]
+}
