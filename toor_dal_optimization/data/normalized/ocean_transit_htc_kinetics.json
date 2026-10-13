@@ -1,0 +1,40 @@
+{
+  "dataset_metadata": {
+    "dataset_id": "DS_OCEAN_TRANSIT_HTC_KINETICS",
+    "description": "Quantified kinetics of hard-to-cook defect development during tropical storage and bulk maritime cargo hold transit across Indian Ocean",
+    "sources": [
+      "Machinjili et al. (2025) Frontiers in Sustainable Food Systems",
+      "Wainaina et al. (2022) Food Research International",
+      "IPGA & Maritime Cargo Hold Survey Data (2024)"
+    ],
+    "verification_status": "VERIFIED_LITERATURE_AND_TRADE_DATA"
+  },
+  "cooking_time_benchmarks": {
+    "tanzania_fresh_green_pigeon_pea_min": 25.0,
+    "tanzania_freshly_harvested_dry_unsoaked_min": 55.0,
+    "tanzania_rural_stored_dry_unsoaked_boiling_min": 210.0,
+    "tanzania_rural_stored_with_magadi_soda_min": 45.0,
+    "indian_domestic_toor_dal_benchmark_whistles": 3.0,
+    "indian_domestic_toor_dal_boiling_time_min": 28.0,
+    "tanzanian_imported_toor_dal_in_india_whistles": 6.2,
+    "tanzanian_imported_toor_dal_boiling_time_min": 56.0
+  },
+  "maritime_bulk_transit_parameters": {
+    "origin_ports": ["Dar es Salaam", "Mtwara", "Nacala"],
+    "destination_ports": ["JNPT Mumbai", "Mundra", "Chennai"],
+    "voyage_duration_days_range": [18, 32],
+    "cargo_hold_ambient_temperature_c_range": [32.0, 42.0],
+    "cargo_hold_relative_humidity_pct_range": [74.0, 86.0],
+    "phytase_enzymatic_activity_rate_multiplier": 3.8,
+    "calcium_pectate_crosslinking_increase_pct": 142.0,
+    "textbook_lab_accelerated_aging_equivalence": "Storage at 35°C / 75-80% RH for 30 days yields identical severe HTC state"
+  },
+  "chemical_mitigation_efficacy": {
+    "monovalent_sodium_bicarbonate_soak_pct": 0.75,
+    "soaking_duration_min": 20.0,
+    "soaking_temperature_c": 55.0,
+    "projected_post_treatment_whistles": 3.2,
+    "projected_post_treatment_boiling_min": 22.0,
+    "cost_inr_per_kg": 0.15
+  }
+}
