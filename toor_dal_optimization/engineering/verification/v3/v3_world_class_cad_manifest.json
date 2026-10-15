@@ -1,0 +1,42 @@
+[
+  {
+    "equipment": "TK-101",
+    "description": "7.5 m3 Sanitary SS316L Soak Vessel with ASME Dished Head, 50-deg Conical Hopper, Flanged Drain Spool, 4 ISMC 150 Legs with 300x300 Baseplates, 8 Flanged Nozzles (Manway, Dal Feed, Water, Vent), Agitator Stool, SEW Geared Motor, and Lifting Padeyes",
+    "envelope_dimensions": "OD 2000mm (2350mm leg spread) x H 3855mm overall (-750mm to +3105mm)",
+    "sldprt_bytes": 184939,
+    "step_bytes": 281720,
+    "step_lines": 3719,
+    "asme_sec_viii_compliant": true,
+    "cad_format": "SolidWorks 2025 SP01.2 Native + STEP AP214"
+  },
+  {
+    "equipment": "DR-101",
+    "description": "Continuous Vibrating Fluid Bed Dryer with Lower Air Plenum (14m x 1m), 3 Hot Air Infeed Spools & Flanges, Perforated Deck Clamping Rim, Upper Drying Hood, 3 Exhaust Stacks with ANSI Flanges, Chutes, Exciter Bridge with Twin 5.5 kW Motors, and 12 Coil Spring Isolators",
+    "envelope_dimensions": "L 14000mm (15000mm chute-to-chute) x W 1200mm (1500mm overall) x H 2650mm overall (-850mm to +1800mm)",
+    "sldprt_bytes": 189321,
+    "step_bytes": 299302,
+    "step_lines": 4194,
+    "asme_sec_viii_compliant": true,
+    "cad_format": "SolidWorks 2025 SP01.2 Native + STEP AP214"
+  },
+  {
+    "equipment": "SK-100",
+    "description": "Heavy Structural Channel Chemical Dosing Skid with 50mm Bund, Dual Forklift Box Pockets, 4 Corner Lifting Eyes, Dual 500L HDPE Tanks with Mixers, Dual Diaphragm Metering Pumps with Liquid Ends, Pulsation Dampener, Calibration Column, and LCP-100 IP66 Panel on Stanchions",
+    "envelope_dimensions": "L 3200mm x W 1800mm x H 1880mm overall",
+    "sldprt_bytes": 155396,
+    "step_bytes": 181804,
+    "step_lines": 2546,
+    "asme_sec_viii_compliant": true,
+    "cad_format": "SolidWorks 2025 SP01.2 Native + STEP AP214"
+  },
+  {
+    "equipment": "AG-101",
+    "description": "Low-Shear Axial Agitator Assembly with SEW Helical-Bevel Speed Reducer, TEFC Motor, Lantern Pedestal Stool, ANSI B16.5 Mounting Flange, Cartridge Seal Gland, Rigid Muff Coupling, Solid Precision Shaft (Dia 60mm x 2.4m), Drive Hub, and 3 Pitched Hydrofoil Impeller Blades (Dia 800mm)",
+    "envelope_dimensions": "Sweep Dia 800mm x Total H 2850mm (-2400mm to +450mm)",
+    "sldprt_bytes": 100066,
+    "step_bytes": 120051,
+    "step_lines": 1697,
+    "asme_sec_viii_compliant": true,
+    "cad_format": "SolidWorks 2025 SP01.2 Native + STEP AP214"
+  }
+]
