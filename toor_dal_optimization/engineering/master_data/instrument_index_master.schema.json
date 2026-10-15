@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InstrumentIndexMasterSchema",
+  "type": "object",
+  "required": [
+    "metadata",
+    "instruments"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "revision",
+        "total_instrument_count"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "total_instrument_count": {
+          "type": "integer"
+        }
+      }
+    },
+    "instruments": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "tag",
+          "description",
+          "service_location",
+          "measured_variable",
+          "range_units",
+          "output_signal",
+          "trip_interlock",
+          "pid_drawing_no"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "service_location": {
+            "type": "string"
+          },
+          "measured_variable": {
+            "type": "string"
+          },
+          "range_units": {
+            "type": "string"
+          },
+          "output_signal": {
+            "type": "string"
+          },
+          "trip_interlock": {
+            "type": "string"
+          },
+          "pid_drawing_no": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

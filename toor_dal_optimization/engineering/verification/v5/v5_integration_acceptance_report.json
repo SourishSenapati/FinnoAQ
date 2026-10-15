@@ -1,0 +1,122 @@
+{
+  "test_run_metadata": {
+    "directive": "V5 Master Directive Section 1(E)",
+    "timestamp": "2026-10-16T00:41:26+0530",
+    "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "branch": "v5-integrated-engineering"
+  },
+  "acceptance_tests": {
+    "test_1_schema_and_tag_uniqueness": {
+      "status": "PASS",
+      "details": [
+        "Schema validation passed: design_basis_master.json",
+        "Schema validation passed: stream_table_master.json",
+        "Schema validation passed: equipment_register_master.json",
+        "Schema validation passed: line_list_master.json",
+        "Schema validation passed: instrument_index_master.json",
+        "Schema validation passed: motor_load_master.json",
+        "Schema validation passed: bom_master.json",
+        "All 85 entity tags are strictly unique across all registers."
+      ],
+      "unique_tags_count": 85
+    },
+    "test_2_mass_balance_closure": {
+      "status": "PASS",
+      "details": [
+        "Total dry solids: In=13425.00 kg/d, Out=13424.91 kg/d, Delta=0.0946 kg/d",
+        "Total water: In=26212.50 kg/d, Out=26212.50 kg/d, Delta=0.0001 kg/d",
+        "Total NaHCO3 solute: In=112.50 kg/d, Out=112.50 kg/d, Delta=0.0044 kg/d",
+        "All material balances close within engineering tolerance (< 0.01% error)."
+      ],
+      "solids_closure_error_kg_d": 0.0946,
+      "water_closure_error_kg_d": 0.0001,
+      "solute_closure_error_kg_d": 0.0044
+    },
+    "test_3_pfd_pid_tag_resolution": {
+      "status": "PASS",
+      "details": [
+        "PFD drawing DWG-FIN-15T-001 contains all 10 stream flags (01-10).",
+        "All 8 key equipment tags verified present on P&ID/PFD drawings."
+      ]
+    },
+    "test_4_simulation_reconciliation": {
+      "status": "PASS",
+      "details": [
+        "Aspen Plus V14 converged model verified: HARAKUTIR_15TPD_CONVERGED.bkp",
+        "Aspen triple-effect evaporator: Duty=310.5 kWth, Distillate=980.0 kg/h, Economy=2.38",
+        "Dryer DR-101 design duty reconciled independently: 512.4 kWth (Steam demand: 785 kg/h @ 3.5 bar g)"
+      ],
+      "aspen_evaporator_duty_kwth": 310.5,
+      "dryer_steam_duty_kwth": 512.4
+    },
+    "test_5_cad_geometry_and_solids": {
+      "status": "PASS",
+      "details": [
+        "STEP TK-101_Soak_Tank.step VERIFIED: 11 solids, 11 closed shells, 120 faces.",
+        "STEP DR-101_Fluid_Bed_Dryer.step VERIFIED: 19 solids, 19 closed shells, 156 faces.",
+        "STEP SK-100_Dosing_Skid.step VERIFIED: 1 solids, 1 closed shells, 86 faces.",
+        "STEP PLANT-15T_General_Arrangement.step VERIFIED: 36 solids, 36 closed shells, 419 faces.",
+        "SolidWorks Master Assembly PLANT-15T verified: Mass=29256.88 kg, Volume=29.2569 m3"
+      ]
+    },
+    "test_6_plant_layout_and_clearances": {
+      "status": "PASS",
+      "details": [
+        "Plot plan DWG-FIN-15T-004 has correct 1:1 metric scale ($INSUNITS = 4, Millimeters).",
+        "Verified hygienic zone present: ZONE 1",
+        "Verified hygienic zone present: ZONE 2",
+        "Verified hygienic zone present: ZONE 3",
+        "Verified hygienic zone present: ZONE 4",
+        "Verified utilities & ETP area present (Boiler House & ETP / ZLD Evaporator).",
+        "Building envelope verified: 52,000 mm x 24,000 mm (1,248 m2).",
+        "Equipment clearance corridors verified: Main aisle 3,500 mm, maintenance perimeter >= 1,200 mm."
+      ]
+    },
+    "test_7_electrical_io_safety_bom": {
+      "status": "PASS",
+      "details": [
+        "Motor load list reconciled: Connected = 77.09 kW, Operating = 56.55 kW across 31 drives.",
+        "Verified 7 safety trip/interlock loops mapped from instrument index to PLC logic.",
+        "Itemized BOM reconciled: 32 line items, Total CAPEX = 167.7 Lakhs INR (~$192k USD)."
+      ],
+      "total_connected_kw": 77.09,
+      "total_capex_lakhs_inr": 167.7
+    },
+    "test_8_drawing_vector_qa": {
+      "status": "PASS",
+      "details": [
+        "All 12 vector PDF sheets pass margin, title-block, and vector path checks without LaTeX errors."
+      ]
+    },
+    "test_9_change_propagation": {
+      "status": "PASS",
+      "details": [
+        "Upstream parameter perturbation applied: feed_moisture_wb 10.5% -> 11.5%",
+        "Dependency graph flagged stale: ['dry_solids_intake_daily', 'S-101', 'S-104', 'S-108', 'DR-101', 'daily_dryer_evaporation_water']",
+        "Downstream recomputed: Dry solids 13425.0 -> 13275.0 kg/d, Dryer evaporation 3694.7 -> 3863.4 kg/d",
+        "Automated change propagation engine proved responsive and topologically correct."
+      ]
+    },
+    "test_10_negative_rejection_fixtures": {
+      "status": "PASS",
+      "details": [
+        "[PASS] Fixture N-1: Empty STEP correctly REJECTED (0 solid B-reps detected).",
+        "[PASS] Fixture N-2: Unclosed mass balance (+500 kg/day) correctly REJECTED.",
+        "[PASS] Fixture N-3: Moisture basis confusion detected and correctly REJECTED (error: 184.8 kg).",
+        "[PASS] Fixture N-4: Mismatched tag 'TK-999_DUMMY' correctly REJECTED by register validator."
+      ]
+    },
+    "test_11_report_synthesis": {
+      "status": "PASS",
+      "details": [
+        "Full Integration Test Report synthesized and cryptographically locked to v5_integration_acceptance_report.json"
+      ]
+    }
+  },
+  "summary": {
+    "total_tests": 11,
+    "passed_tests": 11,
+    "failed_tests": 0,
+    "overall_status": "ALL_PASSED"
+  }
+}

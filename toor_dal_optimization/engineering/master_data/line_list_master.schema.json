@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LineListMasterSchema",
+  "type": "object",
+  "required": [
+    "metadata",
+    "lines"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "revision",
+        "total_line_count"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "total_line_count": {
+          "type": "integer"
+        }
+      }
+    },
+    "lines": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "line_number",
+          "from_equipment",
+          "to_equipment",
+          "nominal_size_nb",
+          "pipe_class",
+          "fluid_service",
+          "design_pressure_bar",
+          "operating_temp_c",
+          "pid_drawing_no"
+        ],
+        "properties": {
+          "line_number": {
+            "type": "string"
+          },
+          "from_equipment": {
+            "type": "string"
+          },
+          "to_equipment": {
+            "type": "string"
+          },
+          "nominal_size_nb": {
+            "type": "string"
+          },
+          "pipe_class": {
+            "type": "string"
+          },
+          "fluid_service": {
+            "type": "string"
+          },
+          "design_pressure_bar": {
+            "type": "string"
+          },
+          "operating_temp_c": {
+            "type": "string"
+          },
+          "pid_drawing_no": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

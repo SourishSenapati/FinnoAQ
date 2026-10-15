@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EquipmentRegisterMasterSchema",
+  "type": "object",
+  "required": [
+    "metadata",
+    "equipment"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "revision",
+        "total_equipment_count"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "total_equipment_count": {
+          "type": "integer"
+        }
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "tag",
+          "name",
+          "area_zone",
+          "service",
+          "capacity_rating",
+          "dimensions_m",
+          "wetted_material",
+          "structural_material",
+          "motor_kw",
+          "design_status",
+          "cad_model_ref"
+        ],
+        "properties": {
+          "tag": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "area_zone": {
+            "type": "string"
+          },
+          "service": {
+            "type": "string"
+          },
+          "capacity_rating": {
+            "type": "string"
+          },
+          "dimensions_m": {
+            "type": "object"
+          },
+          "wetted_material": {
+            "type": "string"
+          },
+          "structural_material": {
+            "type": "string"
+          },
+          "motor_kw": {
+            "type": "number"
+          },
+          "design_status": {
+            "type": "string"
+          },
+          "cad_model_ref": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

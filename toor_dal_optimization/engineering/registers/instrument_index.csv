@@ -15,5 +15,5 @@ MT-101,Continuous Moisture Transmitter,DR-101 Discharge,Grain Moisture Content,5
 PDT-101,Dryer Bed Pressure Differential,DR-101 Bed,Differential Static Pressure,0 - 5000 Pa,4-20 mA Differential,800 Pa (Channeling),2500 Pa (Defluidization),Low trips burner / heater,DWG-FIN-15T-004
 PDT-102,Baghouse Filter Differential,BH-101 Bags,Filter Bag DP,0 - 2500 Pa,4-20 mA Differential,200 Pa,1600 Pa (Choked),High triggers pulse cycle boost,DWG-FIN-15T-004
 ZS-101,Vibratory Screen Motion Sensor,VS-101,Deck Acceleration / Vibration,0 - 10 g,Vibration Switch (Discrete),2.0 g (Drive failure),N/A,Low-Low stops P-101 slurry feed,DWG-FIN-15T-003
-MD-101,Metal Detection Signal,MD-101 Chute,Tramp Metal Detected,Discrete Pulse,Digital Output to PLC,N/A,N/A,Pneumatic reject flapper fires,DWG-FIN-15T-004
+MDT-101,Metal Detection Signal,MD-101 Chute,Tramp Metal Detected,Discrete Pulse,Digital Output to PLC,N/A,N/A,Pneumatic reject flapper fires,DWG-FIN-15T-004
 WT-102,Packaging Checkweigher Cell,CW-101,Pouch Weight,0 - 3000 g (+/-0.5g),High-Speed Strain Gauge,990 g (Under),1015 g (Over),Under/Over triggers air ejector,DWG-FIN-15T-004

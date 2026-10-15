@@ -8,7 +8,7 @@ DI-006,Digital Input,P-101B Run Feedback,P-101B-M,Rack 0 Slot 1 Ch 5,Trip on Los
 DI-007,Digital Input,DR-101 Vibrator 1 Feedback,DR-101-M1,Rack 0 Slot 1 Ch 6,Trip on Loss,Run / Stop
 DI-008,Digital Input,FN-101 Blower Run Feedback,FN-101-M,Rack 0 Slot 1 Ch 7,Trip on Loss,Run / Stop
 DI-009,Digital Input,EXH-101 Fan Run Feedback,EXH-101-M,Rack 0 Slot 2 Ch 0,Trip on Loss,Run / Stop
-DI-010,Digital Input,MD-101 Metal Detected Pulse,MD-101,Rack 0 Slot 2 Ch 1,Trigger Reject,Clean / Metal
+DI-010,Digital Input,MD-101 Metal Detected Pulse,MDT-101,Rack 0 Slot 2 Ch 1,Trigger Reject,Clean / Metal
 DI-011,Digital Input,E-Stop Circuit Zone 1 (Raw),ESTOP-Z1,Rack 0 Slot 2 Ch 2,Emergency Stop,Normal / Tripped
 DI-012,Digital Input,E-Stop Circuit Zone 2 (Soak),ESTOP-Z2,Rack 0 Slot 2 Ch 3,Emergency Stop,Normal / Tripped
 DI-013,Digital Input,E-Stop Circuit Zone 3 (Dryer),ESTOP-Z3,Rack 0 Slot 2 Ch 4,Emergency Stop,Normal / Tripped

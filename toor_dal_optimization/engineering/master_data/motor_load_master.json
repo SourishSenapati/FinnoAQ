@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "document_id": "ENG-MB-ML-001",
+    "revision": "V5.0",
+    "total_motor_count": 31,
+    "total_connected_kw": 77.09,
+    "total_operating_kw": 56.55
+  },
+  "motors": {
+    "HOP-101-M": {
+      "equipment_tag": "HOP-101-M",
+      "motor_description": "Receiving Hopper Vibrator",
+      "area_zone": "Zone 1",
+      "rated_kw": 0.37,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.3
+    },
+    "EL-101-M": {
+      "equipment_tag": "EL-101-M",
+      "motor_description": "Raw Dal Bucket Elevator Motor",
+      "area_zone": "Zone 1",
+      "rated_kw": 1.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 1.25
+    },
+    "SCN-101-M1": {
+      "equipment_tag": "SCN-101-M1",
+      "motor_description": "Screener Vibrator Motor 1",
+      "area_zone": "Zone 1",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.6
+    },
+    "SCN-101-M2": {
+      "equipment_tag": "SCN-101-M2",
+      "motor_description": "Screener Vibrator Motor 2",
+      "area_zone": "Zone 1",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.6
+    },
+    "GF-101-M": {
+      "equipment_tag": "GF-101-M",
+      "motor_description": "Gravimetric Feeder Screw Drive",
+      "area_zone": "Zone 2",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.55
+    },
+    "AG-100-M": {
+      "equipment_tag": "AG-100-M",
+      "motor_description": "Chemical Dissolution Agitator",
+      "area_zone": "Zone 2",
+      "rated_kw": 1.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 1.1
+    },
+    "P-100A-M": {
+      "equipment_tag": "P-100A-M",
+      "motor_description": "Chemical Dosing Pump A Motor",
+      "area_zone": "Zone 2",
+      "rated_kw": 1.1,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.85
+    },
+    "P-100B-M": {
+      "equipment_tag": "P-100B-M",
+      "motor_description": "Chemical Dosing Pump B Motor (Standby)",
+      "area_zone": "Zone 2",
+      "rated_kw": 1.1,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.0
+    },
+    "AG-101A-M": {
+      "equipment_tag": "AG-101A-M",
+      "motor_description": "Low-Shear Hydrofoil Agitator A",
+      "area_zone": "Zone 2",
+      "rated_kw": 2.2,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 1.65
+    },
+    "AG-101B-M": {
+      "equipment_tag": "AG-101B-M",
+      "motor_description": "Low-Shear Hydrofoil Agitator B",
+      "area_zone": "Zone 2",
+      "rated_kw": 2.2,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 1.65
+    },
+    "P-101A-M": {
+      "equipment_tag": "P-101A-M",
+      "motor_description": "Dal Slurry Vortex Pump A Motor",
+      "area_zone": "Zone 2",
+      "rated_kw": 2.2,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 1.8
+    },
+    "P-101B-M": {
+      "equipment_tag": "P-101B-M",
+      "motor_description": "Dal Slurry Vortex Pump B Motor (Standby)",
+      "area_zone": "Zone 2",
+      "rated_kw": 2.2,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.0
+    },
+    "VS-101-M1": {
+      "equipment_tag": "VS-101-M1",
+      "motor_description": "Dewatering Screen Vibrator 1",
+      "area_zone": "Zone 2",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.6
+    },
+    "VS-101-M2": {
+      "equipment_tag": "VS-101-M2",
+      "motor_description": "Dewatering Screen Vibrator 2",
+      "area_zone": "Zone 2",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.6
+    },
+    "P-102-M": {
+      "equipment_tag": "P-102-M",
+      "motor_description": "Spent Liquor Return Pump Motor",
+      "area_zone": "Zone 2",
+      "rated_kw": 1.1,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.85
+    },
+    "CV-101-M": {
+      "equipment_tag": "CV-101-M",
+      "motor_description": "Wet Dal Incline Belt Conveyor",
+      "area_zone": "Zone 3",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.55
+    },
+    "DR-101-M1": {
+      "equipment_tag": "DR-101-M1",
+      "motor_description": "Fluid-Bed Dryer Vibrator 1",
+      "area_zone": "Zone 3",
+      "rated_kw": 1.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 1.2
+    },
+    "DR-101-M2": {
+      "equipment_tag": "DR-101-M2",
+      "motor_description": "Fluid-Bed Dryer Vibrator 2",
+      "area_zone": "Zone 3",
+      "rated_kw": 1.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 1.2
+    },
+    "FN-101-M": {
+      "equipment_tag": "FN-101-M",
+      "motor_description": "Fluidizing Primary Air Blower",
+      "area_zone": "Zone 3",
+      "rated_kw": 11.0,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 8.8
+    },
+    "FN-102-M": {
+      "equipment_tag": "FN-102-M",
+      "motor_description": "Cooler Air Blower Motor",
+      "area_zone": "Zone 3",
+      "rated_kw": 3.7,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 2.9
+    },
+    "CYC-101-M": {
+      "equipment_tag": "CYC-101-M",
+      "motor_description": "Exhaust Cyclone Rotary Airlock",
+      "area_zone": "Zone 3",
+      "rated_kw": 0.37,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.25
+    },
+    "BH-101-M": {
+      "equipment_tag": "BH-101-M",
+      "motor_description": "Pulse Jet Baghouse Controller",
+      "area_zone": "Zone 3",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.4
+    },
+    "EXH-101-M": {
+      "equipment_tag": "EXH-101-M",
+      "motor_description": "Induced Draft Exhaust Blower",
+      "area_zone": "Zone 3",
+      "rated_kw": 7.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 5.8
+    },
+    "EL-102-M": {
+      "equipment_tag": "EL-102-M",
+      "motor_description": "Finished Dal Bucket Elevator Motor",
+      "area_zone": "Zone 4",
+      "rated_kw": 1.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 1.2
+    },
+    "SCN-102-M": {
+      "equipment_tag": "SCN-102-M",
+      "motor_description": "Rotary Polishing Sifter Motor",
+      "area_zone": "Zone 4",
+      "rated_kw": 0.75,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 0.55
+    },
+    "PK-101-M": {
+      "equipment_tag": "PK-101-M",
+      "motor_description": "Packaging Machine VFFS Servo Drive",
+      "area_zone": "Zone 4",
+      "rated_kw": 5.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "Servo/VFD",
+      "vfd_required": true,
+      "operating_kw_base": 4.2
+    },
+    "CW-101-M": {
+      "equipment_tag": "CW-101-M",
+      "motor_description": "In-line Checkweigher Conveyor",
+      "area_zone": "Zone 4",
+      "rated_kw": 0.55,
+      "voltage": "230V 1Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 0.4
+    },
+    "CIP-101-M": {
+      "equipment_tag": "CIP-101-M",
+      "motor_description": "Clean-In-Place Delivery Pump",
+      "area_zone": "Zone 5",
+      "rated_kw": 5.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 4.5
+    },
+    "ETP-101-M": {
+      "equipment_tag": "ETP-101-M",
+      "motor_description": "Effluent Treatment Package Pumps",
+      "area_zone": "Zone 5",
+      "rated_kw": 4.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "DOL",
+      "vfd_required": false,
+      "operating_kw_base": 3.2
+    },
+    "AUX-COMP-M": {
+      "equipment_tag": "AUX-COMP-M",
+      "motor_description": "Compressed Air Package Screw Compressor",
+      "area_zone": "Zone 5",
+      "rated_kw": 7.5,
+      "voltage": "415V 3Ph",
+      "starter_type": "VFD",
+      "vfd_required": true,
+      "operating_kw_base": 5.5
+    },
+    "AUX-LIGHT-M": {
+      "equipment_tag": "AUX-LIGHT-M",
+      "motor_description": "Plant Lighting and Small Power",
+      "area_zone": "All Zones",
+      "rated_kw": 5.0,
+      "voltage": "415V 3Ph",
+      "starter_type": "Breaker",
+      "vfd_required": false,
+      "operating_kw_base": 3.5
+    }
+  }
+}

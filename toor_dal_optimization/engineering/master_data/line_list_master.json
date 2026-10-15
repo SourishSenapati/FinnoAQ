@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "document_id": "ENG-MB-LL-001",
+    "revision": "V5.0",
+    "total_line_count": 20
+  },
+  "lines": {
+    "L-101-50-SS": {
+      "line_number": "L-101-50-SS",
+      "from_equipment": "GF-101",
+      "to_equipment": "TK-101A/B",
+      "nominal_size_nb": "50 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "Dry Split Dal Gravity Chute",
+      "design_pressure_bar": "ATM",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-102-40-SS": {
+      "line_number": "L-102-40-SS",
+      "from_equipment": "TK-100",
+      "to_equipment": "P-100A/B",
+      "nominal_size_nb": "40 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "0.5% NaHCO3 Solution Suction",
+      "design_pressure_bar": "0.5 bar",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-103-32-SS": {
+      "line_number": "L-103-32-SS",
+      "from_equipment": "P-100A/B",
+      "to_equipment": "TK-101A/B",
+      "nominal_size_nb": "32 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "0.5% NaHCO3 Solution Discharge",
+      "design_pressure_bar": "2.5 bar",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-104-25-SS": {
+      "line_number": "L-104-25-SS",
+      "from_equipment": "Utility Skid",
+      "to_equipment": "TK-100",
+      "nominal_size_nb": "25 NB",
+      "pipe_class": "Sanitary SS304",
+      "fluid_service": "Soft Process Water Supply",
+      "design_pressure_bar": "3.0 bar",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-105-80-SS": {
+      "line_number": "L-105-80-SS",
+      "from_equipment": "TK-101A/B",
+      "to_equipment": "P-101A/B",
+      "nominal_size_nb": "80 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "Soaked Dal Slurry Suction",
+      "design_pressure_bar": "1.0 bar",
+      "operating_temp_c": "28 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-106-65-SS": {
+      "line_number": "L-106-65-SS",
+      "from_equipment": "P-101A/B",
+      "to_equipment": "VS-101",
+      "nominal_size_nb": "65 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "Soaked Dal Slurry Discharge",
+      "design_pressure_bar": "1.8 bar",
+      "operating_temp_c": "28 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-107-50-SS": {
+      "line_number": "L-107-50-SS",
+      "from_equipment": "VS-101",
+      "to_equipment": "P-102",
+      "nominal_size_nb": "50 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "Drained Spent Liquor Gravity",
+      "design_pressure_bar": "ATM",
+      "operating_temp_c": "28 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-108-40-SS": {
+      "line_number": "L-108-40-SS",
+      "from_equipment": "P-102",
+      "to_equipment": "ETP-101",
+      "nominal_size_nb": "40 NB",
+      "pipe_class": "Schedule 40 PVC/SS",
+      "fluid_service": "Spent Liquor to ETP",
+      "design_pressure_bar": "2.0 bar",
+      "operating_temp_c": "28 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-109-25-SS": {
+      "line_number": "L-109-25-SS",
+      "from_equipment": "Utility Skid",
+      "to_equipment": "VS-101",
+      "nominal_size_nb": "25 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "Mist Rinse Water Spray Header",
+      "design_pressure_bar": "3.0 bar",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-110-50-SS": {
+      "line_number": "L-110-50-SS",
+      "from_equipment": "CIP-101",
+      "to_equipment": "TK-101A/B",
+      "nominal_size_nb": "50 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "CIP Supply Header",
+      "design_pressure_bar": "3.5 bar",
+      "operating_temp_c": "65 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-111-50-SS": {
+      "line_number": "L-111-50-SS",
+      "from_equipment": "TK-101A/B",
+      "to_equipment": "CIP-101",
+      "nominal_size_nb": "50 NB",
+      "pipe_class": "Sanitary SS316L",
+      "fluid_service": "CIP Return Header",
+      "design_pressure_bar": "1.5 bar",
+      "operating_temp_c": "60 C",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "L-112-40-CS": {
+      "line_number": "L-112-40-CS",
+      "from_equipment": "Boiler Skid",
+      "to_equipment": "DR-101",
+      "nominal_size_nb": "40 NB",
+      "pipe_class": "Class 150 Carbon Steel",
+      "fluid_service": "Saturated Steam Supply",
+      "design_pressure_bar": "2.5 bar",
+      "operating_temp_c": "138 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-113-25-CS": {
+      "line_number": "L-113-25-CS",
+      "from_equipment": "DR-101",
+      "to_equipment": "Condensate Tank",
+      "nominal_size_nb": "25 NB",
+      "pipe_class": "Class 150 Carbon Steel",
+      "fluid_service": "Steam Condensate Return",
+      "design_pressure_bar": "1.0 bar",
+      "operating_temp_c": "95 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-114-500-GI": {
+      "line_number": "L-114-500-GI",
+      "from_equipment": "FN-101",
+      "to_equipment": "DR-101",
+      "nominal_size_nb": "500 Dia",
+      "pipe_class": "Galvanized Duct",
+      "fluid_service": "Hot Fluidizing Air",
+      "design_pressure_bar": "3500 Pa",
+      "operating_temp_c": "60 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-115-350-GI": {
+      "line_number": "L-115-350-GI",
+      "from_equipment": "FN-102",
+      "to_equipment": "CLR-101",
+      "nominal_size_nb": "350 Dia",
+      "pipe_class": "Galvanized Duct",
+      "fluid_service": "Cooling Air Supply",
+      "design_pressure_bar": "2500 Pa",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-116-600-SS": {
+      "line_number": "L-116-600-SS",
+      "from_equipment": "DR-101/CLR",
+      "to_equipment": "CYC-101",
+      "nominal_size_nb": "600 Dia",
+      "pipe_class": "Sanitary SS304 Duct",
+      "fluid_service": "Humid Exhaust Air w/ Fines",
+      "design_pressure_bar": "-500 Pa",
+      "operating_temp_c": "42 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-117-600-GI": {
+      "line_number": "L-117-600-GI",
+      "from_equipment": "CYC-101",
+      "to_equipment": "BH-101",
+      "nominal_size_nb": "600 Dia",
+      "pipe_class": "Galvanized Duct",
+      "fluid_service": "Cyclone Exhaust Air",
+      "design_pressure_bar": "-800 Pa",
+      "operating_temp_c": "40 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-118-650-GI": {
+      "line_number": "L-118-650-GI",
+      "from_equipment": "BH-101",
+      "to_equipment": "EXH-101",
+      "nominal_size_nb": "650 Dia",
+      "pipe_class": "Galvanized Duct",
+      "fluid_service": "Clean Air to ID Fan",
+      "design_pressure_bar": "-1500 Pa",
+      "operating_temp_c": "38 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-119-650-GI": {
+      "line_number": "L-119-650-GI",
+      "from_equipment": "EXH-101",
+      "to_equipment": "Atmosphere Stack",
+      "nominal_size_nb": "650 Dia",
+      "pipe_class": "Galvanized Duct",
+      "fluid_service": "Exhaust Stack Discharge",
+      "design_pressure_bar": "500 Pa",
+      "operating_temp_c": "38 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "L-120-15-SS": {
+      "line_number": "L-120-15-SS",
+      "from_equipment": "Utility Skid",
+      "to_equipment": "BH-101/PK-101",
+      "nominal_size_nb": "15 NB",
+      "pipe_class": "Schedule 40 SS304",
+      "fluid_service": "Instrument Air Header",
+      "design_pressure_bar": "6.0 bar",
+      "operating_temp_c": "25 C",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    }
+  }
+}

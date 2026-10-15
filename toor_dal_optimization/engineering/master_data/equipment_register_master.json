@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "document_id": "ENG-MB-EQ-001",
+    "revision": "V5.0",
+    "total_equipment_count": 33
+  },
+  "equipment": {
+    "HOP-101": {
+      "tag": "HOP-101",
+      "name": "Feed Receiving Hopper",
+      "area_zone": "Zone 1 (Raw Intake)",
+      "service": "Receives dry incoming split dal from bags/trucks",
+      "capacity_rating": "3.5 m3 (2800 kg)",
+      "dimensions_m": {
+        "raw_text": "1.8 x 1.8 x 2.4"
+      },
+      "wetted_material": "SS304",
+      "structural_material": "Carbon Steel Epoxy",
+      "motor_kw": 0.37,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "EL-101": {
+      "tag": "EL-101",
+      "name": "Raw Dal Bucket Elevator",
+      "area_zone": "Zone 1 (Raw Intake)",
+      "service": "Elevates raw dal to pre-cleaning deck",
+      "capacity_rating": "3.0 TPH",
+      "dimensions_m": {
+        "raw_text": "0.8 x 0.6 x 6.5"
+      },
+      "wetted_material": "Food Grade PP / SS304",
+      "structural_material": "SS304 / Painted MS",
+      "motor_kw": 1.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "SCN-101": {
+      "tag": "SCN-101",
+      "name": "Vibratory Pre-Cleaner & Destoner",
+      "area_zone": "Zone 1 (Raw Intake)",
+      "service": "Removes foreign stones chaff and dust",
+      "capacity_rating": "2.5 TPH",
+      "dimensions_m": {
+        "raw_text": "2.0 x 1.0 x 1.4"
+      },
+      "wetted_material": "SS304",
+      "structural_material": "Painted MS",
+      "motor_kw": 2.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "MAG-101": {
+      "tag": "MAG-101",
+      "name": "Inline Magnetic Separator",
+      "area_zone": "Zone 1 (Raw Intake)",
+      "service": "Captures tramp ferrous contamination",
+      "capacity_rating": "2.5 TPH (10000 Gauss)",
+      "dimensions_m": {
+        "raw_text": "0.4 x 0.4 x 0.5"
+      },
+      "wetted_material": "SS316 Housing",
+      "structural_material": "Neodymium N52",
+      "motor_kw": 0.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "AG-101_Agitator.SLDPRT"
+    },
+    "GF-101": {
+      "tag": "GF-101",
+      "name": "Gravimetric Loss-in-Weight Feeder",
+      "area_zone": "Zone 2 (Wet Prep)",
+      "service": "Accurately meters dry dal into soak vessels",
+      "capacity_rating": "0.5 - 2.5 TPH (+/-0.5%)",
+      "dimensions_m": {
+        "raw_text": "1.2 x 0.6 x 0.8"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 0.75,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "TK-100": {
+      "tag": "TK-100",
+      "name": "Chemical Dissolution Tank",
+      "area_zone": "Zone 2 (Chemical Prep)",
+      "service": "Prepares 0.50% NaHCO3 solution with DI water",
+      "capacity_rating": "2.0 m3 gross (1.5 m3 net)",
+      "dimensions_m": {
+        "raw_text": "Dia 1.4 x H 1.8"
+      },
+      "wetted_material": "SS316L (Ra < 0.8um)",
+      "structural_material": "SS304",
+      "motor_kw": 0.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "SK-100_Dosing_Skid.SLDPRT"
+    },
+    "AG-100": {
+      "tag": "AG-100",
+      "name": "Chemical Dissolution Agitator",
+      "area_zone": "Zone 2 (Chemical Prep)",
+      "service": "High-solubility dissolution of NaHCO3 powder",
+      "capacity_rating": "150 rpm (Pitched Blade)",
+      "dimensions_m": {
+        "raw_text": "Impeller Dia 0.5 m"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 1.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "P-100A": {
+      "tag": "P-100A",
+      "name": "Chemical Dosing Pump A (Duty)",
+      "area_zone": "Zone 2 (Chemical Prep)",
+      "service": "Transfers measured liquor to soak tanks",
+      "capacity_rating": "1.5 m3/h @ 2.5 bar",
+      "dimensions_m": {
+        "raw_text": "0.8 x 0.4 x 0.5"
+      },
+      "wetted_material": "SS316L / PTFE",
+      "structural_material": "Painted MS",
+      "motor_kw": 1.1,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "P-100B": {
+      "tag": "P-100B",
+      "name": "Chemical Dosing Pump B (Standby)",
+      "area_zone": "Zone 2 (Chemical Prep)",
+      "service": "Standby transfer pump",
+      "capacity_rating": "1.5 m3/h @ 2.5 bar",
+      "dimensions_m": {
+        "raw_text": "0.8 x 0.4 x 0.5"
+      },
+      "wetted_material": "SS316L / PTFE",
+      "structural_material": "Painted MS",
+      "motor_kw": 1.1,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "TK-101A": {
+      "tag": "TK-101A",
+      "name": "Soak & Contact Tank A",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Batch soaking of dal with 0.50% NaHCO3 liquor",
+      "capacity_rating": "4.5 m3 gross (3.2 m3 net)",
+      "dimensions_m": {
+        "raw_text": "Dia 1.8 x H 2.5"
+      },
+      "wetted_material": "SS316L (Ra < 0.8um)",
+      "structural_material": "SS304 Dimple Jacket",
+      "motor_kw": 0.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "TK-101_Soak_Tank.SLDPRT"
+    },
+    "TK-101B": {
+      "tag": "TK-101B",
+      "name": "Soak & Contact Tank B",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Alternating batch soaking of dal",
+      "capacity_rating": "4.5 m3 gross (3.2 m3 net)",
+      "dimensions_m": {
+        "raw_text": "Dia 1.8 x H 2.5"
+      },
+      "wetted_material": "SS316L (Ra < 0.8um)",
+      "structural_material": "SS304 Dimple Jacket",
+      "motor_kw": 0.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "TK-101_Soak_Tank.SLDPRT"
+    },
+    "AG-101A": {
+      "tag": "AG-101A",
+      "name": "Low-Shear Hydrofoil Agitator A",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Gentle pulse suspension (no splitting)",
+      "capacity_rating": "35 rpm (Tip Spd 1.1 m/s)",
+      "dimensions_m": {
+        "raw_text": "Impeller Dia 0.6 m"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 2.2,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "AG-101_Agitator.SLDPRT"
+    },
+    "AG-101B": {
+      "tag": "AG-101B",
+      "name": "Low-Shear Hydrofoil Agitator B",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Gentle pulse suspension (no splitting)",
+      "capacity_rating": "35 rpm (Tip Spd 1.1 m/s)",
+      "dimensions_m": {
+        "raw_text": "Impeller Dia 0.6 m"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 2.2,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "AG-101_Agitator.SLDPRT"
+    },
+    "P-101A": {
+      "tag": "P-101A",
+      "name": "Dal Slurry Discharge Pump A",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Gentle transfer of soaked dal slurry to screen",
+      "capacity_rating": "15 m3/h @ 1.5 bar",
+      "dimensions_m": {
+        "raw_text": "1.2 x 0.5 x 0.6"
+      },
+      "wetted_material": "SS316L (Vortex)",
+      "structural_material": "Painted MS",
+      "motor_kw": 2.2,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "P-101B": {
+      "tag": "P-101B",
+      "name": "Dal Slurry Discharge Pump B",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Standby slurry transfer pump",
+      "capacity_rating": "15 m3/h @ 1.5 bar",
+      "dimensions_m": {
+        "raw_text": "1.2 x 0.5 x 0.6"
+      },
+      "wetted_material": "SS316L (Vortex)",
+      "structural_material": "Painted MS",
+      "motor_kw": 2.2,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "VS-101": {
+      "tag": "VS-101",
+      "name": "Vibratory Dewatering Screen",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Separates soaked dal from liquor + mist rinse",
+      "capacity_rating": "2.5 TPH (1.0mm wedge wire)",
+      "dimensions_m": {
+        "raw_text": "2.2 x 0.9 x 1.2"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 2.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "P-102": {
+      "tag": "P-102",
+      "name": "Drained Liquor Return Pump",
+      "area_zone": "Zone 2 (Wet Treatment)",
+      "service": "Pumps drained liquor to holding/ETP",
+      "capacity_rating": "3.0 m3/h @ 2.0 bar",
+      "dimensions_m": {
+        "raw_text": "0.7 x 0.3 x 0.4"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "Painted MS",
+      "motor_kw": 1.1,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "CV-101": {
+      "tag": "CV-101",
+      "name": "Wet Dal Incline Belt Conveyor",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Transfers dewatered dal into fluid bed dryer",
+      "capacity_rating": "2.0 TPH",
+      "dimensions_m": {
+        "raw_text": "4.5 x 0.6 x 2.2"
+      },
+      "wetted_material": "Food Grade PU / SS304",
+      "structural_material": "SS304",
+      "motor_kw": 0.75,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "DR-101": {
+      "tag": "DR-101",
+      "name": "Continuous Fluid-Bed Dryer",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Dries soaked dal from 27.8% to 10.0% moisture",
+      "capacity_rating": "1.5 TPH wet dal (3700 kg/d H2O)",
+      "dimensions_m": {
+        "raw_text": "6.0 x 1.2 x 2.8"
+      },
+      "wetted_material": "SS316L contact",
+      "structural_material": "SS304 Clad",
+      "motor_kw": 2.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "DR-101_Fluid_Bed_Dryer.SLDPRT"
+    },
+    "CLR-101": {
+      "tag": "CLR-101",
+      "name": "Integral Fluid-Bed Product Cooler",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Cools dried dal from 50C to <30C before packing",
+      "capacity_rating": "1.5 TPH dry dal",
+      "dimensions_m": {
+        "raw_text": "2.0 x 1.2 x 2.8"
+      },
+      "wetted_material": "SS316L contact",
+      "structural_material": "SS304 Clad",
+      "motor_kw": 0.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "FN-101": {
+      "tag": "FN-101",
+      "name": "Dryer Fluidizing Air Blower",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Delivers heated drying air through distributor",
+      "capacity_rating": "7500 m3/h @ 3500 Pa",
+      "dimensions_m": {
+        "raw_text": "1.5 x 1.2 x 1.4"
+      },
+      "wetted_material": "Mild Steel Coated",
+      "structural_material": "Painted MS",
+      "motor_kw": 11.0,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "FN-102": {
+      "tag": "FN-102",
+      "name": "Cooler Air Supply Blower",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Supplies filtered ambient cooling air",
+      "capacity_rating": "2500 m3/h @ 2500 Pa",
+      "dimensions_m": {
+        "raw_text": "1.0 x 0.8 x 1.0"
+      },
+      "wetted_material": "Mild Steel Coated",
+      "structural_material": "Painted MS",
+      "motor_kw": 3.7,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "CYC-101": {
+      "tag": "CYC-101",
+      "name": "Dryer Exhaust Cyclone",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Captures entrained dal fines from exhaust air",
+      "capacity_rating": "7500 m3/h (99% @ >20um)",
+      "dimensions_m": {
+        "raw_text": "Dia 1.0 x H 3.2"
+      },
+      "wetted_material": "SS304",
+      "structural_material": "SS304",
+      "motor_kw": 0.37,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "BH-101": {
+      "tag": "BH-101",
+      "name": "Exhaust Pulse-Jet Baghouse",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Final particulate removal (<10 mg/Nm3)",
+      "capacity_rating": "10000 m3/h (PTFE felt)",
+      "dimensions_m": {
+        "raw_text": "2.5 x 1.8 x 4.0"
+      },
+      "wetted_material": "Mild Steel Epoxied",
+      "structural_material": "MS Structural",
+      "motor_kw": 0.75,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "EXH-101": {
+      "tag": "EXH-101",
+      "name": "Induced Draft Exhaust Fan",
+      "area_zone": "Zone 3 (Drying Area)",
+      "service": "Exhausts clean humid air to atmosphere",
+      "capacity_rating": "10000 m3/h @ 1500 Pa",
+      "dimensions_m": {
+        "raw_text": "1.4 x 1.1 x 1.3"
+      },
+      "wetted_material": "Mild Steel",
+      "structural_material": "Painted MS",
+      "motor_kw": 7.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "EL-102": {
+      "tag": "EL-102",
+      "name": "Finished Dal Bucket Elevator",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "Elevates cooled dry dal to packaging buffer",
+      "capacity_rating": "2.5 TPH",
+      "dimensions_m": {
+        "raw_text": "0.8 x 0.6 x 6.5"
+      },
+      "wetted_material": "Food Grade PP / SS304",
+      "structural_material": "SS304",
+      "motor_kw": 1.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "SCN-102": {
+      "tag": "SCN-102",
+      "name": "Post-Dry Rotary Polishing Sifter",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "Final fines and split-rub dust scalping",
+      "capacity_rating": "2.0 TPH",
+      "dimensions_m": {
+        "raw_text": "1.8 x 0.8 x 1.2"
+      },
+      "wetted_material": "SS304",
+      "structural_material": "SS304",
+      "motor_kw": 0.75,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "HOP-102": {
+      "tag": "HOP-102",
+      "name": "Packaging Surge Hopper",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "Buffer storage for multihead packaging machine",
+      "capacity_rating": "2.5 m3 (2000 kg)",
+      "dimensions_m": {
+        "raw_text": "1.6 x 1.6 x 2.2"
+      },
+      "wetted_material": "SS304",
+      "structural_material": "SS304",
+      "motor_kw": 0.25,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "MD-101": {
+      "tag": "MD-101",
+      "name": "Gravity-Fall Metal Detector",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "Critical control point for metal contamination",
+      "capacity_rating": "2.0 TPH (Fe 1.0",
+      "dimensions_m": {
+        "raw_text": " SS 1.5mm)"
+      },
+      "wetted_material": "0.5 x 0.5 x 0.8",
+      "structural_material": "SS316 Chute",
+      "motor_kw": 0.0,
+      "design_status": "Critical",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "PK-101": {
+      "tag": "PK-101",
+      "name": "14-Head Multihead Weigher & VFFS",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "Weighs and packs 1kg / 2kg pouches at 30-35 bpm",
+      "capacity_rating": "35 packs/min (+/-1.5g)",
+      "dimensions_m": {
+        "raw_text": "2.2 x 1.8 x 3.6"
+      },
+      "wetted_material": "SS316 Dimple Sheet",
+      "structural_material": "SS304",
+      "motor_kw": 5.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "CW-101": {
+      "tag": "CW-101",
+      "name": "Dynamic In-Line Checkweigher",
+      "area_zone": "Zone 4 (Packaging)",
+      "service": "100% pouch weight verification and auto-reject",
+      "capacity_rating": "40 packs/min (+/-1.0g)",
+      "dimensions_m": {
+        "raw_text": "1.2 x 0.6 x 0.9"
+      },
+      "wetted_material": "SS304 Belt Deck",
+      "structural_material": "SS304",
+      "motor_kw": 0.55,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "CIP-101": {
+      "tag": "CIP-101",
+      "name": "Clean-In-Place (CIP) Skid",
+      "area_zone": "Zone 5 (Utilities)",
+      "service": "Automated washing of tanks pumps and lines",
+      "capacity_rating": "10 m3/h @ 3.5 bar (2-tank)",
+      "dimensions_m": {
+        "raw_text": "2.8 x 1.4 x 2.0"
+      },
+      "wetted_material": "SS316L",
+      "structural_material": "SS304",
+      "motor_kw": 5.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    },
+    "ETP-101": {
+      "tag": "ETP-101",
+      "name": "Effluent Treatment Package",
+      "area_zone": "Zone 5 (Utilities)",
+      "service": "Neutralization equalization and settling",
+      "capacity_rating": "25 m3/day capacity",
+      "dimensions_m": {
+        "raw_text": "6.0 x 3.5 x 3.0"
+      },
+      "wetted_material": "FRP / Epoxy MS",
+      "structural_material": "Civil / Steel",
+      "motor_kw": 4.5,
+      "design_status": "PRELIMINARY_CALCULATED",
+      "cad_model_ref": "PLANT-15T_General_Arrangement.SLDASM"
+    }
+  }
+}

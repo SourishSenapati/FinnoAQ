@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "document_id": "ENG-MB-IM-001",
+    "revision": "V5.0",
+    "scope": "CAD - Simulation - Master Data Cross-Discipline Mapping"
+  },
+  "interfaces": [
+    {
+      "tag": "FEED_INTAKE",
+      "authoritative_source": "design_basis_master.json::feed_intake_mass_daily",
+      "consuming_models": [
+        "plant_design_15tpd.py",
+        "stream_table_master.json"
+      ],
+      "native_objects": [
+        "HOP-101",
+        "GF-101",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-001",
+        "DWG-FIN-15T-002",
+        "DWG-FIN-15T-003",
+        "master_equipment_register.csv"
+      ],
+      "independent_verification": "tests/test_plant_design_and_mass_balance.py",
+      "regeneration_trigger": "Change in daily client throughput quota"
+    },
+    {
+      "tag": "TK-101A/B",
+      "authoritative_source": "equipment_register_master.json::TK-101A",
+      "consuming_models": [
+        "plant_design_15tpd.py",
+        "TK-101_Soak_Tank.SLDPRT"
+      ],
+      "native_objects": [
+        "TK-101_Soak_Tank.SLDPRT",
+        "TK-101_Soak_Tank.step",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-003",
+        "DWG-FIN-15T-007",
+        "DWG-FIN-15T-007_SOLIDWORKS_MODEL_DERIVED.pdf"
+      ],
+      "independent_verification": "SolidWorks live API COM mass properties check (Volume 5.86 m3, height 2.50m, dia 1.80m)",
+      "regeneration_trigger": "Change in soak duration, swelling ratio, or batch schedule"
+    },
+    {
+      "tag": "DR-101",
+      "authoritative_source": "equipment_register_master.json::DR-101",
+      "consuming_models": [
+        "drying_model.py",
+        "DR-101_Fluid_Bed_Dryer.SLDPRT"
+      ],
+      "native_objects": [
+        "DR-101_Fluid_Bed_Dryer.SLDPRT",
+        "DR-101_Fluid_Bed_Dryer.step",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-005",
+        "DWG-FIN-15T-008",
+        "master_equipment_register.csv"
+      ],
+      "independent_verification": "Psychrometric water evaporation balance (3694.7 kg/d = 512.4 kWth steam heat)",
+      "regeneration_trigger": "Change in wet dal feed moisture or target finished moisture"
+    },
+    {
+      "tag": "SK-100",
+      "authoritative_source": "equipment_register_master.json::TK-100",
+      "consuming_models": [
+        "plant_design_15tpd.py",
+        "SK-100_Dosing_Skid.SLDPRT"
+      ],
+      "native_objects": [
+        "SK-100_Dosing_Skid.SLDPRT",
+        "SK-100_Dosing_Skid.step",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-003",
+        "DWG-FIN-15T-009",
+        "itemized_bom.csv"
+      ],
+      "independent_verification": "SolidWorks live API volume and bounding box check (1.4m dia x 1.8m height)",
+      "regeneration_trigger": "Change in chemical recipe concentration basis (liquor vs feed)"
+    },
+    {
+      "tag": "EV-101A/B/C",
+      "authoritative_source": "HARAKUTIR_15TPD_CONVERGED.bkp",
+      "consuming_models": [
+        "Aspen Plus V14 Apwn.Document",
+        "plant_design_15tpd.py"
+      ],
+      "native_objects": [
+        "COIL-1/2/3",
+        "STAGE-1/2/3",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-010",
+        "itemized_bom.csv",
+        "UTILITY_WASTEWATER_AND_ENVIRONMENTAL_DESIGN.md"
+      ],
+      "independent_verification": "Converged Aspen Plus V14 block balance: 2.38 steam economy, 310.5 kWth duty, 980 kg/h distillate",
+      "regeneration_trigger": "Change in spent soak liquor volume or ZLD environmental consent"
+    },
+    {
+      "tag": "MCC-415V",
+      "authoritative_source": "motor_load_master.json",
+      "consuming_models": [
+        "single_line_diagram",
+        "plant_design_15tpd.py"
+      ],
+      "native_objects": [
+        "MCC-101",
+        "PLANT-15T_General_Arrangement.SLDASM"
+      ],
+      "drawings_registers": [
+        "DWG-FIN-15T-011",
+        "motor_load_list.csv",
+        "ELECTRICAL_LOAD_AND_AUTOMATION_DESIGN.md"
+      ],
+      "independent_verification": "Summation of rated loads (73.74 kW connected, 54.45 kW operating)",
+      "regeneration_trigger": "Addition or resizing of motor-driven equipment"
+    }
+  ]
+}

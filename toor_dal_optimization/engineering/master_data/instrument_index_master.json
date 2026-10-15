@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "document_id": "ENG-MB-IN-001",
+    "revision": "V5.0",
+    "total_instrument_count": 18
+  },
+  "instruments": {
+    "WT-101": {
+      "tag": "WT-101",
+      "description": "Feed Hopper Load Cells",
+      "service_location": "HOP-101",
+      "measured_variable": "Dal Feed Mass Inventory",
+      "range_units": "0 - 3500 kg",
+      "output_signal": "4-20 mA (HART)",
+      "trip_interlock": "High-High stops feeding",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "LT-100": {
+      "tag": "LT-100",
+      "description": "Chemical Prep Tank Level",
+      "service_location": "TK-100",
+      "measured_variable": "Liquid Level",
+      "range_units": "0 - 2.0 m",
+      "output_signal": "4-20 mA (Radar)",
+      "trip_interlock": "Low-Low trips P-100",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "FT-102": {
+      "tag": "FT-102",
+      "description": "Chemical Dosing Flowmeter",
+      "service_location": "L-103-32-SS",
+      "measured_variable": "Liquor Dosing Mass Flow",
+      "range_units": "0 - 2500 kg/h",
+      "output_signal": "4-20 mA (Coriolis)",
+      "trip_interlock": "Batch totalizer shutoff FV-102",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "LT-101A": {
+      "tag": "LT-101A",
+      "description": "Soak Tank A Radar Level",
+      "service_location": "TK-101A",
+      "measured_variable": "Slurry / Liquid Level",
+      "range_units": "0 - 2.5 m",
+      "output_signal": "4-20 mA (Radar)",
+      "trip_interlock": "High-High trips feed XV-101A",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "LT-101B": {
+      "tag": "LT-101B",
+      "description": "Soak Tank B Radar Level",
+      "service_location": "TK-101B",
+      "measured_variable": "Slurry / Liquid Level",
+      "range_units": "0 - 2.5 m",
+      "output_signal": "4-20 mA (Radar)",
+      "trip_interlock": "High-High trips feed XV-101B",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "TT-101A": {
+      "tag": "TT-101A",
+      "description": "Soak Tank A Temperature",
+      "service_location": "TK-101A",
+      "measured_variable": "Soak Liquor Temperature",
+      "range_units": "0 - 100 C",
+      "output_signal": "RTD Pt100 (4-20mA)",
+      "trip_interlock": "High-High alarm operator",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "TT-101B": {
+      "tag": "TT-101B",
+      "description": "Soak Tank B Temperature",
+      "service_location": "TK-101B",
+      "measured_variable": "Soak Liquor Temperature",
+      "range_units": "0 - 100 C",
+      "output_signal": "RTD Pt100 (4-20mA)",
+      "trip_interlock": "High-High alarm operator",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "pHT-101A": {
+      "tag": "pHT-101A",
+      "description": "Soak Tank A pH Transmitter",
+      "service_location": "TK-101A",
+      "measured_variable": "Liquor pH",
+      "range_units": "2 - 12 pH",
+      "output_signal": "4-20 mA (Sanitary glass)",
+      "trip_interlock": "Out of band triggers QC hold",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "pHT-101B": {
+      "tag": "pHT-101B",
+      "description": "Soak Tank B pH Transmitter",
+      "service_location": "TK-101B",
+      "measured_variable": "Liquor pH",
+      "range_units": "2 - 12 pH",
+      "output_signal": "4-20 mA (Sanitary glass)",
+      "trip_interlock": "Out of band triggers QC hold",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "TT-102": {
+      "tag": "TT-102",
+      "description": "Dryer Air Inlet Temperature",
+      "service_location": "DR-101 Inlet",
+      "measured_variable": "Hot Fluidizing Air Temp",
+      "range_units": "0 - 150 C",
+      "output_signal": "RTD Pt100 (4-20mA)",
+      "trip_interlock": "High-High trips steam TCV-112",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "TT-103": {
+      "tag": "TT-103",
+      "description": "Dryer Exhaust Air Temperature",
+      "service_location": "DR-101 Exhaust",
+      "measured_variable": "Exhaust Air Temp",
+      "range_units": "0 - 100 C",
+      "output_signal": "RTD Pt100 (4-20mA)",
+      "trip_interlock": "High trips bed feed CV-101",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "TT-104": {
+      "tag": "TT-104",
+      "description": "Cooler Exit Product Temperature",
+      "service_location": "CLR-101 Exit",
+      "measured_variable": "Dal Temperature before packing",
+      "range_units": "0 - 100 C",
+      "output_signal": "Infrared Pyrometer (4-20mA)",
+      "trip_interlock": "High-High stops packing feed",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "MT-101": {
+      "tag": "MT-101",
+      "description": "Continuous Moisture Transmitter",
+      "service_location": "DR-101 Discharge",
+      "measured_variable": "Grain Moisture Content",
+      "range_units": "5 - 30 % wb",
+      "output_signal": "Microwave NIR (4-20mA)",
+      "trip_interlock": ">11.5% diverts to recycle hopper",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "PDT-101": {
+      "tag": "PDT-101",
+      "description": "Dryer Bed Pressure Differential",
+      "service_location": "DR-101 Bed",
+      "measured_variable": "Differential Static Pressure",
+      "range_units": "0 - 5000 Pa",
+      "output_signal": "4-20 mA Differential",
+      "trip_interlock": "Low trips burner / heater",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "PDT-102": {
+      "tag": "PDT-102",
+      "description": "Baghouse Filter Differential",
+      "service_location": "BH-101 Bags",
+      "measured_variable": "Filter Bag DP",
+      "range_units": "0 - 2500 Pa",
+      "output_signal": "4-20 mA Differential",
+      "trip_interlock": "High triggers pulse cycle boost",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "ZS-101": {
+      "tag": "ZS-101",
+      "description": "Vibratory Screen Motion Sensor",
+      "service_location": "VS-101",
+      "measured_variable": "Deck Acceleration / Vibration",
+      "range_units": "0 - 10 g",
+      "output_signal": "Vibration Switch (Discrete)",
+      "trip_interlock": "Low-Low stops P-101 slurry feed",
+      "pid_drawing_no": "DWG-FIN-15T-003"
+    },
+    "MDT-101": {
+      "tag": "MDT-101",
+      "description": "Metal Detection Signal",
+      "service_location": "MD-101 Chute",
+      "measured_variable": "Tramp Metal Detected",
+      "range_units": "Discrete Pulse",
+      "output_signal": "Digital Output to PLC",
+      "trip_interlock": "Pneumatic reject flapper fires",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    },
+    "WT-102": {
+      "tag": "WT-102",
+      "description": "Packaging Checkweigher Cell",
+      "service_location": "CW-101",
+      "measured_variable": "Pouch Weight",
+      "range_units": "0 - 3000 g (+/-0.5g)",
+      "output_signal": "High-Speed Strain Gauge",
+      "trip_interlock": "Under/Over triggers air ejector",
+      "pid_drawing_no": "DWG-FIN-15T-004"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BOMMasterSchema",
+  "type": "object",
+  "required": [
+    "metadata",
+    "items"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "revision",
+        "total_line_items",
+        "total_capex_lakhs_inr"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "total_line_items": {
+          "type": "integer"
+        },
+        "total_capex_lakhs_inr": {
+          "type": "number"
+        }
+      }
+    },
+    "items": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "item_no",
+          "category",
+          "tag",
+          "description",
+          "qty",
+          "unit",
+          "material_grade",
+          "procurement_type",
+          "unit_cost_lakhs_inr",
+          "total_cost_lakhs_inr",
+          "cost_confidence_class",
+          "lead_time_weeks"
+        ],
+        "properties": {
+          "item_no": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "tag": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "qty": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "material_grade": {
+            "type": "string"
+          },
+          "procurement_type": {
+            "type": "string"
+          },
+          "unit_cost_lakhs_inr": {
+            "type": "number"
+          },
+          "total_cost_lakhs_inr": {
+            "type": "number"
+          },
+          "cost_confidence_class": {
+            "type": "string"
+          },
+          "lead_time_weeks": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

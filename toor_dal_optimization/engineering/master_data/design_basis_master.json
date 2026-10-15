@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "project_name": "Harakutir 15,000 kg/day Imported Pigeon Pea Optimization Plant",
+    "document_id": "ENG-MB-DB-001",
+    "revision": "V5.0",
+    "governing_flowsheet_case": "16h_operating_schedule_base_case",
+    "commercial_lot_id": "PENDING_COMMERCIAL_LOT_ID"
+  },
+  "parameters": {
+    "feed_intake_mass_daily": {
+      "name": "Incoming Raw Dal Feed Mass",
+      "value": 15000.0,
+      "unit": "kg/day",
+      "basis_or_boundary": "as-received as-fed raw dal at intake gate",
+      "evidence_class": "OFFICIAL_SOURCE",
+      "source": "Client Greenfield Scope Document Table 1",
+      "uncertainty_range": "+/- 0.0 kg/day (contract basis)",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-101",
+        "HOP-101",
+        "DWG-FIN-15T-001",
+        "DWG-FIN-15T-002",
+        "DWG-FIN-15T-003"
+      ]
+    },
+    "feed_moisture_wb": {
+      "name": "Incoming Raw Dal Moisture Content",
+      "value": 10.5,
+      "unit": "% wb",
+      "basis_or_boundary": "as-received wet-basis (mass water / total mass)",
+      "evidence_class": "MEASURED",
+      "source": "Lab bench intake sample titration (ISO 6540)",
+      "uncertainty_range": "9.5% - 12.0%",
+      "owner": "Food Science",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "dry_solids_intake_daily",
+        "S-101",
+        "DR-101"
+      ]
+    },
+    "dry_solids_intake_daily": {
+      "name": "Incoming Dal Dry Solids",
+      "value": 13425.0,
+      "unit": "kg/day",
+      "basis_or_boundary": "dry matter basis (15000 kg * (1 - 0.105))",
+      "evidence_class": "CALCULATED",
+      "source": "Mass balance equation MB-01",
+      "uncertainty_range": "13200 - 13575 kg/day",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-101",
+        "S-104",
+        "S-107",
+        "DWG-FIN-15T-002"
+      ]
+    },
+    "operating_hours_nominal": {
+      "name": "Nominal Daily Operating Hours",
+      "value": 16.0,
+      "unit": "h/day",
+      "basis_or_boundary": "two 8-hour production shifts per calendar day",
+      "evidence_class": "OFFICIAL_SOURCE",
+      "source": "Production Operating Philosophy Rev 2",
+      "uncertainty_range": "16.0 h/day (fixed schedule)",
+      "owner": "Operations",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "nominal_hourly_feed_rate",
+        "equipment_registers"
+      ]
+    },
+    "plant_availability_oee": {
+      "name": "Plant Availability Factor (OEE Availability)",
+      "value": 0.85,
+      "unit": "fraction",
+      "basis_or_boundary": "net operating time divided by planned production time",
+      "evidence_class": "ASSUMED",
+      "source": "AACE Recommended Practice 18R-97 grain mill baseline",
+      "uncertainty_range": "0.80 - 0.90",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "effective_operating_hours",
+        "design_hourly_feed_rate"
+      ]
+    },
+    "effective_operating_hours": {
+      "name": "Effective Operating Hours",
+      "value": 13.6,
+      "unit": "h/day",
+      "basis_or_boundary": "16.0 h/day * 0.85 availability factor",
+      "evidence_class": "CALCULATED",
+      "source": "Capacity model equation SCH-01",
+      "uncertainty_range": "12.8 - 14.4 h/day",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "design_hourly_feed_rate",
+        "GF-101",
+        "DR-101"
+      ]
+    },
+    "nominal_hourly_feed_rate": {
+      "name": "Nominal Hourly Dal Feed Rate",
+      "value": 937.5,
+      "unit": "kg/h",
+      "basis_or_boundary": "15,000 kg/day / 16.0 nominal hours",
+      "evidence_class": "CALCULATED",
+      "source": "Mass balance equation MB-02",
+      "uncertainty_range": "+/- 0.0 kg/h (arithmetic mean)",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "stream_table_master",
+        "DWG-FIN-15T-002"
+      ]
+    },
+    "design_hourly_feed_rate": {
+      "name": "Design Instantaneous Dal Feed Rate",
+      "value": 1102.94,
+      "unit": "kg/h",
+      "basis_or_boundary": "15,000 kg/day / 13.6 effective hours (17.65% design margin)",
+      "evidence_class": "CALCULATED",
+      "source": "Equipment sizing equation EQ-01",
+      "uncertainty_range": "1041.7 - 1171.9 kg/h",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "GF-101",
+        "TK-101A/B",
+        "VS-101",
+        "DR-101"
+      ]
+    },
+    "soak_liquor_ratio": {
+      "name": "Soak Liquor to Raw Dal Mass Ratio",
+      "value": 1.5,
+      "unit": "kg liquor / kg dal",
+      "basis_or_boundary": "mass ratio of chemical soak solution to raw as-fed dal",
+      "evidence_class": "HYPOTHESIS",
+      "source": "Experimental screening protocol Candidate C-1",
+      "uncertainty_range": "1.40 - 1.60",
+      "owner": "Food Science",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-102",
+        "TK-100",
+        "TK-101A/B",
+        "DWG-FIN-15T-003"
+      ]
+    },
+    "soak_chemical_agent": {
+      "name": "Chemical Treatment Agent",
+      "value": "Sodium Bicarbonate (NaHCO3, Food Grade INS 500(ii))",
+      "unit": "chemical compound",
+      "basis_or_boundary": "FCC / FSSAI Food Additive Grade",
+      "evidence_class": "HYPOTHESIS",
+      "source": "Screening Candidate Protocol",
+      "uncertainty_range": "99.0% min purity",
+      "owner": "Food Science",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-103",
+        "SK-100",
+        "ETP-101"
+      ]
+    },
+    "chemical_dose_basis_liquor": {
+      "name": "Chemical Concentration on Liquor Basis",
+      "value": 0.5,
+      "unit": "wt% in solution",
+      "basis_or_boundary": "mass of pure NaHCO3 / total mass of soak liquor (Primary Design Basis)",
+      "evidence_class": "HYPOTHESIS",
+      "source": "Candidate C-1 specification",
+      "uncertainty_range": "0.25 - 0.75 wt%",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-103",
+        "TK-100",
+        "P-100A/B",
+        "cost_model"
+      ]
+    },
+    "chemical_dose_basis_feed": {
+      "name": "Chemical Concentration on Raw Dal Feed Basis",
+      "value": 0.5,
+      "unit": "wt% of dal",
+      "basis_or_boundary": "mass of pure NaHCO3 / incoming as-fed dal mass (Alternative Basis)",
+      "evidence_class": "HYPOTHESIS",
+      "source": "Historical Dossier Comparison Note",
+      "uncertainty_range": "0.333 wt% on liquor equivalent",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "BOM_RFQ_AND_CAPITAL_COST_ESTIMATE.md"
+      ]
+    },
+    "chemical_demand_daily_liquor_basis": {
+      "name": "Daily Active Reagent Mass (Liquor Basis)",
+      "value": 112.5,
+      "unit": "kg/day",
+      "basis_or_boundary": "22,500 kg liquor * 0.0050 wt%",
+      "evidence_class": "CALCULATED",
+      "source": "Reagent balance equation CHEM-01",
+      "uncertainty_range": "100.0 - 125.0 kg/day",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-103",
+        "SK-100",
+        "BOM-005",
+        "BOM-007"
+      ]
+    },
+    "soak_duration_minutes": {
+      "name": "Soak Hold Time",
+      "value": 30.0,
+      "unit": "min",
+      "basis_or_boundary": "liquid contact hold time in batch vessel",
+      "evidence_class": "HYPOTHESIS",
+      "source": "Screening Protocol Candidate C-1",
+      "uncertainty_range": "25.0 - 35.0 min",
+      "owner": "Food Science",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "TK-101A/B",
+        "scheduling_model",
+        "DWG-FIN-15T-003"
+      ]
+    },
+    "soak_water_uptake_ratio": {
+      "name": "Water Uptake During Soaking",
+      "value": 24.0,
+      "unit": "wt% on raw feed",
+      "basis_or_boundary": "mass water absorbed into cotyledon matrix / initial feed dal mass",
+      "evidence_class": "MEASURED",
+      "source": "Bench preliminary soaking assay",
+      "uncertainty_range": "21.0 - 27.0 wt%",
+      "owner": "Food Science",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-104",
+        "DR-101",
+        "DWG-FIN-15T-002"
+      ]
+    },
+    "wet_dal_moisture_wb": {
+      "name": "Drained Dal Moisture Content Ex-Soak",
+      "value": 27.8,
+      "unit": "% wb",
+      "basis_or_boundary": "wet basis moisture entering dryer DR-101",
+      "evidence_class": "CALCULATED",
+      "source": "Mass balance equation MB-03",
+      "uncertainty_range": "26.0 - 29.5 % wb",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-104",
+        "CV-101",
+        "DR-101",
+        "DWG-FIN-15T-005"
+      ]
+    },
+    "target_finished_moisture_wb": {
+      "name": "Target Finished Dal Moisture Content",
+      "value": 10.0,
+      "unit": "% wb",
+      "basis_or_boundary": "wet basis moisture of dried and cooled dal ex-dryer DR-101",
+      "evidence_class": "ASSUMED",
+      "source": "FSSAI standards for pulses / IS 4333 (Part II)",
+      "uncertainty_range": "9.5 - 10.5 % wb",
+      "owner": "Quality Assurance",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-107",
+        "DR-101",
+        "PK-101",
+        "DWG-FIN-15T-002"
+      ]
+    },
+    "daily_dryer_evaporation_water": {
+      "name": "Daily Water Evaporated in Dryer",
+      "value": 3694.7,
+      "unit": "kg/day",
+      "basis_or_boundary": "net water mass transferred to drying air exhaust",
+      "evidence_class": "CALCULATED",
+      "source": "Dryer water balance equation DRY-01",
+      "uncertainty_range": "3500 - 3900 kg/day",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-106",
+        "DR-101",
+        "FN-101",
+        "HX-101"
+      ]
+    },
+    "dryer_thermal_duty_kwth": {
+      "name": "Fluid Bed Dryer Design Heat Duty",
+      "value": 512.4,
+      "unit": "kWth",
+      "basis_or_boundary": "thermal energy delivered to fluidizing air coil HX-101",
+      "evidence_class": "CALCULATED",
+      "source": "Psychrometric & enthalpy balance equation DRY-02",
+      "uncertainty_range": "480 - 540 kWth",
+      "owner": "Thermal Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "HX-101",
+        "BOIL-101",
+        "L-112-40-CS",
+        "DWG-FIN-15T-005"
+      ]
+    },
+    "whole_plant_dry_solids_recovery": {
+      "name": "Whole-Plant Net Dry Solids Recovery",
+      "value": 98.62,
+      "unit": "%",
+      "basis_or_boundary": "dry solids in finished product / dry solids in incoming feed dal",
+      "evidence_class": "CALCULATED",
+      "source": "Authoritative Solids Balance V5 (0.91% soak leach + 0.47% cyclone fines)",
+      "uncertainty_range": "98.0 - 99.0 %",
+      "owner": "Process Engineering",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-107",
+        "saleable_finished_product_daily",
+        "DWG-FIN-15T-002"
+      ]
+    },
+    "saleable_finished_product_daily": {
+      "name": "Daily Saleable Finished Product Mass",
+      "value": 14711.1,
+      "unit": "kg/day",
+      "basis_or_boundary": "13,240.0 kg dry solids at 10.0% wb moisture",
+      "evidence_class": "CALCULATED",
+      "source": "Commercial yield equation YLD-01",
+      "uncertainty_range": "14500 - 14900 kg/day",
+      "owner": "Commercial & Process",
+      "revision": "V5.0",
+      "dependent_artifacts": [
+        "S-107",
+        "PK-101",
+        "HOP-102",
+        "DWG-FIN-15T-006"
+      ]
+    }
+  }
+}

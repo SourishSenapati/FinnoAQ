@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DesignBasisMasterSchema",
+  "type": "object",
+  "required": [
+    "metadata",
+    "parameters"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "project_name",
+        "document_id",
+        "revision",
+        "governing_flowsheet_case",
+        "commercial_lot_id"
+      ],
+      "properties": {
+        "project_name": {
+          "type": "string"
+        },
+        "document_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "governing_flowsheet_case": {
+          "type": "string"
+        },
+        "commercial_lot_id": {
+          "type": "string"
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "basis_or_boundary",
+          "evidence_class",
+          "source",
+          "uncertainty_range",
+          "owner",
+          "revision",
+          "dependent_artifacts"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {},
+          "unit": {
+            "type": "string"
+          },
+          "basis_or_boundary": {
+            "type": "string"
+          },
+          "evidence_class": {
+            "type": "string",
+            "enum": [
+              "MEASURED",
+              "OFFICIAL_SOURCE",
+              "CALCULATED",
+              "SIMULATED",
+              "ASSUMED",
+              "HYPOTHESIS",
+              "UNKNOWN"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "uncertainty_range": {},
+          "owner": {
+            "type": "string"
+          },
+          "revision": {
+            "type": "string"
+          },
+          "dependent_artifacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
