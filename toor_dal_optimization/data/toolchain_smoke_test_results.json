@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-10-15T19:51:00+05:30",
+  "host": {
+    "os": "Windows 11 / Windows Server x64",
+    "python_version": "3.13.0",
+    "com_bridge": "pywin32 (win32com.client verified)"
+  },
+  "tools": {
+    "solidworks": {
+      "name": "SOLIDWORKS 2025 SP01.2",
+      "executable_path": "C:\\Program Files\\SolidWorks Corp\\SOLIDWORKS (2)\\SLDWORKS.exe",
+      "progid": "SldWorks.Application",
+      "revision": "33.1.2",
+      "status": "API_SMOKE_TEST_PASSED",
+      "path_found": true,
+      "version_confirmed": true,
+      "com_registered": true,
+      "application_launch_confirmed": true,
+      "smoke_test_passed": true,
+      "test_details": {
+        "action": "Parametric cylinder creation (r=50mm, h=100mm) via 20-arg FeatureExtrusion",
+        "native_part_path": "scratch/disposable_smoke_test_cylinder.SLDPRT",
+        "native_part_bytes": 43869,
+        "step_export_path": "scratch/disposable_smoke_test_cylinder.STEP",
+        "step_bytes": 11939,
+        "step_lines": 192,
+        "solid_body_count": 1,
+        "measured_volume_m3": 0.0007853981633974483,
+        "theoretical_volume_m3": 0.0007853981633974483,
+        "volume_error_percent": 0.0,
+        "has_brep_solid_topology": true,
+        "step_schema": "AP203 / AP214 (CONFIG_CONTROL_DESIGN)"
+      },
+      "limitations": "Smoke test validated basic parametric solid extrusion and STEP export. Full vessel fabrication geometry requires validated mechanical design parameters, ASME Sec VIII code checks, and engineering review."
+    },
+    "autocad_plant3d": {
+      "name": "AutoCAD 2025 / AutoCAD Plant 3D 2025",
+      "executable_path": "C:\\Program Files\\Autodesk\\AutoCAD 2025\\acad.exe",
+      "console_path": "C:\\Program Files\\Autodesk\\AutoCAD 2025\\accoreconsole.exe",
+      "progid": "AutoCAD.Application",
+      "version": "2025.1.1 Update / Plant 3D 2025",
+      "status": "API_SMOKE_TEST_PASSED",
+      "path_found": true,
+      "version_confirmed": true,
+      "com_registered": true,
+      "application_launch_confirmed": true,
+      "smoke_test_passed": true,
+      "test_details": {
+        "engine": "accoreconsole.exe headless batch script execution",
+        "exit_code": 0,
+        "script_path": "scratch/smoke_test.scr",
+        "dxf_output_path": "scratch/disposable_smoke_test_1to1.dxf",
+        "dxf_bytes": 121404,
+        "entities_count": 4,
+        "insunits_confirmed": 4,
+        "insunits_meaning": "Millimeters",
+        "model_space_scale": "1:1 True Coordinate Millimeters"
+      },
+      "limitations": "Headless accoreconsole verified 1:1 true mm scale drafting and units. Plant 3D specific project databases and P&ID tagging require project setup environment."
+    },
+    "aspen_plus": {
+      "name": "Aspen Plus V14.0 (aspenONE 64-bit)",
+      "executable_path": "D:\\Engineering Software\\ASPENONE64bit\\Aspen Plus V14.0\\GUI\\Xeq\\AspenPlus.exe",
+      "hysys_executable_path": "D:\\Engineering Software\\ASPENONE64bit\\Aspen HYSYS V14.0\\AspenHysys.exe",
+      "progid": "Apwn.Document",
+      "hysys_progid": "HYSYS.Application",
+      "version": "V14.0 (Aspen Plus 40.0 OLE Services)",
+      "status": "APPLICATION_LAUNCH_CONFIRMED",
+      "path_found": true,
+      "version_confirmed": true,
+      "com_registered": true,
+      "application_launch_confirmed": true,
+      "smoke_test_passed": false,
+      "license_status": "INSTALLED_REQUIRES_INTERACTIVE_OR_NETWORK_LICENSE",
+      "suitability_matrix": {
+        "water_steam_thermodynamic_flash": "SUITABLE (Rigorous steam tables / ASME psychrometrics)",
+        "steam_heating_battery_edr": "SUITABLE (Aspen EDR finned-tube sizing when inputs verified)",
+        "plant_mass_water_macro_balance": "SUITABLE (Flash/Mixer/Splitter blocks)",
+        "grain_hydration_swelling_kinetics": "UNSUITABLE (Aspen lacks native biological cellular pulse hydration models)",
+        "calcium_pectate_cleavage_chemistry": "UNSUITABLE (Requires custom empirical model calibrated to target Tanzanian lot)"
+      },
+      "limitations": "Aspen Plus COM dispatch succeeded (PID spawned, OLE service responsive). Full InitNew/InitFromFile initialization requires active license checkout and desktop session. Aspen is an optional rigor tool for psychrometrics, not a truth engine for legume biology."
+    }
+  }
+}
