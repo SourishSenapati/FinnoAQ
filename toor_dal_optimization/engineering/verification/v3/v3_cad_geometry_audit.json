@@ -1,0 +1,58 @@
+[
+  {
+    "equipment_tag": "TK-101",
+    "description": "Soak Vessel Hollow Shell (6.0mm SS316L)",
+    "type": "Vertical Cylindrical Vessel",
+    "dimensions": "OD 2000mm x H 2200mm (6mm wall)",
+    "solid_displacement_envelope_m3": 6.911503837700001,
+    "metal_volume_m3": 0.10112477619188423,
+    "metal_mass_kg": 808.9982095350739,
+    "internal_fluid_capacity_m3": 6.828814605785758,
+    "working_volume_75pct_m3": 5.121610954339318,
+    "bodies": 2,
+    "sldprt_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\sldprt\\TK-101_Soak_Tank.SLDPRT",
+    "step_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\TK-101_Soak_Tank.step",
+    "step_bytes": 17167,
+    "step_lines": 266
+  },
+  {
+    "equipment_tag": "DR-101",
+    "description": "Continuous Vibrating Fluid Bed Dryer Trough & Plenum",
+    "dimensions": "L 14000mm x W 1000mm x H 1400mm (4mm wall)",
+    "deck_area_m2": 14.0,
+    "solid_displacement_envelope_m3": 19.599999999999998,
+    "metal_volume_m3": 0.0959487999999995,
+    "metal_mass_kg": 767.590399999996,
+    "bodies": 1,
+    "sldprt_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\sldprt\\DR-101_Fluid_Bed_Dryer.SLDPRT",
+    "step_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\DR-101_Fluid_Bed_Dryer.step",
+    "step_bytes": 25228,
+    "step_lines": 390
+  },
+  {
+    "equipment_tag": "SK-100",
+    "description": "Dual-Tank Automated Chemical Dosing Skid (TK-103A/B + P-102A/B)",
+    "dimensions": "L 3000mm x W 1500mm x H 1150mm",
+    "solid_displacement_envelope_m3": 5.175,
+    "metal_volume_m3": 1.8311060965210435,
+    "metal_mass_kg": 14374.182857690192,
+    "bodies": 3,
+    "sldprt_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\sldprt\\SK-100_Dosing_Skid.SLDPRT",
+    "step_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\SK-100_Dosing_Skid.step",
+    "step_bytes": 11887,
+    "step_lines": 192
+  },
+  {
+    "equipment_tag": "AG-101",
+    "description": "Low-Shear Hydrofoil Agitator & Geared Motor Drive",
+    "dimensions": "Shaft D 60mm x L 2400mm, Impeller D 700mm, Motor 4.0kW",
+    "solid_displacement_envelope_m3": 0.725,
+    "metal_volume_m3": 0.1510280951349914,
+    "metal_mass_kg": 1185.5705468096826,
+    "bodies": 3,
+    "sldprt_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\sldprt\\AG-101_Agitator.SLDPRT",
+    "step_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\AG-101_Agitator.step",
+    "step_bytes": 15897,
+    "step_lines": 254
+  }
+]

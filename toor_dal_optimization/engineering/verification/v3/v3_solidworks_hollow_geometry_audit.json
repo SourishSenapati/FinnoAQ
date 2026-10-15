@@ -1,0 +1,26 @@
+[
+  {
+    "part": "TK-101_Soak_Tank",
+    "envelope_volume_m3": 6.911503837897546,
+    "metal_volume_m3": 6.911503837897546,
+    "metal_mass_kg": 55292.03070318037,
+    "internal_fluid_capacity_m3": 0.0,
+    "wall_thickness_mm": 6.0,
+    "bodies": 1,
+    "prt_size": 55965,
+    "step_size": 11895,
+    "step_lines": 192
+  },
+  {
+    "part": "DR-101_Fluid_Bed_Dryer",
+    "envelope_volume_m3": 19.599999999999998,
+    "metal_volume_m3": 11.200000000000001,
+    "metal_mass_kg": 89600.00000000001,
+    "deck_area_m2": 14.0,
+    "wall_thickness_mm": 4.0,
+    "bodies": 1,
+    "prt_size": 59435,
+    "step_size": 15933,
+    "step_lines": 254
+  }
+]

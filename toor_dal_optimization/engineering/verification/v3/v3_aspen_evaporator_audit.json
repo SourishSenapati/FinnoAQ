@@ -1,0 +1,26 @@
+{
+  "model_name": "v3_triple_effect_evaporator_converged.bkp",
+  "file_size_bytes": 157811,
+  "blocks_count": 6,
+  "blocks": [
+    "COIL-1",
+    "COIL-2",
+    "COIL-3",
+    "STAGE-1",
+    "STAGE-2",
+    "STAGE-3"
+  ],
+  "streams_count": 14,
+  "sample_streams": [
+    "BRINE",
+    "BRINE-1",
+    "BRINE-2",
+    "BRINE-3",
+    "COND-1",
+    "COND-2",
+    "COND-3",
+    "Q-1",
+    "Q-2",
+    "Q-3"
+  ]
+}
