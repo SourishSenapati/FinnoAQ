@@ -1,0 +1,21 @@
+Line_Number,From_Equipment,To_Equipment,Nominal_Size_NB,Pipe_Class,Fluid_Service,Design_Pressure_bar,Operating_Temp_C,Insulation,P_and_ID_No
+L-101-50-SS,GF-101,TK-101A/B,50 NB,Sanitary SS316L,Dry Split Dal Gravity Chute,ATM,25 C,None,DWG-FIN-15T-003
+L-102-40-SS,TK-100,P-100A/B,40 NB,Sanitary SS316L,0.5% NaHCO3 Solution Suction,0.5 bar,25 C,None,DWG-FIN-15T-003
+L-103-32-SS,P-100A/B,TK-101A/B,32 NB,Sanitary SS316L,0.5% NaHCO3 Solution Discharge,2.5 bar,25 C,None,DWG-FIN-15T-003
+L-104-25-SS,Utility Skid,TK-100,25 NB,Sanitary SS304,Soft Process Water Supply,3.0 bar,25 C,None,DWG-FIN-15T-003
+L-105-80-SS,TK-101A/B,P-101A/B,80 NB,Sanitary SS316L,Soaked Dal Slurry Suction,1.0 bar,28 C,None,DWG-FIN-15T-003
+L-106-65-SS,P-101A/B,VS-101,65 NB,Sanitary SS316L,Soaked Dal Slurry Discharge,1.8 bar,28 C,None,DWG-FIN-15T-003
+L-107-50-SS,VS-101,P-102,50 NB,Sanitary SS316L,Drained Spent Liquor Gravity,ATM,28 C,None,DWG-FIN-15T-003
+L-108-40-SS,P-102,ETP-101,40 NB,Schedule 40 PVC/SS,Spent Liquor to ETP,2.0 bar,28 C,None,DWG-FIN-15T-003
+L-109-25-SS,Utility Skid,VS-101,25 NB,Sanitary SS316L,Mist Rinse Water Spray Header,3.0 bar,25 C,None,DWG-FIN-15T-003
+L-110-50-SS,CIP-101,TK-101A/B,50 NB,Sanitary SS316L,CIP Supply Header,3.5 bar,65 C,Thermal 25mm,DWG-FIN-15T-003
+L-111-50-SS,TK-101A/B,CIP-101,50 NB,Sanitary SS316L,CIP Return Header,1.5 bar,60 C,Thermal 25mm,DWG-FIN-15T-003
+L-112-40-CS,Boiler Skid,DR-101,40 NB,Class 150 Carbon Steel,Saturated Steam Supply,2.5 bar,138 C,Rockwool 50mm,DWG-FIN-15T-004
+L-113-25-CS,DR-101,Condensate Tank,25 NB,Class 150 Carbon Steel,Steam Condensate Return,1.0 bar,95 C,Rockwool 25mm,DWG-FIN-15T-004
+L-114-500-GI,FN-101,DR-101,500 Dia,Galvanized Duct,Hot Fluidizing Air,3500 Pa,60 C,Fiberglass 25mm,DWG-FIN-15T-004
+L-115-350-GI,FN-102,CLR-101,350 Dia,Galvanized Duct,Cooling Air Supply,2500 Pa,25 C,None,DWG-FIN-15T-004
+L-116-600-SS,DR-101/CLR,CYC-101,600 Dia,Sanitary SS304 Duct,Humid Exhaust Air w/ Fines,-500 Pa,42 C,None,DWG-FIN-15T-004
+L-117-600-GI,CYC-101,BH-101,600 Dia,Galvanized Duct,Cyclone Exhaust Air,-800 Pa,40 C,None,DWG-FIN-15T-004
+L-118-650-GI,BH-101,EXH-101,650 Dia,Galvanized Duct,Clean Air to ID Fan,-1500 Pa,38 C,None,DWG-FIN-15T-004
+L-119-650-GI,EXH-101,Atmosphere Stack,650 Dia,Galvanized Duct,Exhaust Stack Discharge,500 Pa,38 C,None,DWG-FIN-15T-004
+L-120-15-SS,Utility Skid,BH-101/PK-101,15 NB,Schedule 40 SS304,Instrument Air Header,6.0 bar,25 C,None,DWG-FIN-15T-004

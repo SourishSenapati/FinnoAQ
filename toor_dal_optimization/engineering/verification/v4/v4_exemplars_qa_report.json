@@ -1,0 +1,62 @@
+[
+  {
+    "dwg": "DWG-FIN-15T-001",
+    "description": "Process Flow Diagram",
+    "pdf_path": "engineering/cad/pdf/DWG-FIN-15T-001_PFD.pdf",
+    "png_render_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\verification\\v4\\renders\\DWG-FIN-15T-001_render.png",
+    "page_dimensions_pt": "488.8 x 345.6",
+    "render_pixel_res": "1019 x 720",
+    "text_blocks_count": 0,
+    "margin_violations": 0,
+    "latex_syntax_errors": 0,
+    "visual_qa_status": "PASS"
+  },
+  {
+    "dwg": "DWG-FIN-15T-002",
+    "description": "Authoritative Stream Table",
+    "pdf_path": "engineering/cad/pdf/DWG-FIN-15T-002_STREAM_TABLE.pdf",
+    "png_render_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\verification\\v4\\renders\\DWG-FIN-15T-002_render.png",
+    "page_dimensions_pt": "488.8 x 345.6",
+    "render_pixel_res": "1019 x 720",
+    "text_blocks_count": 0,
+    "margin_violations": 0,
+    "latex_syntax_errors": 0,
+    "visual_qa_status": "PASS"
+  },
+  {
+    "dwg": "DWG-FIN-15T-003",
+    "description": "P&ID Soaking Battery",
+    "pdf_path": "engineering/cad/pdf/DWG-FIN-15T-003_PID_SOAKING.pdf",
+    "png_render_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\verification\\v4\\renders\\DWG-FIN-15T-003_render.png",
+    "page_dimensions_pt": "488.8 x 345.6",
+    "render_pixel_res": "1019 x 720",
+    "text_blocks_count": 0,
+    "margin_violations": 0,
+    "latex_syntax_errors": 0,
+    "visual_qa_status": "PASS"
+  },
+  {
+    "dwg": "DWG-FIN-15T-004",
+    "description": "Site Master Plot Plan",
+    "pdf_path": "engineering/cad/pdf/DWG-FIN-15T-004_SITE_PLOT_PLAN.pdf",
+    "png_render_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\verification\\v4\\renders\\DWG-FIN-15T-004_render.png",
+    "page_dimensions_pt": "488.8 x 345.6",
+    "render_pixel_res": "1019 x 720",
+    "text_blocks_count": 0,
+    "margin_violations": 0,
+    "latex_syntax_errors": 0,
+    "visual_qa_status": "PASS"
+  },
+  {
+    "dwg": "DWG-FIN-15T-007",
+    "description": "Model-Derived Soak Tank GA",
+    "pdf_path": "engineering/cad/pdf/DWG-FIN-15T-007_SOAK_TANK_GA.pdf",
+    "png_render_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\verification\\v4\\renders\\DWG-FIN-15T-007_render.png",
+    "page_dimensions_pt": "488.8 x 345.6",
+    "render_pixel_res": "1019 x 720",
+    "text_blocks_count": 0,
+    "margin_violations": 0,
+    "latex_syntax_errors": 0,
+    "visual_qa_status": "PASS"
+  }
+]

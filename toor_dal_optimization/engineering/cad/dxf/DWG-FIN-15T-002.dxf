@@ -5,11 +5,11 @@ HEADER
   9
 $ACADVER
   1
-AC1024
+AC1032
   9
 $ACADMAINTVER
- 70
-6
+ 90
+4
   9
 $DWGCODEPAGE
   3
@@ -18,6 +18,10 @@ ANSI_1252
 $LASTSAVEDBY
   1
 ezdxf
+  9
+$REQUIREDVERSIONS
+160
+0
   9
 $INSBASE
  10
@@ -93,7 +97,7 @@ $TRACEWID
   9
 $TEXTSTYLE
   7
-Standard
+OpenSans
   9
 $CLAYER
   8
@@ -121,11 +125,11 @@ $DIMSCALE
   9
 $DIMASZ
  40
-2.5
+0.175
   9
 $DIMEXO
  40
-0.625
+0.125
   9
 $DIMDLI
  40
@@ -141,7 +145,7 @@ $DIMDLE
   9
 $DIMEXE
  40
-1.25
+0.375
   9
 $DIMTP
  40
@@ -153,7 +157,7 @@ $DIMTM
   9
 $DIMTXT
  40
-2.5
+0.25
   9
 $DIMCEN
  40
@@ -193,11 +197,11 @@ $DIMTAD
   9
 $DIMZIN
  70
-8
+12
   9
 $DIMBLK
   1
-
+ARCHTICK
   9
 $DIMASO
  70
@@ -229,7 +233,7 @@ $DIMALTF
   9
 $DIMLFAC
  40
-1.0
+100.0
   9
 $DIMTOFL
  70
@@ -261,7 +265,7 @@ $DIMBLK2
   9
 $DIMSTYLE
   2
-ISO-25
+EZDXF
   9
 $DIMCLRD
  70
@@ -277,11 +281,11 @@ $DIMCLRT
   9
 $DIMTFAC
  40
-1.0
+0.5
   9
 $DIMGAP
  40
-0.625
+0.1
   9
 $DIMJUST
  70
@@ -313,7 +317,7 @@ $DIMALTTZ
   9
 $DIMUPT
  70
-0
+1
   9
 $DIMDEC
  70
@@ -333,7 +337,7 @@ $DIMALTTD
   9
 $DIMTXSTY
   7
-Standard
+OpenSansCondensed-Light
   9
 $DIMAUNIT
  70
@@ -341,7 +345,7 @@ $DIMAUNIT
   9
 $DIMADEC
  70
-0
+2
   9
 $DIMALTRND
  40
@@ -349,11 +353,11 @@ $DIMALTRND
   9
 $DIMAZIN
  70
-0
+3
   9
 $DIMDSEP
  70
-44
+46
   9
 $DIMATFIT
  70
@@ -381,7 +385,7 @@ $DIMLWE
   9
 $DIMTMOVE
  70
-0
+2
   9
 $DIMFXL
  40
@@ -489,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.904340278
+2461329.9886921295
   9
 $TDUCREATE
  40
@@ -497,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.904340278
+2461329.9886921295
   9
 $TDUUPDATE
  40
@@ -549,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-123
+208
   9
 $SURFTAB1
  70
@@ -929,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{D1103393-2F1F-4936-8587-4EF9CB60EFB0}
+{02AB99B4-2C74-47A4-AFAC-46B66EFC1C1E}
   9
 $VERSIONGUID
   2
-{DC08EBC2-CB2E-4060-BF67-D63E26274FDA}
+{3F8DA81B-719F-4929-9905-4A298FB33914}
   9
 $EXTNAMES
 290
@@ -1469,7 +1473,7 @@ LTYPE
 100
 AcDbSymbolTable
  70
-3
+21
   0
 LTYPE
   5
@@ -1537,6 +1541,690 @@ Continuous
  40
 0.0
   0
+LTYPE
+  5
+2F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER
+ 70
+0
+  3
+Center ____ _ ____ _ ____ _ ____ _ ____ _ ____
+ 72
+65
+ 73
+4
+ 40
+5.08
+ 49
+3.175
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+0.635
+ 74
+0
+ 49
+-0.635
+ 74
+0
+  0
+LTYPE
+  5
+30
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTERX2
+ 70
+0
+  3
+Center (2x) ________  __  ________  __  ________
+ 72
+65
+ 73
+4
+ 40
+8.89
+ 49
+6.35
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+1.27
+ 74
+0
+ 49
+-0.635
+ 74
+0
+  0
+LTYPE
+  5
+31
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER2
+ 70
+0
+  3
+Center (.5x) ____ _ ____ _ ____ _ ____ _ ____
+ 72
+65
+ 73
+4
+ 40
+2.54
+ 49
+1.587
+ 74
+0
+ 49
+-0.318
+ 74
+0
+ 49
+0.318
+ 74
+0
+ 49
+-0.318
+ 74
+0
+  0
+LTYPE
+  5
+32
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED
+ 70
+0
+  3
+Dashed __ __ __ __ __ __ __ __ __ __ __ __ __ _
+ 72
+65
+ 73
+2
+ 40
+1.524
+ 49
+1.27
+ 74
+0
+ 49
+-0.254
+ 74
+0
+  0
+LTYPE
+  5
+33
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHEDX2
+ 70
+0
+  3
+Dashed (2x) ____  ____  ____  ____  ____  ____
+ 72
+65
+ 73
+2
+ 40
+3.048
+ 49
+2.54
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+34
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED2
+ 70
+0
+  3
+Dashed (.5x) _ _ _ _ _ _ _ _ _ _ _ _ _ _
+ 72
+65
+ 73
+2
+ 40
+0.762
+ 49
+0.635
+ 74
+0
+ 49
+-0.127
+ 74
+0
+  0
+LTYPE
+  5
+35
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+PHANTOM
+ 70
+0
+  3
+Phantom ______  __  __  ______  __  __  ______
+ 72
+65
+ 73
+6
+ 40
+6.35
+ 49
+3.175
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+0.635
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+0.635
+ 74
+0
+ 49
+-0.635
+ 74
+0
+  0
+LTYPE
+  5
+36
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+PHANTOMX2
+ 70
+0
+  3
+Phantom (2x)____________    ____    ____    ____________
+ 72
+65
+ 73
+6
+ 40
+10.795
+ 49
+6.35
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+1.27
+ 74
+0
+ 49
+-0.635
+ 74
+0
+ 49
+1.27
+ 74
+0
+ 49
+-0.635
+ 74
+0
+  0
+LTYPE
+  5
+37
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+PHANTOM2
+ 70
+0
+  3
+Phantom (.5x) ___ _ _ ___ _ _ ___ _ _ ___ _ _ ___
+ 72
+65
+ 73
+6
+ 40
+3.175
+ 49
+1.587
+ 74
+0
+ 49
+-0.318
+ 74
+0
+ 49
+0.318
+ 74
+0
+ 49
+-0.318
+ 74
+0
+ 49
+0.318
+ 74
+0
+ 49
+-0.318
+ 74
+0
+  0
+LTYPE
+  5
+38
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOT
+ 70
+0
+  3
+Dash dot __ . __ . __ . __ . __ . __ . __ . __
+ 72
+65
+ 73
+4
+ 40
+3.556
+ 49
+2.54
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+39
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOTX2
+ 70
+0
+  3
+Dash dot (2x) ____  .  ____  .  ____  .  ____
+ 72
+65
+ 73
+4
+ 40
+6.096
+ 49
+5.08
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+3A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHDOT2
+ 70
+0
+  3
+Dash dot (.5x) _ . _ . _ . _ . _ . _ . _ . _
+ 72
+65
+ 73
+4
+ 40
+1.778
+ 49
+1.27
+ 74
+0
+ 49
+-0.254
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.254
+ 74
+0
+  0
+LTYPE
+  5
+3B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOT
+ 70
+0
+  3
+Dot .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+ 72
+65
+ 73
+2
+ 40
+0.508
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+3C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOTX2
+ 70
+0
+  3
+Dot (2x) .    .    .    .    .    .    .    . 
+ 72
+65
+ 73
+2
+ 40
+1.016
+ 49
+0.0
+ 74
+0
+ 49
+-1.016
+ 74
+0
+  0
+LTYPE
+  5
+3D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DOT2
+ 70
+0
+  3
+Dot (.5) . . . . . . . . . . . . . . . . . . . 
+ 72
+65
+ 73
+2
+ 40
+0.254
+ 49
+0.0
+ 74
+0
+ 49
+-0.254
+ 74
+0
+  0
+LTYPE
+  5
+3E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDE
+ 70
+0
+  3
+Divide __ . . __ . . __ . . __ . . __ . . __
+ 72
+65
+ 73
+6
+ 40
+4.064
+ 49
+2.54
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+3F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDEX2
+ 70
+0
+  3
+Divide (2x) ____  . .  ____  . .  ____  . .  ____
+ 72
+65
+ 73
+6
+ 40
+6.604
+ 49
+5.08
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.508
+ 74
+0
+  0
+LTYPE
+  5
+40
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDE2
+ 70
+0
+  3
+Divide(.5x) _ . _ . _ . _ . _ . _ . _ . _
+ 72
+65
+ 73
+6
+ 40
+2.032
+ 49
+1.27
+ 74
+0
+ 49
+-0.254
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.254
+ 74
+0
+ 49
+0.0
+ 74
+0
+ 49
+-0.254
+ 74
+0
+  0
 ENDTAB
   0
 TABLE
@@ -1549,7 +2237,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-14
+13
   0
 LAYER
   5
@@ -1603,7 +2291,7 @@ Continuous
   0
 LAYER
   5
-2F
+8A
 330
 1
 100
@@ -1611,87 +2299,15 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-BORDER
- 70
-0
- 62
-5
-  6
-CONTINUOUS
-370
--3
-390
-13
-347
-21
-  0
-LAYER
-  5
-30
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-TITLE_BLOCK
- 70
-0
- 62
-4
-  6
-CONTINUOUS
-370
--3
-390
-13
-347
-21
-  0
-LAYER
-  5
-31
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-GRID
- 70
-0
- 62
-1
-  6
-CONTINUOUS
-370
--3
-390
-13
-347
-21
-  0
-LAYER
-  5
-32
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-CIVIL
+BORDER_TITLE
  70
 0
  62
 7
   6
-CONTINUOUS
+Continuous
 370
--3
+70
 390
 13
 347
@@ -1699,7 +2315,7 @@ CONTINUOUS
   0
 LAYER
   5
-33
+8B
 330
 1
 100
@@ -1711,59 +2327,11 @@ EQUIPMENT
  70
 0
  62
-4
-  6
-CONTINUOUS
-370
--3
-390
-13
-347
-21
-  0
-LAYER
-  5
-34
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-EQUIP_INT
- 70
-0
- 62
-2
-  6
-CONTINUOUS
-370
--3
-390
-13
-347
-21
-  0
-LAYER
-  5
-35
-330
-1
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-PIPING
- 70
-0
- 62
 3
   6
-CONTINUOUS
+Continuous
 370
--3
+50
 390
 13
 347
@@ -1771,7 +2339,7 @@ CONTINUOUS
   0
 LAYER
   5
-36
+8C
 330
 1
 100
@@ -1779,15 +2347,39 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-VALVES
+PROCESS_PIPING
+ 70
+0
+ 62
+5
+  6
+Continuous
+370
+50
+390
+13
+347
+21
+  0
+LAYER
+  5
+8D
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+UTILITY_PIPING
  70
 0
  62
 6
   6
-CONTINUOUS
+Continuous
 370
--3
+35
 390
 13
 347
@@ -1795,7 +2387,7 @@ CONTINUOUS
   0
 LAYER
   5
-37
+8E
 330
 1
 100
@@ -1809,9 +2401,9 @@ INSTRUMENTATION
  62
 2
   6
-CONTINUOUS
+Continuous
 370
--3
+25
 390
 13
 347
@@ -1819,7 +2411,7 @@ CONTINUOUS
   0
 LAYER
   5
-38
+8F
 330
 1
 100
@@ -1827,15 +2419,63 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TEXT
+VALVES
+ 70
+0
+ 62
+1
+  6
+Continuous
+370
+35
+390
+13
+347
+21
+  0
+LAYER
+  5
+90
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+DIMENSIONS
+ 70
+0
+ 62
+4
+  6
+Continuous
+370
+25
+390
+13
+347
+21
+  0
+LAYER
+  5
+91
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+ANNOTATION
  70
 0
  62
 7
   6
-CONTINUOUS
+Continuous
 370
--3
+35
 390
 13
 347
@@ -1843,7 +2483,7 @@ CONTINUOUS
   0
 LAYER
   5
-39
+92
 330
 1
 100
@@ -1851,15 +2491,15 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-DIMS
+GRID
  70
 0
  62
-1
+8
   6
-CONTINUOUS
+Continuous
 370
--3
+18
 390
 13
 347
@@ -1867,7 +2507,7 @@ CONTINUOUS
   0
 LAYER
   5
-3A
+93
 330
 1
 100
@@ -1879,11 +2519,35 @@ HATCH
  70
 0
  62
-8
+9
   6
-CONTINUOUS
+Continuous
 370
--3
+18
+390
+13
+347
+21
+  0
+LAYER
+  5
+94
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+TABLE_GRID
+ 70
+0
+ 62
+4
+  6
+Continuous
+370
+25
 390
 13
 347
@@ -1901,7 +2565,7 @@ STYLE
 100
 AcDbSymbolTable
  70
-1
+26
   0
 STYLE
   5
@@ -1928,6 +2592,706 @@ Standard
 2.5
   3
 txt
+  4
+
+  0
+STYLE
+  5
+41
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-Light
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-Light.ttf
+  4
+
+  0
+STYLE
+  5
+42
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-Light-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-LightItalic.ttf
+  4
+
+  0
+STYLE
+  5
+43
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-Regular.ttf
+  4
+
+  0
+STYLE
+  5
+44
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-Italic.ttf
+  4
+
+  0
+STYLE
+  5
+45
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-SemiBold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-SemiBold.ttf
+  4
+
+  0
+STYLE
+  5
+46
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-SemiBoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-SemiBoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+47
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-Bold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-Bold.ttf
+  4
+
+  0
+STYLE
+  5
+48
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-BoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-BoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+49
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-ExtraBold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-ExtraBold.ttf
+  4
+
+  0
+STYLE
+  5
+4A
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSans-ExtraBoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSans-ExtraBoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+4B
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSansCondensed-Bold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSansCondensed-Bold.ttf
+  4
+
+  0
+STYLE
+  5
+4C
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSansCondensed-Light
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSansCondensed-Light.ttf
+  4
+
+  0
+STYLE
+  5
+4D
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+OpenSansCondensed-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+OpenSansCondensed-LightItalic.ttf
+  4
+
+  0
+STYLE
+  5
+4E
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSans
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSans-Regular.ttf
+  4
+
+  0
+STYLE
+  5
+4F
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSans-Bold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSans-Bold.ttf
+  4
+
+  0
+STYLE
+  5
+50
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSans-BoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSans-BoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+51
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSans-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSans-Italic.ttf
+  4
+
+  0
+STYLE
+  5
+52
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSerif
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSerif-Regular.ttf
+  4
+
+  0
+STYLE
+  5
+53
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSerif-Bold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSerif-Bold.ttf
+  4
+
+  0
+STYLE
+  5
+54
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSerif-BoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSerif-BoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+55
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationSerif-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationSerif-Italic.ttf
+  4
+
+  0
+STYLE
+  5
+56
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationMono
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationMono-Regular.ttf
+  4
+
+  0
+STYLE
+  5
+57
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationMono-Bold
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationMono-Bold.ttf
+  4
+
+  0
+STYLE
+  5
+58
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationMono-BoldItalic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationMono-BoldItalic.ttf
+  4
+
+  0
+STYLE
+  5
+59
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+LiberationMono-Italic
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+2.5
+  3
+LiberationMono-Italic.ttf
   4
 
   0
@@ -1989,7 +3353,7 @@ ACAD
   0
 APPID
   5
-120
+205
 330
 3
 100
@@ -2003,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-121
+206
 330
 3
 100
@@ -2027,7 +3391,7 @@ DIMSTYLE
 100
 AcDbSymbolTable
  70
-1
+12
 100
 AcDbDimStyleTable
   0
@@ -2167,6 +3531,1532 @@ Standard
 372
 -2
   0
+DIMSTYLE
+105
+73
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZDXF
+ 70
+0
+ 40
+1.0
+ 41
+0.175
+ 42
+0.125
+ 43
+3.75
+ 44
+0.375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.25
+141
+2.5
+142
+0.0
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.1
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+342
+74
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+7C
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_100_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.25
+ 42
+0.125
+ 43
+3.75
+ 44
+0.375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.25
+141
+2.5
+142
+0.125
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.1
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+7D
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_50_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.125
+ 42
+0.0625
+ 43
+3.75
+ 44
+0.1875
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.125
+141
+2.5
+142
+0.0625
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.05
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+7E
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_25_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.0625
+ 42
+0.03125
+ 43
+3.75
+ 44
+0.09375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.0625
+141
+2.5
+142
+0.03125
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.025
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+7F
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_20_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.05
+ 42
+0.025
+ 43
+3.75
+ 44
+0.07500000000000001
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.05
+141
+2.5
+142
+0.025
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.020000000000000004
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+80
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_10_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.025
+ 42
+0.0125
+ 43
+3.75
+ 44
+0.037500000000000006
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.025
+141
+2.5
+142
+0.0125
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.010000000000000002
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+81
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_5_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.0125
+ 42
+0.00625
+ 43
+3.75
+ 44
+0.018750000000000003
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.0125
+141
+2.5
+142
+0.00625
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.005000000000000001
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+82
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_M_1_H25_CM
+ 70
+0
+ 40
+1.0
+ 41
+0.0025
+ 42
+0.00125
+ 43
+3.75
+ 44
+0.00375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.0025
+141
+2.5
+142
+0.00125
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.001
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+83
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_RADIUS
+ 70
+0
+ 40
+1.0
+ 41
+0.25
+ 42
+0.125
+ 43
+3.75
+ 44
+0.375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.25
+141
+0.0
+142
+0.0
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.1
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+0
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+1
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+342
+84
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+88
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_RADIUS_INSIDE
+ 70
+0
+ 40
+1.0
+ 41
+0.25
+ 42
+0.125
+ 43
+3.75
+ 44
+0.375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.25
+141
+0.0
+142
+0.0
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.1
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+0
+ 78
+12
+ 79
+3
+170
+0
+171
+3
+172
+0
+173
+0
+174
+1
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+0
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+0
+290
+0
+340
+4C
+342
+84
+371
+-2
+372
+-2
+  0
+DIMSTYLE
+105
+89
+330
+4
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+EZ_CURVED
+ 70
+0
+ 40
+1.0
+ 41
+0.25
+ 42
+0.125
+ 43
+3.75
+ 44
+0.375
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+2.5
+140
+0.25
+141
+2.5
+142
+0.0
+143
+0.03937007874
+144
+100.0
+145
+0.0
+146
+0.5
+147
+0.1
+148
+0.0
+ 69
+0
+ 70
+0
+ 71
+0
+ 72
+0
+ 73
+0
+ 74
+0
+ 75
+0
+ 76
+0
+ 77
+1
+ 78
+12
+ 79
+2
+ 90
+2
+170
+0
+171
+3
+172
+1
+173
+0
+174
+0
+175
+0
+176
+0
+177
+0
+178
+0
+179
+2
+271
+2
+272
+2
+273
+2
+274
+3
+275
+0
+276
+0
+277
+2
+278
+46
+279
+2
+280
+0
+281
+0
+282
+0
+283
+0
+284
+8
+285
+0
+286
+0
+288
+1
+289
+3
+290
+0
+340
+4C
+371
+-2
+372
+-2
+  0
 ENDTAB
   0
 TABLE
@@ -2179,7 +5069,7 @@ BLOCK_RECORD
 100
 AcDbSymbolTable
  70
-2
+5
   0
 BLOCK_RECORD
   5
@@ -2214,6 +5104,66 @@ AcDbBlockTableRecord
 *Paper_Space
 340
 1E
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+74
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+_ARCHTICK
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+78
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+_CLOSEDFILLED
+340
+0
+ 70
+0
+280
+1
+281
+0
+  0
+BLOCK_RECORD
+  5
+84
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+_CLOSEDBLANK
+340
+0
  70
 0
 280
@@ -2305,6 +5255,222 @@ AcDbEntity
 100
 AcDbBlockEnd
   0
+BLOCK
+  5
+75
+330
+74
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+_ARCHTICK
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+_ARCHTICK
+  1
+
+  0
+LWPOLYLINE
+  5
+77
+330
+74
+100
+AcDbEntity
+  8
+0
+  6
+BYBLOCK
+ 62
+0
+100
+AcDbPolyline
+ 90
+2
+ 70
+0
+ 43
+0.15
+ 10
+-0.5
+ 20
+-0.5
+ 10
+0.5
+ 20
+0.5
+  0
+ENDBLK
+  5
+76
+330
+74
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+79
+330
+78
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+_CLOSEDFILLED
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+_CLOSEDFILLED
+  1
+
+  0
+SOLID
+  5
+7B
+330
+78
+100
+AcDbEntity
+  8
+0
+  6
+BYBLOCK
+ 62
+0
+100
+AcDbTrace
+ 10
+-1.0
+ 20
+0.16439898372402537
+ 30
+0.0
+ 11
+0.0
+ 21
+0.0
+ 31
+0.0
+ 12
+-1.0
+ 22
+-0.16439898372402537
+ 32
+0.0
+ 13
+-1.0
+ 23
+-0.16439898372402537
+ 33
+0.0
+  0
+ENDBLK
+  5
+7A
+330
+78
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+85
+330
+84
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+_CLOSEDBLANK
+ 70
+0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+_CLOSEDBLANK
+  1
+
+  0
+LWPOLYLINE
+  5
+87
+330
+84
+100
+AcDbEntity
+  8
+0
+  6
+BYBLOCK
+ 62
+0
+100
+AcDbPolyline
+ 90
+3
+ 70
+1
+ 10
+-1.0
+ 20
+0.16439898372402537
+ 10
+0.0
+ 20
+0.0
+ 10
+-1.0
+ 20
+-0.16439898372402537
+  0
+ENDBLK
+  5
+86
+330
+84
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
 ENDSEC
   0
 SECTION
@@ -2313,2443 +5479,43 @@ ENTITIES
   0
 LWPOLYLINE
   5
-3B
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-60.0
- 20
-480.0
- 10
-120.0
- 20
-480.0
- 10
-120.0
- 20
-580.0
- 10
-60.0
- 20
-580.0
- 10
-60.0
- 20
-480.0
-  0
-LINE
-  5
-3C
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-60.0
- 20
-480.0
- 30
-0.0
- 11
-90.0
- 21
-440.0
- 31
-0.0
-  0
-LINE
-  5
-3D
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-120.0
- 20
-480.0
- 30
-0.0
- 11
-90.0
- 21
-440.0
- 31
-0.0
-  0
-TEXT
-  5
-3E
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-68.0
- 20
-590.0
- 30
-0.0
- 40
-5.0
-  1
-SIL-101A/B
- 11
-68.0
- 21
-590.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-3F
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-65.0
- 20
-520.0
- 30
-0.0
- 40
-3.0
-  1
-RAW SILO (30 MT)
- 11
-65.0
- 21
-520.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-40
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbCircle
- 10
-240.0
- 20
-480.0
- 30
-0.0
- 40
-45.0
-  0
-LINE
-  5
-41
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-240.0
- 20
-480.0
- 30
-0.0
- 11
-240.0
- 21
-560.0
- 31
-0.0
-  0
-LINE
-  5
-42
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-225.0
- 20
-460.0
- 30
-0.0
- 11
-255.0
- 21
-460.0
- 31
-0.0
-  0
-TEXT
-  5
-43
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-225.0
- 20
-570.0
- 30
-0.0
- 40
-5.0
-  1
-TK-101A/B
- 11
-225.0
- 21
-570.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-44
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-212.0
- 20
-478.0
- 30
-0.0
- 40
-3.0
-  1
-SOAK TANK (7.5 m3)
- 11
-212.0
- 21
-478.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-45
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-200.0
- 20
-640.0
- 10
-280.0
- 20
-640.0
- 10
-280.0
- 20
-690.0
- 10
-200.0
- 20
-690.0
- 10
-200.0
- 20
-640.0
-  0
-TEXT
-  5
-46
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-205.0
- 20
-700.0
- 30
-0.0
- 40
-4.0
-  1
-SK-100 DOSING SKID
- 11
-205.0
- 21
-700.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-47
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-205.0
- 20
-660.0
- 30
-0.0
- 40
-2.8
-  1
-NaHCO3 REAGENT (0.5%)
- 11
-205.0
- 21
-660.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-48
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-340.0
- 20
-460.0
- 30
-0.0
- 11
-410.0
- 21
-420.0
- 31
-0.0
-  0
-LINE
-  5
-49
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-340.0
- 20
-465.0
- 30
-0.0
- 11
-410.0
- 21
-425.0
- 31
-0.0
-  0
-TEXT
-  5
-4A
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-350.0
- 20
-475.0
- 30
-0.0
- 40
-4.0
-  1
-SC-101 SCREEN
- 11
-350.0
- 21
-475.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-4B
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-460.0
- 20
-410.0
- 10
-660.0
- 20
-410.0
- 10
-660.0
- 20
-480.0
- 10
-460.0
- 20
-480.0
- 10
-460.0
- 20
-410.0
-  0
-LINE
-  5
-4C
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-460.0
- 20
-435.0
- 30
-0.0
- 11
-660.0
- 21
-435.0
- 31
-0.0
-  0
-LINE
-  5
-4D
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-530.0
- 20
-410.0
- 30
-0.0
- 11
-530.0
- 21
-480.0
- 31
-0.0
-  0
-LINE
-  5
-4E
-330
-17
-100
-AcDbEntity
-  8
-EQUIP_INT
-100
-AcDbLine
- 10
-600.0
- 20
-410.0
- 30
-0.0
- 11
-600.0
- 21
-480.0
- 31
-0.0
-  0
-TEXT
-  5
-4F
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-500.0
- 20
-490.0
- 30
-0.0
- 40
-5.0
-  1
-DR-101 FLUID BED DRYER
- 11
-500.0
- 21
-490.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-50
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-475.0
- 20
-445.0
- 30
-0.0
- 40
-2.8
-  1
-ZONE 1 (65C)
- 11
-475.0
- 21
-445.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-51
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-545.0
- 20
-445.0
- 30
-0.0
- 40
-2.8
-  1
-ZONE 2 (55C)
- 11
-545.0
- 21
-445.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-52
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-610.0
- 20
-445.0
- 30
-0.0
- 40
-2.8
-  1
-ZONE 3 (28C)
- 11
-610.0
- 21
-445.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-53
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbCircle
- 10
-740.0
- 20
-520.0
- 30
-0.0
- 40
-25.0
-  0
-TEXT
-  5
-54
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-730.0
- 20
-555.0
- 30
-0.0
- 40
-4.0
-  1
-CY-101
- 11
-730.0
- 21
-555.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-55
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-800.0
- 20
-500.0
- 10
-860.0
- 20
-500.0
- 10
-860.0
- 20
-570.0
- 10
-800.0
- 20
-570.0
- 10
-800.0
- 20
-500.0
-  0
-TEXT
-  5
-56
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-795.0
- 20
-580.0
- 30
-0.0
- 40
-4.0
-  1
-BF-101 BAGHOUSE
- 11
-795.0
- 21
-580.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-57
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbCircle
- 10
-920.0
- 20
-535.0
- 30
-0.0
- 40
-20.0
-  0
-TEXT
-  5
-58
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-900.0
- 20
-565.0
- 30
-0.0
- 40
-4.0
-  1
-FN-101 (45 kW)
- 11
-900.0
- 21
-565.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-59
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbCircle
- 10
-740.0
- 20
-390.0
- 30
-0.0
- 40
-25.0
-  0
-TEXT
-  5
-5A
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-715.0
- 20
-425.0
- 30
-0.0
- 40
-4.0
-  1
-PL-101 POLISHER
- 11
-715.0
- 21
-425.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-5B
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-830.0
- 20
-340.0
- 10
-890.0
- 20
-340.0
- 10
-890.0
- 20
-420.0
- 10
-830.0
- 20
-420.0
- 10
-830.0
- 20
-340.0
-  0
-LINE
-  5
-5C
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-830.0
- 20
-340.0
- 30
-0.0
- 11
-860.0
- 21
-310.0
- 31
-0.0
-  0
-LINE
-  5
-5D
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-890.0
- 20
-340.0
- 30
-0.0
- 11
-860.0
- 21
-310.0
- 31
-0.0
-  0
-TEXT
-  5
-5E
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-825.0
- 20
-430.0
- 30
-0.0
- 40
-4.0
-  1
-SIL-102A/B (10 MT)
- 11
-825.0
- 21
-430.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-5F
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-950.0
- 20
-310.0
- 10
-1030.0
- 20
-310.0
- 10
-1030.0
- 20
-370.0
- 10
-950.0
- 20
-370.0
- 10
-950.0
- 20
-310.0
-  0
-TEXT
-  5
-60
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-945.0
- 20
-380.0
- 30
-0.0
- 40
-4.0
-  1
-PK-101 PACKAGING
- 11
-945.0
- 21
-380.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-61
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-90.0
- 20
-440.0
- 30
-0.0
- 11
-90.0
- 21
-410.0
- 31
-0.0
-  0
-LINE
-  5
-62
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-90.0
- 20
-410.0
- 30
-0.0
- 11
-200.0
- 21
-410.0
- 31
-0.0
-  0
-LINE
-  5
-63
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-200.0
- 20
-410.0
- 30
-0.0
- 11
-200.0
- 21
-480.0
- 31
-0.0
-  0
-CIRCLE
-  5
-64
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-145.0
- 20
-410.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-65
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-142.0
- 20
-407.0
- 30
-0.0
- 40
-5.0
-  1
-1
- 11
-142.0
- 21
-407.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-66
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-180.0
- 20
-550.0
- 30
-0.0
- 11
-220.0
- 21
-510.0
- 31
-0.0
-  0
-CIRCLE
-  5
-67
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-195.0
- 20
-535.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-68
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-192.0
- 20
-532.0
- 30
-0.0
- 40
-5.0
-  1
-2
- 11
-192.0
- 21
-532.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-69
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-240.0
- 20
-640.0
- 30
-0.0
- 11
-240.0
- 21
-525.0
- 31
-0.0
-  0
-CIRCLE
-  5
-6A
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-240.0
- 20
-585.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-6B
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-237.0
- 20
-582.0
- 30
-0.0
- 40
-5.0
-  1
-3
- 11
-237.0
- 21
-582.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-6C
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-285.0
- 20
-480.0
- 30
-0.0
- 11
-340.0
- 21
-460.0
- 31
-0.0
-  0
-CIRCLE
-  5
-6D
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-310.0
- 20
-472.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-6E
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-307.0
- 20
-469.0
- 30
-0.0
- 40
-5.0
-  1
-4
- 11
-307.0
- 21
-469.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-6F
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-375.0
- 20
-420.0
- 30
-0.0
- 11
-375.0
- 21
-340.0
- 31
-0.0
-  0
-CIRCLE
-  5
-70
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-375.0
- 20
-370.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-71
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-372.0
- 20
-367.0
- 30
-0.0
- 40
-5.0
-  1
-5
- 11
-372.0
- 21
-367.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-72
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-350.0
- 20
-325.0
- 30
-0.0
- 40
-3.0
-  1
-TO ETP (25 KLD)
- 11
-350.0
- 21
-325.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-73
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-410.0
- 20
-425.0
- 30
-0.0
- 11
-460.0
- 21
-445.0
- 31
-0.0
-  0
-CIRCLE
-  5
-74
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-435.0
- 20
-435.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-75
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-432.0
- 20
-432.0
- 30
-0.0
- 40
-5.0
-  1
-6
- 11
-432.0
- 21
-432.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-76
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-560.0
- 20
-340.0
- 30
-0.0
- 11
-560.0
- 21
-410.0
- 31
-0.0
-  0
-CIRCLE
-  5
-77
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-560.0
- 20
-375.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-78
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-557.0
- 20
-372.0
- 30
-0.0
- 40
-5.0
-  1
-7
- 11
-557.0
- 21
-372.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-79
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-660.0
- 20
-470.0
- 30
-0.0
- 11
-715.0
- 21
-520.0
- 31
-0.0
-  0
-LINE
-  5
-7A
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-765.0
- 20
-520.0
- 30
-0.0
- 11
-800.0
- 21
-535.0
- 31
-0.0
-  0
-LINE
-  5
-7B
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-860.0
- 20
-535.0
- 30
-0.0
- 11
-900.0
- 21
-535.0
- 31
-0.0
-  0
-LINE
-  5
-7C
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-940.0
- 20
-535.0
- 30
-0.0
- 11
-980.0
- 21
-535.0
- 31
-0.0
-  0
-CIRCLE
-  5
-7D
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-690.0
- 20
-495.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-7E
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-687.0
- 20
-492.0
- 30
-0.0
- 40
-5.0
-  1
-8
- 11
-687.0
- 21
-492.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-7F
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-920.0
- 20
-515.0
- 30
-0.0
- 40
-3.0
-  1
-TO ATMOSPHERE STACK (15m)
- 11
-920.0
- 21
-515.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-80
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-740.0
- 20
-495.0
- 30
-0.0
- 11
-740.0
- 21
-450.0
- 31
-0.0
-  0
-CIRCLE
-  5
-81
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-740.0
- 20
-470.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-82
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-737.0
- 20
-467.0
- 30
-0.0
- 40
-5.0
-  1
-9
- 11
-737.0
- 21
-467.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-83
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-660.0
- 20
-425.0
- 30
-0.0
- 11
-715.0
- 21
-390.0
- 31
-0.0
-  0
-CIRCLE
-  5
-84
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-685.0
- 20
-410.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-85
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-680.0
- 20
-407.0
- 30
-0.0
- 40
-4.5
-  1
-10
- 11
-680.0
- 21
-407.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-86
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-765.0
- 20
-390.0
- 30
-0.0
- 11
-830.0
- 21
-390.0
- 31
-0.0
-  0
-CIRCLE
-  5
-87
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-795.0
- 20
-390.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-88
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-790.0
- 20
-387.0
- 30
-0.0
- 40
-4.5
-  1
-11
- 11
-790.0
- 21
-387.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-89
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-860.0
- 20
-310.0
- 30
-0.0
- 11
-950.0
- 21
-330.0
- 31
-0.0
-  0
-LINE
-  5
-8A
-330
-17
-100
-AcDbEntity
-  8
-PIPING
-100
-AcDbLine
- 10
-1030.0
- 20
-340.0
- 30
-0.0
- 11
-1100.0
- 21
-340.0
- 31
-0.0
-  0
-CIRCLE
-  5
-8B
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-900.0
- 20
-320.0
- 30
-0.0
- 40
-8.0
-  0
-TEXT
-  5
-8C
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-895.0
- 20
-317.0
- 30
-0.0
- 40
-4.5
-  1
-12
- 11
-895.0
- 21
-317.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-8D
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-1035.0
- 20
-350.0
- 30
-0.0
- 40
-3.0
-  1
-TO FINISHED GOODS WAREHOUSE
- 11
-1035.0
- 21
-350.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-8E
-330
-17
-100
-AcDbEntity
-  8
-CIVIL
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-25.0
- 20
-60.0
- 10
-785.0
- 20
-60.0
- 10
-785.0
- 20
-260.0
- 10
-25.0
- 20
-260.0
- 10
-25.0
- 20
-60.0
-  0
-TEXT
-  5
-8F
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-35.0
- 20
-245.0
- 30
-0.0
- 40
-4.5
-  1
-HEAT & MATERIAL BALANCE TABLE (RIGOROUS MASS CONSERVATION CLOSURE)
- 11
-35.0
- 21
-245.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-90
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-30.0
- 20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-STRM
- 11
-30.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-91
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-65.0
- 20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-DESCRIPTION
- 11
-65.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-92
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-205.0
- 20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-PHASE
- 11
-205.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-93
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-255.0
- 20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-TEMP (C)
- 11
-255.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-94
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-325.0
- 20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-PRESS (barg)
- 11
-325.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
 95
 330
 17
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+70
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-415.0
+0.0
  20
-230.0
- 30
 0.0
- 40
-2.8
-  1
-FLOW (kg/h)
- 11
-415.0
- 21
-230.0
- 31
+ 10
+594.0
+ 20
 0.0
-100
-AcDbText
+ 10
+594.0
+ 20
+420.0
+ 10
+0.0
+ 20
+420.0
+ 10
+0.0
+ 20
+0.0
   0
-TEXT
+LWPOLYLINE
   5
 96
 330
@@ -4757,27 +5523,35 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+50
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-515.0
+15.0
  20
-230.0
- 30
-0.0
- 40
-2.8
-  1
-SOLIDS (kg/d)
- 11
-515.0
- 21
-230.0
- 31
-0.0
-100
-AcDbText
+15.0
+ 10
+579.0
+ 20
+15.0
+ 10
+579.0
+ 20
+405.0
+ 10
+15.0
+ 20
+405.0
+ 10
+15.0
+ 20
+15.0
   0
 TEXT
   5
@@ -4787,23 +5561,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-615.0
+60.0
  20
-230.0
+406.5
  30
 0.0
  40
-2.8
+2.5
   1
-WATER (kg/d)
+1
  11
-615.0
+60.0
  21
-230.0
+406.5
  31
 0.0
 100
@@ -4817,29 +5591,29 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-705.0
+60.0
  20
-230.0
+10.5
  30
 0.0
  40
-2.8
+2.5
   1
-NaHCO3 (kg/d)
+1
  11
-705.0
+60.0
  21
-230.0
+10.5
  31
 0.0
 100
 AcDbText
   0
-LINE
+TEXT
   5
 99
 330
@@ -4847,21 +5621,27 @@ LINE
 100
 AcDbEntity
   8
-CIVIL
+BORDER_TITLE
 100
-AcDbLine
+AcDbText
  10
-25.0
+154.0
  20
-225.0
+406.5
  30
 0.0
+ 40
+2.5
+  1
+2
  11
-785.0
+154.0
  21
-225.0
+406.5
  31
 0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -4871,23 +5651,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-30.0
+154.0
  20
-215.0
+10.5
  30
 0.0
  40
-2.4
+2.5
   1
-01
+2
  11
-30.0
+154.0
  21
-215.0
+10.5
  31
 0.0
 100
@@ -4901,23 +5681,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-65.0
+248.0
  20
-215.0
+406.5
  30
 0.0
  40
-2.4
+2.5
   1
-Raw Feed Toor-Dal
+3
  11
-65.0
+248.0
  21
-215.0
+406.5
  31
 0.0
 100
@@ -4931,23 +5711,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-205.0
+248.0
  20
-215.0
+10.5
  30
 0.0
  40
-2.4
+2.5
   1
-Solid
+3
  11
-205.0
+248.0
  21
-215.0
+10.5
  31
 0.0
 100
@@ -4961,23 +5741,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-255.0
+342.0
  20
-215.0
+406.5
  30
 0.0
  40
-2.4
+2.5
   1
-25.0
+4
  11
-255.0
+342.0
  21
-215.0
+406.5
  31
 0.0
 100
@@ -4991,23 +5771,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-325.0
+342.0
  20
-215.0
+10.5
  30
 0.0
  40
-2.4
+2.5
   1
-0.0
+4
  11
-325.0
+342.0
  21
-215.0
+10.5
  31
 0.0
 100
@@ -5021,23 +5801,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-415.0
+436.0
  20
-215.0
+406.5
  30
 0.0
  40
-2.4
+2.5
   1
-937.5
+5
  11
-415.0
+436.0
  21
-215.0
+406.5
  31
 0.0
 100
@@ -5051,23 +5831,23 @@ A0
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-515.0
+436.0
  20
-215.0
+10.5
  30
 0.0
  40
-2.4
+2.5
   1
-13,425.0
+5
  11
-515.0
+436.0
  21
-215.0
+10.5
  31
 0.0
 100
@@ -5081,23 +5861,23 @@ A1
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-615.0
+530.0
  20
-215.0
+406.5
  30
 0.0
  40
-2.4
+2.5
   1
-1,575.0
+6
  11
-615.0
+530.0
  21
-215.0
+406.5
  31
 0.0
 100
@@ -5111,23 +5891,23 @@ A2
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-705.0
+530.0
  20
-215.0
+10.5
  30
 0.0
  40
-2.4
+2.5
   1
-0.0
+6
  11
-705.0
+530.0
  21
-215.0
+10.5
  31
 0.0
 100
@@ -5141,23 +5921,23 @@ A3
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-30.0
+10.5
  20
-204.0
+60.0
  30
 0.0
  40
-2.4
+2.5
   1
-02
+A
  11
-30.0
+10.5
  21
-204.0
+60.0
  31
 0.0
 100
@@ -5171,23 +5951,23 @@ A4
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-65.0
+580.5
  20
-204.0
+60.0
  30
 0.0
  40
-2.4
+2.5
   1
-Potable Process Water
+A
  11
-65.0
+580.5
  21
-204.0
+60.0
  31
 0.0
 100
@@ -5201,23 +5981,23 @@ A5
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-205.0
+10.5
  20
-204.0
+157.5
  30
 0.0
  40
-2.4
+2.5
   1
-Liquid
+B
  11
-205.0
+10.5
  21
-204.0
+157.5
  31
 0.0
 100
@@ -5231,23 +6011,23 @@ A6
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-255.0
+580.5
  20
-204.0
+157.5
  30
 0.0
  40
-2.4
+2.5
   1
-25.0
+B
  11
-255.0
+580.5
  21
-204.0
+157.5
  31
 0.0
 100
@@ -5261,23 +6041,23 @@ A7
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-325.0
+10.5
  20
-204.0
+255.0
  30
 0.0
  40
-2.4
-  1
 2.5
+  1
+C
  11
-325.0
+10.5
  21
-204.0
+255.0
  31
 0.0
 100
@@ -5291,23 +6071,23 @@ A8
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-415.0
+580.5
  20
-204.0
+255.0
  30
 0.0
  40
-2.4
+2.5
   1
-1,406.3
+C
  11
-415.0
+580.5
  21
-204.0
+255.0
  31
 0.0
 100
@@ -5321,23 +6101,23 @@ A9
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-515.0
+10.5
  20
-204.0
+352.5
  30
 0.0
  40
-2.4
+2.5
   1
-0.0
+D
  11
-515.0
+10.5
  21
-204.0
+352.5
  31
 0.0
 100
@@ -5351,29 +6131,29 @@ AA
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
 AcDbText
  10
-615.0
+580.5
  20
-204.0
+352.5
  30
 0.0
  40
-2.4
+2.5
   1
-22,500.0
+D
  11
-615.0
+580.5
  21
-204.0
+352.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 AB
 330
@@ -5381,29 +6161,37 @@ AB
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+50
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-705.0
+384.0
  20
-204.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-705.0
- 21
-204.0
- 31
-0.0
-100
-AcDbText
+15.0
+ 10
+579.0
+ 20
+15.0
+ 10
+579.0
+ 20
+70.0
+ 10
+384.0
+ 20
+70.0
+ 10
+384.0
+ 20
+15.0
   0
-TEXT
+LINE
   5
 AC
 330
@@ -5411,29 +6199,23 @@ AC
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-30.0
+384.0
  20
-193.0
+53.0
  30
 0.0
- 40
-2.4
-  1
-03
  11
-30.0
+579.0
  21
-193.0
+53.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 AD
 330
@@ -5441,29 +6223,23 @@ AD
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-65.0
+384.0
  20
-193.0
+37.0
  30
 0.0
- 40
-2.4
-  1
-NaHCO3 Reagent Soln
  11
-65.0
+579.0
  21
-193.0
+37.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 AE
 330
@@ -5471,29 +6247,23 @@ AE
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-205.0
+384.0
  20
-193.0
+26.0
  30
 0.0
- 40
-2.4
-  1
-Liquid
  11
-205.0
+579.0
  21
-193.0
+26.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 AF
 330
@@ -5501,29 +6271,23 @@ AF
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-255.0
+499.0
  20
-193.0
+15.0
  30
 0.0
- 40
-2.4
-  1
-25.0
  11
-255.0
+499.0
  21
-193.0
+37.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 B0
 330
@@ -5531,27 +6295,21 @@ B0
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-325.0
+539.0
  20
-193.0
+15.0
  30
 0.0
- 40
-2.4
-  1
-3.0
  11
-325.0
+539.0
  21
-193.0
+37.0
  31
 0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -5561,23 +6319,23 @@ B1
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+389.0
  20
-193.0
+61.0
  30
 0.0
  40
-2.4
+3.5
   1
-7.0
+HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.
  11
-415.0
+389.0
  21
-193.0
+61.0
  31
 0.0
 100
@@ -5591,23 +6349,23 @@ B2
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+389.0
  20
-193.0
+55.0
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+15,000 kg/day Split Pigeon Pea Optimization Greenfield Project
  11
-515.0
+389.0
  21
-193.0
+55.0
  31
 0.0
 100
@@ -5621,23 +6379,23 @@ B3
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+389.0
  20
-193.0
+43.0
  30
 0.0
  40
-2.4
+3.8
   1
-0.0
+PROCESS STREAM TABLE & MASS-ENERGY BALANCE
  11
-615.0
+389.0
  21
-193.0
+43.0
  31
 0.0
 100
@@ -5651,23 +6409,23 @@ B4
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-705.0
+389.0
  20
-193.0
+39.0
  30
 0.0
  40
-2.4
+2.0
   1
-112.5
+DISCIPLINE: PROCESS | STAGE: CONCEPTUAL FEED
  11
-705.0
+389.0
  21
-193.0
+39.0
  31
 0.0
 100
@@ -5681,23 +6439,23 @@ B5
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-30.0
+389.0
  20
-182.0
+29.0
  30
 0.0
  40
-2.4
+3.0
   1
-04
+DWG NO: DWG-FIN-15T-002
  11
-30.0
+389.0
  21
-182.0
+29.0
  31
 0.0
 100
@@ -5711,23 +6469,23 @@ B6
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-65.0
+504.0
  20
-182.0
+29.0
  30
 0.0
  40
-2.4
+2.5
   1
-Total Soaked Slurry
+REV: V4.0
  11
-65.0
+504.0
  21
-182.0
+29.0
  31
 0.0
 100
@@ -5741,23 +6499,23 @@ B7
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-205.0
+544.0
  20
-182.0
+29.0
  30
 0.0
  40
-2.4
+2.5
   1
-Slurry
+SHEET: 2 OF 14
  11
-205.0
+544.0
  21
-182.0
+29.0
  31
 0.0
 100
@@ -5771,23 +6529,23 @@ B8
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-255.0
+389.0
  20
-182.0
+19.0
  30
 0.0
  40
-2.4
+2.0
   1
-25.0
+SCALE: AS SHOWN
  11
-255.0
+389.0
  21
-182.0
+19.0
  31
 0.0
 100
@@ -5801,23 +6559,23 @@ B9
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-325.0
+439.0
  20
-182.0
+19.0
  30
 0.0
  40
-2.4
+2.0
   1
-0.0
+DATE: 2026-10-15
  11
-325.0
+439.0
  21
-182.0
+19.0
  31
 0.0
 100
@@ -5831,23 +6589,23 @@ BA
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+504.0
  20
-182.0
+19.0
  30
 0.0
  40
-2.4
+2.0
   1
-2,350.8
+STATUS: PRELIMINARY
  11
-415.0
+504.0
  21
-182.0
+19.0
  31
 0.0
 100
@@ -5861,23 +6619,23 @@ BB
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+544.0
  20
-182.0
+19.0
  30
 0.0
  40
-2.4
+2.0
   1
-13,425.0
+GATE: G-A HOLD
  11
-515.0
+544.0
  21
-182.0
+19.0
  31
 0.0
 100
@@ -5891,29 +6649,29 @@ BC
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+25.0
  20
-182.0
+20.0
  30
 0.0
  40
-2.4
+2.5
   1
-24,075.0
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
  11
-615.0
+25.0
  21
-182.0
+20.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 BD
 330
@@ -5921,27 +6679,35 @@ BD
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-705.0
+25.0
  20
-182.0
- 30
-0.0
- 40
-2.4
-  1
-112.5
- 11
-705.0
- 21
-182.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+39.0
+ 20
+390.0
+ 10
+39.0
+ 20
+376.0
+ 10
+25.0
+ 20
+376.0
+ 10
+25.0
+ 20
+390.0
   0
 TEXT
   5
@@ -5951,29 +6717,29 @@ BE
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-30.0
+26.5
  20
-171.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-05
+STR
  11
-30.0
+26.5
  21
-171.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 BF
 330
@@ -5981,27 +6747,35 @@ BF
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-65.0
+39.0
  20
-171.0
- 30
-0.0
- 40
-2.4
-  1
-Drained Effluent Liquor
- 11
-65.0
- 21
-171.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+104.0
+ 20
+390.0
+ 10
+104.0
+ 20
+376.0
+ 10
+39.0
+ 20
+376.0
+ 10
+39.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6011,29 +6785,29 @@ C0
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-205.0
+40.5
  20
-171.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-Liquid
+STREAM DESCRIPTION
  11
-205.0
+40.5
  21
-171.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C1
 330
@@ -6041,27 +6815,35 @@ C1
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-255.0
+104.0
  20
-171.0
- 30
-0.0
- 40
-2.4
-  1
-25.5
- 11
-255.0
- 21
-171.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+136.0
+ 20
+390.0
+ 10
+136.0
+ 20
+376.0
+ 10
+104.0
+ 20
+376.0
+ 10
+104.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6071,29 +6853,29 @@ C2
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-325.0
+105.5
  20
-171.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+PHASE
  11
-325.0
+105.5
  21
-171.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C3
 330
@@ -6101,27 +6883,35 @@ C3
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-415.0
+136.0
  20
-171.0
- 30
-0.0
- 40
-2.4
-  1
-1,188.7
- 11
-415.0
- 21
-171.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+178.0
+ 20
+390.0
+ 10
+178.0
+ 20
+376.0
+ 10
+136.0
+ 20
+376.0
+ 10
+136.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6131,29 +6921,29 @@ C4
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+137.5
  20
-171.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-184.0
+TOTAL (kg/h)
  11
-515.0
+137.5
  21
-171.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C5
 330
@@ -6161,27 +6951,35 @@ C5
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-615.0
+178.0
  20
-171.0
- 30
-0.0
- 40
-2.4
-  1
-18,726.0
- 11
-615.0
- 21
-171.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+218.0
+ 20
+390.0
+ 10
+218.0
+ 20
+376.0
+ 10
+178.0
+ 20
+376.0
+ 10
+178.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6191,29 +6989,29 @@ C6
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-705.0
+179.5
  20
-171.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-109.8
+SOLIDS (kg/h)
  11
-705.0
+179.5
  21
-171.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C7
 330
@@ -6221,27 +7019,35 @@ C7
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-30.0
+218.0
  20
-160.0
- 30
-0.0
- 40
-2.4
-  1
-06
- 11
-30.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+258.0
+ 20
+390.0
+ 10
+258.0
+ 20
+376.0
+ 10
+218.0
+ 20
+376.0
+ 10
+218.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6251,29 +7057,29 @@ C8
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-65.0
+219.5
  20
-160.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-Wet Dal to Dryer DR-101
+WATER (kg/h)
  11
-65.0
+219.5
  21
-160.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C9
 330
@@ -6281,27 +7087,35 @@ C9
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-205.0
+258.0
  20
-160.0
- 30
-0.0
- 40
-2.4
-  1
-Solid/Moist
- 11
-205.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+294.0
+ 20
+390.0
+ 10
+294.0
+ 20
+376.0
+ 10
+258.0
+ 20
+376.0
+ 10
+258.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6311,29 +7125,29 @@ CA
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-255.0
+259.5
  20
-160.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-25.5
+MOIST (%wb)
  11
-255.0
+259.5
  21
-160.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 CB
 330
@@ -6341,27 +7155,35 @@ CB
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-325.0
+294.0
  20
-160.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-325.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+330.0
+ 20
+390.0
+ 10
+330.0
+ 20
+376.0
+ 10
+294.0
+ 20
+376.0
+ 10
+294.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6371,29 +7193,29 @@ CC
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+295.5
  20
-160.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-1,161.9
+SOLUTE (kg/h)
  11
-415.0
+295.5
  21
-160.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 CD
 330
@@ -6401,27 +7223,35 @@ CD
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-515.0
+330.0
  20
-160.0
- 30
-0.0
- 40
-2.4
-  1
-13,241.0
- 11
-515.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+360.0
+ 20
+390.0
+ 10
+360.0
+ 20
+376.0
+ 10
+330.0
+ 20
+376.0
+ 10
+330.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6431,29 +7261,29 @@ CE
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+331.5
  20
-160.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-5,349.0
+TEMP (deg C)
  11
-615.0
+331.5
  21
-160.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 CF
 330
@@ -6461,27 +7291,35 @@ CF
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-705.0
+360.0
  20
-160.0
- 30
-0.0
- 40
-2.4
-  1
-2.7
- 11
-705.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+388.0
+ 20
+390.0
+ 10
+388.0
+ 20
+376.0
+ 10
+360.0
+ 20
+376.0
+ 10
+360.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6491,29 +7329,29 @@ D0
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-30.0
+361.5
  20
-149.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-07
+PRESS (bar)
  11
-30.0
+361.5
  21
-149.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D1
 330
@@ -6521,27 +7359,35 @@ D1
 100
 AcDbEntity
   8
-TEXT
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-65.0
+388.0
  20
-149.0
- 30
-0.0
- 40
-2.4
-  1
-Heated Drying Air (In)
- 11
-65.0
- 21
-149.0
- 31
-0.0
-100
-AcDbText
+390.0
+ 10
+418.0
+ 20
+390.0
+ 10
+418.0
+ 20
+376.0
+ 10
+388.0
+ 20
+376.0
+ 10
+388.0
+ 20
+390.0
   0
 TEXT
   5
@@ -6551,29 +7397,29 @@ D2
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-205.0
+389.5
  20
-149.0
+380.5
  30
 0.0
  40
-2.4
+2.2
   1
-Gas
+DENS (kg/m3)
  11
-205.0
+389.5
  21
-149.0
+380.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D3
 330
@@ -6581,27 +7427,35 @@ D3
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-255.0
+25.0
  20
-149.0
- 30
-0.0
- 40
-2.4
-  1
-65.0
- 11
-255.0
- 21
-149.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+39.0
+ 20
+376.0
+ 10
+39.0
+ 20
+362.5
+ 10
+25.0
+ 20
+362.5
+ 10
+25.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6611,29 +7465,29 @@ D4
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-325.0
+26.5
  20
-149.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-0.02
+01
  11
-325.0
+26.5
  21
-149.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D5
 330
@@ -6641,27 +7495,35 @@ D5
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-415.0
+39.0
  20
-149.0
- 30
-0.0
- 40
-2.4
-  1
-18,500.0
- 11
-415.0
- 21
-149.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+104.0
+ 20
+376.0
+ 10
+104.0
+ 20
+362.5
+ 10
+39.0
+ 20
+362.5
+ 10
+39.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6671,29 +7533,29 @@ D6
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+40.5
  20
-149.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+Raw Dal Grain Feed
  11
-515.0
+40.5
  21
-149.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D7
 330
@@ -6701,27 +7563,35 @@ D7
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-615.0
+104.0
  20
-149.0
- 30
-0.0
- 40
-2.4
-  1
-148.0
- 11
-615.0
- 21
-149.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+136.0
+ 20
+376.0
+ 10
+136.0
+ 20
+362.5
+ 10
+104.0
+ 20
+362.5
+ 10
+104.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6731,29 +7601,29 @@ D8
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-705.0
+105.5
  20
-149.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+Granular Solid
  11
-705.0
+105.5
  21
-149.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D9
 330
@@ -6761,27 +7631,35 @@ D9
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-30.0
+136.0
  20
-138.0
- 30
-0.0
- 40
-2.4
-  1
-08
- 11
-30.0
- 21
-138.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+178.0
+ 20
+376.0
+ 10
+178.0
+ 20
+362.5
+ 10
+136.0
+ 20
+362.5
+ 10
+136.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6791,29 +7669,29 @@ DA
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-65.0
+137.5
  20
-138.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-Exhaust Air to Stack
+937.50
  11
-65.0
+137.5
  21
-138.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 DB
 330
@@ -6821,27 +7699,35 @@ DB
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-205.0
+178.0
  20
-138.0
- 30
-0.0
- 40
-2.4
-  1
-Gas/Vapor
- 11
-205.0
- 21
-138.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+218.0
+ 20
+376.0
+ 10
+218.0
+ 20
+362.5
+ 10
+178.0
+ 20
+362.5
+ 10
+178.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6851,29 +7737,29 @@ DC
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-255.0
+179.5
  20
-138.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-42.0
+839.06
  11
-255.0
+179.5
  21
-138.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 DD
 330
@@ -6881,27 +7767,35 @@ DD
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-325.0
+218.0
  20
-138.0
- 30
-0.0
- 40
-2.4
-  1
-0.00
- 11
-325.0
- 21
-138.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+258.0
+ 20
+376.0
+ 10
+258.0
+ 20
+362.5
+ 10
+218.0
+ 20
+362.5
+ 10
+218.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6911,29 +7805,29 @@ DE
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+219.5
  20
-138.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-18,742.4
+98.44
  11
-415.0
+219.5
  21
-138.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 DF
 330
@@ -6941,27 +7835,35 @@ DF
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-515.0
+258.0
  20
-138.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-515.0
- 21
-138.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+294.0
+ 20
+376.0
+ 10
+294.0
+ 20
+362.5
+ 10
+258.0
+ 20
+362.5
+ 10
+258.0
+ 20
+376.0
   0
 TEXT
   5
@@ -6971,29 +7873,29 @@ E0
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+259.5
  20
-138.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-3,903.8
+10.50%
  11
-615.0
+259.5
  21
-138.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E1
 330
@@ -7001,27 +7903,35 @@ E1
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-705.0
+294.0
  20
-138.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-705.0
- 21
-138.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+330.0
+ 20
+376.0
+ 10
+330.0
+ 20
+362.5
+ 10
+294.0
+ 20
+362.5
+ 10
+294.0
+ 20
+376.0
   0
 TEXT
   5
@@ -7031,29 +7941,29 @@ E2
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-30.0
+295.5
  20
-127.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-09
+0.00
  11
-30.0
+295.5
  21
-127.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E3
 330
@@ -7061,27 +7971,35 @@ E3
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-65.0
+330.0
  20
-127.0
- 30
-0.0
- 40
-2.4
-  1
-Recovered Cyclone Fines
- 11
-65.0
- 21
-127.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+360.0
+ 20
+376.0
+ 10
+360.0
+ 20
+362.5
+ 10
+330.0
+ 20
+362.5
+ 10
+330.0
+ 20
+376.0
   0
 TEXT
   5
@@ -7091,29 +8009,29 @@ E4
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-205.0
+331.5
  20
-127.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-Solid
+25.0
  11
-205.0
+331.5
  21
-127.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E5
 330
@@ -7121,27 +8039,35 @@ E5
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-255.0
+360.0
  20
-127.0
- 30
-0.0
- 40
-2.4
-  1
-38.0
- 11
-255.0
- 21
-127.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+388.0
+ 20
+376.0
+ 10
+388.0
+ 20
+362.5
+ 10
+360.0
+ 20
+362.5
+ 10
+360.0
+ 20
+376.0
   0
 TEXT
   5
@@ -7151,29 +8077,29 @@ E6
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-325.0
+361.5
  20
-127.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+ATM
  11
-325.0
+361.5
  21
-127.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E7
 330
@@ -7181,27 +8107,35 @@ E7
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-415.0
+388.0
  20
-127.0
- 30
-0.0
- 40
-2.4
-  1
-12.5
- 11
-415.0
- 21
-127.0
- 31
-0.0
-100
-AcDbText
+376.0
+ 10
+418.0
+ 20
+376.0
+ 10
+418.0
+ 20
+362.5
+ 10
+388.0
+ 20
+362.5
+ 10
+388.0
+ 20
+376.0
   0
 TEXT
   5
@@ -7211,29 +8145,29 @@ E8
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+389.5
  20
-127.0
+367.5
  30
 0.0
  40
-2.4
+2.2
   1
-180.0
+850.0
  11
-515.0
+389.5
  21
-127.0
+367.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E9
 330
@@ -7241,27 +8175,35 @@ E9
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-615.0
+25.0
  20
-127.0
- 30
-0.0
- 40
-2.4
-  1
-20.0
- 11
-615.0
- 21
-127.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+39.0
+ 20
+362.5
+ 10
+39.0
+ 20
+349.0
+ 10
+25.0
+ 20
+349.0
+ 10
+25.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7271,29 +8213,29 @@ EA
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-705.0
+26.5
  20
-127.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+02
  11
-705.0
+26.5
  21
-127.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 EB
 330
@@ -7301,27 +8243,35 @@ EB
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-30.0
+39.0
  20
-116.0
- 30
-0.0
- 40
-2.4
-  1
-10
- 11
-30.0
- 21
-116.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+104.0
+ 20
+362.5
+ 10
+104.0
+ 20
+349.0
+ 10
+39.0
+ 20
+349.0
+ 10
+39.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7331,29 +8281,29 @@ EC
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-65.0
+40.5
  20
-116.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-Dryer Discharge Dal
+Fresh Process Soak Water
  11
-65.0
+40.5
  21
-116.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 ED
 330
@@ -7361,27 +8311,35 @@ ED
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-205.0
+104.0
  20
-116.0
- 30
-0.0
- 40
-2.4
-  1
-Solid
- 11
-205.0
- 21
-116.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+136.0
+ 20
+362.5
+ 10
+136.0
+ 20
+349.0
+ 10
+104.0
+ 20
+349.0
+ 10
+104.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7391,29 +8349,29 @@ EE
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-255.0
+105.5
  20
-116.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-32.0
+Liquid Aqueous
  11
-255.0
+105.5
  21
-116.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 EF
 330
@@ -7421,27 +8379,35 @@ EF
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-325.0
+136.0
  20
-116.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-325.0
- 21
-116.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+178.0
+ 20
+362.5
+ 10
+178.0
+ 20
+349.0
+ 10
+136.0
+ 20
+349.0
+ 10
+136.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7451,29 +8417,29 @@ F0
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+137.5
  20
-116.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-919.5
+1406.25
  11
-415.0
+137.5
  21
-116.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F1
 330
@@ -7481,27 +8447,35 @@ F1
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-515.0
+178.0
  20
-116.0
- 30
-0.0
- 40
-2.4
-  1
-13,241.0
- 11
-515.0
- 21
-116.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+218.0
+ 20
+362.5
+ 10
+218.0
+ 20
+349.0
+ 10
+178.0
+ 20
+349.0
+ 10
+178.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7511,29 +8485,29 @@ F2
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+179.5
  20
-116.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-1,471.2
+0.00
  11
-615.0
+179.5
  21
-116.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F3
 330
@@ -7541,27 +8515,35 @@ F3
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-705.0
+218.0
  20
-116.0
- 30
-0.0
- 40
-2.4
-  1
-2.7
- 11
-705.0
- 21
-116.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+258.0
+ 20
+362.5
+ 10
+258.0
+ 20
+349.0
+ 10
+218.0
+ 20
+349.0
+ 10
+218.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7571,29 +8553,29 @@ F4
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-30.0
+219.5
  20
-105.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-11
+1406.25
  11
-30.0
+219.5
  21
-105.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F5
 330
@@ -7601,27 +8583,35 @@ F5
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-65.0
+258.0
  20
-105.0
- 30
-0.0
- 40
-2.4
-  1
-Conditioned Polished Dal
- 11
-65.0
- 21
-105.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+294.0
+ 20
+362.5
+ 10
+294.0
+ 20
+349.0
+ 10
+258.0
+ 20
+349.0
+ 10
+258.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7631,29 +8621,29 @@ F6
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-205.0
+259.5
  20
-105.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-Solid
+100.00%
  11
-205.0
+259.5
  21
-105.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F7
 330
@@ -7661,27 +8651,35 @@ F7
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-255.0
+294.0
  20
-105.0
- 30
-0.0
- 40
-2.4
-  1
-28.0
- 11
-255.0
- 21
-105.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+330.0
+ 20
+362.5
+ 10
+330.0
+ 20
+349.0
+ 10
+294.0
+ 20
+349.0
+ 10
+294.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7691,29 +8689,29 @@ F8
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-325.0
+295.5
  20
-105.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-0.0
+0.00
  11
-325.0
+295.5
  21
-105.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 F9
 330
@@ -7721,27 +8719,35 @@ F9
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-415.0
+330.0
  20
-105.0
- 30
-0.0
- 40
-2.4
-  1
-891.7
- 11
-415.0
- 21
-105.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+360.0
+ 20
+362.5
+ 10
+360.0
+ 20
+349.0
+ 10
+330.0
+ 20
+349.0
+ 10
+330.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7751,29 +8757,29 @@ FA
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-515.0
+331.5
  20
-105.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-12,841.0
+28.0
  11
-515.0
+331.5
  21
-105.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 FB
 330
@@ -7781,27 +8787,35 @@ FB
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-615.0
+360.0
  20
-105.0
- 30
-0.0
- 40
-2.4
-  1
-1,426.8
- 11
-615.0
- 21
-105.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+388.0
+ 20
+362.5
+ 10
+388.0
+ 20
+349.0
+ 10
+360.0
+ 20
+349.0
+ 10
+360.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7811,29 +8825,29 @@ FC
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-705.0
+361.5
  20
-105.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-2.6
+2.5 g
  11
-705.0
+361.5
  21
-105.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 FD
 330
@@ -7841,27 +8855,35 @@ FD
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-30.0
+388.0
  20
-94.0
- 30
-0.0
- 40
-2.4
-  1
-12
- 11
-30.0
- 21
-94.0
- 31
-0.0
-100
-AcDbText
+362.5
+ 10
+418.0
+ 20
+362.5
+ 10
+418.0
+ 20
+349.0
+ 10
+388.0
+ 20
+349.0
+ 10
+388.0
+ 20
+362.5
   0
 TEXT
   5
@@ -7871,29 +8893,29 @@ FE
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-65.0
+389.5
  20
-94.0
+354.0
  30
 0.0
  40
-2.4
+2.2
   1
-Packaged Product Dal
+997.0
  11
-65.0
+389.5
  21
-94.0
+354.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 FF
 330
@@ -7901,27 +8923,35 @@ FF
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-205.0
+25.0
  20
-94.0
- 30
-0.0
- 40
-2.4
-  1
-Solid
- 11
-205.0
- 21
-94.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+39.0
+ 20
+349.0
+ 10
+39.0
+ 20
+335.5
+ 10
+25.0
+ 20
+335.5
+ 10
+25.0
+ 20
+349.0
   0
 TEXT
   5
@@ -7931,29 +8961,29 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-255.0
+26.5
  20
-94.0
+340.5
  30
 0.0
  40
-2.4
+2.2
   1
-25.0
+03
  11
-255.0
+26.5
  21
-94.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 101
 330
@@ -7961,27 +8991,35 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-325.0
+39.0
  20
-94.0
- 30
-0.0
- 40
-2.4
-  1
-0.0
- 11
-325.0
- 21
-94.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+104.0
+ 20
+349.0
+ 10
+104.0
+ 20
+335.5
+ 10
+39.0
+ 20
+335.5
+ 10
+39.0
+ 20
+349.0
   0
 TEXT
   5
@@ -7991,29 +9029,29 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-415.0
+40.5
  20
-94.0
+340.5
  30
 0.0
  40
-2.4
+2.2
   1
-891.7
+Chemical Dosing Solution
  11
-415.0
+40.5
  21
-94.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 103
 330
@@ -8021,27 +9059,35 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-515.0
+104.0
  20
-94.0
- 30
-0.0
- 40
-2.4
-  1
-12,841.0
- 11
-515.0
- 21
-94.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+136.0
+ 20
+349.0
+ 10
+136.0
+ 20
+335.5
+ 10
+104.0
+ 20
+335.5
+ 10
+104.0
+ 20
+349.0
   0
 TEXT
   5
@@ -8051,53 +9097,23 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-615.0
+105.5
  20
-94.0
+340.5
  30
 0.0
  40
-2.4
+2.2
   1
-1,426.8
+Liquid Aqueous
  11
-615.0
+105.5
  21
-94.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-105
-330
-17
-100
-AcDbEntity
-  8
-TEXT
-100
-AcDbText
- 10
-705.0
- 20
-94.0
- 30
-0.0
- 40
-2.4
-  1
-2.6
- 11
-705.0
- 21
-94.0
+340.5
  31
 0.0
 100
@@ -8105,13 +9121,15 @@ AcDbText
   0
 LWPOLYLINE
   5
-106
+105
 330
 17
 100
 AcDbEntity
   8
-BORDER
+TABLE_GRID
+370
+18
 100
 AcDbPolyline
  90
@@ -8119,25 +9137,55 @@ AcDbPolyline
  70
 0
  10
-0.0
+136.0
  20
-0.0
+349.0
  10
-1189.0
+178.0
  20
-0.0
+349.0
  10
-1189.0
+178.0
  20
-841.0
+335.5
  10
-0.0
+136.0
  20
-841.0
+335.5
  10
-0.0
+136.0
  20
+349.0
+  0
+TEXT
+  5
+106
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+340.5
+ 30
 0.0
+ 40
+2.2
+  1
+9.38
+ 11
+137.5
+ 21
+340.5
+ 31
+0.0
+100
+AcDbText
   0
 LWPOLYLINE
   5
@@ -8147,7 +9195,9 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-BORDER
+TABLE_GRID
+370
+18
 100
 AcDbPolyline
  90
@@ -8155,27 +9205,27 @@ AcDbPolyline
  70
 0
  10
-10.0
+178.0
  20
-10.0
+349.0
  10
-1179.0
+218.0
  20
-10.0
+349.0
  10
-1179.0
+218.0
  20
-831.0
+335.5
  10
-10.0
+178.0
  20
-831.0
+335.5
  10
-10.0
+178.0
  20
-10.0
+349.0
   0
-LWPOLYLINE
+TEXT
   5
 108
 330
@@ -8183,35 +9233,29 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbText
  10
-819.0
+179.5
  20
-10.0
- 10
-1179.0
- 20
-10.0
- 10
-1179.0
- 20
-150.0
- 10
-819.0
- 20
-150.0
- 10
-819.0
- 20
-10.0
+340.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+179.5
+ 21
+340.5
+ 31
+0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 109
 330
@@ -8219,23 +9263,37 @@ LINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-819.0
+218.0
  20
-115.0
- 30
-0.0
- 11
-1179.0
- 21
-115.0
- 31
-0.0
+349.0
+ 10
+258.0
+ 20
+349.0
+ 10
+258.0
+ 20
+335.5
+ 10
+218.0
+ 20
+335.5
+ 10
+218.0
+ 20
+349.0
   0
-LINE
+TEXT
   5
 10A
 330
@@ -8243,23 +9301,29 @@ LINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-819.0
+219.5
  20
-80.0
+340.5
  30
 0.0
+ 40
+2.2
+  1
+4.69
  11
-1179.0
+219.5
  21
-80.0
+340.5
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 10B
 330
@@ -8267,23 +9331,37 @@ LINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-819.0
+258.0
  20
-45.0
- 30
-0.0
- 11
-1179.0
- 21
-45.0
- 31
-0.0
+349.0
+ 10
+294.0
+ 20
+349.0
+ 10
+294.0
+ 20
+335.5
+ 10
+258.0
+ 20
+335.5
+ 10
+258.0
+ 20
+349.0
   0
-LINE
+TEXT
   5
 10C
 330
@@ -8291,23 +9369,29 @@ LINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-1039.0
+259.5
  20
-10.0
+340.5
  30
 0.0
+ 40
+2.2
+  1
+50.00%
  11
-1039.0
+259.5
  21
-80.0
+340.5
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 10D
 330
@@ -8315,21 +9399,35 @@ LINE
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-1109.0
+294.0
  20
-10.0
- 30
-0.0
- 11
-1109.0
- 21
-80.0
- 31
-0.0
+349.0
+ 10
+330.0
+ 20
+349.0
+ 10
+330.0
+ 20
+335.5
+ 10
+294.0
+ 20
+335.5
+ 10
+294.0
+ 20
+349.0
   0
 TEXT
   5
@@ -8339,29 +9437,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-829.0
+295.5
  20
-132.0
+340.5
  30
 0.0
  40
-5.0
+2.2
   1
-HARAKUTIR AGRO-PROCESS ENGINEERING PVT LTD
+4.69
  11
-829.0
+295.5
  21
-132.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 10F
 330
@@ -8369,27 +9467,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-829.0
+330.0
  20
-122.0
- 30
-0.0
- 40
-3.5
-  1
-15,000 kg/day Toor-Dal Optimization Greenfield Plant
- 11
-829.0
- 21
-122.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+360.0
+ 20
+349.0
+ 10
+360.0
+ 20
+335.5
+ 10
+330.0
+ 20
+335.5
+ 10
+330.0
+ 20
+349.0
   0
 TEXT
   5
@@ -8399,29 +9505,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-829.0
+331.5
  20
-98.0
+340.5
  30
 0.0
  40
-4.5
+2.2
   1
-TITLE: PROCESS FLOW DIAGRAM & MASS/ENERGY BALANCE
+25.0
  11
-829.0
+331.5
  21
-98.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 111
 330
@@ -8429,27 +9535,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-829.0
+360.0
  20
-86.0
- 30
-0.0
- 40
-4.0
-  1
-DWG NO: DWG-FIN-15T-002
- 11
-829.0
- 21
-86.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+388.0
+ 20
+349.0
+ 10
+388.0
+ 20
+335.5
+ 10
+360.0
+ 20
+335.5
+ 10
+360.0
+ 20
+349.0
   0
 TEXT
   5
@@ -8459,29 +9573,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-829.0
+361.5
  20
-62.0
+340.5
  30
 0.0
  40
-3.5
+2.2
   1
-STATUS: CONCEPTUAL FEED
+3.0 g
  11
-829.0
+361.5
  21
-62.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 113
 330
@@ -8489,27 +9603,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-829.0
+388.0
  20
-50.0
- 30
-0.0
- 40
-3.5
-  1
-DISCIPLINE: PROCESS
- 11
-829.0
- 21
-50.0
- 31
-0.0
-100
-AcDbText
+349.0
+ 10
+418.0
+ 20
+349.0
+ 10
+418.0
+ 20
+335.5
+ 10
+388.0
+ 20
+335.5
+ 10
+388.0
+ 20
+349.0
   0
 TEXT
   5
@@ -8519,29 +9641,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-829.0
+389.5
  20
-25.0
+340.5
  30
 0.0
  40
-3.0
+2.2
   1
-STAMP: PRELIMINARY - NOT FOR CONSTRUCTION
+1040.0
  11
-829.0
+389.5
  21
-25.0
+340.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 115
 330
@@ -8549,27 +9671,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-1044.0
+25.0
  20
-62.0
- 30
-0.0
- 40
-3.2
-  1
-SCALE: NTS
- 11
-1044.0
- 21
-62.0
- 31
-0.0
-100
-AcDbText
+335.5
+ 10
+39.0
+ 20
+335.5
+ 10
+39.0
+ 20
+322.0
+ 10
+25.0
+ 20
+322.0
+ 10
+25.0
+ 20
+335.5
   0
 TEXT
   5
@@ -8579,29 +9709,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-1044.0
+26.5
  20
-50.0
+327.0
  30
 0.0
  40
-3.2
+2.2
   1
-UNITS: mm
+04
  11
-1044.0
+26.5
  21
-50.0
+327.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 117
 330
@@ -8609,27 +9739,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-1044.0
+39.0
  20
-25.0
- 30
-0.0
- 40
-3.5
-  1
-REV: V3.0
- 11
-1044.0
- 21
-25.0
- 31
-0.0
-100
-AcDbText
+335.5
+ 10
+104.0
+ 20
+335.5
+ 10
+104.0
+ 20
+322.0
+ 10
+39.0
+ 20
+322.0
+ 10
+39.0
+ 20
+335.5
   0
 TEXT
   5
@@ -8639,29 +9777,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-1114.0
+40.5
  20
-62.0
+327.0
  30
 0.0
  40
-3.2
+2.2
   1
-PROJECT: FIN-15T
+Soak Tank Slurry Discharge
  11
-1114.0
+40.5
  21
-62.0
+327.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 119
 330
@@ -8669,27 +9807,35 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-1114.0
+104.0
  20
-50.0
- 30
-0.0
- 40
-3.2
-  1
-GATE: G-A HOLD
- 11
-1114.0
- 21
-50.0
- 31
-0.0
-100
-AcDbText
+335.5
+ 10
+136.0
+ 20
+335.5
+ 10
+136.0
+ 20
+322.0
+ 10
+104.0
+ 20
+322.0
+ 10
+104.0
+ 20
+335.5
   0
 TEXT
   5
@@ -8699,29 +9845,29 @@ TEXT
 100
 AcDbEntity
   8
-TITLE_BLOCK
+ANNOTATION
 100
 AcDbText
  10
-1114.0
+105.5
  20
-25.0
+327.0
  30
 0.0
  40
-3.2
+2.2
   1
-DATE: OCT 2026
+Slurry/Solid-Liq
  11
-1114.0
+105.5
  21
-25.0
+327.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 11B
 330
@@ -8729,27 +9875,35 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-20.0
+136.0
  20
-45.0
- 30
-0.0
- 40
-3.0
-  1
-GENERAL ENGINEERING NOTES:
- 11
-20.0
- 21
-45.0
- 31
-0.0
-100
-AcDbText
+335.5
+ 10
+178.0
+ 20
+335.5
+ 10
+178.0
+ 20
+322.0
+ 10
+136.0
+ 20
+322.0
+ 10
+136.0
+ 20
+335.5
   0
 TEXT
   5
@@ -8759,29 +9913,29 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-20.0
+137.5
  20
-37.0
+327.0
  30
 0.0
  40
 2.2
   1
-1. ALL DIMENSIONS ARE IN MILLIMETERS UNLESS SPECIFIED OTHERWISE.
+2353.13
  11
-20.0
+137.5
  21
-37.0
+327.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 11D
 330
@@ -8789,27 +9943,35 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-20.0
+178.0
  20
-30.0
- 30
-0.0
- 40
-2.2
-  1
-2. THIS DRAWING CONSTITUTES PRELIMINARY FRONT-END ENGINEERING DESIGN (FEED).
- 11
-20.0
- 21
-30.0
- 31
-0.0
-100
-AcDbText
+335.5
+ 10
+218.0
+ 20
+335.5
+ 10
+218.0
+ 20
+322.0
+ 10
+178.0
+ 20
+322.0
+ 10
+178.0
+ 20
+335.5
   0
 TEXT
   5
@@ -8819,29 +9981,29 @@ TEXT
 100
 AcDbEntity
   8
-TEXT
+ANNOTATION
 100
 AcDbText
  10
-20.0
+179.5
  20
-23.0
+327.0
  30
 0.0
  40
 2.2
   1
-3. NOT AUTHORIZED FOR PROCUREMENT, TENDER, FABRICATION OR CIVIL CONSTRUCTION.
+837.38
  11
-20.0
+179.5
  21
-23.0
+327.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 11F
 330
@@ -8849,23 +10011,7651 @@ TEXT
 100
 AcDbEntity
   8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+335.5
+ 10
+258.0
+ 20
+335.5
+ 10
+258.0
+ 20
+322.0
+ 10
+218.0
+ 20
+322.0
+ 10
+218.0
+ 20
+335.5
+  0
 TEXT
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
 100
 AcDbText
  10
-20.0
+219.5
  20
-16.0
+327.0
  30
 0.0
  40
 2.2
   1
-4. ALL PROCESS CAPACITIES ARE SENSITIVITY ENVELOPES PENDING GATE G-A PHYSICAL TRIAL DATA.
+1506.37
  11
-20.0
+219.5
  21
-16.0
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+335.5
+ 10
+294.0
+ 20
+335.5
+ 10
+294.0
+ 20
+322.0
+ 10
+258.0
+ 20
+322.0
+ 10
+258.0
+ 20
+335.5
+  0
+TEXT
+  5
+122
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+327.0
+ 30
+0.0
+ 40
+2.2
+  1
+64.01%
+ 11
+259.5
+ 21
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+123
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+335.5
+ 10
+330.0
+ 20
+335.5
+ 10
+330.0
+ 20
+322.0
+ 10
+294.0
+ 20
+322.0
+ 10
+294.0
+ 20
+335.5
+  0
+TEXT
+  5
+124
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+327.0
+ 30
+0.0
+ 40
+2.2
+  1
+9.38
+ 11
+295.5
+ 21
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+125
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+335.5
+ 10
+360.0
+ 20
+335.5
+ 10
+360.0
+ 20
+322.0
+ 10
+330.0
+ 20
+322.0
+ 10
+330.0
+ 20
+335.5
+  0
+TEXT
+  5
+126
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+327.0
+ 30
+0.0
+ 40
+2.2
+  1
+30.0
+ 11
+331.5
+ 21
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+127
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+335.5
+ 10
+388.0
+ 20
+335.5
+ 10
+388.0
+ 20
+322.0
+ 10
+360.0
+ 20
+322.0
+ 10
+360.0
+ 20
+335.5
+  0
+TEXT
+  5
+128
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+327.0
+ 30
+0.0
+ 40
+2.2
+  1
+ATM
+ 11
+361.5
+ 21
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+129
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+335.5
+ 10
+418.0
+ 20
+335.5
+ 10
+418.0
+ 20
+322.0
+ 10
+388.0
+ 20
+322.0
+ 10
+388.0
+ 20
+335.5
+  0
+TEXT
+  5
+12A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+327.0
+ 30
+0.0
+ 40
+2.2
+  1
+1120.0
+ 11
+389.5
+ 21
+327.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+322.0
+ 10
+39.0
+ 20
+322.0
+ 10
+39.0
+ 20
+308.5
+ 10
+25.0
+ 20
+308.5
+ 10
+25.0
+ 20
+322.0
+  0
+TEXT
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+05
+ 11
+26.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+322.0
+ 10
+104.0
+ 20
+322.0
+ 10
+104.0
+ 20
+308.5
+ 10
+39.0
+ 20
+308.5
+ 10
+39.0
+ 20
+322.0
+  0
+TEXT
+  5
+12E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+Spent Soak Liquor to ETP
+ 11
+40.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+322.0
+ 10
+136.0
+ 20
+322.0
+ 10
+136.0
+ 20
+308.5
+ 10
+104.0
+ 20
+308.5
+ 10
+104.0
+ 20
+322.0
+  0
+TEXT
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+Liquid Waste
+ 11
+105.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+131
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+322.0
+ 10
+178.0
+ 20
+322.0
+ 10
+178.0
+ 20
+308.5
+ 10
+136.0
+ 20
+308.5
+ 10
+136.0
+ 20
+322.0
+  0
+TEXT
+  5
+132
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+1018.75
+ 11
+137.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+133
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+322.0
+ 10
+218.0
+ 20
+322.0
+ 10
+218.0
+ 20
+308.5
+ 10
+178.0
+ 20
+308.5
+ 10
+178.0
+ 20
+322.0
+  0
+TEXT
+  5
+134
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+1.68
+ 11
+179.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+135
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+322.0
+ 10
+258.0
+ 20
+322.0
+ 10
+258.0
+ 20
+308.5
+ 10
+218.0
+ 20
+308.5
+ 10
+218.0
+ 20
+322.0
+  0
+TEXT
+  5
+136
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+1012.38
+ 11
+219.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+137
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+322.0
+ 10
+294.0
+ 20
+322.0
+ 10
+294.0
+ 20
+308.5
+ 10
+258.0
+ 20
+308.5
+ 10
+258.0
+ 20
+322.0
+  0
+TEXT
+  5
+138
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+99.37%
+ 11
+259.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+139
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+322.0
+ 10
+330.0
+ 20
+322.0
+ 10
+330.0
+ 20
+308.5
+ 10
+294.0
+ 20
+308.5
+ 10
+294.0
+ 20
+322.0
+  0
+TEXT
+  5
+13A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+4.69
+ 11
+295.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+322.0
+ 10
+360.0
+ 20
+322.0
+ 10
+360.0
+ 20
+308.5
+ 10
+330.0
+ 20
+308.5
+ 10
+330.0
+ 20
+322.0
+  0
+TEXT
+  5
+13C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+28.0
+ 11
+331.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+322.0
+ 10
+388.0
+ 20
+322.0
+ 10
+388.0
+ 20
+308.5
+ 10
+360.0
+ 20
+308.5
+ 10
+360.0
+ 20
+322.0
+  0
+TEXT
+  5
+13E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+GRAV
+ 11
+361.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+322.0
+ 10
+418.0
+ 20
+322.0
+ 10
+418.0
+ 20
+308.5
+ 10
+388.0
+ 20
+308.5
+ 10
+388.0
+ 20
+322.0
+  0
+TEXT
+  5
+140
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+313.5
+ 30
+0.0
+ 40
+2.2
+  1
+1005.0
+ 11
+389.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+141
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+308.5
+ 10
+39.0
+ 20
+308.5
+ 10
+39.0
+ 20
+295.0
+ 10
+25.0
+ 20
+295.0
+ 10
+25.0
+ 20
+308.5
+  0
+TEXT
+  5
+142
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+06
+ 11
+26.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+143
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+308.5
+ 10
+104.0
+ 20
+308.5
+ 10
+104.0
+ 20
+295.0
+ 10
+39.0
+ 20
+295.0
+ 10
+39.0
+ 20
+308.5
+  0
+TEXT
+  5
+144
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+Dewatered Dal to Dryer
+ 11
+40.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+145
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+308.5
+ 10
+136.0
+ 20
+308.5
+ 10
+136.0
+ 20
+295.0
+ 10
+104.0
+ 20
+295.0
+ 10
+104.0
+ 20
+308.5
+  0
+TEXT
+  5
+146
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+Moist Granular
+ 11
+105.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+147
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+308.5
+ 10
+178.0
+ 20
+308.5
+ 10
+178.0
+ 20
+295.0
+ 10
+136.0
+ 20
+295.0
+ 10
+136.0
+ 20
+308.5
+  0
+TEXT
+  5
+148
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+1334.38
+ 11
+137.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+149
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+308.5
+ 10
+218.0
+ 20
+308.5
+ 10
+218.0
+ 20
+295.0
+ 10
+178.0
+ 20
+295.0
+ 10
+178.0
+ 20
+308.5
+  0
+TEXT
+  5
+14A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+835.70
+ 11
+179.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+308.5
+ 10
+258.0
+ 20
+308.5
+ 10
+258.0
+ 20
+295.0
+ 10
+218.0
+ 20
+295.0
+ 10
+218.0
+ 20
+308.5
+  0
+TEXT
+  5
+14C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+494.00
+ 11
+219.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+308.5
+ 10
+294.0
+ 20
+308.5
+ 10
+294.0
+ 20
+295.0
+ 10
+258.0
+ 20
+295.0
+ 10
+258.0
+ 20
+308.5
+  0
+TEXT
+  5
+14E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+37.02%
+ 11
+259.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+308.5
+ 10
+330.0
+ 20
+308.5
+ 10
+330.0
+ 20
+295.0
+ 10
+294.0
+ 20
+295.0
+ 10
+294.0
+ 20
+308.5
+  0
+TEXT
+  5
+150
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+4.68
+ 11
+295.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+151
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+308.5
+ 10
+360.0
+ 20
+308.5
+ 10
+360.0
+ 20
+295.0
+ 10
+330.0
+ 20
+295.0
+ 10
+330.0
+ 20
+308.5
+  0
+TEXT
+  5
+152
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+28.0
+ 11
+331.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+153
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+308.5
+ 10
+388.0
+ 20
+308.5
+ 10
+388.0
+ 20
+295.0
+ 10
+360.0
+ 20
+295.0
+ 10
+360.0
+ 20
+308.5
+  0
+TEXT
+  5
+154
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+ATM
+ 11
+361.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+155
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+308.5
+ 10
+418.0
+ 20
+308.5
+ 10
+418.0
+ 20
+295.0
+ 10
+388.0
+ 20
+295.0
+ 10
+388.0
+ 20
+308.5
+  0
+TEXT
+  5
+156
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+300.0
+ 30
+0.0
+ 40
+2.2
+  1
+780.0
+ 11
+389.5
+ 21
+300.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+157
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+295.0
+ 10
+39.0
+ 20
+295.0
+ 10
+39.0
+ 20
+281.5
+ 10
+25.0
+ 20
+281.5
+ 10
+25.0
+ 20
+295.0
+  0
+TEXT
+  5
+158
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+07
+ 11
+26.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+159
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+295.0
+ 10
+104.0
+ 20
+295.0
+ 10
+104.0
+ 20
+281.5
+ 10
+39.0
+ 20
+281.5
+ 10
+39.0
+ 20
+295.0
+  0
+TEXT
+  5
+15A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+Hot Fluidizing Air Inflow
+ 11
+40.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+295.0
+ 10
+136.0
+ 20
+295.0
+ 10
+136.0
+ 20
+281.5
+ 10
+104.0
+ 20
+281.5
+ 10
+104.0
+ 20
+295.0
+  0
+TEXT
+  5
+15C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+Humid Gas
+ 11
+105.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+295.0
+ 10
+178.0
+ 20
+295.0
+ 10
+178.0
+ 20
+281.5
+ 10
+136.0
+ 20
+281.5
+ 10
+136.0
+ 20
+295.0
+  0
+TEXT
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+14150.00
+ 11
+137.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+295.0
+ 10
+218.0
+ 20
+295.0
+ 10
+218.0
+ 20
+281.5
+ 10
+178.0
+ 20
+281.5
+ 10
+178.0
+ 20
+295.0
+  0
+TEXT
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+179.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+161
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+295.0
+ 10
+258.0
+ 20
+295.0
+ 10
+258.0
+ 20
+281.5
+ 10
+218.0
+ 20
+281.5
+ 10
+218.0
+ 20
+295.0
+  0
+TEXT
+  5
+162
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+141.50
+ 11
+219.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+163
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+295.0
+ 10
+294.0
+ 20
+295.0
+ 10
+294.0
+ 20
+281.5
+ 10
+258.0
+ 20
+281.5
+ 10
+258.0
+ 20
+295.0
+  0
+TEXT
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+1.00%
+ 11
+259.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+165
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+295.0
+ 10
+330.0
+ 20
+295.0
+ 10
+330.0
+ 20
+281.5
+ 10
+294.0
+ 20
+281.5
+ 10
+294.0
+ 20
+295.0
+  0
+TEXT
+  5
+166
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+295.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+167
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+295.0
+ 10
+360.0
+ 20
+295.0
+ 10
+360.0
+ 20
+281.5
+ 10
+330.0
+ 20
+281.5
+ 10
+330.0
+ 20
+295.0
+  0
+TEXT
+  5
+168
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+85.0
+ 11
+331.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+169
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+295.0
+ 10
+388.0
+ 20
+295.0
+ 10
+388.0
+ 20
+281.5
+ 10
+360.0
+ 20
+281.5
+ 10
+360.0
+ 20
+295.0
+  0
+TEXT
+  5
+16A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.03 g
+ 11
+361.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+295.0
+ 10
+418.0
+ 20
+295.0
+ 10
+418.0
+ 20
+281.5
+ 10
+388.0
+ 20
+281.5
+ 10
+388.0
+ 20
+295.0
+  0
+TEXT
+  5
+16C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+286.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.98
+ 11
+389.5
+ 21
+286.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+281.5
+ 10
+39.0
+ 20
+281.5
+ 10
+39.0
+ 20
+268.0
+ 10
+25.0
+ 20
+268.0
+ 10
+25.0
+ 20
+281.5
+  0
+TEXT
+  5
+16E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+08
+ 11
+26.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+281.5
+ 10
+104.0
+ 20
+281.5
+ 10
+104.0
+ 20
+268.0
+ 10
+39.0
+ 20
+268.0
+ 10
+39.0
+ 20
+281.5
+  0
+TEXT
+  5
+170
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+Dryer Exhaust Air to Cyclone
+ 11
+40.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+171
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+281.5
+ 10
+136.0
+ 20
+281.5
+ 10
+136.0
+ 20
+268.0
+ 10
+104.0
+ 20
+268.0
+ 10
+104.0
+ 20
+281.5
+  0
+TEXT
+  5
+172
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+Humid Gas/Dust
+ 11
+105.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+173
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+281.5
+ 10
+178.0
+ 20
+281.5
+ 10
+178.0
+ 20
+268.0
+ 10
+136.0
+ 20
+268.0
+ 10
+136.0
+ 20
+281.5
+  0
+TEXT
+  5
+174
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+14551.48
+ 11
+137.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+175
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+281.5
+ 10
+218.0
+ 20
+281.5
+ 10
+218.0
+ 20
+268.0
+ 10
+178.0
+ 20
+268.0
+ 10
+178.0
+ 20
+281.5
+  0
+TEXT
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+1.67
+ 11
+179.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+177
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+281.5
+ 10
+258.0
+ 20
+281.5
+ 10
+258.0
+ 20
+268.0
+ 10
+218.0
+ 20
+268.0
+ 10
+218.0
+ 20
+281.5
+  0
+TEXT
+  5
+178
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+542.92
+ 11
+219.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+179
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+281.5
+ 10
+294.0
+ 20
+281.5
+ 10
+294.0
+ 20
+268.0
+ 10
+258.0
+ 20
+268.0
+ 10
+258.0
+ 20
+281.5
+  0
+TEXT
+  5
+17A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+3.73%
+ 11
+259.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+281.5
+ 10
+330.0
+ 20
+281.5
+ 10
+330.0
+ 20
+268.0
+ 10
+294.0
+ 20
+268.0
+ 10
+294.0
+ 20
+281.5
+  0
+TEXT
+  5
+17C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+295.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+281.5
+ 10
+360.0
+ 20
+281.5
+ 10
+360.0
+ 20
+268.0
+ 10
+330.0
+ 20
+268.0
+ 10
+330.0
+ 20
+281.5
+  0
+TEXT
+  5
+17E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+52.0
+ 11
+331.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+281.5
+ 10
+388.0
+ 20
+281.5
+ 10
+388.0
+ 20
+268.0
+ 10
+360.0
+ 20
+268.0
+ 10
+360.0
+ 20
+281.5
+  0
+TEXT
+  5
+180
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+-0.01 g
+ 11
+361.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+181
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+281.5
+ 10
+418.0
+ 20
+281.5
+ 10
+418.0
+ 20
+268.0
+ 10
+388.0
+ 20
+268.0
+ 10
+388.0
+ 20
+281.5
+  0
+TEXT
+  5
+182
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+273.0
+ 30
+0.0
+ 40
+2.2
+  1
+1.08
+ 11
+389.5
+ 21
+273.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+183
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+268.0
+ 10
+39.0
+ 20
+268.0
+ 10
+39.0
+ 20
+254.5
+ 10
+25.0
+ 20
+254.5
+ 10
+25.0
+ 20
+268.0
+  0
+TEXT
+  5
+184
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+09
+ 11
+26.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+185
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+268.0
+ 10
+104.0
+ 20
+268.0
+ 10
+104.0
+ 20
+254.5
+ 10
+39.0
+ 20
+254.5
+ 10
+39.0
+ 20
+268.0
+  0
+TEXT
+  5
+186
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+Cyclone Recovered Dal Fines
+ 11
+40.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+187
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+268.0
+ 10
+136.0
+ 20
+268.0
+ 10
+136.0
+ 20
+254.5
+ 10
+104.0
+ 20
+254.5
+ 10
+104.0
+ 20
+268.0
+  0
+TEXT
+  5
+188
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+Dry Particulate
+ 11
+105.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+189
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+268.0
+ 10
+178.0
+ 20
+268.0
+ 10
+178.0
+ 20
+254.5
+ 10
+136.0
+ 20
+254.5
+ 10
+136.0
+ 20
+268.0
+  0
+TEXT
+  5
+18A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+1.67
+ 11
+137.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+268.0
+ 10
+218.0
+ 20
+268.0
+ 10
+218.0
+ 20
+254.5
+ 10
+178.0
+ 20
+254.5
+ 10
+178.0
+ 20
+268.0
+  0
+TEXT
+  5
+18C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+1.50
+ 11
+179.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+268.0
+ 10
+258.0
+ 20
+268.0
+ 10
+258.0
+ 20
+254.5
+ 10
+218.0
+ 20
+254.5
+ 10
+218.0
+ 20
+268.0
+  0
+TEXT
+  5
+18E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.17
+ 11
+219.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+268.0
+ 10
+294.0
+ 20
+268.0
+ 10
+294.0
+ 20
+254.5
+ 10
+258.0
+ 20
+254.5
+ 10
+258.0
+ 20
+268.0
+  0
+TEXT
+  5
+190
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+10.00%
+ 11
+259.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+191
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+268.0
+ 10
+330.0
+ 20
+268.0
+ 10
+330.0
+ 20
+254.5
+ 10
+294.0
+ 20
+254.5
+ 10
+294.0
+ 20
+268.0
+  0
+TEXT
+  5
+192
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+295.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+193
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+268.0
+ 10
+360.0
+ 20
+268.0
+ 10
+360.0
+ 20
+254.5
+ 10
+330.0
+ 20
+254.5
+ 10
+330.0
+ 20
+268.0
+  0
+TEXT
+  5
+194
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+48.0
+ 11
+331.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+195
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+268.0
+ 10
+388.0
+ 20
+268.0
+ 10
+388.0
+ 20
+254.5
+ 10
+360.0
+ 20
+254.5
+ 10
+360.0
+ 20
+268.0
+  0
+TEXT
+  5
+196
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+GRAV
+ 11
+361.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+197
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+268.0
+ 10
+418.0
+ 20
+268.0
+ 10
+418.0
+ 20
+254.5
+ 10
+388.0
+ 20
+254.5
+ 10
+388.0
+ 20
+268.0
+  0
+TEXT
+  5
+198
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+259.5
+ 30
+0.0
+ 40
+2.2
+  1
+620.0
+ 11
+389.5
+ 21
+259.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+199
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+254.5
+ 10
+39.0
+ 20
+254.5
+ 10
+39.0
+ 20
+241.0
+ 10
+25.0
+ 20
+241.0
+ 10
+25.0
+ 20
+254.5
+  0
+TEXT
+  5
+19A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+10
+ 11
+26.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+254.5
+ 10
+104.0
+ 20
+254.5
+ 10
+104.0
+ 20
+241.0
+ 10
+39.0
+ 20
+241.0
+ 10
+39.0
+ 20
+254.5
+  0
+TEXT
+  5
+19C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+Dry Tender Dal Discharge
+ 11
+40.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+254.5
+ 10
+136.0
+ 20
+254.5
+ 10
+136.0
+ 20
+241.0
+ 10
+104.0
+ 20
+241.0
+ 10
+104.0
+ 20
+254.5
+  0
+TEXT
+  5
+19E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+Dry Grain Solid
+ 11
+105.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+254.5
+ 10
+178.0
+ 20
+254.5
+ 10
+178.0
+ 20
+241.0
+ 10
+136.0
+ 20
+241.0
+ 10
+136.0
+ 20
+254.5
+  0
+TEXT
+  5
+1A0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+926.90
+ 11
+137.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+254.5
+ 10
+218.0
+ 20
+254.5
+ 10
+218.0
+ 20
+241.0
+ 10
+178.0
+ 20
+241.0
+ 10
+178.0
+ 20
+254.5
+  0
+TEXT
+  5
+1A2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+834.03
+ 11
+179.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+254.5
+ 10
+258.0
+ 20
+254.5
+ 10
+258.0
+ 20
+241.0
+ 10
+218.0
+ 20
+241.0
+ 10
+218.0
+ 20
+254.5
+  0
+TEXT
+  5
+1A4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+92.69
+ 11
+219.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+254.5
+ 10
+294.0
+ 20
+254.5
+ 10
+294.0
+ 20
+241.0
+ 10
+258.0
+ 20
+241.0
+ 10
+258.0
+ 20
+254.5
+  0
+TEXT
+  5
+1A6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+10.00%
+ 11
+259.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A7
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+254.5
+ 10
+330.0
+ 20
+254.5
+ 10
+330.0
+ 20
+241.0
+ 10
+294.0
+ 20
+241.0
+ 10
+294.0
+ 20
+254.5
+  0
+TEXT
+  5
+1A8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+0.18
+ 11
+295.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A9
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+254.5
+ 10
+360.0
+ 20
+254.5
+ 10
+360.0
+ 20
+241.0
+ 10
+330.0
+ 20
+241.0
+ 10
+330.0
+ 20
+254.5
+  0
+TEXT
+  5
+1AA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+45.0
+ 11
+331.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AB
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+254.5
+ 10
+388.0
+ 20
+254.5
+ 10
+388.0
+ 20
+241.0
+ 10
+360.0
+ 20
+241.0
+ 10
+360.0
+ 20
+254.5
+  0
+TEXT
+  5
+1AC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+ATM
+ 11
+361.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AD
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+254.5
+ 10
+418.0
+ 20
+254.5
+ 10
+418.0
+ 20
+241.0
+ 10
+388.0
+ 20
+241.0
+ 10
+388.0
+ 20
+254.5
+  0
+TEXT
+  5
+1AE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+246.0
+ 30
+0.0
+ 40
+2.2
+  1
+820.0
+ 11
+389.5
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AF
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+241.0
+ 10
+39.0
+ 20
+241.0
+ 10
+39.0
+ 20
+227.5
+ 10
+25.0
+ 20
+227.5
+ 10
+25.0
+ 20
+241.0
+  0
+TEXT
+  5
+1B0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+11
+ 11
+26.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+241.0
+ 10
+104.0
+ 20
+241.0
+ 10
+104.0
+ 20
+227.5
+ 10
+39.0
+ 20
+227.5
+ 10
+39.0
+ 20
+241.0
+  0
+TEXT
+  5
+1B2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+Triple-Effect Steam Supply
+ 11
+40.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+241.0
+ 10
+136.0
+ 20
+241.0
+ 10
+136.0
+ 20
+227.5
+ 10
+104.0
+ 20
+227.5
+ 10
+104.0
+ 20
+241.0
+  0
+TEXT
+  5
+1B4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+Saturated Vapor
+ 11
+105.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+241.0
+ 10
+178.0
+ 20
+241.0
+ 10
+178.0
+ 20
+227.5
+ 10
+136.0
+ 20
+227.5
+ 10
+136.0
+ 20
+241.0
+  0
+TEXT
+  5
+1B6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+520.00
+ 11
+137.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B7
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+241.0
+ 10
+218.0
+ 20
+241.0
+ 10
+218.0
+ 20
+227.5
+ 10
+178.0
+ 20
+227.5
+ 10
+178.0
+ 20
+241.0
+  0
+TEXT
+  5
+1B8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+179.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B9
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+241.0
+ 10
+258.0
+ 20
+241.0
+ 10
+258.0
+ 20
+227.5
+ 10
+218.0
+ 20
+227.5
+ 10
+218.0
+ 20
+241.0
+  0
+TEXT
+  5
+1BA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+520.00
+ 11
+219.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1BB
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+241.0
+ 10
+294.0
+ 20
+241.0
+ 10
+294.0
+ 20
+227.5
+ 10
+258.0
+ 20
+227.5
+ 10
+258.0
+ 20
+241.0
+  0
+TEXT
+  5
+1BC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+100.00%
+ 11
+259.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1BD
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+241.0
+ 10
+330.0
+ 20
+241.0
+ 10
+330.0
+ 20
+227.5
+ 10
+294.0
+ 20
+227.5
+ 10
+294.0
+ 20
+241.0
+  0
+TEXT
+  5
+1BE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+295.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1BF
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+241.0
+ 10
+360.0
+ 20
+241.0
+ 10
+360.0
+ 20
+227.5
+ 10
+330.0
+ 20
+227.5
+ 10
+330.0
+ 20
+241.0
+  0
+TEXT
+  5
+1C0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+143.6
+ 11
+331.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+241.0
+ 10
+388.0
+ 20
+241.0
+ 10
+388.0
+ 20
+227.5
+ 10
+360.0
+ 20
+227.5
+ 10
+360.0
+ 20
+241.0
+  0
+TEXT
+  5
+1C2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+3.0 g
+ 11
+361.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+241.0
+ 10
+418.0
+ 20
+241.0
+ 10
+418.0
+ 20
+227.5
+ 10
+388.0
+ 20
+227.5
+ 10
+388.0
+ 20
+241.0
+  0
+TEXT
+  5
+1C4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+232.5
+ 30
+0.0
+ 40
+2.2
+  1
+2.16
+ 11
+389.5
+ 21
+232.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+227.5
+ 10
+39.0
+ 20
+227.5
+ 10
+39.0
+ 20
+214.0
+ 10
+25.0
+ 20
+214.0
+ 10
+25.0
+ 20
+227.5
+  0
+TEXT
+  5
+1C6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+12
+ 11
+26.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C7
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+39.0
+ 20
+227.5
+ 10
+104.0
+ 20
+227.5
+ 10
+104.0
+ 20
+214.0
+ 10
+39.0
+ 20
+214.0
+ 10
+39.0
+ 20
+227.5
+  0
+TEXT
+  5
+1C8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+ETP Clean Condensate Return
+ 11
+40.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1C9
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+104.0
+ 20
+227.5
+ 10
+136.0
+ 20
+227.5
+ 10
+136.0
+ 20
+214.0
+ 10
+104.0
+ 20
+214.0
+ 10
+104.0
+ 20
+227.5
+  0
+TEXT
+  5
+1CA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+105.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+Distillate Liq
+ 11
+105.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1CB
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+136.0
+ 20
+227.5
+ 10
+178.0
+ 20
+227.5
+ 10
+178.0
+ 20
+214.0
+ 10
+136.0
+ 20
+214.0
+ 10
+136.0
+ 20
+227.5
+  0
+TEXT
+  5
+1CC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+137.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+490.00
+ 11
+137.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1CD
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+178.0
+ 20
+227.5
+ 10
+218.0
+ 20
+227.5
+ 10
+218.0
+ 20
+214.0
+ 10
+178.0
+ 20
+214.0
+ 10
+178.0
+ 20
+227.5
+  0
+TEXT
+  5
+1CE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+179.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1CF
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+218.0
+ 20
+227.5
+ 10
+258.0
+ 20
+227.5
+ 10
+258.0
+ 20
+214.0
+ 10
+218.0
+ 20
+214.0
+ 10
+218.0
+ 20
+227.5
+  0
+TEXT
+  5
+1D0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+219.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+490.00
+ 11
+219.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1D1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+258.0
+ 20
+227.5
+ 10
+294.0
+ 20
+227.5
+ 10
+294.0
+ 20
+214.0
+ 10
+258.0
+ 20
+214.0
+ 10
+258.0
+ 20
+227.5
+  0
+TEXT
+  5
+1D2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+259.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+100.00%
+ 11
+259.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1D3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+294.0
+ 20
+227.5
+ 10
+330.0
+ 20
+227.5
+ 10
+330.0
+ 20
+214.0
+ 10
+294.0
+ 20
+214.0
+ 10
+294.0
+ 20
+227.5
+  0
+TEXT
+  5
+1D4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+295.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+0.00
+ 11
+295.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1D5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+330.0
+ 20
+227.5
+ 10
+360.0
+ 20
+227.5
+ 10
+360.0
+ 20
+214.0
+ 10
+330.0
+ 20
+214.0
+ 10
+330.0
+ 20
+227.5
+  0
+TEXT
+  5
+1D6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+331.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+65.0
+ 11
+331.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1D7
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+360.0
+ 20
+227.5
+ 10
+388.0
+ 20
+227.5
+ 10
+388.0
+ 20
+214.0
+ 10
+360.0
+ 20
+214.0
+ 10
+360.0
+ 20
+227.5
+  0
+TEXT
+  5
+1D8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+361.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+ATM
+ 11
+361.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1D9
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+388.0
+ 20
+227.5
+ 10
+418.0
+ 20
+227.5
+ 10
+418.0
+ 20
+214.0
+ 10
+388.0
+ 20
+214.0
+ 10
+388.0
+ 20
+227.5
+  0
+TEXT
+  5
+1DA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+389.5
+ 20
+219.0
+ 30
+0.0
+ 40
+2.2
+  1
+980.0
+ 11
+389.5
+ 21
+219.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1DB
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+202.0
+ 10
+200.0
+ 20
+202.0
+ 10
+200.0
+ 20
+87.0
+ 10
+25.0
+ 20
+87.0
+ 10
+25.0
+ 20
+202.0
+  0
+TEXT
+  5
+1DC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+194.0
+ 30
+0.0
+ 40
+2.5
+  1
+MASS BALANCE & DRY SOLIDS RECOVERY:
+ 11
+29.0
+ 21
+194.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1DD
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+25.0
+ 20
+190.0
+ 30
+0.0
+ 11
+200.0
+ 21
+190.0
+ 31
+0.0
+  0
+TEXT
+  5
+1DE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+182.0
+ 30
+0.0
+ 40
+2.0
+  1
+Incoming Feed Rate: 15,000 kg/day as-fed
+ 11
+29.0
+ 21
+182.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1DF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+173.5
+ 30
+0.0
+ 40
+2.0
+  1
+Operating Schedule: 16.0 h/day (937.5 kg/h)
+ 11
+29.0
+ 21
+173.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+165.0
+ 30
+0.0
+ 40
+2.0
+  1
+Raw Dal Dry Solids: 839.06 kg/h (100.00%)
+ 11
+29.0
+ 21
+165.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+156.5
+ 30
+0.0
+ 40
+2.0
+  1
+Soak Leaching Soluble Loss: 1.68 kg/h (0.20%)
+ 11
+29.0
+ 21
+156.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+148.0
+ 30
+0.0
+ 40
+2.0
+  1
+Dryer Elutriation Loss: 1.67 kg/h (0.20%)
+ 11
+29.0
+ 21
+148.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E3
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+139.5
+ 30
+0.0
+ 40
+2.0
+  1
+Cyclone Fines Captured: 1.50 kg/h (0.18%)
+ 11
+29.0
+ 21
+139.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+131.0
+ 30
+0.0
+ 40
+2.0
+  1
+Saleable Product Solids: 834.03 kg/h (99.40%)
+ 11
+29.0
+ 21
+131.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+122.5
+ 30
+0.0
+ 40
+2.0
+  1
+Finished Dal (10.0% wb): 926.90 kg/h (14.83 TPD)
+ 11
+29.0
+ 21
+122.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+114.0
+ 30
+0.0
+ 40
+2.0
+  1
+Water Evaporation in Dryer: 401.31 kg/h
+ 11
+29.0
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+105.5
+ 30
+0.0
+ 40
+2.0
+  1
+Spent Soak Liquor Generated: 1,018.75 kg/h
+ 11
+29.0
+ 21
+105.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1E8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+97.0
+ 30
+0.0
+ 40
+2.0
+  1
+Net Dry Solids Conservation: 99.98% Closed
+ 11
+29.0
+ 21
+97.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1E9
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+208.0
+ 20
+202.0
+ 10
+383.0
+ 20
+202.0
+ 10
+383.0
+ 20
+87.0
+ 10
+208.0
+ 20
+87.0
+ 10
+208.0
+ 20
+202.0
+  0
+TEXT
+  5
+1EA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+194.0
+ 30
+0.0
+ 40
+2.5
+  1
+THERMAL & UTILITY DUTIES (ASPEN RECONCILED):
+ 11
+212.0
+ 21
+194.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1EB
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+208.0
+ 20
+190.0
+ 30
+0.0
+ 11
+383.0
+ 21
+190.0
+ 31
+0.0
+  0
+TEXT
+  5
+1EC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+182.0
+ 30
+0.0
+ 40
+2.0
+  1
+Fluid Bed Dryer Air Heating Duty: 512.4 kWth
+ 11
+212.0
+ 21
+182.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1ED
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+173.5
+ 30
+0.0
+ 40
+2.0
+  1
+Air Inflow: 14,150 kg/h @ 85 deg C (Ambient 28 deg C)
+ 11
+212.0
+ 21
+173.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1EE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+165.0
+ 30
+0.0
+ 40
+2.0
+  1
+Dryer Steam Coil HE-101 Demand: 785 kg/h @ 3 bar g
+ 11
+212.0
+ 21
+165.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1EF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+156.5
+ 30
+0.0
+ 40
+2.0
+  1
+Soak Tank Water Preheating: 45.2 kWth (68 kg/h steam)
+ 11
+212.0
+ 21
+156.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+148.0
+ 30
+0.0
+ 40
+2.0
+  1
+Triple-Effect Evaporator Duty: 310.5 kWth
+ 11
+212.0
+ 21
+148.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+139.5
+ 30
+0.0
+ 40
+2.0
+  1
+Evaporator Steam Economy: 2.38 kg H2O / kg Steam
+ 11
+212.0
+ 21
+139.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+131.0
+ 30
+0.0
+ 40
+2.0
+  1
+Evaporator Steam Demand: 520 kg/h @ 3 bar g
+ 11
+212.0
+ 21
+131.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F3
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+122.5
+ 30
+0.0
+ 40
+2.0
+  1
+Total Plant Peak Steam Load: 1,450 kg/h @ 3.5 bar g
+ 11
+212.0
+ 21
+122.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+114.0
+ 30
+0.0
+ 40
+2.0
+  1
+Process Water Demand: 22.5 m3/day (Softened)
+ 11
+212.0
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+105.5
+ 30
+0.0
+ 40
+2.0
+  1
+ETP Distillate Recycling: 18.0 m3/day ZLD Loop
+ 11
+212.0
+ 21
+105.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1F6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+212.0
+ 20
+97.0
+ 30
+0.0
+ 40
+2.0
+  1
+Net Fresh Water Makeup: 4.5 m3/day
+ 11
+212.0
+ 21
+97.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1F7
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+391.0
+ 20
+202.0
+ 10
+566.0
+ 20
+202.0
+ 10
+566.0
+ 20
+87.0
+ 10
+391.0
+ 20
+87.0
+ 10
+391.0
+ 20
+202.0
+  0
+TEXT
+  5
+1F8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+194.0
+ 30
+0.0
+ 40
+2.5
+  1
+ELECTRICAL LOAD & MOTOR SCHEDULE:
+ 11
+395.0
+ 21
+194.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+1F9
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+391.0
+ 20
+190.0
+ 30
+0.0
+ 11
+566.0
+ 21
+190.0
+ 31
+0.0
+  0
+TEXT
+  5
+1FA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+182.0
+ 30
+0.0
+ 40
+2.0
+  1
+Infeed Bucket Elevator CV-101: 3.0 kW
+ 11
+395.0
+ 21
+182.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1FB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+173.5
+ 30
+0.0
+ 40
+2.0
+  1
+Raw Dal Cleaner/Destoner SC-100: 5.5 kW
+ 11
+395.0
+ 21
+173.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1FC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+165.0
+ 30
+0.0
+ 40
+2.0
+  1
+Soak Vessel Agitators AG-101A/B: 2 x 4.0 = 8.0 kW
+ 11
+395.0
+ 21
+165.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1FD
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+156.5
+ 30
+0.0
+ 40
+2.0
+  1
+Dosing Skid Pumps & Mixers SK-100: 2.2 kW
+ 11
+395.0
+ 21
+156.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1FE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+148.0
+ 30
+0.0
+ 40
+2.0
+  1
+Dewatering Vibrating Screen SC-101: 3.7 kW
+ 11
+395.0
+ 21
+148.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+1FF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+139.5
+ 30
+0.0
+ 40
+2.0
+  1
+Fluid Bed Dryer Fluidizing Blower BL-101: 55.0 kW
+ 11
+395.0
+ 21
+139.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+200
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+131.0
+ 30
+0.0
+ 40
+2.0
+  1
+Dryer Vibration Exciter Motors M-101A/B: 2 x 3.0 = 6.0 kW
+ 11
+395.0
+ 21
+131.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+201
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+122.5
+ 30
+0.0
+ 40
+2.0
+  1
+Dryer Exhaust Induced Draft Fan BL-102: 30.0 kW
+ 11
+395.0
+ 21
+122.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+202
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+114.0
+ 30
+0.0
+ 40
+2.0
+  1
+Secondary Packaging Line PK-101: 15.0 kW
+ 11
+395.0
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+203
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+105.5
+ 30
+0.0
+ 40
+2.0
+  1
+ETP Evaporator Circulation Pumps: 18.5 kW
+ 11
+395.0
+ 21
+105.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+204
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+395.0
+ 20
+97.0
+ 30
+0.0
+ 40
+2.0
+  1
+Total Connected Load: 184.5 kW | Running: 128.2 kW
+ 11
+395.0
+ 21
+97.0
  31
 0.0
 100
@@ -9086,6 +17876,106 @@ A
 AcDbDictionary
 281
 1
+  3
+2dWireframe
+350
+5A
+  3
+Basic
+350
+5B
+  3
+Brighten
+350
+5C
+  3
+ColorChange
+350
+5D
+  3
+Conceptual
+350
+5E
+  3
+Dim
+350
+5F
+  3
+EdgeColorOff
+350
+60
+  3
+Facepattern
+350
+61
+  3
+Flat
+350
+62
+  3
+FlatWithEdges
+350
+63
+  3
+Gouraud
+350
+64
+  3
+GouraudWithEdges
+350
+65
+  3
+Hidden
+350
+66
+  3
+JitterOff
+350
+67
+  3
+Linepattern
+350
+68
+  3
+Modeling
+350
+69
+  3
+OverhangOff
+350
+6A
+  3
+Realistic
+350
+6B
+  3
+Shaded
+350
+6C
+  3
+Shaded with edges
+350
+6D
+  3
+Shades of Gray
+350
+6E
+  3
+Sketchy
+350
+6F
+  3
+Thicken
+350
+70
+  3
+Wireframe
+350
+71
+  3
+X-Ray
+350
+72
   0
 LAYOUT
   5
@@ -9861,7 +18751,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-122
+207
   0
 DICTIONARYVAR
   5
@@ -9873,11 +18763,6561 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T16:12:15.962415+00:00
+1.4.4 @ 2026-10-15T18:13:43.609713+00:00
+  0
+VISUALSTYLE
+  5
+5A
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+2dWireframe
+ 70
+4
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+5B
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Basic
+ 70
+7
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+5C
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Brighten
+ 70
+12
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+5D
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+ColorChange
+ 70
+16
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+5E
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Conceptual
+ 70
+9
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+3
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+5F
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Dim
+ 70
+11
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+60
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+EdgeColorOff
+ 70
+22
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+61
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Facepattern
+ 70
+15
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+62
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Flat
+ 70
+0
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+63
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+FlatWithEdges
+ 70
+1
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+64
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Gouraud
+ 70
+2
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+65
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+GouraudWithEdges
+ 70
+3
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+66
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Hidden
+ 70
+6
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+67
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+JitterOff
+ 70
+20
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+68
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Linepattern
+ 70
+14
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+69
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Modeling
+ 70
+10
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6A
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+OverhangOff
+ 70
+21
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6B
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Realistic
+ 70
+8
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6C
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Shaded
+ 70
+27
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6D
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Shaded with edges
+ 70
+26
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6E
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Shades of Gray
+ 70
+23
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+6F
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Sketchy
+ 70
+24
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+70
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Thicken
+ 70
+13
+177
+3
+291
+1
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+71
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+Wireframe
+ 70
+5
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+ 40
+0.6
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
+  0
+VISUALSTYLE
+  5
+72
+102
+{ACAD_REACTORS
+330
+16
+102
+}
+330
+16
+100
+AcDbVisualStyle
+  2
+X-Ray
+ 70
+25
+177
+3
+291
+0
+ 70
+58
+ 90
+2
+176
+1
+ 90
+2
+176
+1
+ 90
+0
+176
+1
+ 90
+2
+176
+1
+ 40
+0.5
+176
+1
+ 40
+30.0
+176
+1
+ 62
+7
+420
+16777215
+176
+1
+ 90
+1
+176
+1
+ 90
+4
+176
+1
+ 62
+7
+176
+1
+ 62
+257
+176
+1
+ 90
+1
+176
+1
+ 90
+1
+176
+1
+ 40
+1.0
+176
+1
+ 90
+8
+176
+1
+ 62
+7
+176
+1
+ 40
+1.0
+176
+1
+ 90
+1
+176
+1
+ 90
+6
+176
+1
+ 90
+2
+176
+1
+ 62
+7
+176
+1
+ 90
+5
+176
+1
+ 90
+0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+ 90
+1
+176
+1
+ 40
+0.0
+176
+1
+ 90
+0
+176
+1
+290
+0
+176
+1
+290
+1
+176
+1
+290
+1
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 40
+0.0
+176
+1
+ 40
+1.0
+176
+1
+ 90
+0
+176
+1
+ 62
+18
+420
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+3
+176
+1
+ 62
+5
+420
+255
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+ 90
+50
+176
+1
+290
+0
+176
+1
+ 90
+50
+176
+1
+ 62
+256
+176
+0
+ 40
+1.0
+176
+0
+ 90
+2
+176
+1
+  1
+strokes_ogs.tif
+176
+1
+290
+0
+176
+1
+ 40
+1.0
+176
+1
+ 40
+1.0
+176
+1
   0
 DICTIONARYVAR
   5
-122
+207
 330
 2D
 100
@@ -9885,7 +25325,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T16:12:15.966094+00:00
+1.4.4 @ 2026-10-15T18:13:43.618320+00:00
   0
 ENDSEC
   0

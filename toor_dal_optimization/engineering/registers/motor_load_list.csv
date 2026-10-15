@@ -1,0 +1,32 @@
+Equipment_Tag,Motor_Description,Area_Zone,Rated_kW,Voltage_V,Full_Load_Current_A,Starter_Type,VFD_Required,Duty_Cycle,Operating_kW_Base
+HOP-101-M,Receiving Hopper Vibrator,Zone 1,0.37,415V 3Ph,0.9 A,DOL,No,Continuous,0.30
+EL-101-M,Raw Dal Bucket Elevator Motor,Zone 1,1.50,415V 3Ph,3.2 A,DOL,No,Continuous,1.25
+SCN-101-M1,Screener Vibrator Motor 1,Zone 1,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.60
+SCN-101-M2,Screener Vibrator Motor 2,Zone 1,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.60
+GF-101-M,Gravimetric Feeder Screw Drive,Zone 2,0.75,415V 3Ph,1.8 A,VFD,Yes,Batch Metered,0.55
+AG-100-M,Chemical Dissolution Agitator,Zone 2,1.50,415V 3Ph,3.2 A,DOL,No,Intermittent (1h/d),1.10
+P-100A-M,Chemical Dosing Pump A Motor,Zone 2,1.10,415V 3Ph,2.4 A,VFD,Yes,Batch Metered,0.85
+P-100B-M,Chemical Dosing Pump B Motor (Standby),Zone 2,1.10,415V 3Ph,2.4 A,VFD,Yes,Standby,0.00
+AG-101A-M,Low-Shear Hydrofoil Agitator A,Zone 2,2.20,415V 3Ph,4.6 A,VFD,Yes,Cyclic (50%),1.65
+AG-101B-M,Low-Shear Hydrofoil Agitator B,Zone 2,2.20,415V 3Ph,4.6 A,VFD,Yes,Cyclic (50%),1.65
+P-101A-M,Dal Slurry Vortex Pump A Motor,Zone 2,2.20,415V 3Ph,4.7 A,VFD,Yes,Intermittent (20%),1.80
+P-101B-M,Dal Slurry Vortex Pump B Motor (Standby),Zone 2,2.20,415V 3Ph,4.7 A,VFD,Yes,Standby,0.00
+VS-101-M1,Dewatering Screen Vibrator 1,Zone 2,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.60
+VS-101-M2,Dewatering Screen Vibrator 2,Zone 2,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.60
+P-102-M,Spent Liquor Return Pump Motor,Zone 2,1.10,415V 3Ph,2.4 A,DOL,No,Continuous,0.85
+CV-101-M,Wet Dal Incline Belt Conveyor,Zone 3,0.75,415V 3Ph,1.8 A,VFD,Yes,Continuous,0.55
+DR-101-M1,Fluid-Bed Dryer Vibrator 1,Zone 3,1.50,415V 3Ph,3.2 A,VFD,Yes,Continuous,1.20
+DR-101-M2,Fluid-Bed Dryer Vibrator 2,Zone 3,1.50,415V 3Ph,3.2 A,VFD,Yes,Continuous,1.20
+FN-101-M,Fluidizing Primary Air Blower,Zone 3,11.00,415V 3Ph,21.5 A,VFD,Yes,Continuous,8.80
+FN-102-M,Cooler Air Blower Motor,Zone 3,3.70,415V 3Ph,7.5 A,DOL,No,Continuous,2.90
+CYC-101-M,Exhaust Cyclone Rotary Airlock,Zone 3,0.37,415V 3Ph,0.9 A,DOL,No,Continuous,0.25
+BH-101-M,Pulse Jet Baghouse Controller,Zone 3,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.40
+EXH-101-M,Induced Draft Exhaust Blower,Zone 3,7.50,415V 3Ph,14.8 A,VFD,Yes,Continuous,5.80
+EL-102-M,Finished Dal Bucket Elevator Motor,Zone 4,1.50,415V 3Ph,3.2 A,DOL,No,Continuous,1.20
+SCN-102-M,Rotary Polishing Sifter Motor,Zone 4,0.75,415V 3Ph,1.7 A,DOL,No,Continuous,0.55
+PK-101-M,Packaging Machine VFFS Servo Drive,Zone 4,5.50,415V 3Ph,11.2 A,Servo/VFD,Yes,Continuous,4.20
+CW-101-M,In-line Checkweigher Conveyor,Zone 4,0.55,230V 1Ph,3.1 A,VFD,Yes,Continuous,0.40
+CIP-101-M,Clean-In-Place Delivery Pump,Zone 5,5.50,415V 3Ph,11.2 A,DOL,No,Intermittent (CIP only),4.50
+ETP-101-M,Effluent Treatment Package Pumps,Zone 5,4.50,415V 3Ph,9.5 A,DOL,No,Continuous,3.20
+AUX-COMP-M,Compressed Air Package Screw Compressor,Zone 5,7.50,415V 3Ph,15.0 A,VFD,Yes,Continuous (Duty/Unload),5.50
+AUX-LIGHT-M,Plant Lighting and Small Power,All Zones,5.00,415V 3Ph,N/A,Breaker,No,Continuous,3.50

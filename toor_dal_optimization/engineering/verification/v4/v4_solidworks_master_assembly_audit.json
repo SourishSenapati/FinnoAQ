@@ -1,0 +1,69 @@
+{
+  "assembly_file": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\native\\PLANT-15T_General_Arrangement.SLDASM",
+  "step_file": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\PLANT-15T_General_Arrangement.step",
+  "sldasm_bytes": 174909,
+  "step_bytes": 907904,
+  "step_lines": 12316,
+  "components_count": 4,
+  "components": [
+    {
+      "tag": "TK-101",
+      "name": "TK-101_Soak_Tank.SLDPRT",
+      "description": "Sanitary Dal Soaking Vessel",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "component_instance_name": "TK-101_Soak_Tank-1",
+      "status": "INSERTED_SUCCESSFULLY"
+    },
+    {
+      "tag": "AG-101",
+      "name": "AG-101_Agitator.SLDPRT",
+      "description": "Agitator Drive & Hydrofoil Impeller",
+      "position_m": [
+        0.0,
+        2.55,
+        0.0
+      ],
+      "component_instance_name": "AG-101_Agitator-1",
+      "status": "INSERTED_SUCCESSFULLY"
+    },
+    {
+      "tag": "SK-100",
+      "name": "SK-100_Dosing_Skid.SLDPRT",
+      "description": "Chemical Reagent Dosing Skid",
+      "position_m": [
+        -3.5,
+        0.0,
+        0.0
+      ],
+      "component_instance_name": "SK-100_Dosing_Skid-1",
+      "status": "INSERTED_SUCCESSFULLY"
+    },
+    {
+      "tag": "DR-101",
+      "name": "DR-101_Fluid_Bed_Dryer.SLDPRT",
+      "description": "Continuous Fluid Bed Dryer",
+      "position_m": [
+        7.5,
+        0.0,
+        0.0
+      ],
+      "component_instance_name": "DR-101_Fluid_Bed_Dryer-1",
+      "status": "INSERTED_SUCCESSFULLY"
+    }
+  ],
+  "mass_properties": {
+    "total_mass_kg": 29256.88,
+    "displaced_volume_m3": 29.2569,
+    "surface_area_m2": 142.42,
+    "center_of_gravity_m": [
+      4.388,
+      0.028,
+      -0.003
+    ]
+  },
+  "verification_status": "PASS_AUTHENTIC_BREP_ASSEMBLY"
+}

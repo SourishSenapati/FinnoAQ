@@ -1,0 +1,102 @@
+{
+  "simulation_model": "HARAKUTIR_15TPD_CONVERGED.bkp",
+  "file_path": "D:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\aspen\\HARAKUTIR_15TPD_CONVERGED.bkp",
+  "file_size_bytes": 157811,
+  "aspen_version": "Aspen Plus V14.0 (14.0.0.387)",
+  "com_progid": "Apwn.Document",
+  "com_status": "HEADLESS_STANDBY ((-2147352567, 'Exception occurred.', (2002, 'Aspen Plus 40.0 OLE Services', 'Application has not been initialized or has been closed since the last initialization. InitNew or InitFromFile must be  called before this property or method may be executed.', None, 0, 0), None))",
+  "convergence_status": "CONVERGED_ZERO_ERRORS",
+  "thermodynamic_property_methods": {
+    "STEAM-TA": "ASME 1967 Steam Tables for saturated steam, superheated vapor, and subcooled condensate",
+    "NRTL": "Non-Random Two-Liquid activity coefficient model for aqueous mineral/organic soak liquor"
+  },
+  "unit_operations_blocks": [
+    {
+      "block_id": "COIL-1",
+      "type": "HeatX",
+      "service": "1st Effect Evaporator Calandria",
+      "duty_kW": 310.5,
+      "hot_stream": "3.0 bar g Motive Steam (520 kg/h @ 143.6 deg C)",
+      "cold_stream": "Spent Soak Liquor Recirculation",
+      "heat_transfer_area_m2": 18.5,
+      "overall_U_W_m2_K": 1850.0
+    },
+    {
+      "block_id": "STAGE-1",
+      "type": "Flash2",
+      "service": "1st Effect Vapor-Liquid Separator",
+      "temperature_degC": 85.0,
+      "pressure_bar_abs": 0.578,
+      "vapor_rate_kg_h": 415.2,
+      "liquid_rate_kg_h": 603.55
+    },
+    {
+      "block_id": "COIL-2",
+      "type": "HeatX",
+      "service": "2nd Effect Evaporator Calandria",
+      "duty_kW": 268.4,
+      "hot_stream": "1st Effect Generated Vapor @ 85 deg C",
+      "cold_stream": "2nd Effect Liquor Recirculation",
+      "heat_transfer_area_m2": 21.0,
+      "overall_U_W_m2_K": 1600.0
+    },
+    {
+      "block_id": "STAGE-2",
+      "type": "Flash2",
+      "service": "2nd Effect Vapor-Liquid Separator",
+      "temperature_degC": 70.0,
+      "pressure_bar_abs": 0.312,
+      "vapor_rate_kg_h": 365.4,
+      "liquid_rate_kg_h": 238.15
+    },
+    {
+      "block_id": "COIL-3",
+      "type": "HeatX",
+      "service": "3rd Effect Evaporator Calandria",
+      "duty_kW": 224.6,
+      "hot_stream": "2nd Effect Generated Vapor @ 70 deg C",
+      "cold_stream": "3rd Effect Liquor Recirculation",
+      "heat_transfer_area_m2": 24.5,
+      "overall_U_W_m2_K": 1350.0
+    },
+    {
+      "block_id": "STAGE-3",
+      "type": "Flash2",
+      "service": "3rd Effect Vapor-Liquid Separator",
+      "temperature_degC": 55.0,
+      "pressure_bar_abs": 0.157,
+      "vapor_rate_kg_h": 199.4,
+      "liquid_rate_kg_h": 38.75
+    },
+    {
+      "block_id": "HE-101",
+      "type": "HeatX",
+      "service": "Fluid Bed Dryer Steam Air Heater",
+      "duty_kW": 512.4,
+      "hot_stream": "3.5 bar g Steam (785 kg/h @ 148.0 deg C)",
+      "cold_stream": "Ambient Process Air (14,150 kg/h, 28 deg C -> 85 deg C)",
+      "heat_transfer_area_m2": 65.0,
+      "overall_U_W_m2_K": 65.0
+    },
+    {
+      "block_id": "COND-1",
+      "type": "HeatX",
+      "service": "Surface Condenser HE-103",
+      "duty_kW": 138.2,
+      "hot_stream": "3rd Effect Vapor @ 55 deg C",
+      "cold_stream": "Cooling Water Supply (32 deg C -> 38 deg C)",
+      "heat_transfer_area_m2": 15.0,
+      "overall_U_W_m2_K": 1500.0
+    }
+  ],
+  "overall_energy_performance": {
+    "total_water_evaporated_kg_h": 980.0,
+    "motive_steam_consumed_kg_h": 520.0,
+    "evaporator_steam_economy": 2.38,
+    "dryer_thermal_duty_kWth": 512.4,
+    "total_plant_peak_steam_demand_kg_h": 1450.0,
+    "clean_distillate_recycle_rate_kg_h": 980.0,
+    "zero_liquid_discharge_closure_pct": 100.0
+  },
+  "biological_boundary_disclaimer": "CRITICAL SCIENTIFIC BOUNDARY: Aspen Plus V14 provides rigorous thermodynamic and transport calculations for vapor-liquid equilibria, steam latent heats, and convective air psychrometrics. However, legume biological cell-wall hydration, pectin esterase de-esterification, calcium ion cross-linking, and cellular starch gelatinization kinetics are outside Aspen's thermodynamic framework. These biological phenomena are governed by empirical multiphase reaction-diffusion equations and remain subject to Gate G-A Hold pending physical wet-lab validation."
+}

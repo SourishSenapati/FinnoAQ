@@ -1,0 +1,43 @@
+IO_Tag,Channel_Type,Signal_Description,Field_Device_Tag,PLC_Rack_Slot,Fail_Safe_State,Engineering_Units
+DI-001,Digital Input,HOP-101 Low Level Switch,LS-101A,Rack 0 Slot 1 Ch 0,Alarm on Low,Open / Closed
+DI-002,Digital Input,HOP-101 High Level Switch,LS-101B,Rack 0 Slot 1 Ch 1,Alarm on High,Open / Closed
+DI-003,Digital Input,SCN-101 Vibrator Run Feedback,SCN-101-M1,Rack 0 Slot 1 Ch 2,Trip on Loss,Run / Stop
+DI-004,Digital Input,VS-101 Motion Sensor Tripped,ZS-101,Rack 0 Slot 1 Ch 3,Trip on Loss,Healthy / Trip
+DI-005,Digital Input,P-101A Run Feedback,P-101A-M,Rack 0 Slot 1 Ch 4,Trip on Loss,Run / Stop
+DI-006,Digital Input,P-101B Run Feedback,P-101B-M,Rack 0 Slot 1 Ch 5,Trip on Loss,Run / Stop
+DI-007,Digital Input,DR-101 Vibrator 1 Feedback,DR-101-M1,Rack 0 Slot 1 Ch 6,Trip on Loss,Run / Stop
+DI-008,Digital Input,FN-101 Blower Run Feedback,FN-101-M,Rack 0 Slot 1 Ch 7,Trip on Loss,Run / Stop
+DI-009,Digital Input,EXH-101 Fan Run Feedback,EXH-101-M,Rack 0 Slot 2 Ch 0,Trip on Loss,Run / Stop
+DI-010,Digital Input,MD-101 Metal Detected Pulse,MD-101,Rack 0 Slot 2 Ch 1,Trigger Reject,Clean / Metal
+DI-011,Digital Input,E-Stop Circuit Zone 1 (Raw),ESTOP-Z1,Rack 0 Slot 2 Ch 2,Emergency Stop,Normal / Tripped
+DI-012,Digital Input,E-Stop Circuit Zone 2 (Soak),ESTOP-Z2,Rack 0 Slot 2 Ch 3,Emergency Stop,Normal / Tripped
+DI-013,Digital Input,E-Stop Circuit Zone 3 (Dryer),ESTOP-Z3,Rack 0 Slot 2 Ch 4,Emergency Stop,Normal / Tripped
+DI-014,Digital Input,E-Stop Circuit Zone 4 (Pack),ESTOP-Z4,Rack 0 Slot 2 Ch 5,Emergency Stop,Normal / Tripped
+DO-001,Digital Output,EL-101 Elevator Start Command,EL-101-M,Rack 1 Slot 1 Ch 0,Stop,De-energize
+DO-002,Digital Output,XV-101A Dal Feed Gate Open,XV-101A,Rack 1 Slot 1 Ch 1,Close,De-energize
+DO-003,Digital Output,XV-101B Dal Feed Gate Open,XV-101B,Rack 1 Slot 1 Ch 2,Close,De-energize
+DO-004,Digital Output,XV-103A Liquor Valve Open,XV-103A,Rack 1 Slot 1 Ch 3,Close,De-energize
+DO-005,Digital Output,XV-103B Liquor Valve Open,XV-103B,Rack 1 Slot 1 Ch 4,Close,De-energize
+DO-006,Digital Output,XV-105A Slurry Discharge Open,XV-105A,Rack 1 Slot 1 Ch 5,Close,De-energize
+DO-007,Digital Output,XV-105B Slurry Discharge Open,XV-105B,Rack 1 Slot 1 Ch 6,Close,De-energize
+DO-008,Digital Output,XV-109 Mist Rinse Spray Open,XV-109,Rack 1 Slot 1 Ch 7,Close,De-energize
+DO-009,Digital Output,MD-101 Reject Diverter Fire,MD-101,Rack 1 Slot 2 Ch 0,Retract,Pulse 500ms
+DO-010,Digital Output,CW-101 Air Blast Ejector,CW-101,Rack 1 Slot 2 Ch 1,Retract,Pulse 200ms
+AI-001,Analog Input,HOP-101 Feed Weight,WT-101,Rack 2 Slot 1 Ch 0,Hold Last / Zero,0 - 3500 kg
+AI-002,Analog Input,TK-100 Chemical Tank Level,LT-100,Rack 2 Slot 1 Ch 1,Alarm,0 - 2.0 m
+AI-003,Analog Input,FT-102 Chemical Dosing Flow,FT-102,Rack 2 Slot 1 Ch 2,Totalize Shutoff,0 - 2500 kg/h
+AI-004,Analog Input,TK-101A Slurry Level,LT-101A,Rack 2 Slot 1 Ch 3,Alarm High,0 - 2.5 m
+AI-005,Analog Input,TK-101B Slurry Level,LT-101B,Rack 2 Slot 1 Ch 4,Alarm High,0 - 2.5 m
+AI-006,Analog Input,TK-101A Temperature,TT-101A,Rack 2 Slot 1 Ch 5,Alarm,0 - 100 C
+AI-007,Analog Input,TK-101B Temperature,TT-101B,Rack 2 Slot 1 Ch 6,Alarm,0 - 100 C
+AI-008,Analog Input,DR-101 Air Inlet Temperature,TT-102,Rack 2 Slot 2 Ch 0,Trip Heat,0 - 150 C
+AI-009,Analog Input,DR-101 Exhaust Air Temp,TT-103,Rack 2 Slot 2 Ch 1,Alarm,0 - 100 C
+AI-010,Analog Input,CLR-101 Exit Product Temp,TT-104,Rack 2 Slot 2 Ch 2,Alarm,0 - 100 C
+AI-011,Analog Input,MT-101 Product Moisture NIR,MT-101,Rack 2 Slot 2 Ch 3,Divert Out of Spec,5 - 30 % wb
+AI-012,Analog Input,PDT-101 Fluid Bed DP,PDT-101,Rack 2 Slot 2 Ch 4,Trip,0 - 5000 Pa
+AO-001,Analog Output,GF-101 Feeder Speed VFD,GF-101-M,Rack 3 Slot 1 Ch 0,Zero Speed,0 - 100 % (4-20mA)
+AO-002,Analog Output,P-100 Dosing Pump Speed VFD,P-100A-M,Rack 3 Slot 1 Ch 1,Zero Speed,0 - 100 % (4-20mA)
+AO-003,Analog Output,FV-102 Dosing Valve Position,FV-102,Rack 3 Slot 1 Ch 2,Close,0 - 100 % (4-20mA)
+AO-004,Analog Output,FN-101 Blower Speed VFD,FN-101-M,Rack 3 Slot 1 Ch 3,Min Speed,0 - 100 % (4-20mA)
+AO-005,Analog Output,TCV-112 Steam Control Valve,TCV-112,Rack 3 Slot 1 Ch 4,Close,0 - 100 % (4-20mA)
+AO-006,Analog Output,EXH-101 Fan Speed VFD,EXH-101-M,Rack 3 Slot 1 Ch 5,Min Speed,0 - 100 % (4-20mA)

@@ -1,0 +1,38 @@
+{
+  "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count": 1,
+  "gpu_vram_mb": 6140.5,
+  "cuda_version": "12.4",
+  "cudnn_version": 90100,
+  "disk_C": {
+    "total_gb": 529.22,
+    "used_gb": 510.55,
+    "free_gb": 18.66
+  },
+  "disk_D": {
+    "total_gb": 421.87,
+    "used_gb": 390.41,
+    "free_gb": 31.46
+  },
+  "cpu": {
+    "Name": "AMD Ryzen AI 9 365 w/ Radeon 880M              ",
+    "NumberOfCores": 10,
+    "NumberOfLogicalProcessors": 20
+  },
+  "ram": {
+    "total_gb": 23.12,
+    "free_gb": 2.73
+  },
+  "nvidia_smi": {
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "driver_version": "591.74",
+    "vram_total_mb": 6141.0,
+    "vram_free_mb": 5913.0,
+    "vram_used_mb": 8.0,
+    "gpu_temp_c": 53.0,
+    "power_draw_w": 5.36
+  }
+}

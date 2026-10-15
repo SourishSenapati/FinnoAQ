@@ -1,0 +1,33 @@
+Item_No,Category,Tag,Description,Qty,Unit,Material_Grade,Procurement_Type,Unit_Cost_Lakhs_INR,Total_Cost_Lakhs_INR,Cost_Confidence_Class,Lead_Time_Weeks
+BOM-001,Intake Equipment,HOP-101,Feed Receiving Hopper (3.5 m3) with Unloader,1,SET,SS304 Contact / CS Frame,Custom Fabricated,3.20,3.20,AACE_CLASS_4_ESTIMATE,6
+BOM-002,Conveying,EL-101,Z-Type Bucket Elevator (3 TPH 6.5m lift),1,SET,Food Grade PP / SS304,Bought-Out Standard,4.50,4.50,AACE_CLASS_4_ESTIMATE,8
+BOM-003,Cleaning,SCN-101,Vibratory Pre-Cleaner & Destoner Deck,1,SET,SS304 Contact,Bought-Out Standard,3.80,3.80,AACE_CLASS_4_ESTIMATE,6
+BOM-004,Cleaning,MAG-101,10000 Gauss Neodymium Magnetic Trap,1,SET,SS316 Housing,Bought-Out Standard,0.85,0.85,AACE_CLASS_4_ESTIMATE,3
+BOM-005,Dosing Skid,TK-100,Chemical Dissolution Vessel (2.0 m3),1,NOS,SS316L (Ra < 0.8um),Custom Fabricated,3.50,3.50,AACE_CLASS_4_ESTIMATE,6
+BOM-006,Dosing Skid,AG-100,Chemical Dissolution Agitator (1.5 kW),1,SET,SS316L,Bought-Out Standard,1.20,1.20,AACE_CLASS_4_ESTIMATE,4
+BOM-007,Dosing Skid,P-100A/B,Chemical Dosing Metering Pumps (1W+1S),2,NOS,SS316L / PTFE,Bought-Out Standard,1.40,2.80,AACE_CLASS_4_ESTIMATE,6
+BOM-008,Soak Tanks,TK-101A/B,Jacketed Soak & Contact Tanks (4.5 m3 gross),2,NOS,SS316L Vessel / SS304 Jkt,Custom Fabricated,7.80,15.60,AACE_CLASS_4_ESTIMATE,10
+BOM-009,Soak Agitators,AG-101A/B,Low-Shear Hydrofoil Agitator Assemblies,2,SET,SS316L Impellers / Shaft,Custom Fabricated,3.10,6.20,AACE_CLASS_4_ESTIMATE,8
+BOM-010,Slurry Pumps,P-101A/B,Gentle Dal Slurry Vortex Pumps (1W+1S),2,NOS,SS316L,Bought-Out Standard,2.10,4.20,AACE_CLASS_4_ESTIMATE,6
+BOM-011,Dewatering,VS-101,Vibratory Dewatering Screen (1.0mm wedge wire),1,SET,SS316L Contact / SS304,Custom Fabricated,4.80,4.80,AACE_CLASS_4_ESTIMATE,8
+BOM-012,Liquor Pumps,P-102,Spent Liquor Transfer Pump (3 m3/h),1,NOS,SS316L,Bought-Out Standard,0.95,0.95,AACE_CLASS_4_ESTIMATE,4
+BOM-013,Conveying,CV-101,Wet Dal Incline PU Cleated Belt Feeder,1,SET,SS304 / Food PU,Custom Fabricated,1.80,1.80,AACE_CLASS_4_ESTIMATE,5
+BOM-014,Drying System,DR-101,Continuous Vibrating Fluid-Bed Dryer,1,SET,SS316L Contact / Steam Coil,Custom Fabricated,18.50,18.50,AACE_CLASS_4_ESTIMATE,12
+BOM-015,Cooling System,CLR-101,Integral Fluid-Bed Dal Cooler,1,SET,SS316L Contact,Integral with DR-101,3.50,3.50,AACE_CLASS_4_ESTIMATE,12
+BOM-016,Air Handling,FN-101,Primary Fluidizing Air Blower (11 kW),1,SET,Coated MS Centrifugal,Bought-Out Standard,2.20,2.20,AACE_CLASS_4_ESTIMATE,6
+BOM-017,Air Handling,FN-102,Cooler Air Supply Blower (3.7 kW),1,SET,Coated MS Centrifugal,Bought-Out Standard,1.10,1.10,AACE_CLASS_4_ESTIMATE,4
+BOM-018,Dust Separation,CYC-101,High-Efficiency Stainless Cyclone,1,SET,SS304 with Rotary Valve,Custom Fabricated,2.10,2.10,AACE_CLASS_4_ESTIMATE,6
+BOM-019,Dust Separation,BH-101,Pulse-Jet Baghouse Exhaust Filter,1,SET,PTFE Felt Bags / MS Casing,Bought-Out Standard,4.20,4.20,AACE_CLASS_4_ESTIMATE,8
+BOM-020,Air Handling,EXH-101,Induced Draft Exhaust Blower (7.5 kW),1,SET,Centrifugal Fan,Bought-Out Standard,1.80,1.80,AACE_CLASS_4_ESTIMATE,6
+BOM-021,Conveying,EL-102,Dry Dal Packaging Bucket Elevator,1,SET,SS304 / PP Buckets,Bought-Out Standard,4.50,4.50,AACE_CLASS_4_ESTIMATE,8
+BOM-022,Polishing,SCN-102,Post-Dry Rotary Polishing Sifter,1,SET,SS304,Bought-Out Standard,2.20,2.20,AACE_CLASS_4_ESTIMATE,6
+BOM-023,Packaging Buffer,HOP-102,Packaging Surge Hopper (2.5 m3),1,SET,SS304,Custom Fabricated,2.40,2.40,AACE_CLASS_4_ESTIMATE,5
+BOM-024,Metal Detection,MD-101,Gravity-Fall Metal Detector with High-Speed Flapper,1,SET,SS316 Contact / SS304,Bought-Out Standard,3.60,3.60,AACE_CLASS_4_ESTIMATE,6
+BOM-025,Packaging,PK-101,14-Head Multihead Weigher & VFFS Pouch Bagger,1,SET,SS316 Dimple / Servo,Bought-Out Standard,22.00,22.00,AACE_CLASS_4_ESTIMATE,10
+BOM-026,Checkweighing,CW-101,In-line Dynamic Checkweigher with Air Blast Reject,1,SET,SS304,Bought-Out Standard,3.20,3.20,AACE_CLASS_4_ESTIMATE,6
+BOM-027,CIP System,CIP-101,Automated 2-Tank CIP Skid (Rinse + Sanitizer),1,SET,SS316L Tanks & Pump,Custom Fabricated,5.50,5.50,AACE_CLASS_4_ESTIMATE,8
+BOM-028,Effluent Plant,ETP-101,Effluent Treatment Skid (Neutralization & Media),1,LOT,FRP / Epoxy MS / Pumps,Packaged Plant,7.50,7.50,AACE_CLASS_4_ESTIMATE,8
+BOM-029,Process Piping,PIP-LOT,Sanitary SS316L Valves Fittings & Headers,1,LOT,Sanitary SS316L Tri-Clamp,Bulk Commodity,6.50,6.50,AACE_CLASS_4_ESTIMATE,4
+BOM-030,Instrumentation,INST-LOT,Radar Levels RTD Sensors Coriolis Flowmeter NIR,1,LOT,Endress+Hauser / Siemens,Bulk Instruments,5.80,5.80,AACE_CLASS_4_ESTIMATE,6
+BOM-031,Electrical & Automation,ELEC-LOT,MCC Panel VFDs PLC Panel SCADA PC Cables,1,LOT,Schneider / Siemens S7-1500,Packaged Automation,9.20,9.20,AACE_CLASS_4_ESTIMATE,8
+BOM-032,Civil & Structural,CIVIL-LOT,Machine Foundations Mezzanine Platforms Handrails,1,LOT,ISMB Structural Steel / SS,Contract Works,8.50,8.50,AACE_CLASS_4_ESTIMATE,8

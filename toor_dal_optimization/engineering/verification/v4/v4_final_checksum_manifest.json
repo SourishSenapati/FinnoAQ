@@ -1,0 +1,280 @@
+{
+  "manifest_version": "V4.0_FINAL",
+  "timestamp_iso": "2026-10-15T23:59:59+05:30",
+  "governing_directive": "V4 MASTER DIRECTIVE \u2014 PROFESSIONAL NATIVE ENGINEERING, OFFLINE-FIRST, EVIDENCE-LOCKED",
+  "gate_status": "GATE G-A HOLD STRICTLY ACTIVE",
+  "commercial_lot_id": "PENDING_COMMERCIAL_LOT_ID",
+  "total_files": 45,
+  "files": [
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-001.dxf",
+      "size_bytes": 104849,
+      "sha256": "5c37c0d2394a5429c9352244718c9bc5e45c45ddf5705472f294941607da4d77",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-002.dxf",
+      "size_bytes": 145662,
+      "sha256": "3b5075cdef2050662173c916a4268f88997f078bd45e88e6a65b8dd764d61a8a",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-003.dxf",
+      "size_bytes": 113122,
+      "sha256": "eacd78967896ee81ed0251dab3cc5fec44d1e2f29e34073dab5c30e42942abd9",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-004.dxf",
+      "size_bytes": 100549,
+      "sha256": "c604c8b44620b1f81a4bcd2e09f8bbf2a76088e1c87e06d5ee1e5ec14f53a19e",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-005.dxf",
+      "size_bytes": 102194,
+      "sha256": "78ca98959ecda7113c159c16f2004f584c3d1900d73c363860c71a3b7532d18c",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-006.dxf",
+      "size_bytes": 92363,
+      "sha256": "86e2f69d05a7ebb33a32b2e86b7cf039ae1d8720522257e5f646c622085f5c3b",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-007.dxf",
+      "size_bytes": 110925,
+      "sha256": "15116739ad32c0c8f4b25305e524c6ae2b65d71be970923a939fe7a4afe2e85f",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-008.dxf",
+      "size_bytes": 104566,
+      "sha256": "69a5692d06b2f446065238a8c3d7a68482095a001559cde1c2d5733219dfff7c",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-009.dxf",
+      "size_bytes": 87398,
+      "sha256": "86cc1148e1d0be9679b2927e27c6a85bd2bf59292ea62190db52e3a336831fdc",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-010.dxf",
+      "size_bytes": 93082,
+      "sha256": "1839432a120c623fde6528c6c2450bf9311f649acfff4ae677b64ed98d009f15",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-011.dxf",
+      "size_bytes": 96571,
+      "sha256": "913f50d2913a2ae1ebaeee15096dcf5323a4278276d72c99099ad6c8a6a3f2e0",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/dxf/DWG-FIN-15T-012.dxf",
+      "size_bytes": 85052,
+      "sha256": "b824292cbbce081b0c8a2dfff1a89d953f673ec9c67005e89cf139618dd127c5",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-001_PFD.pdf",
+      "size_bytes": 126108,
+      "sha256": "6fb57450cef54abbfdd1e63fa9391e22819e3e0fcd6bbe166be16c4b1bad74c5",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-002_STREAM_TABLE.pdf",
+      "size_bytes": 222097,
+      "sha256": "c6c18c69cc2c62869e666f6b2765f7dbf0d168bdab9f523f763c58a06ccbf600",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-003_PID_SOAKING.pdf",
+      "size_bytes": 115485,
+      "sha256": "eaf6312c02cb4958da616f261122bd20d1aaa267346cfed3a2381162dd251f19",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-004_SITE_PLOT_PLAN.pdf",
+      "size_bytes": 141516,
+      "sha256": "808a96676c3466e2942eaa35a177f64eaec16264f2ff848d49d6249701925ed2",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-005_PID_DRYER.pdf",
+      "size_bytes": 117069,
+      "sha256": "feb38000741956c94ccb18cd35cf762df5834aee25d230ecbafb9f2985c8eaa2",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-006_PID_PACKAGING.pdf",
+      "size_bytes": 101286,
+      "sha256": "55b1bc8eaa3a7106853502c19a1958a455089031230fc9a7f7aa73f9cbcc67c7",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-007_SOAK_TANK_GA.pdf",
+      "size_bytes": 176446,
+      "sha256": "8bb833700f4ca67f06107fa077441da97476488c5294a7a247e7a00a3281b5b4",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-007_SOLIDWORKS_MODEL_DERIVED.pdf",
+      "size_bytes": 28693,
+      "sha256": "9b7ba53672aa3a72b3bb67986299485b6a27e0920b904efbbfca5194082a2878",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-008_DRYER_GA.pdf",
+      "size_bytes": 154249,
+      "sha256": "433374989dfd3839b82ec39624c1528c1b815cde097ad6d838951ff66718180b",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-009_DOSING_SKID_GA.pdf",
+      "size_bytes": 151565,
+      "sha256": "cd2214223d3f2a5a2032ca7aa64072611c351ee5b7fd821f5a7d698206cffdfa",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-010_PID_EVAPORATOR.pdf",
+      "size_bytes": 101245,
+      "sha256": "04910599c9b67bb408fb6e7c611e3b3f6f0ea2d5f17fa71679c2f392f951e37c",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-011_ELECTRICAL_SLD.pdf",
+      "size_bytes": 135266,
+      "sha256": "1db5fb59d884af0743b66cf11db3d0c2e64ff85ad1a1251b5a390d87e88b19d9",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/pdf/DWG-FIN-15T-012_DUST_ZONING.pdf",
+      "size_bytes": 108730,
+      "sha256": "beb4a4ca90023b439a15f0241d1741aa7359ab31fa211dc725cc9fa8369b2c61",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM",
+      "size_bytes": 174909,
+      "sha256": "756b9ea0692db310913668f7909a416b76d410ce79499a2b39a3fc9f682ec9d7",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/TK-101_Soak_Tank.SLDPRT",
+      "size_bytes": 184637,
+      "sha256": "347b3141a82138468e506c45c6dccc0f172606047b81320bea72ef6510e0a1af",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/AG-101_Agitator.SLDPRT",
+      "size_bytes": 101218,
+      "sha256": "8fc8d91f91583a6eba42d13ed9a7fc4c41f65da70d9b67f9000b562ed2d1c63b",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/SK-100_Dosing_Skid.SLDPRT",
+      "size_bytes": 157542,
+      "sha256": "10714580fa152c6debddb8a0de9f4f53a03e73e9e1bcdb929ddd9f3f205ace11",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/DR-101_Fluid_Bed_Dryer.SLDPRT",
+      "size_bytes": 188135,
+      "sha256": "e3289521f360c2e0ac05c0c0322189f79d2bc026b97b153f970253baf8eafaec",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/step/PLANT-15T_General_Arrangement.step",
+      "size_bytes": 907904,
+      "sha256": "9795654924f9908e5bfca6dfc6c44851a479d9761ddf12eb7b29b8b3e3acd68b",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/step/TK-101_Soak_Tank.step",
+      "size_bytes": 281720,
+      "sha256": "6608b4c5aaca910636ff9c830843e27c9508354c8cdeb9349d44e7ee9c88416a",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/step/AG-101_Agitator.step",
+      "size_bytes": 120051,
+      "sha256": "f2c906b73a73dfc6070ea18e83371da6dff4581400b732156df0ff5e6d11565c",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/step/SK-100_Dosing_Skid.step",
+      "size_bytes": 181804,
+      "sha256": "f04798e8962f21cb02187d3cda2e47dfadda8588c1d5250ef9a54ea5146163e1",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/cad/step/DR-101_Fluid_Bed_Dryer.step",
+      "size_bytes": 299302,
+      "sha256": "27988e51e7a856bae025cd04d5e59e3644761ee21e303c6c52f07be290c9a6ea",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/aspen/HARAKUTIR_15TPD_CONVERGED.bkp",
+      "size_bytes": 157811,
+      "sha256": "528a76737695e9da18477e5f44a676c0ca2d0cd46bcd2feef9337ff6bf3546eb",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/verification/v4/v4_drawing_package_qa_report.json",
+      "size_bytes": 7367,
+      "sha256": "91ced3f8ff59c667c166af87eb4b66cef25bbb0b14703fe0332b91cb0f1ade77",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/verification/v4/v4_solidworks_master_assembly_audit.json",
+      "size_bytes": 1975,
+      "sha256": "94ddfe8ae59f9e3c9b995b1337531a389c76602d450194642f9bc85372863647",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "engineering/verification/v4/v4_aspen_process_simulation_audit.json",
+      "size_bytes": 4423,
+      "sha256": "92c1b074792e3493e86c79cdef77f73641eaac552afb261f248aae8e5bdcc619",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_BASELINE_AND_EXECUTION_PLAN.md",
+      "size_bytes": 7118,
+      "sha256": "801a2556c8b49ef5cd947fbf8ceaa4e6be3226b5cf1fa6afcb4abd5182c758c9",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_DRAWING_QA_REPORT.md",
+      "size_bytes": 21349,
+      "sha256": "f57cea1ed84d9d05c37623300f1ab93e8790547edd1012b63b0e02c07a2eb93e",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_CAD_GEOMETRY_AND_NATIVE_MODEL_AUDIT.md",
+      "size_bytes": 8588,
+      "sha256": "3ce672153d9316e0034b22afc21b4449232a57bcd15bdd3a1f146ab012c983d2",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_BALANCE_AND_ECONOMICS_REPORT.md",
+      "size_bytes": 13571,
+      "sha256": "db2611e79be2af635e504c3a85a66d1034fe9a5bd2cc1734a040fd4736b5ca58",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_STANDARDS_AND_HUMAN_HOLD_POINTS.md",
+      "size_bytes": 11060,
+      "sha256": "8d9af5e7c17e61850f4792e02dcfcb7db4b9c0b9adff325975ba96e07347ad44",
+      "status": "VERIFIED_LOCKED"
+    },
+    {
+      "relative_path": "reports/V4_ENGINEERING_ACCEPTANCE_REPORT.md",
+      "size_bytes": 13168,
+      "sha256": "e898f5abf2050a76b63be8c0fd87823c807cabab53337bebc5a5e7e0b7fc2a2f",
+      "status": "VERIFIED_LOCKED"
+    }
+  ]
+}

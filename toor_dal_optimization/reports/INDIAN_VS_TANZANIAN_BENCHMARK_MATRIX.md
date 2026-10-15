@@ -1,6 +1,6 @@
 # Indian vs Tanzanian Toor Dal — Diagnostic Benchmark Matrix
 
-**Date:** 13 October 2026  
+**Date:** 15 October 2026  
 **Phase:** Phase 1 Diagnostic Study  
 **Evidence Status:** `DATA_READINESS_ONLY / PENDING_PHYSICAL_LAB_RESULTS`  
 

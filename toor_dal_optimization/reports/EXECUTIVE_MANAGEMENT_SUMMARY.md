@@ -1,7 +1,7 @@
 # Harakutir Phase 1 Toor Dal Diagnostic Study
 ## Executive Management Summary
 
-**Date:** 13 October 2026  
+**Date:** 15 October 2026  
 **Prepared for:** Harakutir Management & R&D Steering Committee  
 **Project Contact:** Dr. Archisman Ray  
 **System Status:** `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`  

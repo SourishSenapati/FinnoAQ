@@ -1,6 +1,6 @@
 # Harakutir Phase 1 SOW Full Compliance Matrix (§§1–36)
 
-**Generated:** 13 October 2026  
+**Generated:** 15 October 2026  
 **Controlling Document:** `Phase1_Scope_of_Work_Toor_Dal.docx`  
 **Sections Traced:** `36` (Sections 1 through 36 inclusive)  
 

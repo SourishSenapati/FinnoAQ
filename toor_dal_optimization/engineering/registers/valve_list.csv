@@ -1,0 +1,19 @@
+Valve_Tag,Line_Number,Size_NB,Valve_Type,Body_Material,Seat_Material,End_Connection,Actuation,Service_Description,Fail_Safe_Action
+XV-101A,L-101-50-SS,50 NB,Pneumatic Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Pneumatic Actuator w/ Solenoid,Dal Feed Gate to TK-101A,Fail Closed
+XV-101B,L-101-50-SS,50 NB,Pneumatic Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Pneumatic Actuator w/ Solenoid,Dal Feed Gate to TK-101B,Fail Closed
+FV-102,L-103-32-SS,32 NB,Pneumatic Diaphragm,SS316L,PTFE / EPDM,Tri-Clamp,Electropneumatic Positioner (4-20mA),Chemical Liquor Dosing Control Valve,Fail Closed
+XV-103A,L-103-32-SS,32 NB,Pneumatic Diaphragm,SS316L,PTFE / EPDM,Tri-Clamp,Pneumatic Solenoid,Liquor Isolation to TK-101A,Fail Closed
+XV-103B,L-103-32-SS,32 NB,Pneumatic Diaphragm,SS316L,PTFE / EPDM,Tri-Clamp,Pneumatic Solenoid,Liquor Isolation to TK-101B,Fail Closed
+XV-105A,L-105-80-SS,80 NB,Pneumatic Flush Bottom Tank Valve,SS316L,PTFE,Tri-Clamp / Welded,Pneumatic Actuator,TK-101A Slurry Discharge Valve,Fail Closed
+XV-105B,L-105-80-SS,80 NB,Pneumatic Flush Bottom Tank Valve,SS316L,PTFE,Tri-Clamp / Welded,Pneumatic Actuator,TK-101B Slurry Discharge Valve,Fail Closed
+HV-106A,L-105-80-SS,80 NB,Manual Sanitary Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Manual Lever,P-101A Suction Manual Isolation,N/A
+HV-106B,L-105-80-SS,80 NB,Manual Sanitary Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Manual Lever,P-101B Suction Manual Isolation,N/A
+NRV-106,L-106-65-SS,65 NB,Sanitary Spring Check Valve,SS316L,PTFE,Tri-Clamp,Self-acting (Non-Return),P-101 Discharge Non-Return,N/A
+XV-109,L-109-25-SS,25 NB,Pneumatic Diaphragm,SS316L,PTFE,Tri-Clamp,Pneumatic Solenoid,Mist Rinse Spray On/Off Control,Fail Closed
+TCV-112,L-112-40-CS,40 NB,Modulating Globe Valve,Cast Steel WCB,Stellite Hardened,Flanged Class 150,Electropneumatic Positioner (4-20mA),Dryer Steam Coil Temperature Control,Fail Closed
+ST-113,L-113-25-CS,25 NB,Thermodynamic / Float Steam Trap,Forged Steel,SS304,Flanged Class 150,Self-acting,Dryer Condensate Evacuation Trap,N/A
+PRV-112,L-112-40-CS,50 NB,Direct-Acting Pressure Reducing Valve,Cast Steel WCB,SS316,Flanged Class 150,Self-acting,Steam Header Pressure Reduction (6 to 2.5 bar),N/A
+PSV-101A,TK-101A,50 NB,Sanitary Pressure/Vacuum Relief Valve,SS316L,EPDM,Tri-Clamp,Spring-Loaded (Set 0.5 bar / -0.05 bar),Tank Overpressure/Vacuum Protection,Fail Open
+PSV-101B,TK-101B,50 NB,Sanitary Pressure/Vacuum Relief Valve,SS316L,EPDM,Tri-Clamp,Spring-Loaded (Set 0.5 bar / -0.05 bar),Tank Overpressure/Vacuum Protection,Fail Open
+XV-110A,L-110-50-SS,50 NB,Pneumatic Sanitary Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Pneumatic Solenoid,CIP Supply Valve to TK-101A,Fail Closed
+XV-110B,L-110-50-SS,50 NB,Pneumatic Sanitary Butterfly,SS316L,EPDM Food Grade,Tri-Clamp,Pneumatic Solenoid,CIP Supply Valve to TK-101B,Fail Closed

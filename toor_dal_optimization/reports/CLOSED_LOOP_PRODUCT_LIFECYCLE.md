@@ -3,7 +3,7 @@
 
 **Document ID:** HKT-ENG-SPEC-2026-002  
 **Version:** 2.1.0  
-**Controlling Reference:** SOW Phase 1, Harakutir Master Spec, Learn Harness Engineering, Foodoscope Informatics  
+**Controlling Reference:** SOW Phase 1, Master Spec, Learn Harness Engineering, Foodoscope Informatics  
 **Target Hardware:** AMD Ryzen 9 + NVIDIA GeForce RTX 4050 Laptop GPU (CUDA 12.4, PyTorch Offline)  
 **System System of Record:** Local Workspace (`toor_dal_optimization/`)  
 

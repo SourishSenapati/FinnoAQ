@@ -1,0 +1,209 @@
+# ==============================================================================
+# HARAKUTIR TOOR DAL 15 MT/DAY PLANT DESIGN BASIS
+# Document ID: ENG-DB-15T-001 | Revision: 1.0 | Date: 2026-10-15
+# Classification: PRELIMINARY—FOR ENGINEERING REVIEW (NOT FOR CONSTRUCTION)
+# ==============================================================================
+
+metadata:
+  project_name: "Harakutir Toor Dal 15 MT/Day Process Plant"
+  document_tag: "ENG-DB-15T-001"
+  revision: "1.0"
+  date: "2026-10-15"
+  engineering_discipline: "Process, Mechanical, Electrical, Civil & Food Safety"
+  design_status: "PRELIMINARY_CALCULATED"
+  approval_status: "PENDING_PILOT_VALIDATION_AND_CLIENT_SIGN_OFF"
+
+basis_classification_legend:
+  client_confirmed: "Confirmed by Harakutir management or procurement records."
+  measured: "Direct laboratory or bench measurement on target lot."
+  derived: "Calculated from first principles using measured/confirmed values."
+  literature_backed: "Peer-reviewed literature data (provisional bound only)."
+  assumption: "Engineering working assumption requiring site/vendor validation."
+  missing: "Required data not yet provided; site/vendor inquiry issued."
+
+throughput_and_operating_philosophy:
+  feed_raw_material: "Split/dehulled pigeon pea (Cajanus cajan) - Tanzanian import"
+  nominal_daily_feed_basis:
+    as_received_mass_kg_day: 15000.0
+    classification: "client_confirmed"
+  dry_solids_feed_kg_day:
+    value: 13425.0
+    basis: "15,000 kg/day at 10.5% moisture wet-basis"
+    classification: "derived"
+  target_finished_product_kg_day:
+    value: 14752.5
+    basis: "95.65% whole-plant dry solids recovery, 10.0% final moisture"
+    classification: "derived"
+  operating_days_per_year:
+    value: 300
+    classification: "assumption"
+  annual_feed_capacity_mt_year:
+    value: 4500.0
+    classification: "derived"
+
+operating_schedules_comparison:
+  schedule_8h:
+    daily_operating_hours: 8.0
+    nominal_feed_rate_kg_h: 1875.0
+    oee_availability_factor: 0.85
+    effective_operating_hours: 6.8
+    design_hourly_rate_kg_h: 2205.9
+    design_margin_pct: 17.6
+    classification: "derived"
+  schedule_16h_base_case:
+    daily_operating_hours: 16.0
+    nominal_feed_rate_kg_h: 937.5
+    oee_availability_factor: 0.85
+    effective_operating_hours: 13.6
+    design_hourly_rate_kg_h: 1102.9
+    design_margin_pct: 17.6
+    classification: "derived (RECOMMENDED BASE CASE)"
+  schedule_24h:
+    daily_operating_hours: 24.0
+    nominal_feed_rate_kg_h: 625.0
+    oee_availability_factor: 0.85
+    effective_operating_hours: 20.4
+    design_hourly_rate_kg_h: 735.3
+    design_margin_pct: 17.6
+    classification: "derived"
+
+raw_dal_specifications:
+  cultivar_origin: "Tanzanian dehulled split pigeon pea"
+  bulk_density_loose_kg_m3:
+    value: 820.0
+    tolerance: 30.0
+    classification: "measured"
+  true_density_grain_kg_m3:
+    value: 1350.0
+    classification: "literature_backed"
+  grain_characteristic_dimension_mm:
+    thickness: 2.2
+    major_axis: 5.5
+    equivalent_sphere_diameter: 3.5
+    classification: "measured"
+  moisture_content_as_received_wb_pct:
+    value: 10.5
+    min: 9.5
+    max: 12.0
+    classification: "measured"
+  foreign_matter_and_stones_pct:
+    value: 0.25
+    classification: "measured"
+  splits_broken_and_fines_pct:
+    value: 1.20
+    classification: "measured"
+
+soaking_and_chemical_basis:
+  dal_to_liquor_mass_ratio:
+    value: 1.50
+    classification: "hypothesis (to be confirmed at bench)"
+  nominal_soak_liquor_kg_day:
+    value: 22500.0
+    classification: "derived"
+  chemical_agent: "Sodium Bicarbonate (NaHCO3, INS 500(ii), Food Grade FCC/IS 2124)"
+  dose_basis_1_solution_pct:
+    concentration_w_w: 0.50
+    active_chemical_demand_kg_day: 112.5
+    cost_basis: "0.50% w/w in soak liquor"
+    classification: "hypothesis"
+  dose_basis_2_feed_pct:
+    concentration_w_w_feed: 0.50
+    active_chemical_demand_kg_day: 75.0
+    cost_basis: "0.50% w/w of incoming feed dal"
+    classification: "hypothesis"
+  soak_duration_minutes:
+    value: 30.0
+    tolerance: 5.0
+    classification: "hypothesis"
+  soak_temperature_degC:
+    value: 28.0
+    ambient_range: [20.0, 35.0]
+    classification: "hypothesis"
+  water_uptake_during_soak_pct:
+    value: 24.0
+    tolerance: 3.0
+    classification: "measured (bench preliminary)"
+  drained_dal_moisture_wb_pct:
+    value: 27.8
+    classification: "derived"
+  swelling_volumetric_expansion_pct:
+    value: 18.0
+    classification: "measured"
+  wet_dal_bulk_density_kg_m3:
+    value: 720.0
+    classification: "measured"
+
+post_treatment_and_drying_basis:
+  dryer_type: "Continuous vibrating fluid-bed dryer with integral fluid-bed cooler"
+  tag: "DR-101 / CLR-101"
+  target_final_moisture_wb_pct:
+    value: 10.0
+    tolerance: 0.5
+    classification: "assumption (standard shelf-stable dal)"
+  target_water_activity_aw:
+    value: 0.58
+    max_safe_limit: 0.65
+    classification: "assumption (microbial inhibition)"
+  dryer_inlet_air_temperature_degC:
+    value: 60.0
+    max: 65.0
+    classification: "assumption"
+  dryer_exhaust_air_temperature_degC:
+    value: 42.0
+    classification: "derived"
+  evaporated_water_load_kg_day:
+    value: 3694.7
+    classification: "derived"
+  product_exit_temperature_after_cooling_degC:
+    value: 28.0
+    max: 30.0
+    classification: "assumption (prevents pouch condensation)"
+
+packaging_specifications:
+  package_type: "Laminated pouch (PET / Met-PET / Polyethylene) 1.0 kg and 2.0 kg"
+  classification: "client_confirmed"
+  shelf_life_target_months:
+    value: 12
+    classification: "assumption (accelerated study pending)"
+  metal_detection_sensitivity:
+    ferrous_mm: 1.0
+    non_ferrous_mm: 1.2
+    stainless_steel_mm: 1.5
+    classification: "assumption (standard FSSAI/HACCP)"
+
+utility_and_site_assumptions:
+  electrical_supply: "415 V ± 10%, 3-phase, 50 Hz, 4-wire, grounded neutral"
+  water_source: "Industrial estate borewell + softened process water skid"
+  process_water_quality:
+    ph: [6.8, 7.5]
+    tds_ppm_max: 200
+    hardness_caco3_ppm_max: 50
+    microbial: "Potable IS 10500 compliant"
+  fuel_source_dryer: "Biomass briquette steam boiler (2.5 bar(g)) or LPG direct-fired"
+  ambient_design_conditions:
+    summer_dry_bulb_degC: 42.0
+    summer_wet_bulb_degC: 28.0
+    winter_min_degC: 15.0
+    elevation_masl: 300.0
+
+missing_site_data_items:
+  - id: "SITE-INQ-01"
+    item: "Exact site location, plot boundaries, and GIS coordinates"
+    status: "missing"
+    action: "Formal site questionnaire issued to client"
+  - id: "SITE-INQ-02"
+    item: "Geotechnical soil bearing capacity (SBC) report and water table depth"
+    status: "missing"
+    action: "Soil test boring required prior to foundation civil engineering"
+  - id: "SITE-INQ-03"
+    item: "State Pollution Control Board (SPCB) local consent effluent limits"
+    status: "missing"
+    action: "Environmental liaison to check local CETP / ZLD requirements"
+  - id: "SITE-INQ-04"
+    item: "Available HT electrical power sanction (kVA) from state utility"
+    status: "missing"
+    action: "Electricity board application pending layout freeze"
+  - id: "SITE-INQ-05"
+    item: "Client preferred packaging size split (1kg vs 2kg vs 5kg bulk)"
+    status: "missing"
+    action: "Marketing team sign-off required"
