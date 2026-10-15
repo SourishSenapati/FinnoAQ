@@ -1,0 +1,13 @@
+Drawing_Number,Revision,Drawing_Title,Discipline,Sheet_Size,File_Formats,Design_Status,Approval_Warning
+DWG-FIN-15T-000,Rev V3.0,Master Cover Sheet & Engineering Drawing Index,Project Management,A3,PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-001,Rev V3.0,Greenfield Site Master Plot Plan Logistics & Civil Grid,Civil / Plant Layout,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-002,Rev V3.0,Process Flow Diagram (PFD) & 12-Stream Mass/Energy Balance,Process Engineering,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-003,Rev V3.0,P&ID: Raw Grain Intake Storage & Automated Soaking Battery,Process / Piping,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-004,Rev V3.0,P&ID: Continuous Vibrating Fluid-Bed Drying & Thermal Utilities,Process / Thermal,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-005,Rev V3.0,P&ID: Secondary Conditioning Cleanroom Packaging & N2 Flush,Process / Packaging,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-006,Rev V3.0,Equipment GA: 7.5 m3 Sanitary Soak Vessel TK-101 (ASME Sec VIII),Mechanical Equipment,A3,DXF / STEP / SLDPRT / PDF,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-007,Rev V3.0,Equipment GA: Continuous Vibrating Fluid-Bed Dryer DR-101,Mechanical Equipment,A3,DXF / STEP / SLDPRT / PDF,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-008,Rev V3.0,Equipment GA: Automated Chemical Dosing Skid SK-100,Mechanical / Skid,A3,DXF / STEP / SLDPRT / PDF,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-009,Rev V3.0,Electrical Single Line Diagram (SLD) & MCC Schedule,Electrical / Automation,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-010,Rev V3.0,Utility Distribution Flow Diagram & 25 KLD MBBR ETP,Environmental / Utility,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
+DWG-FIN-15T-011,Rev V3.0,Hazardous Area Classification (HAC) & Dust Safety Plan (NFPA 68),Safety & Loss Prevention,A3,DXF / PDF / PNG,CONCEPTUAL_FEED,PRELIMINARY—NOT FOR CONSTRUCTION
