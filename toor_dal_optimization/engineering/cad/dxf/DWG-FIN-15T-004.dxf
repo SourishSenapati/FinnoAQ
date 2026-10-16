@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.9887037035
+2461331.0248611113
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.9887037035
+2461331.0248611113
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-141
+13E
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{272D48FF-7833-4387-A211-0512EED1A3E2}
+{5D730E7A-055A-4965-A61F-8EE0E0D55110}
   9
 $VERSIONGUID
   2
-{6DE062D8-4105-4091-AE57-97E3A9D73E47}
+{F6EE11EF-E1E8-42A8-A607-030BBA140D25}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-13E
+13B
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-13F
+13C
 330
 3
 100
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
-HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.
+FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
 SITE MASTER PLOT PLAN & HYGIENIC ZONING
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: CIVIL/LAYOUT | STAGE: CONCEPTUAL FEED
+DISCIPLINE: CIVIL/LAYOUT | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-004
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 4 OF 14
+SHEET: 4 OF 12
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6689,23 +6689,23 @@ AcDbPolyline
  70
 0
  10
-30.0
+25.0
  20
 90.0
  10
-405.0
+400.0
  20
 90.0
  10
-405.0
+400.0
  20
 315.0
  10
-30.0
+25.0
  20
 315.0
  10
-30.0
+25.0
  20
 90.0
   0
@@ -6721,17 +6721,17 @@ ANNOTATION
 100
 AcDbText
  10
-80.0
+65.0
  20
 323.0
  30
 0.0
  40
-3.2
+3.0
   1
 GREENFIELD PROPERTY BOUNDARY (75.0m x 45.0m = 3,375 m2)
  11
-80.0
+65.0
  21
 323.0
  31
@@ -6753,13 +6753,13 @@ DASHED
 100
 AcDbLine
  10
-68.0
+63.0
  20
 128.0
  30
 0.0
  11
-367.0
+362.0
  21
 128.0
  31
@@ -6779,13 +6779,13 @@ DASHED
 100
 AcDbLine
  10
-367.0
+362.0
  20
 128.0
  30
 0.0
  11
-367.0
+362.0
  21
 277.0
  31
@@ -6805,13 +6805,13 @@ DASHED
 100
 AcDbLine
  10
-367.0
+362.0
  20
 277.0
  30
 0.0
  11
-68.0
+63.0
  21
 277.0
  31
@@ -6831,13 +6831,13 @@ DASHED
 100
 AcDbLine
  10
-68.0
+63.0
  20
 277.0
  30
 0.0
  11
-68.0
+63.0
  21
 128.0
  31
@@ -6855,79 +6855,19 @@ ANNOTATION
 100
 AcDbText
  10
-42.0
+35.0
  20
 96.0
  30
 0.0
  40
-2.0
+1.8
   1
 7.0m PERIMETER ASPHALT ACCESS ROAD & FIRE TENDER ROUTE
  11
-42.0
+35.0
  21
 96.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-C4
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-15.0
- 20
-120.0
- 30
-0.0
- 40
-2.0
-  1
-MAIN ENTRY / WEIGHBRIDGE
- 11
-15.0
- 21
-120.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-C5
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-15.0
- 20
-290.0
- 30
-0.0
- 40
-2.0
-  1
-EMERGENCY EXIT GATE
- 11
-15.0
- 21
-290.0
  31
 0.0
 100
@@ -6935,7 +6875,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-C6
+C4
 330
 17
 100
@@ -6951,29 +6891,29 @@ AcDbPolyline
  70
 0
  10
-90.0
+85.0
  20
 140.0
  10
-350.0
+345.0
  20
 140.0
  10
-350.0
+345.0
  20
 260.0
  10
-90.0
+85.0
  20
 260.0
  10
-90.0
+85.0
  20
 140.0
   0
 TEXT
   5
-C7
+C5
 330
 17
 100
@@ -6983,17 +6923,17 @@ ANNOTATION
 100
 AcDbText
  10
-125.0
+120.0
  20
 270.0
  30
 0.0
  40
-2.8
+2.6
   1
 MAIN PROCESSING PLANT BUILDING (52.0m x 24.0m = 1,248 m2)
  11
-125.0
+120.0
  21
 270.0
  31
@@ -7003,7 +6943,7 @@ AcDbText
   0
 LINE
   5
-C8
+C6
 330
 17
 100
@@ -7015,13 +6955,13 @@ DASHDOT
 100
 AcDbLine
  10
-90.0
+85.0
  20
 133.0
  30
 0.0
  11
-90.0
+85.0
  21
 265.0
  31
@@ -7029,7 +6969,7 @@ AcDbLine
   0
 CIRCLE
   5
-C9
+C7
 330
 17
 100
@@ -7039,7 +6979,7 @@ GRID
 100
 AcDbCircle
  10
-90.0
+85.0
  20
 267.0
  30
@@ -7049,7 +6989,7 @@ AcDbCircle
   0
 TEXT
   5
-CA
+C8
 330
 17
 100
@@ -7059,7 +6999,7 @@ ANNOTATION
 100
 AcDbText
  10
-89.3
+84.3
  20
 266.0
  30
@@ -7069,7 +7009,7 @@ AcDbText
   1
 1
  11
-89.3
+84.3
  21
 266.0
  31
@@ -7079,7 +7019,7 @@ AcDbText
   0
 LINE
   5
-CB
+C9
 330
 17
 100
@@ -7091,13 +7031,13 @@ DASHDOT
 100
 AcDbLine
  10
-118.8885
+113.8885
  20
 133.0
  30
 0.0
  11
-118.8885
+113.8885
  21
 265.0
  31
@@ -7105,7 +7045,7 @@ AcDbLine
   0
 CIRCLE
   5
-CC
+CA
 330
 17
 100
@@ -7115,7 +7055,7 @@ GRID
 100
 AcDbCircle
  10
-118.8885
+113.8885
  20
 267.0
  30
@@ -7125,7 +7065,7 @@ AcDbCircle
   0
 TEXT
   5
-CD
+CB
 330
 17
 100
@@ -7135,7 +7075,7 @@ ANNOTATION
 100
 AcDbText
  10
-118.18849999999999
+113.18849999999999
  20
 266.0
  30
@@ -7145,7 +7085,7 @@ AcDbText
   1
 2
  11
-118.18849999999999
+113.18849999999999
  21
 266.0
  31
@@ -7155,7 +7095,7 @@ AcDbText
   0
 LINE
   5
-CE
+CC
 330
 17
 100
@@ -7167,13 +7107,13 @@ DASHDOT
 100
 AcDbLine
  10
-147.777
+142.777
  20
 133.0
  30
 0.0
  11
-147.777
+142.777
  21
 265.0
  31
@@ -7181,7 +7121,7 @@ AcDbLine
   0
 CIRCLE
   5
-CF
+CD
 330
 17
 100
@@ -7191,7 +7131,7 @@ GRID
 100
 AcDbCircle
  10
-147.777
+142.777
  20
 267.0
  30
@@ -7201,7 +7141,7 @@ AcDbCircle
   0
 TEXT
   5
-D0
+CE
 330
 17
 100
@@ -7211,7 +7151,7 @@ ANNOTATION
 100
 AcDbText
  10
-147.077
+142.077
  20
 266.0
  30
@@ -7221,7 +7161,7 @@ AcDbText
   1
 3
  11
-147.077
+142.077
  21
 266.0
  31
@@ -7231,7 +7171,7 @@ AcDbText
   0
 LINE
   5
-D1
+CF
 330
 17
 100
@@ -7243,13 +7183,13 @@ DASHDOT
 100
 AcDbLine
  10
-176.6655
+171.6655
  20
 133.0
  30
 0.0
  11
-176.6655
+171.6655
  21
 265.0
  31
@@ -7257,7 +7197,7 @@ AcDbLine
   0
 CIRCLE
   5
-D2
+D0
 330
 17
 100
@@ -7267,7 +7207,7 @@ GRID
 100
 AcDbCircle
  10
-176.6655
+171.6655
  20
 267.0
  30
@@ -7277,7 +7217,7 @@ AcDbCircle
   0
 TEXT
   5
-D3
+D1
 330
 17
 100
@@ -7287,7 +7227,7 @@ ANNOTATION
 100
 AcDbText
  10
-175.96550000000002
+170.96550000000002
  20
 266.0
  30
@@ -7297,7 +7237,7 @@ AcDbText
   1
 4
  11
-175.96550000000002
+170.96550000000002
  21
 266.0
  31
@@ -7307,7 +7247,7 @@ AcDbText
   0
 LINE
   5
-D4
+D2
 330
 17
 100
@@ -7319,13 +7259,13 @@ DASHDOT
 100
 AcDbLine
  10
-205.554
+200.554
  20
 133.0
  30
 0.0
  11
-205.554
+200.554
  21
 265.0
  31
@@ -7333,7 +7273,7 @@ AcDbLine
   0
 CIRCLE
   5
-D5
+D3
 330
 17
 100
@@ -7343,7 +7283,7 @@ GRID
 100
 AcDbCircle
  10
-205.554
+200.554
  20
 267.0
  30
@@ -7353,7 +7293,7 @@ AcDbCircle
   0
 TEXT
   5
-D6
+D4
 330
 17
 100
@@ -7363,7 +7303,7 @@ ANNOTATION
 100
 AcDbText
  10
-204.854
+199.854
  20
 266.0
  30
@@ -7373,7 +7313,7 @@ AcDbText
   1
 5
  11
-204.854
+199.854
  21
 266.0
  31
@@ -7383,7 +7323,7 @@ AcDbText
   0
 LINE
   5
-D7
+D5
 330
 17
 100
@@ -7395,13 +7335,13 @@ DASHDOT
 100
 AcDbLine
  10
-234.4425
+229.4425
  20
 133.0
  30
 0.0
  11
-234.4425
+229.4425
  21
 265.0
  31
@@ -7409,7 +7349,7 @@ AcDbLine
   0
 CIRCLE
   5
-D8
+D6
 330
 17
 100
@@ -7419,7 +7359,7 @@ GRID
 100
 AcDbCircle
  10
-234.4425
+229.4425
  20
 267.0
  30
@@ -7429,7 +7369,7 @@ AcDbCircle
   0
 TEXT
   5
-D9
+D7
 330
 17
 100
@@ -7439,7 +7379,7 @@ ANNOTATION
 100
 AcDbText
  10
-233.7425
+228.7425
  20
 266.0
  30
@@ -7449,7 +7389,7 @@ AcDbText
   1
 6
  11
-233.7425
+228.7425
  21
 266.0
  31
@@ -7459,7 +7399,7 @@ AcDbText
   0
 LINE
   5
-DA
+D8
 330
 17
 100
@@ -7471,13 +7411,13 @@ DASHDOT
 100
 AcDbLine
  10
-263.331
+258.331
  20
 133.0
  30
 0.0
  11
-263.331
+258.331
  21
 265.0
  31
@@ -7485,7 +7425,7 @@ AcDbLine
   0
 CIRCLE
   5
-DB
+D9
 330
 17
 100
@@ -7495,7 +7435,7 @@ GRID
 100
 AcDbCircle
  10
-263.331
+258.331
  20
 267.0
  30
@@ -7505,7 +7445,7 @@ AcDbCircle
   0
 TEXT
   5
-DC
+DA
 330
 17
 100
@@ -7515,7 +7455,7 @@ ANNOTATION
 100
 AcDbText
  10
-262.63100000000003
+257.63100000000003
  20
 266.0
  30
@@ -7525,7 +7465,7 @@ AcDbText
   1
 7
  11
-262.63100000000003
+257.63100000000003
  21
 266.0
  31
@@ -7535,7 +7475,7 @@ AcDbText
   0
 LINE
   5
-DD
+DB
 330
 17
 100
@@ -7547,13 +7487,13 @@ DASHDOT
 100
 AcDbLine
  10
-292.21950000000004
+287.21950000000004
  20
 133.0
  30
 0.0
  11
-292.21950000000004
+287.21950000000004
  21
 265.0
  31
@@ -7561,7 +7501,7 @@ AcDbLine
   0
 CIRCLE
   5
-DE
+DC
 330
 17
 100
@@ -7571,7 +7511,7 @@ GRID
 100
 AcDbCircle
  10
-292.21950000000004
+287.21950000000004
  20
 267.0
  30
@@ -7581,7 +7521,7 @@ AcDbCircle
   0
 TEXT
   5
-DF
+DD
 330
 17
 100
@@ -7591,7 +7531,7 @@ ANNOTATION
 100
 AcDbText
  10
-291.51950000000005
+286.51950000000005
  20
 266.0
  30
@@ -7601,7 +7541,7 @@ AcDbText
   1
 8
  11
-291.51950000000005
+286.51950000000005
  21
 266.0
  31
@@ -7611,7 +7551,7 @@ AcDbText
   0
 LINE
   5
-E0
+DE
 330
 17
 100
@@ -7623,13 +7563,13 @@ DASHDOT
 100
 AcDbLine
  10
-321.108
+316.108
  20
 133.0
  30
 0.0
  11
-321.108
+316.108
  21
 265.0
  31
@@ -7637,7 +7577,7 @@ AcDbLine
   0
 CIRCLE
   5
-E1
+DF
 330
 17
 100
@@ -7647,7 +7587,7 @@ GRID
 100
 AcDbCircle
  10
-321.108
+316.108
  20
 267.0
  30
@@ -7657,7 +7597,7 @@ AcDbCircle
   0
 TEXT
   5
-E2
+E0
 330
 17
 100
@@ -7667,7 +7607,7 @@ ANNOTATION
 100
 AcDbText
  10
-320.408
+315.408
  20
 266.0
  30
@@ -7677,7 +7617,7 @@ AcDbText
   1
 9
  11
-320.408
+315.408
  21
 266.0
  31
@@ -7687,7 +7627,7 @@ AcDbText
   0
 LINE
   5
-E3
+E1
 330
 17
 100
@@ -7699,13 +7639,13 @@ DASHDOT
 100
 AcDbLine
  10
-349.99649999999997
+344.99649999999997
  20
 133.0
  30
 0.0
  11
-349.99649999999997
+344.99649999999997
  21
 265.0
  31
@@ -7713,7 +7653,7 @@ AcDbLine
   0
 CIRCLE
   5
-E4
+E2
 330
 17
 100
@@ -7723,7 +7663,7 @@ GRID
 100
 AcDbCircle
  10
-349.99649999999997
+344.99649999999997
  20
 267.0
  30
@@ -7733,7 +7673,7 @@ AcDbCircle
   0
 TEXT
   5
-E5
+E3
 330
 17
 100
@@ -7743,7 +7683,7 @@ ANNOTATION
 100
 AcDbText
  10
-349.2965
+344.2965
  20
 266.0
  30
@@ -7753,7 +7693,7 @@ AcDbText
   1
 10
  11
-349.2965
+344.2965
  21
 266.0
  31
@@ -7763,7 +7703,7 @@ AcDbText
   0
 LINE
   5
-E6
+E4
 330
 17
 100
@@ -7775,13 +7715,13 @@ DASHDOT
 100
 AcDbLine
  10
-83.0
+78.0
  20
 140.0
  30
 0.0
  11
-355.0
+350.0
  21
 140.0
  31
@@ -7789,7 +7729,7 @@ AcDbLine
   0
 CIRCLE
   5
-E7
+E5
 330
 17
 100
@@ -7799,7 +7739,7 @@ GRID
 100
 AcDbCircle
  10
-81.0
+76.0
  20
 140.0
  30
@@ -7809,7 +7749,7 @@ AcDbCircle
   0
 TEXT
   5
-E8
+E6
 330
 17
 100
@@ -7819,7 +7759,7 @@ ANNOTATION
 100
 AcDbText
  10
-80.0
+75.0
  20
 139.3
  30
@@ -7829,7 +7769,7 @@ AcDbText
   1
 A
  11
-80.0
+75.0
  21
 139.3
  31
@@ -7839,7 +7779,7 @@ AcDbText
   0
 LINE
   5
-E9
+E7
 330
 17
 100
@@ -7851,13 +7791,13 @@ DASHDOT
 100
 AcDbLine
  10
-83.0
+78.0
  20
 180.0
  30
 0.0
  11
-355.0
+350.0
  21
 180.0
  31
@@ -7865,7 +7805,7 @@ AcDbLine
   0
 CIRCLE
   5
-EA
+E8
 330
 17
 100
@@ -7875,7 +7815,7 @@ GRID
 100
 AcDbCircle
  10
-81.0
+76.0
  20
 180.0
  30
@@ -7885,7 +7825,7 @@ AcDbCircle
   0
 TEXT
   5
-EB
+E9
 330
 17
 100
@@ -7895,7 +7835,7 @@ ANNOTATION
 100
 AcDbText
  10
-80.0
+75.0
  20
 179.3
  30
@@ -7905,7 +7845,7 @@ AcDbText
   1
 B
  11
-80.0
+75.0
  21
 179.3
  31
@@ -7915,7 +7855,7 @@ AcDbText
   0
 LINE
   5
-EC
+EA
 330
 17
 100
@@ -7927,13 +7867,13 @@ DASHDOT
 100
 AcDbLine
  10
-83.0
+78.0
  20
 220.0
  30
 0.0
  11
-355.0
+350.0
  21
 220.0
  31
@@ -7941,7 +7881,7 @@ AcDbLine
   0
 CIRCLE
   5
-ED
+EB
 330
 17
 100
@@ -7951,7 +7891,7 @@ GRID
 100
 AcDbCircle
  10
-81.0
+76.0
  20
 220.0
  30
@@ -7961,7 +7901,7 @@ AcDbCircle
   0
 TEXT
   5
-EE
+EC
 330
 17
 100
@@ -7971,7 +7911,7 @@ ANNOTATION
 100
 AcDbText
  10
-80.0
+75.0
  20
 219.3
  30
@@ -7981,7 +7921,7 @@ AcDbText
   1
 C
  11
-80.0
+75.0
  21
 219.3
  31
@@ -7991,7 +7931,7 @@ AcDbText
   0
 LINE
   5
-EF
+ED
 330
 17
 100
@@ -8003,13 +7943,13 @@ DASHDOT
 100
 AcDbLine
  10
-83.0
+78.0
  20
 260.0
  30
 0.0
  11
-355.0
+350.0
  21
 260.0
  31
@@ -8017,7 +7957,7 @@ AcDbLine
   0
 CIRCLE
   5
-F0
+EE
 330
 17
 100
@@ -8027,13 +7967,81 @@ GRID
 100
 AcDbCircle
  10
-81.0
+76.0
  20
 260.0
  30
 0.0
  40
 2.2
+  0
+TEXT
+  5
+EF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+75.0
+ 20
+259.3
+ 30
+0.0
+ 40
+1.8
+  1
+D
+ 11
+75.0
+ 21
+259.3
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F0
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+85.0
+ 20
+140.0
+ 10
+155.0
+ 20
+140.0
+ 10
+155.0
+ 20
+260.0
+ 10
+85.0
+ 20
+260.0
+ 10
+85.0
+ 20
+140.0
   0
 TEXT
   5
@@ -8047,19 +8055,49 @@ ANNOTATION
 100
 AcDbText
  10
-80.0
+88.0
  20
-259.3
+253.0
  30
 0.0
  40
-1.8
+2.0
   1
-D
+ZONE 1: RAW INTAKE
  11
-80.0
+88.0
  21
-259.3
+253.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+F2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+88.0
+ 20
+248.0
+ 30
+0.0
+ 40
+1.5
+  1
+(BROWN ZONE)
+ 11
+88.0
+ 21
+248.0
  31
 0.0
 100
@@ -8067,7 +8105,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-F2
+F3
 330
 17
 100
@@ -8083,55 +8121,25 @@ AcDbPolyline
  70
 0
  10
-90.0
+155.0
  20
 140.0
  10
-160.0
+215.0
  20
 140.0
  10
-160.0
+215.0
  20
 260.0
  10
-90.0
+155.0
  20
 260.0
  10
-90.0
+155.0
  20
 140.0
-  0
-TEXT
-  5
-F3
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-93.0
- 20
-253.0
- 30
-0.0
- 40
-2.2
-  1
-ZONE 1: RAW INTAKE
- 11
-93.0
- 21
-253.0
- 31
-0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -8145,17 +8153,47 @@ ANNOTATION
 100
 AcDbText
  10
-93.0
+158.0
+ 20
+253.0
+ 30
+0.0
+ 40
+2.0
+  1
+ZONE 2: WET PROCESS
+ 11
+158.0
+ 21
+253.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+F5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.0
  20
 248.0
  30
 0.0
  40
-1.6
+1.5
   1
-(BROWN ZONE)
+(GREY / WASHDOWN)
  11
-93.0
+158.0
  21
 248.0
  31
@@ -8165,7 +8203,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-F5
+F6
 330
 17
 100
@@ -8181,55 +8219,25 @@ AcDbPolyline
  70
 0
  10
-160.0
+215.0
  20
 140.0
  10
-220.0
+295.0
  20
 140.0
  10
-220.0
+295.0
  20
 260.0
  10
-160.0
+215.0
  20
 260.0
  10
-160.0
+215.0
  20
 140.0
-  0
-TEXT
-  5
-F6
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-163.0
- 20
-253.0
- 30
-0.0
- 40
-2.2
-  1
-ZONE 2: WET PROCESS
- 11
-163.0
- 21
-253.0
- 31
-0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -8243,17 +8251,47 @@ ANNOTATION
 100
 AcDbText
  10
-163.0
+218.0
+ 20
+253.0
+ 30
+0.0
+ 40
+2.0
+  1
+ZONE 3: DRYING GALLERY
+ 11
+218.0
+ 21
+253.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+F8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+218.0
  20
 248.0
  30
 0.0
  40
-1.6
+1.5
   1
-(GREY ZONE / WASHDOWN)
+(POSITIVE EXHAUST)
  11
-163.0
+218.0
  21
 248.0
  31
@@ -8263,7 +8301,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-F8
+F9
 330
 17
 100
@@ -8279,55 +8317,25 @@ AcDbPolyline
  70
 0
  10
-220.0
+295.0
  20
 140.0
  10
-300.0
+345.0
  20
 140.0
  10
-300.0
+345.0
  20
 260.0
  10
-220.0
+295.0
  20
 260.0
  10
-220.0
+295.0
  20
 140.0
-  0
-TEXT
-  5
-F9
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-223.0
- 20
-253.0
- 30
-0.0
- 40
-2.2
-  1
-ZONE 3: DRYING GALLERY
- 11
-223.0
- 21
-253.0
- 31
-0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -8341,25 +8349,25 @@ ANNOTATION
 100
 AcDbText
  10
-223.0
+297.0
  20
-248.0
+253.0
  30
 0.0
  40
-1.6
+2.0
   1
-(POSITIVE EXHAUST)
+ZONE 4: PACKAGING
  11
-223.0
+297.0
  21
-248.0
+253.0
  31
 0.0
 100
 AcDbText
   0
-LWPOLYLINE
+TEXT
   5
 FB
 330
@@ -8367,37 +8375,29 @@ FB
 100
 AcDbEntity
   8
-EQUIPMENT
-370
-35
+ANNOTATION
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbText
  10
-300.0
+297.0
  20
-140.0
- 10
-350.0
- 20
-140.0
- 10
-350.0
- 20
-260.0
- 10
-300.0
- 20
-260.0
- 10
-300.0
- 20
-140.0
+248.0
+ 30
+0.0
+ 40
+1.5
+  1
+(WHITE ZONE / CLASS 8)
+ 11
+297.0
+ 21
+248.0
+ 31
+0.0
+100
+AcDbText
   0
-TEXT
+CIRCLE
   5
 FC
 330
@@ -8405,29 +8405,19 @@ FC
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
 100
-AcDbText
+AcDbCircle
  10
-302.0
+97.0
  20
-253.0
+175.0
  30
 0.0
  40
-2.2
-  1
-ZONE 4: PACKAGING
- 11
-302.0
- 21
-253.0
- 31
-0.0
-100
-AcDbText
+10.0
   0
-TEXT
+CIRCLE
   5
 FD
 330
@@ -8435,29 +8425,19 @@ FD
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
 100
-AcDbText
+AcDbCircle
  10
-302.0
+123.0
  20
-248.0
+175.0
  30
 0.0
  40
-1.6
-  1
-(WHITE ZONE / CLASS 8)
- 11
-302.0
- 21
-248.0
- 31
-0.0
-100
-AcDbText
+10.0
   0
-CIRCLE
+TEXT
   5
 FE
 330
@@ -8465,19 +8445,29 @@ FE
 100
 AcDbEntity
   8
-EQUIPMENT
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-102.0
+93.0
  20
 175.0
  30
 0.0
  40
-10.0
+1.5
+  1
+SILO 1
+ 11
+93.0
+ 21
+175.0
+ 31
+0.0
+100
+AcDbText
   0
-CIRCLE
+TEXT
   5
 FF
 330
@@ -8485,41 +8475,21 @@ FF
 100
 AcDbEntity
   8
-EQUIPMENT
-100
-AcDbCircle
- 10
-128.0
- 20
-175.0
- 30
-0.0
- 40
-10.0
-  0
-TEXT
-  5
-100
-330
-17
-100
-AcDbEntity
-  8
 ANNOTATION
 100
 AcDbText
  10
-98.0
+119.0
  20
 175.0
  30
 0.0
  40
-1.6
+1.5
   1
-SILO 1
+SILO 2
  11
-98.0
+119.0
  21
 175.0
  31
@@ -8527,7 +8497,27 @@ SILO 1
 100
 AcDbText
   0
-TEXT
+CIRCLE
+  5
+100
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+100
+AcDbCircle
+ 10
+171.0
+ 20
+185.0
+ 30
+0.0
+ 40
+5.0
+  0
+CIRCLE
   5
 101
 330
@@ -8535,61 +8525,11 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
-100
-AcDbText
- 10
-124.0
- 20
-175.0
- 30
-0.0
- 40
-1.6
-  1
-SILO 2
- 11
-124.0
- 21
-175.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-102
-330
-17
-100
-AcDbEntity
-  8
 EQUIPMENT
 100
 AcDbCircle
  10
-176.0
- 20
-185.0
- 30
-0.0
- 40
-5.0
-  0
-CIRCLE
-  5
-103
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbCircle
- 10
-198.0
+193.0
  20
 185.0
  30
@@ -8599,7 +8539,7 @@ AcDbCircle
   0
 TEXT
   5
-104
+102
 330
 17
 100
@@ -8609,23 +8549,91 @@ ANNOTATION
 100
 AcDbText
  10
-171.0
+166.0
  20
 185.0
  30
 0.0
  40
-1.6
+1.5
   1
 TK-101A
  11
-171.0
+166.0
  21
 185.0
  31
 0.0
 100
 AcDbText
+  0
+TEXT
+  5
+103
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+188.0
+ 20
+185.0
+ 30
+0.0
+ 40
+1.5
+  1
+TK-101B
+ 11
+188.0
+ 21
+185.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+40
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+223.0
+ 20
+190.0
+ 10
+293.0
+ 20
+190.0
+ 10
+293.0
+ 20
+196.0
+ 10
+223.0
+ 20
+196.0
+ 10
+223.0
+ 20
+190.0
   0
 TEXT
   5
@@ -8639,19 +8647,19 @@ ANNOTATION
 100
 AcDbText
  10
-193.0
+225.0
  20
-185.0
+198.0
  30
 0.0
  40
-1.6
+1.7
   1
-TK-101B
+DR-101 FLUID BED DRYER
  11
-193.0
+225.0
  21
-185.0
+198.0
  31
 0.0
 100
@@ -8673,25 +8681,25 @@ AcDbPolyline
  70
 0
  10
-172.0
- 20
-152.0
- 10
-192.0
- 20
-152.0
- 10
-192.0
+303.0
  20
 165.0
  10
-172.0
+333.0
  20
 165.0
  10
-172.0
+333.0
  20
-152.0
+200.0
+ 10
+303.0
+ 20
+200.0
+ 10
+303.0
+ 20
+165.0
   0
 TEXT
   5
@@ -8705,19 +8713,19 @@ ANNOTATION
 100
 AcDbText
  10
-176.0
+305.0
  20
-156.0
+180.0
  30
 0.0
  40
-1.6
+1.7
   1
-SK-100
+PK-101 PACKAGING
  11
-176.0
+305.0
  21
-156.0
+180.0
  31
 0.0
 100
@@ -8741,25 +8749,25 @@ AcDbPolyline
  70
 0
  10
-228.0
+85.0
  20
-190.0
+274.0
  10
-298.0
+115.0
  20
-190.0
+274.0
  10
-298.0
+115.0
  20
-196.0
+292.0
  10
-228.0
+85.0
  20
-196.0
+292.0
  10
-228.0
+85.0
  20
-190.0
+274.0
   0
 TEXT
   5
@@ -8773,63 +8781,27 @@ ANNOTATION
 100
 AcDbText
  10
-230.0
+87.0
  20
-198.0
+284.0
  30
 0.0
  40
-1.8
+1.7
   1
-DR-101 FLUID BED DRYER
+BOILER HOUSE
  11
-230.0
+87.0
  21
-198.0
+284.0
  31
 0.0
 100
 AcDbText
   0
-LWPOLYLINE
-  5
-10A
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-308.0
- 20
-165.0
- 10
-338.0
- 20
-165.0
- 10
-338.0
- 20
-200.0
- 10
-308.0
- 20
-200.0
- 10
-308.0
- 20
-165.0
-  0
 TEXT
   5
-10B
+10A
 330
 17
 100
@@ -8839,25 +8811,63 @@ ANNOTATION
 100
 AcDbText
  10
-310.0
+87.0
  20
-180.0
+278.0
  30
 0.0
  40
-1.8
+1.4
   1
-PK-101 PACKAGING
+BLR-01 (2 TPH)
  11
-310.0
+87.0
  21
-180.0
+278.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
+  5
+10B
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+40
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+123.0
+ 20
+274.0
+ 10
+150.0
+ 20
+274.0
+ 10
+150.0
+ 20
+292.0
+ 10
+123.0
+ 20
+292.0
+ 10
+123.0
+ 20
+274.0
+  0
+TEXT
   5
 10C
 330
@@ -8866,22 +8876,26 @@ LINE
 AcDbEntity
   8
 ANNOTATION
-  6
-DASHED
 100
-AcDbLine
+AcDbText
  10
-90.0
+125.0
  20
-158.0
+284.0
  30
 0.0
+ 40
+1.7
+  1
+SUBSTATION
  11
-350.0
+125.0
  21
-158.0
+284.0
  31
 0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -8895,19 +8909,19 @@ ANNOTATION
 100
 AcDbText
  10
-130.0
+125.0
  20
-160.0
+278.0
  30
 0.0
  40
-1.8
+1.4
   1
-MAIN FORKLIFT ARTERIAL PASSAGEWAY (3,500 mm CLEAR WIDTH)
+TR-01 (500kVA)
  11
-130.0
+125.0
  21
-160.0
+278.0
  31
 0.0
 100
@@ -8931,23 +8945,23 @@ AcDbPolyline
  70
 0
  10
-90.0
+158.0
  20
 274.0
  10
-120.0
+185.0
  20
 274.0
  10
-120.0
+185.0
  20
 292.0
  10
-90.0
+158.0
  20
 292.0
  10
-90.0
+158.0
  20
 274.0
   0
@@ -8963,17 +8977,17 @@ ANNOTATION
 100
 AcDbText
  10
-92.0
+160.0
  20
 284.0
  30
 0.0
  40
-1.8
+1.7
   1
-BOILER HOUSE
+WATER PLANT
  11
-92.0
+160.0
  21
 284.0
  31
@@ -8993,17 +9007,17 @@ ANNOTATION
 100
 AcDbText
  10
-92.0
+160.0
  20
 278.0
  30
 0.0
  40
-1.5
+1.4
   1
-BLR-01 (2 TPH)
+WTP-01 (RO/DM)
  11
-92.0
+160.0
  21
 278.0
  31
@@ -9029,23 +9043,23 @@ AcDbPolyline
  70
 0
  10
-128.0
+193.0
  20
 274.0
  10
-155.0
+237.0
  20
 274.0
  10
-155.0
+237.0
  20
-292.0
+294.0
  10
-128.0
+193.0
  20
-292.0
+294.0
  10
-128.0
+193.0
  20
 274.0
   0
@@ -9061,19 +9075,19 @@ ANNOTATION
 100
 AcDbText
  10
-130.0
+195.0
  20
-284.0
+285.0
  30
 0.0
  40
-1.8
+1.7
   1
-SUBSTATION
+ETP / ZLD EVAPORATOR
  11
-130.0
+195.0
  21
-284.0
+285.0
  31
 0.0
 100
@@ -9091,275 +9105,19 @@ ANNOTATION
 100
 AcDbText
  10
-130.0
- 20
-278.0
- 30
-0.0
- 40
-1.5
-  1
-SS-01 (500kVA)
- 11
-130.0
- 21
-278.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-114
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-163.0
- 20
-274.0
- 10
-190.0
- 20
-274.0
- 10
-190.0
- 20
-292.0
- 10
-163.0
- 20
-292.0
- 10
-163.0
- 20
-274.0
-  0
-TEXT
-  5
-115
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-165.0
- 20
-284.0
- 30
-0.0
- 40
-1.8
-  1
-WATER PLANT
- 11
-165.0
- 21
-284.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-116
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-165.0
- 20
-278.0
- 30
-0.0
- 40
-1.5
-  1
-WTP-01 (RO/DM)
- 11
-165.0
- 21
-278.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-117
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-198.0
- 20
-274.0
- 10
-242.0
- 20
-274.0
- 10
-242.0
- 20
-294.0
- 10
-198.0
- 20
-294.0
- 10
-198.0
- 20
-274.0
-  0
-TEXT
-  5
-118
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-200.0
- 20
-285.0
- 30
-0.0
- 40
-1.8
-  1
-ETP / ZLD EVAPORATOR
- 11
-200.0
- 21
-285.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-119
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-200.0
+195.0
  20
 279.0
  30
 0.0
  40
-1.5
+1.4
   1
-EV-101 (25 KLD TRIPLE-EFFECT)
+EV-101 (25 KLD ZLD)
  11
-200.0
+195.0
  21
 279.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-11A
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-185.0
- 20
-128.0
- 30
-0.0
- 40
-2.5
-  1
-52,000 mm (52.0 m) MAIN BUILDING LENGTH
- 11
-185.0
- 21
-128.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-11B
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-62.0
- 20
-200.0
- 30
-0.0
- 40
-2.5
-  1
-24,000 mm (24.0 m) WIDTH
- 11
-62.0
- 21
-200.0
  31
 0.0
 100
@@ -9367,7 +9125,7 @@ AcDbText
   0
 CIRCLE
   5
-11C
+114
 330
 17
 100
@@ -9381,15 +9139,15 @@ AcDbCircle
  10
 495.0
  20
-360.0
+375.0
  30
 0.0
  40
-12.0
+10.0
   0
 LINE
   5
-11D
+115
 330
 17
 100
@@ -9403,19 +9161,19 @@ AcDbLine
  10
 495.0
  20
-348.0
+365.0
  30
 0.0
  11
 495.0
  21
-372.0
+385.0
  31
 0.0
   0
 LINE
   5
-11E
+116
 330
 17
 100
@@ -9427,21 +9185,21 @@ BORDER_TITLE
 100
 AcDbLine
  10
-483.0
+485.0
  20
-360.0
+375.0
  30
 0.0
  11
-507.0
+505.0
  21
-360.0
+375.0
  31
 0.0
   0
 LWPOLYLINE
   5
-11F
+117
 330
 17
 100
@@ -9457,29 +9215,29 @@ AcDbPolyline
  70
 0
  10
-491.0
+492.0
  20
-360.0
+375.0
  10
 495.0
  20
-372.0
+385.0
  10
-499.0
+498.0
  20
-360.0
+375.0
  10
 495.0
  20
-363.0
+377.0
  10
-491.0
+492.0
  20
-360.0
+375.0
   0
 TEXT
   5
-120
+118
 330
 17
 100
@@ -9489,19 +9247,19 @@ ANNOTATION
 100
 AcDbText
  10
-493.5
+493.8
  20
-374.0
+387.0
  30
 0.0
  40
-3.5
+3.0
   1
 N
  11
-493.5
+493.8
  21
-374.0
+387.0
  31
 0.0
 100
@@ -9509,7 +9267,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-121
+119
 330
 17
 100
@@ -9525,25 +9283,259 @@ AcDbPolyline
  70
 0
  10
-415.0
+412.0
  20
-335.0
+355.0
  10
-570.0
+565.0
  20
-335.0
+355.0
  10
-570.0
+565.0
  20
-190.0
+250.0
  10
-415.0
+412.0
  20
-190.0
+250.0
  10
-415.0
+412.0
  20
-335.0
+355.0
+  0
+TEXT
+  5
+11A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+347.0
+ 30
+0.0
+ 40
+2.2
+  1
+SITE AREA ALLOCATION & MASTER METRICS:
+ 11
+416.0
+ 21
+347.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+11B
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+412.0
+ 20
+344.0
+ 30
+0.0
+ 11
+565.0
+ 21
+344.0
+ 31
+0.0
+  0
+TEXT
+  5
+11C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+337.0
+ 30
+0.0
+ 40
+1.7
+  1
+1. Total Greenfield Plot: 3,375.0 m2 (75.0m x 45.0m).
+ 11
+416.0
+ 21
+337.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+11D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+328.5
+ 30
+0.0
+ 40
+1.7
+  1
+2. Main Processing Building: 1,248.0 m2 (52.0m x 24.0m).
+ 11
+416.0
+ 21
+328.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+320.0
+ 30
+0.0
+ 40
+1.7
+  1
+3. Building Ground Coverage: 36.98% (Permissible: 50.0%).
+ 11
+416.0
+ 21
+320.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+11F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+311.5
+ 30
+0.0
+ 40
+1.7
+  1
+4. Floor Area Ratio (FAR): 0.42 (Permissible: 1.50).
+ 11
+416.0
+ 21
+311.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+303.0
+ 30
+0.0
+ 40
+1.7
+  1
+5. External Utility Yard: 380.0 m2 (Boiler, Substation, ETP).
+ 11
+416.0
+ 21
+303.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+416.0
+ 20
+294.5
+ 30
+0.0
+ 40
+1.7
+  1
+6. Asphalt Roads & Parking: 1,215.0 m2 (Heavy vehicle turning).
+ 11
+416.0
+ 21
+294.5
+ 31
+0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -9557,25 +9549,25 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-327.0
+286.0
  30
 0.0
  40
-2.2
+1.7
   1
-SITE PLANNING & COMPLIANCE:
+7. Green Belt & Landscaping: 532.0 m2 (15.76% plot area).
  11
-419.0
+416.0
  21
-327.0
+286.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+TEXT
   5
 123
 330
@@ -9583,21 +9575,27 @@ LINE
 100
 AcDbEntity
   8
-BORDER_TITLE
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-415.0
+416.0
  20
-323.0
+277.5
  30
 0.0
+ 40
+1.7
+  1
+8. Finished Floor Elevation: +600 mm above finished site grade.
  11
-570.0
+416.0
  21
-323.0
+277.5
  31
 0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -9611,19 +9609,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-316.0
+269.0
  30
 0.0
  40
-1.8
+1.7
   1
-1. Greenfield Plot: 3,375.0 m2
+9. Clear Eaves Height: 8.50 m (Apex Height: 10.20 m PEB structure).
  11
-419.0
+416.0
  21
-316.0
+269.0
  31
 0.0
 100
@@ -9641,25 +9639,25 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-307.2
+260.5
  30
 0.0
  40
-1.8
+1.7
   1
-2. Main Factory: 1,248.0 m2
+10. Structural Bays: 9 bays @ 5.78m longitudinal, 3 @ 8.0m transverse.
  11
-419.0
+416.0
  21
-307.2
+260.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 126
 330
@@ -9667,27 +9665,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-419.0
+412.0
  20
-298.4
- 30
-0.0
- 40
-1.8
-  1
-3. Utility Yard: 232.0 m2
- 11
-419.0
- 21
-298.4
- 31
-0.0
-100
-AcDbText
+242.0
+ 10
+565.0
+ 20
+242.0
+ 10
+565.0
+ 20
+77.0
+ 10
+412.0
+ 20
+77.0
+ 10
+412.0
+ 20
+242.0
   0
 TEXT
   5
@@ -9701,25 +9707,25 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-289.6
+234.0
  30
 0.0
  40
-1.8
+2.2
   1
-4. Total Coverage: 1,480.0 m2
+HYGIENIC ZONING & HVAC PRESSURIZATION SCHEDULE:
  11
-419.0
+416.0
  21
-289.6
+234.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LINE
   5
 128
 330
@@ -9727,27 +9733,21 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
-AcDbText
+AcDbLine
  10
-419.0
+412.0
  20
-280.8
+231.0
  30
 0.0
- 40
-1.8
-  1
-   Ground Coverage: 43.85%
  11
-419.0
+565.0
  21
-280.8
+231.0
  31
 0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -9761,19 +9761,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-272.0
+224.0
  30
 0.0
  40
-1.8
+1.6
   1
-   (Max Permissible: 50.0%)
+ZONE 1 (BROWN ZONE) - RAW INTAKE & STORAGE:
  11
-419.0
+416.0
  21
-272.0
+224.0
  31
 0.0
 100
@@ -9791,19 +9791,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-263.2
+216.8
  30
 0.0
  40
-1.8
+1.6
   1
-5. Front Setback: 12.0 m (West)
+  * Area: 336.0 m2 | Pressurization: Neutral (0 Pa) | 6 ACH Exhaust.
  11
-419.0
+416.0
  21
-263.2
+216.8
  31
 0.0
 100
@@ -9821,19 +9821,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-254.39999999999998
+209.6
  30
 0.0
  40
-1.8
+1.6
   1
-6. Rear Setback: 11.0 m (East)
+  * Surface: Anti-abrasion floor, dust extraction hoods on chutes.
  11
-419.0
+416.0
  21
-254.39999999999998
+209.6
  31
 0.0
 100
@@ -9851,19 +9851,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-245.6
+202.4
  30
 0.0
  40
-1.8
+1.6
   1
-7. North Setback: 10.0 m (Utility)
+ZONE 2 (GREY ZONE) - RAPID HYDRATION & CHEMICAL TREATMENT:
  11
-419.0
+416.0
  21
-245.6
+202.4
  31
 0.0
 100
@@ -9881,19 +9881,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-236.8
+195.2
  30
 0.0
  40
-1.8
+1.6
   1
-8. South Setback: 9.0 m (Green)
+  * Area: 288.0 m2 | Pressurization: Neutral to -5 Pa | 10 ACH.
  11
-419.0
+416.0
  21
-236.8
+195.2
  31
 0.0
 100
@@ -9911,19 +9911,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-228.0
+188.0
  30
 0.0
  40
-1.8
+1.6
   1
-9. Road Width: 7.0 m Ring Road
+  * Surface: Polyurethane screed floor (R11 slip), stainless drains.
  11
-419.0
+416.0
  21
-228.0
+188.0
  31
 0.0
 100
@@ -9941,19 +9941,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-219.2
+180.8
  30
 0.0
  40
-1.8
+1.6
   1
-10. Fire Ring: 6" NB CS Loop
+  * Washdown: 100% wet cleaning compatible, coved wall joints.
  11
-419.0
+416.0
  21
-219.2
+180.8
  31
 0.0
 100
@@ -9971,19 +9971,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-210.39999999999998
+173.6
  30
 0.0
  40
-1.8
+1.6
   1
-11. ZLD Loop: 100% Water Recycle
+ZONE 3 (GREY / DRY ZONE) - THERMAL FLUID BED DRYING GALLERY:
  11
-419.0
+416.0
  21
-210.39999999999998
+173.6
  31
 0.0
 100
@@ -10001,25 +10001,25 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-201.6
+166.4
  30
 0.0
  40
-1.8
+1.6
   1
-12. FSSAI / BRCGS Hygienic Flow
+  * Area: 384.0 m2 | Pressurization: +5 Pa (Prevent raw dust ingress).
  11
-419.0
+416.0
  21
-201.6
+166.4
  31
 0.0
 100
 AcDbText
   0
-LWPOLYLINE
+TEXT
   5
 132
 330
@@ -10027,35 +10027,27 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-BORDER_TITLE
-370
-35
+ANNOTATION
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbText
  10
-415.0
+416.0
  20
-180.0
- 10
-570.0
- 20
-180.0
- 10
-570.0
- 20
-85.0
- 10
-415.0
- 20
-85.0
- 10
-415.0
- 20
-180.0
+159.2
+ 30
+0.0
+ 40
+1.6
+  1
+  * Air Handling: Filtered dry make-up air, acoustic enclosures.
+ 11
+416.0
+ 21
+159.2
+ 31
+0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -10069,25 +10061,25 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-172.0
+152.0
  30
 0.0
  40
-2.2
+1.6
   1
-HYGIENIC ZONING LEGEND:
+ZONE 4 (WHITE ZONE) - SECONDARY PACKAGING & FINISHED GOODS:
  11
-419.0
+416.0
  21
-172.0
+152.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+TEXT
   5
 134
 330
@@ -10095,21 +10087,27 @@ LINE
 100
 AcDbEntity
   8
-BORDER_TITLE
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-415.0
+416.0
  20
-168.0
+144.8
  30
 0.0
+ 40
+1.6
+  1
+  * Area: 240.0 m2 | Cleanliness: ISO 14644-1 Class 8 Cleanroom.
  11
-570.0
+416.0
  21
-168.0
+144.8
  31
 0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -10123,19 +10121,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-161.0
+137.6
  30
 0.0
  40
-1.8
+1.6
   1
-ZONE 1: RAW INTAKE (BROWN)
+  * Pressurization: +15 Pa Positive Differential (Overpressure).
  11
-419.0
+416.0
  21
-161.0
+137.6
  31
 0.0
 100
@@ -10153,19 +10151,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-152.8
+130.39999999999998
  30
 0.0
  40
-1.8
+1.6
   1
-  Uncontrolled dry area
+  * Air Filtration: Central AHU with 99.99% HEPA H14 terminal units.
  11
-419.0
+416.0
  21
-152.8
+130.39999999999998
  31
 0.0
 100
@@ -10183,19 +10181,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-144.6
+123.2
  30
 0.0
  40
-1.8
+1.6
   1
-ZONE 2: WET PROCESS (GREY)
+  * Personnel Entry: Dual-door interlocked airlock with sticky mats.
  11
-419.0
+416.0
  21
-144.6
+123.2
  31
 0.0
 100
@@ -10213,19 +10211,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-136.4
+116.0
  30
 0.0
  40
-1.8
+1.6
   1
-  Epoxy washdown, floor drains
+LIFE SAFETY, EGRESS & EXPLOSION COMPLIANCE:
  11
-419.0
+416.0
  21
-136.4
+116.0
  31
 0.0
 100
@@ -10243,19 +10241,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-128.2
+108.8
  30
 0.0
  40
-1.8
+1.6
   1
-ZONE 3: DRYING GALLERY (GREY)
+  * NFPA 68 burst panel discharge ducts through roof (DR-101).
  11
-419.0
+416.0
  21
-128.2
+108.8
  31
 0.0
 100
@@ -10273,109 +10271,19 @@ ANNOTATION
 100
 AcDbText
  10
-419.0
+416.0
  20
-120.0
+101.6
  30
 0.0
  40
-1.8
+1.6
   1
-  Positive pressure exhaust
+  * 4x Fire egress doors with panic hardware leading to ring road.
  11
-419.0
+416.0
  21
-120.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-13B
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-419.0
- 20
-111.80000000000001
- 30
-0.0
- 40
-1.8
-  1
-ZONE 4: PACKAGING (WHITE)
- 11
-419.0
- 21
-111.80000000000001
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-13C
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-419.0
- 20
-103.60000000000001
- 30
-0.0
- 40
-1.8
-  1
-  ISO Class 8 Cleanroom
- 11
-419.0
- 21
-103.60000000000001
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-13D
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-419.0
- 20
-95.4
- 30
-0.0
- 40
-1.8
-  1
-  HEPA filtered air, +15 Pa
- 11
-419.0
- 21
-95.4
+101.6
  31
 0.0
 100
@@ -11471,7 +11379,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-140
+13D
   0
 DICTIONARYVAR
   5
@@ -11483,7 +11391,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:44.927377+00:00
+1.4.4 @ 2026-10-16T19:05:48.575597+00:00
   0
 VISUALSTYLE
   5
@@ -18037,7 +17945,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-140
+13D
 330
 2D
 100
@@ -18045,7 +17953,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:44.932029+00:00
+1.4.4 @ 2026-10-16T19:05:48.579887+00:00
   0
 ENDSEC
   0

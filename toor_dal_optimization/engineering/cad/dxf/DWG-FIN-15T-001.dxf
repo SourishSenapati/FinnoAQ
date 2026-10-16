@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.9886805555
+2461331.0247800928
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.9886805555
+2461331.0247800928
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-14F
+154
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{439ABA53-CD42-4118-AAF4-92373D13F57B}
+{DBB36552-2ABE-4991-9B4D-A65B294A4B4E}
   9
 $VERSIONGUID
   2
-{5F97486A-BF76-4171-948A-195D9B6083D9}
+{7934668B-D1E1-4F25-AA68-6ECB8E9EC960}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-14C
+151
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-14D
+152
 330
 3
 100
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
-HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.
+FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
 PROCESS FLOW DIAGRAM - OVERALL PLANT
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: PROCESS | STAGE: CONCEPTUAL FEED
+DISCIPLINE: PROCESS | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-001
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 1 OF 14
+SHEET: 1 OF 12
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6751,9 +6751,9 @@ AcDbText
  30
 0.0
  40
-2.8
+2.6
   1
-KEY PROCESS PARAMETERS & DESIGN BASIS:
+KEY PROCESS DESIGN BASIS & THERMODYNAMIC OPERATING PARAMETERS:
  11
 30.0
  21
@@ -6781,9 +6781,9 @@ AcDbText
  30
 0.0
  40
-2.2
+2.1
   1
-Throughput: 15,000 kg/day as-fed Dal | Operating Schedule: 16.0 h/day (arithmetic mean 937.5 kg/h, design 1,102.9 kg/h @ 85% OEE)
+Throughput: 15,000 kg/day as-fed Dal | Operating Schedule: 16.0 h/day (Mean 937.5 kg/h, Design 1,102.9 kg/h @ 85% OEE)
  11
 30.0
  21
@@ -6811,7 +6811,7 @@ AcDbText
  30
 0.0
  40
-2.2
+2.1
   1
 Infeed Moisture: 10.50% w.b. (839.06 kg/h dry solids) | Product Moisture: 10.00% w.b. (926.90 kg/h saleable dal) | Solids Yield: 99.40%
  11
@@ -6841,7 +6841,7 @@ AcDbText
  30
 0.0
  40
-2.2
+2.1
   1
 Soak Liquor Ratio: 1.50 : 1.00 (Water:Dal) | Dosing Reagent: Food-Grade NaHCO3 / Citrate | Drying Air: 85 deg C | Deck Area: 14.0 m2
  11
@@ -6871,9 +6871,9 @@ AcDbText
  30
 0.0
  40
-2.2
+2.1
   1
-All Product-Contact Metallurgy: AISI SS316L 2B Finish (Ra <= 0.8 um) | CIP / Washdown Compatible | ZLD Effluent Evaporation
+All Product-Contact Metallurgy: AISI SS316L 2B Sanitary Polish (Ra <= 0.8 um) | CIP / Washdown Compatible | ZLD Effluent Evaporation
  11
 30.0
  21
@@ -7200,8 +7200,8 @@ CE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7260,8 +7260,8 @@ D0
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7320,8 +7320,8 @@ D2
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7748,8 +7748,8 @@ E1
 AcDbEntity
   8
 UTILITY_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -8028,8 +8028,8 @@ EB
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -8242,8 +8242,8 @@ F2
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -8358,8 +8358,8 @@ F6
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -8956,8 +8956,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9158,8 +9158,8 @@ LWPOLYLINE
 AcDbEntity
   8
 UTILITY_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9406,8 +9406,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9466,8 +9466,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9714,8 +9714,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9870,8 +9870,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -9996,8 +9996,8 @@ LWPOLYLINE
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -10149,7 +10149,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 12F
 330
@@ -10157,37 +10157,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 30.0
- 20
-235.5
- 10
-34.5
  20
 240.0
- 10
-30.0
- 20
-244.5
- 10
-25.5
- 20
-240.0
- 10
-30.0
- 20
-235.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10219,7 +10201,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 131
 330
@@ -10227,37 +10209,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 110.0
- 20
-285.5
- 10
-114.5
  20
 290.0
- 10
-110.0
- 20
-294.5
- 10
-105.5
- 20
-290.0
- 10
-110.0
- 20
-285.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10289,7 +10253,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 133
 330
@@ -10297,37 +10261,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 105.0
- 20
-150.5
- 10
-109.5
  20
 155.0
- 10
-105.0
- 20
-159.5
- 10
-100.5
- 20
-155.0
- 10
-105.0
- 20
-150.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10359,7 +10305,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 135
 330
@@ -10367,37 +10313,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 175.0
  20
-170.5
- 10
-179.5
- 20
 175.0
- 10
-175.0
- 20
-179.5
- 10
-170.5
- 20
-175.0
- 10
-175.0
- 20
-170.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10429,7 +10357,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 137
 330
@@ -10437,37 +10365,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 250.0
- 20
-110.5
- 10
-254.5
  20
 115.0
- 10
-250.0
- 20
-119.5
- 10
-245.5
- 20
-115.0
- 10
-250.0
- 20
-110.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10499,7 +10409,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 139
 330
@@ -10507,37 +10417,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 260.0
- 20
-210.5
- 10
-264.5
  20
 215.0
- 10
-260.0
- 20
-219.5
- 10
-255.5
- 20
-215.0
- 10
-260.0
- 20
-210.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10569,7 +10461,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 13B
 330
@@ -10577,37 +10469,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 325.0
- 20
-135.5
- 10
-329.5
  20
 140.0
- 10
-325.0
- 20
-144.5
- 10
-320.5
- 20
-140.0
- 10
-325.0
- 20
-135.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10639,7 +10513,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 13D
 330
@@ -10647,37 +10521,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 345.0
- 20
-270.5
- 10
-349.5
  20
 275.0
- 10
-345.0
- 20
-279.5
- 10
-340.5
- 20
-275.0
- 10
-345.0
- 20
-270.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10709,7 +10565,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 13F
 330
@@ -10717,37 +10573,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 425.0
- 20
-210.5
- 10
-429.5
  20
 215.0
- 10
-425.0
- 20
-219.5
- 10
-420.5
- 20
-215.0
- 10
-425.0
- 20
-210.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10779,7 +10617,7 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 141
 330
@@ -10787,37 +10625,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ANNOTATION
- 62
-4
+TABLE_GRID
 370
-25
+30
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
 432.0
- 20
-90.5
- 10
-436.5
  20
 95.0
- 10
-432.0
- 20
-99.5
- 10
-427.5
- 20
-95.0
- 10
-432.0
- 20
-90.5
+ 30
+0.0
+ 40
+3.8
   0
 TEXT
   5
@@ -10849,9 +10669,113 @@ AcDbText
 100
 AcDbText
   0
-LWPOLYLINE
+CIRCLE
   5
 143
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+30
+100
+AcDbCircle
+ 10
+410.0
+ 20
+68.0
+ 30
+0.0
+ 40
+3.8
+  0
+TEXT
+  5
+144
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+408.2
+ 20
+67.0
+ 30
+0.0
+ 40
+2.2
+  1
+11
+ 11
+408.2
+ 21
+67.0
+ 31
+0.0
+100
+AcDbText
+  0
+CIRCLE
+  5
+145
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+30
+100
+AcDbCircle
+ 10
+360.0
+ 20
+315.0
+ 30
+0.0
+ 40
+3.8
+  0
+TEXT
+  5
+146
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+358.2
+ 20
+314.0
+ 30
+0.0
+ 40
+2.2
+  1
+12
+ 11
+358.2
+ 21
+314.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+147
 330
 17
 100
@@ -10869,143 +10793,23 @@ AcDbPolyline
  10
 25.0
  20
-140.0
+145.0
  10
-75.0
+78.0
  20
-140.0
+145.0
  10
-75.0
+78.0
  20
-80.0
+75.0
  10
 25.0
  20
-80.0
+75.0
  10
 25.0
  20
-140.0
-  0
-TEXT
-  5
-144
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-28.0
- 20
-134.0
- 30
-0.0
- 40
-2.2
-  1
-STREAM FLAG LEGEND:
- 11
-28.0
- 21
-134.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-145
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-28.0
- 20
-126.0
- 30
-0.0
- 40
-1.8
-  1
-01: Raw Grain Infeed
- 11
-28.0
- 21
-126.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-146
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-28.0
- 20
-119.0
- 30
-0.0
- 40
-1.8
-  1
-02: Process Soak Water
- 11
-28.0
- 21
-119.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-147
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-28.0
- 20
-112.0
- 30
-0.0
- 40
-1.8
-  1
-03: Chemical Reagent
- 11
-28.0
- 21
-112.0
- 31
-0.0
-100
-AcDbText
+145.0
   0
 TEXT
   5
@@ -11021,17 +10825,17 @@ AcDbText
  10
 28.0
  20
-105.0
+138.0
  30
 0.0
  40
-1.8
+2.2
   1
-04: Slurry to Screen
+STREAM FLAG LEGEND:
  11
 28.0
  21
-105.0
+138.0
  31
 0.0
 100
@@ -11051,17 +10855,17 @@ AcDbText
  10
 28.0
  20
-98.0
+131.0
  30
 0.0
  40
-1.8
+1.7
   1
-05: Spent Liquor to ETP
+01: Raw Grain Infeed
  11
 28.0
  21
-98.0
+131.0
  31
 0.0
 100
@@ -11081,17 +10885,17 @@ AcDbText
  10
 28.0
  20
-91.0
+124.0
  30
 0.0
  40
-1.8
+1.7
   1
-06: Moist Dal to Dryer
+02: Process Soak Water
  11
 28.0
  21
-91.0
+124.0
  31
 0.0
 100
@@ -11111,17 +10915,167 @@ AcDbText
  10
 28.0
  20
-84.0
+117.0
  30
 0.0
  40
-1.8
+1.7
+  1
+03: Chemical Reagent
+ 11
+28.0
+ 21
+117.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+14C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+28.0
+ 20
+110.0
+ 30
+0.0
+ 40
+1.7
+  1
+04: Slurry to Screen
+ 11
+28.0
+ 21
+110.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+14D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+28.0
+ 20
+103.0
+ 30
+0.0
+ 40
+1.7
+  1
+05: Spent Liquor to ETP
+ 11
+28.0
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+14E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+28.0
+ 20
+96.0
+ 30
+0.0
+ 40
+1.7
+  1
+06: Moist Dal to Dryer
+ 11
+28.0
+ 21
+96.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+14F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+28.0
+ 20
+89.0
+ 30
+0.0
+ 40
+1.7
+  1
+07: Hot Drying Air
+ 11
+28.0
+ 21
+89.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+150
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+28.0
+ 20
+82.0
+ 30
+0.0
+ 40
+1.7
   1
 09: Saleable Toor Dal
  11
 28.0
  21
-84.0
+82.0
  31
 0.0
 100
@@ -12217,7 +12171,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-14E
+153
   0
 DICTIONARYVAR
   5
@@ -12229,7 +12183,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:42.955759+00:00
+1.4.4 @ 2026-10-16T19:05:41.852677+00:00
   0
 VISUALSTYLE
   5
@@ -18783,7 +18737,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-14E
+153
 330
 2D
 100
@@ -18791,7 +18745,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:42.961688+00:00
+1.4.4 @ 2026-10-16T19:05:41.862562+00:00
   0
 ENDSEC
   0

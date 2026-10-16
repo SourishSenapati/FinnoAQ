@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461329.9887037035
+2461331.024849537
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461329.9887037035
+2461331.024849537
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-18F
+16D
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{6FB4DF4E-90D8-4D38-80DB-7CFB214B4223}
+{183DC47D-AC1F-4035-8903-F8C7A262E48B}
   9
 $VERSIONGUID
   2
-{8F1C2DE9-7671-40BE-9C9A-DB6A1283375B}
+{CF2D6DD9-ABC3-42DB-A561-E569852115CA}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-18C
+16A
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-18D
+16B
 330
 3
 100
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
-HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.
+FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
-P&ID - SOAKING BATTERY & CHEMICAL DOSING
+P&ID - RAPID HYDRATION SOAK BATTERY & DOSING SKID
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: PIPING | STAGE: CONCEPTUAL FEED
+DISCIPLINE: PIPING | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-003
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 3 OF 14
+SHEET: 3 OF 12
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6671,7 +6671,7 @@ CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
 100
 AcDbText
   0
-LWPOLYLINE
+ARC
   5
 BD
 330
@@ -6683,33 +6683,23 @@ EQUIPMENT
 370
 50
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
-50.0
+140.0
  20
-280.0
- 10
-80.0
- 20
-280.0
- 10
-80.0
- 20
-250.0
- 10
-50.0
- 20
-250.0
- 10
-50.0
- 20
-280.0
+265.0
+ 30
+0.0
+ 40
+28.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
   0
-LWPOLYLINE
+LINE
   5
 BE
 330
@@ -6721,33 +6711,21 @@ EQUIPMENT
 370
 50
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbLine
  10
-50.0
+112.0
  20
-250.0
- 10
-80.0
- 20
-250.0
- 10
-70.0
- 20
-230.0
- 10
-60.0
- 20
-230.0
- 10
-50.0
- 20
-250.0
+265.0
+ 30
+0.0
+ 11
+112.0
+ 21
+210.0
+ 31
+0.0
   0
-TEXT
+LINE
   5
 BF
 330
@@ -6755,29 +6733,25 @@ BF
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+50
 100
-AcDbText
+AcDbLine
  10
-45.0
+168.0
  20
-284.0
+265.0
  30
 0.0
- 40
-2.5
-  1
-WEIGH HOPPER WH-101
  11
-45.0
+168.0
  21
-284.0
+210.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 C0
 330
@@ -6785,29 +6759,25 @@ C0
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+50
 100
-AcDbText
+AcDbLine
  10
-49.0
+112.0
  20
-262.0
+210.0
  30
 0.0
- 40
-2.0
-  1
-CAPACITY: 1,500 kg
  11
-49.0
+134.0
  21
-262.0
+185.0
  31
 0.0
-100
-AcDbText
   0
-CIRCLE
+LINE
   5
 C1
 330
@@ -6815,19 +6785,23 @@ C1
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
 370
-25
+50
 100
-AcDbCircle
+AcDbLine
  10
-40.0
+168.0
  20
-255.0
+210.0
  30
 0.0
- 40
-6.0
+ 11
+146.0
+ 21
+185.0
+ 31
+0.0
   0
 LINE
   5
@@ -6837,549 +6811,27 @@ C2
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
+370
+50
 100
 AcDbLine
  10
-34.0
+134.0
  20
-255.0
+185.0
  30
 0.0
  11
-46.0
+146.0
  21
-255.0
+185.0
  31
 0.0
   0
-TEXT
+LWPOLYLINE
   5
 C3
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-36.8
- 20
-256.2
- 30
-0.0
- 40
-2.2
-  1
-WIT
- 11
-36.8
- 21
-256.2
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-C4
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-36.8
- 20
-250.8
- 30
-0.0
- 40
-2.0
-  1
-100
- 11
-36.8
- 21
-250.8
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-C5
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-  6
-DASHED
-370
-18
-100
-AcDbLine
- 10
-40.0
- 20
-261.0
- 30
-0.0
- 11
-50.0
- 21
-255.0
- 31
-0.0
-  0
-CIRCLE
-  5
-C6
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-370
-25
-100
-AcDbCircle
- 10
-40.0
- 20
-272.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-C7
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
- 10
-34.0
- 20
-272.0
- 30
-0.0
- 11
-46.0
- 21
-272.0
- 31
-0.0
-  0
-TEXT
-  5
-C8
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-36.8
- 20
-273.2
- 30
-0.0
- 40
-2.2
-  1
-WIC
- 11
-36.8
- 21
-273.2
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-C9
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-36.8
- 20
-267.8
- 30
-0.0
- 40
-2.0
-  1
-100
- 11
-36.8
- 21
-267.8
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-CA
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-370
-35
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-61.0
- 20
-216.0
- 10
-69.0
- 20
-224.0
- 10
-61.0
- 20
-224.0
- 10
-69.0
- 20
-216.0
- 10
-61.0
- 20
-216.0
-  0
-LINE
-  5
-CB
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-65.0
- 20
-220.0
- 30
-0.0
- 11
-71.0
- 21
-220.0
- 31
-0.0
-  0
-ARC
-  5
-CC
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-74.0
- 20
-220.0
- 30
-0.0
- 40
-3.0
-100
-AcDbArc
- 50
-270.0
- 51
-90.0
-  0
-LINE
-  5
-CD
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-74.0
- 20
-217.0
- 30
-0.0
- 11
-74.0
- 21
-223.0
- 31
-0.0
-  0
-TEXT
-  5
-CE
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-78.0
- 20
-219.0
- 30
-0.0
- 40
-1.8
-  1
-XV-100
- 11
-78.0
- 21
-219.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-CF
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-57.0
- 20
-219.0
- 30
-0.0
- 40
-1.5
-  1
-FC
- 11
-57.0
- 21
-219.0
- 31
-0.0
-100
-AcDbText
-  0
-ARC
-  5
-D0
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbCircle
- 10
-185.0
- 20
-270.0
- 30
-0.0
- 40
-30.0
-100
-AcDbArc
- 50
-0.0
- 51
-180.0
-  0
-LINE
-  5
-D1
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-155.0
- 20
-270.0
- 30
-0.0
- 11
-155.0
- 21
-210.0
- 31
-0.0
-  0
-LINE
-  5
-D2
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-215.0
- 20
-270.0
- 30
-0.0
- 11
-215.0
- 21
-210.0
- 31
-0.0
-  0
-LINE
-  5
-D3
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-155.0
- 20
-210.0
- 30
-0.0
- 11
-177.0
- 21
-182.0
- 31
-0.0
-  0
-LINE
-  5
-D4
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-215.0
- 20
-210.0
- 30
-0.0
- 11
-193.0
- 21
-182.0
- 31
-0.0
-  0
-LINE
-  5
-D5
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-177.0
- 20
-182.0
- 30
-0.0
- 11
-193.0
- 21
-182.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-D6
 330
 17
 100
@@ -7395,29 +6847,29 @@ AcDbPolyline
  70
 0
  10
-177.0
+134.0
  20
-300.0
+293.0
  10
-193.0
+146.0
  20
-300.0
+293.0
  10
-193.0
+146.0
  20
-316.0
+305.0
  10
-177.0
+134.0
  20
-316.0
+305.0
  10
-177.0
+134.0
  20
-300.0
+293.0
   0
 LINE
   5
-D7
+C4
 330
 17
 100
@@ -7425,25 +6877,25 @@ AcDbEntity
   8
 EQUIPMENT
 370
-35
+30
 100
 AcDbLine
  10
-185.0
+140.0
  20
-300.0
+293.0
  30
 0.0
  11
-185.0
+140.0
  21
-198.0
+202.0
  31
 0.0
   0
 LINE
   5
-D8
+C5
 330
 17
 100
@@ -7451,25 +6903,25 @@ AcDbEntity
   8
 EQUIPMENT
 370
-35
+30
 100
 AcDbLine
  10
-167.0
+124.0
  20
-204.0
+206.0
  30
 0.0
  11
-203.0
+156.0
  21
-204.0
+206.0
  31
 0.0
   0
 TEXT
   5
-D9
+C6
 330
 17
 100
@@ -7479,23 +6931,543 @@ ANNOTATION
 100
 AcDbText
  10
-171.0
+126.0
  20
-250.0
+240.0
  30
 0.0
  40
-3.5
+2.5
   1
 TK-101A
  11
-171.0
+126.0
  21
-250.0
+240.0
  31
 0.0
 100
 AcDbText
+  0
+TEXT
+  5
+C7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+124.0
+ 20
+232.0
+ 30
+0.0
+ 40
+1.8
+  1
+7.5 m3 SS316L
+ 11
+124.0
+ 21
+232.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+C8
+330
+17
+100
+AcDbEntity
+  8
+VALVES
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+138.0
+ 20
+171.0
+ 10
+142.0
+ 20
+179.0
+ 10
+138.0
+ 20
+179.0
+ 10
+142.0
+ 20
+171.0
+ 10
+138.0
+ 20
+171.0
+  0
+CIRCLE
+  5
+C9
+330
+17
+100
+AcDbEntity
+  8
+VALVES
+370
+30
+100
+AcDbCircle
+ 10
+144.0
+ 20
+175.0
+ 30
+0.0
+ 40
+3.0
+  0
+LINE
+  5
+CA
+330
+17
+100
+AcDbEntity
+  8
+VALVES
+370
+25
+100
+AcDbLine
+ 10
+140.0
+ 20
+175.0
+ 30
+0.0
+ 11
+144.0
+ 21
+175.0
+ 31
+0.0
+  0
+TEXT
+  5
+CB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+143.0
+ 20
+180.0
+ 30
+0.0
+ 40
+1.4
+  1
+FC
+ 11
+143.0
+ 21
+180.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+CC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+146.0
+ 20
+174.0
+ 30
+0.0
+ 40
+1.5
+  1
+XV-103
+ 11
+146.0
+ 21
+174.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+CD
+330
+17
+100
+AcDbEntity
+  8
+PROCESS_PIPING
+370
+50
+100
+AcDbLine
+ 10
+140.0
+ 20
+185.0
+ 30
+0.0
+ 11
+140.0
+ 21
+179.0
+ 31
+0.0
+  0
+LINE
+  5
+CE
+330
+17
+100
+AcDbEntity
+  8
+PROCESS_PIPING
+370
+50
+100
+AcDbLine
+ 10
+140.0
+ 20
+171.0
+ 30
+0.0
+ 11
+140.0
+ 21
+150.0
+ 31
+0.0
+  0
+CIRCLE
+  5
+CF
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+25
+100
+AcDbCircle
+ 10
+183.0
+ 20
+245.0
+ 30
+0.0
+ 40
+4.5
+  0
+LINE
+  5
+D0
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+18
+100
+AcDbLine
+ 10
+178.5
+ 20
+245.0
+ 30
+0.0
+ 11
+187.5
+ 21
+245.0
+ 31
+0.0
+  0
+TEXT
+  5
+D1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+179.8
+ 20
+246.0
+ 30
+0.0
+ 40
+1.6
+  1
+LIT
+ 11
+179.8
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+D2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+180.0
+ 20
+241.8
+ 30
+0.0
+ 40
+1.6
+  1
+101
+ 11
+180.0
+ 21
+241.8
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+D3
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+  6
+DASHED
+370
+18
+100
+AcDbLine
+ 10
+183.0
+ 20
+249.5
+ 30
+0.0
+ 11
+168.0
+ 21
+245.0
+ 31
+0.0
+  0
+CIRCLE
+  5
+D4
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+25
+100
+AcDbCircle
+ 10
+194.0
+ 20
+245.0
+ 30
+0.0
+ 40
+4.5
+  0
+LINE
+  5
+D5
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+18
+100
+AcDbLine
+ 10
+189.5
+ 20
+245.0
+ 30
+0.0
+ 11
+198.5
+ 21
+245.0
+ 31
+0.0
+  0
+TEXT
+  5
+D6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+190.8
+ 20
+246.0
+ 30
+0.0
+ 40
+1.6
+  1
+LIC
+ 11
+190.8
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+D7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.0
+ 20
+241.8
+ 30
+0.0
+ 40
+1.6
+  1
+101
+ 11
+191.0
+ 21
+241.8
+ 31
+0.0
+100
+AcDbText
+  0
+CIRCLE
+  5
+D8
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+25
+100
+AcDbCircle
+ 10
+97.0
+ 20
+230.0
+ 30
+0.0
+ 40
+4.5
+  0
+LINE
+  5
+D9
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+18
+100
+AcDbLine
+ 10
+92.5
+ 20
+230.0
+ 30
+0.0
+ 11
+101.5
+ 21
+230.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7509,19 +7481,19 @@ ANNOTATION
 100
 AcDbText
  10
-163.0
+93.8
  20
-242.0
+231.0
  30
 0.0
  40
-2.2
+1.6
   1
-SOAK VESSEL (7.5 m3)
+TIT
  11
-163.0
+93.8
  21
-242.0
+231.0
  31
 0.0
 100
@@ -7539,27 +7511,55 @@ ANNOTATION
 100
 AcDbText
  10
-169.0
+94.0
  20
-234.0
+226.8
  30
 0.0
  40
-2.0
+1.6
   1
-AG-101A (4.0 kW)
+101
  11
-169.0
+94.0
  21
-234.0
+226.8
  31
 0.0
 100
 AcDbText
   0
-CIRCLE
+LINE
   5
 DC
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+  6
+DASHED
+370
+18
+100
+AcDbLine
+ 10
+97.0
+ 20
+234.5
+ 30
+0.0
+ 11
+112.0
+ 21
+230.0
+ 31
+0.0
+  0
+CIRCLE
+  5
+DD
 330
 17
 100
@@ -7571,39 +7571,15 @@ INSTRUMENTATION
 100
 AcDbCircle
  10
-163.0
+86.0
  20
-298.0
+230.0
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
-  5
-DD
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
- 10
-157.0
- 20
-298.0
- 30
-0.0
- 11
-169.0
- 21
-298.0
- 31
-0.0
-  0
-TEXT
   5
 DE
 330
@@ -7611,27 +7587,23 @@ DE
 100
 AcDbEntity
   8
-ANNOTATION
+INSTRUMENTATION
+370
+18
 100
-AcDbText
+AcDbLine
  10
-159.8
+81.5
  20
-299.2
+230.0
  30
 0.0
- 40
-2.2
-  1
-LIT
  11
-159.8
+90.5
  21
-299.2
+230.0
  31
 0.0
-100
-AcDbText
   0
 TEXT
   5
@@ -7645,25 +7617,25 @@ ANNOTATION
 100
 AcDbText
  10
-159.8
+82.8
  20
-293.8
+231.0
  30
 0.0
  40
-2.0
+1.6
   1
-101
+TIC
  11
-159.8
+82.8
  21
-293.8
+231.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+TEXT
   5
 E0
 330
@@ -7671,27 +7643,29 @@ E0
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
-370
-18
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-163.0
+83.0
  20
-292.0
+226.8
  30
 0.0
+ 40
+1.6
+  1
+101
  11
-170.0
+83.0
  21
-282.0
+226.8
  31
 0.0
+100
+AcDbText
   0
-CIRCLE
+ARC
   5
 E1
 330
@@ -7699,19 +7673,25 @@ E1
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
 370
-25
+50
 100
 AcDbCircle
  10
-163.0
+260.0
  20
-312.0
+265.0
  30
 0.0
  40
-6.0
+28.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
   0
 LINE
   5
@@ -7721,23 +7701,25 @@ E2
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
+370
+50
 100
 AcDbLine
  10
-157.0
+232.0
  20
-312.0
+265.0
  30
 0.0
  11
-169.0
+232.0
  21
-312.0
+210.0
  31
 0.0
   0
-TEXT
+LINE
   5
 E3
 330
@@ -7745,29 +7727,25 @@ E3
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+50
 100
-AcDbText
+AcDbLine
  10
-159.8
+288.0
  20
-313.2
+265.0
  30
 0.0
- 40
-2.2
-  1
-LIC
  11
-159.8
+288.0
  21
-313.2
+210.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 E4
 330
@@ -7775,29 +7753,25 @@ E4
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+50
 100
-AcDbText
+AcDbLine
  10
-159.8
+232.0
  20
-307.8
+210.0
  30
 0.0
- 40
-2.0
-  1
-101
  11
-159.8
+254.0
  21
-307.8
+185.0
  31
 0.0
-100
-AcDbText
   0
-CIRCLE
+LINE
   5
 E5
 330
@@ -7805,19 +7779,23 @@ E5
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
 370
-25
+50
 100
-AcDbCircle
+AcDbLine
  10
-231.0
+288.0
  20
-245.0
+210.0
  30
 0.0
- 40
-6.0
+ 11
+266.0
+ 21
+185.0
+ 31
+0.0
   0
 LINE
   5
@@ -7827,23 +7805,25 @@ E6
 100
 AcDbEntity
   8
-INSTRUMENTATION
+EQUIPMENT
+370
+50
 100
 AcDbLine
  10
-225.0
+254.0
  20
-245.0
+185.0
  30
 0.0
  11
-237.0
+266.0
  21
-245.0
+185.0
  31
 0.0
   0
-TEXT
+LWPOLYLINE
   5
 E7
 330
@@ -7851,29 +7831,37 @@ E7
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+40
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-227.8
+254.0
  20
-246.2
- 30
-0.0
- 40
-2.2
-  1
-TIT
- 11
-227.8
- 21
-246.2
- 31
-0.0
-100
-AcDbText
+293.0
+ 10
+266.0
+ 20
+293.0
+ 10
+266.0
+ 20
+305.0
+ 10
+254.0
+ 20
+305.0
+ 10
+254.0
+ 20
+293.0
   0
-TEXT
+LINE
   5
 E8
 330
@@ -7881,27 +7869,23 @@ E8
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+30
 100
-AcDbText
+AcDbLine
  10
-227.8
+260.0
  20
-240.8
+293.0
  30
 0.0
- 40
-2.0
-  1
-101
  11
-227.8
+260.0
  21
-240.8
+202.0
  31
 0.0
-100
-AcDbText
   0
 LINE
   5
@@ -7911,27 +7895,25 @@ E9
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
+EQUIPMENT
 370
-18
+30
 100
 AcDbLine
  10
-231.0
+244.0
  20
-251.0
+206.0
  30
 0.0
  11
-215.0
+276.0
  21
-245.0
+206.0
  31
 0.0
   0
-CIRCLE
+TEXT
   5
 EA
 330
@@ -7939,21 +7921,29 @@ EA
 100
 AcDbEntity
   8
-INSTRUMENTATION
-370
-25
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-245.0
+246.0
  20
-245.0
+240.0
  30
 0.0
  40
-6.0
+2.5
+  1
+TK-101B
+ 11
+246.0
+ 21
+240.0
+ 31
+0.0
+100
+AcDbText
   0
-LINE
+TEXT
   5
 EB
 330
@@ -7961,23 +7951,29 @@ EB
 100
 AcDbEntity
   8
-INSTRUMENTATION
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-239.0
+244.0
  20
-245.0
+232.0
  30
 0.0
+ 40
+1.8
+  1
+7.5 m3 SS316L
  11
-251.0
+244.0
  21
-245.0
+232.0
  31
 0.0
+100
+AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 EC
 330
@@ -7985,29 +7981,37 @@ EC
 100
 AcDbEntity
   8
-ANNOTATION
+VALVES
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-241.8
+258.0
  20
-246.2
- 30
-0.0
- 40
-2.2
-  1
-TIC
- 11
-241.8
- 21
-246.2
- 31
-0.0
-100
-AcDbText
+171.0
+ 10
+262.0
+ 20
+179.0
+ 10
+258.0
+ 20
+179.0
+ 10
+262.0
+ 20
+171.0
+ 10
+258.0
+ 20
+171.0
   0
-TEXT
+CIRCLE
   5
 ED
 330
@@ -8015,29 +8019,21 @@ ED
 100
 AcDbEntity
   8
-ANNOTATION
+VALVES
+370
+30
 100
-AcDbText
+AcDbCircle
  10
-241.8
+264.0
  20
-240.8
+175.0
  30
 0.0
  40
-2.0
-  1
-101
- 11
-241.8
- 21
-240.8
- 31
-0.0
-100
-AcDbText
+3.0
   0
-CIRCLE
+LINE
   5
 EE
 330
@@ -8045,21 +8041,25 @@ EE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+VALVES
 370
 25
 100
-AcDbCircle
+AcDbLine
  10
-231.0
+260.0
  20
-225.0
+175.0
  30
 0.0
- 40
-6.0
+ 11
+264.0
+ 21
+175.0
+ 31
+0.0
   0
-LINE
+TEXT
   5
 EF
 330
@@ -8067,21 +8067,27 @@ EF
 100
 AcDbEntity
   8
-INSTRUMENTATION
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-225.0
+263.0
  20
-225.0
+180.0
  30
 0.0
+ 40
+1.4
+  1
+FC
  11
-237.0
+263.0
  21
-225.0
+180.0
  31
 0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -8095,25 +8101,25 @@ ANNOTATION
 100
 AcDbText
  10
-227.8
+266.0
  20
-226.2
+174.0
  30
 0.0
  40
-2.2
+1.5
   1
-AIT
+XV-104
  11
-227.8
+266.0
  21
-226.2
+174.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LINE
   5
 F1
 330
@@ -8121,27 +8127,23 @@ F1
 100
 AcDbEntity
   8
-ANNOTATION
+PROCESS_PIPING
+370
+50
 100
-AcDbText
+AcDbLine
  10
-227.8
+260.0
  20
-220.8
+185.0
  30
 0.0
- 40
-2.0
-  1
-101
  11
-227.8
+260.0
  21
-220.8
+179.0
  31
 0.0
-100
-AcDbText
   0
 LINE
   5
@@ -8151,23 +8153,21 @@ F2
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
+PROCESS_PIPING
 370
-18
+50
 100
 AcDbLine
  10
-231.0
+260.0
  20
-231.0
+171.0
  30
 0.0
  11
-215.0
+260.0
  21
-225.0
+150.0
  31
 0.0
   0
@@ -8185,13 +8185,13 @@ INSTRUMENTATION
 100
 AcDbCircle
  10
-245.0
+303.0
  20
-225.0
+245.0
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
@@ -8202,18 +8202,20 @@ F4
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-239.0
+298.5
  20
-225.0
+245.0
  30
 0.0
  11
-251.0
+307.5
  21
-225.0
+245.0
  31
 0.0
   0
@@ -8229,19 +8231,19 @@ ANNOTATION
 100
 AcDbText
  10
-241.8
+299.8
  20
-226.2
+246.0
  30
 0.0
  40
-2.2
+1.6
   1
-AIC
+LIT
  11
-241.8
+299.8
  21
-226.2
+246.0
  31
 0.0
 100
@@ -8259,133 +8261,27 @@ ANNOTATION
 100
 AcDbText
  10
-241.8
+300.0
  20
-220.8
+241.8
  30
 0.0
  40
-2.0
+1.6
   1
-101
+102
  11
-241.8
+300.0
  21
-220.8
+241.8
  31
 0.0
 100
 AcDbText
   0
-CIRCLE
+LINE
   5
 F7
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-370
-25
-100
-AcDbCircle
- 10
-185.0
- 20
-324.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-F8
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
- 10
-179.0
- 20
-324.0
- 30
-0.0
- 11
-191.0
- 21
-324.0
- 31
-0.0
-  0
-TEXT
-  5
-F9
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-181.8
- 20
-325.2
- 30
-0.0
- 40
-2.2
-  1
-PSV
- 11
-181.8
- 21
-325.2
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-FA
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-181.8
- 20
-319.8
- 30
-0.0
- 40
-2.0
-  1
-101
- 11
-181.8
- 21
-319.8
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-FB
 330
 17
 100
@@ -8399,17 +8295,125 @@ DASHED
 100
 AcDbLine
  10
-185.0
+303.0
  20
-318.0
+249.5
  30
 0.0
  11
-185.0
+288.0
  21
-316.0
+245.0
  31
 0.0
+  0
+CIRCLE
+  5
+F8
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+25
+100
+AcDbCircle
+ 10
+314.0
+ 20
+245.0
+ 30
+0.0
+ 40
+4.5
+  0
+LINE
+  5
+F9
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+18
+100
+AcDbLine
+ 10
+309.5
+ 20
+245.0
+ 30
+0.0
+ 11
+318.5
+ 21
+245.0
+ 31
+0.0
+  0
+TEXT
+  5
+FA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+310.8
+ 20
+246.0
+ 30
+0.0
+ 40
+1.6
+  1
+LIC
+ 11
+310.8
+ 21
+246.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+FB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+311.0
+ 20
+241.8
+ 30
+0.0
+ 40
+1.6
+  1
+102
+ 11
+311.0
+ 21
+241.8
+ 31
+0.0
+100
+AcDbText
   0
 CIRCLE
   5
@@ -8425,13 +8429,13 @@ INSTRUMENTATION
 100
 AcDbCircle
  10
-139.0
+217.0
  20
-220.0
+230.0
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
@@ -8442,18 +8446,20 @@ FD
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-133.0
+212.5
  20
-220.0
+230.0
  30
 0.0
  11
-145.0
+221.5
  21
-220.0
+230.0
  31
 0.0
   0
@@ -8469,19 +8475,19 @@ ANNOTATION
 100
 AcDbText
  10
-135.8
+213.8
  20
-221.2
+231.0
  30
 0.0
  40
-2.2
+1.6
   1
-WIT
+TIT
  11
-135.8
+213.8
  21
-221.2
+231.0
  31
 0.0
 100
@@ -8499,19 +8505,19 @@ ANNOTATION
 100
 AcDbText
  10
-135.8
+214.0
  20
-215.8
+226.8
  30
 0.0
  40
-2.0
+1.6
   1
-101
+102
  11
-135.8
+214.0
  21
-215.8
+226.8
  31
 0.0
 100
@@ -8533,19 +8539,19 @@ DASHED
 100
 AcDbLine
  10
-139.0
+217.0
  20
-226.0
+234.5
  30
 0.0
  11
-155.0
+232.0
  21
-220.0
+230.0
  31
 0.0
   0
-LWPOLYLINE
+CIRCLE
   5
 101
 330
@@ -8553,35 +8559,19 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-VALVES
+INSTRUMENTATION
 370
-35
+25
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbCircle
  10
-181.0
+206.0
  20
-161.0
- 10
-189.0
- 20
-169.0
- 10
-181.0
- 20
-169.0
- 10
-189.0
- 20
-161.0
- 10
-181.0
- 20
-161.0
+230.0
+ 30
+0.0
+ 40
+4.5
   0
 LINE
   5
@@ -8591,75 +8581,27 @@ LINE
 100
 AcDbEntity
   8
-VALVES
+INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-185.0
+201.5
  20
-165.0
+230.0
  30
 0.0
  11
-191.0
+210.5
  21
-165.0
- 31
-0.0
-  0
-ARC
-  5
-103
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-194.0
- 20
-165.0
- 30
-0.0
- 40
-3.0
-100
-AcDbArc
- 50
-270.0
- 51
-90.0
-  0
-LINE
-  5
-104
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-194.0
- 20
-162.0
- 30
-0.0
- 11
-194.0
- 21
-168.0
+230.0
  31
 0.0
   0
 TEXT
   5
-105
+103
 330
 17
 100
@@ -8669,23 +8611,91 @@ ANNOTATION
 100
 AcDbText
  10
-198.0
+202.8
  20
-164.0
+231.0
  30
 0.0
  40
-1.8
+1.6
   1
-XV-101
+TIC
  11
-198.0
+202.8
  21
-164.0
+231.0
  31
 0.0
 100
 AcDbText
+  0
+TEXT
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+203.0
+ 20
+226.8
+ 30
+0.0
+ 40
+1.6
+  1
+102
+ 11
+203.0
+ 21
+226.8
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+105
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+332.0
+ 20
+150.0
+ 10
+368.0
+ 20
+140.0
+ 10
+368.0
+ 20
+128.0
+ 10
+332.0
+ 20
+138.0
+ 10
+332.0
+ 20
+150.0
   0
 TEXT
   5
@@ -8699,25 +8709,25 @@ ANNOTATION
 100
 AcDbText
  10
-177.0
+332.0
  20
-164.0
+155.0
  30
 0.0
  40
-1.5
+2.2
   1
-FC
+DEWATERING SCREEN SC-101
  11
-177.0
+332.0
  21
-164.0
+155.0
  31
 0.0
 100
 AcDbText
   0
-ARC
+LINE
   5
 107
 330
@@ -8725,25 +8735,23 @@ ARC
 100
 AcDbEntity
   8
-EQUIPMENT
+PROCESS_PIPING
 370
 50
 100
-AcDbCircle
+AcDbLine
  10
-305.0
+140.0
  20
-270.0
+150.0
  30
 0.0
- 40
-30.0
-100
-AcDbArc
- 50
+ 11
+332.0
+ 21
+150.0
+ 31
 0.0
- 51
-180.0
   0
 LINE
   5
@@ -8753,25 +8761,25 @@ LINE
 100
 AcDbEntity
   8
-EQUIPMENT
+PROCESS_PIPING
 370
 50
 100
 AcDbLine
  10
-275.0
+260.0
  20
-270.0
+150.0
  30
 0.0
  11
-275.0
+332.0
  21
-210.0
+150.0
  31
 0.0
   0
-LINE
+LWPOLYLINE
   5
 109
 330
@@ -8779,25 +8787,33 @@ LINE
 100
 AcDbEntity
   8
-EQUIPMENT
+PROCESS_PIPING
 370
-50
+40
 100
-AcDbLine
+AcDbPolyline
+ 90
+4
+ 70
+0
  10
-335.0
+307.0
  20
-270.0
- 30
-0.0
- 11
-335.0
- 21
-210.0
- 31
-0.0
+148.5
+ 10
+310.0
+ 20
+150.0
+ 10
+307.0
+ 20
+151.5
+ 10
+307.0
+ 20
+148.5
   0
-LINE
+TEXT
   5
 10A
 330
@@ -8805,79 +8821,31 @@ LINE
 100
 AcDbEntity
   8
-EQUIPMENT
-370
-50
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-275.0
+170.0
  20
-210.0
+153.0
  30
 0.0
+ 40
+1.8
+  1
+6"-SL-103-SS316L (DAL SLURRY)
  11
-297.0
+170.0
  21
-182.0
+153.0
  31
 0.0
-  0
-LINE
-  5
-10B
-330
-17
 100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-335.0
- 20
-210.0
- 30
-0.0
- 11
-313.0
- 21
-182.0
- 31
-0.0
-  0
-LINE
-  5
-10C
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbLine
- 10
-297.0
- 20
-182.0
- 30
-0.0
- 11
-313.0
- 21
-182.0
- 31
-0.0
+AcDbText
   0
 LWPOLYLINE
   5
-10D
+10B
 330
 17
 100
@@ -8893,27 +8861,87 @@ AcDbPolyline
  70
 0
  10
-297.0
+40.0
  20
-300.0
+190.0
  10
-313.0
+75.0
  20
-300.0
+190.0
  10
-313.0
+75.0
  20
-316.0
+270.0
  10
-297.0
+40.0
  20
-316.0
+270.0
  10
-297.0
+40.0
  20
-300.0
+190.0
   0
-LINE
+TEXT
+  5
+10C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.0
+ 20
+275.0
+ 30
+0.0
+ 40
+2.2
+  1
+REAGENT DOSING
+ 11
+40.0
+ 21
+275.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+10D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+40.0
+ 20
+240.0
+ 30
+0.0
+ 40
+1.8
+  1
+SK-100 (DUAL 500L)
+ 11
+40.0
+ 21
+240.0
+ 31
+0.0
+100
+AcDbText
+  0
+CIRCLE
   5
 10E
 330
@@ -8925,21 +8953,17 @@ EQUIPMENT
 370
 35
 100
-AcDbLine
+AcDbCircle
  10
-305.0
+57.5
  20
-300.0
+170.0
  30
 0.0
- 11
-305.0
- 21
-198.0
- 31
-0.0
+ 40
+7.0
   0
-LINE
+TEXT
   5
 10F
 330
@@ -8947,25 +8971,29 @@ LINE
 100
 AcDbEntity
   8
-EQUIPMENT
-370
-35
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-287.0
+50.0
  20
-204.0
+157.0
  30
 0.0
+ 40
+1.6
+  1
+P-102A/B
  11
-323.0
+50.0
  21
-204.0
+157.0
  31
 0.0
+100
+AcDbText
   0
-TEXT
+LINE
   5
 110
 330
@@ -8973,29 +9001,25 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+PROCESS_PIPING
+370
+35
 100
-AcDbText
+AcDbLine
  10
-291.0
+57.5
  20
-250.0
+190.0
  30
 0.0
- 40
-3.5
-  1
-TK-101B
  11
-291.0
+57.5
  21
-250.0
+177.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 111
 330
@@ -9003,29 +9027,25 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+PROCESS_PIPING
+370
+35
 100
-AcDbText
+AcDbLine
  10
-283.0
+57.5
  20
-242.0
+163.0
  30
 0.0
- 40
-2.2
-  1
-SOAK VESSEL (7.5 m3)
  11
-283.0
+57.5
  21
-242.0
+130.0
  31
 0.0
-100
-AcDbText
   0
-TEXT
+LINE
   5
 112
 330
@@ -9033,29 +9053,25 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+PROCESS_PIPING
+370
+35
 100
-AcDbText
+AcDbLine
  10
-289.0
+57.5
  20
-234.0
+130.0
  30
 0.0
- 40
-2.0
-  1
-AG-101B (4.0 kW)
  11
-289.0
+140.0
  21
-234.0
+130.0
  31
 0.0
-100
-AcDbText
   0
-CIRCLE
+LINE
   5
 113
 330
@@ -9063,21 +9079,25 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+PROCESS_PIPING
 370
-25
+35
 100
-AcDbCircle
+AcDbLine
  10
-283.0
+140.0
  20
-298.0
+130.0
  30
 0.0
- 40
-6.0
+ 11
+140.0
+ 21
+185.0
+ 31
+0.0
   0
-LINE
+LWPOLYLINE
   5
 114
 330
@@ -9085,21 +9105,31 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+PROCESS_PIPING
+370
+40
 100
-AcDbLine
+AcDbPolyline
+ 90
+4
+ 70
+0
  10
-277.0
+97.0
  20
-298.0
- 30
-0.0
- 11
-289.0
- 21
-298.0
- 31
-0.0
+128.5
+ 10
+100.0
+ 20
+130.0
+ 10
+97.0
+ 20
+131.5
+ 10
+97.0
+ 20
+128.5
   0
 TEXT
   5
@@ -9113,25 +9143,25 @@ ANNOTATION
 100
 AcDbText
  10
-279.8
+65.0
  20
-299.2
+133.0
  30
 0.0
  40
-2.2
+1.6
   1
-LIT
+1"-CH-102-PTFE (REAGENT DOSING)
  11
-279.8
+65.0
  21
-299.2
+133.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 116
 330
@@ -9139,29 +9169,37 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-279.8
+25.0
  20
-293.8
- 30
-0.0
- 40
-2.0
-  1
-102
- 11
-279.8
- 21
-293.8
- 31
-0.0
-100
-AcDbText
+125.0
+ 10
+50.0
+ 20
+125.0
+ 10
+50.0
+ 20
+115.0
+ 10
+25.0
+ 20
+115.0
+ 10
+25.0
+ 20
+125.0
   0
-LINE
+TEXT
   5
 117
 330
@@ -9169,27 +9207,29 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
-370
-18
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-283.0
+26.2
  20
-292.0
+118.0
  30
 0.0
+ 40
+1.8
+  1
+TAG NO
  11
-290.0
+26.2
  21
-282.0
+118.0
  31
 0.0
+100
+AcDbText
   0
-CIRCLE
+LWPOLYLINE
   5
 118
 330
@@ -9197,47 +9237,39 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+BORDER_TITLE
 370
-25
+35
 100
-AcDbCircle
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-283.0
+50.0
  20
-312.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-119
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
+125.0
  10
-277.0
+95.0
  20
-312.0
- 30
-0.0
- 11
-289.0
- 21
-312.0
- 31
-0.0
+125.0
+ 10
+95.0
+ 20
+115.0
+ 10
+50.0
+ 20
+115.0
+ 10
+50.0
+ 20
+125.0
   0
 TEXT
   5
-11A
+119
 330
 17
 100
@@ -9247,23 +9279,61 @@ ANNOTATION
 100
 AcDbText
  10
-279.8
+51.2
  20
-313.2
+118.0
  30
 0.0
  40
-2.2
+1.8
   1
-LIC
+SERVICE
  11
-279.8
+51.2
  21
-313.2
+118.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+11A
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+95.0
+ 20
+125.0
+ 10
+140.0
+ 20
+125.0
+ 10
+140.0
+ 20
+115.0
+ 10
+95.0
+ 20
+115.0
+ 10
+95.0
+ 20
+125.0
   0
 TEXT
   5
@@ -9277,25 +9347,25 @@ ANNOTATION
 100
 AcDbText
  10
-279.8
+96.2
  20
-307.8
+118.0
  30
 0.0
  40
-2.0
+1.8
   1
-102
+LINE / VESSEL
  11
-279.8
+96.2
  21
-307.8
+118.0
  31
 0.0
 100
 AcDbText
   0
-CIRCLE
+LWPOLYLINE
   5
 11C
 330
@@ -9303,47 +9373,39 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+BORDER_TITLE
 370
-25
+35
 100
-AcDbCircle
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-351.0
+140.0
  20
-245.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-11D
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
+125.0
  10
-345.0
+195.0
  20
-245.0
- 30
-0.0
- 11
-357.0
- 21
-245.0
- 31
-0.0
+125.0
+ 10
+195.0
+ 20
+115.0
+ 10
+140.0
+ 20
+115.0
+ 10
+140.0
+ 20
+125.0
   0
 TEXT
   5
-11E
+11D
 330
 17
 100
@@ -9353,23 +9415,61 @@ ANNOTATION
 100
 AcDbText
  10
-347.8
+141.2
  20
-246.2
+118.0
  30
 0.0
  40
-2.2
+1.8
   1
-TIT
+TRANSMITTER
  11
-347.8
+141.2
  21
-246.2
+118.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+195.0
+ 20
+125.0
+ 10
+255.0
+ 20
+125.0
+ 10
+255.0
+ 20
+115.0
+ 10
+195.0
+ 20
+115.0
+ 10
+195.0
+ 20
+125.0
   0
 TEXT
   5
@@ -9383,25 +9483,25 @@ ANNOTATION
 100
 AcDbText
  10
-347.8
+196.2
  20
-240.8
+118.0
  30
 0.0
  40
-2.0
+1.8
   1
-102
+CONTROLLER
  11
-347.8
+196.2
  21
-240.8
+118.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
   5
 120
 330
@@ -9409,27 +9509,37 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
+BORDER_TITLE
 370
-18
+35
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-351.0
+255.0
  20
-251.0
- 30
-0.0
- 11
-335.0
- 21
-245.0
- 31
-0.0
+125.0
+ 10
+365.0
+ 20
+125.0
+ 10
+365.0
+ 20
+115.0
+ 10
+255.0
+ 20
+115.0
+ 10
+255.0
+ 20
+125.0
   0
-CIRCLE
+TEXT
   5
 121
 330
@@ -9437,21 +9547,29 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-370
-25
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-365.0
+256.2
  20
-245.0
+118.0
  30
 0.0
  40
-6.0
+1.8
+  1
+FINAL CONTROL ELEMENT
+ 11
+256.2
+ 21
+118.0
+ 31
+0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 122
 330
@@ -9459,21 +9577,35 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+BORDER_TITLE
+370
+35
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-359.0
+365.0
  20
-245.0
- 30
-0.0
- 11
-371.0
- 21
-245.0
- 31
-0.0
+125.0
+ 10
+565.0
+ 20
+125.0
+ 10
+565.0
+ 20
+115.0
+ 10
+365.0
+ 20
+115.0
+ 10
+365.0
+ 20
+125.0
   0
 TEXT
   5
@@ -9487,27 +9619,65 @@ ANNOTATION
 100
 AcDbText
  10
-361.8
+366.2
  20
-246.2
+118.0
  30
 0.0
  40
-2.2
+1.8
   1
-TIC
+INTERLOCK LOGIC & CONTROL NARRATIVE
  11
-361.8
+366.2
  21
-246.2
+118.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 124
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+115.0
+ 10
+50.0
+ 20
+115.0
+ 10
+50.0
+ 20
+106.5
+ 10
+25.0
+ 20
+106.5
+ 10
+25.0
+ 20
+115.0
+  0
+TEXT
+  5
+125
 330
 17
 100
@@ -9517,47 +9687,25 @@ ANNOTATION
 100
 AcDbText
  10
-361.8
+26.2
  20
-240.8
+109.0
  30
 0.0
  40
-2.0
+1.6
   1
-102
+LIC-101A
  11
-361.8
+26.2
  21
-240.8
+109.0
  31
 0.0
 100
 AcDbText
   0
-CIRCLE
-  5
-125
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-370
-25
-100
-AcDbCircle
- 10
-351.0
- 20
-225.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
+LWPOLYLINE
   5
 126
 330
@@ -9565,21 +9713,35 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-345.0
+50.0
  20
-225.0
- 30
-0.0
- 11
-357.0
- 21
-225.0
- 31
-0.0
+115.0
+ 10
+95.0
+ 20
+115.0
+ 10
+95.0
+ 20
+106.5
+ 10
+50.0
+ 20
+106.5
+ 10
+50.0
+ 20
+115.0
   0
 TEXT
   5
@@ -9593,25 +9755,25 @@ ANNOTATION
 100
 AcDbText
  10
-347.8
+51.2
  20
-226.2
+109.0
  30
 0.0
  40
-2.2
+1.6
   1
-AIT
+Soak Tank A Level
  11
-347.8
+51.2
  21
-226.2
+109.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 128
 330
@@ -9619,29 +9781,37 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-347.8
+95.0
  20
-220.8
- 30
-0.0
- 40
-2.0
-  1
-102
- 11
-347.8
- 21
-220.8
- 31
-0.0
-100
-AcDbText
+115.0
+ 10
+140.0
+ 20
+115.0
+ 10
+140.0
+ 20
+106.5
+ 10
+95.0
+ 20
+106.5
+ 10
+95.0
+ 20
+115.0
   0
-LINE
+TEXT
   5
 129
 330
@@ -9649,27 +9819,29 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
-370
-18
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-351.0
+96.2
  20
-231.0
+109.0
  30
 0.0
+ 40
+1.6
+  1
+TK-101A
  11
-335.0
+96.2
  21
-225.0
+109.0
  31
 0.0
+100
+AcDbText
   0
-CIRCLE
+LWPOLYLINE
   5
 12A
 330
@@ -9677,47 +9849,39 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+TABLE_GRID
 370
-25
+18
 100
-AcDbCircle
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-365.0
+140.0
  20
-225.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-12B
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
+115.0
  10
-359.0
+195.0
  20
-225.0
- 30
-0.0
- 11
-371.0
- 21
-225.0
- 31
-0.0
+115.0
+ 10
+195.0
+ 20
+106.5
+ 10
+140.0
+ 20
+106.5
+ 10
+140.0
+ 20
+115.0
   0
 TEXT
   5
-12C
+12B
 330
 17
 100
@@ -9727,23 +9891,61 @@ ANNOTATION
 100
 AcDbText
  10
-361.8
+141.2
  20
-226.2
+109.0
  30
 0.0
  40
-2.2
+1.6
   1
-AIC
+Diff Pressure LT-101A
  11
-361.8
+141.2
  21
-226.2
+109.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+195.0
+ 20
+115.0
+ 10
+255.0
+ 20
+115.0
+ 10
+255.0
+ 20
+106.5
+ 10
+195.0
+ 20
+106.5
+ 10
+195.0
+ 20
+115.0
   0
 TEXT
   5
@@ -9757,25 +9959,25 @@ ANNOTATION
 100
 AcDbText
  10
-361.8
+196.2
  20
-220.8
+109.0
  30
 0.0
  40
-2.0
+1.6
   1
-102
+PLC PID Loop
  11
-361.8
+196.2
  21
-220.8
+109.0
  31
 0.0
 100
 AcDbText
   0
-CIRCLE
+LWPOLYLINE
   5
 12E
 330
@@ -9783,47 +9985,39 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+TABLE_GRID
 370
-25
+18
 100
-AcDbCircle
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-305.0
+255.0
  20
-324.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-12F
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
+115.0
  10
-299.0
+365.0
  20
-324.0
- 30
-0.0
- 11
-311.0
- 21
-324.0
- 31
-0.0
+115.0
+ 10
+365.0
+ 20
+106.5
+ 10
+255.0
+ 20
+106.5
+ 10
+255.0
+ 20
+115.0
   0
 TEXT
   5
-130
+12F
 330
 17
 100
@@ -9833,23 +10027,61 @@ ANNOTATION
 100
 AcDbText
  10
-301.8
+256.2
  20
-325.2
+109.0
  30
 0.0
  40
-2.2
+1.6
   1
-PSV
+Pneumatic XV-101A
  11
-301.8
+256.2
  21
-325.2
+109.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+365.0
+ 20
+115.0
+ 10
+565.0
+ 20
+115.0
+ 10
+565.0
+ 20
+106.5
+ 10
+365.0
+ 20
+106.5
+ 10
+365.0
+ 20
+115.0
   0
 TEXT
   5
@@ -9863,25 +10095,25 @@ ANNOTATION
 100
 AcDbText
  10
-301.8
+366.2
  20
-319.8
+109.0
  30
 0.0
  40
-2.0
+1.6
   1
-102
+Auto cut-off water inlet at 85% batch level; LAH interlock alarm.
  11
-301.8
+366.2
  21
-319.8
+109.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
   5
 132
 330
@@ -9889,27 +10121,37 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-  6
-DASHED
+TABLE_GRID
 370
 18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-305.0
+25.0
  20
-318.0
- 30
-0.0
- 11
-305.0
- 21
-316.0
- 31
-0.0
+106.5
+ 10
+50.0
+ 20
+106.5
+ 10
+50.0
+ 20
+98.0
+ 10
+25.0
+ 20
+98.0
+ 10
+25.0
+ 20
+106.5
   0
-CIRCLE
+TEXT
   5
 133
 330
@@ -9917,21 +10159,29 @@ CIRCLE
 100
 AcDbEntity
   8
-INSTRUMENTATION
-370
-25
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-259.0
+26.2
  20
-220.0
+100.5
  30
 0.0
  40
-6.0
+1.6
+  1
+TIC-101A
+ 11
+26.2
+ 21
+100.5
+ 31
+0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 134
 330
@@ -9939,21 +10189,35 @@ LINE
 100
 AcDbEntity
   8
-INSTRUMENTATION
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-253.0
+50.0
  20
-220.0
- 30
-0.0
- 11
-265.0
- 21
-220.0
- 31
-0.0
+106.5
+ 10
+95.0
+ 20
+106.5
+ 10
+95.0
+ 20
+98.0
+ 10
+50.0
+ 20
+98.0
+ 10
+50.0
+ 20
+106.5
   0
 TEXT
   5
@@ -9967,27 +10231,65 @@ ANNOTATION
 100
 AcDbText
  10
-255.8
+51.2
  20
-221.2
+100.5
  30
 0.0
  40
-2.2
+1.6
   1
-WIT
+Soak Tank A Temp
  11
-255.8
+51.2
  21
-221.2
+100.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 136
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+95.0
+ 20
+106.5
+ 10
+140.0
+ 20
+106.5
+ 10
+140.0
+ 20
+98.0
+ 10
+95.0
+ 20
+98.0
+ 10
+95.0
+ 20
+106.5
+  0
+TEXT
+  5
+137
 330
 17
 100
@@ -9997,51 +10299,23 @@ ANNOTATION
 100
 AcDbText
  10
-255.8
+96.2
  20
-215.8
+100.5
  30
 0.0
  40
-2.0
+1.6
   1
-102
+TK-101A
  11
-255.8
+96.2
  21
-215.8
+100.5
  31
 0.0
 100
 AcDbText
-  0
-LINE
-  5
-137
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-  6
-DASHED
-370
-18
-100
-AcDbLine
- 10
-259.0
- 20
-226.0
- 30
-0.0
- 11
-275.0
- 21
-220.0
- 31
-0.0
   0
 LWPOLYLINE
   5
@@ -10051,9 +10325,9 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
 370
-35
+18
 100
 AcDbPolyline
  90
@@ -10061,103 +10335,29 @@ AcDbPolyline
  70
 0
  10
-301.0
+140.0
  20
-161.0
+106.5
  10
-309.0
+195.0
  20
-169.0
+106.5
  10
-301.0
+195.0
  20
-169.0
+98.0
  10
-309.0
+140.0
  20
-161.0
+98.0
  10
-301.0
+140.0
  20
-161.0
-  0
-LINE
-  5
-139
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-305.0
- 20
-165.0
- 30
-0.0
- 11
-311.0
- 21
-165.0
- 31
-0.0
-  0
-ARC
-  5
-13A
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-314.0
- 20
-165.0
- 30
-0.0
- 40
-3.0
-100
-AcDbArc
- 50
-270.0
- 51
-90.0
-  0
-LINE
-  5
-13B
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-314.0
- 20
-162.0
- 30
-0.0
- 11
-314.0
- 21
-168.0
- 31
-0.0
+106.5
   0
 TEXT
   5
-13C
+139
 330
 17
 100
@@ -10167,23 +10367,129 @@ ANNOTATION
 100
 AcDbText
  10
-318.0
+141.2
  20
-164.0
+100.5
  30
 0.0
  40
-1.8
+1.6
   1
-XV-102
+Duplex RTD TT-101A
  11
-318.0
+141.2
  21
-164.0
+100.5
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+13A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+195.0
+ 20
+106.5
+ 10
+255.0
+ 20
+106.5
+ 10
+255.0
+ 20
+98.0
+ 10
+195.0
+ 20
+98.0
+ 10
+195.0
+ 20
+106.5
+  0
+TEXT
+  5
+13B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+196.2
+ 20
+100.5
+ 30
+0.0
+ 40
+1.6
+  1
+PLC PID Loop
+ 11
+196.2
+ 21
+100.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+255.0
+ 20
+106.5
+ 10
+365.0
+ 20
+106.5
+ 10
+365.0
+ 20
+98.0
+ 10
+255.0
+ 20
+98.0
+ 10
+255.0
+ 20
+106.5
   0
 TEXT
   5
@@ -10197,25 +10503,25 @@ ANNOTATION
 100
 AcDbText
  10
-297.0
+256.2
  20
-164.0
+100.5
  30
 0.0
  40
-1.5
+1.6
   1
-FC
+Modulating TCV-101A
  11
-297.0
+256.2
  21
-164.0
+100.5
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
   5
 13E
 330
@@ -10223,25 +10529,37 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
+TABLE_GRID
 370
-50
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-65.0
+365.0
  20
-220.0
- 30
-0.0
- 11
-65.0
- 21
-328.0
- 31
-0.0
+106.5
+ 10
+565.0
+ 20
+106.5
+ 10
+565.0
+ 20
+98.0
+ 10
+365.0
+ 20
+98.0
+ 10
+365.0
+ 20
+106.5
   0
-LINE
+TEXT
   5
 13F
 330
@@ -10249,25 +10567,29 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
-370
-50
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-65.0
+366.2
  20
-328.0
+100.5
  30
 0.0
+ 40
+1.6
+  1
+Maintains 30.0 deg C +/- 1 deg C via steam injection coil; TAH trip.
  11
-305.0
+366.2
  21
-328.0
+100.5
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 140
 330
@@ -10275,25 +10597,37 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
+TABLE_GRID
 370
-50
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-185.0
+25.0
  20
-328.0
- 30
-0.0
- 11
-185.0
- 21
-290.0
- 31
-0.0
+98.0
+ 10
+50.0
+ 20
+98.0
+ 10
+50.0
+ 20
+89.5
+ 10
+25.0
+ 20
+89.5
+ 10
+25.0
+ 20
+98.0
   0
-LWPOLYLINE
+TEXT
   5
 141
 330
@@ -10301,33 +10635,29 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
- 62
-5
+ANNOTATION
 100
-AcDbPolyline
- 90
-4
- 70
-0
+AcDbText
  10
-183.5
+26.2
  20
-298.0
- 10
-185.0
- 20
-295.0
- 10
-186.5
- 20
-298.0
- 10
-183.5
- 20
-298.0
+92.0
+ 30
+0.0
+ 40
+1.6
+  1
+AIC-101
+ 11
+26.2
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 142
 330
@@ -10335,25 +10665,37 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
+TABLE_GRID
 370
-50
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-305.0
+50.0
  20
-328.0
- 30
-0.0
- 11
-305.0
- 21
-290.0
- 31
-0.0
+98.0
+ 10
+95.0
+ 20
+98.0
+ 10
+95.0
+ 20
+89.5
+ 10
+50.0
+ 20
+89.5
+ 10
+50.0
+ 20
+98.0
   0
-LWPOLYLINE
+TEXT
   5
 143
 330
@@ -10361,33 +10703,29 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
- 62
-5
+ANNOTATION
 100
-AcDbPolyline
- 90
-4
- 70
-0
+AcDbText
  10
-303.5
+51.2
  20
-298.0
- 10
-305.0
- 20
-295.0
- 10
-306.5
- 20
-298.0
- 10
-303.5
- 20
-298.0
+92.0
+ 30
+0.0
+ 40
+1.6
+  1
+Chemical Dosing pH
+ 11
+51.2
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 144
 330
@@ -10395,29 +10733,37 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-110.0
+95.0
  20
-331.0
- 30
-0.0
- 40
-2.2
-  1
-6"-SL-101-CS150 DAL INFEED HEADER
- 11
-110.0
- 21
-331.0
- 31
-0.0
-100
-AcDbText
+98.0
+ 10
+140.0
+ 20
+98.0
+ 10
+140.0
+ 20
+89.5
+ 10
+95.0
+ 20
+89.5
+ 10
+95.0
+ 20
+98.0
   0
-LINE
+TEXT
   5
 145
 330
@@ -10425,25 +10771,29 @@ LINE
 100
 AcDbEntity
   8
-UTILITY_PIPING
-370
-35
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-35.0
+96.2
  20
-350.0
+92.0
  30
 0.0
+ 40
+1.6
+  1
+Dosing Line
  11
-325.0
+96.2
  21
-350.0
+92.0
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 146
 330
@@ -10451,121 +10801,39 @@ LINE
 100
 AcDbEntity
   8
-UTILITY_PIPING
+TABLE_GRID
 370
-35
-100
-AcDbLine
- 10
-170.0
- 20
-350.0
- 30
-0.0
- 11
-170.0
- 21
-285.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-147
-330
-17
-100
-AcDbEntity
-  8
-UTILITY_PIPING
- 62
-5
+18
 100
 AcDbPolyline
  90
-4
- 70
-0
- 10
-168.5
- 20
-295.0
- 10
-170.0
- 20
-292.0
- 10
-171.5
- 20
-295.0
- 10
-168.5
- 20
-295.0
-  0
-LINE
-  5
-148
-330
-17
-100
-AcDbEntity
-  8
-UTILITY_PIPING
-370
-35
-100
-AcDbLine
- 10
-290.0
- 20
-350.0
- 30
-0.0
- 11
-290.0
- 21
-285.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-149
-330
-17
-100
-AcDbEntity
-  8
-UTILITY_PIPING
- 62
 5
-100
-AcDbPolyline
- 90
-4
  70
 0
  10
-288.5
+140.0
  20
-295.0
+98.0
  10
-290.0
+195.0
  20
-292.0
+98.0
  10
-291.5
+195.0
  20
-295.0
+89.5
  10
-288.5
+140.0
  20
-295.0
+89.5
+ 10
+140.0
+ 20
+98.0
   0
 TEXT
   5
-14A
+147
 330
 17
 100
@@ -10575,19 +10843,19 @@ ANNOTATION
 100
 AcDbText
  10
-50.0
+141.2
  20
-353.0
+92.0
  30
 0.0
  40
-2.2
+1.6
   1
-2"-PW-102-SS304 SOFT WATER HEADER
+Online pH AT-101
  11
-50.0
+141.2
  21
-353.0
+92.0
  31
 0.0
 100
@@ -10595,15 +10863,15 @@ AcDbText
   0
 LWPOLYLINE
   5
-14B
+148
 330
 17
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
 370
-35
+18
 100
 AcDbPolyline
  90
@@ -10611,27 +10879,125 @@ AcDbPolyline
  70
 0
  10
-166.0
+195.0
  20
-331.0
+98.0
  10
-174.0
+255.0
  20
-339.0
+98.0
  10
-166.0
+255.0
  20
-339.0
+89.5
  10
-174.0
+195.0
  20
-331.0
+89.5
  10
-166.0
+195.0
  20
-331.0
+98.0
   0
-LINE
+TEXT
+  5
+149
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+196.2
+ 20
+92.0
+ 30
+0.0
+ 40
+1.6
+  1
+PLC Ratio Controller
+ 11
+196.2
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+255.0
+ 20
+98.0
+ 10
+365.0
+ 20
+98.0
+ 10
+365.0
+ 20
+89.5
+ 10
+255.0
+ 20
+89.5
+ 10
+255.0
+ 20
+98.0
+  0
+TEXT
+  5
+14B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+256.2
+ 20
+92.0
+ 30
+0.0
+ 40
+1.6
+  1
+VFD Metering Pump P-102
+ 11
+256.2
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
   5
 14C
 330
@@ -10639,23 +11005,37 @@ LINE
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-170.0
+365.0
  20
-335.0
- 30
-0.0
- 11
-176.0
- 21
-335.0
- 31
-0.0
+98.0
+ 10
+565.0
+ 20
+98.0
+ 10
+565.0
+ 20
+89.5
+ 10
+365.0
+ 20
+89.5
+ 10
+365.0
+ 20
+98.0
   0
-ARC
+TEXT
   5
 14D
 330
@@ -10663,25 +11043,29 @@ ARC
 100
 AcDbEntity
   8
-VALVES
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-179.0
+366.2
  20
-335.0
+92.0
  30
 0.0
  40
-3.0
+1.6
+  1
+Paces reagent stroke volume proportional to batch water filling rate.
+ 11
+366.2
+ 21
+92.0
+ 31
+0.0
 100
-AcDbArc
- 50
-270.0
- 51
-90.0
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 14E
 330
@@ -10689,21 +11073,35 @@ LINE
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-179.0
+25.0
  20
-332.0
- 30
-0.0
- 11
-179.0
- 21
-338.0
- 31
-0.0
+89.5
+ 10
+50.0
+ 20
+89.5
+ 10
+50.0
+ 20
+81.0
+ 10
+25.0
+ 20
+81.0
+ 10
+25.0
+ 20
+89.5
   0
 TEXT
   5
@@ -10717,27 +11115,65 @@ ANNOTATION
 100
 AcDbText
  10
-183.0
+26.2
  20
-334.0
+83.5
  30
 0.0
  40
-1.8
+1.6
   1
-FV-101A
+ZIC-103
  11
-183.0
+26.2
  21
-334.0
+83.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 150
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+50.0
+ 20
+89.5
+ 10
+95.0
+ 20
+89.5
+ 10
+95.0
+ 20
+81.0
+ 10
+50.0
+ 20
+81.0
+ 10
+50.0
+ 20
+89.5
+  0
+TEXT
+  5
+151
 330
 17
 100
@@ -10747,19 +11183,19 @@ ANNOTATION
 100
 AcDbText
  10
-162.0
+51.2
  20
-334.0
+83.5
  30
 0.0
  40
-1.5
+1.6
   1
-FC
+Bottom Dump Knife
  11
-162.0
+51.2
  21
-334.0
+83.5
  31
 0.0
 100
@@ -10767,15 +11203,15 @@ AcDbText
   0
 LWPOLYLINE
   5
-151
+152
 330
 17
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
 370
-35
+18
 100
 AcDbPolyline
  90
@@ -10783,51 +11219,27 @@ AcDbPolyline
  70
 0
  10
-286.0
+95.0
  20
-331.0
+89.5
  10
-294.0
+140.0
  20
-339.0
+89.5
  10
-286.0
+140.0
  20
-339.0
+81.0
  10
-294.0
+95.0
  20
-331.0
+81.0
  10
-286.0
+95.0
  20
-331.0
+89.5
   0
-LINE
-  5
-152
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-290.0
- 20
-335.0
- 30
-0.0
- 11
-296.0
- 21
-335.0
- 31
-0.0
-  0
-ARC
+TEXT
   5
 153
 330
@@ -10835,25 +11247,29 @@ ARC
 100
 AcDbEntity
   8
-VALVES
+ANNOTATION
 100
-AcDbCircle
+AcDbText
  10
-299.0
+96.2
  20
-335.0
+83.5
  30
 0.0
  40
-3.0
+1.6
+  1
+TK-101A Drain
+ 11
+96.2
+ 21
+83.5
+ 31
+0.0
 100
-AcDbArc
- 50
-270.0
- 51
-90.0
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 154
 330
@@ -10861,21 +11277,35 @@ LINE
 100
 AcDbEntity
   8
-VALVES
+TABLE_GRID
+370
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-299.0
+140.0
  20
-332.0
- 30
-0.0
- 11
-299.0
- 21
-338.0
- 31
-0.0
+89.5
+ 10
+195.0
+ 20
+89.5
+ 10
+195.0
+ 20
+81.0
+ 10
+140.0
+ 20
+81.0
+ 10
+140.0
+ 20
+89.5
   0
 TEXT
   5
@@ -10889,25 +11319,25 @@ ANNOTATION
 100
 AcDbText
  10
-303.0
+141.2
  20
-334.0
+83.5
  30
 0.0
  40
-1.8
+1.6
   1
-FV-101B
+Limit Switches ZT-103
  11
-303.0
+141.2
  21
-334.0
+83.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 156
 330
@@ -10915,29 +11345,37 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-282.0
+195.0
  20
-334.0
- 30
-0.0
- 40
-1.5
-  1
-FC
- 11
-282.0
- 21
-334.0
- 31
-0.0
-100
-AcDbText
+89.5
+ 10
+255.0
+ 20
+89.5
+ 10
+255.0
+ 20
+81.0
+ 10
+195.0
+ 20
+81.0
+ 10
+195.0
+ 20
+89.5
   0
-LWPOLYLINE
+TEXT
   5
 157
 330
@@ -10945,63 +11383,23 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-BORDER_TITLE
-  6
-DASHDOT
-370
-25
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-45.0
- 20
-75.0
- 10
-140.0
- 20
-75.0
- 10
-140.0
- 20
-135.0
- 10
-45.0
- 20
-135.0
- 10
-45.0
- 20
-75.0
-  0
-TEXT
-  5
-158
-330
-17
-100
-AcDbEntity
-  8
 ANNOTATION
 100
 AcDbText
  10
-49.0
+196.2
  20
-138.0
+83.5
  30
 0.0
  40
-2.5
+1.6
   1
-CHEMICAL REAGENT DOSING SKID (SK-100)
+PLC Sequence State
  11
-49.0
+196.2
  21
-138.0
+83.5
  31
 0.0
 100
@@ -11009,15 +11407,15 @@ AcDbText
   0
 LWPOLYLINE
   5
-159
+158
 330
 17
 100
 AcDbEntity
   8
-EQUIPMENT
+TABLE_GRID
 370
-40
+18
 100
 AcDbPolyline
  90
@@ -11025,29 +11423,29 @@ AcDbPolyline
  70
 0
  10
-55.0
+255.0
  20
-90.0
+89.5
  10
-80.0
+365.0
  20
-90.0
+89.5
  10
-80.0
+365.0
  20
-125.0
+81.0
  10
-55.0
+255.0
  20
-125.0
+81.0
  10
-55.0
+255.0
  20
-90.0
+89.5
   0
 TEXT
   5
-15A
+159
 330
 17
 100
@@ -11057,23 +11455,61 @@ ANNOTATION
 100
 AcDbText
  10
-59.0
+256.2
  20
-110.0
+83.5
  30
 0.0
  40
-2.5
+1.6
   1
-TK-102
+Air Piston Actuator XV-103
  11
-59.0
+256.2
  21
-110.0
+83.5
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+15A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+365.0
+ 20
+89.5
+ 10
+565.0
+ 20
+89.5
+ 10
+565.0
+ 20
+81.0
+ 10
+365.0
+ 20
+81.0
+ 10
+365.0
+ 20
+89.5
   0
 TEXT
   5
@@ -11087,25 +11523,25 @@ ANNOTATION
 100
 AcDbText
  10
-57.0
+366.2
  20
-100.0
+83.5
  30
 0.0
  40
-1.8
+1.6
   1
-500L HDPE
+Interlocked with Dewatering Screen SC-101 run signal; prevents flood.
  11
-57.0
+366.2
  21
-100.0
+83.5
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
   5
 15C
 330
@@ -11113,57 +11549,9 @@ LINE
 100
 AcDbEntity
   8
-EQUIPMENT
-100
-AcDbLine
- 10
-67.5
- 20
-125.0
- 30
-0.0
- 11
-67.5
- 21
-95.0
- 31
-0.0
-  0
-LINE
-  5
-15D
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-61.0
- 20
-97.0
- 30
-0.0
- 11
-74.0
- 21
-97.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-15E
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
+TABLE_GRID
 370
-35
+18
 100
 AcDbPolyline
  90
@@ -11171,53 +11559,29 @@ AcDbPolyline
  70
 0
  10
-102.0
+25.0
  20
-107.0
+81.0
  10
-118.0
+50.0
  20
-107.0
+81.0
  10
-118.0
+50.0
  20
-119.0
+72.5
  10
-102.0
+25.0
  20
-119.0
+72.5
  10
-102.0
+25.0
  20
-107.0
-  0
-LINE
-  5
-15F
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-102.0
- 20
-107.0
- 30
-0.0
- 11
-118.0
- 21
-119.0
- 31
-0.0
+81.0
   0
 TEXT
   5
-160
+15D
 330
 17
 100
@@ -11227,23 +11591,129 @@ ANNOTATION
 100
 AcDbText
  10
-102.0
+26.2
  20
-121.0
+75.0
  30
 0.0
  40
-2.0
+1.6
   1
-P-102A
+PIC-101
  11
-102.0
+26.2
  21
-121.0
+75.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+50.0
+ 20
+81.0
+ 10
+95.0
+ 20
+81.0
+ 10
+95.0
+ 20
+72.5
+ 10
+50.0
+ 20
+72.5
+ 10
+50.0
+ 20
+81.0
+  0
+TEXT
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+51.2
+ 20
+75.0
+ 30
+0.0
+ 40
+1.6
+  1
+Vessel Dome Relief
+ 11
+51.2
+ 21
+75.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+95.0
+ 20
+81.0
+ 10
+140.0
+ 20
+81.0
+ 10
+140.0
+ 20
+72.5
+ 10
+95.0
+ 20
+72.5
+ 10
+95.0
+ 20
+81.0
   0
 TEXT
   5
@@ -11257,19 +11727,19 @@ ANNOTATION
 100
 AcDbText
  10
-100.0
+96.2
  20
-103.0
+75.0
  30
 0.0
  40
-1.5
+1.6
   1
-STROKE CTRL
+TK-101A Vent
  11
-100.0
+96.2
  21
-103.0
+75.0
  31
 0.0
 100
@@ -11283,9 +11753,9 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-EQUIPMENT
+TABLE_GRID
 370
-35
+18
 100
 AcDbPolyline
  90
@@ -11293,53 +11763,29 @@ AcDbPolyline
  70
 0
  10
-102.0
+140.0
  20
-87.0
+81.0
  10
-118.0
+195.0
  20
-87.0
+81.0
  10
-118.0
+195.0
  20
-99.0
+72.5
  10
-102.0
+140.0
  20
-99.0
+72.5
  10
-102.0
+140.0
  20
-87.0
-  0
-LINE
-  5
-163
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-100
-AcDbLine
- 10
-102.0
- 20
-87.0
- 30
-0.0
- 11
-118.0
- 21
-99.0
- 31
-0.0
+81.0
   0
 TEXT
   5
-164
+163
 330
 17
 100
@@ -11349,23 +11795,61 @@ ANNOTATION
 100
 AcDbText
  10
-102.0
+141.2
  20
-101.0
+75.0
  30
 0.0
  40
-2.0
+1.6
   1
-P-102B
+Press Trans PIT-101
  11
-102.0
+141.2
  21
-101.0
+75.0
  31
 0.0
 100
 AcDbText
+  0
+LWPOLYLINE
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+195.0
+ 20
+81.0
+ 10
+255.0
+ 20
+81.0
+ 10
+255.0
+ 20
+72.5
+ 10
+195.0
+ 20
+72.5
+ 10
+195.0
+ 20
+81.0
   0
 TEXT
   5
@@ -11379,25 +11863,25 @@ ANNOTATION
 100
 AcDbText
  10
-100.0
+196.2
  20
-83.0
+75.0
  30
 0.0
  40
-1.5
+1.6
   1
-STROKE CTRL
+Direct Acting PSV
  11
-100.0
+196.2
  21
-83.0
+75.0
  31
 0.0
 100
 AcDbText
   0
-LINE
+LWPOLYLINE
   5
 166
 330
@@ -11405,25 +11889,37 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
+TABLE_GRID
 370
-35
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-80.0
+255.0
  20
-103.0
- 30
-0.0
- 11
-102.0
- 21
-103.0
- 31
-0.0
+81.0
+ 10
+365.0
+ 20
+81.0
+ 10
+365.0
+ 20
+72.5
+ 10
+255.0
+ 20
+72.5
+ 10
+255.0
+ 20
+81.0
   0
-LINE
+TEXT
   5
 167
 330
@@ -11431,25 +11927,29 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
-370
-35
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-102.0
+256.2
  20
-113.0
+75.0
  30
 0.0
+ 40
+1.6
+  1
+Spring Loaded PSV-101
  11
-102.0
+256.2
  21
-93.0
+75.0
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 168
 330
@@ -11457,25 +11957,37 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
+TABLE_GRID
 370
-35
+18
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-118.0
+365.0
  20
-113.0
- 30
-0.0
- 11
-130.0
- 21
-113.0
- 31
-0.0
+81.0
+ 10
+565.0
+ 20
+81.0
+ 10
+565.0
+ 20
+72.5
+ 10
+365.0
+ 20
+72.5
+ 10
+365.0
+ 20
+81.0
   0
-LINE
+TEXT
   5
 169
 330
@@ -11483,1023 +11995,21 @@ LINE
 100
 AcDbEntity
   8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-118.0
- 20
-93.0
- 30
-0.0
- 11
-130.0
- 21
-93.0
- 31
-0.0
-  0
-LINE
-  5
-16A
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-130.0
- 20
-93.0
- 30
-0.0
- 11
-130.0
- 21
-275.0
- 31
-0.0
-  0
-LINE
-  5
-16B
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-130.0
- 20
-275.0
- 30
-0.0
- 11
-320.0
- 21
-275.0
- 31
-0.0
-  0
-LINE
-  5
-16C
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-195.0
- 20
-275.0
- 30
-0.0
- 11
-195.0
- 21
-260.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-16D
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
- 62
-5
-100
-AcDbPolyline
- 90
-4
- 70
-0
- 10
-193.5
- 20
-268.0
- 10
-195.0
- 20
-265.0
- 10
-196.5
- 20
-268.0
- 10
-193.5
- 20
-268.0
-  0
-LINE
-  5
-16E
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-315.0
- 20
-275.0
- 30
-0.0
- 11
-315.0
- 21
-260.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-16F
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
- 62
-5
-100
-AcDbPolyline
- 90
-4
- 70
-0
- 10
-313.5
- 20
-268.0
- 10
-315.0
- 20
-265.0
- 10
-316.5
- 20
-268.0
- 10
-313.5
- 20
-268.0
-  0
-TEXT
-  5
-170
-330
-17
-100
-AcDbEntity
-  8
 ANNOTATION
 100
 AcDbText
  10
-100.0
- 20
-278.0
- 30
-0.0
- 40
-2.0
-  1
-1"-CH-103-SS316L REAGENT DOSING HEADER
- 11
-100.0
- 21
-278.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-171
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-50
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-388.0
- 20
-195.0
- 10
-432.0
- 20
-180.0
- 10
-432.0
- 20
-165.0
- 10
-388.0
- 20
-180.0
- 10
-388.0
- 20
-195.0
-  0
-TEXT
-  5
-172
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-386.0
- 20
-200.0
- 30
-0.0
- 40
-2.5
-  1
-DEWATERING SCREEN SC-101
- 11
-386.0
- 21
-200.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-173
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-390.0
- 20
-160.0
- 30
-0.0
- 40
-2.0
-  1
-1.0 mm WEDGE WIRE DECK
- 11
-390.0
- 21
-160.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-174
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-50
-100
-AcDbLine
- 10
-185.0
- 20
-155.0
- 30
-0.0
- 11
-185.0
- 21
-140.0
- 31
-0.0
-  0
-LINE
-  5
-175
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-50
-100
-AcDbLine
- 10
-305.0
- 20
-155.0
- 30
-0.0
- 11
-305.0
- 21
-140.0
- 31
-0.0
-  0
-LINE
-  5
-176
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-50
-100
-AcDbLine
- 10
-185.0
- 20
-140.0
- 30
-0.0
- 11
-388.0
- 21
-140.0
- 31
-0.0
-  0
-LINE
-  5
-177
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-50
-100
-AcDbLine
- 10
-388.0
- 20
-140.0
- 30
-0.0
- 11
-388.0
- 21
-190.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-178
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
- 62
-5
-100
-AcDbPolyline
- 90
-4
- 70
-0
- 10
-386.5
- 20
-182.0
- 10
-388.0
- 20
-185.0
- 10
-389.5
- 20
-182.0
- 10
-386.5
- 20
-182.0
-  0
-TEXT
-  5
-179
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-205.0
- 20
-143.0
- 30
-0.0
- 40
-2.0
-  1
-6"-SL-104-SS316L SLURRY DUMP HEADER
- 11
-205.0
- 21
-143.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-17A
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-395.0
- 20
-80.0
- 10
-425.0
- 20
-80.0
- 10
-425.0
- 20
-115.0
- 10
-395.0
- 20
-115.0
- 10
-395.0
- 20
-80.0
-  0
-TEXT
-  5
-17B
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-398.0
- 20
-100.0
- 30
-0.0
- 40
-2.2
-  1
-SUMP TK-103
- 11
-398.0
- 21
-100.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-17C
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-40
-100
-AcDbLine
- 10
-410.0
- 20
-165.0
- 30
-0.0
- 11
-410.0
- 21
-115.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-17D
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
- 62
-5
-100
-AcDbPolyline
- 90
-4
- 70
-0
- 10
-408.5
- 20
-128.0
- 10
-410.0
- 20
-125.0
- 10
-411.5
- 20
-128.0
- 10
-408.5
- 20
-128.0
-  0
-CIRCLE
-  5
-17E
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-35
-100
-AcDbCircle
- 10
-445.0
- 20
-95.0
- 30
-0.0
- 40
-8.0
-  0
-LINE
-  5
-17F
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-425.0
- 20
-95.0
- 30
-0.0
- 11
-437.0
- 21
-95.0
- 31
-0.0
-  0
-LINE
-  5
-180
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
-370
-35
-100
-AcDbLine
- 10
-453.0
- 20
-95.0
- 30
-0.0
- 11
-470.0
- 21
-95.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-181
-330
-17
-100
-AcDbEntity
-  8
-PROCESS_PIPING
- 62
-5
-100
-AcDbPolyline
- 90
-4
- 70
-0
- 10
-464.0
- 20
-93.5
- 10
-467.0
- 20
-95.0
- 10
-464.0
- 20
-96.5
- 10
-464.0
- 20
-93.5
-  0
-TEXT
-  5
-182
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-433.0
- 20
-107.0
- 30
-0.0
- 40
-2.0
-  1
-P-103 (ETP PUMP)
- 11
-433.0
- 21
-107.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-183
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-450.0
- 20
-89.0
- 30
-0.0
- 40
-1.8
-  1
-2"-WW-105 TO ETP
- 11
-450.0
- 21
-89.0
- 31
-0.0
-100
-AcDbText
-  0
-LWPOLYLINE
-  5
-184
-330
-17
-100
-AcDbEntity
-  8
-BORDER_TITLE
-370
-35
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-150.0
- 20
-125.0
- 10
-350.0
- 20
-125.0
- 10
-350.0
- 20
-70.0
- 10
-150.0
- 20
-70.0
- 10
-150.0
- 20
-125.0
-  0
-TEXT
-  5
-185
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
- 20
-118.0
- 30
-0.0
- 40
-2.2
-  1
-CONTROL LOOPS, INTERLOCKS & SAFETY PHILOSOPHY (ISA-84 / SIL-1):
- 11
-154.0
- 21
-118.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-186
-330
-17
-100
-AcDbEntity
-  8
-BORDER_TITLE
-100
-AcDbLine
- 10
-150.0
- 20
-115.0
- 30
-0.0
- 11
-350.0
- 21
-115.0
- 31
-0.0
-  0
-TEXT
-  5
-187
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
- 20
-107.0
- 30
-0.0
- 40
-1.8
-  1
-1. LIC-101/102: Radar level control. High-High level (>85%) triggers I-01 tripping conveyor CV-101.
- 11
-154.0
- 21
-107.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-188
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
- 20
-99.0
- 30
-0.0
- 40
-1.8
-  1
-2. AIC-101/102: Inline pH analytical control modulates P-102A/B stroke speed to maintain target pH 8.2-8.4.
- 11
-154.0
- 21
-99.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-189
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
- 20
-91.0
- 30
-0.0
- 40
-1.8
-  1
-3. TIC-101/102: Temperature loop modulates FV-101 hot/cold blending to maintain soak water at 30 deg C +/- 1 deg C.
- 11
-154.0
- 21
-91.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-18A
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
- 20
-83.0
- 30
-0.0
- 40
-1.8
-  1
-4. XV-101A/B: Fail-Closed pneumatic dump valves interlocked with Dewatering Screen SC-101 running status.
- 11
-154.0
- 21
-83.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-18B
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-154.0
+366.2
  20
 75.0
  30
 0.0
  40
-1.8
+1.6
   1
-5. ESD-100: Emergency Shutdown isolates all chemical dosing pumps and initiates emergency CIP flush.
+Protects vessel against overpressure / vacuum collapse during dump.
  11
-154.0
+366.2
  21
 75.0
  31
@@ -13597,7 +13107,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-18E
+16C
   0
 DICTIONARYVAR
   5
@@ -13609,7 +13119,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:44.433642+00:00
+1.4.4 @ 2026-10-16T19:05:47.129980+00:00
   0
 VISUALSTYLE
   5
@@ -20163,7 +19673,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-18E
+16C
 330
 2D
 100
@@ -20171,7 +19681,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:44.439162+00:00
+1.4.4 @ 2026-10-16T19:05:47.135287+00:00
   0
 ENDSEC
   0

@@ -1,0 +1,46 @@
+Subject: Project Proposal & Technical Framework: Comparative R&D and Cooking-Performance Optimization for Imported Tanzanian Toor Dal
+Document Ref: FNQ-PR-2026-001 (Rev 8.0)
+Date: 16 October 2026
+
+Dear Commercial & Technical Management Team,
+
+Please find attached our formal Commercial Project Proposal and Technical Scope of Work for the comparative diagnostic investigation and cooking-performance optimization of imported Tanzanian split/dehulled pigeon pea (Toor Dal, Cajanus cajan) relative to the domestic Indian benchmark.
+
+COMMERCIAL BACKGROUND & CHALLENGE:
+Imported Tanzanian toor dal provides an attractive raw material procurement advantage of approximately ₹18–22/kg compared to domestic Indian varieties. However, commercial uptake is severely restricted by extended cooking latency: requiring ~6 pressure-cooker whistles (~45–55 minutes) under domestic conditions compared to ~3 whistles (~20–25 minutes) for standard Indian pulses, often leaving persistent hard grains and non-uniform texture.
+
+PHASE 1 DIAGNOSTIC SCOPE & DELIVERABLES:
+Our Phase 1 program replaces qualitative kitchen observations with a rigorous 11-module laboratory investigation to pinpoint the underlying biophysical and chemical causes:
+1. Physical Characterization & Instrumental Hardness Profile (1000-grain weight, bulk density, digital micrometry, texture analyzer breaking force).
+2. Proximate Composition (moisture, crude protein, crude fat, crude fiber, ash, starch via AOAC/FSSAI methods).
+3. Starch & Thermal Gelatinization (DSC onset, peak, conclusion temperatures, transition enthalpy, amylose:amylopectin ratio).
+4. Hydration Kinetics & Water Absorption Index (multi-temperature soaking curves at 25°C, 45°C, 65°C).
+5. Cell-Wall & Pectin Characterization (fractionation of water-soluble, chelator-soluble EDTA, and alkali-soluble pectins; degree of esterification).
+6. Mineral Profile & Phytate Interactions (ICP-OES Ca²⁺, Mg²⁺, Fe, P, and phytate:divalent cation molar ratios).
+7. Standardized Objective Cooking Performance (instrumented pressure vessel trials with cooked core percentage < 2.0% objective endpoint).
+8. Integrated Root-Cause Synthesis & Prioritized Phase 2 Intervention Recommendations.
+
+COMMERCIAL TERMS & TIMELINE:
+- Fixed Phase 1 Professional Fee: ₹1,73,000 + applicable GST.
+- Commercial Working Ceiling: Up to ₹2,00,000 + applicable GST (expenditures above base require prior written client approval).
+- Milestone Payment Structure: 40% (₹69,200) Advance upon confirmation | 40% (₹69,200) upon Laboratory Analytical Completion | 20% (₹34,600) upon Final Report Submission.
+- Project Turnaround: 20 to 25 business days from verified receipt of representative samples (Stage 1 Fast-Track summary within 7 business days).
+
+SAMPLE CONSIGNMENT REQUIREMENTS:
+- Quantity: 2.5–3.0 kg of the target Tanzanian commercial lot and 2.5–3.0 kg of the standard domestic Indian benchmark in double-sealed moisture-barrier bags.
+- Destination: Central Laboratory Reception, FinnoaQ Agro-Industrial Technologies Ltd., Kolkata, West Bengal (Attn: Sourish Senapati).
+
+ATTACHED DELIVERABLES:
+1. CLIENT_PROJECT_PROPOSAL.pdf (Document Ref: FNQ-PR-2026-001 Rev 8.0, 5 Pages)
+2. CLIENT_ACCEPTANCE_AND_START_FORM.docx / .pdf (Execution & Project Authorization Form)
+3. FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf (Consolidated 8-Sheet AutoCAD 2025 Native CAD Drawing Package)
+4. CLIENT_ANNEXURES/ (Individual High-Resolution Vector PDFs: DWG-FIN-15T-001 through 014, including PFD, Stream Balances, P&IDs, Site Plot Plan, Vessel GAs, Electrical SLD & SCADA Architecture, and 3D Assembly Plant GA)
+
+We look forward to coordinating with your technical team and receiving the sample consignments to initiate Phase 1.
+
+Sincerely,
+
+Sourish Senapati
+Lead Chemical & Process Engineer | Principal Investigator
+FinnoaQ Agro-Industrial Technologies Ltd.
+Academic Guidance: Dr. Archisman Ray (Senior Research Fellow, Chemical Engg, IIT Kharagpur)
