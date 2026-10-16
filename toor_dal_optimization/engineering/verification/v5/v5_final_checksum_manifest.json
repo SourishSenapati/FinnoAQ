@@ -2,7 +2,7 @@
   "manifest_metadata": {
     "title": "V5 Master Cryptographic Checksum Manifest",
     "standard": "V5 Master Directive Section 1(E) Cryptographic Lock",
-    "generated_timestamp": "2026-10-16T05:58:21.514278+00:00",
+    "generated_timestamp": "2026-10-16T05:59:39.922112+00:00",
     "target_plant": "15,000 kg/day Greenfield Imported Pigeon Pea Optimization Facility",
     "git_branch": "v5-integrated-engineering",
     "hash_algorithm": "SHA-256",
@@ -488,9 +488,9 @@
     },
     {
       "relative_path": "NEW_CHAT_HANDOVER_DIRECTIVE.md",
-      "sha256": "c46e87cd23bfca393667c111f7a7c804e51f9ffbe706b8bcc8b77925ca19b6f6",
-      "size_bytes": 20876,
-      "last_modified": "2026-10-16T05:58:10.473250+00:00"
+      "sha256": "55e035a97eb736b64a982d35cdd7581e399a170ba2dadff893d8ea409cfeb429",
+      "size_bytes": 20879,
+      "last_modified": "2026-10-16T05:59:24.644305+00:00"
     }
   ]
 }
