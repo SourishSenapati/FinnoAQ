@@ -292,26 +292,48 @@ def build_mezzanine_platform(sw):
         sketch_mgr.InsertSketch(True)
         feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.300, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.900, False)
 
-    # 3. Structural K-Truss Diagonal Bracing on Rear Bay (Z = -1.80m) per IS 800:2007
-    doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
-    sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateLine(-3.300, 0.200, 0, -3.200, 0.200, 0)
-    sketch_mgr.CreateLine(-3.200, 0.200, 0, 0.050, 3.900, 0)
-    sketch_mgr.CreateLine(0.050, 3.900, 0, -0.050, 3.900, 0)
-    sketch_mgr.CreateLine(-0.050, 3.900, 0, -3.300, 0.200, 0)
-    sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, -1.850, False)
+    # 3. Side-Bay Structural X-Bracing (IS 800:2007) on End Bents (at X = -3.30m and +3.30m)
+    # Stiffens structure against cyclic screen/dryer vibrations without obstructing central equipment bay
+    for bx in [-3.300, 3.300]:
+        doc.SelectByID("Right Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateLine(-1.750, 0.200, 0, -1.650, 0.200, 0)
+        sketch_mgr.CreateLine(-1.650, 0.200, 0, 1.750, 3.900, 0)
+        sketch_mgr.CreateLine(1.750, 3.900, 0, 1.650, 3.900, 0)
+        sketch_mgr.CreateLine(1.650, 3.900, 0, -1.750, 0.200, 0)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, bx - 0.040, False)
 
-    doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
-    sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateLine(3.300, 0.200, 0, 3.200, 0.200, 0)
-    sketch_mgr.CreateLine(3.200, 0.200, 0, -0.050, 3.900, 0)
-    sketch_mgr.CreateLine(-0.050, 3.900, 0, 0.050, 3.900, 0)
-    sketch_mgr.CreateLine(0.050, 3.900, 0, 3.300, 0.200, 0)
-    sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, -1.850, False)
+        doc.SelectByID("Right Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateLine(1.650, 0.200, 0, 1.750, 0.200, 0)
+        sketch_mgr.CreateLine(1.750, 0.200, 0, -1.650, 3.900, 0)
+        sketch_mgr.CreateLine(-1.650, 3.900, 0, -1.750, 3.900, 0)
+        sketch_mgr.CreateLine(-1.750, 3.900, 0, 1.650, 0.200, 0)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, bx - 0.040, False)
 
-    # 4. Checkered Steel Deck Plate (10mm thick at Y=4.20m to 4.21m) WITH DUAL CIRCULAR CUTOUTS (Dia 1,850mm)
+    # 4. Corner Portal Knee Braces on Long Bays (Leaves central 5.0m 100% open for chutes and equipment!)
+    for kz in [-1.800, 1.800]:
+        doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateLine(-3.300, 3.150, 0, -3.200, 3.150, 0)
+        sketch_mgr.CreateLine(-3.200, 3.150, 0, -2.500, 3.900, 0)
+        sketch_mgr.CreateLine(-2.500, 3.900, 0, -2.600, 3.900, 0)
+        sketch_mgr.CreateLine(-2.600, 3.900, 0, -3.300, 3.150, 0)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, kz - 0.040, False)
+
+        doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateLine(3.200, 3.150, 0, 3.300, 3.150, 0)
+        sketch_mgr.CreateLine(3.300, 3.150, 0, 2.600, 3.900, 0)
+        sketch_mgr.CreateLine(2.600, 3.900, 0, 2.500, 3.900, 0)
+        sketch_mgr.CreateLine(2.500, 3.900, 0, 3.200, 3.150, 0)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, kz - 0.040, False)
+
+    # 5. Checkered Steel Deck Plate (10mm thick at Y=4.20m to 4.21m) WITH DUAL CIRCULAR CUTOUTS (Dia 1,850mm)
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCornerRectangle(-3.600, -2.000, 0, 3.600, 2.000, 0)
@@ -320,7 +342,7 @@ def build_mezzanine_platform(sw):
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.010, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.200, False)
 
-    # 5. Under-Deck Tank Support Collar Framing Rings (ISMB 200 framing from Y=4.00m to 4.20m)
+    # 6. Under-Deck Tank Support Collar Framing Rings (ISMB 200 framing from Y=4.00m to 4.20m)
     for tx in [-1.600, 1.600]:
         doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
         sketch_mgr.InsertSketch(True)
@@ -329,7 +351,7 @@ def build_mezzanine_platform(sw):
         sketch_mgr.InsertSketch(True)
         feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.200, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.000, False)
 
-    # 6. Overhead Maintenance Monorail Crane Runway Beam & Hoist Trolley (WLL 2.0 tonnes)
+    # 7. Overhead Maintenance Monorail Crane Runway Beam & Hoist Trolley (WLL 2.0 tonnes)
     for ex in [-2.800, 2.800]:
         doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
         sketch_mgr.InsertSketch(True)
@@ -358,8 +380,7 @@ def build_mezzanine_platform(sw):
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.350, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 6.600, False)
 
-    # 7. Worker Access Lift Tower (Goods / Personnel Hoist, 1,000 kg WLL)
-    # 4 Guide Masts at X = +3.80m and +5.00m, Z = +/-0.60m from Y=0 to 6.80m
+    # 8. Worker Access Lift Tower (Goods / Personnel Hoist, 1,000 kg WLL)
     for lx, lz in [(3.800, -0.600), (5.000, -0.600), (3.800, 0.600), (5.000, 0.600)]:
         doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
         sketch_mgr.InsertSketch(True)
@@ -401,7 +422,7 @@ def build_mezzanine_platform(sw):
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.025, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.200, False)
 
-    # 8. OSHA 1910.29 Compliant 3-Tier Handrail System
+    # 9. OSHA 1910.29 Compliant 3-Tier Handrail System
     rail_segments = [
         (-3.600, -2.000, 3.600, -2.000),  # Back
         (3.600, -2.000, 3.600, -0.450),   # Right rear (gap for lift)
@@ -431,40 +452,79 @@ def build_mezzanine_platform(sw):
         sketch_mgr.InsertSketch(True)
         feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.060, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 5.250, False)
 
-    # 9. Industrial Access Staircase (descending from X=-3.6m to ground level X=-5.6m)
-    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    # 10. Full-Height Continuous Industrial Access Staircase (Rising from Y=0.00m to Mezzanine Y=4.20m!)
+    # Descends along -X from X=-3.60m down to X=-7.60m, Z = 0.90m to 1.90m (Width 1.0m)
+    # Staircase solid structural stringer & non-slip tread flight (ZERO vertical gap!)
+    doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateCornerRectangle(-5.600, -2.000, 0, -3.600, -1.000, 0)
+    sketch_mgr.CreateLine(-7.600, 0.000, 0, -3.600, 4.200, 0)
+    sketch_mgr.CreateLine(-3.600, 4.200, 0, -3.600, 3.950, 0)
+    sketch_mgr.CreateLine(-3.600, 3.950, 0, -7.350, 0.000, 0)
+    sketch_mgr.CreateLine(-7.350, 0.000, 0, -7.600, 0.000, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.100, 0, True, False, False, False, math.radians(35), 0, False, False, False, False, True, True, True, 0, 0, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.950, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.950, False)
 
-    # 10. SCADA & Automation Control Panel SCP-100 (Rittal TS8 enclosure at X=-4.50m, Z=1.80m, Y=0 to 2.00m)
-    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    # Continuous Safety Handrails along the staircase flight
+    doc.SelectByID("Front Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateCornerRectangle(-5.100, 1.500, 0, -3.900, 2.100, 0)
+    sketch_mgr.CreateLine(-7.600, 1.000, 0, -3.600, 5.200, 0)
+    sketch_mgr.CreateLine(-3.600, 5.200, 0, -3.600, 5.150, 0)
+    sketch_mgr.CreateLine(-3.600, 5.150, 0, -7.600, 0.950, 0)
+    sketch_mgr.CreateLine(-7.600, 0.950, 0, -7.600, 1.000, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.000, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 0, 0, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.050, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.920, False)
 
-    # 21.5" Multi-Touch HMI Screen face (X=-4.80 to -4.20m, Y=1.35 to 1.70m, Z=2.11m)
+    # 11. Main SCADA & Automation Control Panel SCP-100 (Mounted on Mezzanine Deck at Y=4.20m to 6.20m!)
+    # Rittal TS8 IP54 enclosure at X=-3.00 to -2.00m, Z=1.35 to 1.95m
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateCornerRectangle(-4.800, 2.100, 0, -4.200, 2.140, 0)
+    sketch_mgr.CreateCornerRectangle(-3.000, 1.350, 0, -2.000, 1.950, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.350, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 1.350, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.000, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.200, False)
 
-    # SCADA Alarm Beacon Stack (Red/Amber/Green on top of panel at Y=2.00 to 2.35m)
+    # 21.5" Multi-Touch HMI Screen face (X=-2.80 to -2.20m, Y=5.35 to 5.70m at operator eye level!)
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateCircleByRadius(-4.500, 1.800, 0, 0.050)
+    sketch_mgr.CreateCornerRectangle(-2.800, 1.320, 0, -2.200, 1.350, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.350, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 2.000, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.350, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 5.350, False)
 
-    # Mezzanine Remote I/O Panel RIO-101 (600x600x250mm at column X=-3.30m, Z=1.65m, Y=4.40 to 5.00m)
+    # SCADA Tri-Color Alarm Beacon Stack (Red/Amber/Green on top of panel at Y=6.20 to 6.55m)
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
-    sketch_mgr.CreateCornerRectangle(-3.450, 1.500, 0, -2.850, 1.750, 0)
+    sketch_mgr.CreateCircleByRadius(-2.500, 1.650, 0, 0.050)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.350, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 6.200, False)
+
+    # 12. Mezzanine Remote I/O Panel RIO-101 (600x600x250mm at rear column X=-3.30m, Z=-1.65m, Y=4.40 to 5.00m)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(-3.450, -1.750, 0, -2.850, -1.500, 0)
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.600, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.400, False)
+
+    # 13. Heavy Galvanized Electrical Cable Ladder Trays (ELE-100)
+    # Under-Deck Perimeter Cable Ladder (300mm x 100mm along rear beam at Y=3.95m, X=-3.40 to +3.40m, Z=-1.90m)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(-3.400, -1.950, 0, 3.400, -1.650, 0)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.950, False)
+
+    # Vertical Cable Ladder Riser down Rear-Left Column (from Mezzanine Y=4.20m to Ground Y=0.20m at X=-3.45m, Z=-1.80m)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(-3.480, -1.950, 0, -3.180, -1.850, 0)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 4.000, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.200, False)
+
+    # Overhead Conduit Drops from Monorail Beam to AG-101A and AG-101B SEW Motor Terminal Boxes (at Y=6.90 to 7.30m)
+    for ax in [-1.600, 1.600]:
+        doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateCircleByRadius(ax + 0.220, 0.000, 0, 0.025)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.400, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 6.900, False)
 
     out_prt = os.path.join(SLDPRT_DIR, "STR-100_Mezzanine_Platform.SLDPRT")
     out_step = os.path.join(STEP_DIR, "STR-100_Mezzanine_Platform.step")
@@ -864,62 +924,76 @@ def build_dosing_skid(sw):
 
 
 def build_interconnecting_piping(sw):
-    print(">>> 9. Building PIP-100 Complete Process & Steam Piping Headers...")
+    print(">>> 9. Building PIP-100 Complete Process, Steam Piping Headers & Electrical Cable Trays...")
     doc = sw.NewDocument(PART_TEMPLATE, 0, 0, 0)
     title = doc.GetTitle
     feat_mgr = doc.FeatureManager
     sketch_mgr = doc.SketchManager
 
     # 1. Chemical Dosing Line (DN40 SS316L, Dia 48mm):
-    # Rises from SK-100 pump discharge at (X=-3.50m, v=1.00m -> Z=-1.00m, Y=0.40m) up to mezzanine Y=3.80m
+    # Rises from SK-100 pump discharge at (X=-3.50m, v=1.00m -> Z=-1.00m, Y=0.40m) up to mezzanine Y=4.40m
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCircleByRadius(-3.500, 1.000, 0, 0.024)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 3.400, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.400, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 4.000, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.400, False)
 
-    # Run horizontally along v to v=0.30m (Z=-0.30m), then across X from -3.5m to +2.0m at Y=3.80m
+    # Run horizontally across to column, then along X to +2.0m at Y=4.40m, Z=-0.30m
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCornerRectangle(-3.524, 0.300, 0, -3.476, 1.000, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.048, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.800, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.048, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.400, False)
 
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCornerRectangle(-3.500, 0.276, 0, 2.024, 0.324, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.048, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.800, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.048, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.400, False)
 
-    # Vertical branches rising to tank dosing nozzles at X=-1.6m+0.4m=-1.20m and X=+1.6m+0.4m=+2.00m (Y=3.80m to 6.70m)
+    # Vertical branches rising to tank dosing nozzles at X=-1.6m+0.4m=-1.20m and X=+1.6m+0.4m=+2.00m (Y=4.40m to 6.70m)
     for dx in [-1.200, 2.000]:
         doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
         sketch_mgr.InsertSketch(True)
         sketch_mgr.CreateCircleByRadius(dx, 0.300, 0, 0.024)
         sketch_mgr.InsertSketch(True)
-        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.900, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.800, False)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.300, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.400, False)
 
-    # 2. Saturated Steam Header (DN50 Insulated at Y=3.60m, v=-0.80m -> Z=+0.80m)
+        # Diaphragm control valve body at Y=5.50m
+        doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateCircleByRadius(dx, 0.300, 0, 0.060)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.150, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 5.500, False)
+
+    # 2. Saturated Steam Supply Header (DN50 Insulated at Y=4.80m, matching tank jacket inlet nozzles!)
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCornerRectangle(-3.500, -0.840, 0, 2.200, -0.760, 0)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.600, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.080, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.800, False)
 
-    # Modulating steam control valve station TCV-101 at X=0.0m
+    # Modulating steam control valve station TCV-101 and Emergency Trip XV-201 at X=0.0m
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCircleByRadius(0.000, -0.800, 0, 0.100)
     sketch_mgr.InsertSketch(True)
-    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.250, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.600, False)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.250, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.800, False)
 
-    # Steam branches to Tank A jacket and Tank B jacket
+    # Steam branches directly connecting to Tank A jacket and Tank B jacket at Y=4.80m
     for sx in [-1.600, 1.600]:
         doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
         sketch_mgr.InsertSketch(True)
-        sketch_mgr.CreateCornerRectangle(sx - 0.030, -0.800, 0, sx + 0.030, -0.200, 0)
+        sketch_mgr.CreateCornerRectangle(sx - 0.035, -0.800, 0, sx + 0.035, 0.000, 0)
         sketch_mgr.InsertSketch(True)
-        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.060, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 3.600, False)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.070, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.800, False)
+
+        # Jacket Bottom Condensate Drain Lines with Steam Traps ST-101A/B at Y=4.25m
+        doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+        sketch_mgr.InsertSketch(True)
+        sketch_mgr.CreateCircleByRadius(sx, 0.000, 0, 0.025)
+        sketch_mgr.InsertSketch(True)
+        feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.550, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 4.250, False)
 
     # 3. Spent Liquor Effluent Gravity Header (DN100):
     # Connects to Screen catch pan drain at (X=0.0m, v=1.20m -> Z=-1.20m, Y=0.45m), drops to Y=0.20m, runs to EV-101 at X=-5.50m, v=4.00m
@@ -936,12 +1010,49 @@ def build_interconnecting_piping(sw):
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.110, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.200, False)
 
-    # Branch along v into EV-101 at v=4.00m (Z=-4.00m)
+    # Run along v into EV-101 at v=4.00m (Z=-4.00m)
     doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
     sketch_mgr.InsertSketch(True)
     sketch_mgr.CreateCornerRectangle(-5.555, 1.200, 0, -5.445, 4.000, 0)
     sketch_mgr.InsertSketch(True)
     feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.110, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.200, False)
+
+    # Vertical Riser into EV-101 1st effect calandria feed pump inlet nozzle at Y=0.20m to 1.00m (ZERO GAP!)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCircleByRadius(-5.500, 4.000, 0, 0.055)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.800, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.200, False)
+
+    # 4. Potable Screen Rinse Mist Supply Header (DN25 at Y=1.35m to 4.00m)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCircleByRadius(0.350, 1.200, 0, 0.018)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 2.650, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 1.350, False)
+
+    # 5. Heavy-Duty Industrial Electrical Cable Ladder Trays (ELE-100)
+    # Ground Floor Main Cable Ladder Tray (300mm x 100mm, Y=0.15m on sleepers):
+    # Runs from Mezzanine column at X=-3.30m, v=-1.80m across to SK-100 (v=1.00m) and alongside Dryer (v=2.60 to 8.90m)
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(-3.450, -1.800, 0, -3.150, 1.200, 0)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.150, False)
+
+    # Cross cable tray running to screen exciter motors and fluid bed dryer side:
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(-3.150, 1.050, 0, 0.800, 1.350, 0)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.150, False)
+
+    # Longitudinal dryer instrumentation & motor cable tray alongside DR-101 (X=0.65 to 0.95m, v=2.60m to 8.90m):
+    doc.SelectByID("Top Plane", "PLANE", 0, 0, 0)
+    sketch_mgr.InsertSketch(True)
+    sketch_mgr.CreateCornerRectangle(0.650, 2.600, 0, 0.950, 8.900, 0)
+    sketch_mgr.InsertSketch(True)
+    feat_mgr.FeatureExtrusion2(True, False, False, 0, 0, 0.100, 0, False, False, False, False, 0, 0, False, False, False, False, True, True, True, 3, 0.150, False)
 
     out_prt = os.path.join(SLDPRT_DIR, "PIP-100_Interconnecting_Piping.SLDPRT")
     out_step = os.path.join(STEP_DIR, "PIP-100_Interconnecting_Piping.step")
