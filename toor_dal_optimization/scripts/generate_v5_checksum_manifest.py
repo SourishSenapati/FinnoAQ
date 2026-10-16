@@ -129,7 +129,8 @@ def build_manifest():
         os.path.join("reports", "V5_BALANCE_AND_ECONOMICS_REPORT.md"),
         os.path.join("reports", "V5_CAD_GEOMETRY_AND_NATIVE_MODEL_AUDIT.md"),
         os.path.join("reports", "V5_STANDARDS_AND_HUMAN_HOLD_POINTS.md"),
-        os.path.join("reports", "V5_CROSS_DISCIPLINE_DESIGN_REVIEWS.md")
+        os.path.join("reports", "V5_CROSS_DISCIPLINE_DESIGN_REVIEWS.md"),
+        os.path.join("NEW_CHAT_HANDOVER_DIRECTIVE.md")
     ]
     for rel in v5_reports:
         info = scan_file(rel)

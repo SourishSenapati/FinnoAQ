@@ -2,12 +2,12 @@
   "manifest_metadata": {
     "title": "V5 Master Cryptographic Checksum Manifest",
     "standard": "V5 Master Directive Section 1(E) Cryptographic Lock",
-    "generated_timestamp": "2026-10-15T19:11:12.213993+00:00",
+    "generated_timestamp": "2026-10-16T03:59:14.711133+00:00",
     "target_plant": "15,000 kg/day Greenfield Imported Pigeon Pea Optimization Facility",
     "git_branch": "v5-integrated-engineering",
     "hash_algorithm": "SHA-256",
     "gate_status": "GATE G-A HOLD ACTIVE",
-    "total_locked_files": 63
+    "total_locked_files": 64
   },
   "master_data": [
     {
@@ -342,9 +342,9 @@
     },
     {
       "relative_path": "engineering/verification/v5/v5_integration_acceptance_report.json",
-      "sha256": "f0b6ef6249262a8a3d516ab8d72592340693375dd16ddbc5a3f18a029567c36e",
+      "sha256": "5ab4991bdfafd829415ec080c6bbd8a19678f9ba040a1613f65c72f718a51f29",
       "size_bytes": 5555,
-      "last_modified": "2026-10-15T19:04:42.333474+00:00"
+      "last_modified": "2026-10-15T19:12:53.574183+00:00"
     },
     {
       "relative_path": "scripts/v5_integration_checker.py",
@@ -401,6 +401,12 @@
       "sha256": "f7400c6173dcaa59f2f45260c8e24e4f51230e749ad86ee842c18740174e311c",
       "size_bytes": 21296,
       "last_modified": "2026-10-15T19:07:03.972342+00:00"
+    },
+    {
+      "relative_path": "NEW_CHAT_HANDOVER_DIRECTIVE.md",
+      "sha256": "ac8b5befa2817675cdbf3a791672de62527a0af4083badf67b98cb215b454e47",
+      "size_bytes": 24561,
+      "last_modified": "2026-10-16T03:58:38.872434+00:00"
     }
   ]
 }
