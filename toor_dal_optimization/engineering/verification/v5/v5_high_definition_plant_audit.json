@@ -1,0 +1,176 @@
+{
+  "title": "High-Definition Connected Greenfield Plant Audit",
+  "assembly_file": "d:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\native\\PLANT-15T_General_Arrangement.SLDASM",
+  "step_file": "d:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\PLANT-15T_General_Arrangement.step",
+  "sldasm_bytes": 252589,
+  "step_bytes": 1402294,
+  "step_lines": 19036,
+  "total_systems_integrated": 14,
+  "systems": [
+    {
+      "tag": "STR-100",
+      "file": "STR-100_Mezzanine_Platform.SLDPRT",
+      "description": "Structural Mezzanine Platform & Staircase",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "instance": "STR-100_Mezzanine_Platform-1"
+    },
+    {
+      "tag": "TK-101A",
+      "file": "TK-101_Soak_Tank.SLDPRT",
+      "description": "Rapid Hydration Soak Tank A",
+      "position_m": [
+        -2.5,
+        4.2,
+        0.0
+      ],
+      "instance": "TK-101_Soak_Tank-1"
+    },
+    {
+      "tag": "TK-101B",
+      "file": "TK-101_Soak_Tank.SLDPRT",
+      "description": "Rapid Hydration Soak Tank B",
+      "position_m": [
+        0.0,
+        4.2,
+        0.0
+      ],
+      "instance": "TK-101_Soak_Tank-2"
+    },
+    {
+      "tag": "TK-101C",
+      "file": "TK-101_Soak_Tank.SLDPRT",
+      "description": "Rapid Hydration Soak Tank C",
+      "position_m": [
+        2.5,
+        4.2,
+        0.0
+      ],
+      "instance": "TK-101_Soak_Tank-3"
+    },
+    {
+      "tag": "AG-101A",
+      "file": "AG-101_Agitator.SLDPRT",
+      "description": "Agitator Drive Tank A",
+      "position_m": [
+        -2.5,
+        6.75,
+        0.0
+      ],
+      "instance": "AG-101_Agitator-1"
+    },
+    {
+      "tag": "AG-101B",
+      "file": "AG-101_Agitator.SLDPRT",
+      "description": "Agitator Drive Tank B",
+      "position_m": [
+        0.0,
+        6.75,
+        0.0
+      ],
+      "instance": "AG-101_Agitator-2"
+    },
+    {
+      "tag": "AG-101C",
+      "file": "AG-101_Agitator.SLDPRT",
+      "description": "Agitator Drive Tank C",
+      "position_m": [
+        2.5,
+        6.75,
+        0.0
+      ],
+      "instance": "AG-101_Agitator-3"
+    },
+    {
+      "tag": "SC-101",
+      "file": "SC-101_Dewatering_Screen.SLDPRT",
+      "description": "Vibratory Dewatering Screen & Spray Bar",
+      "position_m": [
+        0.0,
+        2.0,
+        1.8
+      ],
+      "instance": "SC-101_Dewatering_Screen-1"
+    },
+    {
+      "tag": "CHU-100",
+      "file": "CHU-100_Transfer_Chutes.SLDPRT",
+      "description": "Interconnecting Dal Transfer Chutes",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "instance": "CHU-100_Transfer_Chutes-1"
+    },
+    {
+      "tag": "DR-101",
+      "file": "DR-101_Fluid_Bed_Dryer.SLDPRT",
+      "description": "Continuous Fluid Bed Dryer",
+      "position_m": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "instance": "DR-101_Fluid_Bed_Dryer-1"
+    },
+    {
+      "tag": "SK-100",
+      "file": "SK-100_Dosing_Skid.SLDPRT",
+      "description": "Chemical Dosing Skid Package",
+      "position_m": [
+        -4.2,
+        0.0,
+        0.0
+      ],
+      "instance": "SK-100_Dosing_Skid-1"
+    },
+    {
+      "tag": "PIP-100",
+      "file": "PIP-100_Interconnecting_Piping.SLDPRT",
+      "description": "Interconnecting Process & Steam Piping",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "instance": "PIP-100_Interconnecting_Piping-1"
+    },
+    {
+      "tag": "CY-101",
+      "file": "CY-101_Cyclone_Separator.SLDPRT",
+      "description": "Exhaust Cyclone Separator & Ductwork",
+      "position_m": [
+        2.8,
+        0.0,
+        7.5
+      ],
+      "instance": "CY-101_Cyclone_Separator-1"
+    },
+    {
+      "tag": "EV-101",
+      "file": "EV-101_ZLD_Evaporator.SLDPRT",
+      "description": "ZLD Falling Film Evaporator Skid",
+      "position_m": [
+        -6.5,
+        0.0,
+        5.5
+      ],
+      "instance": "EV-101_ZLD_Evaporator-1"
+    }
+  ],
+  "mass_properties": {
+    "total_mass_kg": 72308.05,
+    "displaced_volume_m3": 72.308,
+    "surface_area_m2": 469.55,
+    "center_of_gravity_m": [
+      -0.921,
+      1.655,
+      2.009
+    ]
+  },
+  "status": "VERIFIED_HIGH_DEFINITION_PHYSICAL_BREP"
+}
