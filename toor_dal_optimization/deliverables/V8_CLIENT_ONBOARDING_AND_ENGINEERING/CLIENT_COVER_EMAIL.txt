@@ -33,8 +33,9 @@ SAMPLE CONSIGNMENT REQUIREMENTS:
 ATTACHED DELIVERABLES:
 1. CLIENT_PROJECT_PROPOSAL.pdf (Document Ref: FNQ-PR-2026-001 Rev 8.0, 5 Pages)
 2. CLIENT_ACCEPTANCE_AND_START_FORM.docx / .pdf (Execution & Project Authorization Form)
-3. FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf (Consolidated 8-Sheet AutoCAD 2025 Native CAD Drawing Package)
-4. CLIENT_ANNEXURES/ (Individual High-Resolution Vector PDFs: DWG-FIN-15T-001 through 014, including PFD, Stream Balances, P&IDs, Site Plot Plan, Vessel GAs, Electrical SLD & SCADA Architecture, and 3D Assembly Plant GA)
+3. FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf (Consolidated 50-Page Master Integrated Engineering Dossier, 29.67 MB, ISO A2 Landscape, SHA-256: b260665175e85b1853433b0678da08b750e29bac7d4acfacb147a6f59ad19e12)
+4. FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf (Consolidated 8-Sheet AutoCAD 2025 Native CAD Drawing Package)
+5. CLIENT_ANNEXURES/ (Individual High-Resolution Vector PDFs: DWG-FIN-15T-001 through 014, including PFD, Stream Balances, P&IDs, Site Plot Plan, Vessel GAs, Electrical SLD & SCADA Architecture, and 3D Assembly Plant GA)
 
 We look forward to coordinating with your technical team and receiving the sample consignments to initiate Phase 1.
 

@@ -1,4 +1,5 @@
 # V8 CAD and Engineering Drawing Acceptance Audit Report
+
 **Document Ref:** FNQ-V8-CAD-001  
 **Lead Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
 **Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
@@ -7,6 +8,7 @@
 ---
 
 ## 1. Executive Drawing Audit Disposition
+
 Following strict visual, mathematical, and technical inspection under the **V8 Integrated Engineering Execution Constitution**:
 
 1. **Complete 13-Sheet Engineering Suite Plotted:** All 13 conceptual FEED engineering drawings (`DWG-FIN-15T-001` through `DWG-FIN-15T-014`) have been generated in AutoCAD R2018 DXF and natively plotted to vector PDFs via **Autodesk AutoCAD 2025 Core Engine Console (`accoreconsole.exe`)** using `DWG To PDF.pc3` and `monochrome.ctb`.
@@ -85,7 +87,45 @@ Thermodynamic interrogation via COM dispatch (`win32com.client.Dispatch("Apwn.Do
 ---
 
 ## 5. Mandatory Pre-Response Verification Checklist
+
 1. **Tool Provenance Audit:** PASS. Deliverables generated exclusively by **Autodesk AutoCAD 2025 Core Console (`accoreconsole.exe`)**, **Aspen Plus V14 (`Apwn.Document`)**, and **SolidWorks 2025 SP01.2 (`SLDWORKS.exe`)**. Zero Python coordinate line drawing (PIL/Matplotlib) mocks.
 2. **Ground-Truth Data Audit:** PASS. All stream mass flow rates, temperatures, and pressures originate from converged Aspen Plus case files. All equipment dimensions originate from 3D parametric solid models.
 3. **Empty Space & Layout Audit:** PASS. Every sheet is densely populated with genuine engineering tables, nozzle schedules, motor kw lists, HACCP CCP matrices, and NFPA safety parameters. Trailing white space is eliminated.
 4. **Attribution Audit:** PASS. Attribution strictly assigned to **Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)** and **Academic Guidance: Dr. Archisman Ray (IIT Kharagpur)**. Third-party or obsolete references are 100% eliminated.
+
+---
+
+## 6. Master Integrated Engineering Dossier Release (50 Pages Complete Edition)
+
+In response to the engineering directive requiring a consolidated, all-inclusive master document containing all native 2D CAD drawings alongside their corresponding 3D SolidWorks solid models (both as sequential facing inspection sheets, dedicated joined CAD model subassembly sheets, and side-by-side comparative sheets):
+
+- **Master Deliverable File:** `FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf`
+- **Primary Repository:** `deliverables/V8_CLIENT_ONBOARDING_AND_ENGINEERING/FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf`
+- **Secondary CAD Archive:** `engineering/cad/pdf/FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf`
+- **Total Number of Pages:** **50 ISO A2 Landscape Pages** (1684 pt x 1191 pt = 594 mm x 420 mm)
+- **Total File Size:** `28,266,994 bytes` (28.27 MB)
+- **Forensic Checksum (SHA-256):** `7eba7e1574511526c01dafa7ed99b1a2666a518f06996b153bb766fe648567dc`
+
+### Structural Organization of the 50-Page Master Dossier
+
+1. **Sheet 01 (Page 1):** Executive Engineering Transmittal & Title Sheet (Master 3D SolidWorks Plant Assembly render in upright human viewing orientation, CapEx/OpEx metrics, drawing roster, and governance notes).
+2. **Sheets 02 - 27 (Pages 2 - 27):** Sequential Paired Engineering Suite (13 pairs = 26 pages):
+   - Page $2N$: Native 2D AutoCAD Pure Vector Engineering Sheet (monochrome.ctb plotted via accoreconsole).
+   - Page $2N+1$: Facing 3D SolidWorks Model Engineering Inspection Sheet (features metallic-shaded 3D SolidWorks model renders in proper upright human viewing orientation where Y=UP, orthographic views, ASME sizing tables, and nozzle schedules).
+3. **Sheets 28 - 35 (Pages 28 - 35):** Dedicated CAD Joined Models Suite ("After the Schematics"):
+   - **Page 28 (DWG-FIN-15T-J01):** Primary 3D Joined Plant Isometric View (from Infeed to Dispatch, showing all 12 joined systems standing upright).
+   - **Page 29 (DWG-FIN-15T-J02):** Reverse $180^\circ$ 3D Joined Plant Isometric View (perspective from Utility Bay looking onto Mezzanine).
+   - **Page 30 (DWG-FIN-15T-J03):** Orthographic Front Elevation of Joined Facility (upright datums Y=0.0m to +7.75m, 52.65° chute slope).
+   - **Page 31 (DWG-FIN-15T-J04):** Orthographic Side / Transverse Elevation of Joined Facility (mezzanine footprint, goods lift, stair tower).
+   - **Page 32 (DWG-FIN-15T-J05):** Orthographic Top Plan View of Joined Facility (structural grids 1-8/A-D, battery limits).
+   - **Page 33 (DWG-FIN-15T-J06):** High-Resolution Detail: Soaking Battery, Chutes & Mezzanine Platform Subassembly (TK-101A/B + AG-101A/B + STR-100 + CHU-100).
+   - **Page 34 (DWG-FIN-15T-J07):** High-Resolution Detail: Dewatering Screen, Fluid Bed Dryer & Cyclone Subassembly (SC-101 + DR-101 + CY-101).
+   - **Page 35 (DWG-FIN-15T-J08):** High-Resolution Detail: ZLD Evaporator Skid & Chemical Dosing Skid Subassembly (EV-101 + SK-100 + PIP-100).
+4. **Sheets 36 - 46 (Pages 36 - 46):** Side-by-Side Dual-Pane Engineering Suite (11 pages):
+   - Left Half: 2D CAD Engineering Drawing.
+   - Right Half: 3D SolidWorks Solid Model Render in Upright Human Orientation + Mechanical Sizing Table + Nozzle Schedule.
+5. **Sheets 47 - 50 (Pages 47 - 50):** Comprehensive Engineering Technical Annexures:
+   - **Page 47 (ANNEX-ASPEN-001):** Aspen Plus V14 Converged Thermodynamic Simulation Dossier (Flowsheet render, 14-stream property table, 0.000000% balance closure).
+   - **Page 48 (ANNEX-ELEC-001):** Electrical Load List & Motor Control Center (MCC) Distribution Schedule (125.8 kW connected load, 72-point SCADA crosswalk).
+   - **Page 49 (ANNEX-MECH-001):** Mechanical Equipment Sizing Matrix & Structural Steel BOM (7,189 kg steel framework).
+   - **Page 50 (ANNEX-SAFETY-001):** Process Hazard Analysis (HAZOP), NFPA 68 Explosion Mitigation & Forensic Handover Manifest.

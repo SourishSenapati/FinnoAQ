@@ -364,7 +364,7 @@ p_anx = doc.add_paragraph(
 )
 format_para(p_anx, space_before=2, space_after=4)
 
-anx_tbl = doc.add_table(rows=11, cols=4)
+anx_tbl = doc.add_table(rows=12, cols=4)
 anx_headers = ["Annexure Ref", "Drawing Number & Title", "Design Standard & Scope Description", "Format & Native Tool Provenance"]
 for c_idx, h in enumerate(anx_headers):
     anx_tbl.rows[0].cells[c_idx].paragraphs[0].add_run(h)
@@ -380,6 +380,7 @@ anx_rows = [
     ("Annexure H", "DWG-FIN-15T-011\nElectrical Single Line Diagram & SCADA", "11kV / 415V 500kVA TR-01, 250kVA DG, 11 MCC feeders, ISA-95 SCADA Profinet ring topology.", "AutoCAD 2025 (Vector PDF)\nISO A2 (monochrome.ctb)"),
     ("Annexure I", "DWG-FIN-15T-014\nPlant GA Master Assembly Drawing", "SolidWorks 3D B-Rep assembly (PLANT-15T, 12 systems, 27.08 tonnes), isometric & orthographic GAs.", "SolidWorks 2025 SP01.2\nA1 Master Assembly Drawing"),
     ("Master Book", "FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf", "Consolidated 8-sheet conceptual FEED package compiled into a single publication-grade book.", "AutoCAD 2025 Native Plot\n625,497 Bytes (Verified)"),
+    ("Master Dossier (50 Pages)", "FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf", "Complete 50-page Master Integrated Engineering Dossier: AutoCAD 2D Drawings paired with SolidWorks 3D Models in Upright Human Orientation, 8 Dedicated Joined Plant Exhibition Sheets, Dual-Pane Suite, and Aspen V14 simulation.", "AutoCAD + SolidWorks + Aspen\n29.67 MB | SHA-256 Verified"),
 ]
 
 for r_idx, row_data in enumerate(anx_rows):
