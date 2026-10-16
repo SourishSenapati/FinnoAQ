@@ -1,12 +1,13 @@
 # V5 MASTER HANDOVER & SYSTEM RESUME DIRECTIVE
+
 **Project:** Greenfield 15,000 kg/day (15 TPD) Tanzanian Split Pigeon Pea (*Cajanus cajan* / Toor Dal) Cooking-Time Optimization Facility  
 **Working Directory:** `d:\PROJECT\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\finnoaq\toor_dal_optimization`  
 **Git Branch:** `v5-integrated-engineering`  
 **Latest Baseline Commit:** `3016154` (`docs(handover): update directive with explicit answers on SolidWorks completion, plant construction, and GPU memory diagnostics`)  
-**Timestamp:** 2026-10-16T10:45:00+05:30  
+**Timestamp:** 2026-10-16T11:25:00+05:30  
 **Repository Health:** 11 / 11 V5 Integration Acceptance Tests Passing; 81 / 81 PyTest Unit Tests Passing (Exit Code 0)  
-**SolidWorks 3D Plant Status:** **100% CONSTRUCTED & ASSEMBLED (56.35 TONNES, 12 SYSTEMS, 18,855 STEP LINES, 100% MATED)**  
-**Drive C: Disk Health:** **80.42 GB Free Space (+72.60 GB Reclaimed)**  
+**SolidWorks 3D Plant Status:** **100% CONSTRUCTED & ASSEMBLED (24.62 TONNES, 12 SYSTEMS, 15,768 STEP LINES, 100% MATED)**  
+**Drive C: Disk Health:** **63.06 GB Free Space (+55.24 GB Reclaimed)**  
 **GPU Memory Health:** **8 MiB / 6,141 MiB Utilized (99.9% VRAM Free)**  
 **Scientific Governance:** Gate G-A Hold Strictly Active (`PENDING_COMMERCIAL_LOT_ID`)  
 
@@ -16,15 +17,16 @@
 
 > [!IMPORTANT]
 > **COPY-PASTE THIS PROMPT TO RESUME WORK IN ANY NEW CHAT SESSION:**
+>
 > ```text
 > Read the complete handover directive in `NEW_CHAT_HANDOVER_DIRECTIVE.md` before taking any action.
 > Active Branch: v5-integrated-engineering.
 > Toolchain verified: Python 3.13.7 (C:\Python313\python.exe), SolidWorks 2025 SP01.2 COM, AutoCAD 2025 COM/CLI, Aspen Plus V14.0 COM, GPU RTX 4050 (CUDA 13.1, idle 8 MiB VRAM).
 > Status:
-> 1. Complete Physical Plant Constructed in SolidWorks: PLANT-15T_General_Arrangement.SLDASM & .step (12 systems, 56,353 kg mass, 18,855 STEP lines, rendered PNGs, 100% nozzle/chute/duct mated).
+> 1. Complete Physical Plant Constructed in SolidWorks: PLANT-15T_General_Arrangement.SLDASM & .step (12 systems, 24,621.5 kg mass, 15,768 STEP lines, rendered PNGs, 100% nozzle/chute/duct mated).
 > 2. All 11 V5 Integration Acceptance Tests PASS (run via `C:\Python313\python.exe scripts/v5_integration_checker.py`).
 > 3. All 81 Pytest unit tests PASS (run via `C:\Python313\python.exe -m pytest tests/`).
-> 4. Drive C: clean (80.42 GB free space).
+> 4. Drive C: clean (63.06 GB free space).
 > 5. Master Data Store in `engineering/master_data/` is 100% schema-validated across 7 datasets and 85 unique entity tags.
 > 6. Gate G-A Hold: Active on `PENDING_COMMERCIAL_LOT_ID`. No synthetic lot IDs or fabricated kinetic certainty permitted.
 > Verify repository health before proceeding to next operational tasks.
@@ -35,12 +37,14 @@
 ## 2. Direct Answers to Core Engineering Questions
 
 ### Q1: Has the SolidWorks CAD modeling been completed?
+
 **YES, 100% COMPLETED.**  
 Every component and the master plant assembly have been generated natively in **SolidWorks 2025 SP01.2 (`Rev 33.1.2`)**:
-* **Master Plant Assembly:** [`PLANT-15T_General_Arrangement.SLDASM`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM) (251.5 KB native file).
-* **Master Neutral STEP Model:** [`PLANT-15T_General_Arrangement.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/PLANT-15T_General_Arrangement.step) (1.39 MB, **18,855 lines** of closed B-Rep solid geometry).
+
+* **Master Plant Assembly:** [`PLANT-15T_General_Arrangement.SLDASM`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM) (193.7 KB native file).
+* **Master Neutral STEP Model:** [`PLANT-15T_General_Arrangement.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/PLANT-15T_General_Arrangement.step) (1.14 MB, **15,768 lines** of closed B-Rep solid geometry).
 * **Component Models:** 10 discrete parametric SolidWorks parts ([`.SLDPRT`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/sldprt/) & [`.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/)).
-* **Audit & Validation:** Verified via native SolidWorks COM mass property extraction (`v5_high_definition_plant_audit.json`). Total solid mass: **`56,352.71 kg` (56.35 tonnes)**; displaced volume: **`56.3527 m³`**; surface area: **`402.62 m²`**; Center of Gravity: $(-1.041, 1.361, 0.809)\text{ m}$.
+* **Audit & Validation:** Verified via native SolidWorks COM mass property extraction (`v5_high_definition_plant_audit.json`). Total solid mass: **`24,621.50 kg` (24.62 tonnes)**; displaced volume: **`24.6215 m³`**; surface area: **`345.01 m²`**; Center of Gravity: $(-0.913, 2.043, -3.308)\text{ m}$.
 
 ### Q2: Has the entire plant been constructed and physically interconnected down to the millimeter/pixel?
 **YES, 100% CONSTRUCTED & FULLY INTERCONNECTED WITH ZERO DISCONNECTIONS.**  
@@ -107,15 +111,15 @@ The entire greenfield plant has been fully reconstructed, physically interconnec
 8. **[`PIP-100_Interconnecting_Piping.SLDPRT`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/sldprt/PIP-100_Interconnecting_Piping.SLDPRT) / [`.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/PIP-100_Interconnecting_Piping.step):** DN50 dosing line branching to BOTH tanks, DN50 insulated steam supply header with control valve `TCV-101`, and DN100 spent liquor effluent drain header.
 9. **[`CY-101_Cyclone_Separator.SLDPRT`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/sldprt/CY-101_Cyclone_Separator.SLDPRT) / [`.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/CY-101_Cyclone_Separator.step):** $\varnothing 800\text{ mm}$ cyclone body, conical hopper, rotary airlock valve, clean air stack, and contiguous exhaust air ducting connecting from dryer hoods.
 10. **[`EV-101_ZLD_Evaporator.SLDPRT`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/sldprt/EV-101_ZLD_Evaporator.SLDPRT) / [`.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/EV-101_ZLD_Evaporator.step):** Triple-effect falling-film calandrias ($\varnothing 600 \times 4,500\text{ mm}$), vapor cyclones, surface condenser, and skid base.
-11. **[`PLANT-15T_General_Arrangement.SLDASM`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM):** Master assembly uniting all systems with 100% mated interfaces (251.5 KB native).
-12. **[`PLANT-15T_General_Arrangement.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/PLANT-15T_General_Arrangement.step):** Master neutral exchange model (1.39 MB, **18,855 lines** of pure B-Rep solids).
+11. **[`PLANT-15T_General_Arrangement.SLDASM`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM):** Master assembly uniting all systems with 100% mated interfaces (193.7 KB native).
+12. **[`PLANT-15T_General_Arrangement.step`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/step/PLANT-15T_General_Arrangement.step):** Master neutral exchange model (1.14 MB, **15,768 lines** of pure B-Rep solids).
 
 ### Physical Mass Properties (Verified by SolidWorks COM API)
 
-* **Total Plant Equipment & Structural Mass:** **`56,352.71 kg`** ($56.35\text{ tonnes}$)
-* **Total Displaced Volume:** **`56.3527 m³`**
-* **Total Plant Surface Area:** **`402.62 m²`**
-* **Center of Gravity:** $X = -1.041\text{ m}, Y = 1.361\text{ m}, Z = 0.809\text{ m}$
+* **Total Plant Equipment & Structural Mass:** **`24,621.50 kg`** ($24.62\text{ tonnes}$)
+* **Total Displaced Volume:** **`24.6215 m³`**
+* **Total Plant Surface Area:** **`345.01 m²`**
+* **Center of Gravity:** $X = -0.913\text{ m}, Y = 2.043\text{ m}, Z = -3.308\text{ m}$
 * **Audit File:** [`engineering/verification/v5/v5_high_definition_plant_audit.json`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/verification/v5/v5_high_definition_plant_audit.json)
 
 ### High-Resolution Rendered Views

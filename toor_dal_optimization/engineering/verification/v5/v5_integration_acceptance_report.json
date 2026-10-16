@@ -1,7 +1,7 @@
 {
   "test_run_metadata": {
     "directive": "V5 Master Directive Section 1(E)",
-    "timestamp": "2026-10-16T09:29:25+0530",
+    "timestamp": "2026-10-16T11:27:10+0530",
     "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
     "branch": "v5-integrated-engineering"
   },
@@ -52,10 +52,10 @@
     "test_5_cad_geometry_and_solids": {
       "status": "PASS",
       "details": [
-        "STEP TK-101_Soak_Tank.step VERIFIED: 11 solids, 11 closed shells, 120 faces.",
-        "STEP DR-101_Fluid_Bed_Dryer.step VERIFIED: 19 solids, 19 closed shells, 156 faces.",
-        "STEP SK-100_Dosing_Skid.step VERIFIED: 1 solids, 1 closed shells, 86 faces.",
-        "STEP PLANT-15T_General_Arrangement.step VERIFIED: 36 solids, 36 closed shells, 419 faces.",
+        "STEP TK-101_Soak_Tank.step VERIFIED: 3 solids, 3 closed shells, 73 faces.",
+        "STEP DR-101_Fluid_Bed_Dryer.step VERIFIED: 1 solids, 1 closed shells, 67 faces.",
+        "STEP SK-100_Dosing_Skid.step VERIFIED: 1 solids, 1 closed shells, 17 faces.",
+        "STEP PLANT-15T_General_Arrangement.step VERIFIED: 27 solids, 27 closed shells, 498 faces.",
         "SolidWorks Master Assembly PLANT-15T verified: Mass=29256.88 kg, Volume=29.2569 m3"
       ]
     },

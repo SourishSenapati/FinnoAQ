@@ -62,10 +62,16 @@ def build_manifest():
     # 2. Native CAD models
     cad_files = [
         os.path.join("engineering", "cad", "native", "PLANT-15T_General_Arrangement.SLDASM"),
-        os.path.join("engineering", "cad", "sldprt", "TK-101_Soak_Tank.SLDPRT"),
-        os.path.join("engineering", "cad", "sldprt", "DR-101_Fluid_Bed_Dryer.SLDPRT"),
-        os.path.join("engineering", "cad", "sldprt", "SK-100_Dosing_Skid.SLDPRT"),
         os.path.join("engineering", "cad", "sldprt", "AG-101_Agitator.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "CHU-100_Transfer_Chutes.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "CY-101_Cyclone_Separator.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "DR-101_Fluid_Bed_Dryer.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "EV-101_ZLD_Evaporator.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "PIP-100_Interconnecting_Piping.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "SC-101_Dewatering_Screen.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "SK-100_Dosing_Skid.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "STR-100_Mezzanine_Platform.SLDPRT"),
+        os.path.join("engineering", "cad", "sldprt", "TK-101_Soak_Tank.SLDPRT"),
     ]
     for rel in cad_files:
         info = scan_file(rel)
@@ -113,8 +119,10 @@ def build_manifest():
     tool_files = [
         os.path.join("engineering", "verification", "v5", "v5_toolchain_inventory.json"),
         os.path.join("engineering", "verification", "v5", "v5_integration_acceptance_report.json"),
+        os.path.join("engineering", "verification", "v5", "v5_high_definition_plant_audit.json"),
         os.path.join("scripts", "v5_integration_checker.py"),
-        os.path.join("scripts", "generate_and_validate_master_data.py")
+        os.path.join("scripts", "generate_and_validate_master_data.py"),
+        os.path.join("scripts", "build_pixel_perfect_connected_plant.py")
     ]
     for rel in tool_files:
         info = scan_file(rel)

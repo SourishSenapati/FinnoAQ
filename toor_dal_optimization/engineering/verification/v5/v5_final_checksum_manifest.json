@@ -2,12 +2,12 @@
   "manifest_metadata": {
     "title": "V5 Master Cryptographic Checksum Manifest",
     "standard": "V5 Master Directive Section 1(E) Cryptographic Lock",
-    "generated_timestamp": "2026-10-16T04:36:58.082608+00:00",
+    "generated_timestamp": "2026-10-16T05:58:21.514278+00:00",
     "target_plant": "15,000 kg/day Greenfield Imported Pigeon Pea Optimization Facility",
     "git_branch": "v5-integrated-engineering",
     "hash_algorithm": "SHA-256",
     "gate_status": "GATE G-A HOLD ACTIVE",
-    "total_locked_files": 70
+    "total_locked_files": 78
   },
   "master_data": [
     {
@@ -104,101 +104,137 @@
   "native_cad_models": [
     {
       "relative_path": "engineering/cad/native/PLANT-15T_General_Arrangement.SLDASM",
-      "sha256": "2845604929877768ba61bc2daf2f5b030fc8207d622459f66034428807ebbdd0",
-      "size_bytes": 252589,
-      "last_modified": "2026-10-16T04:35:16.060078+00:00"
-    },
-    {
-      "relative_path": "engineering/cad/sldprt/TK-101_Soak_Tank.SLDPRT",
-      "sha256": "a1308588bb0282735ff0086b9d9e39052bc3d39c25f657a059925492331afbaf",
-      "size_bytes": 185203,
-      "last_modified": "2026-10-16T04:35:15.719401+00:00"
-    },
-    {
-      "relative_path": "engineering/cad/sldprt/DR-101_Fluid_Bed_Dryer.SLDPRT",
-      "sha256": "6da98913913c5f958a0960df109cf3b4ee0ab475b39e8eadc750bcb75903f54f",
-      "size_bytes": 188913,
-      "last_modified": "2026-10-16T04:35:14.448902+00:00"
-    },
-    {
-      "relative_path": "engineering/cad/sldprt/SK-100_Dosing_Skid.SLDPRT",
-      "sha256": "140fc0760e2f627aea6e9b4f9618f677a61bef50ee6b8f4c138924a461fc8b70",
-      "size_bytes": 157312,
-      "last_modified": "2026-10-16T04:35:14.783553+00:00"
+      "sha256": "3d77a064855f0a06e704981d9059895ee0108668c0128c5c82d5ecd102d0792e",
+      "size_bytes": 193673,
+      "last_modified": "2026-10-16T05:48:23.916875+00:00"
     },
     {
       "relative_path": "engineering/cad/sldprt/AG-101_Agitator.SLDPRT",
-      "sha256": "88a20030739a75cf95cc649068e37c8bdb5f10288e13461918fa52ffd406f0de",
-      "size_bytes": 102428,
-      "last_modified": "2026-10-16T04:35:15.777293+00:00"
+      "sha256": "466bdccd704a0de2132f37ad573dc1ad884f13f44b2b6538658a66bdd50bfed6",
+      "size_bytes": 78501,
+      "last_modified": "2026-10-16T05:48:22.685934+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/CHU-100_Transfer_Chutes.SLDPRT",
+      "sha256": "0ac13a08b8d3c1113a64f2c94dfc798c5e8d3f9cf8aca9cf0a235ccd22415ff3",
+      "size_bytes": 108364,
+      "last_modified": "2026-10-16T05:48:22.008881+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/CY-101_Cyclone_Separator.SLDPRT",
+      "sha256": "10f8b89e46fe317a47744887e97f1ef5f36fd53598f12aae501523cfa506d6d4",
+      "size_bytes": 89738,
+      "last_modified": "2026-10-16T05:48:23.262345+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/DR-101_Fluid_Bed_Dryer.SLDPRT",
+      "sha256": "5b4f08c8f189df104a0ee775ce343df38afc6d70a0449a8bd8cc687b13c9d006",
+      "size_bytes": 146661,
+      "last_modified": "2026-10-16T05:48:21.342859+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/EV-101_ZLD_Evaporator.SLDPRT",
+      "sha256": "cf3971717953c4ab1044bf31a48dedca3738a3902824d637cdaac76d23c75c21",
+      "size_bytes": 77781,
+      "last_modified": "2026-10-16T05:48:20.680518+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/PIP-100_Interconnecting_Piping.SLDPRT",
+      "sha256": "93d09c4ba30a9234a77df5df5417fc420f61e4c919ca6b020c6287022173e1f7",
+      "size_bytes": 116272,
+      "last_modified": "2026-10-16T05:48:20.999147+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/SC-101_Dewatering_Screen.SLDPRT",
+      "sha256": "1fa2393de6d67307608c8da8d0c81923cdd9c77ea5dbd55807faaf65de4d2500",
+      "size_bytes": 120970,
+      "last_modified": "2026-10-16T05:48:21.680146+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/SK-100_Dosing_Skid.SLDPRT",
+      "sha256": "6789a2cf16427cb3bab45fb5e4c63037a45bcfffb195e7000794f387ed11200d",
+      "size_bytes": 76119,
+      "last_modified": "2026-10-16T05:48:22.962991+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/STR-100_Mezzanine_Platform.SLDPRT",
+      "sha256": "c0fb96deed47363c1ca12b10a6ce9207be1e93cef5ead065c4af58c8852a38f8",
+      "size_bytes": 200468,
+      "last_modified": "2026-10-16T05:48:23.601650+00:00"
+    },
+    {
+      "relative_path": "engineering/cad/sldprt/TK-101_Soak_Tank.SLDPRT",
+      "sha256": "d70a42425b34a42002773696e4427dee0a79857508b5deb938241cca94d49799",
+      "size_bytes": 150663,
+      "last_modified": "2026-10-16T05:48:22.374674+00:00"
     }
   ],
   "step_models": [
     {
       "relative_path": "engineering/cad/step/AG-101_Agitator.step",
-      "sha256": "f2c906b73a73dfc6070ea18e83371da6dff4581400b732156df0ff5e6d11565c",
-      "size_bytes": 120051,
-      "last_modified": "2026-10-15T16:35:57.181529+00:00"
+      "sha256": "2d8b8a2a4b130c6ef399583ecdc6675df1b3b311f41620f4f0ddf686c23edacd",
+      "size_bytes": 70676,
+      "last_modified": "2026-10-16T05:46:48.396187+00:00"
     },
     {
       "relative_path": "engineering/cad/step/CHU-100_Transfer_Chutes.step",
-      "sha256": "318cf3f5597f6e3be00b612ca46519d892dc163fc415c88cd297d2bad84ec6e2",
-      "size_bytes": 40202,
-      "last_modified": "2026-10-16T04:34:41.748868+00:00"
+      "sha256": "4d427556235023474b1aa9d5120366cad27c98308d0f05c75a74a6bd73fb7503",
+      "size_bytes": 103950,
+      "last_modified": "2026-10-16T05:47:16.928423+00:00"
     },
     {
       "relative_path": "engineering/cad/step/CY-101_Cyclone_Separator.step",
-      "sha256": "405050fe8bd6c0ba9b36d9a612afb2af1ad96ead12e7fecb33a088410e462494",
-      "size_bytes": 34425,
-      "last_modified": "2026-10-16T04:34:56.631578+00:00"
+      "sha256": "7a94255414a3346da883da8d5c7ce02772b5e34d1734523fd5b7414c57c1930e",
+      "size_bytes": 75298,
+      "last_modified": "2026-10-16T05:47:48.467915+00:00"
     },
     {
       "relative_path": "engineering/cad/step/DR-101_Fluid_Bed_Dryer.step",
-      "sha256": "27988e51e7a856bae025cd04d5e59e3644761ee21e303c6c52f07be290c9a6ea",
-      "size_bytes": 299302,
-      "last_modified": "2026-10-15T16:35:40.693298+00:00"
+      "sha256": "9c730f21108c59c78518f0dc7e816fcdfc428fe46150c73ff05068252acb687e",
+      "size_bytes": 158574,
+      "last_modified": "2026-10-16T05:47:38.328394+00:00"
     },
     {
       "relative_path": "engineering/cad/step/EV-101_ZLD_Evaporator.step",
-      "sha256": "84757f5df5e4417d71b8e443b366c5ce47269fdf3a42449768b42876c6aeb2ba",
-      "size_bytes": 62582,
-      "last_modified": "2026-10-16T04:35:03.499820+00:00"
+      "sha256": "ba21f9a28be04554a24e9a0346880cb8523ca9ace5ac2986a362f36930ca0ca6",
+      "size_bytes": 57724,
+      "last_modified": "2026-10-16T05:48:14.999038+00:00"
     },
     {
       "relative_path": "engineering/cad/step/PIP-100_Interconnecting_Piping.step",
-      "sha256": "6aba741e4204526ac25279cb6f595db2bc39730961c4c9a51dc11a5106c479ef",
-      "size_bytes": 72157,
-      "last_modified": "2026-10-16T04:34:50.680524+00:00"
+      "sha256": "58ce3ff1ba16429050865b59a92520cb171d5bd4393005e4f98b95aecf709fb2",
+      "size_bytes": 116927,
+      "last_modified": "2026-10-16T05:48:07.997808+00:00"
     },
     {
       "relative_path": "engineering/cad/step/PLANT-15T_General_Arrangement.step",
-      "sha256": "9372ccb0681a983f7d7ad65d5ee7d9019772cbc9c897a8b245640673326b7076",
-      "size_bytes": 1402294,
-      "last_modified": "2026-10-16T04:35:16.792240+00:00"
+      "sha256": "e7ecf249d4170256e1e1e861cf7131cf8422a2146f8b07f2804bef1b4dc36405",
+      "size_bytes": 1144501,
+      "last_modified": "2026-10-16T05:48:24.887116+00:00"
     },
     {
       "relative_path": "engineering/cad/step/SC-101_Dewatering_Screen.step",
-      "sha256": "583e9837a57f249290e88c11603686d46c8160f5efcfd594af0df8fca5ecb767",
-      "size_bytes": 101692,
-      "last_modified": "2026-10-16T04:34:21.288158+00:00"
+      "sha256": "45c04c8fdd39fa81d328e5e555b571b94c62edd8473f61e3c08773fb301f6b79",
+      "size_bytes": 115940,
+      "last_modified": "2026-10-16T05:47:26.766035+00:00"
     },
     {
       "relative_path": "engineering/cad/step/SK-100_Dosing_Skid.step",
-      "sha256": "f04798e8962f21cb02187d3cda2e47dfadda8588c1d5250ef9a54ea5146163e1",
-      "size_bytes": 181804,
-      "last_modified": "2026-10-15T16:35:49.737336+00:00"
+      "sha256": "e73c607e3fcd3dad8755f7f811d1eafb54d33c0cd5d8e75b78639d8be4427cf0",
+      "size_bytes": 37286,
+      "last_modified": "2026-10-16T05:47:54.918381+00:00"
     },
     {
       "relative_path": "engineering/cad/step/STR-100_Mezzanine_Platform.step",
-      "sha256": "7f31fd7c971e01e80338f13ab31ba7839ac695f30645287cdabbe27d2c24afe0",
-      "size_bytes": 138445,
-      "last_modified": "2026-10-16T04:34:35.153141+00:00"
+      "sha256": "73012ba30dbfb2f74a548f274f69f426d60e9d7e0566fe2469950febf0f0ac69",
+      "size_bytes": 179367,
+      "last_modified": "2026-10-16T05:47:06.763294+00:00"
     },
     {
       "relative_path": "engineering/cad/step/TK-101_Soak_Tank.step",
-      "sha256": "6608b4c5aaca910636ff9c830843e27c9508354c8cdeb9349d44e7ee9c88416a",
-      "size_bytes": 281720,
-      "last_modified": "2026-10-15T16:35:31.382934+00:00"
+      "sha256": "4b33c79f159e118c007fec70599bc631dc48f6ef03f7ebe738b77da12d561724",
+      "size_bytes": 169481,
+      "last_modified": "2026-10-16T05:46:40.199907+00:00"
     }
   ],
   "vector_drawings_pdf": [
@@ -378,9 +414,15 @@
     },
     {
       "relative_path": "engineering/verification/v5/v5_integration_acceptance_report.json",
-      "sha256": "283c9d1e8cfb7b20d0ab4dcbfc6474f415309a8c899897bc508953769b05f0dc",
-      "size_bytes": 5555,
-      "last_modified": "2026-10-16T03:59:26.495109+00:00"
+      "sha256": "d3eb5af6a3734f295012892cad7f6577acd2a9530163ffc36d274fff0b792dc4",
+      "size_bytes": 5549,
+      "last_modified": "2026-10-16T05:57:11.612450+00:00"
+    },
+    {
+      "relative_path": "engineering/verification/v5/v5_high_definition_plant_audit.json",
+      "sha256": "44949a8df3ae2698e1e2a3384b0d48ca9caf0b7f6bf8f70ca182a40239de31d1",
+      "size_bytes": 6076,
+      "last_modified": "2026-10-16T05:48:28.474483+00:00"
     },
     {
       "relative_path": "scripts/v5_integration_checker.py",
@@ -393,6 +435,12 @@
       "sha256": "ea2681898cb74603dbe028d74970ab96c10f58cffcbf20feb9bae3c5f9c249b5",
       "size_bytes": 46539,
       "last_modified": "2026-10-15T19:02:16.721646+00:00"
+    },
+    {
+      "relative_path": "scripts/build_pixel_perfect_connected_plant.py",
+      "sha256": "56c7aaa74d17bf3f25ff5dbd3d5c844662573a055b7dc0fb0d90ef675fa7ba5c",
+      "size_bytes": 52898,
+      "last_modified": "2026-10-16T05:45:24.375506+00:00"
     }
   ],
   "v5_reports": [
@@ -440,9 +488,9 @@
     },
     {
       "relative_path": "NEW_CHAT_HANDOVER_DIRECTIVE.md",
-      "sha256": "ac8b5befa2817675cdbf3a791672de62527a0af4083badf67b98cb215b454e47",
-      "size_bytes": 24561,
-      "last_modified": "2026-10-16T03:58:38.872434+00:00"
+      "sha256": "c46e87cd23bfca393667c111f7a7c804e51f9ffbe706b8bcc8b77925ca19b6f6",
+      "size_bytes": 20876,
+      "last_modified": "2026-10-16T05:58:10.473250+00:00"
     }
   ]
 }

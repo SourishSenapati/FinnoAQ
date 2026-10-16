@@ -2,152 +2,248 @@
   "title": "Pixel-Perfect Fully Connected Greenfield Plant Engineering Audit",
   "assembly_file": "d:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\native\\PLANT-15T_General_Arrangement.SLDASM",
   "step_file": "d:\\PROJECT\\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\\finnoaq\\toor_dal_optimization\\engineering\\cad\\step\\PLANT-15T_General_Arrangement.step",
-  "sldasm_bytes": 251500,
-  "step_bytes": 1392653,
-  "step_lines": 18855,
+  "sldasm_bytes": 193673,
+  "step_bytes": 1144501,
+  "step_lines": 15768,
   "total_systems_integrated": 12,
   "systems": [
     {
       "tag": "STR-100",
       "file": "STR-100_Mezzanine_Platform.SLDPRT",
       "description": "Structural Mezzanine Platform & Dual Cutout Deck",
-      "position_m": [
+      "target_position_m": [
         0.0,
         0.0,
         0.0
       ],
-      "instance": "STR-100_Mezzanine_Platform-1"
+      "instance": "STR-100_Mezzanine_Platform-1",
+      "assembly_bounds": [
+        -5.6,
+        0.0,
+        -2.025,
+        3.625,
+        5.31,
+        2.025
+      ]
     },
     {
       "tag": "TK-101A",
       "file": "TK-101_Soak_Tank.SLDPRT",
       "description": "Rapid Hydration Soak Tank A",
-      "position_m": [
+      "target_position_m": [
         -1.6,
         4.2,
         0.0
       ],
-      "instance": "TK-101_Soak_Tank-1"
+      "instance": "TK-101_Soak_Tank-1",
+      "assembly_bounds": [
+        -2.55,
+        3.325,
+        -0.95,
+        -0.65,
+        6.95,
+        0.95
+      ]
     },
     {
       "tag": "TK-101B",
       "file": "TK-101_Soak_Tank.SLDPRT",
       "description": "Rapid Hydration Soak Tank B",
-      "position_m": [
+      "target_position_m": [
         1.6,
         4.2,
         0.0
       ],
-      "instance": "TK-101_Soak_Tank-2"
+      "instance": "TK-101_Soak_Tank-2",
+      "assembly_bounds": [
+        0.65,
+        3.325,
+        -0.95,
+        2.55,
+        6.95,
+        0.95
+      ]
     },
     {
       "tag": "AG-101A",
       "file": "AG-101_Agitator.SLDPRT",
-      "description": "Low-Shear Hydrofoil Agitator A",
-      "position_m": [
+      "description": "Low-Shear Hydrofoil Agitator Drive A",
+      "target_position_m": [
         -1.6,
-        6.7,
+        6.9,
         0.0
       ],
-      "instance": "AG-101_Agitator-1"
+      "instance": "AG-101_Agitator-1",
+      "assembly_bounds": [
+        -1.9,
+        4.6,
+        -0.3,
+        -1.3,
+        7.75,
+        0.3
+      ]
     },
     {
       "tag": "AG-101B",
       "file": "AG-101_Agitator.SLDPRT",
-      "description": "Low-Shear Hydrofoil Agitator B",
-      "position_m": [
+      "description": "Low-Shear Hydrofoil Agitator Drive B",
+      "target_position_m": [
         1.6,
-        6.7,
+        6.9,
         0.0
       ],
-      "instance": "AG-101_Agitator-2"
+      "instance": "AG-101_Agitator-2",
+      "assembly_bounds": [
+        1.3,
+        4.6,
+        -0.3,
+        1.9,
+        7.75,
+        0.3
+      ]
     },
     {
       "tag": "CHU-100",
       "file": "CHU-100_Transfer_Chutes.SLDPRT",
       "description": "Dual-Branch Converging Slurry & Transition Chutes",
-      "position_m": [
+      "target_position_m": [
         0.0,
         0.0,
         0.0
       ],
-      "instance": "CHU-100_Transfer_Chutes-1"
+      "instance": "CHU-100_Transfer_Chutes-1",
+      "assembly_bounds": [
+        -1.9,
+        0.75,
+        -2.65,
+        1.9,
+        3.325,
+        0.24
+      ]
     },
     {
       "tag": "SC-101",
       "file": "SC-101_Dewatering_Screen.SLDPRT",
       "description": "Vibratory Dewatering Screen & Spray Rinse Header",
-      "position_m": [
+      "target_position_m": [
         0.0,
         0.0,
         0.0
       ],
-      "instance": "SC-101_Dewatering_Screen-1"
+      "instance": "SC-101_Dewatering_Screen-1",
+      "assembly_bounds": [
+        -0.45,
+        0.0,
+        -2.4,
+        0.45,
+        1.4,
+        0.05
+      ]
     },
     {
       "tag": "DR-101",
       "file": "DR-101_Fluid_Bed_Dryer.SLDPRT",
       "description": "Continuous Vibrating Fluid Bed Dryer (6.0m Active Bed)",
-      "position_m": [
+      "target_position_m": [
         0.0,
         0.0,
         0.0
       ],
-      "instance": "DR-101_Fluid_Bed_Dryer-1"
-    },
-    {
-      "tag": "SK-100",
-      "file": "SK-100_Dosing_Skid.SLDPRT",
-      "description": "Chemical Preparation & Metering Dosing Skid",
-      "position_m": [
-        -3.5,
+      "instance": "DR-101_Fluid_Bed_Dryer-1",
+      "assembly_bounds": [
+        -0.55,
         0.0,
-        -1.5
-      ],
-      "instance": "SK-100_Dosing_Skid-1"
-    },
-    {
-      "tag": "PIP-100",
-      "file": "PIP-100_Interconnecting_Piping.SLDPRT",
-      "description": "Interconnecting Dosing, Steam & Effluent Piping",
-      "position_m": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "instance": "PIP-100_Interconnecting_Piping-1"
+        -8.95,
+        0.55,
+        2.2,
+        -2.55
+      ]
     },
     {
       "tag": "CY-101",
       "file": "CY-101_Cyclone_Separator.SLDPRT",
       "description": "Exhaust Cyclone Separator & Continuous Ductwork",
-      "position_m": [
+      "target_position_m": [
         0.0,
         0.0,
         0.0
       ],
-      "instance": "CY-101_Cyclone_Separator-1"
+      "instance": "CY-101_Cyclone_Separator-1",
+      "assembly_bounds": [
+        -0.15,
+        0.0,
+        -7.2,
+        2.6,
+        5.5,
+        -3.8
+      ]
+    },
+    {
+      "tag": "SK-100",
+      "file": "SK-100_Dosing_Skid.SLDPRT",
+      "description": "Chemical Preparation & Metering Dosing Skid",
+      "target_position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "instance": "SK-100_Dosing_Skid-1",
+      "assembly_bounds": [
+        -4.7,
+        0.0,
+        -1.6,
+        -2.3,
+        1.25,
+        -0.4
+      ]
+    },
+    {
+      "tag": "PIP-100",
+      "file": "PIP-100_Interconnecting_Piping.SLDPRT",
+      "description": "Interconnecting Dosing, Steam & Effluent Piping",
+      "target_position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "instance": "PIP-100_Interconnecting_Piping-1",
+      "assembly_bounds": [
+        -5.555,
+        0.2,
+        -4.0,
+        2.2,
+        6.7,
+        0.9
+      ]
     },
     {
       "tag": "EV-101",
       "file": "EV-101_ZLD_Evaporator.SLDPRT",
       "description": "ZLD Falling Film Evaporator Skid",
-      "position_m": [
-        -5.5,
+      "target_position_m": [
         0.0,
-        4.0
+        0.0,
+        0.0
       ],
-      "instance": "EV-101_ZLD_Evaporator-1"
+      "instance": "EV-101_ZLD_Evaporator-1",
+      "assembly_bounds": [
+        -7.3,
+        0.0,
+        -5.0,
+        -3.7,
+        3.35,
+        -3.0
+      ]
     }
   ],
   "mass_properties": {
-    "total_mass_kg": 56352.71,
-    "displaced_volume_m3": 56.3527,
-    "surface_area_m2": 402.62,
+    "total_mass_kg": 24621.5,
+    "displaced_volume_m3": 24.6215,
+    "surface_area_m2": 345.01,
     "center_of_gravity_m": [
-      -1.041,
-      1.361,
-      0.809
+      -0.913,
+      2.043,
+      -3.308
     ]
   },
   "mating_integrity": {
