@@ -4,8 +4,8 @@
     "filename": "Phase1_Scope_of_Work_Toor_Dal.docx",
     "sha256": "A4474B10353F98EEF1833A6AF865169444BC9E6DD4FAAF9D32FC18CE13A485E6",
     "size_bytes": 44287,
-    "category": "Controlling Contract Document",
-    "registered_at": "2026-10-13T15:42:00.617964+00:00",
+    "category": "Source Contract Document",
+    "registered_at": "2026-10-16T05:55:54.689688+00:00",
     "notes": ""
   },
   "inputs/HARAKUTIR_MASTER_PROMPT.txt": {
@@ -14,7 +14,7 @@
     "sha256": "B287703908B956EFCB40C1968AF8F06C8FBDA459E33F043E742D4E76AA96DD3F",
     "size_bytes": 53703,
     "category": "Controlling Contract Document",
-    "registered_at": "2026-10-13T15:42:00.618520+00:00",
+    "registered_at": "2026-10-14T05:06:16.251611+00:00",
     "notes": ""
   },
   "inputs/RUNBOOK.md": {
@@ -23,7 +23,7 @@
     "sha256": "6BFEFEF54E2A854CE19905F1F2D7E67E445EC5F1B3D3875ECF441A27F9186694",
     "size_bytes": 2581,
     "category": "Controlling Contract Document",
-    "registered_at": "2026-10-13T15:42:00.618789+00:00",
+    "registered_at": "2026-10-14T05:06:16.251947+00:00",
     "notes": ""
   }
 }

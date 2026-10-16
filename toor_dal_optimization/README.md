@@ -126,40 +126,66 @@ toor_dal_optimization/
 
 ---
 
-## 4. Quickstart Execution Guide
+## 4. Master Execution Prompt Deliverables (Phases 0–15)
 
-### 4.1 Run Complete Acceptance Test Suite (25 Tests)
+In accordance with the Master Execution Prompt, the repository provides the complete suite of provenance-controlled engineering deliverables:
+
+| Deliverable Artifact | Description & Core Findings |
+| :--- | :--- |
+| [`reports/INITIAL_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/INITIAL_AUDIT.md) | Hardware discovery, reconciliation of dry-solids yields (98.54% at 10.0% moisture vs 97.99% at 10.5%), chemical dose basis (112.5 kg vs 75 kg). |
+| [`reports/CLAIM_EVIDENCE_LEDGER.csv`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/CLAIM_EVIDENCE_LEDGER.csv) | Master classification of all 25 project claims into 8 epistemic tiers (direct, independent, empirical, literature, calibrated, model, synthetic, unverified). |
+| [`reports/NUMERICAL_CONTRADICTIONS.csv`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/NUMERICAL_CONTRADICTIONS.csv) | Exact mathematical reconciliations and regression tests for all previous discrepancies. |
+| [`reports/HARDWARE_CAPABILITY.json`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/HARDWARE_CAPABILITY.json) | Local machine telemetry (Ryzen AI 9 365, RTX 4050 6GB VRAM, CUDA 12.4, 23.1 GB RAM). |
+| [`reports/REPRODUCIBILITY_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/REPRODUCIBILITY_AUDIT.md) | Determinism, random seeds, atomic checkpointing, and 54/54 passing unit tests. |
+| [`reports/MODEL_VERIFICATION.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/MODEL_VERIFICATION.md) | Governing PDEs, Carslaw & Jaeger Fourier analytical series benchmark, CFL stability, and 8,192-node grid independence. |
+| [`reports/INDEPENDENT_VALIDATION.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/INDEPENDENT_VALIDATION.md) | Strict 4-tier data partitioning and out-of-sample validation on Machinjili et al. (2025) cultivars (MAPE = 4.5%). |
+| [`reports/GPU_CPU_BENCHMARKS.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/GPU_CPU_BENCHMARKS.md) | CPU vs GPU execution profiling; memory scaling and protection against 65 GB OOM crash. |
+| [`reports/OPTIMIZATION_RESULTS.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/OPTIMIZATION_RESULTS.md) | Multi-objective Pareto frontier; Candidate A2 (0.5% NaHCO3) winning profile; fluid-bed drying superiority over cold-chain. |
+| [`reports/MASS_AND_ENERGY_BALANCE.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/MASS_AND_ENERGY_BALANCE.md) | Closed stream tables for 15 TPD feed; 98.54% dry-solids recovery; 3.27 MJ/kg drying STEC; wastewater COD/BOD. |
+| [`reports/15MT_DAY_PROCESS_DESIGN.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/15MT_DAY_PROCESS_DESIGN.md) | Unit equipment sizing, 16h/day schedule, bottleneck analysis, ₹1.28/kg net OpEx, FSSAI compliance. |
+| [`reports/UNCERTAINTY_AND_FIVE_SIGMA.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/UNCERTAINTY_AND_FIVE_SIGMA.md) | Uncertainty taxonomy, deconstruction of the Monte Carlo fallacy, and physical 4-batch power analysis. |
+| [`reports/EXPERIMENTAL_VALIDATION_PLAN.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/EXPERIMENTAL_VALIDATION_PLAN.md) | Preregistered 4-arm in-house kitchen protocol (Hawkins 3.0L cooker, 1200W, 115 kPa) saving ₹1.98 Lakh in CRO fees. |
+| [`reports/FINAL_ENGINEERING_DECISION.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/FINAL_ENGINEERING_DECISION.md) | Formal declaration of **Classification B (Computationally Promising, Experimentally Unconfirmed)**. |
+
+---
+
+## 5. Quickstart Execution Guide
+
+### 5.1 Run Complete Acceptance Test Suite (54 Tests)
+
 ```powershell
 python -m pytest tests/ -v
 ```
 
-### 4.2 Execute the 1,000,000 GPU Virtual Experiment Discovery Engine
-```powershell
-python scripts/run_gpu_million_scale.py
-```
-*Evaluates 1,000,000 candidates on the NVIDIA GeForce RTX 4050 GPU in ~0.35s, datalogging convergence and validating 5-Sigma Process Capability ($C_{pk} \ge 1.67$).*
+### 5.2 Execute Chemical Formulation & Dose Calculations
 
-### 4.3 Execute the Master Closed-Loop Supervisor Pipeline
 ```powershell
-.\run.ps1
-# or
-python scripts/run_supervisor.py
+python -c "from src.harakutir.dose_calculator import DoseCalculator; print(DoseCalculator().generate_reference_report())"
 ```
 
-### 4.4 Run the Red Team Security & Compliance Audit
+### 5.3 Execute Spatial 8,192-Node 3D Multiphysics Simulation on CUDA
+
 ```powershell
-python scripts/generate_audit_report.py
+python -c "from src.harakutir.spatial_3d_engine import Spatial3DEngine; print(Spatial3DEngine().simulate_grain_batch_cuda(1000))"
 ```
+
+### 5.4 Offline Operations Runbook
+
+See [`RUNBOOK_OFFLINE.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/RUNBOOK_OFFLINE.md) for full air-gapped operating procedures.
 
 ---
 
-## 5. Controlling Evidence & Scientific Integrity Principle
+## 6. Controlling Evidence & Scientific Integrity Principle
 
-As mandated by Section 2.2 of `inputs/Phase1_Scope_of_Work_Toor_Dal.docx`:
-```
+As mandated by Section 2.2 of `inputs/Phase1_Scope_of_Work_Toor_Dal.docx` and the Master Execution Prompt:
+
+```text
 Measured difference  ──►  Association  ──►  Potential mechanism  ──►  Phase 2 validation
 ```
-**Strict Ethical Boundary:** Until external accredited testing laboratories (Eureka Analytical / Mitra S.K. / IIT Kharagpur) deliver verified CSV/XLSX assay files to `data/raw/`, all empirical root-cause claims remain classified under `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`. The computational models, GPU solvers, and sequential Bayesian designs stand ready to execute real-time hypothesis testing instantly upon data receipt.
+
+**Strict Non-Negotiable Boundary:** Until physical cooking certificates on the target Tanzanian Toor Dal lot are delivered and verified, the engineering decision remains strictly **Classification B: Computationally Promising, Experimentally Unconfirmed**. Simulated Monte Carlo runs on the RTX 4050 GPU reduce numerical sampling error, but cannot substitute for physical material characterization.
 
 ---
-*Maintained under Ocean Boiling Protocol v3.0 by Finnoaq Autonomous Engineering.*
+*Maintained under Harakutir Autonomous Engineering System.*
+
+

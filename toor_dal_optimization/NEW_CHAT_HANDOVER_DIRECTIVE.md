@@ -3,7 +3,7 @@
 **Project:** Greenfield 15,000 kg/day (15 TPD) Tanzanian Split Pigeon Pea (*Cajanus cajan* / Toor Dal) Cooking-Time Optimization Facility  
 **Working Directory:** `d:\PROJECT\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\finnoaq\toor_dal_optimization`  
 **Git Branch:** `v5-integrated-engineering`  
-**Latest Baseline Commit:** `3016154` (`docs(handover): update directive with explicit answers on SolidWorks completion, plant construction, and GPU memory diagnostics`)  
+**Latest Baseline Commit:** `ce882e3` (`feat(cad): establish pixel-perfect connected 3D plant baseline (24.62 tonnes, 15,768 STEP lines, 100% physically mated interfaces)`)  
 **Timestamp:** 2026-10-16T11:25:00+05:30  
 **Repository Health:** 11 / 11 V5 Integration Acceptance Tests Passing; 81 / 81 PyTest Unit Tests Passing (Exit Code 0)  
 **SolidWorks 3D Plant Status:** **100% CONSTRUCTED & ASSEMBLED (24.62 TONNES, 12 SYSTEMS, 15,768 STEP LINES, 100% MATED)**  
