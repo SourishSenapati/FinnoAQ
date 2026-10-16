@@ -87,7 +87,17 @@ S-12       Finished Packaged Dal      578.13            10.50%          30.0    
 Daily Totals: Finished Output = 13,875.1 kg/day | Water Recovered via ZLD = 26,450 L/day (92.1% Recovery)
 ```
 
+```
++---------------------------------------------------------------------------------------------------+
+| FIGURE 2: ASPEN PLUS V14 CONVERGED THERMODYNAMIC PROCESS SIMULATION FLOWSHEET                     |
+| Triple-Effect ZLD Evaporator Train (COIL-1/2/3, STAGE-1/2/3), Dryer Preheater (HE-101), Condenser|
+| File: engineering/cad/png/finnoaq_aspen_flowsheet.png                                             |
++---------------------------------------------------------------------------------------------------+
+```
+![Figure 2: Aspen Plus V14 Converged Process Simulation Flowsheet](finnoaq_aspen_flowsheet.png)
+
 ---
+
 
 ## 3. PLANT ARCHITECTURE & PROCESS FLOW DIAGRAM (PFD)
 

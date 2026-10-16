@@ -308,10 +308,19 @@ def build_pdf():
     # PFD Drawing
     pfd_img = os.path.join(WORKSPACE_ROOT, "engineering", "cad", "png", "finnoaq_dwg_002_pfd.png")
     if os.path.exists(pfd_img):
-        story.append(Image(pfd_img, width=500, height=275))
+        story.append(Image(pfd_img, width=500, height=270))
         story.append(Paragraph("<b>FIGURE 2: Process Flow Diagram & 12-Stream Mass/Energy Balance Overlay</b> (DWG-FIN-15T-002)", caption_style))
 
+    story.append(Spacer(1, 8))
+
+    # Aspen Plus Flowsheet
+    aspen_img = os.path.join(WORKSPACE_ROOT, "engineering", "cad", "png", "finnoaq_aspen_flowsheet.png")
+    if os.path.exists(aspen_img):
+        story.append(Image(aspen_img, width=500, height=270))
+        story.append(Paragraph("<b>FIGURE 3: Aspen Plus V14 Converged Thermodynamic Simulation Flowsheet</b> (Triple-Effect ZLD Evaporator & Air Preheater Train)", caption_style))
+
     story.append(PageBreak())
+
 
     # =========================================================================
     # 3. FACTORY LAYOUT & EQUIPMENT GENERAL ARRANGEMENT
