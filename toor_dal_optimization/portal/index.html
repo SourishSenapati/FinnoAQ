@@ -55,6 +55,10 @@
             <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
             <span>50-Page Master Dossier</span>
           </button>
+          <button id="tab-btn-deck" class="nav-tab" data-tab="deck" role="tab" aria-selected="false">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <span>Executive Deck (PPT)</span>
+          </button>
           <button id="tab-btn-vault" class="nav-tab" data-tab="vault" role="tab" aria-selected="false">
             <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             <span>Downloads & Sign-off</span>
@@ -325,6 +329,7 @@
           <!-- SUB-NAVIGATION BAR -->
           <div class="data-subtabs" id="data-subtabs-nav">
             <button class="subtab-btn active" data-subtab="sizing">Mechanical Equipment Sizing (12 Systems)</button>
+            <button class="subtab-btn" data-subtab="workbench">Engineering Workbench (Live Calculator)</button>
             <button class="subtab-btn" data-subtab="electrical">Motor Load List (125.8 kW Connected)</button>
             <button class="subtab-btn" data-subtab="scada">SCADA Instrumentation Register (ISA-5.1)</button>
             <button class="subtab-btn" data-subtab="hazop">Process Hazard Analysis (HAZOP)</button>
@@ -373,7 +378,7 @@
                 <button class="doc-btn" id="btn-doc-prev" title="Previous Page (Left Arrow)">&larr; Prev</button>
                 <div class="page-indicator">
                   <span>Page</span>
-                  <input type="number" id="doc-page-input" min="1" max="50" value="1" />
+                  <input type="number" id="doc-page-input" min="1" max="50" value="1" title="Jump to page number" placeholder="1" />
                   <span>of 50</span>
                 </div>
                 <button class="doc-btn" id="btn-doc-next" title="Next Page (Right Arrow)">Next &rarr;</button>
@@ -396,14 +401,71 @@
             <div class="dossier-viewport" id="dossier-viewport-container">
               <div class="page-canvas-wrapper" id="page-display-wrapper">
                 <img id="dossier-primary-page" src="/dossier_pages/page_01.png" alt="FinnoaQ 15 TPD Master Integrated Engineering Document" />
-                <img id="dossier-secondary-page" src="/dossier_pages/page_02.png" alt="Facing Page" style="display: none;" />
+                <img id="dossier-secondary-page" src="/dossier_pages/page_02.png" alt="Facing Page" class="secondary-page-hidden" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- TAB 5: DOWNLOADS & SIGN-OFF VAULT -->
+      <!-- TAB 5: EXECUTIVE PRESENTATION (PPT) WORKSTATION -->
+      <section id="tab-panel-deck" class="tab-panel" role="tabpanel">
+        <div class="deck-workspace">
+          <!-- LEFT SLIDE NAVIGATION SIDEBAR -->
+          <aside class="deck-sidebar">
+            <div class="sidebar-header">
+              <h3>Executive Pitch Deck</h3>
+              <span class="file-size-tag">10 Slides (16:9)</span>
+            </div>
+            <div class="deck-thumbnail-list" id="deck-thumbnails-container">
+              <!-- Dynamically populated from PRESENTATION_SLIDES -->
+            </div>
+          </aside>
+
+          <!-- MAIN SLIDE DISPLAY STAGE -->
+          <div class="deck-main-stage">
+            <div class="deck-stage-toolbar">
+              <div class="page-nav-controls">
+                <button class="doc-btn" id="btn-slide-prev" title="Previous Slide (P)">&larr; Prev Slide</button>
+                <div class="page-indicator">
+                  <span>Slide</span>
+                  <input type="number" id="slide-num-input" min="1" max="10" value="1" title="Jump to Slide" placeholder="1" />
+                  <span>of 10</span>
+                </div>
+                <button class="doc-btn" id="btn-slide-next" title="Next Slide (N)">Next Slide &rarr;</button>
+              </div>
+
+              <div class="doc-title-banner" id="deck-active-header">
+                Slide 1: Executive Title & Project Charter
+              </div>
+
+              <div class="stage-view-controls">
+                <button class="doc-btn" id="btn-toggle-notes" title="Toggle Engineering Speaker Notes">Speaker Notes</button>
+                <button class="doc-btn" id="btn-deck-fullscreen" title="Present Fullscreen">Fullscreen</button>
+                <a href="/presentation/FINNOAQ_15TPD_EXECUTIVE_ENGINEERING_PRESENTATION.pptx" download class="doc-btn highlight" title="Download Master PowerPoint File (.pptx)">Download PPTX</a>
+              </div>
+            </div>
+
+            <!-- SLIDE CANVAS VIEWPORT -->
+            <div class="deck-viewport" id="deck-viewport-container">
+              <div class="slide-card-widescreen" id="active-slide-card">
+                <!-- Dynamically rendered active slide content -->
+              </div>
+            </div>
+
+            <!-- SPEAKER NOTES DRAWER -->
+            <div class="speaker-notes-panel" id="speaker-notes-panel">
+              <div class="notes-header">
+                <span class="notes-label">ENGINEERING SPEAKER NOTES & CONTEXT:</span>
+                <button class="notes-close-btn" id="btn-close-notes">&times;</button>
+              </div>
+              <p class="notes-body" id="speaker-notes-text">Loading slide notes...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 6: DOWNLOADS & SIGN-OFF VAULT -->
       <section id="tab-panel-vault" class="tab-panel" role="tabpanel">
         <div class="vault-container">
           <div class="vault-hero">
@@ -484,6 +546,20 @@
               </div>
               <div class="card-action-col">
                 <button class="dl-btn secondary" id="btn-export-aspen-json">Extract JSON Case</button>
+              </div>
+            </div>
+
+            <div class="download-card">
+              <div class="card-icon-col">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="d-ic"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="card-body-col">
+                <h4>Executive Engineering Presentation (.pptx)</h4>
+                <p>10-slide comprehensive widescreen presentation deck incorporating SolidWorks 3D views, process flowsheet, mass balance schedules, and formal engineering sign-off.</p>
+                <div class="file-meta"><span>Format: Microsoft PowerPoint (.pptx)</span> &bull; <span>Size: 805 KB</span> &bull; <span>Slides: 10 Widescreen</span></div>
+              </div>
+              <div class="card-action-col">
+                <a href="/presentation/FINNOAQ_15TPD_EXECUTIVE_ENGINEERING_PRESENTATION.pptx" download class="dl-btn">Download PPTX</a>
               </div>
             </div>
           </div>

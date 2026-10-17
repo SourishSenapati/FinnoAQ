@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "title": "15 MT/day Toor Dal Industrial Stream Tables & Equipment Balances",
+    "date": "2026-10-15",
+    "status": "PRELIMINARY_DESIGN_CALCULATION",
+    "governing_standard": "Master Build Directive 15 Oct 2026",
+    "nominal_feed_rate_kg_day": 15000.0,
+    "feed_moisture_wb_pct": 10.0,
+    "target_moisture_wb_pct": 10.0,
+    "stage_status": "STAGE_2_LOCKED_PENDING_STAGE_1_PHYSICAL_CONFIRMATION"
+  },
+  "throughput_schedules": {
+    "8h_schedule": {
+      "operating_hours_per_day": 8,
+      "effective_hours_per_day": 6.8,
+      "nominal_feed_rate_kg_h": 1875.0,
+      "nominal_finished_output_kg_h": 1794.23,
+      "design_feed_rate_kg_h": 2536.76,
+      "design_finished_output_kg_h": 2427.49,
+      "daily_feed_kg": 15000.0,
+      "daily_finished_kg": 14353.83,
+      "feed_required_if_15tpd_saleable_kg": 15675.26
+    },
+    "16h_schedule": {
+      "operating_hours_per_day": 16,
+      "effective_hours_per_day": 13.6,
+      "nominal_feed_rate_kg_h": 937.5,
+      "nominal_finished_output_kg_h": 897.11,
+      "design_feed_rate_kg_h": 1268.38,
+      "design_finished_output_kg_h": 1213.74,
+      "daily_feed_kg": 15000.0,
+      "daily_finished_kg": 14353.83,
+      "feed_required_if_15tpd_saleable_kg": 15675.26
+    },
+    "24h_schedule": {
+      "operating_hours_per_day": 24,
+      "effective_hours_per_day": 20.4,
+      "nominal_feed_rate_kg_h": 625.0,
+      "nominal_finished_output_kg_h": 598.08,
+      "design_feed_rate_kg_h": 845.59,
+      "design_finished_output_kg_h": 809.16,
+      "daily_feed_kg": 15000.0,
+      "daily_finished_kg": 14353.83,
+      "feed_required_if_15tpd_saleable_kg": 15675.26
+    },
+    "whole_plant_solids_recovery_pct": 95.69,
+    "finished_mass_yield_pct": 95.69
+  },
+  "chemical_dosing_bases": {
+    "chemical_conc_input_pct": 0.5,
+    "nominal_soak_liquor_kg_day": 22500.0,
+    "basis_a_liquor_concentration": {
+      "definition": "0.50% w/w of total soak liquor (1:1.5 ratio)",
+      "active_chemical_kg_day": 112.5,
+      "commercial_reagent_kg_day": 113.07,
+      "kg_reagent_per_tonne_feed": 7.54,
+      "daily_cost_inr": 3957.29
+    },
+    "basis_b_feed_percentage": {
+      "definition": "0.50% of incoming dry dal feed mass",
+      "active_chemical_kg_day": 75.0,
+      "commercial_reagent_kg_day": 75.38,
+      "kg_reagent_per_tonne_feed": 5.03,
+      "daily_cost_inr": 2638.19
+    },
+    "difference_reagent_kg_day": 37.69,
+    "difference_annual_cost_inr_300days": 395728.64
+  },
+  "stream_table": {
+    "S01_Raw_Dal_Feed": {
+      "total_kg": 15000.0,
+      "dal_solids_kg": 13500.0,
+      "water_kg": 1500.0,
+      "chem_kg": 0.0
+    },
+    "S02_Soak_Water_Fresh": {
+      "total_kg": 22387.5,
+      "dal_solids_kg": 0.0,
+      "water_kg": 22387.5,
+      "chem_kg": 0.0
+    },
+    "S03_Active_Chemical": {
+      "total_kg": 112.5,
+      "dal_solids_kg": 0.0,
+      "water_kg": 0.0,
+      "chem_kg": 112.5
+    },
+    "S04_Wet_Dal_Ex_Soak": {
+      "total_kg": 18177.9,
+      "dal_solids_kg": 13302.9,
+      "water_kg": 4858.125,
+      "chem_kg": 16.875
+    },
+    "S05_Spent_Soak_Liquor": {
+      "total_kg": 19322.1,
+      "dal_solids_kg": 197.1,
+      "water_kg": 19029.375,
+      "chem_kg": 95.625
+    },
+    "S06_Fresh_Rinse_Water": {
+      "total_kg": 7500.0,
+      "dal_solids_kg": 0.0,
+      "water_kg": 7500.0,
+      "chem_kg": 0.0
+    },
+    "S07_Rinsed_Dal_To_Dryer": {
+      "total_kg": 18473.68125,
+      "dal_solids_kg": 13302.9,
+      "water_kg": 5158.125,
+      "chem_kg": 12.65625
+    },
+    "S08_Rinse_Effluent": {
+      "total_kg": 7204.21875,
+      "dal_solids_kg": 0.0,
+      "water_kg": 7200.0,
+      "chem_kg": 4.21875
+    },
+    "S09_Evaporated_Water": {
+      "total_kg": 3678.6187499999996,
+      "dal_solids_kg": 0.0,
+      "water_kg": 3678.6187499999996,
+      "chem_kg": 0.0
+    },
+    "S10_Finished_Ex_Dryer": {
+      "total_kg": 14795.0625,
+      "dal_solids_kg": 13302.9,
+      "water_kg": 1479.5062500000001,
+      "chem_kg": 12.65625
+    },
+    "S11_Packaged_Saleable_Dal": {
+      "total_kg": 14367.8916,
+      "dal_solids_kg": 12918.446189999999,
+      "water_kg": 1436.7891600000003,
+      "chem_kg": 12.290484375
+    },
+    "S12_Mechanical_Fines": {
+      "total_kg": 427.1709,
+      "dal_solids_kg": 384.45381000000003,
+      "water_kg": 42.717090000000006,
+      "chem_kg": 0.36576562500000004
+    }
+  },
+  "overall_closure": {
+    "total_mass_in_kg": 45000.0,
+    "total_mass_out_kg": 45000.0,
+    "closure_error_kg": 0.0,
+    "closure_error_pct": 0.0,
+    "is_conserved": true
+  },
+  "performance_metrics": {
+    "wet_dal_moisture_entering_dryer_pct": 27.92,
+    "water_to_evaporate_kg_day": 3678.62,
+    "packaged_saleable_output_kg_day": 14367.89,
+    "nominal_wash_recovery_pct": 98.54,
+    "whole_plant_solids_recovery_pct": 95.69,
+    "packaged_mass_yield_pct": 95.79,
+    "retained_elemental_sodium_mg_100g": 2.4,
+    "fssai_sodium_compliance": true
+  },
+  "drying_and_thermal_energy": {
+    "operating_hours": 16.0,
+    "water_evaporation_rate_kg_h": 229.91,
+    "thermodynamic_duty_kw": 172.3,
+    "gross_thermal_duty_kw": 265.07,
+    "gross_thermal_duty_mj_day": 15268.1,
+    "air_volumetric_flow_m3_min": 103.7,
+    "blower_electric_power_kw": 8.64,
+    "total_dryer_electric_power_kw": 14.14,
+    "daily_electricity_kwh": 226.24,
+    "specific_thermal_energy_mj_per_kg_dal": 1.063,
+    "specific_electricity_kwh_per_kg_dal": 0.016
+  },
+  "soak_vessel_sizing": {
+    "2_tanks": {
+      "tank_count": 2,
+      "batches_per_tank_day": 10.7,
+      "total_batches_day": 21.3,
+      "dal_batch_size_kg": 703.1,
+      "liquor_batch_size_kg": 1054.7,
+      "working_volume_per_tank_m3": 1.55,
+      "nominal_tank_capacity_m3": 2.07,
+      "cycle_time_min": 90.0
+    },
+    "3_tanks": {
+      "tank_count": 3,
+      "batches_per_tank_day": 10.7,
+      "total_batches_day": 32.0,
+      "dal_batch_size_kg": 468.8,
+      "liquor_batch_size_kg": 703.1,
+      "working_volume_per_tank_m3": 1.03,
+      "nominal_tank_capacity_m3": 1.38,
+      "cycle_time_min": 90.0
+    }
+  },
+  "economics": {
+    "base_case": {
+      "scenario": "BASE",
+      "saleable_dal_output_kg_day": 14367.89,
+      "cost_breakdown_inr_per_kg": {
+        "chemical_reagent_inr": 0.2754,
+        "thermal_drying_inr": 0.5845,
+        "electrical_power_inr": 0.1338,
+        "fresh_water_inr": 0.0626,
+        "wastewater_etp_inr": 0.078,
+        "operating_labor_inr": 0.1183,
+        "maintenance_cip_inr": 0.0592,
+        "quality_control_testing_inr": 0.0244,
+        "total_net_opex_inr_per_kg": 1.3362
+      },
+      "daily_total_opex_inr": 19197.79,
+      "annual_opex_lakhs_inr_300days": 57.59
+    },
+    "low_case": {
+      "scenario": "LOW",
+      "saleable_dal_output_kg_day": 14439.73,
+      "cost_breakdown_inr_per_kg": {
+        "chemical_reagent_inr": 0.2329,
+        "thermal_drying_inr": 0.4652,
+        "electrical_power_inr": 0.1199,
+        "fresh_water_inr": 0.053,
+        "wastewater_etp_inr": 0.0659,
+        "operating_labor_inr": 0.1177,
+        "maintenance_cip_inr": 0.0589,
+        "quality_control_testing_inr": 0.0242,
+        "total_net_opex_inr_per_kg": 1.1378
+      },
+      "daily_total_opex_inr": 16429.4,
+      "annual_opex_lakhs_inr_300days": 49.29
+    },
+    "high_case": {
+      "scenario": "HIGH",
+      "saleable_dal_output_kg_day": 14152.37,
+      "cost_breakdown_inr_per_kg": {
+        "chemical_reagent_inr": 0.3495,
+        "thermal_drying_inr": 0.801,
+        "electrical_power_inr": 0.1563,
+        "fresh_water_inr": 0.0827,
+        "wastewater_etp_inr": 0.1029,
+        "operating_labor_inr": 0.1201,
+        "maintenance_cip_inr": 0.0601,
+        "quality_control_testing_inr": 0.0247,
+        "total_net_opex_inr_per_kg": 1.6973
+      },
+      "daily_total_opex_inr": 24020.67,
+      "annual_opex_lakhs_inr_300days": 72.06
+    }
+  },
+  "stress_scenarios": {
+    "high_moisture_12pct": {
+      "evaporation_increase_pct": 9.05,
+      "thermal_duty_kw": 286.41
+    },
+    "high_leach_loss_4_5pct": {
+      "solids_recovery_pct": 92.74,
+      "annual_revenue_loss_lakhs_at_120_inr_kg": 159.42
+    },
+    "schedule_8h_bottleneck": {
+      "design_feed_rate_kg_h": 2536.76,
+      "dryer_thermal_duty_kw": 530.14,
+      "blower_air_flow_m3_min": 207.4
+    },
+    "energy_shock_scenario": {
+      "opex_inr_per_kg": 1.6973,
+      "annual_opex_lakhs_inr": 72.06
+    }
+  }
+}
