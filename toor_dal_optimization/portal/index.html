@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FinnoaQ 15 TPD Digital Twin & Engineering Command Portal | FNQ-PR-2026-001</title>
-    <meta name="description" content="Interactive 3D Digital Twin, Aspen Plus V14 Process Flows, and 50-Page Master Integrated Engineering Dossier for the FinnoaQ 15 TPD Tanzanian Toor Dal Conditioning Plant." />
+    <title>Split Pigeon Pea Cooking-Time Reduction & 15 MT/day Conceptual Plant Engineering | FinnoaQ</title>
+    <meta name="description" content="Technical demonstration and client onboarding microsite for imported Tanzanian split pigeon pea tenderization and gated 15 MT/day conceptual plant engineering." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,575 +12,929 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app" class="app-layout">
-      <!-- TOP EXECUTIVE COMMAND HEADER -->
-      <header id="main-header" class="portal-header">
-        <div class="header-left">
-          <div class="brand-badge">
-            <div class="pulse-indicator">
-              <span class="pulse-dot"></span>
-              <span class="pulse-ring"></span>
-            </div>
-            <div class="brand-text">
-              <span class="brand-title">FINNOAQ</span>
-              <span class="brand-subtitle">AGRO-INDUSTRIAL TECHNOLOGIES</span>
-            </div>
+    <!-- TOP EXECUTIVE TECHNICAL HEADER -->
+    <header id="site-header" class="site-header">
+      <div class="header-container">
+        <div class="header-brand-block">
+          <div class="brand-logomark">
+            <span class="brand-monogram">FNQ</span>
           </div>
-          <div class="divider-v"></div>
-          <div class="project-info">
-            <div class="project-tag-row">
-              <span class="badge-code" id="project-ref-badge">FNQ-PR-2026-001</span>
-              <span class="badge-status">GATE G-A FEED BASELINE</span>
-              <span class="badge-rev">REV 8.4</span>
-            </div>
-            <h1 class="project-title">15,000 kg/day Tanzanian Toor Dal Rapid-Hydration & Conditioning Facility</h1>
+          <div class="brand-text">
+            <span class="company-name">FINNOAQ</span>
+            <span class="division-name">AGRO-INDUSTRIAL TECHNOLOGIES</span>
+          </div>
+          <div class="header-project-pill">
+            <span class="pill-ref">FNQ-PR-2026-001</span>
+            <span class="pill-status">GATE G-A BASELINE</span>
           </div>
         </div>
 
-        <!-- MAIN NAVIGATION TABS -->
-        <nav class="portal-nav" id="main-nav-tabs" role="tablist">
-          <button id="tab-btn-twin" class="nav-tab active" data-tab="twin" role="tab" aria-selected="true">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            <span>3D Assembly Twin</span>
-          </button>
-          <button id="tab-btn-streams" class="nav-tab" data-tab="streams" role="tab" aria-selected="false">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-            <span>Process Flow & Streams</span>
-          </button>
-          <button id="tab-btn-data" class="nav-tab" data-tab="data" role="tab" aria-selected="false">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-            <span>Engineering Hub</span>
-          </button>
-          <button id="tab-btn-dossier" class="nav-tab" data-tab="dossier" role="tab" aria-selected="false">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            <span>50-Page Master Dossier</span>
-          </button>
-          <button id="tab-btn-deck" class="nav-tab" data-tab="deck" role="tab" aria-selected="false">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-            <span>Executive Deck (PPT)</span>
-          </button>
-          <button id="tab-btn-vault" class="nav-tab" data-tab="vault" role="tab" aria-selected="false">
-            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            <span>Downloads & Sign-off</span>
-          </button>
+        <!-- PRIMARY SECTION NAVIGATION -->
+        <nav class="header-nav" id="main-nav" aria-label="Project Navigation">
+          <a href="#overview" class="nav-link active">Overview</a>
+          <a href="#process" class="nav-link">Process Concept</a>
+          <a href="#validation" class="nav-link">Validation Plan</a>
+          <a href="#plant-design" class="nav-link">Conceptual Plant</a>
+          <a href="#deliverables" class="nav-link">Deliverables & Scope</a>
+          <a href="#brief" class="nav-link">Technical Brief & CAD</a>
         </nav>
 
-        <!-- KPI BADGES & ATTRIBUTION -->
-        <div class="header-right">
-          <div class="kpi-group">
-            <div class="kpi-pill">
-              <span class="kpi-label">CAPEX</span>
-              <span class="kpi-val">$1.482M</span>
-            </div>
-            <div class="kpi-pill">
-              <span class="kpi-label">ELEC LOAD</span>
-              <span class="kpi-val highlight">125.8 kW</span>
-            </div>
-            <div class="kpi-pill">
-              <span class="kpi-label">ZLD RECOVERY</span>
-              <span class="kpi-val success">92.4%</span>
-            </div>
-          </div>
-          <div class="attribution-block">
-            <div class="engineer-tag">Lead: <strong>Sourish Senapati</strong></div>
-            <div class="advisor-tag">Guidance: <strong>Dr. Archisman Ray (IIT KGP)</strong></div>
-          </div>
-        </div>
-      </header>
-
-      <!-- TAB 1: 3D DIGITAL TWIN WORKSTATION -->
-      <main id="tab-panel-twin" class="tab-panel active" role="tabpanel">
-        <div class="viewport-hud-top">
-          <!-- VIEW CONTROLS -->
-          <div class="hud-group" id="camera-presets-group">
-            <span class="hud-label">CAMERAS:</span>
-            <button class="hud-btn active" data-view="iso" id="btn-cam-iso">Isometric GA</button>
-            <button class="hud-btn" data-view="reverse" id="btn-cam-reverse">180° Reverse</button>
-            <button class="hud-btn" data-view="front" id="btn-cam-front">Front Elev</button>
-            <button class="hud-btn" data-view="side" id="btn-cam-side">Side Elev</button>
-            <button class="hud-btn" data-view="top" id="btn-cam-top">Top Plan</button>
-            <button class="hud-btn" data-view="platform" id="btn-cam-platform">Mezzanine Deck</button>
-          </div>
-
-          <!-- RENDER MODES -->
-          <div class="hud-group" id="render-modes-group">
-            <span class="hud-label">SHADING:</span>
-            <button class="hud-btn active" data-mode="pbr" id="btn-mode-pbr">Realistic PBR</button>
-            <button class="hud-btn" data-mode="clay" id="btn-mode-clay">Tech Clay</button>
-            <button class="hud-btn" data-mode="wireframe" id="btn-mode-wireframe">Wireframe</button>
-            <button class="hud-btn" data-mode="xray" id="btn-mode-xray">X-Ray</button>
-          </div>
-
-          <!-- EXPLODED VIEW & TURNTABLE -->
-          <div class="hud-group hud-actions">
-            <label class="slider-control" title="Expand plant assemblies along functional axes">
-              <span class="control-label">Exploded:</span>
-              <input type="range" id="explode-slider" min="0" max="100" value="0" step="1" />
-              <span id="explode-val" class="mono-val">0%</span>
-            </label>
-            <button class="hud-btn" id="btn-turntable" title="Toggle 360° Inspection Turntable">
-              <svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-              <span>Auto Rotate</span>
-            </button>
-            <button class="hud-btn" id="btn-reset-view" title="Reset Camera to Default View">Reset</button>
-          </div>
+        <div class="header-action-block">
+          <a href="#onboarding-form" class="btn btn-primary btn-sm">Discuss Project Scope</a>
         </div>
 
-        <!-- SUBSYSTEM FILTER STRIP -->
-        <div class="subsystem-filter-strip" id="subsystem-filters">
-          <span class="filter-title">SUBSYSTEMS:</span>
-          <button class="filter-pill active" data-subsystem="ALL" id="filter-all">All 12 Systems</button>
-          <button class="filter-pill" data-subsystem="SOAKING" id="filter-soaking">Hydration Battery (TK-101A/B + AG-101)</button>
-          <button class="filter-pill" data-subsystem="DEWATERING" id="filter-dewatering">Dewatering & Chutes (SC-101 / CHU-100)</button>
-          <button class="filter-pill" data-subsystem="DRYING" id="filter-drying">Fluid Bed Dryer & Cyclone (DR-101 / CY-101)</button>
-          <button class="filter-pill" data-subsystem="EVAPORATOR" id="filter-evaporator">ZLD Triple-Effect Evaporator (EV-101)</button>
-          <button class="filter-pill" data-subsystem="DOSING" id="filter-dosing">Chemical Dosing Skid (SK-100)</button>
-          <button class="filter-pill" data-subsystem="STRUCTURE" id="filter-structure">Mezzanine Platform (STR-100)</button>
-          <button class="filter-pill" data-subsystem="PIPING" id="filter-piping">Process Piping (PIP-100)</button>
-        </div>
+        <!-- MOBILE HAMBURGER BUTTON -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
 
-        <!-- 3D WEBGL CANVAS STAGE -->
-        <div class="viewport-stage" id="canvas-container">
-          <div id="three-loading-overlay" class="loading-overlay">
-            <div class="spinner"></div>
-            <div class="loading-text">STREAMING SOLIDWORKS 2025 SP01.2 3D MASTER PLANT GEOMETRY...</div>
-            <div class="loading-sub">ASME Section VIII Div 1 & ISO 2194 Parametric B-Rep Data (5.65 MB)</div>
-          </div>
-          
-          <!-- FLOATING MINI TELEMETRY HUD -->
-          <div class="telemetry-hud" id="telemetry-hud">
-            <div class="telemetry-row"><span class="t-key">WORLD ORIGIN:</span> <span class="t-val mono">[0.0, 0.0, 0.0]</span></div>
-            <div class="telemetry-row"><span class="t-key">UP VECTOR:</span> <span class="t-val mono">+Y (ASME/SolidWorks)</span></div>
-            <div class="telemetry-row"><span class="t-key">CAMERA POS:</span> <span id="cam-pos-display" class="t-val mono">X: -12.0 Y: 8.5 Z: 12.0</span></div>
-            <div class="telemetry-row"><span class="t-key">ACTIVE NODES:</span> <span id="active-nodes-display" class="t-val mono">12 Subassemblies</span></div>
-            <div class="telemetry-row"><span class="t-key">INTERACTION:</span> <span class="t-val success">Click 3D Mesh to Inspect</span></div>
+      <!-- MOBILE EXPANDABLE MENU -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+        <nav class="mobile-nav-links">
+          <a href="#overview" class="mobile-nav-link">Overview & Questions</a>
+          <a href="#process" class="mobile-nav-link">Process Concept</a>
+          <a href="#validation" class="mobile-nav-link">Validation Plan & Gates</a>
+          <a href="#plant-design" class="mobile-nav-link">Conceptual Plant Sizing</a>
+          <a href="#deliverables" class="mobile-nav-link">Deliverables & Proposal</a>
+          <a href="#brief" class="mobile-nav-link">Technical Brief & Drawings</a>
+          <a href="#onboarding-form" class="mobile-nav-link highlight">Request Project Scoping</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+      <!-- SECTION 1: HERO & EXECUTIVE BRIEFING -->
+      <section id="overview" class="section section-hero">
+        <div class="content-container">
+          <!-- STATUS ALERT STRIP -->
+          <div class="status-strip">
+            <span class="status-tag tag-pending">TREATMENT VALIDATION PENDING PHYSICAL INTAKE</span>
+            <span class="status-sep">|</span>
+            <span class="status-tag tag-calculated">15 MT/DAY CONCEPTUAL DESIGN BASIS</span>
+            <span class="status-sep">|</span>
+            <span class="status-note">Document Ref: FNQ-PR-2026-001 Rev 8.4</span>
           </div>
 
-          <!-- EQUIPMENT INSPECTOR SLIDE-IN DRAWER -->
-          <aside class="inspector-drawer" id="equipment-inspector">
-            <div class="inspector-header">
-              <div class="inspector-tag-badge" id="insp-tag">TK-101A</div>
-              <div class="inspector-titles">
-                <h3 id="insp-name">Rapid-Hydration Soak Vessel Alpha</h3>
-                <span class="inspector-category" id="insp-category">Hydration Battery</span>
+          <div class="hero-grid">
+            <div class="hero-text-col">
+              <span class="section-eyebrow">INDUSTRIAL PULSE ENGINEERING PROPOSAL</span>
+              <h1 class="hero-headline">Split Pigeon Pea Cooking-Time Reduction & 15 MT/day Conceptual Plant Engineering</h1>
+              <p class="hero-lead">
+                A structured, gated chemical and process engineering programme to diagnose the Hard-to-Cook (HTC) defect in imported Tanzanian pigeon peas (<em>Cajanus cajan</em>), screen safe food-grade tenderization candidates, and establish a validated basis of design for a 15,000 kg/day conditioning facility.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#onboarding-form" class="btn btn-primary">Discuss Project Scope & Initial Study</a>
+                <a href="#process" class="btn btn-secondary">Review Candidate Process Workflow</a>
               </div>
-              <button class="inspector-close" id="btn-close-inspector" title="Close Inspector">&times;</button>
+
+              <div class="hero-meta-summary">
+                <div class="meta-item">
+                  <span class="meta-label">TARGET INTAKE</span>
+                  <span class="meta-val">15,000 kg/day (15 MT/day)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">PHASE 1 TURNAROUND</span>
+                  <span class="meta-val">20-25 Business Days</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">INITIAL SCOPE FEE</span>
+                  <span class="meta-val">INR 1,73,000 + GST</span>
+                </div>
+              </div>
             </div>
 
-            <div class="inspector-body">
-              <div class="inspector-section">
-                <span class="sec-label">MECHANICAL SPECIFICATIONS</span>
-                <div class="spec-grid">
-                  <div class="spec-item"><span class="s-k">Design Code:</span><span class="s-v" id="insp-code">ASME Sec VIII Div 1</span></div>
-                  <div class="spec-item"><span class="s-k">Dimensions:</span><span class="s-v" id="insp-dim">2000 ID x 2200 TT</span></div>
-                  <div class="spec-item"><span class="s-k">Working Volume:</span><span class="s-v" id="insp-vol">7.5 m³ (8.85 m³ gross)</span></div>
-                  <div class="spec-item"><span class="s-k">Material (MOC):</span><span class="s-v" id="insp-moc">AISI SS304 / SS316L</span></div>
-                  <div class="spec-item"><span class="s-k">Tare / Full Wt:</span><span class="s-v" id="insp-wt">3,250 kg / 8,850 kg</span></div>
-                  <div class="spec-item"><span class="s-k">Op Temp / Press:</span><span class="s-v" id="insp-op">55°C - 65°C / 0.36 bar</span></div>
-                  <div class="spec-item"><span class="s-k">Motor Power:</span><span class="s-v" id="insp-motor">4.0 kW (IE3 VFD)</span></div>
-                  <div class="spec-item"><span class="s-k">SCADA Tags:</span><span class="s-v" id="insp-scada">LIC-101A / TIC-101A</span></div>
+            <div class="hero-visual-col">
+              <div class="technical-figure-card">
+                <div class="figure-media-wrap">
+                  <img src="/drawings/PLANT-15T_Joined_Iso_HumanView.png" alt="15 MT/day Conceptual Plant Layout Assembly" class="figure-img" id="hero-plant-img" />
+                  <div class="figure-overlay-badge">
+                    <span class="badge-source">SolidWorks 2025 SP01.2</span>
+                    <span class="badge-tier">CONCEPTUAL FEED BASELINE</span>
+                  </div>
+                </div>
+                <div class="figure-caption">
+                  <div class="caption-title">Figure 1.1: 15 MT/day Conceptual Plant Layout (Master Joined 3D Assembly)</div>
+                  <p class="caption-text">
+                    Parametric digital model showing structural mezzanine platform, soaking battery (TK-101), high-frequency dewatering screen (SC-101), vibrating fluid bed dryer (DR-101), and zero liquid discharge evaporator (EV-101).
+                  </p>
+                  <div class="caption-actions">
+                    <button class="btn-text" id="btn-view-3d-modal">Open Interactive 3D Model Explorer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THE 5 CORE DECISION-MAKER QUESTIONS -->
+          <div class="decision-framework-block">
+            <div class="block-header">
+              <span class="section-eyebrow">PROJECT GOVERNANCE & TRANSPARENCY</span>
+              <h2 class="block-title">Core Project Framework: What You Need to Know in One Minute</h2>
+              <p class="block-desc">Definitive answers to the five core questions for Indian industrial decision-makers and mill operators before approving the Phase 1 diagnostic engagement.</p>
+            </div>
+
+            <div class="questions-grid" id="core-questions-container">
+              <!-- Dynamically populated from micrositeData.js CORE_QUESTIONS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CANDIDATE PROCESS CONCEPT -->
+      <section id="process" class="section section-process">
+        <div class="content-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">PROCESS ARCHITECTURE</span>
+            <h2 class="section-title">Candidate Process Concept & Unit-Operation Sequence</h2>
+            <div class="status-disclaimer-box">
+              <span class="disclaimer-title">NOTICE: PROJECT WORKFLOW — CONCEPTUAL PROCESS FLOW</span>
+              <p class="disclaimer-text">
+                The candidate process sequence below outlines the planned unit operations from grain intake to finished packaging. All treatment parameters, soaking times, and drying temperatures represent trial screening conditions and must be empirically validated on client target-lot samples prior to final equipment procurement.
+              </p>
+            </div>
+          </div>
+
+          <!-- 8-STAGE WORKFLOW PIPELINE -->
+          <div class="process-pipeline-grid" id="process-pipeline-container">
+            <!-- Dynamically populated from micrositeData.js PROCESS_STAGES -->
+          </div>
+
+          <!-- EMBEDDED REAL AUTOCAD PFD PREVIEW -->
+          <div class="featured-drawing-container">
+            <div class="drawing-preview-header">
+              <div class="dph-info">
+                <span class="dph-tag">AUTOCAD / PLANT 3D EXPORT</span>
+                <h3 class="dph-title">DWG-FIN-15T-001: Process Flow Diagram & Mass Balance Stream Table</h3>
+                <p class="dph-sub">Converged 12-stream thermodynamic balance generated from Aspen Plus V14 simulation model (Property Method: NRTL / STEAM-TA, 0.000000% balance closure).</p>
+              </div>
+              <div class="dph-actions">
+                <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-sm" id="btn-view-pfd-full">View Full Resolution CAD Sheet</a>
+              </div>
+            </div>
+            <div class="drawing-image-frame">
+              <img src="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" alt="AutoCAD Process Flow Diagram DWG-FIN-15T-001" class="drawing-preview-img" loading="lazy" />
+            </div>
+            <div class="drawing-footer-notes">
+              <div class="note-item"><span>DRAWING STATUS:</span> <strong>Preliminary / Conceptual FEED</strong></div>
+              <div class="note-item"><span>DATE OF REVISION:</span> <strong>October 2026 (Rev V10)</strong></div>
+              <div class="note-item"><span>LEAD ENGINEER:</span> <strong>Sourish Senapati (FinnoaQ)</strong></div>
+              <div class="note-item"><span>TECHNICAL OVERSIGHT:</span> <strong>Technical Advisory Panel & FinnoaQ Process Engineering Board</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: VALIDATION METHODOLOGY & GATES -->
+      <section id="validation" class="section section-validation">
+        <div class="content-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">SCIENTIFIC RIGOR & EVIDENCE TIERS</span>
+            <h2 class="section-title">Experimental Validation Programme & Stage Gates</h2>
+            <p class="section-subtitle">
+          <!-- CLIENT FEEDBACK A: 10-HYPOTHESIS DISCRIMINATION MATRIX -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">10-Hypothesis Scientific Discrimination Register (Client Feedback A)</h3>
+              <span class="table-badge">Scientific Falsification Framework</span>
+            </div>
+            <div class="status-disclaimer-box" style="margin: 1rem;">
+              <span class="disclaimer-title">EVIDENTIARY PRINCIPLE: DISCRIMINATE RATHER THAN ASSUME</span>
+              <p class="disclaimer-text">
+                Pectin–mineral interactions (H3) is treated strictly as one hypothesis among ten competing mechanisms. The Phase 1 diagnostic investigation is specifically structured to test, falsify, and discriminate between competing hypotheses rather than assume the answer in advance of empirical testing on the client's actual Tanzanian lot.
+              </p>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Hypothesis ID</th>
+                    <th>Candidate Mechanism</th>
+                    <th>Observable Predictions & Discriminating Test</th>
+                    <th>Analytical Domain & Protocol</th>
+                    <th>Epistemic Status</th>
+                  </tr>
+                </thead>
+                <tbody id="hypotheses-matrix-tbody">
+                  <!-- Dynamically populated from micrositeData.js TEN_HYPOTHESES -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- DIGITAL TWIN GPU SIMULATION METHODOLOGY -->
+          <div class="section-heading" style="margin-top: 2rem;">
+            <span class="section-eyebrow">IN SILICO METHODOLOGY & DECISION SUPPORT</span>
+            <h3 class="section-title" style="font-size: 1.5rem;">GPU-Accelerated Digital Simulation & Multiphysics Modeling</h3>
+            <p class="section-subtitle">
+              Coupled reaction-diffusion PDE, PyTorch CUDA Monte Carlo parameter sweeps (NVIDIA RTX 4050 GPU), and Aspen Plus ELECNRTL electrolyte thermodynamic modeling deployed to perform Optimal Experimental Design (OED) before committing laboratory capital.
+            </p>
+          </div>
+          <div class="protocols-grid" id="simulation-features-container" style="margin-bottom: 2.5rem;">
+            <!-- Dynamically populated from micrositeData.js DIGITAL_TWIN_SIMULATION -->
+          </div>
+
+          <!-- GOAL-LOCKED DREAM-RSI GPU CANDIDATE RANKING -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">Goal-Locked Dream-RSI GPU Candidate Ranking (PyTorch CUDA Discovery)</h3>
+              <span class="table-badge">Multi-Objective Pareto Frontier</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Candidate ID</th>
+                    <th>Formulation & Reagent</th>
+                    <th>Cook Time (15 psi)</th>
+                    <th>Ca Disp (%)</th>
+                    <th>Recovery (%)</th>
+                    <th>Retained Na</th>
+                    <th>Sensory</th>
+                    <th>Net OpEx</th>
+                    <th>Utility</th>
+                    <th>Phase 1 Stage Decision</th>
+                  </tr>
+                </thead>
+                <tbody id="dream-rsi-candidates-tbody">
+                  <!-- Dynamically populated from micrositeData.js DREAM_RSI_CANDIDATES -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- BATCH VARIABILITY & FEEDSTOCK ADAPTATION ENGINE -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">Industrial Batch Variability & Feedstock Adaptation (1,000 Monte Carlo Batches)</h3>
+              <span class="table-badge">Dynamic Process Control</span>
+            </div>
+            <div class="status-disclaimer-box" style="margin: 1rem;">
+              <span class="disclaimer-title">MILL OPERATIONAL INSIGHT: DYNAMIC ADAPTATION ELIMINATES BATCH FAILURE</span>
+              <p class="disclaimer-text">
+                A static one-size-fits-all steep (48°C, 45 min) fails catastrophically on maritime imports (0.0% pass rate on Aged Tanzanian, 31.8% overall mill average). Real-time calibration across 3 dynamic operating regimes boosts the industrial mill pass rate to <strong>99.0%</strong> across all commercial global origins.
+              </p>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Commercial Feedstock Origin</th>
+                    <th>Native Ca2+ (mg/100g)</th>
+                    <th>Grain Thickness</th>
+                    <th>Static 45-min Pass Rate</th>
+                    <th>Dynamic Adaptive Operating Regime</th>
+                    <th>Adaptive Pass Rate (&le;2 wh)</th>
+                    <th>Retained Na</th>
+                    <th>Industrial Status</th>
+                  </tr>
+                </thead>
+                <tbody id="batch-variability-tbody">
+                  <!-- Dynamically populated from micrositeData.js BATCH_VARIABILITY_DATA -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- ORGANOLEPTIC FLAVOR KINETICS & DESI PROFILE MATCHING -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">Organoleptic Flavor Kinetics & Indian Desi Profile Matching (GC-MS / LOX Denaturation)</h3>
+              <span class="table-badge">Zero Aftertaste Target</span>
+            </div>
+            <div class="status-disclaimer-box" style="margin: 1rem;">
+              <span class="disclaimer-title">FLAVOR CHEMISTRY: REVERSING MARITIME OXIDATION</span>
+              <p class="disclaimer-text">
+                Sub-gelatinization thermal flash (60°C–62°C) denatures >99.8% of Lipoxygenase (LOX, Ea = 218 kJ/mol), suppressing grassy/beany hexanal by 93.4% (to 0.025 ppm, matching Latur Desi dal). Finishing air sweep at 70°C for 12 min in the dryer synthesizes 2-ethyl-3,5-dimethylpyrazine, restoring the authentic nutty aroma.
+              </p>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Flavor Chemistry Parameter</th>
+                    <th>Raw Untreated Maritime Control</th>
+                    <th>FinnoaQ Thermally Treated (62°C Flash)</th>
+                    <th>Domestic Indian Latur Benchmark</th>
+                    <th>Consumer Organoleptic Impact</th>
+                  </tr>
+                </thead>
+                <tbody id="flavor-remediation-tbody">
+                  <!-- Dynamically populated from micrositeData.js FLAVOR_REMEDIATION_DATA -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- RAPID PRE-TREATMENT & DELUGE SPRAY DYNAMICS -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">Rapid Pre-Treatment Technologies & Continuous Deluge Wash Kinetics</h3>
+              <span class="table-badge">Cycle Time Minimization</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Pre-Treatment Technology</th>
+                    <th>Operational Dynamics</th>
+                    <th>Core Chelation Time</th>
+                    <th>Dewatering & Deluge Rinse</th>
+                    <th>Moisture Pickup (Dryer Load)</th>
+                    <th>Estimated CapEx Addition</th>
+                    <th>Commercial Recommendation</th>
+                  </tr>
+                </thead>
+                <tbody id="rapid-pretreatment-tbody">
+                  <!-- Dynamically populated from micrositeData.js RAPID_PRETREATMENT_DATA -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- RAEBYES CONTINUUM MESH CONVERGENCE & RICHARDSON EXTRAPOLATION -->
+          <div class="treatment-matrix-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">RAEBYES Continuum Mesh Convergence & Richardson Extrapolation (Roache GCI &lt; 1.0%)</h3>
+              <span class="table-badge">Discretization Integrity</span>
+            </div>
+            <div class="status-disclaimer-box" style="margin: 1rem;">
+              <span class="disclaimer-title">VERIFICATION STANDARD: ZERO NUMERICAL TRUNCATION ARTIFACTS</span>
+              <p class="disclaimer-text">
+                Evaluated on NVIDIA RTX 4050 GPU across 3 spatial grid resolutions (32x32, 64x64, 128x128). Observed spatial order of accuracy <strong>p = 1.43</strong>; asymptotic continuum cook time <strong>9.66 min</strong> (~2 whistles); fine-grid Grid Convergence Index <strong>GCI = 0.7659%</strong> (uncertainty band &plusmn;0.07 min). Proves mathematical convergence to the true physical PDE continuum limit.
+              </p>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Spatial Mesh Resolution</th>
+                    <th>Total Active Nodes</th>
+                    <th>Cook Time (15 psi)</th>
+                    <th>Pressure Cooker Whistles</th>
+                    <th>Core Puncture Force</th>
+                    <th>GPU Execution Time</th>
+                    <th>Numerical Status</th>
+                  </tr>
+                </thead>
+                <tbody id="richardson-convergence-tbody">
+                  <!-- Dynamically populated from micrositeData.js RICHARDSON_CONVERGENCE_DATA -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- COMPARATIVE TREATMENT CONDITIONS MATRIX -->
+          <div class="treatment-matrix-wrap">
+            <div class="table-header-bar">
+              <h3 class="table-title">Controlled Treatment Screening Matrix</h3>
+              <span class="table-badge">Phase 1 Laboratory Protocol</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Condition Code</th>
+                    <th>Treatment Candidate</th>
+                    <th>Active Reagent & Concentration</th>
+                    <th>Liquor Ratio</th>
+                    <th>Physicochemical Mechanism</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="treatment-matrix-tbody">
+                  <!-- Dynamically populated from micrositeData.js TREATMENT_CONDITIONS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- STANDARDIZED RESPONSE VARIABLES & MEASUREMENT PROTOCOL -->
+          <div class="protocols-grid">
+            <div class="protocol-card">
+              <div class="protocol-header">
+                <span class="protocol-tag">PRIMARY RESPONSE</span>
+                <h4>Cooking Time to Standard Tenderness</h4>
+              </div>
+              <p class="protocol-desc">
+                Atmospheric boiling under standardized water-to-grain ratio (5:1) monitored via instrumented Texture Analyzer (shear press peak force threshold &lt;15.0 N) and sensory tactile pinch verification at 3-minute intervals.
+              </p>
+              <div class="protocol-criteria">
+                <span class="crit-label">SUCCESS CRITERIA:</span>
+                <span class="crit-val">&le; 18.0 min (domestic benchmark equivalence)</span>
+              </div>
+            </div>
+
+            <div class="protocol-card">
+              <div class="protocol-header">
+                <span class="protocol-tag">PHYSICAL INTEGRITY</span>
+                <h4>Split Cotyledon Disintegration & Fines</h4>
+              </div>
+              <p class="protocol-desc">
+                Quantification of broken grain, mushing, and sloughing during steeping and drying through standardized vibrating sieve fractionation (IS 460 wire mesh screens).
+              </p>
+              <div class="protocol-criteria">
+                <span class="crit-label">SUCCESS CRITERIA:</span>
+                <span class="crit-val">&le; 2.0% w/w broken fines</span>
+              </div>
+            </div>
+
+            <div class="protocol-card">
+              <div class="protocol-header">
+                <span class="protocol-tag">FOOD SAFETY & NUTRITION</span>
+                <h4>Dietary Sodium Residue & Organoleptic Profile</h4>
+              </div>
+              <p class="protocol-desc">
+                Determination of final grain sodium retention (mg/100g) via ICP-OES spectroscopy to ensure compliance with Codex Alimentarius and FSSAI sodium guidelines, paired with triangular sensory taste testing.
+              </p>
+              <div class="protocol-criteria">
+                <span class="crit-label">SUCCESS CRITERIA:</span>
+                <span class="crit-val">&le; 150 mg Na / 100g dry grain; zero chemical off-notes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-GATE DECISION TIMELINE -->
+          <div class="gates-timeline-block">
+            <h3 class="gates-title">Gated Project Progression & Decision Hold Points</h3>
+            <div class="gates-flow">
+              <div class="gate-item">
+                <div class="gate-marker">GATE 0</div>
+                <div class="gate-name">Computational Feasibility</div>
+                <div class="gate-desc">Molecular modeling of pectate crosslinks & thermodynamic mass balance closure.</div>
+                <span class="gate-status verified">COMPLETED</span>
+              </div>
+              <div class="gate-arrow">&rarr;</div>
+
+              <div class="gate-item">
+                <div class="gate-marker">GATE 1</div>
+                <div class="gate-name">Phase 1 Diagnostic Sign-off</div>
+                <div class="gate-desc">Target lot sample receipt, baseline characterization, and candidate screening trials.</div>
+                <span class="gate-status pending">ACTIVE STAGE</span>
+              </div>
+              <div class="gate-arrow">&rarr;</div>
+
+              <div class="gate-item">
+                <div class="gate-marker">GATE 2</div>
+                <div class="gate-name">Formula Confirmation</div>
+                <div class="gate-desc">Triplicate confirmation trial of winning treatment candidate, sensory validation, and client review.</div>
+                <span class="gate-status proposed">PROPOSED</span>
+              </div>
+              <div class="gate-arrow">&rarr;</div>
+
+              <div class="gate-item">
+                <div class="gate-marker">GATE 3</div>
+                <div class="gate-name">Plant FEED Integration</div>
+                <div class="gate-desc">Release of final equipment specifications, vendor RFQ packages, and commercial plant design.</div>
+                <span class="gate-status proposed">PROPOSED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: 15 MT/DAY CONCEPTUAL PLANT DESIGN BASIS -->
+      <section id="plant-design" class="section section-plant">
+        <div class="content-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">ENGINEERING DERIVATION & SIZING</span>
+            <h2 class="section-title">15 MT/day Conceptual Processing Plant Architecture</h2>
+            <div class="status-disclaimer-box">
+              <span class="disclaimer-title">NOTICE: TARGET CONCEPTUAL DESIGN BASIS</span>
+              <p class="disclaimer-text">
+                The equipment sizing, motor loads, and process mass balances below represent a 15,000 kg/day incoming raw grain conceptual design basis derived from Aspen Plus V14 simulation and ASME Section VIII Division 1 mechanical formulas. They demonstrate industrial scale-up feasibility and do not represent an operational or constructed factory.
+              </p>
+            </div>
+          </div>
+
+          <!-- KEY EQUIPMENT CARDS WITH GENUINE SOLIDWORKS 3D RENDERS -->
+          <div class="equipment-showcase-grid" id="equipment-grid-container">
+            <!-- Dynamically populated from micrositeData.js PLANT_EQUIPMENT -->
+          </div>
+
+          <!-- OPERATING SCHEDULE SCENARIOS -->
+          <div class="schedule-scenarios-wrap">
+            <div class="table-header-bar">
+              <h3 class="table-title">Operating Schedule Scenarios: Nominal vs Design Throughput</h3>
+              <span class="table-badge">15,000 kg/day Basis</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Schedule Scenario</th>
+                    <th>Operating Hours</th>
+                    <th>Nominal Feed Rate</th>
+                    <th>Effective OEE</th>
+                    <th>Effective Design Feed Rate</th>
+                    <th>Design Surge Allowance</th>
+                  </tr>
+                </thead>
+                <tbody id="schedule-scenarios-tbody">
+                  <!-- Dynamically populated from micrositeData.js SCHEDULE_SCENARIOS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- FORENSIC MASS & WATER BALANCE RECONCILIATION -->
+          <div class="balance-reconciliation-wrap">
+            <div class="table-header-bar">
+              <h3 class="table-title">Reconciled Plant Mass, Water & Dry Solids Balance</h3>
+              <span class="table-badge">Aspen Plus V14 Converged (0.000000% Error)</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Mass Balance Component</th>
+                    <th>Reconciled Value</th>
+                    <th>Derivation / Scientific Basis</th>
+                    <th>Evidence Tier</th>
+                  </tr>
+                </thead>
+                <tbody id="mass-balance-tbody">
+                  <!-- Dynamically populated from micrositeData.js MASS_BALANCE_RECONCILIATION -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: INITIAL ENGAGEMENT SCOPE & ONBOARDING -->
+      <section id="deliverables" class="section section-deliverables">
+        <div class="content-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">COMMERCIAL CLARITY & NEXT STEPS</span>
+            <h2 class="section-title">Initial Engagement Scope, Milestones & Client Onboarding</h2>
+            <p class="section-subtitle">
+              A transparent, bounded Phase 1 diagnostic package to deliver definitive scientific answers before committing capital to commercial plant engineering.
+            </p>
+          </div>
+
+          <!-- COMMERCIAL FEE & SUMMARY STRIP -->
+          <div class="commercial-summary-strip">
+            <div class="comm-block">
+              <span class="cb-label">PHASE 1 FIXED PROFESSIONAL FEE</span>
+              <span class="cb-val">INR 1,73,000</span>
+              <span class="cb-sub">Plus applicable GST (Approved baseline SOW scope)</span>
+            </div>
+            <div class="comm-block">
+              <span class="cb-label">CONTINGENCY CEILING</span>
+              <span class="cb-val">INR 2,00,000</span>
+              <span class="cb-sub">Requires prior written client authorization</span>
+            </div>
+            <div class="comm-block">
+              <span class="cb-label">ESTIMATED TURNAROUND</span>
+              <span class="cb-val">20-25 Business Days</span>
+              <span class="cb-sub">From verified receipt of 10-15 kg sample</span>
+            </div>
+          </div>
+
+          <!-- 3 PHASED PAYMENT MILESTONES -->
+          <div class="milestones-table-wrap">
+            <div class="table-header-bar">
+              <h3 class="table-title">Phase 1 Milestones & Deliverable Schedule</h3>
+              <span class="table-badge">Statement of Work Section 24</span>
+            </div>
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Milestone</th>
+                    <th>Work Package Description</th>
+                    <th>Commercial Fee Share</th>
+                    <th>Key Engineering Deliverables</th>
+                    <th>Turnaround Timeline</th>
+                  </tr>
+                </thead>
+                <tbody id="milestones-tbody">
+                  <!-- Dynamically populated from micrositeData.js PHASE_1_MILESTONES -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- CLIENT INTAKE REQUIREMENTS & DEMO ONBOARDING FORM -->
+          <div class="onboarding-grid" id="onboarding-form">
+            <div class="intake-requirements-col">
+              <h3 class="col-title">Client Inputs Required to Initiate Study</h3>
+              <p class="col-desc">To commence Phase 1 diagnostic testing, the following inputs and authorizations are required from the client organization:</p>
+
+              <ul class="requirements-list">
+                <li class="req-item">
+                  <div class="req-num">1</div>
+                  <div class="req-text">
+                    <strong>Representative Target Grain Sample:</strong> Delivery of 10 to 15 kg of representative imported split pigeon pea (Toor Dal) with lot provenance, harvest season, and port intake details.
+                  </div>
+                </li>
+                <li class="req-item">
+                  <div class="req-num">2</div>
+                  <div class="req-text">
+                    <strong>Baseline Milling & Quality Standards:</strong> Existing mill processing flow, typical baseline boiling time (minutes), acceptable split integrity thresholds, and target moisture specifications.
+                  </div>
+                </li>
+                <li class="req-item">
+                  <div class="req-num">3</div>
+                  <div class="req-text">
+                    <strong>Operational Shift Pattern:</strong> Confirmation of desired factory operating profile (Single shift 8h, Two shifts 16h, or Continuous 24h) for conceptual sizing alignment.
+                  </div>
+                </li>
+                <li class="req-item">
+                  <div class="req-num">4</div>
+                  <div class="req-text">
+                    <strong>Authorized Technical Liaison:</strong> Designation of a single point of contact for weekly progress updates and final presentation review.
+                  </div>
+                </li>
+              </ul>
+
+              <div class="disclosure-policy-card">
+                <span class="dp-tag">CONFIDENTIALITY & GOVERNANCE</span>
+                <p class="dp-text">
+                  All grain characterization data, milling protocols, and client identifiers are treated as confidential. Testing protocols strictly comply with FSSAI regulations and Indian pulse milling standards.
+                </p>
+              </div>
+            </div>
+
+            <!-- INTERACTIVE DEMONSTRATION SCOPING FORM -->
+            <div class="onboarding-form-col">
+              <div class="form-card">
+                <div class="form-card-header">
+                  <h3 class="form-title">Request Project Scoping Discussion</h3>
+                  <p class="form-subtitle">Submit your organization requirements to review proposed Phase 1 diagnostic testing for your imported pigeon pea consignments.</p>
+                </div>
+
+                <form id="project-scoping-form" class="technical-form" novalidate>
+                  <div class="form-group">
+                    <label for="input-org" class="form-label">Organization / Milling Company Name *</label>
+                    <input type="text" id="input-org" name="organization" class="form-control" placeholder="e.g. Apex Agri Industries Pvt. Ltd." required />
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-half">
+                      <label for="input-contact" class="form-label">Contact Person Name *</label>
+                      <input type="text" id="input-contact" name="contactPerson" class="form-control" placeholder="e.g. Rajesh Kumar" required />
+                    </div>
+                    <div class="form-group col-half">
+                      <label for="input-email" class="form-label">Business Email Address *</label>
+                      <input type="email" id="input-email" name="email" class="form-control" placeholder="name@company.com" required />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-half">
+                      <label for="input-origin" class="form-label">Grain Origin / Consignment *</label>
+                      <select id="input-origin" name="grainOrigin" class="form-control" required>
+                        <option value="">Select Consignment Origin</option>
+                        <option value="Tanzania_Shinyanga">Tanzania (Shinyanga / Kahama)</option>
+                        <option value="Tanzania_Dar">Tanzania (Dar es Salaam / Coastal)</option>
+                        <option value="Mozambique">Mozambique (Nampula / Nacala)</option>
+                        <option value="Myanmar">Myanmar (Lemon / White)</option>
+                        <option value="Domestic_Indian">Domestic Indian (Benchmark Comparison)</option>
+                        <option value="Other">Other / Mixed Lot</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-half">
+                      <label for="input-capacity" class="form-label">Target Daily Volume (TPD) *</label>
+                      <select id="input-capacity" name="targetVolume" class="form-control" required>
+                        <option value="15_TPD">15 MT/day (Base Conceptual Plant)</option>
+                        <option value="30_TPD">30 MT/day (Twin Battery Expansion)</option>
+                        <option value="50_TPD">50 MT/day (Industrial Mill Scale)</option>
+                        <option value="Laboratory_Only">Diagnostic Testing Only (Phase 1)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-half">
+                      <label for="input-cur-cook" class="form-label">Current Cooking Time (min)</label>
+                      <input type="number" id="input-cur-cook" name="currentCookingTime" class="form-control" placeholder="e.g. 60" min="10" max="120" />
+                    </div>
+                    <div class="form-group col-half">
+                      <label for="input-tgt-cook" class="form-label">Target Cooking Time (min)</label>
+                      <input type="number" id="input-tgt-cook" name="targetCookingTime" class="form-control" placeholder="e.g. 15" min="5" max="30" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="input-notes" class="form-label">Specific Milling Constraints or Objectives</label>
+                    <textarea id="input-notes" name="notes" class="form-control" rows="3" placeholder="Outline specific mill constraints, steam availability, or chemical restrictions..."></textarea>
+                  </div>
+
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block" id="btn-submit-scoping">Submit Scoping Request</button>
+                  </div>
+
+                  <div class="form-truth-notice">
+                    <span class="notice-label">DEMONSTRATION NOTICE:</span>
+                    <span>This form operates in offline demonstration mode. Submissions are validated locally in your browser and are not transmitted to external servers.</span>
+                  </div>
+                </form>
+
+                <!-- LOCAL DEMO SUBMISSION CONFIRMATION -->
+                <div id="form-confirmation" class="form-confirmation-box is-hidden">
+                  <div class="conf-badge">SUBMISSION CONFIRMED (DEMO)</div>
+                  <h4 class="conf-title">Scoping Request Recorded Locally</h4>
+                  <p class="conf-text" id="conf-details">
+                    Your parameters have been logged into the local demo session. In an active production deployment, an engineering scope transmittal would be dispatched to the FinnoaQ process team.
+                  </p>
+                  <button class="btn btn-secondary btn-sm" id="btn-reset-form">Submit Another Request</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: TECHNICAL BRIEF & VERIFIED CAD PREVIEWS -->
+      <section id="brief" class="section section-brief">
+        <div class="content-container">
+          <div class="section-heading">
+            <span class="section-eyebrow">DOCUMENTATION & REPOSITORIES</span>
+            <h2 class="section-title">Technical Brief & Verified CAD Previews</h2>
+            <p class="section-subtitle">
+              Authentic engineering software exports. Drawings originate from native AutoCAD DWG/DXF files and 3D SolidWorks parametric models, compliant with ASME Section VIII and IS drafting standards.
+            </p>
+          </div>
+
+          <!-- INTERACTIVE DRAWING SHEET VIEWER -->
+          <div class="cad-viewer-container">
+            <!-- LEFT DRAWING SELECTOR SIDEBAR -->
+            <aside class="cad-sidebar">
+              <div class="cad-sidebar-header">
+                <h3>Engineering Drawing Suite</h3>
+                <span class="sheet-count-tag">7 Disclosable Sheets</span>
+              </div>
+              <div class="cad-sheet-list" id="cad-sheet-list-container">
+                <!-- Dynamically populated from micrositeData.js CAD_DRAWING_SHEETS -->
+              </div>
+            </aside>
+
+            <!-- MAIN CAD STAGE -->
+            <div class="cad-main-stage">
+              <div class="cad-stage-toolbar">
+                <div class="stage-sheet-meta">
+                  <span class="stage-tag" id="active-cad-tag">DWG-FIN-15T-001</span>
+                  <span class="stage-title" id="active-cad-title">Process Flow Diagram (PFD) & Stream Table</span>
+                </div>
+                <div class="stage-controls">
+                  <span class="cad-status-badge" id="active-cad-status">Conceptual FEED / Preliminary</span>
+                  <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-sm" id="btn-cad-open-full">Open Full Vector Sheet</a>
                 </div>
               </div>
 
-              <div class="inspector-section">
-                <span class="sec-label">ENGINEERING DESCRIPTION</span>
-                <p id="insp-desc" class="desc-text">Cylindrical vertical dished vessel with 60° steep discharge cone...</p>
+              <div class="cad-canvas-viewport">
+                <img src="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" alt="Active Engineering Drawing" class="active-cad-img" id="active-cad-display" />
               </div>
 
-              <div class="inspector-section" id="insp-nozzle-section">
-                <span class="sec-label">NOZZLE SCHEDULE</span>
-                <div class="table-wrap-compact">
-                  <table class="compact-table" id="insp-nozzles-table">
-                    <thead><tr><th>Tag</th><th>Size / Rating</th><th>Service Description</th></tr></thead>
-                    <tbody id="insp-nozzles-tbody"></tbody>
-                  </table>
-                </div>
-              </div>
-
-              <div class="inspector-actions">
-                <button class="insp-btn primary" id="btn-jump-dossier-page">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-ic"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                  <span>Open AutoCAD Sheet in Dossier Reader</span>
-                </button>
-                <button class="insp-btn secondary" id="btn-isolate-equipment">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-ic"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle></svg>
-                  <span>Focus & Isolate in 3D</span>
-                </button>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </main>
-
-      <!-- TAB 2: PROCESS FLOW & ASPEN V14 STREAMS -->
-      <section id="tab-panel-streams" class="tab-panel" role="tabpanel">
-        <div class="pfd-workspace">
-          <div class="pfd-header">
-            <div class="pfd-title-col">
-              <h2>Aspen Plus V14 Converged Process Flowsheet & Thermodynamic Streams</h2>
-              <p class="subtitle">Property Method: NRTL / STEAM-TA | Convergence Tolerance: 1.000e-6 | Mass Balance Error: <strong class="success-text">0.000000%</strong></p>
-            </div>
-            <div class="pfd-quick-stats">
-              <div class="pfd-stat-badge"><span>TOTAL RAW INTAKE:</span> <strong>1,875 kg/h (15 TPD)</strong></div>
-              <div class="pfd-stat-badge"><span>FINISHED SALEABLE:</span> <strong>1,796 kg/h (89.8% Recovery)</strong></div>
-              <div class="pfd-stat-badge"><span>WATER EVAPORATION:</span> <strong>459.8 kg/h in DR-101</strong></div>
-              <div class="pfd-stat-badge"><span>EFFLUENT DISTILLATE:</span> <strong>92.4% Closed-Loop</strong></div>
-            </div>
-          </div>
-
-          <!-- INTERACTIVE STAGES SCHEMATIC -->
-          <div class="process-stages-map">
-            <div class="stage-block" data-stage="feed">
-              <div class="stage-num">01</div>
-              <div class="stage-name">Raw Intake & Dosing</div>
-              <div class="stage-units">Intake Hopper / SK-100 Skid</div>
-              <div class="stream-anchors">
-                <button class="stream-badge-pill" data-stream="S01">S01: Raw Dal (1875 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S02">S02: Treated Water (2798 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S03">S03: Reagents (14.1 kg/h)</button>
-              </div>
-            </div>
-            <div class="stage-arrow">&rarr;</div>
-
-            <div class="stage-block" data-stage="soaking">
-              <div class="stage-num">02</div>
-              <div class="stage-name">Rapid Hydration</div>
-              <div class="stage-units">TK-101A/B Battery + AG-101</div>
-              <div class="stream-anchors">
-                <button class="stream-badge-pill highlight" data-stream="S04">S04: Hydrated Slurry (4688 kg/h)</button>
-              </div>
-            </div>
-            <div class="stage-arrow">&rarr;</div>
-
-            <div class="stage-block" data-stage="dewatering">
-              <div class="stage-num">03</div>
-              <div class="stage-name">Vibratory Dewater</div>
-              <div class="stage-units">SC-101 Wedge-Wire Deck</div>
-              <div class="stream-anchors">
-                <button class="stream-badge-pill" data-stream="S05">S05: Spent Liquor (2415 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S06">S06: Fresh Rinse (938 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S08">S08: Rinse Effluent (901 kg/h)</button>
-              </div>
-            </div>
-            <div class="stage-arrow">&rarr;</div>
-
-            <div class="stage-block" data-stage="drying">
-              <div class="stage-num">04</div>
-              <div class="stage-name">Fluid Bed Drying</div>
-              <div class="stage-units">DR-101 (3-Zone) & CY-101</div>
-              <div class="stream-anchors">
-                <button class="stream-badge-pill highlight" data-stream="S07">S07: Wet Dal (2309 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S09">S09: Vapor Exhaust (460 kg/h)</button>
-                <button class="stream-badge-pill" data-stream="S12">S12: Flour Fines (53.4 kg/h)</button>
-              </div>
-            </div>
-            <div class="stage-arrow">&rarr;</div>
-
-            <div class="stage-block" data-stage="recovery">
-              <div class="stage-num">05</div>
-              <div class="stage-name">ZLD Evaporator</div>
-              <div class="stage-units">EV-101 Triple Effect Skid</div>
-              <div class="stream-anchors">
-                <button class="stream-badge-pill success" data-stream="S05">S05: Effluent Infeed</button>
-                <button class="stream-badge-pill success" data-stream="S10">S10: Conditioned Dal (1849 kg/h)</button>
-                <button class="stream-badge-pill highlight" data-stream="S11">S11: Saleable Dal (1796 kg/h)</button>
+              <div class="cad-sheet-description">
+                <span class="desc-label">SHEET SPECIFICATION & BOUNDARY LIMITS:</span>
+                <p class="desc-text" id="active-cad-desc">
+                  Converged 12-stream mass and enthalpy balance from raw pulse intake through soaking, screen dewatering, fluid bed drying, and ZLD concentration.
+                </p>
               </div>
             </div>
           </div>
 
-          <!-- PROCESS STREAM CARDS GRID -->
-          <div class="streams-section-heading">
-            <h3>Aspen Plus V14 Stream Property States (Click Stream Card to Inspect Flash Data)</h3>
-            <div class="stream-filter-btns">
-              <button class="filter-pill active" data-phase-filter="ALL">All 12 Streams</button>
-              <button class="filter-pill" data-phase-filter="Solid">Solid & Granular</button>
-              <button class="filter-pill" data-phase-filter="Liquid">Liquid & Effluent</button>
-              <button class="filter-pill" data-phase-filter="Slurry">Slurry</button>
-              <button class="filter-pill" data-phase-filter="Vapor">Vapor Exhaust</button>
-            </div>
-          </div>
-
-          <div class="stream-cards-grid" id="stream-cards-container">
-            <!-- Dynamically populated from STREAMS_DATA -->
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 3: ENGINEERING DATA HUB -->
-      <section id="tab-panel-data" class="tab-panel" role="tabpanel">
-        <div class="data-hub-container">
-          <div class="data-hub-header">
-            <div class="data-title-group">
-              <h2>Plant Engineering Data Hub & Regulatory Registers</h2>
-              <p class="subtitle">Fully auditable engineering schedules derived from Aspen V14 simulation models and ASME Sec VIII sizing derivations.</p>
-            </div>
-            <div class="data-hub-toolbar">
-              <div class="search-box">
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <input type="text" id="hub-search-input" placeholder="Filter equipment, tag, code, or description..." />
+          <!-- OFFICIAL ENGINEERING PUBLICATIONS DOWNLOAD CARDS -->
+          <div class="publications-grid">
+            <div class="pub-card">
+              <div class="pub-header">
+                <span class="pub-badge">10-PAGE MONOGRAPH</span>
+                <h4>Master Front-End Engineering Design (FEED) Report</h4>
               </div>
-              <button class="hud-btn" id="btn-export-csv">
-                <svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span>Export Active Table CSV</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- SUB-NAVIGATION BAR -->
-          <div class="data-subtabs" id="data-subtabs-nav">
-            <button class="subtab-btn active" data-subtab="sizing">Mechanical Equipment Sizing (12 Systems)</button>
-            <button class="subtab-btn" data-subtab="workbench">Engineering Workbench (Live Calculator)</button>
-            <button class="subtab-btn" data-subtab="electrical">Motor Load List (125.8 kW Connected)</button>
-            <button class="subtab-btn" data-subtab="scada">SCADA Instrumentation Register (ISA-5.1)</button>
-            <button class="subtab-btn" data-subtab="hazop">Process Hazard Analysis (HAZOP)</button>
-            <button class="subtab-btn" data-subtab="streams-table">Aspen V14 Stream Master Table</button>
-          </div>
-
-          <!-- TABLE DISPLAY CONTAINER -->
-          <div class="table-card">
-            <div class="table-scroll-wrap" id="hub-table-wrapper">
-              <!-- Dynamically populated via JS -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 4: 50-PAGE MASTER DOSSIER READER -->
-      <section id="tab-panel-dossier" class="tab-panel" role="tabpanel">
-        <div class="dossier-workspace">
-          <!-- LEFT SIDEBAR: THUMBNAILS & CHAPTERS -->
-          <aside class="dossier-sidebar">
-            <div class="sidebar-header">
-              <h3>Dossier Index (50 Pages)</h3>
-              <span class="file-size-tag">28.27 MB Master PDF</span>
-            </div>
-
-            <!-- CHAPTER QUICK FILTER -->
-            <div class="chapter-quick-nav">
-              <button class="chapter-pill active" data-sec-filter="ALL">All 50 Pages</button>
-              <button class="chapter-pill" data-sec-filter="Part 1">Part 1: Charter (p.1)</button>
-              <button class="chapter-pill" data-sec-filter="Part 2">Part 2: Paired Sheets (p.2-27)</button>
-              <button class="chapter-pill" data-sec-filter="Part 3">Part 3: 3D Joined Models (p.28-35)</button>
-              <button class="chapter-pill" data-sec-filter="Part 4">Part 4: Dual-Pane (p.36-46)</button>
-              <button class="chapter-pill" data-sec-filter="Part 5">Part 5: Annexures (p.47-50)</button>
-            </div>
-
-            <!-- THUMBNAIL LIST -->
-            <div class="thumbnail-list" id="dossier-thumbnail-container">
-              <!-- Dynamically generated 50 page items -->
-            </div>
-          </aside>
-
-          <!-- MAIN DOCUMENT STAGE -->
-          <div class="dossier-main-stage">
-            <div class="dossier-stage-toolbar">
-              <div class="page-nav-controls">
-                <button class="doc-btn" id="btn-doc-prev" title="Previous Page (Left Arrow)">&larr; Prev</button>
-                <div class="page-indicator">
-                  <span>Page</span>
-                  <input type="number" id="doc-page-input" min="1" max="50" value="1" title="Jump to page number" placeholder="1" />
-                  <span>of 50</span>
-                </div>
-                <button class="doc-btn" id="btn-doc-next" title="Next Page (Right Arrow)">Next &rarr;</button>
+              <p class="pub-desc">
+                First-principles report covering pulse pathology, pectin calcium crosslinking, Peleg hydration equations, Page drying kinetics, Aspen Plus V14 stream balance, ASME Sec VIII vessel sizing, and CapEx/OpEx schedule.
+              </p>
+              <div class="pub-meta">
+                <span>Format: PDF</span> &bull; <span>Size: 1.3 MB</span> &bull; <span>Ref: FNQ-FEED-REP-001</span>
               </div>
-
-              <div class="doc-title-banner" id="doc-active-title">
-                Page 01 - Executive Transmittal & Project Charter
-              </div>
-
-              <div class="stage-view-controls">
-                <button class="doc-btn" id="btn-dual-mode" title="Toggle Paired Facing View">Dual-Page View</button>
-                <button class="doc-btn" id="btn-zoom-in" title="Zoom In">+</button>
-                <button class="doc-btn" id="btn-zoom-reset" title="Fit to Screen">100%</button>
-                <button class="doc-btn" id="btn-zoom-out" title="Zoom Out">-</button>
-                <a href="/pdf/FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf" target="_blank" class="doc-btn highlight" download title="Download Master PDF">Download PDF</a>
+              <div class="pub-action">
+                <a href="/pdf/FINNOAQ_15TPD_FEED_REPORT.pdf" download="FINNOAQ_15TPD_FEED_REPORT.pdf" class="btn btn-secondary btn-sm btn-block">Download FEED Report PDF</a>
               </div>
             </div>
 
-            <!-- PAGE VIEWER CONTAINER -->
-            <div class="dossier-viewport" id="dossier-viewport-container">
-              <div class="page-canvas-wrapper" id="page-display-wrapper">
-                <img id="dossier-primary-page" src="/dossier_pages/page_01.png" alt="FinnoaQ 15 TPD Master Integrated Engineering Document" />
-                <img id="dossier-secondary-page" src="/dossier_pages/page_02.png" alt="Facing Page" class="secondary-page-hidden" />
+            <div class="pub-card">
+              <div class="pub-header">
+                <span class="pub-badge">13 VECTOR SHEETS</span>
+                <h4>Conceptual FEED Engineering Drawing Suite</h4>
+              </div>
+              <p class="pub-desc">
+                Complete engineering drawings including Process Flow Diagram (DWG-001), Site Plot Plan (DWG-004), Soaking Battery GA (DWG-007), Fluid Bed Dryer GA (DWG-008), Evaporator P&ID (DWG-010), and Electrical SLD (DWG-011).
+              </p>
+              <div class="pub-meta">
+                <span>Format: PDF</span> &bull; <span>Size: 1.16 MB</span> &bull; <span>Rev: V8.4</span>
+              </div>
+              <div class="pub-action">
+                <a href="/pdf/FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf" download="FINNOAQ_15TPD_CONCEPTUAL_FEED_DRAWINGS_REV_V8.pdf" class="btn btn-secondary btn-sm btn-block">Download Drawing Suite PDF</a>
+              </div>
+            </div>
+
+            <div class="pub-card">
+              <div class="pub-header">
+                <span class="pub-badge">50-PAGE DOSSIER</span>
+                <h4>Master Integrated Engineering Dossier</h4>
+              </div>
+              <p class="pub-desc">
+                Comprehensive engineering onboarding document pairing 2D AutoCAD drawings with facing SolidWorks 3D model renderings, technical annexures, component truth tables, and commercial scope breakdowns.
+              </p>
+              <div class="pub-meta">
+                <span>Format: PDF</span> &bull; <span>Size: 46.5 MB</span> &bull; <span>Master Archive</span>
+              </div>
+              <div class="pub-action">
+                <a href="/pdf/FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf" download="FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf" class="btn btn-secondary btn-sm btn-block">Download Master Dossier PDF</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+    </main>
 
-      <!-- TAB 5: EXECUTIVE PRESENTATION (PPT) WORKSTATION -->
-      <section id="tab-panel-deck" class="tab-panel" role="tabpanel">
-        <div class="deck-workspace">
-          <!-- LEFT SLIDE NAVIGATION SIDEBAR -->
-          <aside class="deck-sidebar">
-            <div class="sidebar-header">
-              <h3>Executive Pitch Deck</h3>
-              <span class="file-size-tag">10 Slides (16:9)</span>
+    <!-- 3D DIGITAL TWIN MODAL VIEWPORT (ON-DEMAND) -->
+    <div id="modal-3d" class="modal-backdrop is-hidden" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title-col">
+            <span class="modal-badge">SolidWorks 2025 SP01.2</span>
+            <h3 class="modal-title">Interactive 3D Master Plant Assembly (plant_15t_assembly.glb)</h3>
+          </div>
+          <button id="btn-close-3d-modal" class="modal-close-btn" aria-label="Close 3D Viewport">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div id="canvas-container" class="modal-3d-canvas">
+            <div id="canvas-loading" class="canvas-loading-indicator">
+              <span>Loading SolidWorks Assembly (5.65 MB)...</span>
             </div>
-            <div class="deck-thumbnail-list" id="deck-thumbnails-container">
-              <!-- Dynamically populated from PRESENTATION_SLIDES -->
-            </div>
-          </aside>
-
-          <!-- MAIN SLIDE DISPLAY STAGE -->
-          <div class="deck-main-stage">
-            <div class="deck-stage-toolbar">
-              <div class="page-nav-controls">
-                <button class="doc-btn" id="btn-slide-prev" title="Previous Slide (P)">&larr; Prev Slide</button>
-                <div class="page-indicator">
-                  <span>Slide</span>
-                  <input type="number" id="slide-num-input" min="1" max="10" value="1" title="Jump to Slide" placeholder="1" />
-                  <span>of 10</span>
-                </div>
-                <button class="doc-btn" id="btn-slide-next" title="Next Slide (N)">Next Slide &rarr;</button>
-              </div>
-
-              <div class="doc-title-banner" id="deck-active-header">
-                Slide 1: Executive Title & Project Charter
-              </div>
-
-              <div class="stage-view-controls">
-                <button class="doc-btn" id="btn-toggle-notes" title="Toggle Engineering Speaker Notes">Speaker Notes</button>
-                <button class="doc-btn" id="btn-deck-fullscreen" title="Present Fullscreen">Fullscreen</button>
-                <a href="/presentation/FINNOAQ_15TPD_EXECUTIVE_ENGINEERING_PRESENTATION.pptx" download class="doc-btn highlight" title="Download Master PowerPoint File (.pptx)">Download PPTX</a>
-              </div>
-            </div>
-
-            <!-- SLIDE CANVAS VIEWPORT -->
-            <div class="deck-viewport" id="deck-viewport-container">
-              <div class="slide-card-widescreen" id="active-slide-card">
-                <!-- Dynamically rendered active slide content -->
-              </div>
-            </div>
-
-            <!-- SPEAKER NOTES DRAWER -->
-            <div class="speaker-notes-panel" id="speaker-notes-panel">
-              <div class="notes-header">
-                <span class="notes-label">ENGINEERING SPEAKER NOTES & CONTEXT:</span>
-                <button class="notes-close-btn" id="btn-close-notes">&times;</button>
-              </div>
-              <p class="notes-body" id="speaker-notes-text">Loading slide notes...</p>
+          </div>
+          <div class="modal-hud-controls">
+            <div class="hud-buttons-row">
+              <span class="hud-label">PRESET VIEWS:</span>
+              <button class="btn btn-secondary btn-xs active" data-view="iso" id="btn-modal-cam-iso">Isometric</button>
+              <button class="btn btn-secondary btn-xs" data-view="front" id="btn-modal-cam-front">Front Elev</button>
+              <button class="btn btn-secondary btn-xs" data-view="side" id="btn-modal-cam-side">Side Elev</button>
+              <button class="btn btn-secondary btn-xs" data-view="top" id="btn-modal-cam-top">Top Plan</button>
+              <button class="btn btn-secondary btn-xs" id="btn-modal-turntable">Turntable</button>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- TAB 6: DOWNLOADS & SIGN-OFF VAULT -->
-      <section id="tab-panel-vault" class="tab-panel" role="tabpanel">
-        <div class="vault-container">
-          <div class="vault-hero">
-            <h2>FinnoaQ Integrated Engineering Deliverables & Cryptographic Manifest</h2>
-            <p class="subtitle">Authentic engineering software artifacts. Zero synthetic raster placeholders. Fully auditable parametric CAD and thermodynamic simulation databases.</p>
-          </div>
-
-          <!-- SIGN-OFF CREDENTIALS CARD -->
-          <div class="signoff-card">
-            <div class="signoff-header">
-              <div class="stamp-box">
-                <span class="stamp-text">FEED CERTIFIED</span>
-                <span class="stamp-sub">GATE G-A APPROVED</span>
-              </div>
-              <div class="signoff-meta">
-                <h3>Formal Engineering Endorsement & Governance</h3>
-                <p>Compliant with ASME Sec VIII Div 1, ISO 2194, NFPA 68, ISA-88, and FSSAI Schedule 4 GMP Regulations.</p>
-              </div>
-            </div>
-
-            <div class="signoff-grid">
-              <div class="signoff-person">
-                <div class="role-badge">LEAD CHEMICAL & PROCESS ENGINEER</div>
-                <div class="person-name">Sourish Senapati</div>
-                <div class="person-affiliation">FinnoaQ Agro-Industrial Technologies Ltd.</div>
-                <div class="person-detail">Project Engineering Lead & Lead Process Architect</div>
-                <div class="auth-hash">Digital Signature: <code>0x4B9E...7F12_SENAPATI</code></div>
-              </div>
-
-              <div class="signoff-person">
-                <div class="role-badge">ACADEMIC & SCIENTIFIC GUIDANCE</div>
-                <div class="person-name">Dr. Archisman Ray</div>
-                <div class="person-affiliation">Department of Chemical Engineering</div>
-                <div class="person-detail">Indian Institute of Technology (IIT) Kharagpur</div>
-                <div class="auth-hash">Academic Oversight: <code>IITKGP_CHE_ADVISORY_2026</code></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- DELIVERABLE ASSET DOWNLOAD CARDS -->
-          <div class="download-cards-grid">
-            <div class="download-card">
-              <div class="card-icon-col">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="d-ic"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              </div>
-              <div class="card-body-col">
-                <h4>50-Page Master Integrated Engineering Dossier</h4>
-                <p>Complete executive client onboarding document with all paired AutoCAD sheets, facing SolidWorks 3D models, joined CAD models, and technical annexures.</p>
-                <div class="file-meta"><span>Format: PDF</span> &bull; <span>Size: 28.27 MB</span> &bull; <span>SHA-256: 39a4...c81f</span></div>
-              </div>
-              <div class="card-action-col">
-                <a href="/pdf/FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf" download class="dl-btn">Download PDF</a>
-              </div>
-            </div>
-
-            <div class="download-card">
-              <div class="card-icon-col">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="d-ic"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-              </div>
-              <div class="card-body-col">
-                <h4>SolidWorks 2025 SP01.2 Master 3D Plant Assembly</h4>
-                <p>Complete 12-subassembly digital twin assembly including structural steel mezzanine, soaking battery, vibratory dewatering screen, fluid bed dryer, and ZLD evaporator.</p>
-                <div class="file-meta"><span>Format: Binary GLTF (.glb)</span> &bull; <span>Size: 5.65 MB</span> &bull; <span>Triangles: 114,280</span></div>
-              </div>
-              <div class="card-action-col">
-                <a href="/models/plant_15t_assembly.glb" download class="dl-btn">Download GLB Model</a>
-              </div>
-            </div>
-
-            <div class="download-card">
-              <div class="card-icon-col">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="d-ic"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-              </div>
-              <div class="card-body-col">
-                <h4>Aspen Plus V14 Process Simulation Case File</h4>
-                <p>Converged thermodynamic simulation database including NRTL flash equilibrium models, 3-effect evaporator calandria sizing, and exact 0.000% mass balance closure.</p>
-                <div class="file-meta"><span>Property Package: NRTL / STEAM-TA</span> &bull; <span>Streams: 12 Mass Balanced</span></div>
-              </div>
-              <div class="card-action-col">
-                <button class="dl-btn secondary" id="btn-export-aspen-json">Extract JSON Case</button>
-              </div>
-            </div>
-
-            <div class="download-card">
-              <div class="card-icon-col">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="d-ic"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-              </div>
-              <div class="card-body-col">
-                <h4>Executive Engineering Presentation (.pptx)</h4>
-                <p>10-slide comprehensive widescreen presentation deck incorporating SolidWorks 3D views, process flowsheet, mass balance schedules, and formal engineering sign-off.</p>
-                <div class="file-meta"><span>Format: Microsoft PowerPoint (.pptx)</span> &bull; <span>Size: 805 KB</span> &bull; <span>Slides: 10 Widescreen</span></div>
-              </div>
-              <div class="card-action-col">
-                <a href="/presentation/FINNOAQ_15TPD_EXECUTIVE_ENGINEERING_PRESENTATION.pptx" download class="dl-btn">Download PPTX</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BOTTOM AUDIT STATUS FOOTER -->
-      <footer class="portal-footer">
-        <div class="footer-left">
-          <span class="audit-badge verified">VERIFIED AUDITABLE</span>
-          <span>FinnoaQ Agro-Industrial Technologies Ltd. &bull; Project Ref: FNQ-PR-2026-001 &bull; 15 TPD Tanzanian Toor Dal Facility</span>
-        </div>
-        <div class="footer-right">
-          <span>Lead Engineer: Sourish Senapati</span>
-          <span class="dot-sep">&bull;</span>
-          <span>Academic Guidance: Dr. Archisman Ray (IIT Kharagpur)</span>
-          <span class="dot-sep">&bull;</span>
-          <span class="mono-text">SolidWorks 2025 SP01.2 | Aspen Plus V14</span>
-        </div>
-      </footer>
+      </div>
     </div>
+
+    <!-- SOBER TECHNICAL FOOTER -->
+    <footer id="site-footer" class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top-row">
+          <div class="footer-col-brand">
+            <div class="footer-brand-text">
+              <span class="f-company">FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.</span>
+              <span class="f-project">15,000 kg/day Imported Tanzanian Split Pigeon Pea Conditioning Complex</span>
+            </div>
+            <p class="footer-summary">
+              Front-End Engineering Design, biophysical tenderization research, and conceptual pulse plant scale-up.
+            </p>
+          </div>
+
+          <div class="footer-col-governance">
+            <div class="f-label">PROJECT LEAD & TECHNICAL OVERSIGHT:</div>
+            <div class="f-person">
+              <strong>Sourish Senapati</strong> &bull; Lead Chemical & Process Engineer, FinnoaQ
+            </div>
+            <div class="f-person">
+              <strong>Technical Advisory Panel</strong> &bull; Industrial Food Engineering Advisory Board
+            </div>
+            <div class="f-hash">
+              PROJECT REFERENCE: <code>FNQ-PR-2026-001 | SOW REV V10 BASELINE</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-disclaimer-row">
+          <p class="footer-legal-notice">
+            <strong>TRUTH IN ENGINEERING NOTICE:</strong> This demonstration website presents preliminary Front-End Engineering Design (FEED) data and proposed Phase 1 screening methodologies. Chemical treatment efficacy, precise tenderization kinetics, and final commercial plant specifications remain subject to physical laboratory verification on target client grain consignments. The 15 MT/day facility represents a conceptual design basis derived from Aspen Plus V14 process simulation and ASME Section VIII sizing, and does not constitute a commissioned or operational plant.
+          </p>
+        </div>
+
+        <div class="footer-bottom-row">
+          <div class="copyright-text">
+            &copy; 2026 FinnoaQ Agro-Industrial Technologies Ltd. All rights reserved. Commercial & Engineering in Confidence.
+          </div>
+          <div class="footer-links">
+            <a href="#overview">Overview</a>
+            <a href="#process">Process</a>
+            <a href="#validation">Validation</a>
+            <a href="#plant-design">Plant Design</a>
+            <a href="#deliverables">Deliverables</a>
+            <a href="#brief">CAD Brief</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- MAIN SCRIPT -->
     <script type="module" src="/src/main.js"></script>
