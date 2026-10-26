@@ -1,0 +1,17 @@
+{
+  "name": "finnoaq-engineering-suite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FinnoaQ Industrial Pulse Engineering & Computational Physics Suite",
+  "workspaces": [
+    "toor_dal_optimization/portal"
+  ],
+  "scripts": {
+    "build": "npm --prefix toor_dal_optimization/portal run build",
+    "dev": "npm --prefix toor_dal_optimization/portal run dev",
+    "preview": "npm --prefix toor_dal_optimization/portal run preview",
+    "test:handoff": "python scripts/handoff.py --verify"
+  },
+  "author": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "license": "UNLICENSED"
+}

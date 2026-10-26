@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-26T20:26:48.878061+00:00",
+  "project_ref": "FNQ-PR-2026-001",
+  "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "status": "INITIALIZING",
+  "checks": {},
+  "metrics": {},
+  "artifacts": {},
+  "environment": {
+    "python_version": "3.13.7",
+    "torch_cuda_available": true,
+    "gpu_device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_vram_gb": 6.0,
+    "hardware_fan_policy": "ThrottleModeOnAC=3, ManualOnAC=1 (100% PWM Ceiling Active)"
+  },
+  "git": {
+    "head_commit": "f8b99d9c272c8c54ca964dca639480dfaf17f42b",
+    "branch": "toor-dal/phase1-diagnostic-rnd",
+    "remote_origin": "https://github.com/SourishSenapati/FinnoAQ.git",
+    "dirty_files_count": 825
+  },
+  "mass_balance_closure": {
+    "intake_total_kg_day": 15000.0,
+    "intake_dry_solids_kg_day": 13425.0,
+    "leached_dry_solids_kg_day": 184.0,
+    "product_dry_solids_kg_day": 13241.0,
+    "finished_product_kg_day": 14712.222,
+    "closure_error_pct": 0.0,
+    "predryer_b1_evap_kg_day": 3678.056,
+    "predryer_b2_evap_kg_day": 3877.778,
+    "unresolved_thermal_delta_kg_day": 199.722,
+    "thermal_duty_increase_pct": 5.43
+  },
+  "defect_ledger": {
+    "total_records": 20,
+    "head_record": "FAIL-0020",
+    "chain_integrity": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "portal_bundle": {
+    "dist_index_html_bytes": 51010,
+    "dist_index_html_sha256": "cf754183b9a45cf0ac6033b2fafaa630aadea5935dbd38245249cd5d5b78734a",
+    "root_vercel_configured": true,
+    "portal_vercel_configured": true,
+    "code_splitting": "ACTIVE (vendor-three chunked)"
+  },
+  "manifest": {
+    "portal_dist_index_html": {
+      "relpath": "toor_dal_optimization/portal/dist/index.html",
+      "size_bytes": 51010,
+      "sha256": "cf754183b9a45cf0ac6033b2fafaa630aadea5935dbd38245249cd5d5b78734a",
+      "last_modified": "2026-10-26T20:26:58.221357+00:00"
+    },
+    "master_dossier_report": {
+      "relpath": "toor_dal_optimization/reports/MASTER_INVESTIGATION_HANDOVER_DOSSIER.md",
+      "size_bytes": 11722,
+      "sha256": "798f0ae190cb0e807306678362c84f9e7814e22937dd8e425b2ed960f0cf8094",
+      "last_modified": "2026-10-26T04:05:43.898394+00:00"
+    },
+    "decision_log": {
+      "relpath": "docs/governance/DECISION_LOG.md",
+      "size_bytes": 16293,
+      "sha256": "95eca38993b6abc24b11760c3b716d9c2324bc5b479f0a919db7b8136d113551",
+      "last_modified": "2026-10-26T02:19:51.844065+00:00"
+    },
+    "project_status": {
+      "relpath": "docs/governance/PROJECT_STATUS.md",
+      "size_bytes": 7507,
+      "sha256": "03abda238ee1425e466e880d8b3de90b92f5ba771446c0f84934f15d3954f0f7",
+      "last_modified": "2026-10-26T02:21:12.011288+00:00"
+    },
+    "defect_registry": {
+      "relpath": "docs/governance/COMPREHENSIVE_ERROR_AND_DEFECT_REGISTRY.md",
+      "size_bytes": 79126,
+      "sha256": "52bf1920641c1f4a5e86496ea0336a1d96f16790c44b4596083d3ec09aaeeb82",
+      "last_modified": "2026-10-23T09:35:37.036336+00:00"
+    },
+    "root_vercel_json": {
+      "relpath": "vercel.json",
+      "size_bytes": 1338,
+      "sha256": "2726d2d9ecf9a1d941fd6fdc0e17dd3d13a49cb656ecd245a15827a178611a6d",
+      "last_modified": "2026-10-26T20:22:37.095309+00:00"
+    },
+    "portal_vercel_json": {
+      "relpath": "toor_dal_optimization/portal/vercel.json",
+      "size_bytes": 1198,
+      "sha256": "1281bafb65079106f79906f575e37c2d5dbbff4b54148499a1af5099fd038fca",
+      "last_modified": "2026-10-26T20:22:25.054563+00:00"
+    }
+  }
+}

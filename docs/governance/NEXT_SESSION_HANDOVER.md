@@ -1,3 +1,5 @@
+
+<!-- LAST_AUTOMATED_HANDOFF_AUDIT: 2026-10-26T20:26:48.878061+00:00 | STATUS: ALL_SYSTEMS_VERIFIED_GO | COMMIT: f8b99d9c -->
 # FinnoaQ Next Session Handover & Operating Guide
 
 Project Reference: FNQ-PR-2026-001 | Toor Dal Cooking-Time Optimization & Diagnostic R&D  

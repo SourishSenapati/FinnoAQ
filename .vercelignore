@@ -1,0 +1,28 @@
+# Python & Virtual Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Git & Cache
+.git
+.pytest_cache/
+.coverage
+*.tmp
+*.log
+
+# Heavy CAD native source models not needed by web bundle
+toor_dal_optimization/engineering/cad/sldprt/
+toor_dal_optimization/engineering/cad/sldasm/
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+*.dwg
+~$*
+
+# Temporary scratch & runs
+toor_dal_optimization/scratch/
+toor_dal_optimization/runs/
+toor_dal_optimization/portal/node_modules/
+node_modules/
