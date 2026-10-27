@@ -2,7 +2,7 @@
   "buildCommand": "npm --prefix toor_dal_optimization/portal run build",
   "outputDirectory": "toor_dal_optimization/portal/dist",
   "installCommand": "npm --prefix toor_dal_optimization/portal install",
-  "framework": "vite",
+  "framework": null,
   "cleanUrls": true,
   "headers": [
     {

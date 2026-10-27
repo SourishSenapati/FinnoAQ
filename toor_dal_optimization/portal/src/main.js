@@ -23,7 +23,10 @@ import {
   MASS_BALANCE_RECONCILIATION,
   SCHEDULE_SCENARIOS,
   PHASE_1_MILESTONES,
-  CAD_DRAWING_SHEETS
+  CAD_DRAWING_SHEETS,
+  GOVERNANCE_TELEMETRY,
+  DEFECT_REGISTRY_HIGHLIGHTS,
+  THERMAL_DUTY_DELTA_AUDIT
 } from './data/micrositeData.js';
 
 // Application State
@@ -42,6 +45,9 @@ let modelLoaded = false;
 // 1. DOM INITIALIZATION & DATA RENDERING
 // ============================================================================
 document.addEventListener('DOMContentLoaded', () => {
+  renderGovernanceTelemetry();
+  renderDefectRegistry();
+  renderThermalDutyDelta();
   renderCoreQuestions();
   renderProcessPipeline();
   renderTenHypotheses();
@@ -67,6 +73,70 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================================================
 // 2. DATA SECTION RENDERERS
 // ============================================================================
+function renderGovernanceTelemetry() {
+  const container = document.getElementById('governance-telemetry-container');
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="telemetry-card">
+      <span class="telemetry-label">ENVIRONMENT / COMPUTE</span>
+      <span class="telemetry-val">Python ${GOVERNANCE_TELEMETRY.pythonVersion} &bull; ${GOVERNANCE_TELEMETRY.torchCuda}</span>
+    </div>
+    <div class="telemetry-card">
+      <span class="telemetry-label">GPU HARDWARE ACCELERATOR</span>
+      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.gpuDevice}</span>
+    </div>
+    <div class="telemetry-card">
+      <span class="telemetry-label">THERMAL PROFILE & FAN LIMITS</span>
+      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.fanLimits}<br><small style="color: var(--text-muted);">${GOVERNANCE_TELEMETRY.thermalEnvelope}</small></span>
+    </div>
+    <div class="telemetry-card">
+      <span class="telemetry-label">MASS BALANCE CLOSURE</span>
+      <span class="telemetry-val" style="color: var(--accent); font-weight: 700;">${GOVERNANCE_TELEMETRY.massBalanceClosure}</span>
+    </div>
+    <div class="telemetry-card">
+      <span class="telemetry-label">REGRESSION SUITE COVERAGE</span>
+      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.defectCoverage}</span>
+    </div>
+    <div class="telemetry-card">
+      <span class="telemetry-label">AUTOMATED HANDOFF CLI</span>
+      <span class="telemetry-val"><span class="status-tag tag-verified">${GOVERNANCE_TELEMETRY.handoffStatus}</span></span>
+    </div>
+  `;
+}
+
+function renderDefectRegistry() {
+  const tbody = document.getElementById('defect-registry-tbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = DEFECT_REGISTRY_HIGHLIGHTS.map(d => `
+    <tr>
+      <td><strong><code>${d.code}</code></strong></td>
+      <td><span class="status-tag tag-neutral">${d.subsystem}</span></td>
+      <td><strong>${d.defect}</strong></td>
+      <td>${d.cause}</td>
+      <td>${d.fix}</td>
+      <td><span class="status-tag ${d.status.includes('CLOSED') ? 'tag-verified' : d.status.includes('BOUND') ? 'tag-calculated' : 'tag-pending'}">${d.status.replace(/_/g, ' ')}</span></td>
+    </tr>
+  `).join('');
+}
+
+function renderThermalDutyDelta() {
+  const tbody = document.getElementById('thermal-duty-delta-tbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = THERMAL_DUTY_DELTA_AUDIT.map(t => `
+    <tr>
+      <td><strong>${t.scenario}</strong></td>
+      <td><code>${t.screenMoisture}</code></td>
+      <td><code>${t.dryerInletWater}</code></td>
+      <td><strong><code>${t.evaporationLoad}</code></strong></td>
+      <td><code>${t.dryerThermalDuty}</code></td>
+      <td>${t.impact}</td>
+    </tr>
+  `).join('');
+}
+
 function renderCoreQuestions() {
   const container = document.getElementById('core-questions-container');
   if (!container) return;

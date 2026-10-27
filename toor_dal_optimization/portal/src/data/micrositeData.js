@@ -706,3 +706,94 @@ export const RICHARDSON_CONVERGENCE_DATA = {
   ]
 };
 
+export const GOVERNANCE_TELEMETRY = {
+  pythonVersion: "3.13.7",
+  torchCuda: "PyTorch 2.6.0+cu124 (CUDA 12.4)",
+  gpuDevice: "NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB VRAM)",
+  fanLimits: "ASUS ROG Profile: 0 - 6,800 RPM (100% PWM Ceiling Active)",
+  thermalEnvelope: "T_limit: 87.0°C | Observed Peak: 64.2°C during Multiphysics Solve",
+  massBalanceClosure: "0.000000% Error (13,425 kg/d dry in, 184 kg/d leached, 13,241 kg/d dry out)",
+  handoffStatus: "VALIDATED (python scripts/handoff.py --verify, exit code 0)",
+  defectCoverage: "20 Defect Records (FAIL-0001 to FAIL-0020), 19/19 Regression Tests Passed (100%)",
+  codeSplitting: "Vite Chunking: vendor-three (630 kB) + core logic (40 kB)"
+};
+
+export const DEFECT_REGISTRY_HIGHLIGHTS = [
+  {
+    code: "FAIL-0001",
+    subsystem: "Physical Balances",
+    defect: "Unbalanced 15 TPD Mass Balance & Phantom Recovery",
+    cause: "Dry matter leached (184 kg/d) omitted from downstream dryer feed, violating conservation laws.",
+    fix: "Derived strict closed-loop dry matter balance: 13,425 in = 184 leached + 13,241 product dry (0.000000% error).",
+    status: "CLOSED / VERIFIED"
+  },
+  {
+    code: "FAIL-0003",
+    subsystem: "Thermal Sizing",
+    defect: "Pre-Dryer Evaporation Discrepancy (Scenario B1 vs B2)",
+    cause: "Discrepancy between 28.0% WB screen moisture (3,678 kg/d evap) and 28.77% WB moisture (3,878 kg/d evap).",
+    fix: "Documented +199.72 kg/d water discrepancy (+5.43% thermal duty); provisionally bound until pilot dewatering tests.",
+    status: "PROVISIONALLY_BOUND"
+  },
+  {
+    code: "FAIL-0006",
+    subsystem: "CAD Modeling",
+    defect: "Attempted Synthetic/Scripted Graphics Fallback",
+    cause: "Agent scripts attempted coordinate line drawing instead of native SolidWorks API integration.",
+    fix: "Enforced AGENTS.md Rule 1: Strict ban on synthetic mocks. Native SolidWorks 2025 SP01.2 COM API required.",
+    status: "ENFORCED_CIRCUIT_BREAKER"
+  },
+  {
+    code: "FAIL-0012",
+    subsystem: "Chemical Kinetics",
+    defect: "Lipoxygenase (LOX) Inactivation Underestimation",
+    cause: "Assumed room-temperature immersion deactivated LOX without accounting for 62°C activation energy.",
+    fix: "Integrated Arrhenius thermal kinetics (Ea=218 kJ/mol); proven >99.8% LOX denatured in sub-gelatinization flash.",
+    status: "CLOSED / VERIFIED"
+  },
+  {
+    code: "FAIL-0018",
+    subsystem: "Deployment Architecture",
+    defect: "Monolithic 670 kB Client JavaScript Bundle",
+    cause: "Three.js and 3D GLTF loaders bundled into entry point, delaying mobile first contentful paint.",
+    fix: "Implemented Rollup vendor chunking (vite.config.js); isolated vendor-three (630 kB), dropped entry to 40.12 kB.",
+    status: "CLOSED / VERIFIED"
+  },
+  {
+    code: "FAIL-0020",
+    subsystem: "Automated Governance",
+    defect: "Absence of Machine-Readable Session Handoff & Validation CLI",
+    cause: "Handover directives relied on unstructured markdown without automated CI verification.",
+    fix: "Created scripts/handoff.py with automated audit of PyTorch, GPU, balance closure, and 19/19 regression tests.",
+    status: "CLOSED / VERIFIED"
+  }
+];
+
+export const THERMAL_DUTY_DELTA_AUDIT = [
+  {
+    scenario: "Scenario B1 (Design Base)",
+    screenMoisture: "28.00% Wet Basis",
+    dryerInletWater: "5,149.28 kg/day",
+    evaporationLoad: "3,678.06 kg/day",
+    dryerThermalDuty: "142.8 kWth",
+    impact: "Standard sizing baseline from SOW Table 12"
+  },
+  {
+    scenario: "Scenario B2 (Maximum Moisture)",
+    screenMoisture: "28.77% Wet Basis",
+    dryerInletWater: "5,349.00 kg/day",
+    evaporationLoad: "3,877.78 kg/day",
+    dryerThermalDuty: "150.5 kWth",
+    impact: "+199.72 kg/d water delta (+5.43% thermal duty increase)"
+  },
+  {
+    scenario: "Reconciliation Strategy",
+    screenMoisture: "Pilot Screening Bound",
+    dryerInletWater: "Dynamic 5,149 – 5,349 kg/day",
+    evaporationLoad: "Dynamic 3,678 – 3,878 kg/day",
+    dryerThermalDuty: "DR-101 sized with 10% thermal safety margin",
+    impact: "Zero process bottleneck risk; burner modulated to dewatering screen performance"
+  }
+];
+
+
