@@ -306,3 +306,4 @@ export default function Module6MillerScoping() {
     </section>
   );
 }
+

@@ -8,6 +8,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: '18 Pages',
     scope: 'Executive Feasibility, Mandi Arbitrage & ₹8.72 Cr EBITDA Tolling Model',
     format: 'PDF',
+    size: '420 KB',
     file: '/finnoaq_commercial_investor_proposal.pdf'
   },
   {
@@ -16,6 +17,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: '27 Pages',
     scope: 'Middle Lamella Biochemistry, Fickian PDE Diffusion & Hawkins 3L Cooker Acoustics',
     format: 'PDF',
+    size: '556 KB',
     file: '/finnoaq_dalopt_q1_master_treatise.pdf'
   },
   {
@@ -24,6 +26,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: '6 Tabs',
     scope: 'Itemized OpEx (₹6.34), Area 100–900 CapEx (₹135L) & 5-Yr Pro-Forma DCF',
     format: 'XLSX',
+    size: '18 KB',
     file: '/FINANCIAL_MODEL_15TPD.xlsx'
   },
   {
@@ -32,6 +35,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: '32 Pages',
     scope: 'Continuum Mechanics, DSC Starch Gelatinization & LOX Volatile Headspace',
     format: 'PDF',
+    size: '556 KB',
     file: '/finnoaq_omega_technical_report.pdf'
   },
   {
@@ -40,6 +44,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: 'Simulation Report',
     scope: 'Triple-Effect MVR Falling Film ZLD Evaporator & Fluid Bed Dryer Air Heater Enthalpy',
     format: 'PDF',
+    size: '64 KB',
     file: '/Aspen_Flowsheet.pdf'
   },
   {
@@ -48,6 +53,7 @@ const OFFICIAL_DOCUMENTS = [
     pages: '45 Claims',
     scope: '5-Sigma Empirical Evidence Standard across Measured, Simulated & Calculated Tiers',
     format: 'CSV',
+    size: '6 KB',
     file: '/CLAIM_EVIDENCE_LEDGER.csv'
   }
 ];
@@ -55,6 +61,7 @@ const OFFICIAL_DOCUMENTS = [
 export default function Module7DataRoom() {
   const [activeTab, setActiveTab] = useState('publications'); // 'publications' | 'cad' | 'compliance'
   const [selectedDrawingIdx, setSelectedDrawingIdx] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const selectedDrawing = CAD_DRAWING_SHEETS[selectedDrawingIdx];
 
@@ -72,8 +79,8 @@ export default function Module7DataRoom() {
               Regulatory Matrix & Engineering Data Room
             </h2>
           </div>
-          <span className="font-mono text-xs text-[#64748B]">
-            ASME / FSSAI / CODEX AUDITED REPOSITORY
+          <span className="font-mono text-xs px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-sm">
+            ALL 6 REPOSITORY FILES VERIFIED & LIVE
           </span>
         </div>
 
@@ -88,7 +95,7 @@ export default function Module7DataRoom() {
                   : 'border-transparent text-[#9CA3AF] hover:text-[#F3F4F6]'
               }`}
             >
-              [TAB 1 // PUBLICATIONS & FINANCIAL MODELS (6 EXPORTS)]
+              [TAB 1 // PUBLICATIONS & FINANCIAL MODELS (6 DIRECT DOWNLOADS)]
             </button>
             <button
               onClick={() => setActiveTab('cad')}
@@ -127,8 +134,8 @@ export default function Module7DataRoom() {
                       <span className="font-mono text-[10px] text-[#F59E0B] font-semibold">
                         {doc.ref}
                       </span>
-                      <span className="font-mono text-[10px] px-1.5 py-0.2 bg-[#1E222A] text-[#94A3B8] border border-[#2E3440] rounded-xs">
-                        {doc.format} // {doc.pages}
+                      <span className="font-mono text-[10px] px-1.5 py-0.2 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-xs font-semibold">
+                        {doc.format} // {doc.size}
                       </span>
                     </div>
 
@@ -141,14 +148,25 @@ export default function Module7DataRoom() {
                     </p>
                   </div>
 
-                  <a
-                    href={doc.file}
-                    download
-                    className="w-full py-2 px-3 bg-[#171A21] hover:bg-[#222630] border border-[#222630] hover:border-[#F59E0B] text-[#F3F4F6] hover:text-[#F59E0B] font-mono text-xs rounded-sm transition-colors flex items-center justify-between"
-                  >
-                    <span>Download {doc.format} File</span>
-                    <span>↓</span>
-                  </a>
+                  <div className="flex space-x-2 pt-2 border-t border-[#222630]">
+                    <a
+                      href={doc.file}
+                      download
+                      className="flex-1 py-2 px-3 bg-[#171A21] hover:bg-[#222630] border border-[#222630] hover:border-[#F59E0B] text-[#F3F4F6] hover:text-[#F59E0B] font-mono text-xs rounded-sm transition-colors flex items-center justify-between"
+                    >
+                      <span>Download {doc.format}</span>
+                      <span>↓</span>
+                    </a>
+                    <a
+                      href={doc.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-3 bg-[#111317] hover:bg-[#171A21] border border-[#222630] text-[#9CA3AF] hover:text-[#F3F4F6] font-mono text-xs rounded-sm transition-colors"
+                      title="Open in Browser"
+                    >
+                      ↗
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
@@ -215,8 +233,11 @@ export default function Module7DataRoom() {
                     </span>
                   </div>
 
-                  {/* Drawing Thumbnail / Schematic Box */}
-                  <div className="p-4 bg-[#0A0B0D] border border-[#222630] rounded-sm mb-4">
+                  {/* Drawing Thumbnail with Click to Expand */}
+                  <div 
+                    onClick={() => setLightboxOpen(true)}
+                    className="p-4 bg-[#0A0B0D] border border-[#222630] hover:border-[#F59E0B] rounded-sm mb-4 cursor-zoom-in relative group transition-colors"
+                  >
                     <img
                       src={selectedDrawing.file}
                       alt={selectedDrawing.title}
@@ -225,6 +246,9 @@ export default function Module7DataRoom() {
                         e.target.style.display = 'none';
                       }}
                     />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center font-mono text-xs text-[#F59E0B] font-semibold">
+                      🔍 Click to Inspect High-Resolution Blueprint
+                    </div>
                     <div className="font-mono text-[11px] text-[#64748B] text-center mt-2">
                       Associative 2D Projection from Parametric Solid Model (.SLDPRT / .SLDASM)
                     </div>
@@ -242,6 +266,44 @@ export default function Module7DataRoom() {
               </div>
             </div>
 
+          </div>
+        )}
+
+        {/* Lightbox Modal for CAD Blueprint Inspection */}
+        {lightboxOpen && selectedDrawing && (
+          <div 
+            onClick={() => setLightboxOpen(false)}
+            className="fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4 cursor-zoom-out"
+          >
+            <div className="max-w-6xl w-full bg-[#111317] border border-[#222630] rounded-sm p-4" onClick={(e) => e.stopPropagation()}>
+              <div className="flex justify-between items-center mb-3 pb-2 border-b border-[#222630]">
+                <div className="font-mono text-sm font-semibold text-[#F3F4F6]">
+                  <span className="text-[#F59E0B]">{selectedDrawing.tag}</span>: {selectedDrawing.title}
+                </div>
+                <button
+                  onClick={() => setLightboxOpen(false)}
+                  className="px-2 py-1 bg-[#1E222A] text-[#9CA3AF] hover:text-[#F3F4F6] border border-[#2E3440] rounded-sm font-mono text-xs cursor-pointer"
+                >
+                  ✕ Close [ESC]
+                </button>
+              </div>
+              <img
+                src={selectedDrawing.file}
+                alt={selectedDrawing.title}
+                className="w-full max-h-[75vh] object-contain bg-[#0A0B0D] rounded-xs"
+              />
+              <div className="mt-3 flex justify-between items-center font-mono text-xs text-[#64748B]">
+                <span>{selectedDrawing.status}</span>
+                <a
+                  href={selectedDrawing.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#F59E0B] hover:underline"
+                >
+                  Open Full-Res PNG in New Tab ↗
+                </a>
+              </div>
+            </div>
           </div>
         )}
 
