@@ -458,7 +458,7 @@ export const PLANT_EQUIPMENT = [
     type: "Vertical Cylindrical Steep Vessel (Twin 2,500 L)",
     capacity: "2x 2.5 m3 working volume (SS316L contact parts)",
     power: "2x 2.2 kW geared slow-speed agitator + 17 W/L ultrasonic transducers",
-    render: "/drawings/TK-101_Soak_Tank_Iso.png",
+    render: "/drawings/TK-101_SolidWorks_3D_Iso.png",
     glb: "/models/TK-101_Soak_Tank.glb",
     duty: "Continuous 48°C multi-salt bio-chelation steeping under 40 kHz acoustic cavitation with pneumatic bottom discharge."
   },
@@ -468,7 +468,7 @@ export const PLANT_EQUIPMENT = [
     type: "Vibrating Linear Motion Dewatering Screen",
     capacity: "1,200 kg/h wet pulse throughput (SS304 deck)",
     power: "2x 1.1 kW vibro-motors + 3.0 kW high-pressure deluge pump",
-    render: "/drawings/SC-101_Dewatering_Screen_Iso.png",
+    render: "/drawings/SC-101_SolidWorks_3D_Iso.png",
     glb: "/models/SC-101_Dewatering_Screen.glb",
     duty: "Separates hydrated split cotyledons from bulk liquor down to 28.0% WB moisture while delivering 12s counter-current deluge rinse."
   },
@@ -478,7 +478,7 @@ export const PLANT_EQUIPMENT = [
     type: "Continuous Vibrating Fluid Bed Dryer with Tempering Deck",
     capacity: "850 kg/h dry product discharge (195 kWth peak duty)",
     power: "15.0 kW fluidizing supply fan + 7.5 kW exhaust blower",
-    render: "/drawings/DR-101_Fluid_Bed_Dryer_Iso.png",
+    render: "/drawings/DR-101_SolidWorks_3D_Iso.png",
     glb: "/models/DR-101_Fluid_Bed_Dryer.glb",
     duty: "Two-stage drying (65°C → 55°C adiabatic tempering → 55°C) suppressing hoop stress below 0.40 MPa and broken fines to <0.35%."
   },
@@ -488,7 +488,7 @@ export const PLANT_EQUIPMENT = [
     type: "Mechanical Vapor Recompression (MVR) Concentrator",
     capacity: "250 kg/h evaporative water recovery (SS316L tubes)",
     power: "11.0 kW MVR vapor turbo-fan + 1.5 kW recirculation pump",
-    render: "/drawings/EV-101_ZLD_Evaporator_Iso.png",
+    render: "/drawings/EV-101_SolidWorks_3D_Iso.png",
     glb: "/models/EV-101_ZLD_Evaporator.glb",
     duty: "Concentrates 15% bleed liquor to 45% solids for animal feed byproduct recovery while recycling pure condensate back to wash battery."
   }
@@ -514,7 +514,7 @@ export const CAD_DRAWING_SHEETS = [
     tag: "DWG-FIN-15T-007",
     title: "Ultrasonic Steeping Battery General Arrangement (TK-101)",
     status: "ASME Sec VIII Div 1",
-    file: "/drawings/DWG-FIN-15T-007_SOAKING_BATTERY_GA.png",
+    file: "/drawings/DWG-FIN-15T-007_SOAK_TANK_GA.png",
     desc: "Twin 2,500L SS316L vessel fabrication elevations, dimple heating jacket, ultrasonic horn mounts, and pneumatic bottom dump valve."
   },
   {
