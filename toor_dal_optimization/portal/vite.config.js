@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   root: './',
   publicDir: 'public',
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
@@ -13,6 +19,9 @@ export default defineConfig({
           if (id.includes('three')) {
             return 'vendor-three';
           }
+          if (id.includes('framer-motion') || id.includes('lucide-react')) {
+            return 'vendor-ui';
+          }
         }
       }
     }
@@ -22,6 +31,6 @@ export default defineConfig({
     open: false
   },
   preview: {
-    port: 5173
+    port: 4173
   }
 });
