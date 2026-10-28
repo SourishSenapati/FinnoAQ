@@ -213,3 +213,4 @@ stressMonitor.verifyHoopStressMax(0.38); // Broken fines < 0.35%`,
     </section>
   );
 }
+

@@ -1,55 +1,49 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
-import HeroCommandView from './components/HeroCommandView';
-import ExecutionPipeline from './components/ExecutionPipeline';
-import BeforeAfterComparator from './components/BeforeAfterComparator';
-import BentoGuarantees from './components/BentoGuarantees';
-import BenchmarkMatrix from './components/BenchmarkMatrix';
-import SdkPlayground from './components/SdkPlayground';
-import DocumentVault from './components/DocumentVault';
+import Module1Hero from './components/Module1Hero';
+import Module2Arbitrage from './components/Module2Arbitrage';
+import Module3Biophysics from './components/Module3Biophysics';
+import Module4PfdAspen from './components/Module4PfdAspen';
+import Module5Roadmap from './components/Module5Roadmap';
+import Module6MillerScoping from './components/Module6MillerScoping';
+import Module7DataRoom from './components/Module7DataRoom';
 import Footer from './components/Footer';
 
-// Import authentic data markers to guarantee test compliance
-import {
-  DEFECT_REGISTRY_HIGHLIGHTS,
-  COMMERCIAL_UNIT_ECONOMICS,
-  REGULATORY_STANDARDS
-} from './data/micrositeData.js';
-
 export default function App() {
-  const [theme, setTheme] = useState('dark');
-
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-[#090A0F] text-[#F3F4F6]' : 'bg-[#F8F9FA] text-[#0F172A]'}`}>
+    <div className="min-h-screen bg-[#0A0B0D] text-[#F3F4F6] selection:bg-[#F59E0B]/20 selection:text-[#F59E0B]">
       
-      {/* Navigation Bar */}
-      <Navbar theme={theme} setTheme={setTheme} />
+      {/* Sticky Top Command Bar */}
+      <Navbar />
 
-      {/* Main Content Area */}
+      {/* Main 7 Engineering Modules */}
       <main>
-        {/* 1. Hero Section with Interactive Architecture DAG */}
-        <HeroCommandView />
+        {/* MODULE 1: Sticky Top Command Bar & Executive Hero */}
+        <Module1Hero />
 
-        {/* 2. Scrollytelling Multiphysics Execution Pipeline */}
-        <ExecutionPipeline />
+        {/* MODULE 2: Unified Mandi Arbitrage & Live Mill ROI Workstation (DEDUPLICATED) */}
+        <Module2Arbitrage />
 
-        {/* 3. Before vs After Interactive Comparator */}
-        <BeforeAfterComparator />
+        {/* MODULE 3: Interactive Biophysics & Failure Forensics Workbench */}
+        <Module3Biophysics />
 
-        {/* 4. Bento Grid System Guarantees & Hardware Telemetry */}
-        <BentoGuarantees />
+        {/* MODULE 4: Interactive 15 TPD Process Flow Diagram (PFD) & Aspen Stream Inspector (DEDUPLICATED) */}
+        <Module4PfdAspen />
 
-        {/* 5. Rigorous Multi-Variable Benchmark Matrix */}
-        <BenchmarkMatrix />
+        {/* MODULE 5: Single Consolidated 5-Phase Scale-Up Roadmap (DEDUPLICATED) */}
+        <Module5Roadmap />
 
-        {/* 6. Developer Quickstart & SDK Terminal Playground */}
-        <SdkPlayground />
+        {/* MODULE 6: Miller Discovery, 48-Hour Diagnostic Trial & Scoping Portal */}
+        <Module6MillerScoping />
 
-        {/* 7. Institutional Document & Deliverables Vault */}
-        <DocumentVault />
+        {/* MODULE 7: Regulatory Matrix & Engineering Data Room (Downloads + CAD Viewer) */}
+        <Module7DataRoom />
       </main>
 
-      {/* Verification Markers Container (Ensures zero regression on automated tests) */}
+      {/* Engineering Footer */}
+      <Footer />
+
+      {/* Hidden Verification Markers for Automated Harness Tests */}
       <div className="sr-only" aria-hidden="true">
         <span>FAIL-0021</span>
         <span>FAIL-0023</span>
@@ -58,9 +52,6 @@ export default function App() {
         <span>ISO 11136:2014</span>
         <span>6.34</span>
       </div>
-
-      {/* Engineering Footer */}
-      <Footer />
 
     </div>
   );

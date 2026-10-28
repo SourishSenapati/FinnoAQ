@@ -1,70 +1,80 @@
 import React from 'react';
-import { Activity, ShieldCheck, Terminal, Sun, Moon, Download, Layers } from 'lucide-react';
 
-export default function Navbar({ theme, setTheme }) {
+export default function Navbar() {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#1E2230] bg-[#090A0F]/90 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 w-full bg-[#0A0B0D] border-b border-[#222630]">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
         
-        {/* Brand & Version Badge */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <span className="flex h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
-            <span className="font-mono text-xs font-bold tracking-widest text-[#F3F4F6] uppercase">
-              FINNOAQ<span className="text-[#F59E0B]">.OMEGA</span>
-            </span>
+        {/* Left: Monochrome Identifier */}
+        <div className="flex items-center space-x-3">
+          <div className="px-2.5 py-1 bg-[#1E222A] text-[#94A3B8] border border-[#2E3440] font-mono text-xs rounded-sm tracking-wide">
+            [FNQ-PR-2026-COMM-001 // REV V11]
           </div>
-          <span className="hidden sm:inline-block font-mono text-[10px] tracking-wider text-[#64748B] border border-[#1E2230] px-2 py-0.5 rounded-sm bg-[#11131A]">
-            v2.4 DETERMINISTIC ENGINE // SIL-3
+          <span className="hidden md:inline font-mono text-xs text-[#64748B]">
+            15 TPD TURNKEY COMMERCIAL PLATFORM
           </span>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 font-mono text-xs text-[#94A3B8]">
-          <a href="#architecture" className="hover:text-[#F3F4F6] transition-colors flex items-center gap-1.5">
-            <Layers className="w-3.5 h-3.5 text-[#38BDF8]" />
-            [01 // ARCHITECTURE]
-          </a>
-          <a href="#pipeline" className="hover:text-[#F3F4F6] transition-colors">
-            [02 // PIPELINE]
-          </a>
-          <a href="#comparator" className="hover:text-[#F3F4F6] transition-colors">
-            [03 // COMPARATOR]
-          </a>
-          <a href="#guarantees" className="hover:text-[#F3F4F6] transition-colors">
-            [04 // BENTO]
-          </a>
-          <a href="#benchmarks" className="hover:text-[#F3F4F6] transition-colors">
-            [05 // BENCHMARKS]
-          </a>
-          <a href="#playground" className="hover:text-[#F3F4F6] transition-colors flex items-center gap-1.5">
-            <Terminal className="w-3.5 h-3.5 text-[#F59E0B]" />
-            [06 // SDK]
-          </a>
+        {/* Center: Clean Anchor Links */}
+        <nav className="hidden lg:flex items-center space-x-6 font-mono text-xs text-[#9CA3AF]">
+          <button 
+            onClick={() => scrollTo('hero')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [00 // OVERVIEW]
+          </button>
+          <button 
+            onClick={() => scrollTo('arbitrage')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [01 // ROI WORKSTATION]
+          </button>
+          <button 
+            onClick={() => scrollTo('biophysics')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [02 // BIOPHYSICS]
+          </button>
+          <button 
+            onClick={() => scrollTo('pfd-aspen')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [03 // PFD & ASPEN]
+          </button>
+          <button 
+            onClick={() => scrollTo('roadmap')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [04 // ROADMAP]
+          </button>
+          <button 
+            onClick={() => scrollTo('scoping')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [05 // 48-HR TRIAL]
+          </button>
+          <button 
+            onClick={() => scrollTo('data-room')} 
+            className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
+          >
+            [06 // DATA ROOM]
+          </button>
         </nav>
 
-        {/* Actions & Telemetry */}
-        <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center gap-2 font-mono text-[11px] text-[#10B981] bg-[#10B981]/10 border border-[#10B981]/30 px-2.5 py-1 rounded-sm">
-            <Activity className="w-3 h-3" />
-            <span className="tabular-nums">48.0°C // 25.0 kHz // 15.2N</span>
-          </div>
-
-          <a 
-            href="#vault"
-            className="flex items-center gap-1.5 bg-[#F3F4F6] hover:bg-white text-[#090A0F] font-mono text-xs font-semibold px-3 py-1.5 rounded-sm transition-all"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>Dossier PDF</span>
-          </a>
-
-          {/* Theme Toggle Button */}
+        {/* Right: Solid Amber CTA */}
+        <div className="flex items-center space-x-3">
           <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="flex h-8 w-8 items-center justify-center rounded-sm border border-[#1E2230] bg-[#11131A] text-[#94A3B8] hover:text-[#F3F4F6] transition-colors"
-            aria-label="Toggle visual theme"
+            onClick={() => scrollTo('scoping')}
+            className="bg-[#F59E0B] text-black font-semibold text-xs px-3.5 py-1.5 rounded-sm hover:bg-[#D97706] transition-colors cursor-pointer font-mono tracking-tight"
           >
-            {theme === 'dark' ? <Sun className="w-4 h-4 text-[#F59E0B]" /> : <Moon className="w-4 h-4 text-[#38BDF8]" />}
+            Request 48-Hr Grain Trial
           </button>
         </div>
 
