@@ -1,5 +1,5 @@
 """
-Harakutir Omega v4 — Multimodal Multi-Agent Orchestrator.
+FinnoaQ Omega v4 — Multimodal Multi-Agent Orchestrator.
 Orchestrates 6 specialized research and verification agents (Agents A-F)
 aligned with Section 2 of the Master Constitution, coupled with GPU-accelerated
 scientific simulation data and multimodal food science visual analytics.
@@ -503,7 +503,7 @@ class MultiAgentOrchestrator:
     def execute_full_orchestration(self) -> Dict[str, Any]:
         t0 = time.time()
         print("\n" + "="*70)
-        print("HARAKUTIR OMEGA v4 — MULTIMODAL MULTI-AGENT ORCHESTRATION ENGINE")
+        print("FINNOAQ OMEGA v4 — MULTIMODAL MULTI-AGENT ORCHESTRATION ENGINE")
         print("Coordinating Research Agents A-F with Live GPU Tensor Physics")
         print("="*70)
 
@@ -580,7 +580,7 @@ class MultiAgentOrchestrator:
         figs = payload["generated_multimodal_figures"]
 
         md = f"""# MULTIMODAL MULTI-AGENT ORCHESTRATION REPORT
-## Harakutir Omega v4 — Open-Source R&D, GPU Physics & Autonomous Agency Engine
+## FinnoaQ Omega v4 — Open-Source R&D, GPU Physics & Autonomous Agency Engine
 
 **Timestamp:** {payload['orchestration_timestamp']} | **Duration:** {payload['execution_duration_sec']}s  
 **Controlling Architecture:** Section 2 Multi-Agent Architecture (Agents A through F) + CUDA Continuous Tensor Physics  

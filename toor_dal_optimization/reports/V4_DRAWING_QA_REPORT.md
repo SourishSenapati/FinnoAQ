@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Zero-Slop Certification
 
-In strict fulfillment of the **V4 Master Directive — Professional Native Engineering, Offline-First, Evidence-Locked**, this document certifies the 100% elimination of all crude "matplotlib text-box CAD slop" across the Harakutir 15 TPD Greenfield Plant conceptual FEED package. 
+In strict fulfillment of the **V4 Master Directive — Professional Native Engineering, Offline-First, Evidence-Locked**, this document certifies the 100% elimination of all crude "matplotlib text-box CAD slop" across the FinnoaQ 15 TPD Greenfield Plant conceptual FEED package. 
 
 All 12 conceptual FEED engineering drawings have been drafted in native **AutoCAD R2018 DXF** using true metric coordinate space, standard ISO 13567 layering, professional lineweights (0.18 mm to 0.70 mm), authentic ASME/ISA symbology, and converted to crisp vector PDFs using `ezdxf.addons.drawing` configured with `ColorPolicy.COLOR_SWAP_BW`. Each drawing has undergone automated bounding-box QA (evaluating margins, text block coordinates, and LaTeX syntax errors) and mandatory high-resolution visual inspection via 150 DPI rendered PNGs.
 
@@ -152,4 +152,4 @@ All drawing deliverables in the working tree are locked with SHA-256 cryptograph
 
 ## 5. Conclusion & Engineering Sign-Off
 
-The complete 12-sheet Conceptual FEED Drawing Package for the Harakutir 15 TPD Greenfield Plant meets all professional native CAD engineering requirements. All drawings represent true vector CAD entities, are free of text/geometry collisions, comply with ASME/ISO drafting standards, and provide an unambiguous basis for detailed FEED and physical wet-lab scaleup upon lifting of Gate G-A Hold.
+The complete 12-sheet Conceptual FEED Drawing Package for the FinnoaQ 15 TPD Greenfield Plant meets all professional native CAD engineering requirements. All drawings represent true vector CAD entities, are free of text/geometry collisions, comply with ASME/ISO drafting standards, and provide an unambiguous basis for detailed FEED and physical wet-lab scaleup upon lifting of Gate G-A Hold.

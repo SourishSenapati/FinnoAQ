@@ -8,7 +8,7 @@
 
 ## 1. Controlled Drawing Register
 
-The table below lists all 10 official engineering drawings generated for the Harakutir 15 MT/day facility. All drawings have been procedurally generated, verified against sizing calculations, and stored as editable vector DXF files and multi-page vector PDF drawing packages:
+The table below lists all 10 official engineering drawings generated for the FinnoaQ 15 MT/day facility. All drawings have been procedurally generated, verified against sizing calculations, and stored as editable vector DXF files and multi-page vector PDF drawing packages:
 
 | Drawing Number | Revision | Sheet Title | Discipline | Sheet Size | Source File Paths | Design Maturity | Statutory Disclaimer |
 | :---: | :---: | :--- | :--- | :---: | :--- | :---: | :--- |
@@ -42,7 +42,7 @@ The custom machinery models are exported in industry-standard open exchange form
 ## 3. High-Resolution Vector PDF Drawing Booklet
 
 All 10 drawings are compiled into an integrated vector PDF engineering package:
-- **File Location:** [`engineering/cad/pdf/HARAKUTIR_15TPD_ENGINEERING_DRAWINGS.pdf`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/pdf/HARAKUTIR_15TPD_ENGINEERING_DRAWINGS.pdf)
+- **File Location:** [`engineering/cad/pdf/FINNOAQ_15TPD_ENGINEERING_DRAWINGS.pdf`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/engineering/cad/pdf/FINNOAQ_15TPD_ENGINEERING_DRAWINGS.pdf)
 - **Page Size:** Landscape A3 (420 mm x 297 mm).
 - **Features:** Vector lines, title blocks, revision history boxes, discipline tags, equipment callouts, and prominent red warning borders (`PRELIMINARY—NOT FOR CONSTRUCTION`).
 - **Automated Verification:** Verified by unit test `test_cad_deliverables_existence_and_not_empty` in `tests/test_end_to_end_plant_engineering.py`.

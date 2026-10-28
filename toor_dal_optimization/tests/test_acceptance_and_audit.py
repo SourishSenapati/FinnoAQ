@@ -1,6 +1,6 @@
 """
 Comprehensive Acceptance and Independent Red-Team Adversarial Audit Test Suite.
-Validates all 14 mandatory contract gates from Section 15 of HARAKUTIR_MASTER_PROMPT.
+Validates all 14 mandatory contract gates from Section 15 of FINNOAQ_MASTER_PROMPT.
 """
 
 import os
@@ -12,17 +12,17 @@ import numpy as np
 # Ensure root is on path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.parameters import get_all_parameters, get_sow_sections_matrix
-from src.harakutir.schemas import DatasetKind, ProvenanceRecord, PhysicalAssay, ProximateAssay
-from src.harakutir.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
-from src.harakutir.provenance import compute_sha256, ProvenanceRegistry
-from src.harakutir.statistics import compute_descriptive_stats, compute_comparative_stats, apply_holm_bonferroni
-from src.harakutir.hydration import fit_peleg_model, peleg_function, GPUInverseHydrationModel
-from src.harakutir.checkpoint import CheckpointManager
-from src.harakutir.oed import BayesianOEDPlanner
-from src.harakutir.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
-from src.harakutir.claims import get_baseline_phase1_claims
-from src.harakutir.reports import ReportGenerator
+from src.finnoaq.parameters import get_all_parameters, get_sow_sections_matrix
+from src.finnoaq.schemas import DatasetKind, ProvenanceRecord, PhysicalAssay, ProximateAssay
+from src.finnoaq.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
+from src.finnoaq.provenance import compute_sha256, ProvenanceRegistry
+from src.finnoaq.statistics import compute_descriptive_stats, compute_comparative_stats, apply_holm_bonferroni
+from src.finnoaq.hydration import fit_peleg_model, peleg_function, GPUInverseHydrationModel
+from src.finnoaq.checkpoint import CheckpointManager
+from src.finnoaq.oed import BayesianOEDPlanner
+from src.finnoaq.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
+from src.finnoaq.claims import get_baseline_phase1_claims
+from src.finnoaq.reports import ReportGenerator
 
 # GATE 1: Complete SOW §§1–36 coverage
 def test_gate_01_complete_sow_coverage():
@@ -245,7 +245,7 @@ def test_gate_14_claim_provenance_audit():
 
 # GATE 15: Foodoscope Culinary Informatics & Flavor Chemistry Engine
 def test_gate_15_foodoscope_culinary_informatics():
-    from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
+    from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
     fe = FoodoscopeInformaticsEngine()
     
     # Test volatile database
@@ -283,7 +283,7 @@ def test_gate_15_foodoscope_culinary_informatics():
 
 # GATE 16: 5-Layer Computational Screening & Pareto Multi-Objective Optimization
 def test_gate_16_virtual_screening_and_pareto_front():
-    from src.harakutir.virtual_screening import VirtualScreeningPipeline
+    from src.finnoaq.virtual_screening import VirtualScreeningPipeline
     pipe = VirtualScreeningPipeline()
     candidates = pipe.generate_candidate_design_space()
     assert len(candidates) >= 15
@@ -307,7 +307,7 @@ def test_gate_16_virtual_screening_and_pareto_front():
 
 # GATE 17: Closed-Loop Digital Twin & Bayesian Parameter Updating
 def test_gate_17_closed_loop_digital_twin_and_feedback():
-    from src.harakutir.digital_twin import ClosedLoopDigitalTwin
+    from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
     dt = ClosedLoopDigitalTwin()
     
     # Check initial prior distributions
@@ -337,7 +337,7 @@ def test_gate_17_closed_loop_digital_twin_and_feedback():
 
 # GATE 18: Learn Harness Engineering Decision Gates (G0-G9)
 def test_gate_18_learn_harness_engineering_gates_g0_g9():
-    from src.harakutir.harness import HarnessEngineeringManager
+    from src.finnoaq.harness import HarnessEngineeringManager
     harness = HarnessEngineeringManager()
     summary = harness.evaluate_all_gates()
     

@@ -1,6 +1,6 @@
 # MINIMUM LABORATORY TEST PLAN: PRUNED EVIDENCE STRATEGY
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Objective:** Minimize external laboratory expenditure while obtaining decisive, defensible scientific proof of the root cause.  
 **Governing Principle:** Screen selectively; do not perform outsourced assays on parameters that can be verified in-house or resolved through literature.  
 
@@ -48,7 +48,7 @@ To avoid spending the full ₹1.73 lakh SOW budget blindly, the testing architec
 
 ## 3. TIER 2: MINIMAL OUTSOURCED ACCREDITED TEST (IF CERTIFICATE REQUIRED)
 
-If Dr. Archisman Ray or an investor requires an accredited NABL laboratory certificate, order **ONLY ONE SINGLE COMBINED TEST**:
+If Technical Advisory Panel or an investor requires an accredited NABL laboratory certificate, order **ONLY ONE SINGLE COMBINED TEST**:
 
 - **Assay:** Basic Oven Moisture Content (AOAC 925.10) + ICP-OES Minerals ($\text{Ca}, \text{Mg}, \text{K}, \text{Na}$).
 - **Samples:** 1 Tanzanian lot vs 1 Indian lot (2 samples total).

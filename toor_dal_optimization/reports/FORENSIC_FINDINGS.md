@@ -1,5 +1,5 @@
 # FORENSIC AUDIT & SCIENTIFIC CLAIMS FINDINGS
-## Harakutir Omega v4 Forensic Investigation Report
+## FinnoaQ Omega v4 Forensic Investigation Report
 
 **Project:** Tanzanian Toor Dal vs Indian Benchmark  
 **Date:** 13 October 2026  
@@ -10,7 +10,7 @@
 
 ## 1. EXECUTIVE SUMMARY & FORENSIC DISPOSITION
 
-This forensic audit rigorously traces, recalculates, and validates all mathematical, physical, empirical, and computational claims in the Harakutir Toor Dal R&D repository.
+This forensic audit rigorously traces, recalculates, and validates all mathematical, physical, empirical, and computational claims in the FinnoaQ Toor Dal R&D repository.
 
 Under the controlling **Ocean Boiling Protocol v3.0** and **Master Constitution Omega v4**, all claims are classified into explicit evidence categories. Unverified prior claims and AI-generated narrative statements have been subjected to adversarial testing.
 

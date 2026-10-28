@@ -36,7 +36,7 @@ def run_aspen_v4_simulation():
     os.makedirs(aspen_dir, exist_ok=True)
     os.makedirs(verif_dir, exist_ok=True)
 
-    master_bkp = os.path.join(aspen_dir, "HARAKUTIR_15TPD_CONVERGED.bkp")
+    master_bkp = os.path.join(aspen_dir, "FINNOAQ_15TPD_CONVERGED.bkp")
     baseline_bkp = os.path.abspath("engineering/verification/v3/v3_triple_effect_evaporator_converged.bkp")
 
     # Copy and update converged model file
@@ -63,7 +63,7 @@ def run_aspen_v4_simulation():
 
     # Authoritative Aspen Plus Simulation Data Reconciled to 15,000 kg/day basis
     sim_audit = {
-        "simulation_model": "HARAKUTIR_15TPD_CONVERGED.bkp",
+        "simulation_model": "FINNOAQ_15TPD_CONVERGED.bkp",
         "file_path": master_bkp,
         "file_size_bytes": os.path.getsize(master_bkp) if os.path.exists(master_bkp) else 157811,
         "aspen_version": "Aspen Plus V14.0 (14.0.0.387)",

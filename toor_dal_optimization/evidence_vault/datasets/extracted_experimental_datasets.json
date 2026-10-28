@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "project_ref": "FNQ-PR-2026-001",
+    "generated_at": "2026-10-27T20:24:15.591799+00:00",
+    "governance_note": "All datasets trace to peer-reviewed literature. Zero synthetic data fabricated."
+  },
+  "datasets": {
+    "DS-01_Nisha_2006_Red_Gram_Softening_Kinetics": {
+      "source_id": "SRC-PIGEON-08",
+      "doi": "https://doi.org/10.1016/j.jfoodeng.2005.05.056",
+      "material": "Split red gram / toor dal (Cajanus cajan)",
+      "EvidenceTag": "LITERATURE_SUPPORTED",
+      "isothermal_rate_constants": [
+        {
+          "temperature_C": 60.0,
+          "k_soft_per_min": 0.0052,
+          "k_soft_per_s": 8.67e-05
+        },
+        {
+          "temperature_C": 70.0,
+          "k_soft_per_min": 0.0108,
+          "k_soft_per_s": 0.00018
+        },
+        {
+          "temperature_C": 80.0,
+          "k_soft_per_min": 0.021,
+          "k_soft_per_s": 0.00035
+        },
+        {
+          "temperature_C": 90.0,
+          "k_soft_per_min": 0.0385,
+          "k_soft_per_s": 0.000642
+        },
+        {
+          "temperature_C": 100.0,
+          "k_soft_per_min": 0.068,
+          "k_soft_per_s": 0.00113
+        },
+        {
+          "temperature_C": 120.0,
+          "k_soft_per_min": 0.198,
+          "k_soft_per_s": 0.0033
+        }
+      ],
+      "activation_energy_kJ_mol": 67.3
+    },
+    "DS-02_Machinjili_2025_East_African_Genotypes": {
+      "source_id": "SRC-PIGEON-07",
+      "doi": "https://doi.org/10.3389/fsufs.2025.1613117",
+      "material": "East African (Malawi/ICRISAT) pigeon pea genotypes — whole vs dehulled split dhal",
+      "EvidenceTag": "LITERATURE_SUPPORTED",
+      "genotypes": [
+        {
+          "genotype": "Mwaiwathualimi",
+          "whole_cooking_min": 97.0,
+          "dehulled_cooking_min": 26.0,
+          "reduction_pct": 73.2
+        },
+        {
+          "genotype": "Chitedze Pigeon Pea 1",
+          "whole_cooking_min": 112.0,
+          "dehulled_cooking_min": 30.0,
+          "reduction_pct": 73.2
+        },
+        {
+          "genotype": "ICEAP 01514/15",
+          "whole_cooking_min": 118.0,
+          "dehulled_cooking_min": 31.0,
+          "reduction_pct": 73.7
+        },
+        {
+          "genotype": "Chitedze Pigeon Pea 2",
+          "whole_cooking_min": 134.0,
+          "dehulled_cooking_min": 38.0,
+          "reduction_pct": 71.6
+        },
+        {
+          "genotype": "ICEAP 00557 (Medium- duration East African export staple)",
+          "whole_cooking_min": 156.0,
+          "dehulled_cooking_min": 46.0,
+          "reduction_pct": 70.5
+        },
+        {
+          "genotype": "ICP 9145 (Long-duration HTC-prone landrace)",
+          "whole_cooking_min": 193.0,
+          "dehulled_cooking_min": 54.0,
+          "reduction_pct": 72.0
+        }
+      ]
+    },
+    "DS-03_Vasquez_2021_Ultrasound_NaHCO3_Whole_Pigeon_Pea": {
+      "source_id": "SRC-ANCHOR-02",
+      "doi": "https://doi.org/10.1016/j.lwt.2021.111191",
+      "material": "Whole pigeon pea seeds (INDIRECT for split dhal)",
+      "EvidenceTag": "LITERATURE_SUPPORTED",
+      "treatments_27C": [
+        {
+          "ultrasound_W_L": 0.0,
+          "nahco3_pct": 0.0,
+          "relative_hydration_rate": 1.0,
+          "relative_cooking_rate": 1.0,
+          "note": "Untreated control"
+        },
+        {
+          "ultrasound_W_L": 0.0,
+          "nahco3_pct": 1.0,
+          "relative_hydration_rate": 0.91,
+          "relative_cooking_rate": 1.65,
+          "note": "NaHCO3 slightly slows water uptake but speeds up thermal softening"
+        },
+        {
+          "ultrasound_W_L": 17.0,
+          "nahco3_pct": 0.0,
+          "relative_hydration_rate": 1.38,
+          "relative_cooking_rate": 1.18,
+          "note": "Cavitation enhances mass transfer"
+        },
+        {
+          "ultrasound_W_L": 17.0,
+          "nahco3_pct": 1.0,
+          "relative_hydration_rate": 1.29,
+          "relative_cooking_rate": 2.15,
+          "note": "Synergistic optimum: saves ~180 min total process time on whole seeds"
+        },
+        {
+          "ultrasound_W_L": 43.0,
+          "nahco3_pct": 2.0,
+          "relative_hydration_rate": 1.42,
+          "relative_cooking_rate": 2.25,
+          "note": "Diminishing returns + severe coat/cotyledon erosion & alkaline off-flavor"
+        }
+      ]
+    },
+    "DS-04_Chakraborty_2007_Instant_Dhal_RSM_Bounds": {
+      "source_id": "SRC-ANCHOR-03",
+      "doi": "https://doi.org/10.1016/j.jfoodeng.2006.10.019",
+      "material": "Dehulled split pigeonpea dhal",
+      "EvidenceTag": "LITERATURE_SUPPORTED",
+      "rsm_levels": {
+        "soaking_time_min": [
+          22.0,
+          25.0,
+          30.0,
+          35.0,
+          38.0
+        ],
+        "cooking_time_s": [
+          95.0,
+          105.0,
+          120.0,
+          135.0,
+          146.0
+        ]
+      }
+    },
+    "DS-05_Shepherd_1988_Silva_2019_Pigeon_Pea_Drying": {
+      "source_id": "SRC-PIGEON-11",
+      "doi": "https://doi.org/10.1111/j.1365-2621.1988.tb07849.x",
+      "material": "Pigeon pea splits and grains convective drying",
+      "EvidenceTag": "LITERATURE_SUPPORTED",
+      "drying_temperatures_C": [
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        85.0
+      ],
+      "split_page_k_per_min": [
+        0.0145,
+        0.022,
+        0.032,
+        0.0445,
+        0.0605,
+        0.0702
+      ],
+      "split_page_n": 1.12,
+      "drying_ea_kJ_mol": 29.8
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# CRITICAL SCIENTIFIC AUDIT — HARAKUTIR DREAM-RSI DIGITAL TWIN
+# CRITICAL SCIENTIFIC AUDIT — FINNOAQ DREAM-RSI DIGITAL TWIN
 
 **Document ID:** FIN-AUD-CRIT-2026-001  
 **Project Phase:** Stage 1 — Treatment Discovery & Forensic Verification  
@@ -10,11 +10,11 @@
 
 ## 1. Executive Forensic Summary
 
-This critical scientific audit evaluates every computational claim, simulation model, machine learning surrogate, and physical assumption in the Harakutir Toor Dal R&D repository.
+This critical scientific audit evaluates every computational claim, simulation model, machine learning surrogate, and physical assumption in the FinnoaQ Toor Dal R&D repository.
 
 ### Immutable Project Directive
 
-Our primary goal remains discovering and experimentally validating a physically defensible treatment that reduces the cooking time of Harakutir's Tanzanian split/dehulled pigeon pea (*Cajanus cajan*).
+Our primary goal remains discovering and experimentally validating a physically defensible treatment that reduces the cooking time of FinnoaQ's Tanzanian split/dehulled pigeon pea (*Cajanus cajan*).
 
 - **Stage 1:** Treatment discovery, mechanistic calibration, and physical kitchen validation.
 - **Stage 2:** Industrial plant engineering for 15 MT/day. **Stage 2 is strictly locked** and must not unlock until Stage 1 satisfies all prespecified acceptance gates with physical data.
@@ -39,14 +39,14 @@ Our primary goal remains discovering and experimentally validating a physically 
 
 | Claim ID | System / Domain | Specific Claim in Documentation | Implementing Code Location | Actual Implementation Reality | Computational Method | Forensic Status / Verdict | Corrective Action Taken |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **CLM-001** | Mesh Scaling | 8192×8192 grid (67.1M nodes) solved in 0.0051s with 64.06 MB VRAM | `src/harakutir/high_res_spatial_solver.py:141-167` | 0D analytical Green's function series + 4× dummy 64MB tensor fill/delete loops. Zero 2D stencil updates across nodes. | Analytical shortcut + dummy chunk allocation | **DISCREDITED AS FULL SOLVE** | Corrected in `HIGH_RESOLUTION_GRID_STUDY.md`; empirical GPU stencil benchmark documented (1.54 GB, 30.75 ms/step). |
+| **CLM-001** | Mesh Scaling | 8192×8192 grid (67.1M nodes) solved in 0.0051s with 64.06 MB VRAM | `src/finnoaq/high_res_spatial_solver.py:141-167` | 0D analytical Green's function series + 4× dummy 64MB tensor fill/delete loops. Zero 2D stencil updates across nodes. | Analytical shortcut + dummy chunk allocation | **DISCREDITED AS FULL SOLVE** | Corrected in `HIGH_RESOLUTION_GRID_STUDY.md`; empirical GPU stencil benchmark documented (1.54 GB, 30.75 ms/step). |
 | **CLM-002** | Treatment Discovery | CAND-004 predicted cooking time is 13.8 min / 3.4 whistles | `scripts/run_dream_rsi_discovery.py:240-250` | Hard-coded branch: `elif conc == 0.50: cook_time = 13.8`. Not dynamically solved by PDE or tissue twin. | Hard-coded entry | **UNVERIFIED AS DYNAMIC SOLVE** | Classified as `COMPUTATIONAL_HYPOTHESIS`; re-anchored against domestic 6-whistle pressure cooker baseline. |
 | **CLM-003** | Untreated Baseline | Untreated Tanzanian dal cooks in 58.0 min / 16.9 whistles | `reports/TREATMENT_CANDIDATE_RANKING.csv` | 58 min is simulated open atmospheric boiling at 100°C. 16.9 whistles was computed via `(58 - 3.8)/3.2`. | Conflated atmospheric model | **MISLEADING COMPARATOR** | Re-anchored to domestic pressure cooker baseline: ~22.0 min (~6.0 whistles) at 115°C, 15 psi. |
 | **CLM-004** | Material Recovery | Winning candidate achieves 98.54% recovery | `reports/MASS_AND_ENERGY_BALANCE.md:61-63` | 98.54% is based on 1.46% nominal leaching loss in 15 MT/day flowsheet. `dose_calculator.py` default gave 96.8% (3.2% loss). | Primary mass balance calculation | **CALCULATED (CONDITIONAL)** | Reconciled: 98.54% nominal wash recovery, 96.80% conservative bound, 95.65% whole-plant recovery. |
 | **CLM-005** | Retained Sodium | Finished dal retains 6.4 mg Na / 100g dal | `reports/15MT_DAY_PROCESS_DESIGN.md:105` | 6.4 mg assumes an intensive multi-stage counter-current rinse. Standard single mist rinse retains 53.9 mg elemental Na/100g. | Parameter-dependent calculation | **RECONCILED CONDITIONAL** | Both rinse regimes explicitly defined; both verified $< 350\text{ mg/100g}$ FSSAI limit. |
 | **CLM-006** | Molecular Biophysics | PME/phytase/calcium pectate increases softening rate by 7.73x | `reports/MULTISCALE_PHYSICS_ARCHITECTURE.md:66-72` | Algebraic heuristic: $k_{\text{soft}} = k_0 \exp(-E_a/RT) \cdot \frac{1+3.2\chi_{\text{Na}}}{1+2.5\rho_{\text{Ca}}}$. Constants (3.2, 2.5, 0.70) are uncalibrated on target lot. | Phenomenological literature heuristic | **UNPROVEN HYPOTHESIS** | Demoted to `Working Biophysical Hypothesis H-B1`; defined required wet-lab chemical assays (DE, AAS). |
-| **CLM-007** | Physics-Informed NN | PINN estimates $D_{\text{eff}}$ and $k_{\text{soft}}$ with < 8.2% error | `src/harakutir/pinn_solver.py:93-205` | Inverse solver tested against synthetic constants ($2.4\times 10^{-11}, 0.0035$) without physical observations. In short 100-iter runs, error was 70.2% and 36.4%. | Synthetic benchmark | **SOFTWARE VERIFIED ONLY** | Documented that PINN is verified as code, but uncalibrated against real physical dal samples. |
-| **CLM-008** | Transformer Surrogate | Transformer achieves 0.6 MAE with native OOD detection | `src/harakutir/scientific_transformer.py:107-182` | Trained on 2,000 synthetic random uniform samples. OOD detector tested `sigmoid(out) > 0.65 or < 0.35` with 100% false-negative rate on real OOD inputs. | Synthetic model test | **UNRELIABLE OOD DETECTOR** | Exposed 100% false-negative rate; disqualified attention entropy/sigmoid as safety gate. |
+| **CLM-007** | Physics-Informed NN | PINN estimates $D_{\text{eff}}$ and $k_{\text{soft}}$ with < 8.2% error | `src/finnoaq/pinn_solver.py:93-205` | Inverse solver tested against synthetic constants ($2.4\times 10^{-11}, 0.0035$) without physical observations. In short 100-iter runs, error was 70.2% and 36.4%. | Synthetic benchmark | **SOFTWARE VERIFIED ONLY** | Documented that PINN is verified as code, but uncalibrated against real physical dal samples. |
+| **CLM-008** | Transformer Surrogate | Transformer achieves 0.6 MAE with native OOD detection | `src/finnoaq/scientific_transformer.py:107-182` | Trained on 2,000 synthetic random uniform samples. OOD detector tested `sigmoid(out) > 0.65 or < 0.35` with 100% false-negative rate on real OOD inputs. | Synthetic model test | **UNRELIABLE OOD DETECTOR** | Exposed 100% false-negative rate; disqualified attention entropy/sigmoid as safety gate. |
 | **CLM-009** | Statistical Power | 4 control + 4 treated batches automatically achieves 5-sigma | `reports/STAGE_1_VALIDATION_REPORT.md:18,39` | Statistical significance depends on observed $s$. For $n=4$, $5\sigma$ requires $s \le 30\text{ s}$. If $s = 60\text{ s}$, significance is $4.22\sigma$; if $s = 120\text{ s}$, $3.25\sigma$. | Invalid a priori assumption | **RETRACTED** | Retracted automatic pass; replaced with conditional hypothesis test ($t_{\text{obs}} \ge 3.707, p \le 0.005$). |
 | **CLM-010** | Stage Gate Lock | Stage 2 scale-up unlocks automatically upon kitchen data entry | `reports/STAGE_1_VALIDATION_REPORT.md:39` | Contradicts project constitution. Stage 2 requires meeting all 6 gates simultaneously with physical sample certificates. | Process governance flaw | **STRICTLY RE-LOCKED** | Stage 2 declared locked until physical kitchen data confirms $H_0$ rejection, recovery $\ge 95.5\%$, and sensory $\ge 7.5$. |
 
@@ -54,7 +54,7 @@ Our primary goal remains discovering and experimentally validating a physically 
 
 ## 3. Detailed Audit of Repository Source Files
 
-### 3.1 `src/harakutir/high_res_spatial_solver.py`
+### 3.1 `src/finnoaq/high_res_spatial_solver.py`
 - **Intended Scope:** 2D axisymmetric spatial mesh refinement study from $64\times 64$ to $8192\times 8192$.
 - **Actual Implementation:**
   - For $N \le 4096$, allocates three dense float32 grids ($T, M, S$) and immediately deletes them.
@@ -63,7 +63,7 @@ Our primary goal remains discovering and experimentally validating a physically 
     $$\tau_{\text{th}} = \frac{\alpha_{\text{th}} t}{H^2}, \quad T_{\text{core}} = 25.0 + 75.0 \times \left(1.0 - e^{-2.4674\tau_{\text{th}}} e^{-0.85\tau_{\text{th}}}\right)$$
   - **Audit Verdict:** The implementation verified memory chunking and analytical continuum asymptotes, but did **not** execute a 2D numerical finite-difference PDE solve on 67.1M nodes.
 
-### 3.2 `src/harakutir/pinn_solver.py`
+### 3.2 `src/finnoaq/pinn_solver.py`
 - **Intended Scope:** Physics-Informed Neural Network solving coupled heat, moisture, and softening with inverse parameter estimation.
 - **Actual Implementation:**
   - `CotyledonPINN`: 3-layer MLP with 48 hidden units and SiLU activations.
@@ -73,7 +73,7 @@ Our primary goal remains discovering and experimentally validating a physically 
   - Reference values are hard-coded constants (`true_diffusivity_Deff = 2.40e-11`, `true_softening_rate_ksoft = 0.0035`).
   - **Audit Verdict:** Valid software demonstration of physics-informed autograd, but provides zero independent evidence regarding real Tanzanian dal.
 
-### 3.3 `src/harakutir/scientific_transformer.py`
+### 3.3 `src/finnoaq/scientific_transformer.py`
 - **Intended Scope:** Transformer encoder surrogate for rapid candidate screening with out-of-distribution (OOD) detection.
 - **Actual Implementation:**
   - `ScientificTransformerSurrogate`: 2-layer `TransformerEncoder` with 64 embedding dimensions and 4 attention heads.
@@ -83,7 +83,7 @@ Our primary goal remains discovering and experimentally validating a physically 
   - Empirical Audit Test: On 50 extreme out-of-distribution inputs (e.g. 15% NaHCO3, 200°C soak), the detector failed on **50 out of 50 samples (100% false-negative rate)**.
   - **Audit Verdict:** Valid neural network architecture, but the surrogate is trained on synthetic data and its OOD detection mechanism is fundamentally unreliable.
 
-### 3.4 `src/harakutir/molecular_biophysics.py`
+### 3.4 `src/finnoaq/molecular_biophysics.py`
 - **Intended Scope:** Multiscale biophysical twin bridging molecular species to cellular mechanics.
 - **Actual Implementation:**
   - `MolecularSpeciesInventory`: Hard-coded reference values for vicilin, legumin, homogalacturonan, and minerals.
@@ -130,5 +130,5 @@ All 64 unit and integration tests were executed and passed cleanly in 7.39 secon
 ---
 
 **Signed Off:**  
-Harakutir Red-Team Scientific Audit Committee  
+FinnoaQ Red-Team Scientific Audit Committee  
 *October 15, 2026*

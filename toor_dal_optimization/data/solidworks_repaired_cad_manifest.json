@@ -1,0 +1,34 @@
+[
+  {
+    "part": "TK-101_Soak_Tank",
+    "bodies": 2,
+    "volume_m3": 6.911503837897546,
+    "prt_size": 55965,
+    "step_size": 11937,
+    "step_lines": 192
+  },
+  {
+    "part": "DR-101_Fluid_Bed_Dryer",
+    "bodies": 2,
+    "volume_m3": 11.200000000000001,
+    "prt_size": 59435,
+    "step_size": 15938,
+    "step_lines": 254
+  },
+  {
+    "part": "SK-100_Dosing_Skid",
+    "bodies": 2,
+    "volume_m3": 0.5625,
+    "prt_size": 62532,
+    "step_size": 11906,
+    "step_lines": 192
+  },
+  {
+    "part": "AG-101_Agitator",
+    "bodies": 2,
+    "volume_m3": 0.007916813487046277,
+    "prt_size": 45114,
+    "step_size": 11879,
+    "step_lines": 192
+  }
+]

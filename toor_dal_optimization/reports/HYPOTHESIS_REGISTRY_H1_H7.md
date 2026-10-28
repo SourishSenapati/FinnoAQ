@@ -1,6 +1,6 @@
-# HARAKUTIR OMEGA — COMPETING ROOT CAUSE HYPOTHESIS REGISTRY (H1–H7)
+# FINNOAQ OMEGA — COMPETING ROOT CAUSE HYPOTHESIS REGISTRY (H1–H7)
 **Document ID:** `HK-REP-H1-H7-REG-2026-001`  
-**Standard:** Harakutir Omega 5-Sigma Evidence Program & Corrective Constitution  
+**Standard:** FinnoaQ Omega 5-Sigma Evidence Program & Corrective Constitution  
 **Target Matrix:** Dehulled, Split Tanzanian Toor Dal (*Cajanus cajan*) vs. Indian Domestic Benchmark  
 **Core Discrepancy:** ~6 domestic pressure cooker whistles (~28–35 min boiling) vs. ~3 whistles (~12–15 min boiling)
 
@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary & Registry Architecture
 
-Under the Harakutir Corrective Constitution, no single mechanism is permitted to be assumed *a priori*. The classical hard-to-cook (HTC) literature frequently collapses multiple post-harvest degradation pathways under the generic term "HTC". 
+Under the FinnoaQ Corrective Constitution, no single mechanism is permitted to be assumed *a priori*. The classical hard-to-cook (HTC) literature frequently collapses multiple post-harvest degradation pathways under the generic term "HTC". 
 
 This registry explicitly decomposes the cooking-delay phenomenon into **seven competing, testable hypotheses (H1–H7)**, evaluating each against direct empirical data in *Cajanus cajan*, cross-species transfer validity, mechanistic physics, and minimum lab falsification requirements.
 
@@ -134,7 +134,7 @@ graph TD
 | **Direct *Cajanus cajan* Data** | Empirical surveys in East Africa confirm rural households report cooking times of 2.5–4.5 hours on charcoal for local pigeon peas, routinely requiring *Magadi soda* (trona). Transit does not *originate* the defect, but *exacerbates and cements* it to extreme levels. |
 | **Cross-Species Transfer Validity** | Direct. Cargo hold thermal and moisture migration dynamics apply to all bulk grain shipments. |
 | **Distinguishing Prediction** | Freshly harvested, sun-dried Tanzanian pigeon peas flown by air express immediately after harvest cook in ~4 whistles (~18 min). The same lot shipped via 28-day maritime bulk carrier cooks in 6–7 whistles (~32 min). |
-| **Minimum Physical Test** | Transit simulation in environmental chamber (38°C, 82% RH, 21 days) on fresh crop vs baseline. Simulated numerically in Harakutir engine without lab spend. |
+| **Minimum Physical Test** | Transit simulation in environmental chamber (38°C, 82% RH, 21 days) on fresh crop vs baseline. Simulated numerically in FinnoaQ engine without lab spend. |
 | **Registry Classification** | **CONFIRMED ACCELERATING ENVIRONMENT / ROOT ENVIRONMENTAL DRIVER** (The physical incubator driving H1 and H3). |
 
 ---

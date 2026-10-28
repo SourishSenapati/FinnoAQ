@@ -1,5 +1,5 @@
 """
-Statistical analysis engine for Harakutir Toor Dal study.
+Statistical analysis engine for FinnoaQ Toor Dal study.
 Implements Welch's t-test, Mann-Whitney U, Cohen's d effect sizes,
 Holm-Bonferroni correction, confidence intervals, and data-gated validation.
 """

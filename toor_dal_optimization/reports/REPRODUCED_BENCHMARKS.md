@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — REPRODUCED BENCHMARKS & HARDWARE PROFILER DOSSIER
+# FINNOAQ TOOR DAL — REPRODUCED BENCHMARKS & HARDWARE PROFILER DOSSIER
 
 **Document ID:** HKT-BENCH-2026-002  
 **Audit Reference:** [`CRITICAL_SCIENTIFIC_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/CRITICAL_SCIENTIFIC_AUDIT.md)  
@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Benchmark Integrity Verdict
 
-This dossier provides independently reproduced, instrumented hardware benchmarks for all computational models in the Harakutir Toor Dal repository.
+This dossier provides independently reproduced, instrumented hardware benchmarks for all computational models in the FinnoaQ Toor Dal repository.
 
 Every measurement was recorded using `time.perf_counter()`, `torch.cuda.synchronize()`, and `torch.cuda.max_memory_allocated()` after complete hardware warm-up.
 
@@ -31,7 +31,7 @@ Every measurement was recorded using `time.perf_counter()`, `torch.cuda.synchron
 - **Mathematical Fact:** A single 2D grid of size $8,192 \times 8,192$ in single-precision floating point (`torch.float32`) requires:
   $$\text{Memory} = 8,192 \times 8,192 \times 4\text{ bytes} = 268,435,456\text{ bytes} = \mathbf{256.00\text{ MiB (268.44 MB)}}$$
   A coupled multiphysics solver maintaining temperature ($T$), moisture ($M$), and softening ($S$) requires at least $3 \times 256\text{ MiB} = 768\text{ MiB}$ of state data, plus update buffers ($T_{\text{new}}, M_{\text{new}}$) totaling **$1,280\text{ to }1,536\text{ MiB}$**.
-- **How 64.06 MB Was Produced:** In `src/harakutir/high_res_spatial_solver.py` (lines 161–167), the code chunked the grid into rows of $2,048$:
+- **How 64.06 MB Was Produced:** In `src/finnoaq/high_res_spatial_solver.py` (lines 161–167), the code chunked the grid into rows of $2,048$:
   $$\text{Chunk Memory} = 2,048 \times 8,192 \times 4\text{ bytes} = 67,108,864\text{ bytes} = \mathbf{64.00\text{ MiB}}$$
   It allocated one chunk, called `.fill_(float(core_T))`, and immediately called `del chunk` inside a 4-iteration loop. PyTorch's caching allocator reused the same 64 MB block across all 4 iterations. Hence, `torch.cuda.max_memory_allocated()` recorded exactly **$64.06\text{ MB}$**, and the runtime was **$0.0051\text{ s}$**.
 - **Conclusion:** The claimed benchmark was a test of chunk allocation, **not a complete 2D PDE solve**.
@@ -71,7 +71,7 @@ $$T_{\text{new}}[i, j] = T[i, j] + \lambda \left( T[i+1, j] + T[i-1, j] + T[i, j
 
 ## 3. Benchmark Reproduction of Vectorized Spatial Engine (`Spatial8192TensorGPUEngine`)
 
-The production CUDA engine for batch grain simulation (`src/harakutir/spatial_3d_engine.py`) models each split cotyledon with $64\text{ radial} \times 128\text{ axial} = 8,192\text{ spatial nodes}$.
+The production CUDA engine for batch grain simulation (`src/finnoaq/spatial_3d_engine.py`) models each split cotyledon with $64\text{ radial} \times 128\text{ axial} = 8,192\text{ spatial nodes}$.
 
 #### Specifications:
 - **Batch Size:** $1,000\text{ grains}$
@@ -154,5 +154,5 @@ Because the fifth output unit has no training loss targeting OOD discrimination,
 ---
 
 **Signed Off:**  
-Harakutir Red-Team Benchmark & Profiler Committee  
+FinnoaQ Red-Team Benchmark & Profiler Committee  
 *October 15, 2026*

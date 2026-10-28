@@ -1,4 +1,4 @@
-# HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.
+# FINNOAQ AGRO-PROCESS ENGINEERING PVT. LTD.
 ## FRONT-END ENGINEERING DESIGN (FEED) COMPREHENSIVE DOSSIER — REV V3.0
 ### 15,000 kg/day Incoming-Feed Imported Tanzanian Split Pigeon Pea (*Cajanus cajan*) Tenderization & Processing Complex
 
@@ -19,7 +19,7 @@ GOVERNING CODES:               ASME SEC VIII DIV 1 / IS 2825 / FSSAI 2011 / NFPA
 
 | Role / Discipline | Designation / Organization | Name | Signature / Status | Verification Date |
 | :--- | :--- | :--- | :--- | :--- |
-| **Lead Process Engineer** | Harakutir Agro-Process | Dr. A. K. Sengupta, CEng | APPROVED (SIMULATION) | 2026-10-15 |
+| **Lead Process Engineer** | FinnoaQ Agro-Process | Dr. A. K. Sengupta, CEng | APPROVED (SIMULATION) | 2026-10-15 |
 | **Lead Mechanical & Vessels** | Process Mechanical Services | R. M. Chidambaram, PE | APPROVED (ASME SEC VIII) | 2026-10-15 |
 | **Lead Piping & Layout** | Plant Design Group | S. Viswanathan | APPROVED (3D / GA) | 2026-10-15 |
 | **Lead Electrical & Controls** | Industrial Automation Ltd | T. N. Ramanathan | APPROVED (ISA / IEC) | 2026-10-15 |
@@ -42,7 +42,7 @@ GOVERNING CODES:               ASME SEC VIII DIV 1 / IS 2825 / FSSAI 2011 / NFPA
 ### 2.1 Project Purpose & Commercial Objectives
 The project encompasses the conceptual Front-End Engineering Design (FEED) of a state-of-the-art, hygienic industrial processing facility designed to process **15,000 kg/day of incoming raw imported Tanzanian split/dehulled pigeon peas (*Cajanus cajan*)**, commonly known as yellow toor-dal. 
 
-Imported East African pulse consignments frequently exhibit severe Hard-to-Cook (HTC) physical defects, requiring 45 to 65 minutes of domestic cooking time, which severely depresses commercial market value in the Indian subcontinent. The Harakutir facility will deploy a precision thermo-chemical tenderization and continuous fluid-bed reconditioning process to permanently reduce domestic cooking time to **under 20 minutes** without pulse fragmentation, surface gelatinization, or nutritional degradation.
+Imported East African pulse consignments frequently exhibit severe Hard-to-Cook (HTC) physical defects, requiring 45 to 65 minutes of domestic cooking time, which severely depresses commercial market value in the Indian subcontinent. The FinnoaQ facility will deploy a precision thermo-chemical tenderization and continuous fluid-bed reconditioning process to permanently reduce domestic cooking time to **under 20 minutes** without pulse fragmentation, surface gelatinization, or nutritional degradation.
 
 ### 2.2 Gate Governance & Integrity Enforcement (Gate G-A Hold)
 > [!IMPORTANT]
@@ -475,7 +475,7 @@ TOTAL FULLY ABSORBED CONVERSION COST PER KILOGRAM FINISHED PRODUCT:             
 
 ## 12. MASTER DRAWING PACKAGE REGISTER & DELIVERABLES
 
-The complete Front-End Engineering Design vector drawing package is compiled in **`HARAKUTIR_15TPD_ENGINEERING_DRAWING_PACKAGE_REV_V3.pdf`** (12-Page A3 Portfolio, 150 DPI Vector Graphics). 
+The complete Front-End Engineering Design vector drawing package is compiled in **`FINNOAQ_15TPD_ENGINEERING_DRAWING_PACKAGE_REV_V3.pdf`** (12-Page A3 Portfolio, 150 DPI Vector Graphics). 
 All drawings are accompanied by **1:1 millimeter model-space DXF files** with complete layers, symbols, dimensions, and `$INSUNITS = 4`.
 
 ```
@@ -526,6 +526,6 @@ Weeks: 34-36   [Hot Commissioning, Grain Hydration Optimization & Commercial Han
 ```
 ======================================================================================================
 END OF FRONT-END ENGINEERING DESIGN (FEED) COMPREHENSIVE DOSSIER — REV V3.0
-HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD. | ALL RIGHTS RESERVED
+FINNOAQ AGRO-PROCESS ENGINEERING PVT. LTD. | ALL RIGHTS RESERVED
 ======================================================================================================
 ```

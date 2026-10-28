@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — MULTI-OBJECTIVE OPTIMIZATION & PARETO FRONTIER
+# FINNOAQ TOOR DAL — MULTI-OBJECTIVE OPTIMIZATION & PARETO FRONTIER
 
 **Document ID:** HKT-OPT-2026-001  
 **Optimization Scope:** Comprehensive Search of Treatment Candidates (Chemical Concentration, Soak Time, Liquor Ratio, Rinse, Drying)  
@@ -69,7 +69,7 @@ A key question posed in Phase 8 is: *Is a pretreatment-plus-drying sequence actu
    - Moisture content: $42\text{--}45\%$ wb.
    - Shelf-life: $< 24\text{ hours}$ at ambient tropical temperatures (rapid microbial spoilage, lactic souring). Requires frozen cold-chain distribution (adding ₹12.00–18.00/kg logistics cost).
    - Packaging: Hermetic barrier pouches; prone to bursting from anaerobic gas.
-2. **Option 2: Pretreated + Fluid-Bed Dried Dal (The Harakutir Flowsheet):**
+2. **Option 2: Pretreated + Fluid-Bed Dried Dal (The FinnoaQ Flowsheet):**
    - Finished moisture: $10.0\%$ wb.
    - Shelf-life: $> 12\text{ months}$ in ambient laminated poly-woven bags.
    - Thermal drying cost: ₹0.42 / kg dal (using 3.27 MJ/kg water evaporation in heat-recovery fluid bed).

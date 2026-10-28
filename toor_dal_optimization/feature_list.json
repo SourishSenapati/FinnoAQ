@@ -1,5 +1,5 @@
 {
-  "system_name": "Harakutir AI-Native Product Development Harness",
+  "system_name": "Client Organization AI-Native Product Development Harness",
   "version": "2.0.0",
   "controlling_specifications": [
     "Phase1_Scope_of_Work_Toor_Dal.docx",
@@ -15,7 +15,7 @@
       "program": "Programme A / B",
       "status": "COMPLETED",
       "description": "78-parameter registry, literature graph, provenance hashes, data dictionary",
-      "artifacts": ["reports/COMPLETE_PARAMETER_REGISTRY.md", "src/harakutir/schemas.py"]
+      "artifacts": ["reports/COMPLETE_PARAMETER_REGISTRY.md", "src/Client Organization/schemas.py"]
     },
     {
       "stage_id": "STAGE_02",
@@ -23,7 +23,7 @@
       "program": "Programme B",
       "status": "COMPLETED",
       "description": "Parametric candidate space across moisture, thermal, conditioning, and drying windows",
-      "artifacts": ["src/harakutir/virtual_screening.py", "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"]
+      "artifacts": ["src/Client Organization/virtual_screening.py", "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"]
     },
     {
       "stage_id": "STAGE_03",
@@ -31,7 +31,7 @@
       "program": "Programme B",
       "status": "COMPLETED",
       "description": "5-layer filtering: hard constraints, transport bounds, predictive soft, economics, robustness",
-      "artifacts": ["src/harakutir/virtual_screening.py"]
+      "artifacts": ["src/Client Organization/virtual_screening.py"]
     },
     {
       "stage_id": "STAGE_04",
@@ -39,7 +39,7 @@
       "program": "Programme B",
       "status": "COMPLETED",
       "description": "Offline PyTorch GPU inverse solver, sensitivity, trade-off front (cook time vs yield vs lysine)",
-      "artifacts": ["src/harakutir/hydration.py", "src/harakutir/virtual_screening.py"]
+      "artifacts": ["src/Client Organization/hydration.py", "src/Client Organization/virtual_screening.py"]
     },
     {
       "stage_id": "STAGE_05",
@@ -47,7 +47,7 @@
       "program": "Programme B / C",
       "status": "COMPLETED",
       "description": "Expected information gain, hypothesis discrimination (H1-H5), sample allocation",
-      "artifacts": ["src/harakutir/oed.py"]
+      "artifacts": ["src/Client Organization/oed.py"]
     },
     {
       "stage_id": "STAGE_06",
@@ -55,7 +55,7 @@
       "program": "Programme C",
       "status": "COMPLETED",
       "description": "Closed-loop feedback engine updating digital twin posterior parameters from observations",
-      "artifacts": ["src/harakutir/digital_twin.py"]
+      "artifacts": ["src/Client Organization/digital_twin.py"]
     },
     {
       "stage_id": "STAGE_07",
@@ -63,7 +63,7 @@
       "program": "Programme D",
       "status": "COMPLETED",
       "description": "Mass/energy balances, heat transfer, drying uniformity, 50 T/hr continuous belt modeling",
-      "artifacts": ["src/harakutir/digital_twin.py"]
+      "artifacts": ["src/Client Organization/digital_twin.py"]
     },
     {
       "stage_id": "STAGE_08",
@@ -103,7 +103,7 @@
       "program": "Programme F",
       "status": "COMPLETED",
       "description": "Incoming lot prediction, drift detection, continuous model updates from factory telemetry",
-      "artifacts": ["src/harakutir/digital_twin.py"]
+      "artifacts": ["src/Client Organization/digital_twin.py"]
     }
   ],
   "gates": [

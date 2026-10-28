@@ -1,4 +1,4 @@
-# Harakutir Prompt Pack — Runbook
+# Client Organization Prompt Pack — Runbook
 
 ## Files
 - `HARAKUTIR_MASTER_PROMPT.txt`: the one-shot master prompt to paste into Antigravity.

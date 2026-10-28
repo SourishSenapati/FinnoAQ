@@ -1,0 +1,9 @@
+batch_id,date,operator,candidate_id,reagent_name,concentration_pct,soak_time_min,drying_temp_c,dried_moisture_wb_pct,water_activity_aw,dal_mass_g,water_mass_g,steam_vent_time_s,whistle_1_time_s,whistle_2_time_s,whistle_3_time_s,whistle_4_time_s,whistle_5_time_s,whistle_6_time_s,final_cook_time_min,hard_core_score_0_to_2,extrusion_peak_force_kpa,solids_dispersed_pct,sensory_appearance_1_to_9,sensory_texture_1_to_9,sensory_flavor_1_to_9,sensory_overall_1_to_9,notes
+B-CTRL-01,2026-10-16,Operator-A,EXP-001,None,0.0,0,0,10.0,,100.0,350.0,,,,,,,,,,,,,Raw untreated dal control
+B-CTRL-02,2026-10-16,Operator-A,EXP-001,None,0.0,0,0,10.0,,100.0,350.0,,,,,,,,,,,,,Raw untreated dal control
+B-CTRL-03,2026-10-16,Operator-B,EXP-001,None,0.0,0,0,10.0,,100.0,350.0,,,,,,,,,,,,,Raw untreated dal control
+B-CTRL-04,2026-10-16,Operator-B,EXP-001,None,0.0,0,0,10.0,,100.0,350.0,,,,,,,,,,,,,Raw untreated dal control
+B-TRT-01,2026-10-16,Operator-A,EXP-007,Food-Grade NaHCO3,0.50,30,55,10.0,,100.0,350.0,,,,,,,,,,,,,0.5% NaHCO3 treated dal batch 1
+B-TRT-02,2026-10-16,Operator-A,EXP-007,Food-Grade NaHCO3,0.50,30,55,10.0,,100.0,350.0,,,,,,,,,,,,,0.5% NaHCO3 treated dal batch 2
+B-TRT-03,2026-10-16,Operator-B,EXP-007,Food-Grade NaHCO3,0.50,30,55,10.0,,100.0,350.0,,,,,,,,,,,,,0.5% NaHCO3 treated dal batch 3
+B-TRT-04,2026-10-16,Operator-B,EXP-007,Food-Grade NaHCO3,0.50,30,55,10.0,,100.0,350.0,,,,,,,,,,,,,0.5% NaHCO3 treated dal batch 4

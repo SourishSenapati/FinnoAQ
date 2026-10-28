@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — NUMERICAL REFERENCE SOLVER VERIFICATION
+# FINNOAQ TOOR DAL — NUMERICAL REFERENCE SOLVER VERIFICATION
 
 **Document ID:** HKT-SLV-2026-001  
 **Role:** Canonical Physical Reference Solver & Truth Model for PINN/Transformer Benchmarking  
@@ -13,11 +13,11 @@
 To prevent ungrounded neural network drift, all forward transport predictions are anchored to an independently verified physical numerical reference solver.
 
 ### Solver Components
-1. **Analytical Fourier Eigenfunction Engine (`src/harakutir/gpu_engine.py`):**
+1. **Analytical Fourier Eigenfunction Engine (`src/finnoaq/gpu_engine.py`):**
    Exact Carslaw & Jaeger series solution for transient thermal and species conduction in a finite slab with Robin convective boundary conditions ($\lambda_n \tan \lambda_n = Bi$). Truncated at $N_{\text{roots}} = 100$, providing machine-precision ground truth ($L_2 \text{ error} < 10^{-7}$).
-2. **Axisymmetric High-Resolution Finite Volume Solver (`src/harakutir/high_res_spatial_solver.py`):**
+2. **Axisymmetric High-Resolution Finite Volume Solver (`src/finnoaq/high_res_spatial_solver.py`):**
    Discretizes the 2D split cotyledon domain up to $8192 \times 8192$ nodes ($67.11\text{M cells}$), enforcing strict flux conservation across cell boundaries.
-3. **Rohsenow Nucleate Boiling Hydrodynamics (`src/harakutir/navier_stokes_boiling.py`):**
+3. **Rohsenow Nucleate Boiling Hydrodynamics (`src/finnoaq/navier_stokes_boiling.py`):**
    Couples external two-phase pool boiling heat transfer coefficient ($h = 2,895\text{ W/m}^2\text{K}$) with internal porous Darcy-Brinkman flow.
 
 ---

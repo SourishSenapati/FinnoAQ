@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — MULTISCALE BIOPHYSICAL DIGITAL TWIN ARCHITECTURE
+# FINNOAQ TOOR DAL — MULTISCALE BIOPHYSICAL DIGITAL TWIN ARCHITECTURE
 
 **Document ID:** HKT-BIO-2026-001  
 **Target Biological Material:** Tanzanian Split/Dehulled Pigeon Pea (*Cajanus cajan*)  
@@ -62,7 +62,7 @@ Based on peer-reviewed legume literature (Reyes-Moreno & Paredes-Lopez, 1993; Si
 ## 3. Molecular-to-Continuum Parameter Transfer Functions (Working Hypothesis H-B1)
 
 > [!WARNING]
-> **Forensic Audit Notice (H-B1 Status):** The transfer functions below are **uncalibrated working biophysical hypotheses** synthesized from general pulse literature (Liu et al., 1992; Ndungu et al., 2012). They have **NOT** been empirically calibrated on Harakutir's specific Tanzanian pigeon pea lot. They serve as a computationally tractable surrogate until physical assays (pectin DE titration, phytic acid quantification, EDTA-extractable divalent cation fraction) are executed on the target lot.
+> **Forensic Audit Notice (H-B1 Status):** The transfer functions below are **uncalibrated working biophysical hypotheses** synthesized from general pulse literature (Liu et al., 1992; Ndungu et al., 2012). They have **NOT** been empirically calibrated on FinnoaQ's specific Tanzanian pigeon pea lot. They serve as a computationally tractable surrogate until physical assays (pectin DE titration, phytic acid quantification, EDTA-extractable divalent cation fraction) are executed on the target lot.
 
 ### 3.1 Softening Rate Transfer Function ($k_{\text{soft}}$) — Hypothesis Formulation
 $$\chi_{\text{Na}} = \min\left(1.0, \frac{C_{\text{NaHCO}_3}}{0.50\%}\right)$$

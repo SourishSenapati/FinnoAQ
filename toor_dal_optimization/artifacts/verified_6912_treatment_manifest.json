@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "project_ref": "FNQ-PR-2026-001",
+    "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+    "timestamp": "2026-10-22T23:17:54.217528+00:00",
+    "governing_standard": "AGENTS.md Rule 1 & Anti-Reward-Hacking Computational Engineering Execution Contract",
+    "grid_dimensions": {
+      "soak_temp_levels": [
+        25.0,
+        35.0,
+        45.0,
+        52.0
+      ],
+      "citrate_conc_levels_M": [
+        0.06,
+        0.1,
+        0.16,
+        0.24
+      ],
+      "potassium_fraction_levels": [
+        0.0,
+        0.33,
+        0.67,
+        1.0
+      ],
+      "pH_levels": [
+        4.8,
+        5.3,
+        5.8,
+        6.4
+      ],
+      "soak_duration_levels_min": [
+        15.0,
+        25.0,
+        35.0
+      ],
+      "rinse_ratio_levels_L_kg": [
+        0.1,
+        0.2,
+        0.35
+      ],
+      "water_hardness_levels_ppm": [
+        0.0,
+        150.0,
+        300.0
+      ]
+    },
+    "total_grid_combinations": 6912,
+    "total_controls": 4,
+    "manifest_sha256": "b459964dea3c7792ba4f7af70dda3511fa557248ad9908b1d4d23e908d74103c"
+  },
+  "controls": [
+    {
+      "id": "CTRL_UNTREATED",
+      "name": "UNTREATED_HTC",
+      "T": 25.0,
+      "C": 0.0,
+      "fK": 0.0,
+      "pH": 7.0,
+      "t": 0.0,
+      "rinse": 0.0,
+      "hard": 0.0,
+      "ca_native": 105.0
+    },
+    {
+      "id": "CTRL_INDIAN",
+      "name": "INDIAN_BENCHMARK",
+      "T": 25.0,
+      "C": 0.0,
+      "fK": 0.0,
+      "pH": 7.0,
+      "t": 0.0,
+      "rinse": 0.0,
+      "hard": 0.0,
+      "ca_native": 28.0
+    },
+    {
+      "id": "CTRL_WATERSOAK",
+      "name": "WATER_PRESOAK_60M",
+      "T": 25.0,
+      "C": 0.0,
+      "fK": 0.0,
+      "pH": 7.0,
+      "t": 60.0,
+      "rinse": 0.0,
+      "hard": 0.0,
+      "ca_native": 105.0
+    },
+    {
+      "id": "CTRL_HARD_350PPM",
+      "name": "HARD_WATER_350PPM_STRESS",
+      "T": 35.0,
+      "C": 0.16,
+      "fK": 0.67,
+      "pH": 5.8,
+      "t": 25.0,
+      "rinse": 0.2,
+      "hard": 350.0,
+      "ca_native": 105.0
+    }
+  ],
+  "grid_entries_sample": [
+    [
+      25.0,
+      0.06,
+      0.0,
+      4.8,
+      15.0,
+      0.1,
+      0.0
+    ],
+    [
+      25.0,
+      0.06,
+      0.0,
+      4.8,
+      15.0,
+      0.1,
+      150.0
+    ],
+    [
+      25.0,
+      0.06,
+      0.0,
+      4.8,
+      15.0,
+      0.1,
+      300.0
+    ],
+    [
+      25.0,
+      0.06,
+      0.0,
+      4.8,
+      15.0,
+      0.2,
+      0.0
+    ],
+    [
+      25.0,
+      0.06,
+      0.0,
+      4.8,
+      15.0,
+      0.2,
+      150.0
+    ]
+  ]
+}

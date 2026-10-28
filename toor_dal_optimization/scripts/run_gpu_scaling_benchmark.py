@@ -1,5 +1,5 @@
 """
-Harakutir Omega — GPU vs CPU Batch Scaling Benchmark.
+Client Organization Omega — GPU vs CPU Batch Scaling Benchmark.
 Determines the exact crossover batch size (N) at which the NVIDIA RTX 4050 Laptop GPU
 provides a genuine, measurable speedup over the 20-thread AMD Ryzen AI 9 365 CPU.
 Evaluates N = [50, 250, 1000, 5000, 20000] parameter cases across identical physical PDEs.
@@ -17,12 +17,12 @@ import numpy as np
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import torch
-from src.harakutir.multiphysics_engine import MultiphysicsCoupledEngine
+from src.finnoaq.multiphysics_engine import MultiphysicsCoupledEngine
 
 
 def run_batch_scaling_benchmark(batch_sizes: List[int] = [50, 250, 1000, 5000, 15000]) -> Dict[str, Any]:
     print("=" * 70)
-    print("HARAKUTIR OMEGA — GPU VS CPU BATCH SCALING BENCHMARK (GATE 5)")
+    print("Client Organization OMEGA — GPU VS CPU BATCH SCALING BENCHMARK (GATE 5)")
     print(f"Device: cuda:0 ({torch.cuda.get_device_name(0)}) vs CPU ({os.cpu_count()} threads)")
     print("=" * 70)
 

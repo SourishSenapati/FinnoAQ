@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — 15 MT/DAY INDUSTRIAL PROCESS DESIGN & SCALE-UP
+# FINNOAQ TOOR DAL — 15 MT/DAY INDUSTRIAL PROCESS DESIGN & SCALE-UP
 
 **Document ID:** HKT-ENG-2026-001  
 **Plant Design Basis:** 15,000 kg/day Incoming Raw Tanzanian Dal (4,500 Tonnes/Year at 300 Days/Year)  

@@ -1,8 +1,8 @@
 # FORENSIC AUDIT: LIVE PROCESS, GPU EXECUTION & SYSTEM TELEMETRY
 
-**Audit Date:** 13 October 2026 | **Auditor:** Harakutir Omega Forensic Engine  
+**Audit Date:** 13 October 2026 | **Auditor:** FinnoaQ Omega Forensic Engine  
 **Workstation:** AMD Ryzen AI 9 365 (10 cores / 20 threads), 24 GB RAM, NVIDIA GeForce RTX 4050 Laptop GPU (6.0 GB GDDR6)  
-**Controlling Mandate:** Harakutir Corrective Constitution — Part I & Part VIII  
+**Controlling Mandate:** FinnoaQ Corrective Constitution — Part I & Part VIII  
 
 ---
 
@@ -61,6 +61,6 @@
 *"Six independent autonomous research agents (Agents A-F) deliberated and reconciled findings."*
 
 ### Forensic Truth:
-- **Architecture:** The implementation in [`src/harakutir/multiagent_orchestrator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/multiagent_orchestrator.py) consists of **specialized Python classes inheriting from `SpecializedAgent`**, not separate tool-enabled external LLM subagents.
+- **Architecture:** The implementation in [`src/finnoaq/multiagent_orchestrator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/multiagent_orchestrator.py) consists of **specialized Python classes inheriting from `SpecializedAgent`**, not separate tool-enabled external LLM subagents.
 - **Value Delivered:** The classes strictly structure domain-specific analytical perspectives (Direct Evidence, HTC Mechanisms, Data Provenance, PDE Engineering, FSSAI Regulatory, and Red-Team Adversarial Review) and render publication-quality matplotlib figures.
 - **Honest Classification:** It is a **deterministic multi-domain expert simulation framework**, not an unguided autonomous agent cluster.

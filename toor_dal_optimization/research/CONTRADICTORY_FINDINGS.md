@@ -1,7 +1,7 @@
 # CONTRADICTORY FINDINGS & MECHANISTIC TENSIONS REGISTER
 
-**Project:** Harakutir Autonomous Pulse Engineering  
-**Standard:** Ocean Boiling Protocol v3.0 | Harakutir Omega v4  
+**Project:** FinnoaQ Autonomous Pulse Engineering  
+**Standard:** Ocean Boiling Protocol v3.0 | FinnoaQ Omega v4  
 **Date:** October 2026  
 **Guiding Principle:** "When two sources conflict, preserve the conflict and investigate it. Do not quietly choose whichever supports the current preferred design."
 
@@ -16,7 +16,7 @@
   - Recent direct empirical study on *Cajanus cajan* (Frontiers Sust Food Syst 2025, DOI: [10.3389/fsufs.2025.1613117](https://doi.org/10.3389/fsufs.2025.1613117)) demonstrated that *seed coat thickness had no statistically significant correlation ($p > 0.05$) with cooking time or water absorption rate*.
   - Even after complete dehulling, split cotyledons of East African pigeon pea varieties took up to 54 minutes to soften.
 - **Scientific Resolution & Project Impact:**
-  - In Harakutir Phase 1, the commercial product is dehulled split Toor Dal cotyledons. Therefore, seed-coat resistance is *not* the operating rate-limiting factor. The rate-limiting barrier is the **cotyledon cell wall / middle lamella matrix**, where pectin-cation crosslinking retards thermal cell separation.
+  - In FinnoaQ Phase 1, the commercial product is dehulled split Toor Dal cotyledons. Therefore, seed-coat resistance is *not* the operating rate-limiting factor. The rate-limiting barrier is the **cotyledon cell wall / middle lamella matrix**, where pectin-cation crosslinking retards thermal cell separation.
 
 ---
 

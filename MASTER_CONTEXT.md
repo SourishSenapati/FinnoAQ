@@ -1,6 +1,6 @@
 # MASTER_CONTEXT.md
 
-## FINNOAQ R&D — Harakutir Pulse Engineering Master Memory
+## FINNOAQ R&D — Client Organization Pulse Engineering Master Memory
 **Pipeline Version:** 4.0.0 (Ocean Boiling Protocol v3.0)  
 **Governing Documents:** `inputs/Phase1_Scope_of_Work_Toor_Dal.docx`, `reports/PHASE1_TECHNICAL_REPORT.docx`, `phase1_sow_dump.txt`  
 **Target Hardware:** AMD Ryzen 9 (16 Cores), NVIDIA GeForce RTX 4050 Laptop GPU (CUDA 12.4), 100% Offline  
@@ -32,11 +32,11 @@
 
 ## 3. High-Performance Scientific Engines
 
-- **1D Spherical Coupled Fourier PDE Solver (`src/harakutir/gpu_engine.py`):** Solves exact radial heat and moisture diffusion ($K=60$ modes, 50 shells) on GPU tensors in **0.14s**, bypassing CFL time-step limits.
+- **1D Spherical Coupled Fourier PDE Solver (`src/Client Organization/gpu_engine.py`):** Solves exact radial heat and moisture diffusion ($K=60$ modes, 50 shells) on GPU tensors in **0.14s**, bypassing CFL time-step limits.
 - **Sobol Variance Decomposition:** Monte Carlo $N=50,000$ shows Effective Moisture Diffusivity $D_{\text{eff}}$ (37.3%) and Pectin DE (36.9%) account for $74.2\%$ of cooking time variance.
 - **Million-Scale 5-Sigma Discovery Engine (`scripts/run_gpu_million_scale.py`):** Evaluates $1,000,000$ virtual experiments across 10 generations, tracking Pareto hypervolume convergence until plateau ($\Delta \mathcal{HV} < 10^{-4}$), yielding $C_{pk} = 7.63$.
-- **Foodoscope Culinary Informatics (`src/harakutir/foodoscope.py`):** Lipoxygenase inactivation, Beany Off-Flavor Severity Index (BOSI), lysine retention (96.8%), and sambar broth cooking simulation.
-- **Learn Harness Gate Supervisor (`src/harakutir/harness.py`):** Automated stage gates G0 to G9 enforcing data readiness and budgetary discipline.
+- **Foodoscope Culinary Informatics (`src/Client Organization/foodoscope.py`):** Lipoxygenase inactivation, Beany Off-Flavor Severity Index (BOSI), lysine retention (96.8%), and sambar broth cooking simulation.
+- **Learn Harness Gate Supervisor (`src/Client Organization/harness.py`):** Automated stage gates G0 to G9 enforcing data readiness and budgetary discipline.
 
 ---
 

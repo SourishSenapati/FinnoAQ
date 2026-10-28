@@ -25,7 +25,7 @@ graph TD
 
 ## 2. Factory Acceptance Testing (FAT) Protocol
 
-Before any machine is dispatched from vendor fabrication workshops, formal FAT inspection is conducted by Harakutir's engineering representative:
+Before any machine is dispatched from vendor fabrication workshops, formal FAT inspection is conducted by FinnoaQ's engineering representative:
 
 | Machine / Skid Tag | Test Description | Acceptance Standard | Method & Tooling | Pass / Fail Criteria |
 | :--- | :--- | :--- | :--- | :--- |
@@ -66,4 +66,4 @@ Performance Qualification requires a continuous, monitored **16-hour production 
 | **Average Hourly Fuel Demand**| $73.8\text{ kg briquettes/h}$ | $\le 85.0\text{ kg/h}$ | Boiler day-bin digital weigh load cells | Economic Verification |
 | **Average Operating Power** | $50.35\text{ kW}$ | $\le 55.00\text{ kW}$ | Main digital multifunction power meter | Economic Verification |
 
-**Gate G-F Release:** Formal commercial handover to Harakutir plant operations occurs only when all nine PQ metrics are achieved simultaneously over three consecutive production shifts.
+**Gate G-F Release:** Formal commercial handover to FinnoaQ plant operations occurs only when all nine PQ metrics are achieved simultaneously over three consecutive production shifts.

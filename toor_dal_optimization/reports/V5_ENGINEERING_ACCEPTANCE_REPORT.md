@@ -61,7 +61,7 @@ The V5 Integration Acceptance Test Engine was executed synchronously on the acti
 
 ### TEST-04: Process/Utility Simulation Inputs/Outputs Reconciliation
 - **Execution Script:** `v5_integration_checker.py -> test_4_simulation_reconciliation()`
-- **Simulation Flowsheet:** Aspen Plus V14 converged model [`simulations/aspen/HARAKUTIR_15TPD_CONVERGED.bkp`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/simulations/aspen/HARAKUTIR_15TPD_CONVERGED.bkp).
+- **Simulation Flowsheet:** Aspen Plus V14 converged model [`simulations/aspen/FINNOAQ_15TPD_CONVERGED.bkp`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/simulations/aspen/FINNOAQ_15TPD_CONVERGED.bkp).
 - **Audit Findings:**
   - Aspen Plus Triple-Effect Falling Film Evaporator (`EV-101`): Evaporates $980.0\text{ kg/h}$ distillate water across 3 effects with a thermal duty of $310.5\text{ kWth}$, yielding a steam economy of 2.38.
   - Fluid Bed Dryer (`DR-101`): Heat exchanger steam coils (`HE-101`) require $512.4\text{ kWth}$ of thermal energy ($785.0\text{ kg/h}$ saturated steam at 3.5 bar g, $148.0^\circ\text{C}$), independently reconciled with psychrometric air heating calculations.

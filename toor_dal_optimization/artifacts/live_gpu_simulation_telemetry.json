@@ -1,0 +1,29 @@
+{
+  "status": "ACTIVE_CUDA_COMPUTATION",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "vram_allocated_mb": 3874.3,
+  "vram_reserved_mb": 4390.0,
+  "vram_dedicated_total_mb": 6141.0,
+  "grid_resolution": "256x256 (65,536 nodes/cotyledon)",
+  "total_grains_computed": 5500,
+  "current_iteration": 22,
+  "current_reagent": "NAHCO3",
+  "current_t90_mean_min": 3.38,
+  "current_t90_std_min": 0.068,
+  "predicted_domestic_whistles": 1.0,
+  "best_candidate_discovered": {
+    "iteration": 4,
+    "reagent": "HYBRID",
+    "conc_pct": 0.2,
+    "temp_c": 45.0,
+    "time_min": 30.0,
+    "t90_min": 3.33,
+    "predicted_whistles": 1.0,
+    "na_mg_100g": 25.3,
+    "solids_loss_pct": 1.07,
+    "opex_inr_kg": 1.05
+  },
+  "throughput_grains_per_sec": 14.4,
+  "elapsed_seconds": 399.6,
+  "timestamp": "2026-10-21T06:46:53.300045+00:00"
+}

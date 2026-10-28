@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — FRONTIER TECHNOLOGY REGISTER
+# FINNOAQ TOOR DAL — FRONTIER TECHNOLOGY REGISTER
 
 **Document ID:** HKT-TECH-2026-001  
 **Project Architecture:** Hybrid Multiscale Biophysical Discovery Platform  

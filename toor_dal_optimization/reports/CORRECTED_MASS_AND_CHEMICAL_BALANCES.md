@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — CORRECTED MASS, CHEMICAL & COST BALANCES
+# FINNOAQ TOOR DAL — CORRECTED MASS, CHEMICAL & COST BALANCES
 
 **Document ID:** HKT-MEB-2026-002  
 **Audit Reference:** [`CRITICAL_SCIENTIFIC_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/CRITICAL_SCIENTIFIC_AUDIT.md)  
@@ -123,5 +123,5 @@ Target OpEx was $\le ₹1.28\text{ / kg finished dal}$. At **₹$1.226\text{ / k
 ---
 
 **Signed Off:**  
-Harakutir Process Engineering & Mass Balance Committee  
+FinnoaQ Process Engineering & Mass Balance Committee  
 *October 15, 2026*

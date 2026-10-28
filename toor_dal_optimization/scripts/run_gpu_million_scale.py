@@ -64,7 +64,7 @@ class GPUMillionExperimentEngine:
         device = self.device if self.device else torch.device("cpu")
 
         print("================================================================================")
-        print("HARAKUTIR GPU MILLION-EXPERIMENT ENGINE (OCEAN BOILING PROTOCOL v3.0)")
+        print("Client Organization GPU MILLION-EXPERIMENT ENGINE (OCEAN BOILING PROTOCOL v3.0)")
         print(f"Host Processor: AMD Ryzen AI 9 365 (10 cores, 20 logical threads)")
         print(f"Discrete GPU: {self.device_name} (CUDA 12.4 | Compute 8.9 | 6.0 GB GDDR6)")
         print(f"Simulation Scale: {self.total_experiments:,} Grains ({self.num_generations} Gens x {self.batch_size:,} Batch)")
@@ -334,7 +334,7 @@ class GPUMillionExperimentEngine:
         vram_reserved_mb = round(torch.cuda.memory_reserved(device) / (1024 ** 2), 2) if self.is_cuda else 0.0
 
         summary = {
-            "engine": "Harakutir GPUMillionExperimentEngine v4.0",
+            "engine": "Client Organization GPUMillionExperimentEngine v4.0",
             "execution_timestamp": datetime.now(timezone.utc).isoformat(),
             "hardware_platform": {
                 "host_cpu": "AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)",
@@ -389,7 +389,7 @@ def main():
         json.dump(results, f, indent=2)
 
     five_sigma_summary = {
-        "title": "Harakutir Pulse Process 5-Sigma Capability & Statistical Quality Report",
+        "title": "Client Organization Pulse Process 5-Sigma Capability & Statistical Quality Report",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "hardware_platform": results["hardware_platform"],
         "total_simulations": results["total_experiments_evaluated"],

@@ -18,9 +18,9 @@ from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 
-from src.harakutir.parameters import get_all_parameters, get_sow_sections_matrix
-from src.harakutir.claims import get_baseline_phase1_claims
-from src.harakutir.oed import BayesianOEDPlanner
+from src.finnoaq.parameters import get_all_parameters, get_sow_sections_matrix
+from src.finnoaq.claims import get_baseline_phase1_claims
+from src.finnoaq.oed import BayesianOEDPlanner
 
 class ReportGenerator:
     def __init__(self, reports_dir: str = "reports"):
@@ -29,7 +29,7 @@ class ReportGenerator:
 
     def generate_all_deliverables(self, readiness_info: Dict[str, Any], hydration_fit_results: Optional[Dict[str, Any]] = None):
         """Build and verify all report artifacts."""
-        from src.harakutir.ingest import DataIngestionEngine
+        from src.finnoaq.ingest import DataIngestionEngine
         DataIngestionEngine(reports_dir=self.reports_dir).generate_readiness_report_md(readiness_info)
         self.build_parameter_registry_md()
         self.build_sow_requirements_matrix_md()
@@ -44,7 +44,7 @@ class ReportGenerator:
         params = get_all_parameters()
         
         lines = [
-            "# Harakutir Phase 1 Toor Dal Study — Complete Parameter Registry",
+            "# FinnoaQ Phase 1 Toor Dal Study — Complete Parameter Registry",
             "",
             f"**Generated:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
             "**Document Control:** Controlling Source `Phase1_Scope_of_Work_Toor_Dal.docx`  ",
@@ -110,7 +110,7 @@ class ReportGenerator:
         sections = get_sow_sections_matrix()
         
         lines = [
-            "# Harakutir Phase 1 SOW Full Compliance Matrix (§§1–36)",
+            "# FinnoaQ Phase 1 SOW Full Compliance Matrix (§§1–36)",
             "",
             f"**Generated:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
             "**Controlling Document:** `Phase1_Scope_of_Work_Toor_Dal.docx`  ",
@@ -183,7 +183,7 @@ class ReportGenerator:
         design = oed.propose_phase2_screening_design(empirical_data_available=False)
         
         lines = [
-            "# Harakutir Phase 2 Technology Recommendations & Candidate Matrices",
+            "# FinnoaQ Phase 2 Technology Recommendations & Candidate Matrices",
             "",
             f"**Date:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
             "**Governing SOW Section:** Section 18 (Candidate Technology Families)  ",
@@ -238,12 +238,12 @@ class ReportGenerator:
         out_path = os.path.join(self.reports_dir, "EXECUTIVE_MANAGEMENT_SUMMARY.md").replace("\\", "/")
         
         lines = [
-            "# Harakutir Phase 1 Toor Dal Diagnostic Study",
+            "# FinnoaQ Phase 1 Toor Dal Diagnostic Study",
             "## Executive Management Summary",
             "",
             f"**Date:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
-            "**Prepared for:** Harakutir Management & R&D Steering Committee  ",
-            "**Project Contact:** Dr. Archisman Ray  ",
+            "**Prepared for:** FinnoaQ Management & R&D Steering Committee  ",
+            "**Project Contact:** Technical Advisory Panel  ",
             "**System Status:** `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`  ",
             "",
             "---",
@@ -256,7 +256,7 @@ class ReportGenerator:
             "---",
             "",
             "### 2. Scientific Integrity & Data Gating Status",
-            "In strict compliance with Harakutir Scientific Integrity Principles:",
+            "In strict compliance with FinnoaQ Scientific Integrity Principles:",
             "1. **No Data Fabrication:** No hand-authored or randomized numbers have been treated as experimental truth.",
             "2. **Current Analytical Gate:** No physical laboratory assay reports have yet been delivered by external testing laboratories to `data/raw/`.",
             "3. **Formal Classification:** The empirical root-cause diagnosis is marked **`DATA_READINESS_ONLY`**.",
@@ -267,7 +267,7 @@ class ReportGenerator:
             "### 3. Key Accomplishments & Deliverables Delivered",
             "- **Complete Parameter Registry:** 78 parameters across 10 analytical domains defined with exact AOAC/ISO/BIS standards (`reports/COMPLETE_PARAMETER_REGISTRY.md`).",
             "- **SOW Requirements Matrix:** Full coverage of all 36 sections of `Phase1_Scope_of_Work_Toor_Dal.docx` (`reports/SOW_REQUIREMENTS_MATRIX.md`).",
-            "- **Offline GPU Inverse Model:** PyTorch mass transfer solver implemented and benchmarked on the NVIDIA RTX 4050 GPU (`src/harakutir/hydration.py`).",
+            "- **Offline GPU Inverse Model:** PyTorch mass transfer solver implemented and benchmarked on the NVIDIA RTX 4050 GPU (`src/Client Organization/hydration.py`).",
             "- **Bayesian OED & Phase 2 Roadmapping:** Decision-theoretic experimental plan discriminating across 5 competing hypotheses and 8 candidate technologies (`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md`).",
             "- **Resumable Local Supervisor:** Fault-tolerant, atomic checkpointing supervisor with SQLite event logging (`scripts/run_supervisor.py` / `run.ps1`).",
             "",
@@ -293,8 +293,8 @@ class ReportGenerator:
             "## Phase 1 Final Technical R&D Diagnostic Report",
             "",
             f"**Date:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
-            "**Prepared for:** Harakutir  ",
-            "**Project Contact:** Dr. Archisman Ray  ",
+            "**Prepared for:** FinnoaQ  ",
+            "**Project Contact:** Technical Advisory Panel  ",
             "**Location:** Kolkata, West Bengal, India  ",
             "**Report Status:** `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`  ",
             "",
@@ -409,7 +409,7 @@ class ReportGenerator:
         
         # Styles
         title_p = doc.add_paragraph()
-        run = title_p.add_run("HARAKUTIR R&D — PHASE 1 TECHNICAL REPORT")
+        run = title_p.add_run("FINNOAQ R&D — PHASE 1 TECHNICAL REPORT")
         run.font.size = Pt(20)
         run.font.bold = True
         run.font.color.rgb = RGBColor(0, 51, 102)
@@ -424,8 +424,8 @@ class ReportGenerator:
         doc.add_paragraph("—" * 50)
         
         doc.add_paragraph(f"Date: {datetime.now(timezone.utc).strftime('%d %B %Y')}")
-        doc.add_paragraph("Prepared for: Harakutir")
-        doc.add_paragraph("Project Contact: Dr. Archisman Ray")
+        doc.add_paragraph("Prepared for: FinnoaQ")
+        doc.add_paragraph("Project Contact: Technical Advisory Panel")
         doc.add_paragraph("Status: DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED")
         
         doc.add_heading("Table of Contents (23 Parts as per SOW §22)", level=1)
@@ -448,7 +448,7 @@ class ReportGenerator:
         doc.add_paragraph(
             "This Phase 1 diagnostic study establishes a rigorous scientific framework to investigate the factors responsible "
             "for the extended cooking time observed in Tanzanian Toor Dal compared with the Indian commercial benchmark. "
-            "In accordance with Harakutir Scientific Integrity Rules, no synthetic or fabricated numbers are reported as real facts. "
+            "In accordance with FinnoaQ Scientific Integrity Rules, no synthetic or fabricated numbers are reported as real facts. "
             "The analytical framework, 78-parameter registry, offline GPU PyTorch solver, and Bayesian experiment design system "
             "are fully verified and stand ready for empirical laboratory data."
         )

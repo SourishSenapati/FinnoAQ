@@ -1,5 +1,5 @@
 """
-Harakutir Omega — Rigorous Multi-Stream Mass Balance & Dry-Solids Recovery Engine.
+FinnoaQ Omega — Rigorous Multi-Stream Mass Balance & Dry-Solids Recovery Engine.
 Calculates separate balances for:
 1. Dal Dry Solids (with 7 explicit loss mechanisms)
 2. Water & Moisture

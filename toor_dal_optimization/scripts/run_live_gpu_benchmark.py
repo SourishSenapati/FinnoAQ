@@ -1,5 +1,5 @@
 """
-Harakutir Live GPU Hardware Benchmark & Sustained Workload Harness
+Client Organization Live GPU Hardware Benchmark & Sustained Workload Harness
 NVIDIA GeForce RTX 4050 Laptop GPU (AD107 | 2560 CUDA Cores | 6.0 GB GDDR6)
 Host CPU: AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)
 
@@ -62,7 +62,7 @@ def run_sustained_gpu_benchmark(
     props = torch.cuda.get_device_properties(device)
 
     print("=" * 80)
-    print("HARAKUTIR LIVE SUSTAINED GPU HARDWARE BENCHMARK")
+    print("Client Organization LIVE SUSTAINED GPU HARDWARE BENCHMARK")
     print(f"Device: {device_name}")
     print(f"CUDA Cores: 2,560 | Compute Capability: {props.major}.{props.minor} | VRAM: {round(props.total_memory / (1024**3), 2)} GB GDDR6")
     print(f"Allocating {working_buffer_mb} MB working state tensor on GPU to verify VRAM allocation in Task Manager...")

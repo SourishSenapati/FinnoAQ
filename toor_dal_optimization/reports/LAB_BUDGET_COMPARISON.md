@@ -1,6 +1,6 @@
 # LABORATORY BUDGET & CAPITAL PRESERVATION COMPARISON
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Objective:** Compare full SOW omnibus expenditure vs. minimum diagnostic screen vs. in-house discrimination, and analyze capital preservation for computing hardware.  
 **Baseline SOW Budget:** ₹1,73,000 professional fee + GST (Working ceiling: up to ₹2,00,000 + GST).  
 
@@ -29,7 +29,7 @@
 
 ## 2. CAPITAL PRESERVATION & HARDWARE REALLOCATION ANALYSIS
 
-By choosing Strategy 3 (In-House Screening) backed conditionally by Strategy 2 (Targeted Accredited Screen if legally demanded), Harakutir preserves **₹1.98 lakh to ₹2.04 lakh ($2,380 – $2,450 USD)**.
+By choosing Strategy 3 (In-House Screening) backed conditionally by Strategy 2 (Targeted Accredited Screen if legally demanded), FinnoaQ preserves **₹1.98 lakh to ₹2.04 lakh ($2,380 – $2,450 USD)**.
 
 ### Hardware Reinvestment Opportunity:
 Instead of spending funds on redundant laboratory test tubes whose outcomes are already bounded by literature, this capital can be permanently converted into high-performance R&D computing infrastructure:

@@ -1,6 +1,6 @@
 EVIDENCE-BACKED REPORT RELEASE PROMPT
 
-Build or refresh the Harakutir Phase 1 technical report from the latest validated immutable dataset and analysis run only. Do not alter the source document or raw data. Do not run new scientific analyses unless the data and tests show they are required; if rerunning is necessary, do so through the supervisor so results remain traceable.
+Build or refresh the Client Organization Phase 1 technical report from the latest validated immutable dataset and analysis run only. Do not alter the source document or raw data. Do not run new scientific analyses unless the data and tests show they are required; if rerunning is necessary, do so through the supervisor so results remain traceable.
 
 - Read SOW compliance status and `reports/INDEPENDENT_AUDIT.md` first.
 - Use the 23-part §22 report structure and all §21 deliverables; include limitations, actual methods, QC, experimental design, data-quality deviations, statistical methods, integrated comparison, evidence hierarchy, Phase 2 recommendations, source data appendix and reproducibility manifest.

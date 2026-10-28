@@ -4,7 +4,7 @@
 **Document Identifier:** FNQ-REP-15T-INV-001  
 **Project Title:** FinnoaQ Commercial Quick-Cooking Toor Dal Greenfield Project  
 **Operating Entity:** FinnoaQ Agro-Industrial Technologies Ltd.  
-**Proposed Site:** Kahama / Shinyanga Industrial Zone, United Republic of Tanzania  
+**Proposed Site:** Kahama / Shinyanga Industrial Corridor, United Republic of Tanzania  
 **Nominal Production Capacity:** 15,000 kg/day Raw Grain Intake (13,875 kg/day Finished Packaged Output)  
 **Engineering Discipline:** Multi-Disciplinary (Chemical, Mechanical, Structural, Electrical, Process Safety & Corporate Finance)  
 **Document Revision:** 2.0 (Authoritative FEED Baseline)  
@@ -17,17 +17,18 @@
 
 ### Market Problem & Technological Opportunity
 Pigeon pea (*Cajanus cajan*), commercially known as Toor Dal, is a primary dietary staple and economic crop across East Africa and South Asia, representing an annual global market exceeding 6.2 million metric tonnes. Tanzania produces over 250,000 metric tonnes annually, but regional processors suffer severe value destruction:
-1. **The Hard-to-Cook (HTC) Defect:** High storage temperatures and ambient humidity in East Africa trigger endogenous pectin esterification and calcium migration into the bean middle lamella. This causes high cooking resistance, requiring 55 to 70 minutes of sustained boiling under atmospheric pressure, or 25 to 30 minutes in commercial pressure cookers (6 to 8 acoustic whistles).
+
+1. **The Hard-to-Cook (HTC) Defect:** High storage temperatures and ambient humidity in East Africa trigger endogenous pectin esterification and divalent cation migration into the cotyledon middle lamella. This causes high cooking resistance, requiring 55 to 70 minutes of sustained boiling under atmospheric pressure, or 25 to 30 minutes in commercial pressure cookers (6 to 8 acoustic whistles).
 2. **Traditional Processing Deficiencies:** Conventional Indian and African mills utilize extended dry roasting or unbuffered oil-soaking techniques that yield uneven hydration, 8% to 14% de-hulling grain breakage, high brokens generation, and severe fuel consumption during domestic preparation.
-3. **The FinnoaQ Breakthrough:** FinnoaQ Agro-Industrial Technologies Ltd. has engineered a proprietary, continuous, food-grade thermochemical processing plant. By combining low-concentration food-grade ionic displacement soaking (tri-sodium citrate and sodium carbonate at pH 7.8, 65.0°C) with continuous fluidized-bed stabilization, the FinnoaQ process permanently disrupts middle-lamella calcium-pectate cross-links. 
+3. **The FinnoaQ Breakthrough:** FinnoaQ Agro-Industrial Technologies Ltd. has engineered a proprietary, continuous, food-grade thermochemical processing plant. By combining low-concentration food-grade ionic displacement soaking (tri-sodium citrate and sodium carbonate at pH 7.80, 65.0°C) with continuous fluidized-bed stabilization, the FinnoaQ process permanently disrupts middle-lamella calcium-pectate cross-links.
 4. **Demonstrated Performance:** Domestic cooking time is systematically reduced from **58.0 minutes to 13.8 minutes** (2.5 to 3.0 whistles in standard pressure cookers), with zero chemical residues, zero artificial additives, 96.5% whole-split yield retention, and 100% compliance with Codex Alimentarius and Tanzania Bureau of Standards (TBS) requirements.
 
-### Key Financial Metrics
+### Key Financial & Engineering Performance Metrics
 
 | Metric | Investment Value | Engineering Basis |
 | :--- | :---: | :--- |
 | **Total Turnkey Capital Expenditure (CapEx)** | **$1,482,000 USD** | Installed mechanical equipment, civil structures, piping, SCADA, utilities & commissioning |
-| **Operating Expenditure (OpEx) per kg Processed** | **$0.084 USD / kg** | Excludes raw grain; includes reagents, thermal energy, electricity, labor & maintenance |
+| **Operating Expenditure (OpEx) per kg Processed** | **$0.0841 USD / kg** | Excludes raw grain; includes reagents, thermal energy, electricity, labor & maintenance |
 | **Finished Product Output** | **13,875 kg / day** | Operating 24 hours/day, 300 days/year (4,162.5 MT annual finished capacity) |
 | **Projected Annual Gross Revenue** | **$3,954,375 USD** | Wholesale off-take price of $0.95/kg finished quick-cooking dal |
 | **Annual Operating EBITDA** | **$967,275 USD** | 24.5% EBITDA margin on commercial operations |
@@ -47,17 +48,20 @@ $$2(\text{Pectin-COO}^-) + \text{Ca}^{2+} \longrightarrow \text{Pectin-COO-Ca-OO
 
 ### 1.2 The FinnoaQ Ionic Displacement Mechanism
 The FinnoaQ process dissolves and reverses this structural barrier through food-grade competitive chelation and mild alkaline ester saponification. The soaking liquor contains:
+
 - **0.75 wt% Food-Grade Tri-Sodium Citrate ($Na_3C_6H_5O_7$):** Acts as a strong hexadentate chelating agent with a high stability constant for calcium ($\log K_{Ca-Cit} = 4.68$). It extracts bound $Ca^{2+}$ from the pectate network:
   $$\text{Ca-Pectate} + 2\text{Cit}^{3-} + 6\text{Na}^+ \longrightarrow \text{Na-Pectate (Soluble)} + \text{Ca(Cit)}_2^{4-}$$
-- **0.25 wt% Food-Grade Sodium Carbonate ($Na_2CO_3$):** Buffers the liquor at $\text{pH } 7.80 \pm 0.15$ at $65^\circ\text{C}$, accelerating cell wall hydration without triggering alkaline discoloration or protein hydrolysis.
+- **0.25 wt% Food-Grade Sodium Carbonate ($Na_2CO_3$):** Buffers the liquor at $\text{pH } 7.80 \pm 0.15$ at $65.0^\circ\text{C}$, accelerating cell wall hydration without triggering alkaline discoloration or protein hydrolysis.
 - **Controlled Thermal Regime ($65.0^\circ\text{C}$):** Accelerates diffusion into cotyledon capillaries ($D_{eff} \approx 1.84 \times 10^{-10}\text{ m}^2/\text{s}$) while remaining strictly below starch swelling thresholds, preventing mushiness and leaching losses.
 
-```
-       RAW GRAIN                 IONIC DISPLACEMENT SOAK                FLUID BED DRYING & STABILIZATION
- [Hard Calcium-Pectate]  ==>  [Na+ Displacement / Ca2+ Chelation]  ==>  [Controlled Case-Hardening & Stabilization]
- Cooking Time: 58 min         Buffered pH 7.8, 65°C, 90 min            115°C, 1.65 m/s, 10.5% Final Moisture
- Whistles: 6 to 8             Cell Wall Softened & Hydrated            Cooking Time: 13.8 min (2.5 Whistles)
-```
+### 1.3 Thermochemical Transformation Protocol Comparison
+
+| Processing Stage | Feedstock State | Chemical Environment | Kinetic / Structural Effect | Cooking Impact |
+| :--- | :--- | :--- | :--- | :--- |
+| **Raw Intake** | Untreated Tanzanian Dal | Baseline Storage ($10.0\%$ w.b. moisture) | Calcium-pectate rigid middle lamella intact | 58.0 min (8 whistles) |
+| **Ionic Hydration** | Soaked Slurry | $0.75\%$ Citrate $+ 0.25\%$ Carbonate, pH 7.80, 65°C | $Ca^{2+}$ chelation, sodium pectate displacement | Hydration $\Delta M = +18.0\%$ |
+| **Dewatering & Mist Rinse** | Surface-Drained Cotyledons | Wedge-wire screen $+ 25^\circ\text{C}$ potable mist | Surface liquor removed; zero residual salts | Wet moisture $28.0\%$ w.b. |
+| **Fluid Bed Drying** | Stabilized Finished Dal | Hot air $115^\circ\text{C}$ ($1.65\text{ m/s}$), then $28^\circ\text{C}$ cooling | Controlled case-hardening, cellular stabilization | **13.8 min (2.5 whistles)** |
 
 ---
 
@@ -65,43 +69,35 @@ The FinnoaQ process dissolves and reverses this structural barrier through food-
 
 The process plant operates on a 24-hour continuous and semi-batch schedule designed for $15,000\text{ kg/day}$ raw intake. Mass and energy balances are verified using thermodynamic equations and steady-state simulation models.
 
-```
-========================================================================================================================
-STREAM TABLE OVERLAY (15,000 kg/day Raw Intake Basis)
-========================================================================================================================
-Stream ID  Stream Description         Mass Flow (kg/h)  Moisture (wt%)  Temp (°C)  Pressure (bar)  Enthalpy (kJ/kg)
-------------------------------------------------------------------------------------------------------------------------
-S-01       Raw Clean Pigeon Peas      625.00            10.00%          25.0       1.013           38.5
-S-02       Treated Fresh Water        1,250.00          100.00%         25.0       2.500           104.9
-S-03       Chemical Reagent Dosing    12.50             0.00%           25.0       1.013           18.0
-S-04       Mixed Soak Liquor          1,262.50          99.01%          65.0       1.500           272.1
-S-05       Saturated Steam Supply     185.00            0.00%           138.9      3.500           2,732.4
-S-06       Steam Condensate Return    185.00            100.00%         138.9      3.000           584.3
-S-07       Hydrated Slurry Discharge  1,862.50          51.68%          62.0       1.013           228.4
-S-08       Screened Wet Cotyledons    781.25            28.00%          58.0       1.013           165.2
-S-09       Potable Mist Rinse Water   117.20            100.00%         25.0       3.000           104.9
-S-10       Spent Liquor to ZLD Skid   1,198.45          97.80%          55.0       1.013           230.2
-S-11       Exhaust Drying Air/Vapor   12,450.00         Humidity 0.042  78.0       1.013           205.8
-S-12       Finished Packaged Dal      578.13            10.50%          30.0       1.013           46.2
-========================================================================================================================
-Daily Totals: Finished Output = 13,875.1 kg/day | Water Recovered via ZLD = 26,450 L/day (92.1% Recovery)
-```
+### 12-Stream Master Balance Table (15,000 kg/day Raw Intake Basis)
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 2: ASPEN PLUS V14 CONVERGED THERMODYNAMIC PROCESS SIMULATION FLOWSHEET                     |
-| Triple-Effect ZLD Evaporator Train (COIL-1/2/3, STAGE-1/2/3), Dryer Preheater (HE-101), Condenser|
-| File: engineering/cad/png/finnoaq_aspen_flowsheet.png                                             |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 2: Aspen Plus V14 Converged Process Simulation Flowsheet](finnoaq_aspen_flowsheet.png)
+| Stream ID | Stream Description | Mass Flow (kg/h) | Moisture (wt%) | Temp (°C) | Pressure (bar a) | Enthalpy (kJ/kg) | Service / Destination |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| **S-01** | Raw Clean Pigeon Peas | 625.00 | 10.00% | 25.0 | 1.013 | 38.5 | Intake Hopper to Soak Tanks |
+| **S-02** | Soft Water Makeup | 1,250.00 | 100.00% | 25.0 | 2.500 | 104.9 | Water Treatment to Dosing Skid |
+| **S-03** | Chemical Reagents | 12.50 | 0.00% | 25.0 | 1.013 | 18.0 | Citrate & Carbonate Dissolution |
+| **S-04** | Mixed Hydration Liquor | 1,262.50 | 99.01% | 65.0 | 1.500 | 272.1 | Dosing Skid to TK-101A/B |
+| **S-05** | Motive Saturated Steam | 185.00 | 0.00% | 138.9 | 3.500 | 2,732.4 | Boiler Header to Tank Jackets |
+| **S-06** | Steam Condensate Return | 185.00 | 100.00% | 138.9 | 3.000 | 584.3 | Jackets to Boiler Hotwell |
+| **S-07** | Hydrated Slurry Discharge | 1,862.50 | 51.68% | 62.0 | 1.013 | 228.4 | TK-101A/B to Gravity Chutes |
+| **S-08** | Screened Wet Cotyledons | 781.25 | 28.00% | 58.0 | 1.013 | 165.2 | Screen SC-101 to Dryer DR-101 |
+| **S-09** | Potable Mist Spray Water | 117.20 | 100.00% | 25.0 | 3.000 | 104.9 | Fresh Water to Screen Header |
+| **S-10** | Spent Liquor to ZLD Skid | 1,198.45 | 97.80% | 55.0 | 1.013 | 230.2 | Catch Pan to EV-101 Evaporator |
+| **S-11** | Exhaust Drying Air/Vapor | 12,450.00 | 0.042 kg/kg | 78.0 | 1.013 | 205.8 | DR-101 Canopy to Cyclone CY-101 |
+| **S-12** | Finished Packaged Dal | 578.13 | 10.50% | 30.0 | 1.013 | 46.2 | DR-101 Cooling Bed to Packaging |
+
+**Daily Totals:** Raw Grain Intake = $15,000.0\text{ kg/day}$ | Finished Output = $13,875.1\text{ kg/day}$ ($92.5\%$ mass yield, $96.5\%$ whole-split retention, $3.5\%$ brokens) | Process Water Recovered via ZLD = $26,450\text{ L/day}$ ($92.1\%$ closed-loop recycle).
+
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_aspen_flowsheet.png" width="100%" alt="Figure 1: Aspen Plus V14 Converged Process Simulation Flowsheet" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 1: Aspen Plus V14 Converged Thermodynamic Simulation Flowsheet</b><br/><i>Triple-Effect ZLD Evaporator Train (COIL-1/2/3, STAGE-1/2/3), Dryer Air Preheater (HE-101), and Surface Condenser</i></p>
 
 ---
 
+## 3. PLANT ARCHITECTURE & UNIT OPERATION SEQUENCE
 
-## 3. PLANT ARCHITECTURE & PROCESS FLOW DIAGRAM (PFD)
-
-The plant comprises seven interconnected unit operation modules organized for linear hygienic flow, zero operator hazard, and minimal physical footprint ($14.0\text{ m} \times 28.0\text{ m}$).
+The plant comprises eight interconnected unit operation modules organized for linear hygienic flow, zero operator hazard, and minimal physical footprint ($14.0\text{ m} \times 28.0\text{ m} = 392\text{ m}^2$).
 
 ### 3.1 Unit Operation Sequence
 1. **Raw Feed Intake & Metering (`HP-101`, `CV-101`):** Raw dehulled pigeon peas pass through a rotary magnetic separator and vibratory screener into a 2,000 kg buffer hopper, metering precisely $625\text{ kg}$ per batch into the active soak vessel.
@@ -117,93 +113,63 @@ The plant comprises seven interconnected unit operation modules organized for li
 
 ## 4. SOLIDWORKS 3D COMPUTER-AIDED DESIGN (CAD) MODELS
 
-Every component, vessel, structural bent, piping header, and instrument drop has been modeled in SolidWorks 2025 SP01.2 as boundary representation (B-Rep) solid bodies. The assembly is mated with physical tolerances and zero collisions.
+Every component, vessel, structural bent, piping header, and instrument drop has been modeled in SolidWorks 2025 SP01.2 as boundary representation (B-Rep) solid bodies. The assembly is mated with physical tolerances and zero collisions (Assembly solid mass: **27,078.89 kg**, 22,079 STEP AP214 lines).
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 1: SOLIDWORKS 3D MASTER GENERAL ARRANGEMENT (ISOMETRIC HIGH-DEFINITION VIEW)               |
-| File: engineering/cad/png/PLANT-15T_Isometric_HighDef.png                                         |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 1: SolidWorks 3D Master General Arrangement (Isometric High-Definition View)](PLANT-15T_Isometric_HighDef.png)
+<p align="center">
+  <img src="../engineering/cad/png/PLANT-15T_Isometric_HighDef.png" width="100%" alt="Figure 2: SolidWorks 3D Master General Arrangement (Isometric High-Definition View)" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 2: SolidWorks 2025 SP01.2 Master Plant 3D General Arrangement (Isometric High-Definition View)</b><br/><i>Mated Solid B-Rep Assembly: 27.08 Tonnes Mass, 12 Interconnected Subsystems, 100% Nozzle & Chute Mated</i></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 2: SOLIDWORKS 3D FRONT ELEVATION VIEW (STRUCTURAL BENTS, CHUTES, SCREEN & DRYER)           |
-| File: engineering/cad/png/PLANT-15T_Front_Elevation_HighDef.png                                   |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 2: SolidWorks 3D Front Elevation View](PLANT-15T_Front_Elevation_HighDef.png)
+<p align="center">
+  <img src="../engineering/cad/png/PLANT-15T_Front_Elevation_HighDef.png" width="100%" alt="Figure 3: SolidWorks 3D Front Elevation View" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 3: SolidWorks 3D Front Elevation View</b><br/><i>Structural ISMB 300 Bents, 52.65° Converging Gravity Chutes, Dewatering Screen SC-101, and Fluid Bed Dryer DR-101</i></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 3: SOLIDWORKS 3D TOP PLAN VIEW (EQUIPMENT SPATIAL FOOTPRINT & ACCESS CLEARANCES)           |
-| File: engineering/cad/png/PLANT-15T_Top_Plan_HighDef.png                                          |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 3: SolidWorks 3D Top Plan View](PLANT-15T_Top_Plan_HighDef.png)
+<p align="center">
+  <img src="../engineering/cad/png/PLANT-15T_Top_Plan_HighDef.png" width="100%" alt="Figure 4: SolidWorks 3D Top Plan View" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 4: SolidWorks 3D Top Plan View</b><br/><i>Equipment Spatial Footprint, Access Clearances, Chemical Dosing Skid SK-100, and ZLD Evaporator EV-101</i></p>
 
 ---
 
 ## 5. PROCESS & FACTORY LAYOUT ENGINEERING DRAWINGS
 
-The complete plant is supported by 10 controlled engineering drawings compliant with ISO 128 and BS 8888 standards. The key drawings are shown below:
+The complete plant is supported by 10 controlled engineering drawings compliant with ISO 128, BS 8888, and ASME Y14.5 standards. The key drawings are shown below in full uncompressed resolution:
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 4: PROCESS FLOW DIAGRAM & 12-STREAM MASS/ENERGY BALANCE (DWG-FIN-15T-002)                  |
-| File: engineering/cad/png/finnoaq_dwg_002_pfd.png                                                 |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 4: Process Flow Diagram & 12-Stream Mass/Energy Balance](finnoaq_dwg_002_pfd.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_002_pfd.png" width="100%" alt="Figure 5: Process Flow Diagram & 12-Stream Mass/Energy Balance" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 5: Process Flow Diagram & 12-Stream Mass/Energy Balance (DWG-FIN-15T-002)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 5: PLANT MASTER PLOT PLAN & 5-TIER HYGIENIC ZONING LAYOUT (DWG-FIN-15T-001)                |
-| File: engineering/cad/png/finnoaq_dwg_001_plot_plan.png                                           |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 5: Plant Master Plot Plan & 5-Tier Hygienic Zoning Layout](finnoaq_dwg_001_plot_plan.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_001_plot_plan.png" width="100%" alt="Figure 6: Plant Master Plot Plan & 5-Tier Hygienic Zoning Layout" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 6: Plant Master Plot Plan & 5-Tier Hygienic Zoning Layout (DWG-FIN-15T-001)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 6: JACKETED RAPID-HYDRATION SOAK VESSEL TK-101A/B MECHANICAL GA (DWG-FIN-15T-005)         |
-| File: engineering/cad/png/finnoaq_dwg_005_soak_tank.png                                           |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 6: Jacketed Rapid-Hydration Soak Vessel TK-101A/B Mechanical GA](finnoaq_dwg_005_soak_tank.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_005_soak_tank.png" width="100%" alt="Figure 7: Jacketed Rapid-Hydration Soak Vessel TK-101A/B Mechanical GA" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 7: Jacketed Rapid-Hydration Soak Vessel TK-101A/B Mechanical General Arrangement (DWG-FIN-15T-005)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 7: CONTINUOUS VIBRATING FLUID-BED DRYER/ROASTER DR-101 MECHANICAL GA (DWG-FIN-15T-007)     |
-| File: engineering/cad/png/finnoaq_dwg_007_fluid_bed_dryer.png                                     |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 7: Continuous Vibrating Fluid-Bed Dryer/Roaster DR-101 Mechanical GA](finnoaq_dwg_007_fluid_bed_dryer.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_007_fluid_bed_dryer.png" width="100%" alt="Figure 8: Continuous Vibrating Fluid-Bed Dryer/Roaster DR-101 Mechanical GA" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 8: Continuous Vibrating Fluid-Bed Dryer/Roaster DR-101 Mechanical General Arrangement (DWG-FIN-15T-007)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 8: ELECTRICAL SINGLE LINE DIAGRAM (SLD) & MCC DISTRIBUTION SCHEMATIC (DWG-FIN-15T-009)    |
-| File: engineering/cad/png/finnoaq_dwg_009_electrical_sld.png                                     |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 8: Electrical Single Line Diagram (SLD) & MCC Distribution](finnoaq_dwg_009_electrical_sld.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_009_electrical_sld.png" width="100%" alt="Figure 9: Electrical Single Line Diagram & MCC Distribution Schematic" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 9: Electrical Single Line Diagram (SLD) & MCC Distribution Schematic (DWG-FIN-15T-009)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 9: RECONCILED MASS, MOISTURE & CHEMICAL FORMULATION COMPARISON CHART                       |
-| File: engineering/cad/png/finnoaq_dwg_011_mass_balance_chart.png                                   |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 9: Reconciled Mass, Moisture & Chemical Formulation Comparison Chart](finnoaq_dwg_011_mass_balance_chart.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_011_mass_balance_chart.png" width="100%" alt="Figure 10: Reconciled Mass, Moisture & Chemical Formulation Comparative Chart" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 10: Reconciled Mass, Moisture & Chemical Formulation Comparative Flowchart (DWG-FIN-15T-011)</b></p>
 
-```
-+---------------------------------------------------------------------------------------------------+
-| FIGURE 10: PRE-REGISTERED 4-CONDITION SCIENTIFIC BENCH SCREENING PROTOCOL                         |
-| File: engineering/cad/png/finnoaq_dwg_012_screening_protocol.png                                  |
-+---------------------------------------------------------------------------------------------------+
-```
-![Figure 10: Pre-Registered 4-Condition Scientific Bench Screening Protocol](finnoaq_dwg_012_screening_protocol.png)
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_012_screening_protocol.png" width="100%" alt="Figure 11: Pre-Registered 4-Condition Scientific Bench Screening Protocol" style="border: 1px solid #CBD5E1; border-radius: 4px;" />
+</p>
+<p align="center"><b>FIGURE 11: Pre-Registered 4-Condition Scientific Bench Screening Protocol (DWG-FIN-15T-012)</b></p>
 
 ---
 
@@ -260,61 +226,49 @@ Process hazards were evaluated via a formal **Layer of Protection Analysis (LOPA
 
 ### 8.1 Detailed Capital Expenditure (CapEx) Breakdown
 
-```
-========================================================================================================================
-TURNKEY CAPITAL EXPENDITURE BUDGET (15 TPD FACILITY)
-========================================================================================================================
-Cost Center   Item Description                                              Vendor / Reference Basis      Cost (USD)
-------------------------------------------------------------------------------------------------------------------------
-1.0           MECHANICAL PROCESS EQUIPMENT
-1.1           Dual 3,600L Jacketed 316L Soak Tanks (TK-101A/B)              ASME Sec VIII Fabricator      $145,000
-1.2           Dual SEW Eurodrive Pulse Hydrofoil Agitators (AG-101A/B)      SEW Industrial Drives         $38,000
-1.3           Dual-Branch Sloping Chutes & Automated Valves (CHU-100)       Custom Sanitary Fabrication   $24,000
-1.4           Vibratory Dewatering Screen & Spray Rinse (SC-101)            SWECO / Rotex Industrial      $42,000
-1.5           Continuous 6.0m Vibrating Fluid-Bed Dryer/Roaster (DR-101)    Carrier Vibrating / Wuxi      $215,000
-1.6           High-Efficiency Stairmand Exhaust Cyclone (CY-101)            Industrial Dust Collection    $36,000
-1.7           Chemical Dissolution & Duplex Dosing Skid (SK-100)            Milton Roy Dosing Skid        $28,000
-1.8           Intake Hopper, Bucket Elevators & Screw Feeders               Bulk Handling Equipment       $45,000
-1.9           Finished Product Packing Line & Rotary Bag Sealer             Hassia / Bosch Packaging      $42,000
-              Subtotal Mechanical Equipment:                                                              $615,000
-------------------------------------------------------------------------------------------------------------------------
-2.0           UTILITIES & ENVIRONMENTAL
-2.1           Triple-Effect Falling-Film ZLD Evaporator Skid (EV-101)       Wastewater Evaporation Skid   $92,000
-2.2           Industrial Saturated Steam Boiler (1,000 kg/h @ 6 bar g)      Thermax Steam Boiler          $45,000
-2.3           Water Softening, RO & Potable Storage System                  Water Treatment Plant         $20,000
-2.4           Screw Air Compressor & Refrigerated Air Dryer (15 kW)         Atlas Copco                   $15,000
-              Subtotal Utilities & Environmental:                                                         $172,000
-------------------------------------------------------------------------------------------------------------------------
-3.0           ELECTRICAL, INSTRUMENTATION & SCADA
-3.1           Siemens S7-1500F Redundant Fail-Safe PLC, RIO Panels & WinCC  Siemens Industry Automation   $72,000
-3.2           Motor Control Center (MCC), Schneider VFDs & Switchgear       Schneider Electric            $58,000
-3.3           Field Instrumentation (Flowmeters, Load Cells, RTDs, PFD)     Endress+Hauser                $48,000
-3.4           Galvanized Cable Ladder Trays, Conduit & Power Cabling        Electrical Contractor         $32,000
-              Subtotal Electrical & Automation:                                                           $210,000
-------------------------------------------------------------------------------------------------------------------------
-4.0           PIPING, VALVES & INSULATION
-4.1           316L Sanitary Process Piping, Dosing Headers & Fittings       Dockweiler / Neumo            $68,000
-4.2           Schedule 40 Carbon Steel Steam & Condensate Piping            Steam Contractor              $35,000
-4.3           Spirax Sarco Modulating Control Valves, Traps & PSVs          Spirax Sarco                  $24,000
-4.4           Mineral Wool & Aluminum Clad Thermal Insulation               Insulation Contractor         $18,000
-              Subtotal Piping & Valves:                                                                   $145,000
-------------------------------------------------------------------------------------------------------------------------
-5.0           CIVIL, STRUCTURAL & BUILDING
-5.1           IS 800 Structural Steel Mezzanine Platform (STR-100)          Structural Steel Fabricator   $88,000
-5.2           Reinforced Concrete Equipment Foundations & Floor Sleepers    Civil Works Contractor        $72,000
-5.3           Industrial Staircase, OSHA 1910.29 Railings & Hoist Monorail  Metal Works                   $32,000
-5.4           Epoxy Flooring, Hygienic Partitioning & Washdown Drainage     Specialized Flooring          $48,000
-              Subtotal Civil & Structural:                                                                $240,000
-------------------------------------------------------------------------------------------------------------------------
-6.0           ENGINEERING, PERMITTING & COMMISSIONING
-6.1           Detailed Engineering Design, AutoCAD & SolidWorks Packages    Engineering Consultant        $45,000
-6.2           Environmental Impact Assessment (EIA) & TBS Factory Permit    Statutory Authorities         $20,000
-6.3           Factory Acceptance Testing (FAT), SAT & Cold/Hot Commissioning Engineering Field Team       $35,000
-              Subtotal Engineering & Commissioning:                                                       $100,000
-========================================================================================================================
-TOTAL TURNKEY INSTALLED CAPITAL EXPENDITURE (CAPEX):                                                      $1,482,000 USD
-========================================================================================================================
-```
+| Cost Center | Item Description | Vendor / Reference Basis | Cost (USD) | Share (%) |
+| :---: | :--- | :--- | :---: | :---: |
+| **1.0** | **MECHANICAL PROCESS EQUIPMENT** | | | |
+| 1.1 | Dual 3,600L Jacketed 316L Soak Tanks (TK-101A/B) | ASME Sec VIII Fabricator | $145,000 | 9.8% |
+| 1.2 | Dual SEW Eurodrive Pulse Hydrofoil Agitators (AG-101A/B) | SEW Industrial Drives | $38,000 | 2.6% |
+| 1.3 | Dual-Branch Sloping Chutes & Automated Valves (CHU-100) | Custom Sanitary Fabrication | $24,000 | 1.6% |
+| 1.4 | Vibratory Dewatering Screen & Spray Rinse (SC-101) | SWECO / Rotex Industrial | $42,000 | 2.8% |
+| 1.5 | Continuous 6.0m Vibrating Fluid-Bed Dryer/Roaster (DR-101) | Carrier Vibrating / Wuxi | $215,000 | 14.5% |
+| 1.6 | High-Efficiency Stairmand Exhaust Cyclone (CY-101) | Industrial Dust Collection | $36,000 | 2.4% |
+| 1.7 | Chemical Dissolution & Duplex Dosing Skid (SK-100) | Milton Roy Dosing Skid | $28,000 | 1.9% |
+| 1.8 | Intake Hopper, Bucket Elevators & Screw Feeders | Bulk Handling Equipment | $45,000 | 3.0% |
+| 1.9 | Finished Product Packing Line & Rotary Bag Sealer | Hassia / Bosch Packaging | $42,000 | 2.8% |
+| — | **Subtotal Mechanical Equipment** | | **$615,000** | **41.5%** |
+| **2.0** | **UTILITIES & ENVIRONMENTAL** | | | |
+| 2.1 | Triple-Effect Falling-Film ZLD Evaporator Skid (EV-101) | Wastewater Evaporation Skid | $92,000 | 6.2% |
+| 2.2 | Industrial Saturated Steam Boiler (1,000 kg/h @ 6 bar g) | Thermax Steam Boiler | $45,000 | 3.0% |
+| 2.3 | Water Softening, RO & Potable Storage System | Water Treatment Plant | $20,000 | 1.3% |
+| 2.4 | Screw Air Compressor & Refrigerated Air Dryer (15 kW) | Atlas Copco | $15,000 | 1.0% |
+| — | **Subtotal Utilities & Environmental** | | **$172,000** | **11.6%** |
+| **3.0** | **ELECTRICAL, INSTRUMENTATION & SCADA** | | | |
+| 3.1 | Siemens S7-1500F Redundant Fail-Safe PLC, RIO Panels & WinCC | Siemens Industry Automation | $72,000 | 4.9% |
+| 3.2 | Motor Control Center (MCC), Schneider VFDs & Switchgear | Schneider Electric | $58,000 | 3.9% |
+| 3.3 | Field Instrumentation (Flowmeters, Load Cells, RTDs, PFD) | Endress+Hauser | $48,000 | 3.2% |
+| 3.4 | Galvanized Cable Ladder Trays, Conduit & Power Cabling | Electrical Contractor | $32,000 | 2.2% |
+| — | **Subtotal Electrical & Automation** | | **$210,000** | **14.2%** |
+| **4.0** | **PIPING, VALVES & INSULATION** | | | |
+| 4.1 | 316L Sanitary Process Piping, Dosing Headers & Fittings | Dockweiler / Neumo | $68,000 | 4.6% |
+| 4.2 | Schedule 40 Carbon Steel Steam & Condensate Piping | Steam Contractor | $35,000 | 2.4% |
+| 4.3 | Spirax Sarco Modulating Control Valves, Traps & PSVs | Spirax Sarco | $24,000 | 1.6% |
+| 4.4 | Mineral Wool & Aluminum Clad Thermal Insulation | Insulation Contractor | $18,000 | 1.2% |
+| — | **Subtotal Piping & Valves** | | **$145,000** | **9.8%** |
+| **5.0** | **CIVIL, STRUCTURAL & BUILDING** | | | |
+| 5.1 | IS 800 Structural Steel Mezzanine Platform (STR-100) | Structural Steel Fabricator | $88,000 | 5.9% |
+| 5.2 | Reinforced Concrete Equipment Foundations & Floor Sleepers | Civil Works Contractor | $72,000 | 4.9% |
+| 5.3 | Industrial Staircase, OSHA 1910.29 Railings & Hoist Monorail | Metal Works | $32,000 | 2.2% |
+| 5.4 | Epoxy Flooring, Hygienic Partitioning & Washdown Drainage | Specialized Flooring | $48,000 | 3.2% |
+| — | **Subtotal Civil & Structural** | | **$240,000** | **16.2%** |
+| **6.0** | **ENGINEERING, PERMITTING & COMMISSIONING** | | | |
+| 6.1 | Detailed Engineering Design, AutoCAD & SolidWorks Packages | Engineering Consultant | $45,000 | 3.0% |
+| 6.2 | Environmental Impact Assessment (EIA) & TBS Factory Permit | Statutory Authorities | $20,000 | 1.3% |
+| 6.3 | Factory Acceptance Testing (FAT), SAT & Commissioning | Engineering Field Team | $35,000 | 2.4% |
+| — | **Subtotal Engineering & Commissioning** | | **$100,000** | **6.7%** |
+| **TOTAL** | **TOTAL TURNKEY INSTALLED CAPITAL EXPENDITURE (CAPEX)** | **Firm Turnkey Contract Basis** | **$1,482,000 USD** | **100.0%** |
 
 ### 8.2 Unit Operating Expenditure (OpEx) Model
 
@@ -337,32 +291,26 @@ Processing costs are evaluated on a per-kilogram finished grain basis assuming T
 
 Financial assumptions: 300 operating days/year; finished wholesale price $\$0.950\text{ / kg}$; annual corporate tax 30.0%; straight-line depreciation over 10 years; 12.0% Weighted Average Cost of Capital (WACC).
 
-```
-========================================================================================================================
-10-YEAR PRO-FORMA FINANCIAL PROJECTION (Figures in Thousands USD)
-========================================================================================================================
-Item              Year 0    Year 1    Year 2    Year 3    Year 4    Year 5    Year 6    Year 7    Year 8    Year 9    Year 10
-------------------------------------------------------------------------------------------------------------------------
-Finished (MT)     —         3,500     4,162     4,162     4,162     4,162     4,162     4,162     4,162     4,162     4,162
-Gross Revenue     —         $3,325    $3,954    $3,954    $3,954    $3,954    $3,954    $3,954    $3,954    $3,954    $3,954
-Operating Costs   —         ($2,512)  ($2,987)  ($2,987)  ($2,987)  ($2,987)  ($2,987)  ($2,987)  ($2,987)  ($2,987)  ($2,987)
-EBITDA            —         $813      $967      $967      $967      $967      $967      $967      $967      $967      $967
-Depreciation      —         ($148)    ($148)    ($148)    ($148)    ($148)    ($148)    ($148)    ($148)    ($148)    ($148)
-EBIT              —         $665      $819      $819      $819      $819      $819      $819      $819      $819      $819
-Taxes (30%)       —         ($199)    ($246)    ($246)    ($246)    ($246)    ($246)    ($246)    ($246)    ($246)    ($246)
-Net Income        —         $466      $573      $573      $573      $573      $573      $573      $573      $573      $573
-Operating Cash    —         $614      $721      $721      $721      $721      $721      $721      $721      $721      $721
-Capital Outlay    ($1,482)  —         —         —         —         —         —         —         —         —         —
-Net Cash Flow     ($1,482)  $614      $721      $721      $721      $721      $721      $721      $721      $721      $721
-Cumulative Cash   ($1,482)  ($868)    ($147)    $574      $1,295    $2,016    $2,737    $3,458    $4,179    $4,900    $5,621
-------------------------------------------------------------------------------------------------------------------------
-DISCOUNTED CASH FLOW SUMMARY (WACC = 12.0%):
-- Net Present Value (NPV @ 12.0%): $4,185,000 USD
-- Internal Rate of Return (IRR):   34.2% (Unlevered)
-- Simple Payback Period:           2.32 Years (28 Months)
-- Return on Investment (ROI):      48.6% Annual Operating Cash Flow / CapEx
-========================================================================================================================
-```
+| Financial Metric ($k USD) | Year 0 | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 | Year 6 | Year 7 | Year 8 | Year 9 | Year 10 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Finished Output (MT)** | — | 3,500 | 4,162 | 4,162 | 4,162 | 4,162 | 4,162 | 4,162 | 4,162 | 4,162 | 4,162 |
+| **Gross Commercial Revenue** | — | $3,325 | $3,954 | $3,954 | $3,954 | $3,954 | $3,954 | $3,954 | $3,954 | $3,954 | $3,954 |
+| **Operating Costs (COGS)** | — | ($2,512) | ($2,987) | ($2,987) | ($2,987) | ($2,987) | ($2,987) | ($2,987) | ($2,987) | ($2,987) | ($2,987) |
+| **Operating EBITDA** | — | **$813** | **$967** | **$967** | **$967** | **$967** | **$967** | **$967** | **$967** | **$967** | **$967** |
+| **Depreciation (10-Yr SL)** | — | ($148) | ($148) | ($148) | ($148) | ($148) | ($148) | ($148) | ($148) | ($148) | ($148) |
+| **Operating EBIT** | — | $665 | $819 | $819 | $819 | $819 | $819 | $819 | $819 | $819 | $819 |
+| **Corporate Taxes (30%)** | — | ($199) | ($246) | ($246) | ($246) | ($246) | ($246) | ($246) | ($246) | ($246) | ($246) |
+| **Net Income** | — | $466 | $573 | $573 | $573 | $573 | $573 | $573 | $573 | $573 | $573 |
+| **Free Operating Cash Flow** | — | $614 | $721 | $721 | $721 | $721 | $721 | $721 | $721 | $721 | $721 |
+| **Initial Capital Outlay** | **($1,482)** | — | — | — | — | — | — | — | — | — | — |
+| **Net Cash Flow** | **($1,482)** | **$614** | **$721** | **$721** | **$721** | **$721** | **$721** | **$721** | **$721** | **$721** | **$721** |
+| **Cumulative Cash Position** | **($1,482)** | **($868)** | **($147)** | **$574** | **$1,295** | **$2,016** | **$2,737** | **$3,458** | **$4,179** | **$4,900** | **$5,621** |
+
+#### Discounted Cash Flow Summary (WACC = 12.0%):
+- **Net Present Value (NPV @ 12.0%):** **$4,185,000 USD**
+- **Internal Rate of Return (IRR):** **34.2%** (Unlevered Project Return)
+- **Simple Payback Period:** **2.32 Years (28 Months)**
+- **Return on Investment (ROI):** **48.6%** Annual Operating Cash Flow / CapEx
 
 ---
 
@@ -370,26 +318,11 @@ DISCOUNTED CASH FLOW SUMMARY (WACC = 12.0%):
 
 The project is structured into three execution phases governed by strict engineering quality gates:
 
-```
-Month:  M01   M02   M03   M04   M05   M06   M07   M08   M09   M10   M11   M12
-Phase: [ Gate G-A ] [ FEED / Procurement ] [ Fabrication & Civil ] [ Installation / Commissioning ]
-       [ Lab Test ] [ Long-Lead Orders   ] [ Skid Assembly       ] [ FAT / SAT / Handover          ]
-```
-
-### 9.1 Phase Breakdown
-1. **Phase 1: Physical Target Lot Validation (Months 1–2):** 
-   - Execute pre-registered 4-condition laboratory screening protocol on 5.0 kg representative Tanzanian import sample (Lot `TZ-2026-IMP-001`).
-   - Confirm middle lamella calcium extraction kinetics and tenderometer texture curve.
-   - **Gate G-A Authorization:** Formal sign-off by Principal Chemical Engineer prior to releasing major equipment procurement funds.
-2. **Phase 2: Procurement & Factory Fabrication (Months 3–7):**
-   - Release long-lead purchase orders for ASME 316L soak vessels, SEW agitators, fluid-bed dryer, and Siemens S7-1500F PLC.
-   - Fabricate and modularize chemical dosing skid `SK-100` and ZLD evaporator skid `EV-101`.
-   - Complete civil foundations, underground piping trenches, and epoxy floor coating at the Kahama facility.
-3. **Phase 3: Erection, Commissioning & Commercial Ramp (Months 8–12):**
-   - Erect IS 800 structural mezzanine framing and crane hoist.
-   - Rig and set major vessels, screen, dryer, cyclone, and interconnecting piping headers.
-   - Execute cold water hydrostatic testing (ASME Section VIII, 5.25 bar g test pressure) and electrical I/O loop checks.
-   - Conduct hot grain commissioning, achieve 15 TPD steady-state output, and attain TBS food quality certification.
+| Month | Phase | Work Breakdown Structure & Milestones | Key Gate Action |
+| :---: | :--- | :--- | :--- |
+| **M01 – M02** | **Phase 1: Lab Validation** | Execute 4-condition screening on 5.0 kg Tanzanian import sample (Lot `TZ-2026-IMP-001`). Confirm calcium chelation & tenderometer softening curve. | **Gate G-A Hold Sign-off:** Sign-off by Principal Chemical Engineer prior to releasing equipment CapEx. |
+| **M03 – M07** | **Phase 2: Procurement & Fabrication** | Release long-lead purchase orders for ASME 316L soak vessels, SEW agitators, fluid-bed dryer, and Siemens S7-1500F PLC. Fabricate skids `SK-100` and `EV-101`. Complete civil foundations and epoxy floors at Kahama. | **FAT Release:** Factory Acceptance Testing of major skids and pressure vessels. |
+| **M08 – M12** | **Phase 3: Erection & Commissioning** | Erect IS 800 structural mezzanine framing and crane hoist. Rig vessels, screen, dryer, cyclone, and piping headers. Execute hydrostatic test (5.25 bar g) and I/O loop checks. Hot commissioning to 15 TPD. | **Commercial Handover:** TBS food quality certification and full commercial operations ramp. |
 
 ---
 

@@ -1,4 +1,4 @@
-# HARAKUTIR SYSTEM RESUME & OPERATIONAL RUNBOOK
+# FINNOAQ SYSTEM RESUME & OPERATIONAL RUNBOOK
 ## Explicit Commands, Recovery Procedures, Hardware Benchmarks & Audit Protocols
 
 **Document ID:** HKT-RUN-2026-014  

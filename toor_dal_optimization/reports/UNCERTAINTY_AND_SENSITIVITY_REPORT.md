@@ -1,6 +1,6 @@
 # UNCERTAINTY QUANTIFICATION & GLOBAL SENSITIVITY REPORT
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Standard:** Rigorous Uncertainty Classification & Sobol Sensitivity Ranking (Corrective Constitution Part III §7)  
 **Goal:** Determine which model parameters dominate cooking duration and candidate selection.  
 
@@ -19,8 +19,8 @@ Every parameter used in the digital product model is classified according to its
 | **$E_{a,\text{diff}}$** | Diffusion Activation Energy | $32.4\text{ kJ/mol}$ | `PUBLISHED_LITERATURE` | Arrhenius temperature dependence in legumes |
 | **$T_{\text{gel}}$** | Starch Gelatinization Onset | $68.0^\circ\text{C}$ | `DIRECT_CAJANUS_MEASURED` | DSC thermograms for pigeon pea starch |
 | **$k_{\text{soft}}$** | Pectin Dissolution Rate | $0.0012\text{ s}^{-1}$ (at 100°C) | `ESTIMATED_TRANSFER_PRIOR` | Fitted from common bean HTC kinetics |
-| **$[\text{Ca}^{2+}]$** | Cotyledon Calcium Content | Assumed $120\text{ mg/100g}$ | **`UNKNOWN_TARGET_LOT`** | **Completely unknown for Harakutir's specific lot** |
-| **$\text{Phytate}$** | Phytic Acid Concentration | Assumed $0.85\text{ g/100g}$ | **`UNKNOWN_TARGET_LOT`** | **Completely unknown for Harakutir's specific lot** |
+| **$[\text{Ca}^{2+}]$** | Cotyledon Calcium Content | Assumed $120\text{ mg/100g}$ | **`UNKNOWN_TARGET_LOT`** | **Completely unknown for FinnoaQ's specific lot** |
+| **$\text{Phytate}$** | Phytic Acid Concentration | Assumed $0.85\text{ g/100g}$ | **`UNKNOWN_TARGET_LOT`** | **Completely unknown for FinnoaQ's specific lot** |
 
 ---
 

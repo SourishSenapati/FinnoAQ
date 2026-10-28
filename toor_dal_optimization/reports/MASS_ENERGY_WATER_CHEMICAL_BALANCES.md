@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — MASS, ENERGY, WATER & CHEMICAL BALANCES
+# FINNOAQ TOOR DAL — MASS, ENERGY, WATER & CHEMICAL BALANCES
 
 **Document ID:** FIN-BAL-15TPD-2026-002  
 **Date:** 15 October 2026  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Balance Summary
 
-This report establishes the complete multi-stream mass, energy, water, and chemical balance for the 15,000 kg/day Harakutir Toor Dal processing facility. All calculations are derived from the deterministic balance engine in [`plant_design_15tpd.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/plant_design_15tpd.py).
+This report establishes the complete multi-stream mass, energy, water, and chemical balance for the 15,000 kg/day FinnoaQ Toor Dal processing facility. All calculations are derived from the deterministic balance engine in [`plant_design_15tpd.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/plant_design_15tpd.py).
 
 ### Core Balance Metrics (15,000 kg/day Feed Basis)
 - **Raw Dal Feed (S01):** $15,000.0\text{ kg/day}$ ($13,500.0\text{ kg}$ dry solids, $1,500.0\text{ kg}$ moisture at $10.0\%\ \text{w.b.}$).

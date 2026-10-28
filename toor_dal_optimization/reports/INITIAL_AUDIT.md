@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — PHASE 0 INITIAL AUDIT & HARDWARE DISCOVERY
+# FINNOAQ TOOR DAL — PHASE 0 INITIAL AUDIT & HARDWARE DISCOVERY
 
 **Document ID:** HKT-AUD-2026-001  
 **Execution Timestamp:** 2026-10-14T15:10:00+05:30  
@@ -40,7 +40,7 @@ $$\text{Finished dry solids} = 14,698.9 \times (1 - 0.105) = 13,155.5155\text{ k
 $$\text{Apparent Recovery} = \frac{13,155.5155}{13,425.000} = 97.9927\% \quad (\text{a } 2.007\% \text{ loss, NOT } 1.46\%)$$
 
 #### Mathematical Root Cause & Resolution
-A rigorous audit of the underlying modeling code ([`src/harakutir/dose_calculator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/dose_calculator.py)) revealed that the finished product target moisture was set to **$10.0\%$ moisture** (the standard shelf-stable packaging target in India to eliminate mold and weevil proliferation), rather than $10.5\%$.
+A rigorous audit of the underlying modeling code ([`src/finnoaq/dose_calculator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/dose_calculator.py)) revealed that the finished product target moisture was set to **$10.0\%$ moisture** (the standard shelf-stable packaging target in India to eliminate mold and weevil proliferation), rather than $10.5\%$.
 Evaluating finished mass at the true target of $10.0\%$ moisture ($90.0\%$ dry solids):
 $$\text{Finished dry solids at } 98.54\% \text{ recovery} = 13,425.000 \times 0.9854 = 13,228.995\text{ kg/day}$$
 $$\text{Saleable finished mass} = \frac{13,228.995}{1 - 0.100} = \frac{13,228.995}{0.900} = \mathbf{14,698.883\text{ kg/day}} \approx \mathbf{14,698.9\text{ kg/day}}$$

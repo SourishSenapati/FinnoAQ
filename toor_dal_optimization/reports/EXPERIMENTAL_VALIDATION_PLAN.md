@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — EXPERIMENTAL VALIDATION & PREREGISTERED LAB PROTOCOL
+# FINNOAQ TOOR DAL — EXPERIMENTAL VALIDATION & PREREGISTERED LAB PROTOCOL
 
 **Document ID:** HKT-EXP-2026-001  
 **Protocol Standard:** Preregistered Randomized Block Confirmatory Study  
@@ -69,7 +69,7 @@ To eliminate operator subjectivity and thermal variance across domestic stoves:
 
 ## 4. Techno-Economic Capital Preservation: ₹50 vs ₹1,98,000
 
-| Evaluation Option | Description | Direct Cost (INR) | Turnaround Time | Strategic Value to Harakutir |
+| Evaluation Option | Description | Direct Cost (INR) | Turnaround Time | Strategic Value to FinnoaQ |
 | :--- | :--- | :--- | :--- | :--- |
 | **Option A: Commercial CRO Lab** | Send samples to external commercial analytical laboratory for routine texture analysis and proximate testing. | **₹1,73,000 – ₹1,98,000** | 20 – 30 business days | High cost; yields standard charts without process engineering integration. |
 | **Option B: In-House Kitchen Protocol (RECOMMENDED)** | Execute the preregistered 4-arm standardized pressure cooker protocol using existing kitchen equipment and food-grade reagents. | **₹50 – ₹100** | **2 – 3 days** | **Preserves ~₹1.98 Lakh in capital** for pilot equipment fabrication or GPU upgrades; yields immediate physical verification. |

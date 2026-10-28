@@ -1,7 +1,7 @@
 # LOOP PREVENTION & RETRY CONTROL AUDIT
-## Harakutir Omega v4 Anti-Loop Architecture & Execution Governance
+## FinnoaQ Omega v4 Anti-Loop Architecture & Execution Governance
 
-**Standard:** Learn Harness Engineering (WalkingLabs) Lecture 13 + Harakutir Omega v4 Section 15  
+**Standard:** Learn Harness Engineering (WalkingLabs) Lecture 13 + FinnoaQ Omega v4 Section 15  
 **Project:** Tanzanian Toor Dal Optimization Engine  
 **Date:** 13 October 2026  
 **Status:** FULLY ENFORCED & AUDITED  

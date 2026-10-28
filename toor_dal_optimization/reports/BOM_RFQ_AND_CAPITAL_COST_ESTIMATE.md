@@ -8,7 +8,7 @@
 
 ## 1. Capital Cost Estimate (AACE Class 4 Preliminary Screening)
 
-The capital expenditure (CapEx) for the complete 15 MT/day Harakutir Toor Dal processing facility is estimated below in accordance with AACE International Class 4 standard practices (accuracy range $-20\% / +30\%$):
+The capital expenditure (CapEx) for the complete 15 MT/day FinnoaQ Toor Dal processing facility is estimated below in accordance with AACE International Class 4 standard practices (accuracy range $-20\% / +30\%$):
 
 | Work Breakdown Category | Description / Scope | Bought-Out / Custom | Subtotal (₹ Lakhs INR) | Accuracy Class | Lead Time (Weeks) |
 | :--- | :--- | :---: | :---: | :---: | :---: |

@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — OFFLINE OPERATIONS RUNBOOK
+# FINNOAQ TOOR DAL — OFFLINE OPERATIONS RUNBOOK
 
 **Document ID:** HKT-RBK-2026-002  
 **Version:** 5.0.0 (Master Build Directive & Complete 15 TPD Plant Engineering)  
@@ -35,7 +35,7 @@ cd d:\PROJECT\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\finnoaq\toor_dal_optimizati
 ### Workflow A: 15 MT/day Detailed Machine Sizing & ASME Mechanical Calculations
 Run the first-principles sizing calculator for soak tanks, hydrofoil agitator shaft, fluid bed psychrometrics, and packaging line:
 ```powershell
-& "C:\Python313\python.exe" src/harakutir/detailed_machine_and_plant_engineering.py
+& "C:\Python313\python.exe" src/finnoaq/detailed_machine_and_plant_engineering.py
 ```
 
 ### Workflow B: Generate Editable 2D DXF CAD Drawings, 3D STEP Models, and Vector PDF
@@ -47,19 +47,19 @@ Regenerate all 10 DXF CAD drawings, 4 STEP AP214 models, OBJ 3D meshes, and the 
 ### Workflow C: 15 MT/day Industrial Plant Design & Stream Tables
 Calculate throughput across 8h, 16h, 24h schedules, dual feed/output bases, rigorous mass balance, drying thermodynamics, and low/base/high OpEx:
 ```powershell
-& "C:\Python313\python.exe" -c "from src.harakutir.plant_design_15tpd import PlantDesign15TPD; p = PlantDesign15TPD(); print('Mass Bal:', p.calculate_rigorous_mass_balance()['overall_closure']); print('OpEx:', p.calculate_techno_economics('base'))"
+& "C:\Python313\python.exe" -c "from src.finnoaq.plant_design_15tpd import PlantDesign15TPD; p = PlantDesign15TPD(); print('Mass Bal:', p.calculate_rigorous_mass_balance()['overall_closure']); print('OpEx:', p.calculate_techno_economics('base'))"
 ```
 
 ### Workflow D: Benchmark True GPU 2D Finite-Difference Stencil
 Run the empirical 2D diffusion-reaction stencil across mesh sizes from $512^2$ to $8192^2$ ($67.1\text{M nodes}$) on the local RTX 4050 Laptop GPU:
 ```powershell
-& "C:\Python313\python.exe" -c "from src.harakutir.high_res_spatial_solver import benchmark_real_2d_pde_stencil; print(benchmark_real_2d_pde_stencil(n=8192, steps=10))"
+& "C:\Python313\python.exe" -c "from src.finnoaq.high_res_spatial_solver import benchmark_real_2d_pde_stencil; print(benchmark_real_2d_pde_stencil(n=8192, steps=10))"
 ```
 
 ### Workflow E: Chemical Dosing & Formulation Multi-Basis Separation
 Compare $0.50\%$ w/w in soak liquor ($112.5\text{ kg/day}$) against $0.50\%$ of dal feed ($75.0\text{ kg/day}$):
 ```powershell
-& "C:\Python313\python.exe" -c "from src.harakutir.plant_design_15tpd import PlantDesign15TPD; p = PlantDesign15TPD(); print(p.calculate_chemical_dosing_bases(0.50))"
+& "C:\Python313\python.exe" -c "from src.finnoaq.plant_design_15tpd import PlantDesign15TPD; p = PlantDesign15TPD(); print(p.calculate_chemical_dosing_bases(0.50))"
 ```
 
 ### Workflow F: Physical Kitchen Trial Data Entry & Hypothesis Testing

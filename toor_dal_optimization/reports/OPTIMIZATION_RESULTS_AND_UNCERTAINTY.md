@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — OPTIMIZATION RESULTS & UNCERTAINTY ANALYSIS
+# FINNOAQ TOOR DAL — OPTIMIZATION RESULTS & UNCERTAINTY ANALYSIS
 
 **Document ID:** FIN-OPT-UNCERT-2026-002  
 **Date:** 15 October 2026  
@@ -11,7 +11,7 @@
 
 > [!CAUTION]
 > ### FORMAL STATUS: NO VALIDATED WINNER
-> In strict compliance with the project constitution and the Master Build Directive, **there is currently NO VALIDATED WINNER** for the Harakutir Toor Dal cooking-time optimization.
+> In strict compliance with the project constitution and the Master Build Directive, **there is currently NO VALIDATED WINNER** for the FinnoaQ Toor Dal cooking-time optimization.
 >
 > Although computational simulations, multiscale models, and literature heuristics identify promising formulations, **zero target-lot physical kitchen experiments have been conducted**. No prompt, passing unit test, GPU run, or synthetic surrogate can substitute for empirical evidence. Every treated candidate remains classified as a `COMPUTATIONAL_HYPOTHESIS`.
 >

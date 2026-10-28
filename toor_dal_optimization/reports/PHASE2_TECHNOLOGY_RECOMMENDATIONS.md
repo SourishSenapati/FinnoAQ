@@ -1,6 +1,6 @@
-# Harakutir Phase 2 Technology Recommendations & Candidate Matrices
+# FinnoaQ Phase 2 Technology Recommendations & Candidate Matrices
 
-**Date:** 16 October 2026  
+**Date:** 28 October 2026  
 **Governing SOW Section:** Section 18 (Candidate Technology Families)  
 **Status:** `PRELIMINARY_NOT_OPTIMIZED`  
 

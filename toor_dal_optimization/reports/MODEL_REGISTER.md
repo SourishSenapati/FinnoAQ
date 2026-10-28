@@ -1,9 +1,9 @@
-# HARAKUTIR MATHEMATICAL MODEL REGISTER & SCIENTIFIC CITATIONS
+# FINNOAQ MATHEMATICAL MODEL REGISTER & SCIENTIFIC CITATIONS
 ## Computational Hierarchy (Levels 1–5), Governing Equations & Validation Boundaries
 
 **Document ID:** HKT-MOD-2026-004  
 **Version:** 3.0.0  
-**Implementation Modules:** `src/harakutir/hydration.py`, `src/harakutir/gpu_engine.py`, `src/harakutir/foodoscope.py`, `src/harakutir/digital_twin.py`  
+**Implementation Modules:** `src/finnoaq/hydration.py`, `src/finnoaq/gpu_engine.py`, `src/finnoaq/foodoscope.py`, `src/finnoaq/digital_twin.py`  
 **System System of Record:** Local Workspace (`toor_dal_optimization/`)  
 
 ---
@@ -43,7 +43,7 @@ The modeling architecture follows a progressive hierarchy of physical and comput
   - $k_2$: Peleg capacity constant ($\%^{-1}$)
 * **Derived Metrics:** Initial hydration rate $R_0 = 1/k_1$ (%/min); Equilibrium moisture $M_e = M_0 + 1/k_2$ (%).
 * **Fitting Algorithm:** Non-Linear Least Squares (SciPy Levenberg-Marquardt) with 95% asymptotic confidence intervals and parameter covariance identifiability checks.
-* **Code Implementation:** `src/harakutir/hydration.py::fit_peleg_model()`
+* **Code Implementation:** `src/finnoaq/hydration.py::fit_peleg_model()`
 * **Validation Status:** Numerically identified ($R^2 = 1.000$, $RMSE = 0.0022$ on benchmark test curve).
 
 ### Model M-02: GPU Spherical Fickian Moisture & Heat Diffusion Solver
@@ -57,7 +57,7 @@ The modeling architecture follows a progressive hierarchy of physical and comput
 * **Analytical Fourier Solution on GPU:**
   $$M(r, t) = M_{\text{eq}} + (M_0 - M_{\text{eq}}) \frac{2 R}{\pi r} \sum_{n=1}^{K} \frac{(-1)^{n+1}}{n} \sin\left(\frac{n \pi r}{R}\right) \exp\left(-\frac{n^2 \pi^2 D_{\text{eff}} t}{R^2}\right)$$
 * **Hardware Execution:** Vectorized tensor calculation running on NVIDIA GeForce RTX 4050 Laptop GPU (`cuda:0`).
-* **Code Implementation:** `src/harakutir/gpu_engine.py::solve_coupled_radial_diffusion_pde()`
+* **Code Implementation:** `src/finnoaq/gpu_engine.py::solve_coupled_radial_diffusion_pde()`
 * **Performance:** Executes 50 shells $\times$ 60 modes in **$0.14\text{ seconds}$** on RTX 4050.
 
 ### Model M-03: Foodoscope Coupled Volatile & Nutrient Retention Kinetics
@@ -69,7 +69,7 @@ The modeling architecture follows a progressive hierarchy of physical and comput
      $$\text{BOSI} = 1.0 - \frac{[\text{Hexanal}]_t + 1.5 [\text{1-Octen-3-ol}]_t}{[\text{Hexanal}]_0 + 1.5 [\text{1-Octen-3-ol}]_0}$$
   3. *Available Lysine Degradation Kinetics:*
      $$\frac{d[\text{Lys}]}{dt} = -k_{\text{lys}}(T, M) [\text{Lys}], \quad k_{\text{lys}}(T) = 0.00025 \exp\left(-\frac{88.0}{R}\left(\frac{1}{T} - \frac{1}{373.15}\right)\right) \left(\frac{M}{12.0}\right)^{0.8}$$
-* **Code Implementation:** `src/harakutir/foodoscope.py::simulate_thermal_flavor_and_nutrient_kinetics()`
+* **Code Implementation:** `src/finnoaq/foodoscope.py::simulate_thermal_flavor_and_nutrient_kinetics()`
 * **Validation Boundary:** Validated for grain temperatures between $40^\circ\text{C}$ and $200^\circ\text{C}$, moisture $8\% - 30\%$.
 
 ### Model M-04: Industrial Scale Unit Operations Mass & Energy Balance
@@ -78,7 +78,7 @@ The modeling architecture follows a progressive hierarchy of physical and comput
   - Overall Mass: $\dot{m}_{\text{grain, in}} + \dot{m}_{\text{water, temper}} = \dot{m}_{\text{grain, out}} + \dot{m}_{\text{evap}} + \dot{m}_{\text{fines}}$
   - Specific Heat Duty:
     $$q_{\text{thermal}} = \frac{\dot{m}_{\text{grain}} C_p \Delta T + \dot{m}_{\text{evap}} L_v}{\eta_{\text{thermal}} \cdot \dot{m}_{\text{grain}}}$$
-* **Code Implementation:** `src/harakutir/digital_twin.py::simulate_industrial_scale_unit_operations()`
+* **Code Implementation:** `src/finnoaq/digital_twin.py::simulate_industrial_scale_unit_operations()`
 * **Throughput Basis:** $5.0\text{ Tonnes/hour}$ continuous commercial line.
 
 ---

@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461330.8476967593
+2461331.6658912036
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461330.8476967593
+2461331.6658912036
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-114
+113
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{1BF35E12-DBFC-48C4-A743-0B7AB2BBF3A4}
+{E74B0E7A-DB4B-4FB6-8163-69AB49CF32FE}
   9
 $VERSIONGUID
   2
-{871378C2-39C6-4004-9818-0793461BE1CF}
+{B93D08E0-8869-48A6-B7C4-3407661D0903}
   9
 $EXTNAMES
 290
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
 FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
 P&ID - PACKAGING LINE & CLEANROOM DEDUSTING
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: PIPING | STAGE: CONCEPTUAL FEED
+DISCIPLINE: PIPING | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-006
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 6 OF 12
+SHEET: 6 OF 13
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6687,13 +6687,13 @@ AcDbLine
  10
 40.0
  20
-220.0
+200.0
  30
 0.0
  11
 80.0
  21
-290.0
+280.0
  31
 0.0
   0
@@ -6713,13 +6713,13 @@ AcDbLine
  10
 45.0
  20
-215.0
+195.0
  30
 0.0
  11
 85.0
  21
-285.0
+275.0
  31
 0.0
   0
@@ -6737,17 +6737,17 @@ AcDbText
  10
 35.0
  20
-300.0
+290.0
  30
 0.0
  40
 2.0
   1
-CV-103 Z-CONVEYOR
+CV-103 Z-BUCKET CONVEYOR
  11
 35.0
  21
-300.0
+290.0
  31
 0.0
 100
@@ -6762,8 +6762,8 @@ C0
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -6773,19 +6773,19 @@ AcDbPolyline
  10
 67.0
  20
-273.5
+263.5
  10
 70.0
  20
-275.0
+265.0
  10
 67.0
  20
-276.5
+266.5
  10
 67.0
  20
-273.5
+263.5
   0
 LWPOLYLINE
   5
@@ -6807,23 +6807,23 @@ AcDbPolyline
  10
 92.0
  20
-282.0
+277.0
  10
 128.0
  20
-270.0
+265.0
  10
 128.0
  20
-258.0
+253.0
  10
 92.0
  20
-270.0
+265.0
  10
 92.0
  20
-282.0
+277.0
   0
 TEXT
   5
@@ -6839,7 +6839,7 @@ AcDbText
  10
 88.0
  20
-288.0
+283.0
  30
 0.0
  40
@@ -6849,7 +6849,7 @@ DEDUSTING SCREEN SC-102
  11
 88.0
  21
-288.0
+283.0
  31
 0.0
 100
@@ -6869,7 +6869,7 @@ AcDbText
  10
 90.0
  20
-252.0
+247.0
  30
 0.0
  40
@@ -6879,7 +6879,7 @@ FINES REMOVAL (1.5mm MESH)
  11
 90.0
  21
-252.0
+247.0
  31
 0.0
 100
@@ -6901,13 +6901,13 @@ AcDbLine
  10
 128.0
  20
-270.0
+265.0
  30
 0.0
  11
 180.0
  21
-270.0
+265.0
  31
 0.0
   0
@@ -6927,7 +6927,7 @@ AcDbLine
  10
 180.0
  20
-270.0
+265.0
  30
 0.0
  11
@@ -6946,8 +6946,8 @@ C6
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7127,7 +7127,7 @@ AcDbCircle
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
@@ -7138,16 +7138,18 @@ CC
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-146.0
+147.5
  20
 260.0
  30
 0.0
  11
-158.0
+156.5
  21
 260.0
  31
@@ -7167,17 +7169,17 @@ AcDbText
  10
 148.8
  20
-261.2
+261.0
  30
 0.0
  40
-2.2
+1.6
   1
 LSH
  11
 148.8
  21
-261.2
+261.0
  31
 0.0
 100
@@ -7195,19 +7197,19 @@ ANNOTATION
 100
 AcDbText
  10
-148.8
+149.0
  20
-255.8
+256.8
  30
 0.0
  40
-2.0
+1.6
   1
 301
  11
-148.8
+149.0
  21
-255.8
+256.8
  31
 0.0
 100
@@ -7231,7 +7233,7 @@ AcDbLine
  10
 152.0
  20
-266.0
+264.5
  30
 0.0
  11
@@ -7261,7 +7263,7 @@ AcDbCircle
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
@@ -7272,16 +7274,18 @@ D1
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-146.0
+147.5
  20
 245.0
  30
 0.0
  11
-158.0
+156.5
  21
 245.0
  31
@@ -7301,17 +7305,17 @@ AcDbText
  10
 148.8
  20
-246.2
+246.0
  30
 0.0
  40
-2.2
+1.6
   1
 LSL
  11
 148.8
  21
-246.2
+246.0
  31
 0.0
 100
@@ -7329,19 +7333,19 @@ ANNOTATION
 100
 AcDbText
  10
-148.8
+149.0
  20
-240.8
+241.8
  30
 0.0
  40
-2.0
+1.6
   1
 301
  11
-148.8
+149.0
  21
-240.8
+241.8
  31
 0.0
 100
@@ -7365,7 +7369,7 @@ AcDbLine
  10
 152.0
  20
-251.0
+249.5
  30
 0.0
  11
@@ -7393,27 +7397,27 @@ AcDbPolyline
  70
 0
  10
-176.0
+178.0
  20
 206.0
  10
-184.0
+182.0
  20
 214.0
  10
-176.0
+178.0
  20
 214.0
  10
-184.0
+182.0
  20
 206.0
  10
-176.0
+178.0
  20
 206.0
   0
-LINE
+TEXT
   5
 D6
 330
@@ -7421,115 +7425,11 @@ D6
 100
 AcDbEntity
   8
-VALVES
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-180.0
- 20
-210.0
- 30
-0.0
- 11
 186.0
- 21
-210.0
- 31
-0.0
-  0
-ARC
-  5
-D7
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-189.0
- 20
-210.0
- 30
-0.0
- 40
-3.0
-100
-AcDbArc
- 50
-270.0
- 51
-90.0
-  0
-LINE
-  5
-D8
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-189.0
- 20
-207.0
- 30
-0.0
- 11
-189.0
- 21
-213.0
- 31
-0.0
-  0
-TEXT
-  5
-D9
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-193.0
- 20
-209.0
- 30
-0.0
- 40
-1.8
-  1
-RV-301
- 11
-193.0
- 21
-209.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-DA
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-172.0
  20
 209.0
  30
@@ -7537,9 +7437,9 @@ AcDbText
  40
 1.5
   1
-FC
+RV-301
  11
-172.0
+186.0
  21
 209.0
  31
@@ -7549,7 +7449,7 @@ AcDbText
   0
 LINE
   5
-DB
+D7
 330
 17
 100
@@ -7575,7 +7475,7 @@ AcDbLine
   0
 LINE
   5
-DC
+D8
 330
 17
 100
@@ -7601,7 +7501,7 @@ AcDbLine
   0
 LINE
   5
-DD
+D9
 330
 17
 100
@@ -7621,21 +7521,21 @@ AcDbLine
  11
 290.0
  21
-215.0
+225.0
  31
 0.0
   0
 LWPOLYLINE
   5
-DE
+DA
 330
 17
 100
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7645,23 +7545,23 @@ AcDbPolyline
  10
 288.5
  20
-223.0
+233.0
  10
 290.0
  20
-220.0
+230.0
  10
 291.5
  20
-223.0
+233.0
  10
 288.5
  20
-223.0
+233.0
   0
 LWPOLYLINE
   5
-DF
+DB
 330
 17
 100
@@ -7679,27 +7579,27 @@ AcDbPolyline
  10
 265.0
  20
-215.0
+225.0
  10
 315.0
  20
-215.0
+225.0
  10
 315.0
  20
-155.0
+165.0
  10
 265.0
  20
-155.0
+165.0
  10
 265.0
  20
-215.0
+225.0
   0
 TEXT
   5
-E0
+DC
 330
 17
 100
@@ -7711,7 +7611,7 @@ AcDbText
  10
 264.0
  20
-220.0
+230.0
  30
 0.0
  40
@@ -7721,7 +7621,7 @@ PACKAGING MACHINE PK-101
  11
 264.0
  21
-220.0
+230.0
  31
 0.0
 100
@@ -7729,7 +7629,7 @@ AcDbText
   0
 TEXT
   5
-E1
+DD
 330
 17
 100
@@ -7741,7 +7641,7 @@ AcDbText
  10
 266.0
  20
-195.0
+205.0
  30
 0.0
  40
@@ -7751,6 +7651,36 @@ DUAL LINE: 5 kg POUCH & 30 kg BULK
  11
 266.0
  21
+205.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+DE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+268.0
+ 20
+195.0
+ 30
+0.0
+ 40
+1.6
+  1
+NITROGEN FLUSH SYSTEM (<2% O2)
+ 11
+268.0
+ 21
 195.0
  31
 0.0
@@ -7759,127 +7689,97 @@ AcDbText
   0
 TEXT
   5
+DF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+270.0
+ 20
+178.0
+ 30
+0.0
+ 40
+1.8
+  1
+RATE: 926.9 kg/h @ 10.0% wb
+ 11
+270.0
+ 21
+178.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+E0
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+40
+100
+AcDbLine
+ 10
+315.0
+ 20
+175.0
+ 30
+0.0
+ 11
+510.0
+ 21
+175.0
+ 31
+0.0
+  0
+LINE
+  5
+E1
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+40
+100
+AcDbLine
+ 10
+315.0
+ 20
+170.0
+ 30
+0.0
+ 11
+510.0
+ 21
+170.0
+ 31
+0.0
+  0
+LWPOLYLINE
+  5
 E2
 330
 17
 100
 AcDbEntity
   8
-ANNOTATION
-100
-AcDbText
- 10
-270.0
- 20
-185.0
- 30
-0.0
- 40
-1.6
-  1
-NITROGEN FLUSH SYSTEM
- 11
-270.0
- 21
-185.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-E3
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-274.0
- 20
-168.0
- 30
-0.0
- 40
-1.8
-  1
-RATE: 926.9 kg/h
- 11
-274.0
- 21
-168.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-E4
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbLine
- 10
-315.0
- 20
-165.0
- 30
-0.0
- 11
-510.0
- 21
-165.0
- 31
-0.0
-  0
-LINE
-  5
-E5
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbLine
- 10
-315.0
- 20
-160.0
- 30
-0.0
- 11
-510.0
- 21
-160.0
- 31
-0.0
-  0
-LWPOLYLINE
-  5
-E6
-330
-17
-100
-AcDbEntity
-  8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -7889,23 +7789,23 @@ AcDbPolyline
  10
 332.0
  20
-161.5
+171.5
  10
 335.0
  20
-163.0
+173.0
  10
 332.0
  20
-164.5
+174.5
  10
 332.0
  20
-161.5
+171.5
   0
 LWPOLYLINE
   5
-E7
+E3
 330
 17
 100
@@ -7923,23 +7823,131 @@ AcDbPolyline
  10
 370.0
  20
-175.0
+185.0
  10
 390.0
  20
-175.0
+185.0
  10
 390.0
  20
-150.0
+160.0
  10
 370.0
  20
-150.0
+160.0
  10
 370.0
  20
-175.0
+185.0
+  0
+TEXT
+  5
+E4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+362.0
+ 20
+192.0
+ 30
+0.0
+ 40
+1.8
+  1
+METAL DETECTOR MD-301
+ 11
+362.0
+ 21
+192.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+E5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+362.0
+ 20
+152.0
+ 30
+0.0
+ 40
+1.4
+  1
+(1.5mm Fe / 2.0mm Non-Fe)
+ 11
+362.0
+ 21
+152.0
+ 31
+0.0
+100
+AcDbText
+  0
+CIRCLE
+  5
+E6
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+25
+100
+AcDbCircle
+ 10
+380.0
+ 20
+208.0
+ 30
+0.0
+ 40
+4.5
+  0
+LINE
+  5
+E7
+330
+17
+100
+AcDbEntity
+  8
+INSTRUMENTATION
+370
+18
+100
+AcDbLine
+ 10
+375.5
+ 20
+208.0
+ 30
+0.0
+ 11
+384.5
+ 21
+208.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7953,19 +7961,19 @@ ANNOTATION
 100
 AcDbText
  10
-365.0
+376.8
  20
-182.0
+209.0
  30
 0.0
  40
-1.8
+1.6
   1
-METAL DETECTOR
+XI
  11
-365.0
+376.8
  21
-182.0
+209.0
  31
 0.0
 100
@@ -7983,125 +7991,19 @@ ANNOTATION
 100
 AcDbText
  10
-364.0
+377.0
  20
-142.0
+204.8
  30
 0.0
  40
-1.5
-  1
-MD-301 (Fe/Non-Fe/SS)
- 11
-364.0
- 21
-142.0
- 31
-0.0
-100
-AcDbText
-  0
-CIRCLE
-  5
-EA
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-370
-25
-100
-AcDbCircle
- 10
-380.0
- 20
-198.0
- 30
-0.0
- 40
-6.0
-  0
-LINE
-  5
-EB
-330
-17
-100
-AcDbEntity
-  8
-INSTRUMENTATION
-100
-AcDbLine
- 10
-374.0
- 20
-198.0
- 30
-0.0
- 11
-386.0
- 21
-198.0
- 31
-0.0
-  0
-TEXT
-  5
-EC
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-376.8
- 20
-199.2
- 30
-0.0
- 40
-2.2
-  1
-XI
- 11
-376.8
- 21
-199.2
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-ED
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-376.8
- 20
-193.8
- 30
-0.0
- 40
-2.0
+1.6
   1
 301
  11
-376.8
+377.0
  21
-193.8
+204.8
  31
 0.0
 100
@@ -8109,7 +8011,7 @@ AcDbText
   0
 LINE
   5
-EE
+EA
 330
 17
 100
@@ -8125,19 +8027,19 @@ AcDbLine
  10
 380.0
  20
-192.0
+203.5
  30
 0.0
  11
 380.0
  21
-175.0
+185.0
  31
 0.0
   0
 LWPOLYLINE
   5
-EF
+EB
 330
 17
 100
@@ -8155,101 +8057,27 @@ AcDbPolyline
  10
 401.0
  20
-167.0
+175.0
  10
 409.0
  20
-159.0
+171.0
  10
 409.0
  20
-167.0
+175.0
  10
 401.0
  20
-159.0
+171.0
  10
 401.0
  20
-167.0
-  0
-LINE
-  5
-F0
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-405.0
- 20
-163.0
- 30
-0.0
- 11
-405.0
- 21
-169.0
- 31
-0.0
-  0
-ARC
-  5
-F1
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbCircle
- 10
-405.0
- 20
-172.0
- 30
-0.0
- 40
-3.0
-100
-AcDbArc
- 50
-0.0
- 51
-180.0
-  0
-LINE
-  5
-F2
-330
-17
-100
-AcDbEntity
-  8
-VALVES
-100
-AcDbLine
- 10
-402.0
- 20
-172.0
- 30
-0.0
- 11
-408.0
- 21
-172.0
- 31
-0.0
+175.0
   0
 TEXT
   5
-F3
+EC
 330
 17
 100
@@ -8259,19 +8087,19 @@ ANNOTATION
 100
 AcDbText
  10
-399.0
+400.0
  20
-176.0
+166.0
  30
 0.0
  40
-1.8
+1.5
   1
 XV-302
  11
-399.0
+400.0
  21
-176.0
+166.0
  31
 0.0
 100
@@ -8279,37 +8107,7 @@ AcDbText
   0
 TEXT
   5
-F4
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-402.0
- 20
-157.0
- 30
-0.0
- 40
-1.5
-  1
-FC
- 11
-402.0
- 21
-157.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-F5
+ED
 330
 17
 100
@@ -8321,17 +8119,17 @@ AcDbText
  10
 398.0
  20
-152.0
+162.0
  30
 0.0
  40
 1.5
   1
-REJECT DUMP
+REJECT FLAP
  11
 398.0
  21
-152.0
+162.0
  31
 0.0
 100
@@ -8339,7 +8137,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-F6
+EE
 330
 17
 100
@@ -8357,27 +8155,27 @@ AcDbPolyline
  10
 438.0
  20
-175.0
+185.0
  10
 462.0
  20
-175.0
+185.0
  10
 462.0
  20
-150.0
+160.0
  10
 438.0
  20
-150.0
+160.0
  10
 438.0
  20
-175.0
+185.0
   0
 TEXT
   5
-F7
+EF
 330
 17
 100
@@ -8387,19 +8185,19 @@ ANNOTATION
 100
 AcDbText
  10
-436.0
+434.0
  20
-182.0
+192.0
  30
 0.0
  40
 1.8
   1
-CHECKWEIGHER
+CHECKWEIGHER CW-301
  11
-436.0
+434.0
  21
-182.0
+192.0
  31
 0.0
 100
@@ -8407,7 +8205,7 @@ AcDbText
   0
 TEXT
   5
-F8
+F0
 330
 17
 100
@@ -8417,19 +8215,19 @@ ANNOTATION
 100
 AcDbText
  10
-436.0
+434.0
  20
-142.0
+152.0
  30
 0.0
  40
-1.5
+1.4
   1
-CW-301 (+/- 2g)
++/- 2g Dynamic Accuracy
  11
-436.0
+434.0
  21
-142.0
+152.0
  31
 0.0
 100
@@ -8437,7 +8235,7 @@ AcDbText
   0
 CIRCLE
   5
-F9
+F1
 330
 17
 100
@@ -8451,39 +8249,41 @@ AcDbCircle
  10
 450.0
  20
-198.0
+208.0
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
-FA
+F2
 330
 17
 100
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-444.0
+445.5
  20
-198.0
+208.0
  30
 0.0
  11
-456.0
+454.5
  21
-198.0
+208.0
  31
 0.0
   0
 TEXT
   5
-FB
+F3
 330
 17
 100
@@ -8495,17 +8295,17 @@ AcDbText
  10
 446.8
  20
-199.2
+209.0
  30
 0.0
  40
-2.2
+1.6
   1
 WIC
  11
 446.8
  21
-199.2
+209.0
  31
 0.0
 100
@@ -8513,7 +8313,7 @@ AcDbText
   0
 TEXT
   5
-FC
+F4
 330
 17
 100
@@ -8523,19 +8323,19 @@ ANNOTATION
 100
 AcDbText
  10
-446.8
+447.0
  20
-193.8
+204.8
  30
 0.0
  40
-2.0
+1.6
   1
 302
  11
-446.8
+447.0
  21
-193.8
+204.8
  31
 0.0
 100
@@ -8543,7 +8343,7 @@ AcDbText
   0
 LINE
   5
-FD
+F5
 330
 17
 100
@@ -8559,27 +8359,27 @@ AcDbLine
  10
 450.0
  20
-192.0
+203.5
  30
 0.0
  11
 450.0
  21
-175.0
+185.0
  31
 0.0
   0
 LWPOLYLINE
   5
-FE
+F6
 330
 17
 100
 AcDbEntity
   8
 PROCESS_PIPING
- 62
-5
+370
+40
 100
 AcDbPolyline
  90
@@ -8589,23 +8389,23 @@ AcDbPolyline
  10
 502.0
  20
-161.5
+171.5
  10
 505.0
  20
-163.0
+173.0
  10
 502.0
  20
-164.5
+174.5
  10
 502.0
  20
-161.5
+171.5
   0
 TEXT
   5
-FF
+F7
 330
 17
 100
@@ -8615,9 +8415,9 @@ ANNOTATION
 100
 AcDbText
  10
-475.0
+465.0
  20
-175.0
+185.0
  30
 0.0
  40
@@ -8625,9 +8425,9 @@ AcDbText
   1
 TO PALLETIZER & WAREHOUSE
  11
-475.0
+465.0
  21
-175.0
+185.0
  31
 0.0
 100
@@ -8635,7 +8435,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-100
+F8
 330
 17
 100
@@ -8681,7 +8481,7 @@ AcDbPolyline
   0
 TEXT
   5
-101
+F9
 330
 17
 100
@@ -8711,7 +8511,7 @@ AcDbText
   0
 TEXT
   5
-102
+FA
 330
 17
 100
@@ -8721,7 +8521,7 @@ ANNOTATION
 100
 AcDbText
  10
-368.0
+366.0
  20
 320.0
  30
@@ -8729,9 +8529,9 @@ AcDbText
  40
 1.6
   1
-HEPA H-13 POLICING FILTER
+HEPA H-13 POLICING FILTER (99.95%)
  11
-368.0
+366.0
  21
 320.0
  31
@@ -8741,7 +8541,7 @@ AcDbText
   0
 CIRCLE
   5
-103
+FB
 330
 17
 100
@@ -8759,27 +8559,29 @@ AcDbCircle
  30
 0.0
  40
-6.0
+4.5
   0
 LINE
   5
-104
+FC
 330
 17
 100
 AcDbEntity
   8
 INSTRUMENTATION
+370
+18
 100
 AcDbLine
  10
-264.0
+265.5
  20
 320.0
  30
 0.0
  11
-276.0
+274.5
  21
 320.0
  31
@@ -8787,7 +8589,7 @@ AcDbLine
   0
 TEXT
   5
-105
+FD
 330
 17
 100
@@ -8799,17 +8601,17 @@ AcDbText
  10
 266.8
  20
-321.2
+321.0
  30
 0.0
  40
-2.2
+1.6
   1
 PDIT
  11
 266.8
  21
-321.2
+321.0
  31
 0.0
 100
@@ -8817,7 +8619,7 @@ AcDbText
   0
 TEXT
   5
-106
+FE
 330
 17
 100
@@ -8827,19 +8629,19 @@ ANNOTATION
 100
 AcDbText
  10
-266.8
+267.0
  20
-315.8
+316.8
  30
 0.0
  40
-2.0
+1.6
   1
 303
  11
-266.8
+267.0
  21
-315.8
+316.8
  31
 0.0
 100
@@ -8847,7 +8649,7 @@ AcDbText
   0
 TEXT
   5
-107
+FF
 330
 17
 100
@@ -8877,6 +8679,248 @@ AcDbText
   0
 LWPOLYLINE
   5
+100
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+145.0
+ 10
+290.0
+ 20
+145.0
+ 10
+290.0
+ 20
+65.0
+ 10
+25.0
+ 20
+65.0
+ 10
+25.0
+ 20
+145.0
+  0
+TEXT
+  5
+101
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+137.0
+ 30
+0.0
+ 40
+2.2
+  1
+PACKAGING HACCP CRITICAL CONTROL POINTS (CCP-1 & CCP-2):
+ 11
+29.0
+ 21
+137.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+102
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+25.0
+ 20
+133.0
+ 30
+0.0
+ 11
+290.0
+ 21
+133.0
+ 31
+0.0
+  0
+TEXT
+  5
+103
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+126.0
+ 30
+0.0
+ 40
+1.7
+  1
+1. CCP-1 (Metal Detection): MD-301 audited every 2h with certified test wands (1.5mm Fe, 2.0mm Non-Fe, 2.5mm SS).
+ 11
+29.0
+ 21
+126.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+115.0
+ 30
+0.0
+ 40
+1.7
+  1
+2. Any metal trip immediately triggers pneumatic reject flap XV-302 and halts infeed conveyor CV-103.
+ 11
+29.0
+ 21
+115.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+105
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+104.0
+ 30
+0.0
+ 40
+1.7
+  1
+3. CCP-2 (Moisture Verification): Final packaged product moisture locked @ 10.0% +/- 0.5% wet-basis.
+ 11
+29.0
+ 21
+104.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+106
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+93.0
+ 30
+0.0
+ 40
+1.7
+  1
+4. Nitrogen Gas Flush: Residual headspace oxygen < 2.0% to guarantee 12-month shelf life without lipid oxidation.
+ 11
+29.0
+ 21
+93.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+107
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+82.0
+ 30
+0.0
+ 40
+1.7
+  1
+5. ISO Class 8 Cleanroom: Differential pressure > +15 Pa maintained against raw warehouse to prevent cross-contamination.
+ 11
+29.0
+ 21
+82.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
 108
 330
 17
@@ -8893,25 +8937,25 @@ AcDbPolyline
  70
 0
  10
-35.0
+295.0
  20
-140.0
+145.0
  10
-235.0
+565.0
  20
-140.0
+145.0
  10
-235.0
+565.0
  20
-85.0
+65.0
  10
-35.0
+295.0
  20
-85.0
+65.0
  10
-35.0
+295.0
  20
-140.0
+145.0
   0
 TEXT
   5
@@ -8925,19 +8969,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-133.0
+137.0
  30
 0.0
  40
 2.2
   1
-PACKAGING HACCP CRITICAL CONTROL POINTS (CCP-1 & CCP-2):
+PACKAGING EQUIPMENT SPECIFICATIONS & LINE RATINGS:
  11
-39.0
+299.0
  21
-133.0
+137.0
  31
 0.0
 100
@@ -8955,15 +8999,15 @@ BORDER_TITLE
 100
 AcDbLine
  10
-35.0
+295.0
  20
-130.0
+133.0
  30
 0.0
  11
-235.0
+565.0
  21
-130.0
+133.0
  31
 0.0
   0
@@ -8979,19 +9023,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-123.0
+126.0
  30
 0.0
  40
-1.8
+1.7
   1
-1. CCP-1 (Metal Detection): MD-301 tested every 2h with test wands (1.5mm Fe, 2.0mm Non-Fe, 2.5mm SS).
+PK-101A (Retail Line): Vertical Form-Fill-Seal (VFFS) machine | 5.0 kg standup laminate pouches @ 25 bpm.
  11
-39.0
+299.0
  21
-123.0
+126.0
  31
 0.0
 100
@@ -9009,19 +9053,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-115.5
+115.0
  30
 0.0
  40
-1.8
+1.7
   1
-2. Any metal detection immediately triggers pneumatic reject flap XV-302 and alarms packaging operator.
+PK-101B (Bulk Line): Automatic open-mouth bagging machine | 30.0 kg HDPE-lined woven sacks @ 6 bpm.
  11
-39.0
+299.0
  21
-115.5
+115.0
  31
 0.0
 100
@@ -9039,19 +9083,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-108.0
+104.0
  30
 0.0
  40
-1.8
+1.7
   1
-3. CCP-2 (Moisture Verification): Final packaged product moisture locked @ 10.0% +/- 0.5% wet-basis.
+MD-301: Aperture 450mm x 150mm | Multi-frequency digital signal processing | IP66 washdown SS304.
  11
-39.0
+299.0
  21
-108.0
+104.0
  31
 0.0
 100
@@ -9069,19 +9113,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-100.5
+93.0
  30
 0.0
  40
-1.8
+1.7
   1
-4. Nitrogen Gas Flush: Residual headspace oxygen < 2.0% to guarantee 12-month shelf life without oxidation.
+CW-301: Dynamic strain-gauge load cell | Belt speed 35 m/min | Auto tare & zero tracking | Reject: Air blast.
  11
-39.0
+299.0
  21
-100.5
+93.0
  31
 0.0
 100
@@ -9099,49 +9143,19 @@ ANNOTATION
 100
 AcDbText
  10
-39.0
+299.0
  20
-93.0
+82.0
  30
 0.0
  40
-1.8
+1.7
   1
-5. ISO Class 8 Cleanroom: Differential pressure > +15 Pa maintained against raw warehouse to prevent cross-contamination.
+BF-101: 2,500 m3/h dedicated cleanroom exhaust filter | 24 antistatic cartridges + H-13 HEPA module | 3.0 kW.
  11
-39.0
+299.0
  21
-93.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-113
-330
-17
-100
-AcDbEntity
-  8
-BORDER_TITLE
-100
-AcDbText
- 10
-389.0
- 20
-48.0
- 30
-0.0
- 40
-2.0
-  1
-ENGR: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
- 11
-389.0
- 21
-48.0
+82.0
  31
 0.0
 100
@@ -10249,7 +10263,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:13:46.314947+00:00
+1.4.4 @ 2026-10-17T10:28:53.487994+00:00
   0
 VISUALSTYLE
   5
@@ -16811,7 +16825,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T14:50:41.381776+00:00
+1.4.4 @ 2026-10-17T10:28:53.491933+00:00
   0
 ENDSEC
   0

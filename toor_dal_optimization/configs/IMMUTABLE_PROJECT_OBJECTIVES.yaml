@@ -1,0 +1,80 @@
+# FinnoaQ TOOR DAL — IMMUTABLE PROJECT OBJECTIVES & GOAL REGISTRY
+# Controlling Standard: FinnoaQ Goal-Locked Dream-RSI Discovery Engine
+# Version: 4.0.0
+# Created: 2026-10-14T15:20:00+05:30
+
+project_identity:
+  name: "FinnoaQ Toor Dal Offline Physics Discovery Engine"
+  target_material: "Tanzanian Split/Dehulled Pigeon Pea (Cajanus cajan)"
+  preliminary_observation: "Raw Tanzanian dal requires ~6 pressure-cooker whistles (~58 min open boil), compared to ~3-3.5 whistles for Indian benchmark dal."
+  fundamental_research_question: >
+    What physically justified intervention can reduce this dal's time to a defined cooking endpoint,
+    while preserving product quality, minimizing dry-solids loss, and remaining scalable to a 15 MT/day
+    incoming-feed process?
+
+immutable_primary_objective:
+  statement: >
+    Discover, evaluate, and validate the best physically plausible treatment for substantially
+    reducing the cooking time of FinnoaQ Toor Dal's Tanzanian split/dehulled pigeon pea.
+  non_negotiable_principle: >
+    Every research task, scientific model, transformer, PINN, CUDA kernel, optimization routine,
+    and DREAM-RSI iteration must directly serve this objective. We are not building a simulator
+    merely to simulate; we are discovering which treatment works, why it works, and its operating boundaries.
+
+two_stage_lock_governance:
+  stage_1_discovery_and_proof:
+    status: "ACTIVE"
+    mandate: >
+      Establish whether a treatment can meaningfully reduce cooking time against a standardized untreated control,
+      with acceptable product quality, texture, and material recovery.
+    preregistered_acceptance_criteria:
+      primary_endpoint:
+        metric: "Standardized Instrumental Cooking Time (tau_cook)"
+        target_value_minutes: 15.0
+        maximum_acceptable_whistles: 3.5
+        measurement_standard: "Texture analyzer peak shear force <= 1.2 N/g or glass plate squash test (10/10 cotyledons spread with zero hard core)"
+      quality_and_yield_constraints:
+        minimum_dry_solids_recovery_pct: 95.5
+        nominal_target_recovery_pct: 98.54
+        maximum_retained_sodium_mg_100g: 350.0  # FSSAI low-sodium regulatory threshold
+        sensory_attributes: "Zero soapy, alkaline, or chemical off-flavor; intact cotyledon grain appearance"
+      statistical_significance_standard:
+        formal_hypothesis: "H0: mu_treated >= 25.0 min vs H1: mu_treated <= 15.0 min"
+        confirmatory_replicates: "n = 4 independent physical batches per treatment arm"
+        significance_threshold: "alpha = 2.87e-7 (Five-Sigma standard, z >= 5.0)"
+      current_stage_1_decision: "PROMISING_UNCONFIRMED"
+      rationale: >
+        Computational models and out-of-sample literature cohorts demonstrate 13.8 min cooking time
+        and 98.54% recovery. However, until physical empirical timestamps from the target Tanzanian lot
+        are certified in data/raw/, Stage 1 cannot be declared PASS.
+
+  stage_2_industrial_scaleup:
+    status: "LOCKED"
+    lock_condition: >
+      Stage 2 is strictly LOCKED until Stage 1 passes its predefined empirical validation gate.
+      Do not skip Stage 1. Do not represent computational predictions as experimental proof.
+      Do not claim that Stage 2 has been demonstrated merely because a flowsheet produces an output of 15 TPD.
+    future_scaleup_basis:
+      incoming_feed_rate_kg_day: 15000.0
+      operating_schedule: "16 hours/day (nominal two-shift operation)"
+      target_saleable_output_kg_day: 14698.88
+      target_finished_moisture_pct: 10.0
+
+dream_rsi_discovery_cycle:
+  stages:
+    - name: "1. Discover"
+      description: "Search local literature, physical models, and credible mechanistic hypotheses for cooking-time reduction strategies."
+    - name: "2. Represent"
+      description: "Convert candidate strategies into structured treatment specifications and mechanistic hypotheses."
+    - name: "3. Explain"
+      description: "Identify physical/chemical mechanism altering hydration, heat penetration, tissue softening, or pectin crosslinks."
+    - name: "4. Predict"
+      description: "Evaluate candidates using verified numerical solvers, PINNs, and validated ML surrogates."
+    - name: "5. Challenge"
+      description: "Search for counterexamples, competing mechanisms, mass-balance violations, and adverse quality effects."
+    - name: "6. Rank"
+      description: "Multi-objective Pareto comparison across cooking time, solids recovery, sodium, OpEx, and uncertainty."
+    - name: "7. Experiment or Learn"
+      description: "Active learning selection of the next computation or physical assay that maximally reduces uncertainty."
+    - name: "8. Update"
+      description: "Incorporate findings, update parameters only when justified, and advance the discovery loop."

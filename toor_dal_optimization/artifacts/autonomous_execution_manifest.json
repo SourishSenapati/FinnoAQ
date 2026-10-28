@@ -1,0 +1,69 @@
+{
+  "execution_timestamp": "2026-10-21T06:02:33.527673+00:00",
+  "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "device_type": "cuda:0",
+  "total_runtime_seconds": 74.34,
+  "mesh_refinement": [
+    {
+      "num_shells": 16,
+      "T90_min": 3.07,
+      "calcium_depletion_pct": 100.0,
+      "sodium_mg_100g": 33.2,
+      "elapsed_sec": 0.4405,
+      "rel_error_T90_pct": 0.0
+    },
+    {
+      "num_shells": 32,
+      "T90_min": 3.07,
+      "calcium_depletion_pct": 100.0,
+      "sodium_mg_100g": 33.4,
+      "elapsed_sec": 0.659,
+      "rel_error_T90_pct": 0.0
+    },
+    {
+      "num_shells": 64,
+      "T90_min": 3.07,
+      "calcium_depletion_pct": 100.0,
+      "sodium_mg_100g": 33.4,
+      "elapsed_sec": 2.7504,
+      "rel_error_T90_pct": 0.0
+    },
+    {
+      "num_shells": 128,
+      "T90_min": 3.07,
+      "calcium_depletion_pct": 100.0,
+      "sodium_mg_100g": 33.5,
+      "elapsed_sec": 11.0084,
+      "rel_error_T90_pct": 0.0
+    }
+  ],
+  "design_sweep_configurations": 1000,
+  "pareto_optimal_count": 20,
+  "large_scale_uncertainty": {
+    "n_evaluations": 100000,
+    "runtime_seconds": 56.3,
+    "t90_mean": 8.75,
+    "t90_std": 0.107,
+    "na_mean": 21.3,
+    "conditional_cpk": 30.99,
+    "conditional_sigma": 93.0,
+    "dpmo": 0.0
+  },
+  "best_conditional_candidate": {
+    "treatment_id": "EXP_0047",
+    "reagent_type": "CITRATE_BUFFER",
+    "reagent_conc_pct": 0.102,
+    "liquor_ratio": 1.33,
+    "soak_temp_c": 30.6,
+    "soak_time_min": 21.3,
+    "rinse_ratio": 0.2,
+    "calcium_depletion_pct": 89.5,
+    "solids_leaching_pct": 0.5,
+    "finished_sodium_mg_100g": 5.3,
+    "cooking_time_T90_min": 9.49,
+    "net_opex_inr_kg": 0.958,
+    "fssai_compliant": true
+  },
+  "epistemic_status": "CONDITIONAL_IN_SILICO_PREDICTION_PENDING_PHYSICAL_LOT_INTAKE"
+}

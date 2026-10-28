@@ -1,6 +1,6 @@
-# HARAKUTIR OMEGA — GATE ZERO: COMPUTATIONAL PROOF-OF-FEASIBILITY DOSSIER
+# FINNOAQ OMEGA — GATE ZERO: COMPUTATIONAL PROOF-OF-FEASIBILITY DOSSIER
 **Document ID:** `HK-REP-GATE0-FEASIBILITY-2026-001`  
-**Governing Standard:** Harakutir Omega Persistent Autonomous R&D Constitution  
+**Governing Standard:** FinnoaQ Omega Persistent Autonomous R&D Constitution  
 **Target Material:** Dehulled Split Tanzanian Toor Dal (*Cajanus cajan*)  
 **Design Basis:** **15,000 kg/Day (15 MT/Day)** Incoming Feed Rate  
 **Hardware Platform:** AMD Ryzen AI 9 365 (20 logical threads) | NVIDIA GeForce RTX 4050 Laptop GPU (6,140.5 MB GDDR6)  
@@ -61,7 +61,7 @@ A thorough search of primary peer-reviewed literature was executed to extract ex
   1. $\mathrm{NaHCO}_3$ solution slightly *delayed* initial water hydration kinetics (higher osmotic pressure in the soaking liquor), but **dramatically accelerated subsequent thermal softening kinetics during boiling**.
   2. Combining $17\text{ W/L}$ ultrasound with $1.0\%\text{ m/m } \mathrm{NaHCO}_3$ reduced combined hydration + boiling time by **~3 hours**.
   3. Ultrasound alone accelerated water uptake through the waxy seed coat via acoustic cavitation and micro-streaming, but **ultrasound without $\mathrm{NaHCO}_3$ failed to accelerate cooking softening**. Softening required the chemical action of bicarbonate.
-- **Transfer Limits to Harakutir 15 MT/Day Line:**
+- **Transfer Limits to FinnoaQ 15 MT/Day Line:**
   - **Critical Material Discrepancy:** Vásquez et al. tested whole seeds with intact hulls. Commercial Toor Dal is **dehulled and split**. The waxy testa that required ultrasound to breach is **already physically absent**. Therefore, high-power industrial ultrasound ($17\text{--}43\text{ W/L}$) is **unnecessary capital expenditure** for split cotyledons, because the cotyledon middle lamella is already directly exposed to aqueous soaking liquor.
 
 ### 2.2 Study 2: Ohanenye, Mensi, Nwachukwu, and Udenigwe (2024) — *Measurement: Food*
@@ -71,7 +71,7 @@ A thorough search of primary peer-reviewed literature was executed to extract ex
   1. Mild sodium bicarbonate soaking and heating induced beneficial unfolding and partial dissociation of dense 7S/11S storage globulins (cajanin and legumin), increasing protein solubility and accessibility to digestive proteases.
   2. In vitro protein digestibility (IVPD) was significantly improved (from $68.4\%$ in raw control to $> 79.5\%$ in treated beans) due to thermal and alkaline deactivation of heat-stable trypsin inhibitors and polyphenolic protein complexes.
   3. **Toxicity / Quality Upper Bound:** When $\mathrm{NaHCO}_3$ concentrations exceeded $1.5\%\text{--}2.0\%\text{ w/w}$ under sustained boiling, excessive protein leaching occurred into the soaking water, accompanied by progressive loss of available lysine and risk of lysinoalanine formation under severe alkali.
-- **Transfer Limits to Harakutir:**
+- **Transfer Limits to FinnoaQ:**
   - Proves that keeping sodium bicarbonate concentration **$\le 0.75\%\text{ w/w}$ at ambient soaking temperatures ($25^\circ\text{C}$) preserves $> 96\%$ of pigeon-pea protein** and prevents alkaline damage while maximizing digestibility.
 
 ### 2.3 Synthesis of Additional Primary Evidence:
@@ -82,7 +82,7 @@ A thorough search of primary peer-reviewed literature was executed to extract ex
 
 ## 3. GATE 2: Reconstruction of Existing Results & Audited Chains of Inference
 
-Every major parameter and conclusion in the Harakutir model repository was audited for source validity, mathematical derivation, and reproducibility:
+Every major parameter and conclusion in the FinnoaQ model repository was audited for source validity, mathematical derivation, and reproducibility:
 
 ```mermaid
 graph LR
@@ -98,7 +98,7 @@ graph LR
 
 | Parameter / Claim | Previous Reported Value | Audited Source / Physical Basis | Discrepancy / Break in Chain | Corrective Finding & Status |
 |:---|:---:|:---|:---|:---|
-| **Pectin Softening Rate ($k_{\text{soft}}$)** | $0.0012\text{ s}^{-1}$ | Inferred from *Phaseolus* HTC literature; uncalibrated for Tanzanian dal. | **Unresolved Break:** No direct kinetic rate constant published for Harakutir's specific lot. | Formally classified as `ESTIMATED_TRANSFER_PRIOR`. Bounded between $0.0008\text{ and }0.0024\text{ s}^{-1}$ in Monte Carlo sweeps. |
+| **Pectin Softening Rate ($k_{\text{soft}}$)** | $0.0012\text{ s}^{-1}$ | Inferred from *Phaseolus* HTC literature; uncalibrated for Tanzanian dal. | **Unresolved Break:** No direct kinetic rate constant published for FinnoaQ's specific lot. | Formally classified as `ESTIMATED_TRANSFER_PRIOR`. Bounded between $0.0008\text{ and }0.0024\text{ s}^{-1}$ in Monte Carlo sweeps. |
 | **Effective Diffusivity ($D_{\text{eff}}$)** | $3.2 \times 10^{-11}\text{ m}^2/\text{s}$ | Crank (1975) analytical diffusion series fitted to pigeon pea hydration. | None. Accurately reflects $D_0 \exp(-E_a / RT)$ at 100°C. | **Verified Valid:** L2 error $< 0.8\%$ against 100-term Fourier analytical series. |
 | **Lenticular vs. Sphere Geometry** | Spherical $R = 2.6\text{ mm}$ | Hemispherical lenticular split cotyledon disc ($2.2\text{ mm}$ thick $\times 5.5\text{ mm}$ dia). | 1D sphere underestimates surface-area-to-volume ratio ($A/V$) by $12\text{--}18\%$. | Model-form discrepancy explicitly quantified: Sphere underestimates hydration rate by $10.07\%$ to $19.86\%$. |
 | **Sobol Sensitivity Ranking** | $k_{\text{soft}}$ share: $78.3\%$ | 250-case global variance decomposition using multiphysics coupled engine. | None. Verified deterministic. | **Verified Valid:** Pectin rate dominates $78.32\%$ of variance; temperature explains $21.54\%$; geometry accounts for $< 0.1\%$ once hydrated. |
@@ -109,7 +109,7 @@ graph LR
 
 ## 4. GATE 3: Numerical Verification Hierarchy & Stability Proofs
 
-A 6-level multiphysics model hierarchy (**Models A–F**) was implemented in [`src/harakutir/multiphysics_engine.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/multiphysics_engine.py) and verified against analytical solutions:
+A 6-level multiphysics model hierarchy (**Models A–F**) was implemented in [`src/finnoaq/multiphysics_engine.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/multiphysics_engine.py) and verified against analytical solutions:
 
 ```
 [Model A: Empirical Peleg Hydration Model] (NLLS Levenberg-Marquardt, R2 = 1.000)
@@ -201,7 +201,7 @@ graph TD
 
 ## 7. GATE 7: The Robust Dosage Window & Pareto Optimization
 
-Using our industrial dose calculator ([`src/harakutir/dose_calculator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/dose_calculator.py)), the multi-objective Pareto trade-off was evaluated:
+Using our industrial dose calculator ([`src/finnoaq/dose_calculator.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/dose_calculator.py)), the multi-objective Pareto trade-off was evaluated:
 
 ```mermaid
 graph LR
@@ -233,7 +233,7 @@ graph LR
 
 ## 8. GATE 8: Formal Computational Proof-of-Feasibility Decision
 
-Under the Harakutir Omega governance framework, a computational feasibility verdict must be formally rendered prior to pilot execution:
+Under the FinnoaQ Omega governance framework, a computational feasibility verdict must be formally rendered prior to pilot execution:
 
 ### Formal Status: **`COMPUTATIONAL_FEASIBILITY_SUPPORTED`** & **`TARGET_LOT_CALIBRATION_PENDING`**
 
@@ -242,7 +242,7 @@ Under the Harakutir Omega governance framework, a computational feasibility verd
 2. **Numerical Integrity (Passed):** Model hierarchy verified against Crank (1975) analytical series ($L_2\text{ error} < 0.8\%$) and proven CFL stable.
 3. **Hardware Scaling (Passed):** GPU vs. CPU scaling verified on physical workstation; crossover at $N = 1,000$ cases; $3.134\times$ speedup at $N = 15,000$.
 4. **Mass Balance & Loss (Passed):** Closed-loop mass balance verified with $0.000\%$ closure error, guaranteeing $95.65\%$ dry-solids recovery.
-5. **Epistemic Constraint (Strictly Enforced):** Because physical samples of Harakutir's specific commercial Tanzanian lot have not yet undergone wet chemical assay, the project **CANNOT** claim empirical target-lot calibration from simulation alone. Status remains `TARGET_LOT_CALIBRATION_PENDING` until the in-house screening trial is executed.
+5. **Epistemic Constraint (Strictly Enforced):** Because physical samples of FinnoaQ's specific commercial Tanzanian lot have not yet undergone wet chemical assay, the project **CANNOT** claim empirical target-lot calibration from simulation alone. Status remains `TARGET_LOT_CALIBRATION_PENDING` until the in-house screening trial is executed.
 
 ---
 
@@ -347,7 +347,7 @@ Hydration and softening kinetics validated against published *Cajanus cajan* exp
 3. That dal dry-solids recovery exceeds $95.0\%$ when soak time is limited to 30 minutes at 25°C.
 
 ### Q8: What uncertainty dominates the recommendation?
-The exact endogenous bound calcium concentration ($[\text{Ca}^{2+}]$) and initial pectin degree of esterification (DE) of **Harakutir's specific commercial grain lot**.
+The exact endogenous bound calcium concentration ($[\text{Ca}^{2+}]$) and initial pectin degree of esterification (DE) of **FinnoaQ's specific commercial grain lot**.
 
 ### Q9: What is the current candidate dosage range and its precise concentration basis?
 - **Solution concentration:** **$0.35\%\text{ to }0.65\%\text{ w/w}$** aqueous $\mathrm{NaHCO}_3$.
@@ -364,7 +364,7 @@ The exact endogenous bound calcium concentration ($[\text{Ca}^{2+}]$) and initia
 
 ### Q12: What new evidence was discovered?
 1. **GPU Crossover Scaling:** Benchmarked exact crossover at **$N \approx 1,000$ cases**; below 1,000 cases, CPU is faster; at 15,000 cases, GPU is $3.134\times$ faster.
-2. **Ultrasound Redundancy for Split Dal:** Vásquez (2021) required ultrasound solely to breach the intact waxy seed coat; because Harakutir processes dehulled split dal, ultrasound is unnecessary.
+2. **Ultrasound Redundancy for Split Dal:** Vásquez (2021) required ultrasound solely to breach the intact waxy seed coat; because FinnoaQ processes dehulled split dal, ultrasound is unnecessary.
 3. **Protein Safety Window:** Ohanenye (2024) confirmed that $\mathrm{NaHCO}_3 \le 0.75\%$ at 25°C improves protein digestibility without causing alkaline destruction of amino acids.
 
 ### Q13: What would falsify the preferred candidate?
@@ -377,7 +377,7 @@ If the 50g in-house screening trial with $0.50\%\text{ NaHCO}_3$ soaking fails t
 **PASSED.** Formally classified as **`COMPUTATIONAL_FEASIBILITY_SUPPORTED`**.
 
 ### Q16: Is the target-lot effect established? If not, why not?
-**NOT YET EMPIRICALLY ESTABLISHED.** In strict compliance with the Constitution, simulation models calibrated to literature prove what *can* happen under physical laws; empirical certainty on Harakutir's specific sack of grain requires the ₹50 physical cooking test.
+**NOT YET EMPIRICALLY ESTABLISHED.** In strict compliance with the Constitution, simulation models calibrated to literature prove what *can* happen under physical laws; empirical certainty on FinnoaQ's specific sack of grain requires the ₹50 physical cooking test.
 
 ### Q17: What task will most efficiently reduce the remaining uncertainty?
 Executing the **₹50 In-House Kitchen Screen ($N=8$)**. This single 45-minute physical trial will immediately confirm or falsify the mechanism with $5\sigma$ statistical rigor ($Z > 5.0$), preserving ₹1.98 lakh in commercial laboratory budget to fund workstation hardware.

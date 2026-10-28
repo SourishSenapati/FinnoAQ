@@ -1,8 +1,8 @@
 # V10 Source Inventory, Document Precedence & Forensic Baseline
 **Project Reference:** FNQ-PR-2026-001 / Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006, West Bengal, India)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006, West Bengal, India)  
 **Document Ref:** FNQ-V10-INV-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -55,14 +55,14 @@ Under Section 1.3 of the Directive, all claims, parameters, and commercial figur
 ## 4. Identity Reconciliation & Governance Audit
 
 ### 4.1 Client vs. Contractor Roles
-- **Client Organization:** **Harakutir** (53, Pathuriaghata Street, Kolkata – 700006, West Bengal, India). Represented by Dr. Archisman Ray (CEO & Director, Harakutir).
+- **Client Organization:** **Client Organization** (53, Pathuriaghata Street, Kolkata – 700006, West Bengal, India). Represented by Technical Advisory Panel.
 - **Executing Contractor / R&D Consultancy:** **FinnoaQ Agro-Industrial Technologies Ltd.**
 - **Lead Chemical & Process Engineer:** Sourish Senapati (FinnoaQ).
-- **Academic Guidance / Research Advisory:** Dr. Archisman Ray (Senior Research Fellow, Department of Chemical Engineering, IIT Kharagpur).
+- **Academic Guidance / Research Advisory:** Technical Advisory Panel.
 
 ### 4.2 Prohibited Nomenclature & Quality Rule
-- Under `AGENTS.md`, any misspelling of the client organization as `"Harakuntir"` (with an intrusive 'n') is an obsolete typo and is strictly prohibited across all documents.
-- Client identity is strictly preserved as **Harakutir**.
+- Under `AGENTS.md`, any misspelling of the client organization as `"The Client"` (with an intrusive 'n') is an obsolete typo and is strictly prohibited across all documents.
+- Client identity is strictly preserved as **Client Organization**.
 - No legal suffixes or corporate entities are invented.
 
 ---

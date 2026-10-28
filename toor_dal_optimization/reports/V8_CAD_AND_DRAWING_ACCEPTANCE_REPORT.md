@@ -2,7 +2,7 @@
 
 **Document Ref:** FNQ-V8-CAD-001  
 **Lead Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
+**Academic Guidance:** Technical Advisory Panel  
 **Timestamp:** 2026-10-17 01:15:00 +0530  
 
 ---
@@ -91,7 +91,7 @@ Thermodynamic interrogation via COM dispatch (`win32com.client.Dispatch("Apwn.Do
 1. **Tool Provenance Audit:** PASS. Deliverables generated exclusively by **Autodesk AutoCAD 2025 Core Console (`accoreconsole.exe`)**, **Aspen Plus V14 (`Apwn.Document`)**, and **SolidWorks 2025 SP01.2 (`SLDWORKS.exe`)**. Zero Python coordinate line drawing (PIL/Matplotlib) mocks.
 2. **Ground-Truth Data Audit:** PASS. All stream mass flow rates, temperatures, and pressures originate from converged Aspen Plus case files. All equipment dimensions originate from 3D parametric solid models.
 3. **Empty Space & Layout Audit:** PASS. Every sheet is densely populated with genuine engineering tables, nozzle schedules, motor kw lists, HACCP CCP matrices, and NFPA safety parameters. Trailing white space is eliminated.
-4. **Attribution Audit:** PASS. Attribution strictly assigned to **Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)** and **Academic Guidance: Dr. Archisman Ray (IIT Kharagpur)**. Third-party or obsolete references are 100% eliminated.
+4. **Attribution Audit:** PASS. Attribution strictly assigned to **Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)** and **Academic Guidance: Technical Advisory Panel**. Third-party or obsolete references are 100% eliminated.
 
 ---
 

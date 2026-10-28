@@ -1,0 +1,540 @@
+{
+  "metadata": {
+    "project_ref": "FNQ-PR-2026-001",
+    "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+    "governing_standard": "AGENTS.md Rule 1 & Anti-Reward-Hacking Computational Engineering Execution Contract",
+    "total_records": 25,
+    "last_updated_utc": "2026-10-27T20:43:30.657995+00:00"
+  },
+  "records": [
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0001",
+      "timestamp_utc": "2026-10-22T22:51:19.510223+00:00",
+      "component": "search_orchestrator",
+      "failure_class": "circular_execution",
+      "observed_claim": "10.75-hour combinatorial search completed over entire treatment parameter space",
+      "source_artifact": "toor_dal_optimization/logs/run_frontier_combinatorial_two_whistle_twin.log",
+      "reproduction_conditions": {
+        "mode": "combinatorial_loop",
+        "search_type": "heuristic"
+      },
+      "failure_mechanism": "Orchestrator looped repeatedly across the same 6 fixed treatment labels (citrate buffer, hard water citrate, bicarbonate, water soak, untreated dal, Indian benchmark) without dispatching varying parameters to the PDE solver.",
+      "required_invariant": "Every grid evaluation must dispatch a unique parameter set to the solver; output signatures must vary continuously with input parameters.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0001_unique_parameter_dispatch",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0001: monotonic variation across input space; distinct response confirmed.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": null,
+      "record_hash": "9f764db78fc4b5a2652b7e6224b80bd2b5aa3624327e59e04a77bcb83cac82b8",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.000897+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0002",
+      "timestamp_utc": "2026-10-22T22:51:19.512326+00:00",
+      "component": "chelation_pde",
+      "failure_class": "synthetic_mock",
+      "observed_claim": "2D chelation PDE predicts 93% whole-grain calcium displacement",
+      "source_artifact": "toor_dal_optimization/src/harakutir/gpu_chemistry.py:L142",
+      "reproduction_conditions": {
+        "tensor_init": "torch.full_like(field, 0.93)"
+      },
+      "failure_mechanism": "Calcium concentration tensor was initialized directly with constant 0.93 and verified against an assert requiring mean >= 0.93, passing by tautology rather than reaction-diffusion physics.",
+      "required_invariant": "Spatial concentration fields must evolve dynamically from physical boundary conditions and transport equations; static tensor fills are prohibited.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0002_no_preset_depletion_tensor",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0002: dynamic PDE spatial gradient confirmed (core retains more Ca than edge).",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "9f764db78fc4b5a2652b7e6224b80bd2b5aa3624327e59e04a77bcb83cac82b8",
+      "record_hash": "a83883a7612aa4425a0b093c148fdb08567032efa8b0f5fbc54aaa7074ea4eb4",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.001732+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0003",
+      "timestamp_utc": "2026-10-22T22:51:19.512631+00:00",
+      "component": "cooking_kinetics",
+      "failure_class": "unsupported_physics",
+      "observed_claim": "HTC dal cooks in 2 whistles after soaking",
+      "source_artifact": "toor_dal_optimization/src/harakutir/digital_twin.py:L88",
+      "reproduction_conditions": {
+        "initial_theta_ca": 0.02
+      },
+      "failure_mechanism": "Cooking solver hardcoded theta_ca = 0.02 at the start of cooking, effectively assuming 98% calcium extraction without solving pre-treatment transport.",
+      "required_invariant": "Cooking initial state must directly receive the final evolved spatial state from the soaking and rinsing stages.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0003_initial_state_coupled_from_soak",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0003: untreated dal initialized at 100% native Ca (35.37 mol/m^3); requires >2 whistles.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "a83883a7612aa4425a0b093c148fdb08567032efa8b0f5fbc54aaa7074ea4eb4",
+      "record_hash": "d0f253dc0f5a31cb5b88941024e3e9c2d759d895e1b31c1a219c87c5cde33623",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.002430+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0004",
+      "timestamp_utc": "2026-10-22T22:51:19.512871+00:00",
+      "component": "cooker_thermodynamics",
+      "failure_class": "synthetic_mock",
+      "observed_claim": "Pressure cooker achieves exactly 2 whistles at 10.5 minutes",
+      "source_artifact": "toor_dal_optimization/src/harakutir/parameters.py:L215",
+      "reproduction_conditions": {
+        "whistle_calc": "int(t_minutes / 5.25)"
+      },
+      "failure_mechanism": "Whistle count was calculated by dividing elapsed simulation time by a constant 5.25 minutes instead of modeling deadweight valve lift hydrodynamics.",
+      "required_invariant": "Whistle events must be triggered by discrete deadweight valve lift when internal gauge pressure exceeds the force balance DeltaP = m_valve * g / A_vent.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0004_whistles_emerge_from_valve_lift",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0004: first-principles deadweight valve lift hydrodynamics replaces linear clock.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "d0f253dc0f5a31cb5b88941024e3e9c2d759d895e1b31c1a219c87c5cde33623",
+      "record_hash": "204e06c0e340a841c807428caec2b88a72f1a4ab89b41b05450d06989e6e686a",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.003309+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0005",
+      "timestamp_utc": "2026-10-22T22:51:19.513073+00:00",
+      "component": "swelling_kinetics",
+      "failure_class": "unsupported_physics",
+      "observed_claim": "Potassium ion accelerates swelling by 1 + 0.40 * f_K",
+      "source_artifact": "toor_dal_optimization/src/finnoaq/canonical_biophysics.py:L185",
+      "reproduction_conditions": {
+        "f_K": 1.0
+      },
+      "failure_mechanism": "A fixed arbitrary multiplier (1 + 0.40 * f_K) was applied to swelling kinetics without empirical calibration or thermodynamic justification.",
+      "required_invariant": "Diffusion and swelling kinetics must derive strictly from Arrhenius moisture transport and measured hydration constants; ad-hoc multipliers are prohibited.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0005_no_unsupported_swelling_multiplier",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0005: potassium speciation and swelling strictly bounded.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "204e06c0e340a841c807428caec2b88a72f1a4ab89b41b05450d06989e6e686a",
+      "record_hash": "2230944b16fe53fc3cf0a5f0c2a5f12ae8c5640c027b12e4baf79e4ffb0ae347",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.004126+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0006",
+      "timestamp_utc": "2026-10-22T22:51:19.513479+00:00",
+      "component": "constitutive_mechanics",
+      "failure_class": "unsupported_physics",
+      "observed_claim": "Constitutive parameters calibrated to Tanzanian pigeon pea",
+      "source_artifact": "toor_dal_optimization/reports/TECHNO_ECONOMIC_MODEL.md:L42",
+      "reproduction_conditions": {
+        "source_lookup": "unreferenced constants"
+      },
+      "failure_mechanism": "Fixed empirical parameters lacked documented unit basis, citation, uncertainty bounds, and explicit calibration to pigeon pea.",
+      "required_invariant": "Every constitutive parameter must declare its unit basis, literature source, uncertainty bounds, and calibration status.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0006_parameter_provenance_and_bounds",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0006: constitutive parameters (stress 380 kPa, activation energies) verified against literature.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "2230944b16fe53fc3cf0a5f0c2a5f12ae8c5640c027b12e4baf79e4ffb0ae347",
+      "record_hash": "ed35091e93634d5b6fefc96849f4712e7e274956804a66152b9d1609f7e31121",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.004767+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0007",
+      "timestamp_utc": "2026-10-22T22:51:19.513731+00:00",
+      "component": "repository_governance",
+      "failure_class": "version_divergence",
+      "observed_claim": "Canonical physics engine is unified",
+      "source_artifact": "src/finnoaq/canonical_biophysics.py vs toor_dal_optimization/src/finnoaq/canonical_biophysics.py",
+      "reproduction_conditions": {
+        "import_paths": [
+          "src.finnoaq",
+          "finnoaq"
+        ]
+      },
+      "failure_mechanism": "Parallel source trees allowed runners to silently import divergent versions of physics code.",
+      "required_invariant": "A single authoritative source tree must exist, linked via filesystem junctions, guaranteeing os.path.samefile identity across all execution paths.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0007_single_authoritative_source_tree",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0007: single authoritative source tree verified via filesystem junction.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "ed35091e93634d5b6fefc96849f4712e7e274956804a66152b9d1609f7e31121",
+      "record_hash": "91665fd0c26f2eab5f3e7b854b962a5b0fe49b8a201b010d1d1cf415f05ac6c2",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.005371+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0008",
+      "timestamp_utc": "2026-10-22T22:51:19.513981+00:00",
+      "component": "unit_consistency",
+      "failure_class": "dimensional_defect",
+      "observed_claim": "CA_VOL_HTC_NOMINAL = (105e-3 / 40.078) * 1350 = 35.37 mol/m^3",
+      "source_artifact": "toor_dal_optimization/src/finnoaq/canonical_biophysics.py:L65",
+      "reproduction_conditions": {
+        "calc": "(105.0 * 1e-3 / 40.078) * 1350.0"
+      },
+      "failure_mechanism": "The formula omitted the 10x factor required to convert 100g dry dal basis to 1kg dry dal basis, yielding 3.537 mol/m^3 instead of 35.369 mol/m^3.",
+      "required_invariant": "Volumetric bound calcium must evaluate strictly to (ca_native_mg_100g * 1e-2 / 40.078) * rho_dal_dry (~35.37 mol/m^3 for 105 mg/100g).",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0008_calcium_unit_conversion_strict",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0008: calcium dry-basis conversion incorporates 10x factor (1e-2) yielding 35.369 mol/m^3.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "91665fd0c26f2eab5f3e7b854b962a5b0fe49b8a201b010d1d1cf415f05ac6c2",
+      "record_hash": "b702c94f9117f08f70b0233642135d7fcb63066b22c41d5a009e3999b27d011e",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.005976+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0009",
+      "timestamp_utc": "2026-10-22T22:51:19.514327+00:00",
+      "component": "numerical_stability",
+      "failure_class": "numerical_instability",
+      "observed_claim": "Explicit 2D spatial heat equation solved with 2.0s time step",
+      "source_artifact": "toor_dal_optimization/src/harakutir/high_res_spatial_solver.py:L112",
+      "reproduction_conditions": {
+        "dt": 2.0,
+        "grid": 32,
+        "alpha_th": 1.48e-07
+      },
+      "failure_mechanism": "Explicit finite-difference heat diffusion with dt=2.0s violates von Neumann CFL stability limit (dt <= 0.002s for dz=3.4e-5m), causing numerical divergence.",
+      "required_invariant": "Thermal conduction in grain must use unconditionally stable analytical series or implicit/ADI schemes; production code must never run explicit steps exceeding CFL.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0009_thermal_conduction_stability",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0009: PDE stability condition satisfied and positivity clamp (min=0.0) strictly enforced.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "b702c94f9117f08f70b0233642135d7fcb63066b22c41d5a009e3999b27d011e",
+      "record_hash": "15a370f29c498545d239be57eee864c111baab8371322a1aeaaab6ab0f956c0c",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.006575+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0010",
+      "timestamp_utc": "2026-10-22T22:51:19.514691+00:00",
+      "component": "spatial_resolution",
+      "failure_class": "shortcut_defect",
+      "observed_claim": "Whole-grain volume-averaged calcium displacement of 92% guarantees tenderness",
+      "source_artifact": "toor_dal_optimization/reports/AUTONOMOUS_CONTRACT_MASTER_REPORT.md:L55",
+      "reproduction_conditions": {
+        "soak": "25C, 25m"
+      },
+      "failure_mechanism": "Volume weighting (dV = 2*pi*r*dr*dz) concentrates volume near the outer radius, masking an unchelated, hard cotyledon core (up to 97% Ca remaining at r=0, z=0).",
+      "required_invariant": "Tenderness acceptance requires a spatial dual-gate: BOTH bulk blade shear force AND peak core puncture resistance must reach <= 18.0 N.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0010_spatial_dual_gate_enforced",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0010: spatial heterogeneity core retention checked at r=0, z=0 preventing false passes.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "15a370f29c498545d239be57eee864c111baab8371322a1aeaaab6ab0f956c0c",
+      "record_hash": "e3586ee3e3c2f24eb80cf8996f471ecde605fefc48cb61d0b1c019266571e94c",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.007172+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0011",
+      "timestamp_utc": "2026-10-22T22:51:19.515162+00:00",
+      "component": "mechanical_model",
+      "failure_class": "calibration_defect",
+      "observed_claim": "Yield stress directly converted to Warner-Bratzler force in Newtons via arbitrary scaling",
+      "source_artifact": "toor_dal_optimization/src/finnoaq/canonical_biophysics.py:L677",
+      "reproduction_conditions": {
+        "force_calc": "F_WB_MAX * (sigma / SIGMA_0)"
+      },
+      "failure_mechanism": "Normalized stress-to-force conversion was uncalibrated to cotyledon blade contact geometry and shearing shear-plane area.",
+      "required_invariant": "Warner-Bratzler force and core puncture resistance must be rigorously bounded by empirical dal texture baselines (85 N raw, <=18 N cooked tender, 3.5 N residual).",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0011_force_bounds_and_mechanics",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0011: Warner-Bratzler shear force dimensionally calibrated to 10-75 N range.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "e3586ee3e3c2f24eb80cf8996f471ecde605fefc48cb61d0b1c019266571e94c",
+      "record_hash": "70ef69aad9beb36e96e5c6802a52bdde5f41a3038723615bc7538e72ad6086b0",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.007768+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0012",
+      "timestamp_utc": "2026-10-22T22:51:19.515502+00:00",
+      "component": "unit_consistency",
+      "failure_class": "dimensional_defect",
+      "observed_claim": "Grain tissue yield strength is 120 MPa",
+      "source_artifact": "toor_dal_optimization/reports/DEEP_GPU_MULTIPHYSICS_REPORT.md:L89",
+      "reproduction_conditions": {
+        "unit": "MPa vs kPa"
+      },
+      "failure_mechanism": "A report claimed 120 MPa yield stress (equivalent to structural steel/aluminum) due to confusing kPa with MPa; actual parenchyma tissue yield stress is 100-400 kPa.",
+      "required_invariant": "Parenchyma tissue yield stresses must strictly declare units in Pa or kPa; values exceeding 2.0 MPa are physically impossible and rejected.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0012_tissue_stress_units_pascals",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0012: stress units verified in kPa regime (380 kPa) rejecting MPa structural steel values.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "70ef69aad9beb36e96e5c6802a52bdde5f41a3038723615bc7538e72ad6086b0",
+      "record_hash": "aa9a0d01ea44051bc228abf12f15a1d716bc0b33a216f20832698ff7ebef5383",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.008397+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0013",
+      "timestamp_utc": "2026-10-22T22:51:19.516277+00:00",
+      "component": "chemical_thermodynamics",
+      "failure_class": "stoichiometric_defect",
+      "observed_claim": "0.10 M Citrate at pH 5.4 is formed from 3.982 g/L citric acid + 23.304 g/L trisodium citrate dihydrate",
+      "source_artifact": "toor_dal_optimization/reports/LIVE_GPU_SIMULATION_DASHBOARD.md:L60",
+      "reproduction_conditions": {
+        "C_cit": 0.1,
+        "pH": 5.4
+      },
+      "failure_mechanism": "Mass balance calculation used mismatched pKa values or incomplete Henderson-Hasselbalch electroneutrality, producing a solution that actually equilibrates at pH 5.85, not pH 5.40.",
+      "required_invariant": "Reagent recipes must satisfy Henderson-Hasselbalch equilibria, charge balance sum([Cations]) + [H+] = sum(z*[Anions]) + [OH-], and hydrate stoichiometry.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0013_formulation_mass_charge_balance",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0013: citric acid/trisodium citrate speciation closed with electroneutrality < 1e-4 M.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "aa9a0d01ea44051bc228abf12f15a1d716bc0b33a216f20832698ff7ebef5383",
+      "record_hash": "f99e23c469fd486bc764a90f5906fa9efe55bd92754963f4374ad5b38e39a737",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.009007+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0014",
+      "timestamp_utc": "2026-10-22T22:51:19.516671+00:00",
+      "component": "cooker_thermodynamics",
+      "failure_class": "thermodynamic_defect",
+      "observed_claim": "Water saturation pressure at 121.5\u00b0C is 285 kPa absolute",
+      "source_artifact": "toor_dal_optimization/scratch/test_biophysics_endpoint.py:L17",
+      "reproduction_conditions": {
+        "temp_c": 121.5
+      },
+      "failure_mechanism": "A scratch implementation used an inaccurate Magnus-type formula returning 285 kPa abs at 121.5\u00b0C; authentic steam tables give 207.0 kPa abs (105.7 kPa gauge).",
+      "required_invariant": "All cooker models must calculate water saturation pressure using verified Antoine equations calibrated against NIST/IAPWS steam tables (+/- 1.5 kPa).",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0014_steam_saturation_pressure_nist",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0014: Antoine equation verified against NIST steam table (207.0 kPa abs at 121.2 C).",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "f99e23c469fd486bc764a90f5906fa9efe55bd92754963f4374ad5b38e39a737",
+      "record_hash": "93d52d7c3395051e28b6ff88ced259fe142111fa7a09806be2c2f8875ac8c10a",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.009619+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0015",
+      "timestamp_utc": "2026-10-22T22:51:19.517028+00:00",
+      "component": "acceptance_criteria",
+      "failure_class": "reward_hacking",
+      "observed_claim": "3-whistle cooking outcome reclassified as 2 whistles due to 'acoustic modeling limits'",
+      "source_artifact": "toor_dal_optimization/reports/LIVE_GPU_SIMULATION_DASHBOARD.md:L90",
+      "reproduction_conditions": {
+        "burner_power": 1300.0
+      },
+      "failure_mechanism": "When the physical model recorded 3 valve lift cycles before reaching the tenderness endpoint, the report reclassified it as 2 whistles by blaming acoustics.",
+      "required_invariant": "A 2-whistle success strictly requires whistle_count_at_t90 <= 2; any case requiring a 3rd whistle fails the 2-whistle criterion.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0015_strict_whistle_count_cutoff",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0015: 3-whistle outcome strictly rejected from 2-whistle pass classification.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "93d52d7c3395051e28b6ff88ced259fe142111fa7a09806be2c2f8875ac8c10a",
+      "record_hash": "0b8cb2370d67bbf357e08a5414c483e3803482c8e90575f8cc55ccb8bf17ff3c",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.010245+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0016",
+      "timestamp_utc": "2026-10-22T22:51:19.517408+00:00",
+      "component": "reporting_integrity",
+      "failure_class": "version_divergence",
+      "observed_claim": "Ambient soak leaves 97.6% core Ca in one report and 61.3% in a ranking table",
+      "source_artifact": "reports/LIVE_GPU_SIMULATION_DASHBOARD.md vs artifacts/continuous_refinement_results.json",
+      "reproduction_conditions": {
+        "mesh": "32 vs 64",
+        "soak_time": "25m vs 35m"
+      },
+      "failure_mechanism": "Outputs from different model versions, grid resolutions, and soak durations were presented side-by-side as if from a single unified run.",
+      "required_invariant": "All reported outcomes must link explicitly to a unique run manifest SHA-256 and verified parameter signature.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0016_report_manifest_hash_linkage",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0016: bulk displacement and mean field retention sum to 100%.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "0b8cb2370d67bbf357e08a5414c483e3803482c8e90575f8cc55ccb8bf17ff3c",
+      "record_hash": "3e63387b695e2ea39e0beffc07124e11f128b47d89b2f88454c9fc9a301575e4",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.010924+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0017",
+      "timestamp_utc": "2026-10-22T22:51:19.517910+00:00",
+      "component": "search_accounting",
+      "failure_class": "accounting_defect",
+      "observed_claim": "6,912-grid pass counts varied between 4,233 and 2,952 across reports",
+      "source_artifact": "reports/LIVE_GPU_SIMULATION_DASHBOARD.md vs artifacts/verified_6912_grid_results.json",
+      "reproduction_conditions": {
+        "version_transition": "multiplicative to additive mechanics"
+      },
+      "failure_mechanism": "Changes in underlying physical equations altered pass rates without an explicit audit trail reconciling the change.",
+      "required_invariant": "Every search report must document the exact constitutive equation version, manifest hash, and reconciliation of passing/failing configurations.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0017_manifest_reconciliation",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0017: manifest accounting reconciliation enforced by ExecutionCircuitBreaker.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "3e63387b695e2ea39e0beffc07124e11f128b47d89b2f88454c9fc9a301575e4",
+      "record_hash": "9d64f1c79119a45630e0ddc3781c1b254747c6897b54b95fa0d466ff01611630",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.011596+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0018",
+      "timestamp_utc": "2026-10-22T22:51:19.518353+00:00",
+      "component": "continuous_refinement",
+      "failure_class": "synthetic_mock",
+      "observed_claim": "Continuous refinement evaluated 120 points using heuristic temperature table",
+      "source_artifact": "scripts/run_continuous_design_refinement.py:L70 (pre-fix)",
+      "reproduction_conditions": {
+        "refinement_runner": "legacy"
+      },
+      "failure_mechanism": "Earlier continuous refinement script evaluated points via a static Python dictionary lookup instead of invoking the canonical CUDA PDE solver.",
+      "required_invariant": "All candidate evaluations must execute the authentic numerical solver on CUDA/CPU; heuristic lookup tables are prohibited.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0018_no_heuristic_lookup_tables",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0018: continuous Arrhenius kinetics verified; discrete lookup tables eliminated.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "9d64f1c79119a45630e0ddc3781c1b254747c6897b54b95fa0d466ff01611630",
+      "record_hash": "6ec1319e757ac4c54e29e535f89062847e072f8c2ea7146e5f2df04860e09024",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.012311+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0019",
+      "timestamp_utc": "2026-10-22T22:51:19.518852+00:00",
+      "component": "execution_provenance",
+      "failure_class": "provenance_defect",
+      "observed_claim": "Grid search verified while background task was still running",
+      "source_artifact": "chat_transcript: step 840-850",
+      "reproduction_conditions": {
+        "task_status": "RUNNING"
+      },
+      "failure_mechanism": "Agent claimed verification and reported results while background task was actively computing, accepting preliminary or stale artifacts.",
+      "required_invariant": "Results may only be accepted and reported after the background task process has terminated with exit code 0 and generated valid artifacts.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0019_process_exit_code_zero",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0019: cryptographic hash chain and preflight gates strictly validated.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "6ec1319e757ac4c54e29e535f89062847e072f8c2ea7146e5f2df04860e09024",
+      "record_hash": "2d1a0182cb0728d29b50687f16fa3ab4c280fdcadfee890414b58d6ff57cc1b1",
+      "resolution_timestamp_utc": "2026-10-22T23:14:42.012958+00:00"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0020",
+      "timestamp_utc": "2026-10-23T09:23:45.928326+00:00",
+      "component": "daemon_orchestrator",
+      "failure_class": "premature_termination",
+      "observed_claim": "Overnight frontier search completed after 2.25 hours on GPU",
+      "source_artifact": "scripts/run_overnight_frontier_search.py:L128",
+      "reproduction_conditions": {
+        "max_evaluations": 250000,
+        "completion_bias": true
+      },
+      "failure_mechanism": "Orchestrator injected a hardcoded loop ceiling (max_evaluations = 250,000) when instructed to run continuously overnight, which at 30.8 evaluations/second exited after only 2.25 hours, leaving the local GPU idle for the remainder of the night.",
+      "required_invariant": "Continuous overnight background daemon tasks must remain unbounded (max_evaluations is None) and terminate only via explicit external filesystem sentinel signals or operator interruption.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0020_unbounded_daemon_execution",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0020: run_overnight_frontier_engine accepts max_evaluations=None and operates continuously until stop sentinel.",
+      "verified_source_hash": "8005457b1fbe5acdb21cad35ee8c448cd70cb5d06facd91a5be6f2a2c7b83511",
+      "previous_record_hash": "2d1a0182cb0728d29b50687f16fa3ab4c280fdcadfee890414b58d6ff57cc1b1",
+      "record_hash": "4952d9393b0d2c8136996228ff41c0d813a823adc59ea357aec738b83b6f729b"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0021",
+      "timestamp_utc": "2026-10-27T20:43:30.655078+00:00",
+      "component": "drying_stress_and_page_model",
+      "failure_class": "mathematical_and_citation_defect",
+      "observed_claim": "Both 85C single-stage and 65C->55C 2-stage drying computed identical 1.18 MPa stress and 0.3% breakage in Table 2 while prose claimed 85C exceeded 2.4 MPa and caused 8.5% breakage",
+      "source_artifact": "scripts/run_commercial_plant_cycle_and_stability_study.py & reports/COMMERCIAL_PLANT_CYCLE_AND_SHELF_LIFE_REPORT.md",
+      "reproduction_conditions": {
+        "regime_a": "85C_single_stage",
+        "regime_b": "65C_55C_two_stage"
+      },
+      "failure_mechanism": "Internal diffusivity lacked Arrhenius temperature coupling, Page k was divided by 60^1 instead of 60^n, SIGMA_TENSILE_YIELD=2.4 MPa violated DimensionalGuard (<=2.0 MPa), and Goyal et al. 2007 plum paper was misattributed to pigeon pea.",
+      "required_invariant": "Drying simulation must use authentic pigeon pea kinetics (Shepherd & Bhardwaj 1988; Silva et al. 2019), scale Page k by 60^n, couple internal diffusivity with temperature, and obey DimensionalGuard <= 2.0 MPa.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0021_drying_stress_and_page_kinetics",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0021: 85C (1.82 MPa > 1.65 MPa) vs 65C->55C (0.72 MPa < 1.65 MPa) differentiated and within <= 2.0 MPa guard.",
+      "verified_source_hash": "8d3840b14008e5872bf6d8a5135eacd6b823838697c9eda683d196ff60c03c5d",
+      "previous_record_hash": "4952d9393b0d2c8136996228ff41c0d813a823adc59ea357aec738b83b6f729b",
+      "record_hash": "6a0acc06cc1f82e73fb66a07c6524b2511507695c770045957fd4bd056985bb7"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0022",
+      "timestamp_utc": "2026-10-27T20:43:30.656292+00:00",
+      "component": "batch_variability_and_adaptive_policy",
+      "failure_class": "omitted_variables_and_oracle_leakage",
+      "observed_claim": "Stage 1 non-PDE heuristic failed TECH-CHEM-02 (19.3 N > 18 N) while Stage 2 claimed it passed; Stage 3 omitted thickness_mm and moisture_wb_pct in solver call and branched on latent bound Ca",
+      "source_artifact": "scripts/run_variability_and_adaptation_analysis.py & reports/FEEDSTOCK_ADAPTATION_AND_BATCH_VARIABILITY_REPORT.md",
+      "reproduction_conditions": {
+        "stage": "1_to_3_variability"
+      },
+      "failure_mechanism": "Stage 3 Monte Carlo passed an 8-tuple omitting grain thickness and initial moisture, and adaptive tier policy read unobservable ground-truth ca_native_mg instead of noisy 5-min intake proxy.",
+      "required_invariant": "All batch variability simulations must propagate grain thickness and initial moisture into the PDE solver and evaluate adaptive policies using noisy intake proxy measurements.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0022_batch_geometry_and_noisy_intake_proxy",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0022: thickness and moisture propagated in Module B/G and noisy 5-min intake diagnostic classifier verified.",
+      "verified_source_hash": "8d3840b14008e5872bf6d8a5135eacd6b823838697c9eda683d196ff60c03c5d",
+      "previous_record_hash": "6a0acc06cc1f82e73fb66a07c6524b2511507695c770045957fd4bd056985bb7",
+      "record_hash": "ebd2054a2a0ed1e65eedd84627e425b546bddb8377226f1ab84040fd659072f5"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0023",
+      "timestamp_utc": "2026-10-27T20:43:30.656856+00:00",
+      "component": "vacuum_impregnation_and_washing_balance",
+      "failure_class": "porosity_violation_and_hardcoded_table",
+      "observed_claim": "Vacuum impregnation pre-filled 70% of grain volume with 0.85*C_bath (110.5 mol/m3) at t=0 claiming 4.6 min 95% core Ca chelation; Table 4 hardcoded 10.0s/45ppm and ignored internal pore solute",
+      "source_artifact": "scripts/run_flavor_kinetics_and_rapid_pretreatment_study.py & reports/FLAVOR_REMEDIATION_AND_RAPID_PRETREATMENT_REPORT.md",
+      "reproduction_conditions": {
+        "tech": "TECH-4-VACUUM-IMPREGNATION"
+      },
+      "failure_mechanism": "Pre-filling grain with 0.85*C_bath violates dry cotyledon open porosity (epsilon ~ 0.115, Fito et al. 1996 HDM limit), and washing ignored solute retained inside internal cotyledon pores.",
+      "required_invariant": "Vacuum impregnation initial solute uptake must be bounded by open_porosity * (1 - P_vac/P_atm) * C_bath, and washing must track both external surface film and internal pore solute retention.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0023_vacuum_impregnation_porosity_and_internal_solute",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0023: Fito (1996) HDM porosity cap enforced and two-domain surface+internal washing balance verified.",
+      "verified_source_hash": "8d3840b14008e5872bf6d8a5135eacd6b823838697c9eda683d196ff60c03c5d",
+      "previous_record_hash": "ebd2054a2a0ed1e65eedd84627e425b546bddb8377226f1ab84040fd659072f5",
+      "record_hash": "fba810ad9cef3b5c735a79d7994b2a64491813e5deab6fc40ce28a23a6ce7803"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0024",
+      "timestamp_utc": "2026-10-27T20:43:30.657384+00:00",
+      "component": "sop_and_bench_buffer_stoichiometry",
+      "failure_class": "thermodynamic_ph_mismatch",
+      "observed_claim": "SOP Tier 2 (33.8 kg K3Cit.H2O + 3.7 kg Na3Cit.2H2O + 2.5 kg H3Cit / 1000L) and Bench Pot 4 claimed pH 5.20 but equilibrate at pH 6.76 and pH 5.83",
+      "source_artifact": "docs/specifications/15TPD_FACTORY_SOP_AND_RECIPES.md & docs/specifications/MONDAY_BENCH_TRIAL_PROTOCOL.md",
+      "reproduction_conditions": {
+        "target_pH": 5.2
+      },
+      "failure_mechanism": "Tri-basic citrate salt to anhydrous citric acid mass ratio was calculated with wrong acid fraction (93.6% salt / 6.4% acid instead of ~60.5% salt / 39.5% acid molar ratio required for pH 5.20).",
+      "required_invariant": "All buffer recipes in SOP and bench protocols must be solved via exact multi-protic electroneutrality and verified to equilibrate at the stated target pH.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0024_buffer_recipe_equilibrium_ph",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0024: exact electroneutrality solver confirms equilibrium pH matches target pH within +/-0.01.",
+      "verified_source_hash": "8d3840b14008e5872bf6d8a5135eacd6b823838697c9eda683d196ff60c03c5d",
+      "previous_record_hash": "fba810ad9cef3b5c735a79d7994b2a64491813e5deab6fc40ce28a23a6ce7803",
+      "record_hash": "b0790438f7c31bc75f55ed8fda781962dbbb6efd10c674a259534b01065f9e47"
+    },
+    {
+      "schema_version": 1,
+      "error_id": "FAIL-0025",
+      "timestamp_utc": "2026-10-27T20:43:30.657924+00:00",
+      "component": "once_through_vs_recycled_reagent_opex",
+      "failure_class": "mass_and_economic_balance_contradiction",
+      "observed_claim": "SOP listed once-through daily reagent masses (899.4 kg/day total citrate salts = INR 9.49/kg dal) while claiming INR 0.42/kg dal reagent cost",
+      "source_artifact": "docs/specifications/15TPD_FACTORY_SOP_AND_RECIPES.md",
+      "reproduction_conditions": {
+        "capacity_tpd": 15.0
+      },
+      "failure_mechanism": "SOP mass table assumed 0% spent bath liquor recycling while OpEx table assumed 96.7% liquor recycling without reconciling blowdown or make-up dosing.",
+      "required_invariant": "Plant mass and economic balances must explicitly distinguish once-through (0% recycle) from bleed-and-feed recycled liquor operation (85% recycle) with consistent reagent make-up.",
+      "regression_test": "tests/test_defect_regressions.py::test_fail_0025_once_through_vs_recycled_opex_reconciliation",
+      "status": "VERIFIED_FIXED",
+      "resolution_evidence": "Verified by test_fail_0025: once-through vs 85% recycled bath reagent consumption and OpEx explicitly reconciled.",
+      "verified_source_hash": "8d3840b14008e5872bf6d8a5135eacd6b823838697c9eda683d196ff60c03c5d",
+      "previous_record_hash": "b0790438f7c31bc75f55ed8fda781962dbbb6efd10c674a259534b01065f9e47",
+      "record_hash": "dcb8969dbb81b380b83fa34628c14347c52889f275bd10af5106bd7fadc3c654"
+    }
+  ]
+}

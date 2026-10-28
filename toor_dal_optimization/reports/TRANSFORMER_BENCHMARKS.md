@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — SCIENTIFIC TRANSFORMER & SURROGATE BENCHMARKS
+# FINNOAQ TOOR DAL — SCIENTIFIC TRANSFORMER & SURROGATE BENCHMARKS
 
 **Document ID:** HKT-TRF-2026-001  
 **Architecture:** Multi-Head Self-Attention Transformer Encoder ($d_{\text{model}} = 64, n_{\text{head}} = 4, L = 2$)  

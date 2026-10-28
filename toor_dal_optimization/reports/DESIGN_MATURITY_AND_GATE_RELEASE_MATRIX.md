@@ -8,7 +8,7 @@
 
 ## 1. Design Maturity Classification Framework
 
-Every engineering deliverable in the Harakutir Toor Dal repository is assigned a controlled maturity level and approval status:
+Every engineering deliverable in the FinnoaQ Toor Dal repository is assigned a controlled maturity level and approval status:
 
 | Maturity Stage Tag | Technical Definition & Scope | Permitted Commercial / Project Usage | Release Authority Required |
 | :--- | :--- | :--- | :--- |
@@ -42,6 +42,6 @@ The master matrix below maps all 20 core project reports, 10 CAD drawings, and d
 | **ENG-REP-013: Utility & Wastewater** | Environmental Eng | `PRELIMINARY_CALCULATED` | Local CETP acceptance letter / ZLD requirement | **Gate G-C** |
 | **ENG-REP-014: BOM & CapEx Estimate** | Cost Estimator | `PRELIMINARY_CALCULATED` | Vendor formal competitive quotations (AACE Class 3) | **Gate G-D** |
 | **ENG-REP-015: Commissioning Plan** | QA / Commissioning | `PRELIMINARY_CALCULATED` | Target lot laboratory baseline variance ($\sigma_{baseline}$) | **Gate G-A** |
-| **ENG-REP-016: Operations & Training** | Plant Operations | `PRELIMINARY_CALCULATED` | Operator headcount approval by Harakutir HR | **Gate G-E** |
+| **ENG-REP-016: Operations & Training** | Plant Operations | `PRELIMINARY_CALCULATED` | Operator headcount approval by FinnoaQ HR | **Gate G-E** |
 | **DWG-001 to 010: DXF CAD Package** | CAD Drafting | `PRELIMINARY_CALCULATED` | Licensed Civil/Structural engineer seal and signature | **Gate G-D** |
 | **CAD-STEP-001 to 004: 3D Models** | 3D Mechanical | `PRELIMINARY_CALCULATED` | Vessel fabricator plate rolling tool constraints | **Gate G-D** |

@@ -1,8 +1,8 @@
 # V10 Final Release Acceptance & Verification Matrix
 **Project Reference:** FNQ-PR-2026-001 | Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006)  
 **Document Ref:** FNQ-V10-ACC-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -88,5 +88,5 @@ reports/V10_RELEASE_ACCEPTANCE_MATRIX.md                                [This Fi
 ---
 
 ## 5. One Precise Next Human Action
-**Action for Client Leadership (Dr. Archisman Ray, Harakutir):**
+**Action for Client Leadership (Technical Advisory Panel, Client Organization):**
 Review and endorse Section 18 of the client proposal `deliverables/PHASE1_TOOR_DAL_DIAGNOSTIC_RND_PROPOSAL_REV_V10.docx` (or `.pdf`), confirming selection of **Option 1 (Baseline Scoped Study at ₹1,73,000 + GST)** or **Option 2 (Multi-Lot Expanded Study at ₹2,85,000 + GST)**, and issue sample dispatch tracking details with the enclosed Annexure C Metadata Form to initiate project mobilization.

@@ -1,4 +1,4 @@
-# HARAKUTIR CLOSED-LOOP AI-NATIVE PRODUCT DEVELOPMENT LIFECYCLE
+# FINNOAQ CLOSED-LOOP AI-NATIVE PRODUCT DEVELOPMENT LIFECYCLE
 ## Specification Manual: Stages 01–12, Decision Gates G0–G9 & Multi-Programme Architecture
 
 **Document ID:** HKT-ENG-SPEC-2026-002  
@@ -13,7 +13,7 @@
 
 In conventional food R&D, product development follows a costly, open-loop sequence: bench experiments produce prototypes, pilot trials reveal unanticipated scale-up bottlenecks, factory lines fail to replicate laboratory textures, and recipe reformulations occur reactively.
 
-For **Harakutir**, the quick-cooking toor dal product is not merely a bag of treated pulses; it is an integrated, reproducible system comprising:
+For **FinnoaQ**, the quick-cooking toor dal product is not merely a bag of treated pulses; it is an integrated, reproducible system comprising:
 1. **Raw material agronomic specifications** (origin, variety, moisture, cotyledon geometry, initial phytate/pectin ratios).
 2. **Conditioning and hydrothermal physics** (moisture diffusion kinetics, middle lamella calcium-pectate solubilization, starch pre-gelatinization).
 3. **Cooking performance** (objective reduction from 6 pressure cooker whistles to 3.0–3.5 whistles, cooked firmness 20–22 N, 0% hard core).
@@ -43,7 +43,7 @@ graph TD
 
 ## 2. Programme Boundaries & SOW Commercial Isolation
 
-A critical engineering failure in AI-driven workflows is the silent creep of scope. Harakutir's master project is partitioned into six rigorously gated programmes:
+A critical engineering failure in AI-driven workflows is the silent creep of scope. FinnoaQ's master project is partitioned into six rigorously gated programmes:
 
 | Programme | Scope Title | Objective & Boundaries | Fee / Budget Baseline | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -73,7 +73,7 @@ A critical engineering failure in AI-driven workflows is the silent creep of sco
   - Food-grade mineral salts: $\text{NaHCO}_3$ ($0.2 - 0.75\%$), $\text{STPP}$ ($0.1 - 0.4\%$), Potassium carbonate ($0.2 - 0.5\%$)
   - Biocatalytic enzymes: Food-grade pectinase ($0.05 - 0.25\%$) at $45 - 55^\circ\text{C}$
   - Superheated culinary steam: $0.15 - 0.35\text{ MPa}$ flash conditioning
-* **Deliverable:** Machine-readable candidate space implemented in `src/harakutir/virtual_screening.py`.
+* **Deliverable:** Machine-readable candidate space implemented in `src/finnoaq/virtual_screening.py`.
 
 ### STAGE 03 — Computationally Eliminate Bad Candidates (5-Layer Screening)
 * **Layer 1: Hard Constraint Screening:** Immediately purges non-FSSAI compliant substances (e.g., non-permitted chemical chelators like industrial EDTA) and physical limits ($T > 220^\circ\text{C}$ causing grain pyrolysis; steam pressure $> 0.5\text{ MPa}$ exceeding mill pressure vessels).
@@ -91,7 +91,7 @@ A critical engineering failure in AI-driven workflows is the silent creep of sco
   - *Level D:* Techno-economic balances and multi-objective Pareto sorting.
 * **Pareto Objectives:**
   $$\min(f_{\text{whistles}}), \quad \max(f_{\text{sensory}}), \quad \min(f_{\text{opex}}), \quad \max(f_{\text{lysine}}), \quad \max(f_{\text{yield}})$$
-* **Deliverable:** Pareto-optimal candidate frontier isolated in `src/harakutir/virtual_screening.py`.
+* **Deliverable:** Pareto-optimal candidate frontier isolated in `src/finnoaq/virtual_screening.py`.
 
 ### STAGE 05 — Select High-Information Experiments (Bayesian OED)
 * **Objective:** Design the minimal defensible physical experiment sequence that maximizes mutual information gain between candidate treatments and diagnostic hypotheses (H1–H5).
@@ -158,11 +158,11 @@ A critical engineering failure in AI-driven workflows is the silent creep of sco
 | :--- | :--- | :--- | :--- | :--- |
 | **G0** | **Product Definition** | `VERIFIED_PASSED` | Product format defined as shelf-stable quick-cooking split toor dal with baseline 3 vs 6 whistle specification. | `reports/COMPLETE_PARAMETER_REGISTRY.md`<br>`reports/INDIAN_VS_TANZANIAN_BENCHMARK_MATRIX.md` |
 | **G1** | **Evidence Readiness** | `VERIFIED_DATA_GATED` | Cryptographic SHA-256 registration active; zero synthetic data in real analytical namespaces; empirical claims gated pending wet-lab tests. | `state/provenance_registry.json`<br>`reports/DATA_READINESS_REPORT.md` |
-| **G2** | **Design Space Feasibility** | `VERIFIED_PASSED` | Prohibited additives (non-FSSAI) and thermodynamic violations computationally eliminated in Layer 1. | `src/harakutir/virtual_screening.py` |
-| **G3** | **Virtual Shortlist** | `VERIFIED_PASSED` | Non-dominated multi-objective Pareto front identified (cooking time vs texture vs OPEX vs lysine). | `src/harakutir/virtual_screening.py`<br>`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md` |
-| **G4** | **Experimental Evidence** | `VERIFIED_PASSED` | Sequential Bayesian OED matrix formulated to discriminate H1–H5 within the ₹2.00L SOW ceiling. | `src/harakutir/oed.py`<br>`PROMPT_PHASE2_OED.txt` |
-| **G5** | **Prototype Release** | `VERIFIED_PASSED` | CTQ specifications established: Whistles $\le 3.5$, Firmness $20 - 24\text{ N}$, Hedonic Score $\ge 7.8/9.0$. | `src/harakutir/foodoscope.py`<br>`src/harakutir/digital_twin.py` |
-| **G6** | **Scale-Up Readiness** | `VERIFIED_PASSED` | 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX modeled and validated. | `src/harakutir/digital_twin.py` |
+| **G2** | **Design Space Feasibility** | `VERIFIED_PASSED` | Prohibited additives (non-FSSAI) and thermodynamic violations computationally eliminated in Layer 1. | `src/finnoaq/virtual_screening.py` |
+| **G3** | **Virtual Shortlist** | `VERIFIED_PASSED` | Non-dominated multi-objective Pareto front identified (cooking time vs texture vs OPEX vs lysine). | `src/finnoaq/virtual_screening.py`<br>`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md` |
+| **G4** | **Experimental Evidence** | `VERIFIED_PASSED` | Sequential Bayesian OED matrix formulated to discriminate H1–H5 within the ₹2.00L SOW ceiling. | `src/finnoaq/oed.py`<br>`PROMPT_PHASE2_OED.txt` |
+| **G5** | **Prototype Release** | `VERIFIED_PASSED` | CTQ specifications established: Whistles $\le 3.5$, Firmness $20 - 24\text{ N}$, Hedonic Score $\ge 7.8/9.0$. | `src/finnoaq/foodoscope.py`<br>`src/finnoaq/digital_twin.py` |
+| **G6** | **Scale-Up Readiness** | `VERIFIED_PASSED` | 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX modeled and validated. | `src/finnoaq/digital_twin.py` |
 | **G7** | **Validated Pilot** | `VERIFIED_PASSED` | 25–100 kg pilot trial protocols specified with explicit distinction from Phase 1 diagnostic scope. | `reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md` |
 | **G8** | **Manufacturing Release** | `VERIFIED_PASSED` | FSSAI limits (moisture $\le 14\%$, $a_w \le 0.65$), HACCP hazard analysis, and QA release established. | `regulatory_and_lab_compliance_framework.md`<br>`reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md` |
-| **G9** | **Sustained Performance** | `VERIFIED_PASSED` | Bayesian posterior updating engine active for continuous factory feedback and incoming lot adaptation. | `src/harakutir/digital_twin.py`<br>`src/harakutir/harness.py` |
+| **G9** | **Sustained Performance** | `VERIFIED_PASSED` | Bayesian posterior updating engine active for continuous factory feedback and incoming lot adaptation. | `src/finnoaq/digital_twin.py`<br>`src/finnoaq/harness.py` |

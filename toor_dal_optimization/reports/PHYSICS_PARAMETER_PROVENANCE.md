@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — PHYSICS & PARAMETER PROVENANCE REGISTER
+# FINNOAQ TOOR DAL — PHYSICS & PARAMETER PROVENANCE REGISTER
 
 **Document ID:** HKT-PROV-2026-001  
 **Audit Reference:** [`CRITICAL_SCIENTIFIC_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/CRITICAL_SCIENTIFIC_AUDIT.md)  
@@ -10,7 +10,7 @@
 ## 1. Executive Scientific Statement on Biophysical Claims
 
 > [!IMPORTANT]
-> **Fundamental Audit Rule:** A Python class that computes an output does **not** constitute a validated molecular digital twin. An algebraic equation that yields a plausible cooking time does **not** prove that the hypothesized biochemical pathway occurs in Harakutir's physical dal lot.
+> **Fundamental Audit Rule:** A Python class that computes an output does **not** constitute a validated molecular digital twin. An algebraic equation that yields a plausible cooking time does **not** prove that the hypothesized biochemical pathway occurs in FinnoaQ's physical dal lot.
 
 All molecular and biochemical mechanisms proposed in earlier reports (PME de-esterification, phytase cleavage, calcium pectate crosslinking, and monovalent ion exchange) are hereby classified as **Uncalibrated Working Biophysical Hypotheses**. They are grounded in general pulse science, but their numerical parameters have **never been calibrated on physical wet-lab measurements of the target Tanzanian pigeon pea lot**.
 
@@ -19,7 +19,7 @@ All molecular and biochemical mechanisms proposed in earlier reports (PME de-est
 ## 2. Parameter Provenance & Epistemic Classification Taxonomy
 
 Every physical parameter used in the simulation models is categorized under one of six epistemic classifications:
-1. `MEASURED_TARGET_LOT`: Directly measured on Harakutir's specific Tanzanian pigeon pea lot.
+1. `MEASURED_TARGET_LOT`: Directly measured on FinnoaQ's specific Tanzanian pigeon pea lot.
 2. `MEASURED_OTHER_PIGEON_PEA`: Measured on other pigeon pea (*Cajanus cajan*) cultivars in published literature.
 3. `LITERATURE_SOURCED`: Sourced from other dry legumes (beans, chickpeas, cowpeas) or standard physical handbooks.
 4. `FITTED`: Calibrated by regression against independent empirical data.
@@ -32,8 +32,8 @@ Every physical parameter used in the simulation models is categorized under one 
 
 | Parameter Symbol | Description | Numerical Value | Physical Units | Provenance Category | Primary Source Citation / Basis | Status / Limitation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **$R$** | Cotyledon Major Radius | $3.25 \times 10^{-3}$ | $\text{m}$ (3.25 mm) | `MEASURED_TARGET_LOT` | Physical calliper measurements on Harakutir sample lot. | Verified physical geometry. |
-| **$H/2$** | Cotyledon Half-Thickness | $1.30 \times 10^{-3}$ | $\text{m}$ (1.30 mm) | `MEASURED_TARGET_LOT` | Physical calliper measurements on Harakutir sample lot. | Verified physical geometry. |
+| **$R$** | Cotyledon Major Radius | $3.25 \times 10^{-3}$ | $\text{m}$ (3.25 mm) | `MEASURED_TARGET_LOT` | Physical calliper measurements on FinnoaQ sample lot. | Verified physical geometry. |
+| **$H/2$** | Cotyledon Half-Thickness | $1.30 \times 10^{-3}$ | $\text{m}$ (1.30 mm) | `MEASURED_TARGET_LOT` | Physical calliper measurements on FinnoaQ sample lot. | Verified physical geometry. |
 | **$M_0$** | Initial Grain Moisture | $0.105$ | $\text{g H}_2\text{O / g wet dal}$ (10.5%) | `MEASURED_TARGET_LOT` | In-house moisture analyzer certificate. | Verified physical baseline. |
 | **$\rho_{\text{dal}}$** | Bulk Dal Grain Density | $1350.0$ | $\text{kg/m}^3$ | `MEASURED_OTHER_PIGEON_PEA` | Goyal et al. (2010), *Int. J. Food Prop.* | Representative legume density. |
 | **$\alpha_{\text{th}}$** | Thermal Diffusivity | $1.121 \times 10^{-7}$ | $\text{m}^2/\text{s}$ | `LITERATURE_SOURCED` | Singh & Goswami (2000); Sweat (1986). | Standard pulse food property. |
@@ -115,5 +115,5 @@ To transition this mechanism from a hypothesis to demonstrated scientific fact, 
 ---
 
 **Signed Off:**  
-Harakutir Scientific Advisory & Biophysical Audit Panel  
+FinnoaQ Scientific Advisory & Biophysical Audit Panel  
 *October 15, 2026*

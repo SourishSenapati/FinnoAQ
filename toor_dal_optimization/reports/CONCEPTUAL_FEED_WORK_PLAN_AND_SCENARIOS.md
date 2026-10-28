@@ -1,4 +1,4 @@
-# Harakutir 15 MT/Day Greenfield Conceptual FEED Work Plan & Scenario Dossier
+# FinnoaQ 15 MT/Day Greenfield Conceptual FEED Work Plan & Scenario Dossier
 
 > [!IMPORTANT]
 > **Engineering Maturity Status:** `CONCEPTUAL FEED — PRELIMINARY — NOT FOR FABRICATION / NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT`  

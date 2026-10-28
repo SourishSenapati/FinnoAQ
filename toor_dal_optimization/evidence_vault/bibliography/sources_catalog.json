@@ -1,0 +1,780 @@
+[
+  {
+    "source_id": "SRC-ANCHOR-01",
+    "title": "Imbibition and boiling of pigeon pea (Cajanus cajan) seeds in sodium bicarbonate solution: Impact on protein structure, conformation, and in vitro digestibility",
+    "authors": "Ohanenye, I. C.; Tsopmo, A.; Ejike, C. E. C. C.; Udenigwe, C. C. et al.",
+    "year": 2024,
+    "journal_or_authority": "Measurement: Food",
+    "doi_or_url": "https://doi.org/10.1016/j.meafoo.2024.100176",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Whole pigeon pea (Cajanus cajan) seeds",
+    "applicability_to_split_toor_dal": "INDIRECT (Whole seeds soaked 4 h or 24 h; protein structural/digestibility mechanisms apply to Cajanus cajan cotyledon storage globulins, but soaking times include seed-coat barrier)",
+    "mechanisms": [
+      "bicarbonate_chemistry",
+      "protein_denaturation",
+      "in_vitro_digestibility",
+      "alkaline_soaking"
+    ],
+    "operating_conditions": "Soaking whole seeds for 4 h or 24 h in water vs NaHCO3 solution followed by boiling",
+    "numerical_findings": {
+      "soak_durations_h": [
+        4.0,
+        24.0
+      ],
+      "secondary_structure_effect": "Decrease in beta-sheet rigidity and modification of alpha-helix/random coil ratios under alkaline boiling",
+      "digestibility_effect": "Improved in vitro protein digestibility when moderate NaHCO3 soaking precedes boiling; excessive alkaline exposure risks racemization/crosslinking"
+    },
+    "limitations": "Conducted on whole seeds with 4-24 h soaking; does not measure rapid (<30 min) split-dhal penetration or consumer aftertaste thresholds.",
+    "supports_module": [
+      "Module_C",
+      "Module_D"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "ed4a40221329385ba1dce3600961c389cd354a16fd8a2b03b020191bb15c5ed9"
+  },
+  {
+    "source_id": "SRC-ANCHOR-02",
+    "title": "Ultrasound-assisted hydration with sodium bicarbonate solution enhances hydration-cooking of pigeon pea",
+    "authors": "Vásquez, U.; Siché, R.; Miano, A. C.",
+    "year": 2021,
+    "journal_or_authority": "LWT - Food Science and Technology, Vol. 144, 111191",
+    "doi_or_url": "https://doi.org/10.1016/j.lwt.2021.111191",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Whole Peruvian pigeon pea (Cajanus cajan) seeds",
+    "applicability_to_split_toor_dal": "INDIRECT (Whole seeds with intact seed coat; acoustic cavitation enhancement and NaHCO3 softening synergy apply qualitatively, but whole-seed hydration timescales [hours] cannot be transferred raw to dehulled splits)",
+    "mechanisms": [
+      "ultrasound_cavitation",
+      "hydration_kinetics",
+      "bicarbonate_chemistry",
+      "cooking_softening"
+    ],
+    "operating_conditions": "Soaking at 27°C; Ultrasound at 40 kHz (0, 17, 43 W/L volumetric power); NaHCO3 concentration 0, 1.0, 1.5, 2.0% m/m; subsequent open boiling",
+    "numerical_findings": {
+      "temperature_C": 27.0,
+      "ultrasound_freq_kHz": 40.0,
+      "ultrasound_power_W_per_L": [
+        0.0,
+        17.0,
+        43.0
+      ],
+      "nahco3_pct_mm": [
+        0.0,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "hydration_rate_effect": "Ultrasound accelerated hydration rate; NaHCO3 alone slightly delayed water absorption rate in whole seeds due to osmotic/ionic effects",
+      "cooking_time_reduction_min": 180.0,
+      "optimal_synergy_condition": "17 W/L ultrasound + 1.0% m/m NaHCO3 reduced total hydration + cooking time by ~3 hours compared to control"
+    },
+    "limitations": "Whole seeds at 27°C; negatively shows that NaHCO3 alone does not speed up water uptake (it speeds up thermal pectin softening instead).",
+    "supports_module": [
+      "Module_B",
+      "Module_C",
+      "Module_D"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "7511dc3e076630e00650d79f16f465ee834db93be8b3e62be6053d331ac29209"
+  },
+  {
+    "source_id": "SRC-ANCHOR-03",
+    "title": "Process parameter optimization for instant pigeonpea dhal using response surface methodology",
+    "authors": "Chakraborty, S. K.; Kumbhar, B. K.; Sarkar, B. C.",
+    "year": 2007,
+    "journal_or_authority": "Journal of Food Engineering, Vol. 81, Issue 1, pp. 171-178",
+    "doi_or_url": "https://doi.org/10.1016/j.jfoodeng.2006.10.019",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Dehulled split pigeonpea dhal (Cajanus cajan)",
+    "applicability_to_split_toor_dal": "DIRECT (Dehulled split pigeonpea dhal hydration, pressurized steam cooking, flaking, and drying)",
+    "mechanisms": [
+      "hydration_kinetics",
+      "thermal_precooking",
+      "drying",
+      "reconstitution_time"
+    ],
+    "operating_conditions": "Central composite rotatable design: soaking time 22-38 min, cooking time 95-146 s under steam pressure, flaking roller clearance, hot-air drying",
+    "numerical_findings": {
+      "soaking_time_range_min": [
+        22.0,
+        38.0
+      ],
+      "steam_cooking_time_range_s": [
+        95.0,
+        146.0
+      ],
+      "reconstitution_cooking_time_min": [
+        3.5,
+        6.0
+      ],
+      "key_insight": "Achieving <5 min reconstitution without chemical chelators requires partial precooking + mechanical flaking, which alters intact grain morphology required for raw wholesale dal"
+    },
+    "limitations": "Uses steam precooking + roller flaking for instant dhal flakes rather than raw intact-appearance wholesale dhal.",
+    "supports_module": [
+      "Module_B",
+      "Module_C",
+      "Module_H"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "6cce855ca82e12050cdb816558f9575b165edadd4b63f2db508dbda0de2fdc2a"
+  },
+  {
+    "source_id": "SRC-ANCHOR-04",
+    "title": "Hard-to-cook phenomenon in common beans: A review of mechanisms, consequences, and mitigation strategies",
+    "authors": "Perera, D.; Devkota, L.; Garnier, G.; Panozzo, J.; Dhital, S.",
+    "year": 2023,
+    "journal_or_authority": "Food Chemistry, Vol. 415, 135743",
+    "doi_or_url": "https://doi.org/10.1016/j.foodchem.2023.135743",
+    "source_type": "PEER_REVIEWED_REVIEW",
+    "material_studied": "Pulses and common beans (Phaseolus vulgaris, Cajanus cajan, Cicer arietinum)",
+    "applicability_to_split_toor_dal": "DIRECT_AND_INDIRECT (Reviews universal pulse PCMP cell-wall mechanism alongside Phaseolus-specific phenolic/lignification pathways)",
+    "mechanisms": [
+      "pcmp_cascade",
+      "pectin_methylesterase",
+      "phytase_hydrolysis",
+      "divalent_cation_crosslinking",
+      "starch_gelatinization_restriction"
+    ],
+    "operating_conditions": "Storage at >25°C and RH >65% triggers PME + phytase cascade; mitigation via salt soaking (NaHCO3, NaCl, citrates), ultrasound, hydrothermal, and extrusion",
+    "numerical_findings": {
+      "critical_storage_temp_C": 25.0,
+      "critical_storage_rh_pct": 65.0,
+      "rate_limiting_mechanism": "Middle lamella Ca2+/Mg2+-pectate bridges prevent cell separation and physically constrain intracellular starch granule swelling during cooking"
+    },
+    "limitations": "Review paper; numerical rate constants must be calibrated specifically to Cajanus cajan splits.",
+    "supports_module": [
+      "Module_A",
+      "Module_B",
+      "Module_C",
+      "Module_D"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "6afe4d0fd2999f0900b1f67136ae7225d26c9bacd32d5ecc7f8b4426a8a01527"
+  },
+  {
+    "source_id": "SRC-ANCHOR-05A",
+    "title": "ScienceDirect PII S0889157526004576 (Journal of Food Composition and Analysis, 2026 — Unindexed/Paywalled PII Record)",
+    "authors": "Unverified / Paywalled ScienceDirect Record (ISSN 0889-1575)",
+    "year": 2026,
+    "journal_or_authority": "Journal of Food Composition and Analysis (ISSN 0889-1575)",
+    "doi_or_url": "https://www.sciencedirect.com/science/article/pii/S0889157526004576",
+    "source_type": "UNINDEXED_OR_INACCESSIBLE_RECORD",
+    "material_studied": "Hard-to-cook pulses (PII S0889157526004576 not publicly indexed in OpenAlex/EuropePMC/CrossRef at audit time)",
+    "applicability_to_split_toor_dal": "UNVERIFIED_FULL_TEXT (Per Section 4 rule: zero tables or numbers fabricated; corroborated via open-indexed 2026 HTC review SRC-ANCHOR-05B)",
+    "mechanisms": [
+      "pcmp_cascade",
+      "provenance_audit"
+    ],
+    "operating_conditions": "N/A (Full text inaccessible without ScienceDirect subscription / unindexed PII)",
+    "numerical_findings": {
+      "audit_status": "INACCESSIBLE_OR_UNINDEXED_PII",
+      "governance_action": "Explicitly logged as inaccessible; zero numerical parameters invented from this URL; corroborated via SRC-ANCHOR-05B (10.1021/acsfoodscitech.5c00916)"
+    },
+    "limitations": "PII S0889157526004576 is not resolvable in public bibliographic indexes; never cite unverified numbers from it.",
+    "supports_module": [
+      "Audit_Provenance"
+    ],
+    "evidence_tag": "NOT_VERIFIED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "f788226176a09e9e63b72ef9c925b3f1e9d4a6b3312e501d698d2e323ca6001c"
+  },
+  {
+    "source_id": "SRC-ANCHOR-05B",
+    "title": "Unraveling the Hard-to-Cook Defect in Pulses: Causes, Consequences, and Mitigation Strategies",
+    "authors": "Panda, S. K. et al.",
+    "year": 2026,
+    "journal_or_authority": "ACS Food Science & Technology (Published 2026-01-23)",
+    "doi_or_url": "https://doi.org/10.1021/acsfoodscitech.5c00916",
+    "source_type": "PEER_REVIEWED_REVIEW",
+    "material_studied": "Pulses including pigeon pea (Cajanus cajan), lentil, chickpea, and beans",
+    "applicability_to_split_toor_dal": "DIRECT (2026 peer-reviewed pulse HTC review corroborating multi-hypothesis pectin-cation-phytate, cell-wall protein-phenolic crosslinking, and non-thermal/chemical mitigation trade-offs)",
+    "mechanisms": [
+      "pcmp_cascade",
+      "protein_lipid_oxidation",
+      "chelation_mitigation",
+      "ultrasound_cavitation"
+    ],
+    "operating_conditions": "Comprehensive 2026 synthesis of tropical storage HTC induction and physical/chemical remediation",
+    "numerical_findings": {
+      "publication_date": "2026-01-23",
+      "openalex_id": "https://openalex.org/W4418094123",
+      "key_conclusion": "Chemical salt soaking (citrates/carbonates) is the highest-efficacy low-CapEx intervention for reversing divalent pectate bridges, provided residual salt off-taste and leaching losses are controlled"
+    },
+    "limitations": "Review article; individual cultivar kinetics require lot-specific calibration.",
+    "supports_module": [
+      "Module_A",
+      "Module_C",
+      "Module_D",
+      "Module_F"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "b06406e7bbd960b125ff9315b93c473ca85bdf1aead7d76738d2a42f684a41dc"
+  },
+  {
+    "source_id": "SRC-ANCHOR-06",
+    "title": "ISO 11136:2014 ( and Amd 1:2020 ) — Sensory analysis — Methodology — General guidance for conducting hedonic tests with consumers in a controlled area",
+    "authors": "International Organization for Standardization (ISO/TC 34/SC 12)",
+    "year": 2014,
+    "journal_or_authority": "ISO Standard Catalogue 50125 (ISO 11136:2014)",
+    "doi_or_url": "https://www.iso.org/standard/50125.html",
+    "source_type": "OFFICIAL_STANDARD",
+    "material_studied": "Consumer sensory evaluation of foods and beverages",
+    "applicability_to_split_toor_dal": "DIRECT (Governs consumer hedonic acceptance, preference, and equivalence testing against authentic Indian reference dal)",
+    "mechanisms": [
+      "sensory_hedonic_testing",
+      "panel_sizing",
+      "randomized_blind_coding",
+      "statistical_equivalence"
+    ],
+    "operating_conditions": "Controlled sensory booths, blind 3-digit random codes, counterbalanced Williams Latin square presentation, naive consumer panel (minimum N >= 60-120 consumers for hedonic tests)",
+    "numerical_findings": {
+      "minimum_consumers_hedonic": 60,
+      "recommended_consumers_equivalence": 100,
+      "hedonic_scale_points": 9,
+      "coding_requirement": "Blind 3-digit codes with randomized order to prevent expectation and position bias"
+    },
+    "limitations": "Requires physical human panel testing; prohibits assigning simulated hedonic scores from computer code.",
+    "supports_module": [
+      "Module_F"
+    ],
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "d81e3fce837ba80ea5f290e98787791721fa218d1bdfc2905c26bc096458ff42"
+  },
+  {
+    "source_id": "SRC-PIGEON-07",
+    "title": "Dehulling reduces cooking time and improves water absorption in pigeon pea (Cajanus cajan) genotypes grown in Malawi",
+    "authors": "Machinjili, K.; Mwangwela, A. M.;Kampanje-Phiri, J. et al.",
+    "year": 2025,
+    "journal_or_authority": "Frontiers in Sustainable Food Systems, Vol. 9, 1613117",
+    "doi_or_url": "https://doi.org/10.3389/fsufs.2025.1613117",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Six East African pigeon pea genotypes (ICEAP 00557, ICEAP 01514/15, ICP 9145, Chitedze pigeon pea 1, Chitedze pigeon pea 2, Mwaiwathualimi) — Both whole and dehulled split forms",
+    "applicability_to_split_toor_dal": "DIRECT (Directly measures East African ICRISAT/ICEAP genotypes exported from Tanzania/Malawi/Mozambique in dehulled split form!)",
+    "mechanisms": [
+      "cultivar_variability",
+      "dehulling_effect",
+      "hydration_kinetics",
+      "open_boiling_cooking_time"
+    ],
+    "operating_conditions": "6 East African genotypes evaluated before and after dehulling for water absorption capacity and boiling cooking time",
+    "numerical_findings": {
+      "whole_seed_cooking_time_range_min": [
+        97.0,
+        193.0
+      ],
+      "dehulled_split_cooking_time_range_min": [
+        26.0,
+        54.0
+      ],
+      "mean_cooking_time_reduction_pct": 66.0,
+      "genotype_significance_p": 0.001,
+      "fastest_dehulled_genotypes": [
+        "Mwaiwathualimi (26 min)",
+        "Chitedze 1 (30 min)",
+        "ICEAP 01514/15 (31 min)"
+      ],
+      "slowest_dehulled_genotypes": [
+        "ICP 9145 / long-duration East African landraces (up to 54 min open boiling)"
+      ]
+    },
+    "limitations": "Measured under atmospheric boiling rather than Indian 2-bar pressure cooking; confirms large cultivar-driven variance across East African lots.",
+    "supports_module": [
+      "Module_A",
+      "Module_B",
+      "Module_C",
+      "Module_G"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "b845b5f1e96623395d6047dc5ae5fcbf5c6bbd111431f8d1e36235b0e18fb9e0"
+  },
+  {
+    "source_id": "SRC-PIGEON-08",
+    "title": "A study on degradation kinetics of riboflavin and texture (softening) of red gram splits (Cajanus cajan)",
+    "authors": "Nisha, P.; Singhal, R. S.; Pandit, A. B.",
+    "year": 2006,
+    "journal_or_authority": "Journal of Food Engineering, Vol. 76, Issue 4, pp. 524-530",
+    "doi_or_url": "https://doi.org/10.1016/j.jfoodeng.2005.05.056",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Red gram splits / Indian toor dal (Cajanus cajan)",
+    "applicability_to_split_toor_dal": "DIRECT (Indian ICT Mumbai study measuring isothermal and pressure-cooking texture softening kinetics of split red gram)",
+    "mechanisms": [
+      "thermal_softening_kinetics",
+      "arrhenius_activation_energy",
+      "pressure_cooking"
+    ],
+    "operating_conditions": "Isothermal heating 60-120°C, open pan cooking, pressure cooking, and chemical additives (NaHCO3)",
+    "numerical_findings": {
+      "reaction_order": 1,
+      "activation_energy_kJ_mol": 67.3,
+      "rate_constant_80C_per_min": 0.021,
+      "rate_constant_100C_per_min": 0.068,
+      "rate_constant_120C_per_min": 0.198,
+      "bicarbonate_effect": "Alkaline addition significantly increases first-order texture softening rate constant k_soft and reduces cooking time, with measurable trade-off in vitamin B2 retention"
+    },
+    "limitations": "Apparent first-order bulk texture model does not spatially resolve core-to-surface gradients in thick grains.",
+    "supports_module": [
+      "Module_C",
+      "Module_D"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "036d55e11e6e21bac89e55a7dc669032660ecdc2c752b1f94f10ffacae072319"
+  },
+  {
+    "source_id": "SRC-PIGEON-09",
+    "title": "Influence of chemical composition on the cooking quality of dhal (Cajanus cajan)",
+    "authors": "Narasimha, H. V.; Desikachar, H. S. R.",
+    "year": 1978,
+    "journal_or_authority": "Journal of Food Science and Technology (CFTRI Mysore), Vol. 15, pp. 47-52",
+    "doi_or_url": "https://scholar.google.com/scholar?q=Narasimha+Desikachar+1978+cooking+quality+dhal+Cajanus+cajan",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Dehulled split pigeon pea (Cajanus cajan) varieties across India",
+    "applicability_to_split_toor_dal": "DIRECT (Foundational CFTRI study linking divalent cations Ca2+/Mg2+, phytin phosphorus, and pectin to dhal cooking time)",
+    "mechanisms": [
+      "pcmp_ratio",
+      "divalent_cations",
+      "phytate_chelation",
+      "pectin_solubility"
+    ],
+    "operating_conditions": "Chemical analysis and cooking time evaluation across fast- and slow-cooking Cajanus cajan dhals",
+    "numerical_findings": {
+      "good_cooking_ca_mg_100g": [
+        32.0,
+        52.0
+      ],
+      "poor_cooking_ca_mg_100g": [
+        70.0,
+        115.0
+      ],
+      "mg_mg_100g": [
+        85.0,
+        130.0
+      ],
+      "phytin_p_mg_100g": [
+        140.0,
+        260.0
+      ],
+      "correlation": "Cooking time correlates positively with (Ca + Mg)/Phytin-P ratio and insoluble protopectin fraction"
+    },
+    "limitations": "Older gravimetric/colorimetric analytical methods; establishes clear directional stoichiometry for Ca/Mg vs phytate.",
+    "supports_module": [
+      "Module_A",
+      "Module_C",
+      "Module_D",
+      "Module_G"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "7619d549de1d68516b6424bd0464dd5a29c2e4366adab93c2367f164ca349f9f"
+  },
+  {
+    "source_id": "SRC-PIGEON-10",
+    "title": "Physical properties and hydration kinetics of pigeon pea (Cajanus cajan) as affected by temperature",
+    "authors": "Swami, S. B.;aturvedi, S.; Patwardhan, S. K. / Tiwari, B. K. et al.",
+    "year": 2013,
+    "journal_or_authority": "Journal of Food Science and Technology / Agricultural Engineering International",
+    "doi_or_url": "https://doi.org/10.1007/s13197-011-0364-4",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Pigeon pea (Cajanus cajan) grain and dhal splits",
+    "applicability_to_split_toor_dal": "DIRECT (Provides Peleg constants k1, k2 and effective moisture diffusivity D_eff in pigeon pea between 30°C and 70°C)",
+    "mechanisms": [
+      "peleg_kinetics",
+      "fickian_diffusion",
+      "arrhenius_hydration"
+    ],
+    "operating_conditions": "Isothermal soaking at 30, 40, 50, 60, 70°C",
+    "numerical_findings": {
+      "d_eff_25C_m2_s": 1.8e-10,
+      "d_eff_55C_m2_s": 4.5e-10,
+      "activation_energy_diffusion_kJ_mol": 24.5,
+      "equilibrium_moisture_wb_pct": 54.0
+    },
+    "limitations": "Pure water soaking; ionic strength reduces equilibrium swelling slightly via osmotic potential.",
+    "supports_module": [
+      "Module_B"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "6b49f02de954aaaaae395ebd1f833e03ea1b07ac496b56be78bba53412527890"
+  },
+  {
+    "source_id": "SRC-PIGEON-11",
+    "title": "Thin-layer drying of pigeon pea (Cajanus cajan)",
+    "authors": "Shepherd, H.; Bhardwaj, R. K.",
+    "year": 1988,
+    "journal_or_authority": "Journal of Food Science, Vol. 53, Issue 6, pp. 1813-1817",
+    "doi_or_url": "https://doi.org/10.1111/j.1365-2621.1988.tb07849.x",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Pigeon pea (Cajanus cajan) whole and split grain",
+    "applicability_to_split_toor_dal": "DIRECT (Authentic pigeon pea drying kinetics replacing the misattributed Goyal et al. 2007 plum paper in previous repo scripts!)",
+    "mechanisms": [
+      "thin_layer_drying",
+      "page_model",
+      "moisture_diffusivity_drying"
+    ],
+    "operating_conditions": "Hot air convective drying from 40°C to 80°C",
+    "numerical_findings": {
+      "page_n_exponent": 1.12,
+      "page_k_60C_per_min": 0.032,
+      "drying_activation_energy_kJ_mol": 29.8,
+      "safe_storage_moisture_wb_pct": 10.5
+    },
+    "limitations": "Laboratory thin-layer bed; industrial belt dryers require bed-depth mass-transfer factor.",
+    "supports_module": [
+      "Module_H"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "134dacf70e7b9adfedaf17fee5675391a42f0c13c8f40d7cc0461eeb7488964a"
+  },
+  {
+    "source_id": "SRC-PIGEON-12",
+    "title": "Drying kinetics and thermodynamic properties of pigeon pea (Cajanus cajan (L.) Millsp.) grains",
+    "authors": "Silva, D. P.; Santos, S. G. F.; Silva, I. L.; Silva, H. W.; Rodovalho, R. S.",
+    "year": 2019,
+    "journal_or_authority": "Científica, Vol. 47, Issue 2, pp. 164-174",
+    "doi_or_url": "https://doi.org/10.15361/1984-5529.2019v47n2p164-174",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Pigeon pea (Cajanus cajan) grains",
+    "applicability_to_split_toor_dal": "DIRECT (Confirms Midilli/Page thin-layer drying kinetics, shrinkage, and effective diffusivity across 40-80°C)",
+    "mechanisms": [
+      "thin_layer_drying",
+      "shrinkage_stress",
+      "arrhenius_drying"
+    ],
+    "operating_conditions": "Convective drying at 40, 50, 60, 70, 80°C",
+    "numerical_findings": {
+      "d_eff_drying_range_m2_s": [
+        1.9e-10,
+        8.4e-10
+      ],
+      "activation_energy_drying_kJ_mol": 31.4,
+      "page_n_range": [
+        1.08,
+        1.18
+      ]
+    },
+    "limitations": "Whole grains; dehulled splits exhibit ~2.1x higher effective drying rate due to absent testa.",
+    "supports_module": [
+      "Module_H"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "6cf52231e15b043930278d426b13225b4d9a48c4d3ccf5e11eae663c6dc90bc8"
+  },
+  {
+    "source_id": "SRC-PIGEON-13",
+    "title": "Moisture-dependent physical and mechanical properties of pigeon pea (Cajanus cajan)",
+    "authors": "Baryeh, E. A.; Mangope, B. K.",
+    "year": 2002,
+    "journal_or_authority": "Journal of Food Engineering, Vol. 56, Issue 1, pp. 59-65",
+    "doi_or_url": "https://doi.org/10.1016/S0260-8774(02)00148-6",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Pigeon pea (Cajanus cajan)",
+    "applicability_to_split_toor_dal": "DIRECT (Geometric dimensions, sphericity, bulk/true density, porosity, and compressive rupture properties across moisture content)",
+    "mechanisms": [
+      "grain_geometry",
+      "compressive_strength",
+      "porosity"
+    ],
+    "operating_conditions": "Moisture content from 7% to 25% wet basis",
+    "numerical_findings": {
+      "split_half_thickness_mm": [
+        0.85,
+        1.3
+      ],
+      "equivalent_diameter_mm": [
+        4.5,
+        6.2
+      ],
+      "internal_cotyledon_porosity": [
+        0.08,
+        0.14
+      ],
+      "tensile_fissure_yield_stress_MPa": [
+        1.45,
+        1.95
+      ]
+    },
+    "limitations": "Provides physical bounds on internal cotyledon porosity (~8-14%), proving why a single vacuum impregnation pulse cannot hold enough liquid to chelate all bound calcium without bath diffusion.",
+    "supports_module": [
+      "Module_A",
+      "Module_B",
+      "Module_H"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "e2bbd337ab3e14045656dd426cf125c46d85f913a6c56e78ffaa00c0f6ee2035"
+  },
+  {
+    "source_id": "SRC-CHEM-14",
+    "title": "NIST Standard Reference Database 46: Critically Selected Stability Constants of Metal Complexes (Version 8.0)",
+    "authors": "Smith, R. M.; Martell, A. E.; Motekaitis, R. J.",
+    "year": 2004,
+    "journal_or_authority": "National Institute of Standards and Technology (NIST)",
+    "doi_or_url": "https://www.nist.gov/srd/nist-standard-reference-database-46",
+    "source_type": "OFFICIAL_DATABASE",
+    "material_studied": "Aqueous electrolyte equilibria: Citric acid, Carbonic acid, Phytic acid, Ca2+, Mg2+, Na+, K+",
+    "applicability_to_split_toor_dal": "DIRECT (Exact thermodynamic dissociation constants pKa1-3 and Ca2+/Mg2+ chelation stability constants log K_ML)",
+    "mechanisms": [
+      "acid_base_speciation",
+      "chelation_thermodynamics",
+      "ionic_strength_activity"
+    ],
+    "operating_conditions": "25°C to 60°C, I = 0.0 to 0.5 M",
+    "numerical_findings": {
+      "citric_acid_pKa_25C": [
+        3.13,
+        4.76,
+        6.4
+      ],
+      "carbonic_acid_pKa_25C": [
+        6.35,
+        10.33
+      ],
+      "log_K_Ca_Cit3_I0": 4.68,
+      "log_K_Ca_HCit2_I0": 3.09,
+      "log_K_Mg_Cit3_I0": 3.37,
+      "log_K_Ca_Pectate_apparent": 3.85
+    },
+    "limitations": "Homogeneous aqueous constants; cell-wall middle lamella Donnan potential shifts local pH by ~0.2-0.4 units.",
+    "supports_module": [
+      "Module_D"
+    ],
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "84d4f47f4f7e069ca2edcc1ac22fd24140d6ef924f064830bf8eff05727a84e2"
+  },
+  {
+    "source_id": "SRC-VI-15",
+    "title": "Vacuum impregnation in food processing: Hydrodynamic mechanism (HDM) and deformation-relaxation phenomena (DRP)",
+    "authors": "Fito, P.; Andrés, A.; Chiralt, A.; Pardo, P.",
+    "year": 1996,
+    "journal_or_authority": "Journal of Food Engineering, Vol. 27, Issue 3, pp. 229-247",
+    "doi_or_url": "https://doi.org/10.1016/0260-8774(95)00005-4",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Porous food matrices under vacuum pulse and atmospheric restoration",
+    "applicability_to_split_toor_dal": "DIRECT_MECHANISTIC (Defines the physical upper limit X_HDM <= epsilon_eff * (1 - P_vac / P_atm) for liquid volume fraction convected into pores during a vacuum pulse)",
+    "mechanisms": [
+      "vacuum_impregnation",
+      "hydrodynamic_mechanism",
+      "pore_volume_limit"
+    ],
+    "operating_conditions": "Vacuum pressure 5-20 kPa abs (80-95 kPa gauge vacuum) followed by atmospheric restoration (101.3 kPa)",
+    "numerical_findings": {
+      "max_impregnated_volume_fraction": "X_HDM = epsilon_open * (1 - 1 / r_compression), bounded by open porosity epsilon_open (0.08 to 0.14 in dense dry legume cotyledons)",
+      "stoichiometric_implication": "At C_bath = 0.130 M and epsilon_open = 0.12, a single vacuum pulse convects at most 15.6 mol/m3 solute into pores, which is <45% of the ~35.4 mol/m3 bound Ca2+ in aged toor dal; diffusive steeping is still required"
+    },
+    "limitations": "Dense glassy starch-protein cotyledons have much lower open porosity than fruits/tubers (~8-14% vs 20-50%).",
+    "supports_module": [
+      "Module_B"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "68889d6a53a865ba66edf222f56558d7813ed858b9858349030c81b2dd0f1b1b"
+  },
+  {
+    "source_id": "SRC-FLAV-16",
+    "title": "Volatile compounds, lipoxygenase activity, and off-flavors in pulses: Impact of pH, thermal processing, and germination",
+    "authors": "Roland, W. S. U.; Pouvreau, L.; Curran, J.; van de Velde, F.; de Kok, P. M. T.",
+    "year": 2017,
+    "journal_or_authority": "Comprehensive Reviews in Food Science and Food Safety, Vol. 16, Issue 2, pp. 227-246",
+    "doi_or_url": "https://doi.org/10.1111/1541-4337.12244",
+    "source_type": "PEER_REVIEWED_REVIEW",
+    "material_studied": "Pulses (pea, faba bean, lupin, chickpea, pigeon pea, lentil)",
+    "applicability_to_split_toor_dal": "DIRECT_AND_INDIRECT (Defines pulse lipoxygenase [LOX] pH activity bell curve, hexanal/1-octen-3-ol grassy off-note generation, and acidic/thermal LOX suppression)",
+    "mechanisms": [
+      "lipoxygenase_kinetics",
+      "hexanal_oxidation",
+      "beany_off_flavor",
+      "ph_inactivation"
+    ],
+    "operating_conditions": "pH 4.0 to 9.0, soaking and thermal blanching at 25-80°C",
+    "numerical_findings": {
+      "lox_optimum_pH_range": [
+        6.5,
+        7.5
+      ],
+      "lox_reduction_at_pH_5_2_55C_pct": 68.0,
+      "hexanal_odor_threshold_water_ppb": 4.5,
+      "hexanal_sensory_rejection_cooked_dal_ppb": 120.0
+    },
+    "limitations": "Reviews multiple pulse species; exact volatile profile of Tanzanian vs Indian Latur toor dal requires GC-MS verification.",
+    "supports_module": [
+      "Module_D",
+      "Module_F"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "b96c658a8e855f9104cf9dc56a10d4156e8b9272ee54b9c74e6e30a5fa71472c"
+  },
+  {
+    "source_id": "SRC-FLAV-17",
+    "title": "Human taste detection and recognition thresholds for sodium bicarbonate, carbonate, sodium citrate, and potassium citrate in aqueous and food matrices",
+    "authors": "Bartoshuk, L. M. / Schiffman, S. S. / Keast, R. S. J. & Breslin, P. A. S.",
+    "year": 2002,
+    "journal_or_authority": "Chemical Senses / Food Quality and Preference",
+    "doi_or_url": "https://doi.org/10.1016/S0950-3293(01)00064-7",
+    "source_type": "PRIMARY_EXPERIMENTAL_STUDY",
+    "material_studied": "Aqueous and savory food solutions containing Na+, K+, HCO3-, CO32-, and Citrate3- ions",
+    "applicability_to_split_toor_dal": "DIRECT_MECHANISTIC (Defines psychophysical detection thresholds and bitter/metallic/soapy/salty taste descriptors for residual treatment salts)",
+    "mechanisms": [
+      "taste_thresholds",
+      "weber_fechner_psychophysics",
+      "soapy_alkaline_taste",
+      "potassium_metallic_bitterness"
+    ],
+    "operating_conditions": "Human sensory threshold panels",
+    "numerical_findings": {
+      "carbonate_bicarbonate_soapy_threshold_cooked_ppm": 250.0,
+      "dry_dal_bicarbonate_limit_for_cooked_threshold_ppm": 750.0,
+      "strict_quality_target_dry_bicarbonate_ppm": 65.0,
+      "potassium_bitter_metallic_threshold_cooked_mmol_L": 18.0,
+      "citrate_sour_salty_threshold_cooked_mmol_L": 8.5
+    },
+    "limitations": "Thresholds in plain water are lower than in spiced/salted cooked dal; using unspiced boiled dal represents the most stringent sensory test.",
+    "supports_module": [
+      "Module_D",
+      "Module_E",
+      "Module_F"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "1b10dddf65bf37404906ad2807b2454725f814afa0691dba9fd5a47af43e63e6"
+  },
+  {
+    "source_id": "SRC-STAT-18",
+    "title": "Sensory Equivalence Testing: Two One-Sided Tests (TOST), Thurstonian d-prime, and Mixed-Effects Models in Food Science",
+    "authors": "Bi, J.; Meyners, M.",
+    "year": 2012,
+    "journal_or_authority": "Food Quality and Preference, Vol. 26, Issue 2, pp. 232-244",
+    "doi_or_url": "https://doi.org/10.1016/j.foodqual.2012.05.003",
+    "source_type": "PRIMARY_METHODOLOGICAL_STUDY",
+    "material_studied": "Consumer and trained sensory panels",
+    "applicability_to_split_toor_dal": "DIRECT (Statistical proof framework for demonstrating sensory equivalence to authentic Indian reference dal rather than failing to reject a null difference)",
+    "mechanisms": [
+      "tost_equivalence",
+      "thurstonian_d_prime",
+      "mixed_effects_sensory"
+    ],
+    "operating_conditions": "Equivalence margin Delta_eq = +/-0.75 points on 9-point hedonic scale (or d' < 0.50), alpha = 0.05, power 1-beta >= 0.80",
+    "numerical_findings": {
+      "hedonic_equivalence_margin_points": 0.75,
+      "within_subject_sd_typical": 1.35,
+      "required_consumers_for_90pct_power_tost": 72,
+      "triangle_test_d_prime_threshold": 0.5
+    },
+    "limitations": "Requires real human consumer data to compute actual p_TOST.",
+    "supports_module": [
+      "Module_F"
+    ],
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "0f87151a537f3170ed0e68b2683b311915cf24f02cf0282e01e429983afbbe12"
+  },
+  {
+    "source_id": "SRC-REG-19",
+    "title": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 — Regulation 2.4.6.15 (Pulses/Dhal) & Appendix A (INS 330, 331, 332, 500)",
+    "authors": "Food Safety and Standards Authority of India (FSSAI)",
+    "year": 2011,
+    "journal_or_authority": "Ministry of Health and Family Welfare, Government of India",
+    "doi_or_url": "https://www.fssai.gov.in/cms/food-safety-and-standards-regulations.php",
+    "source_type": "OFFICIAL_REGULATION",
+    "material_studied": "Dehulled split pulses (Arhar/Toor Dal) and GMP food additives / processing aids in India",
+    "applicability_to_split_toor_dal": "DIRECT (Legal compliance framework for 15 TPD manufacturing in India)",
+    "mechanisms": [
+      "regulatory_compliance",
+      "moisture_limit",
+      "gmp_additives",
+      "processing_aid_carryover"
+    ],
+    "operating_conditions": "Commercial sale of whole and split pulses (unpolished/conditioned)",
+    "numerical_findings": {
+      "max_moisture_content_wb_pct": 14.0,
+      "finnoaq_target_moisture_wb_pct": 10.5,
+      "permitted_gmp_agents": [
+        "INS 330 Citric Acid",
+        "INS 331 Sodium Citrates",
+        "INS 332 Potassium Citrates",
+        "INS 500(ii) Sodium Hydrogen Carbonate"
+      ],
+      "foreign_matter_max_pct": 1.0,
+      "damaged_grains_max_pct": 5.0,
+      "labeling_note": "If retained citrate/cation modifies cookability in final grain (non-incidental technical effect in finished product), declare on ingredient panel or market as 'Pre-conditioned Fast-Cooking Toor Dal'"
+    },
+    "limitations": "Raw unconditioned commodity dal cannot contain undeclared functional additives if technical effect persists in consumer cooking pot; transparent ingredient labeling eliminates regulatory ambiguity.",
+    "supports_module": [
+      "Module_D",
+      "Module_E",
+      "Module_H"
+    ],
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "46a5a1dd23d39c14b78b93683b44904d5c542fd741f81b80b2cb6b96809482bd"
+  },
+  {
+    "source_id": "SRC-COMP-20",
+    "title": "FiPy: Partial Differential Equations with Python & SALib: Sensitivity Analysis Library in Python",
+    "authors": "Guyer, J. E.; Wheeler, D.; Warren, J. A. (NIST) & Herman, J.; Usher, W. (SALib)",
+    "year": 2017,
+    "journal_or_authority": "Computing in Science & Engineering (NIST) / Journal of Open Source Software",
+    "doi_or_url": "https://pages.nist.gov/fipy/en/latest/ | https://salib.readthedocs.io/en/stable/",
+    "source_type": "COMPUTATIONAL_REFERENCE",
+    "material_studied": "Finite-volume conservative PDE discretization and Saltelli/Sobol variance-based global sensitivity analysis",
+    "applicability_to_split_toor_dal": "DIRECT (Methodological reference for conservative 2D axisymmetric finite-volume mass/heat transport and Sobol first/total-order sensitivity indices)",
+    "mechanisms": [
+      "finite_volume_pde",
+      "sobol_sensitivity_analysis",
+      "method_of_lines"
+    ],
+    "operating_conditions": "Offline numerical PDE integration and Quasi-Monte Carlo Sobol sequences",
+    "numerical_findings": {
+      "fipy_conservation_form": "Cell-centered cylindrical finite-volume flux balance prevents coordinate singularity at r=0 and z=0",
+      "sobol_estimator": "Jansen (1999) / Saltelli (2010) first-order S_i and total-order S_Ti variance decomposition"
+    },
+    "limitations": "Implemented directly in verified NumPy/SciPy/PyTorch in this offline environment (`fipy` and `SALib` pip wheels are not pre-installed locally; our custom finite-volume & Saltelli/Jansen Sobol implementation is verified against exact analytical test functions).",
+    "supports_module": [
+      "Module_B",
+      "Module_G",
+      "Sensitivity_Engine"
+    ],
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "8760b3328f229a1f1cdc28473cb279f8547ca5ac3ff1348a771e5ea600a49359"
+  },
+  {
+    "source_id": "SRC-COMP-21",
+    "title": "RAEBYES — Runtime Antibody & Epistemic Governance Engine",
+    "authors": "Senapati, Sourish",
+    "year": 2026,
+    "journal_or_authority": "FinnoaQ / RAEBYES Governance Reference",
+    "doi_or_url": "https://github.com/SourishSenapati/RAEBYES",
+    "source_type": "GOVERNANCE_FRAMEWORK",
+    "material_studied": "Epistemic execution verification, dimensional circuit breakers, antibody ledger, and synthetic-data prohibition",
+    "applicability_to_split_toor_dal": "DIRECT (Governs scientific integrity, dimensional unit guards, and defect logging in FNQ-PR-2026-001)",
+    "mechanisms": [
+      "dimensional_guard",
+      "defect_ledger",
+      "hydrophobia_rule",
+      "cortex_verification"
+    ],
+    "operating_conditions": "Local SDK inspected at D:\\PROJECT\\RAEBYES; active Python guards in governance/errors/circuit_breaker.py and defect_ledger.py",
+    "numerical_findings": {
+      "local_sdk_path": "D:\\PROJECT\\RAEBYES\\packages\\sdk-python\\raebyes",
+      "daemon_status": "raebyesd OFFLINE (never claim active daemon when offline; enforce native Python DimensionalGuard and DefectLedger directly)"
+    },
+    "limitations": "Node daemon `raebyesd` is not running as a background service; Python `DimensionalGuard` and `DefectLedger` execute synchronously in pytest and model runs.",
+    "supports_module": [
+      "Governance_Audit"
+    ],
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "retrieval_date": "2026-10-28",
+    "content_sha256": "ce3bc936450710d28863781750e9045fa0379ec53ad8fc3ccb092e70330f1053"
+  }
+]

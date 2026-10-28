@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461331.0248958333
+2461331.665925926
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461331.0248958333
+2461331.665925926
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-160
+181
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{D8CA9A42-AA24-4E92-A9F5-9DA7F781B7AE}
+{E965CCE1-4893-4472-9A3A-AB8BF18B0F44}
   9
 $VERSIONGUID
   2
-{27607EA0-62A7-4E2D-AB8D-0523294B00FC}
+{0A7AF571-7319-46F7-AB36-B034326D113C}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-15D
+17E
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-15E
+17F
 330
 3
 100
@@ -11559,7 +11559,7 @@ AcDbEntity
   8
 BORDER_TITLE
 370
-35
+50
 100
 AcDbPolyline
  90
@@ -11587,7 +11587,7 @@ AcDbPolyline
  20
 185.0
   0
-TEXT
+LWPOLYLINE
   5
 150
 330
@@ -11595,29 +11595,37 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+35
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+265.0
  20
-177.0
- 30
-0.0
- 40
-2.2
-  1
-MECHANICAL, VIBRATION DYNAMICS & NFPA 68 SAFETY SPECIFICATION:
- 11
-269.0
- 21
-177.0
- 31
-0.0
-100
-AcDbText
+185.0
+ 10
+565.0
+ 20
+185.0
+ 10
+565.0
+ 20
+177.5
+ 10
+265.0
+ 20
+177.5
+ 10
+265.0
+ 20
+185.0
   0
-LINE
+TEXT
   5
 151
 330
@@ -11627,21 +11635,27 @@ AcDbEntity
   8
 BORDER_TITLE
 100
-AcDbLine
+AcDbText
  10
-265.0
+271.0
  20
-173.0
+179.5
  30
 0.0
+ 40
+1.9
+  1
+MECHANICAL, VIBRATION DYNAMICS & NFPA 68 SAFETY SPECIFICATION
  11
-565.0
+271.0
  21
-173.0
+179.5
  31
 0.0
+100
+AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 152
 330
@@ -11649,27 +11663,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+265.0
  20
-165.0
- 30
-0.0
- 40
-1.7
-  1
-1. Equipment Tag: DR-101 | Service: Continuous Vibrating Fluid Bed Dal Conditioning & Drying.
- 11
-269.0
- 21
-165.0
- 31
-0.0
-100
-AcDbText
+177.5
+ 10
+350.0
+ 20
+177.5
+ 10
+350.0
+ 20
+170.0
+ 10
+265.0
+ 20
+170.0
+ 10
+265.0
+ 20
+177.5
   0
 TEXT
   5
@@ -11679,29 +11701,29 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-269.0
+266.8
  20
-156.4
+172.0
  30
 0.0
  40
-1.7
+1.45
   1
-2. Effective Deck Dimensions: 14,000 mm Length x 1,000 mm Width (Effective Area: 14.0 m2).
+ENGINEERING PARAMETER
  11
-269.0
+266.8
  21
-156.4
+172.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 154
 330
@@ -11709,27 +11731,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+350.0
  20
-147.8
- 30
-0.0
- 40
-1.7
-  1
-3. Material of Construction: All product contact parts SS304 (Ra < 0.8 um sanitary polish). Non-contact IS2062 CS.
- 11
-269.0
- 21
-147.8
- 31
-0.0
-100
-AcDbText
+177.5
+ 10
+565.0
+ 20
+177.5
+ 10
+565.0
+ 20
+170.0
+ 10
+350.0
+ 20
+170.0
+ 10
+350.0
+ 20
+177.5
   0
 TEXT
   5
@@ -11739,29 +11769,29 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-269.0
+351.8
  20
-139.2
+172.0
  30
 0.0
  40
-1.7
+1.45
   1
-4. Fluidizing Air Rate: 14,150 kg/h (11,800 m3/h @ 85 deg C) | Superficial Velocity: 1.15 m/s (Umf = 0.85 m/s).
+VERIFIED SPECIFICATION & DESIGN CRITERIA
  11
-269.0
+351.8
  21
-139.2
+172.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 156
 330
@@ -11769,27 +11799,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+265.0
  20
-130.6
- 30
-0.0
- 40
-1.7
-  1
-5. Water Evaporation Duty: 412.34 kg/h H2O | Thermal Heating Duty: 512.4 kWth via Steam Coil HE-101.
- 11
-269.0
- 21
-130.6
- 31
-0.0
-100
-AcDbText
+170.0
+ 10
+350.0
+ 20
+170.0
+ 10
+350.0
+ 20
+160.0
+ 10
+265.0
+ 20
+160.0
+ 10
+265.0
+ 20
+170.0
   0
 TEXT
   5
@@ -11803,25 +11841,25 @@ ANNOTATION
 100
 AcDbText
  10
-269.0
+266.8
  20
-122.0
+163.2
  30
 0.0
  40
-1.7
+1.45
   1
-6. Vibration Dynamics: Stroke amplitude 3.5 mm @ 16 Hz (960 RPM); Twin unbalance motors 2 x 3.0 kW @ 45 deg.
+Equipment Tag & Service
  11
-269.0
+266.8
  21
-122.0
+163.2
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 158
 330
@@ -11829,27 +11867,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+350.0
  20
-113.4
- 30
-0.0
- 40
-1.7
-  1
-7. Isolation Efficiency: 8x Heavy-duty helical coil springs with rubber snubbers (>96% dynamic isolation).
- 11
-269.0
- 21
-113.4
- 31
-0.0
-100
-AcDbText
+170.0
+ 10
+565.0
+ 20
+170.0
+ 10
+565.0
+ 20
+160.0
+ 10
+350.0
+ 20
+160.0
+ 10
+350.0
+ 20
+170.0
   0
 TEXT
   5
@@ -11863,25 +11909,25 @@ ANNOTATION
 100
 AcDbText
  10
-269.0
+351.8
  20
-104.80000000000001
+163.2
  30
 0.0
  40
-1.7
+1.45
   1
-8. Residence Time: 18.0 - 22.0 minutes plug-flow with adjustable discharge overflow retention weir.
+DR-101 | Continuous Vibrating Fluid Bed Dal Conditioning & Drying
  11
-269.0
+351.8
  21
-104.80000000000001
+163.2
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 15A
 330
@@ -11889,27 +11935,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+18
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-269.0
+265.0
  20
-96.2
- 30
-0.0
- 40
-1.7
-  1
-9. NFPA 68 EXPLOSION RELIEF: Dual 600x600 mm composite rupture panels (Pred = 0.2 bar g, Pstat = 0.1 bar g).
- 11
-269.0
- 21
-96.2
- 31
-0.0
-100
-AcDbText
+160.0
+ 10
+350.0
+ 20
+160.0
+ 10
+350.0
+ 20
+150.0
+ 10
+265.0
+ 20
+150.0
+ 10
+265.0
+ 20
+160.0
   0
 TEXT
   5
@@ -11923,27 +11977,65 @@ ANNOTATION
 100
 AcDbText
  10
-269.0
+266.8
  20
-87.60000000000001
+153.2
  30
 0.0
  40
-1.7
+1.45
   1
-   - Sized for St-1 Agricultural Pulse Dust (Kst = 85 bar-m/s, Pmax = 7.8 bar g) with ducted vent to building exterior.
+Effective Deck Dimensions
  11
-269.0
+266.8
  21
-87.60000000000001
+153.2
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 15C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+160.0
+ 10
+565.0
+ 20
+160.0
+ 10
+565.0
+ 20
+150.0
+ 10
+350.0
+ 20
+150.0
+ 10
+350.0
+ 20
+160.0
+  0
+TEXT
+  5
+15D
 330
 17
 100
@@ -11953,19 +12045,1107 @@ ANNOTATION
 100
 AcDbText
  10
-269.0
+351.8
  20
-79.0
+153.2
  30
 0.0
  40
-1.7
+1.45
   1
-10. Safety Hold: Final dynamic balancing, spring resonance validation and FAT testing required prior to site release.
+14,000 mm Length x 1,000 mm Width | Effective Deck Area: 14.0 m2
  11
-269.0
+351.8
  21
-79.0
+153.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+150.0
+ 10
+350.0
+ 20
+150.0
+ 10
+350.0
+ 20
+140.0
+ 10
+265.0
+ 20
+140.0
+ 10
+265.0
+ 20
+150.0
+  0
+TEXT
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+143.2
+ 30
+0.0
+ 40
+1.45
+  1
+Material of Construction
+ 11
+266.8
+ 21
+143.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+150.0
+ 10
+565.0
+ 20
+150.0
+ 10
+565.0
+ 20
+140.0
+ 10
+350.0
+ 20
+140.0
+ 10
+350.0
+ 20
+150.0
+  0
+TEXT
+  5
+161
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+143.2
+ 30
+0.0
+ 40
+1.45
+  1
+Product Contact: AISI SS304 (Ra < 0.8 um sanitary polish) | Non-contact: IS2062 CS
+ 11
+351.8
+ 21
+143.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+162
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+140.0
+ 10
+350.0
+ 20
+140.0
+ 10
+350.0
+ 20
+130.0
+ 10
+265.0
+ 20
+130.0
+ 10
+265.0
+ 20
+140.0
+  0
+TEXT
+  5
+163
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+133.2
+ 30
+0.0
+ 40
+1.45
+  1
+Fluidizing Air Dynamics
+ 11
+266.8
+ 21
+133.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+140.0
+ 10
+565.0
+ 20
+140.0
+ 10
+565.0
+ 20
+130.0
+ 10
+350.0
+ 20
+130.0
+ 10
+350.0
+ 20
+140.0
+  0
+TEXT
+  5
+165
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+133.2
+ 30
+0.0
+ 40
+1.45
+  1
+14,150 kg/h (11,800 m3/h @ 85 deg C) | Superficial Velocity: 1.15 m/s (Umf = 0.85 m/s)
+ 11
+351.8
+ 21
+133.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+166
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+130.0
+ 10
+350.0
+ 20
+130.0
+ 10
+350.0
+ 20
+120.0
+ 10
+265.0
+ 20
+120.0
+ 10
+265.0
+ 20
+130.0
+  0
+TEXT
+  5
+167
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+123.2
+ 30
+0.0
+ 40
+1.45
+  1
+Thermal Duty & Water Evap
+ 11
+266.8
+ 21
+123.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+168
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+130.0
+ 10
+565.0
+ 20
+130.0
+ 10
+565.0
+ 20
+120.0
+ 10
+350.0
+ 20
+120.0
+ 10
+350.0
+ 20
+130.0
+  0
+TEXT
+  5
+169
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+123.2
+ 30
+0.0
+ 40
+1.45
+  1
+Water Evaporation: 412.34 kg/h H2O | Heat Duty: 512.4 kWth via Steam Coil HE-101
+ 11
+351.8
+ 21
+123.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+120.0
+ 10
+350.0
+ 20
+120.0
+ 10
+350.0
+ 20
+110.0
+ 10
+265.0
+ 20
+110.0
+ 10
+265.0
+ 20
+120.0
+  0
+TEXT
+  5
+16B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+113.2
+ 30
+0.0
+ 40
+1.45
+  1
+Vibration Dynamics & Motors
+ 11
+266.8
+ 21
+113.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+120.0
+ 10
+565.0
+ 20
+120.0
+ 10
+565.0
+ 20
+110.0
+ 10
+350.0
+ 20
+110.0
+ 10
+350.0
+ 20
+120.0
+  0
+TEXT
+  5
+16D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+113.2
+ 30
+0.0
+ 40
+1.45
+  1
+Stroke amplitude 3.5 mm @ 16 Hz (960 RPM); Twin unbalance motors 2 x 3.0 kW @ 45 deg
+ 11
+351.8
+ 21
+113.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+110.0
+ 10
+350.0
+ 20
+110.0
+ 10
+350.0
+ 20
+100.0
+ 10
+265.0
+ 20
+100.0
+ 10
+265.0
+ 20
+110.0
+  0
+TEXT
+  5
+16F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+103.2
+ 30
+0.0
+ 40
+1.45
+  1
+Spring Isolation System
+ 11
+266.8
+ 21
+103.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+170
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+110.0
+ 10
+565.0
+ 20
+110.0
+ 10
+565.0
+ 20
+100.0
+ 10
+350.0
+ 20
+100.0
+ 10
+350.0
+ 20
+110.0
+  0
+TEXT
+  5
+171
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+103.2
+ 30
+0.0
+ 40
+1.45
+  1
+8x Heavy-duty helical coil springs with rubber snubbers (> 96% dynamic isolation)
+ 11
+351.8
+ 21
+103.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+172
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+100.0
+ 10
+350.0
+ 20
+100.0
+ 10
+350.0
+ 20
+90.0
+ 10
+265.0
+ 20
+90.0
+ 10
+265.0
+ 20
+100.0
+  0
+TEXT
+  5
+173
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+93.2
+ 30
+0.0
+ 40
+1.45
+  1
+Residence Time & Control
+ 11
+266.8
+ 21
+93.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+174
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+100.0
+ 10
+565.0
+ 20
+100.0
+ 10
+565.0
+ 20
+90.0
+ 10
+350.0
+ 20
+90.0
+ 10
+350.0
+ 20
+100.0
+  0
+TEXT
+  5
+175
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+93.2
+ 30
+0.0
+ 40
+1.45
+  1
+18.0 - 22.0 minutes plug-flow with adjustable discharge overflow retention weir
+ 11
+351.8
+ 21
+93.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+90.0
+ 10
+350.0
+ 20
+90.0
+ 10
+350.0
+ 20
+80.0
+ 10
+265.0
+ 20
+80.0
+ 10
+265.0
+ 20
+90.0
+  0
+TEXT
+  5
+177
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+83.2
+ 30
+0.0
+ 40
+1.45
+  1
+NFPA 68 Explosion Relief
+ 11
+266.8
+ 21
+83.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+178
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+90.0
+ 10
+565.0
+ 20
+90.0
+ 10
+565.0
+ 20
+80.0
+ 10
+350.0
+ 20
+80.0
+ 10
+350.0
+ 20
+90.0
+  0
+TEXT
+  5
+179
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+83.2
+ 30
+0.0
+ 40
+1.45
+  1
+Dual 600x600 mm composite burst panels (Pstat = 0.10 bar g, Pred < 0.20 bar g)
+ 11
+351.8
+ 21
+83.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+265.0
+ 20
+80.0
+ 10
+350.0
+ 20
+80.0
+ 10
+350.0
+ 20
+70.0
+ 10
+265.0
+ 20
+70.0
+ 10
+265.0
+ 20
+80.0
+  0
+TEXT
+  5
+17B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+266.8
+ 20
+73.2
+ 30
+0.0
+ 40
+1.45
+  1
+Combustible Dust Rating
+ 11
+266.8
+ 21
+73.2
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+18
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+350.0
+ 20
+80.0
+ 10
+565.0
+ 20
+80.0
+ 10
+565.0
+ 20
+70.0
+ 10
+350.0
+ 20
+70.0
+ 10
+350.0
+ 20
+80.0
+  0
+TEXT
+  5
+17D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+351.8
+ 20
+73.2
+ 30
+0.0
+ 40
+1.45
+  1
+St-1 Agricultural Pulse Dust (Kst = 85 bar-m/s, Pmax = 7.8 bar g), exterior ducted
+ 11
+351.8
+ 21
+73.2
  31
 0.0
 100
@@ -13061,7 +14241,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-15F
+180
   0
 DICTIONARYVAR
   5
@@ -13073,7 +14253,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T19:05:51.552145+00:00
+1.4.4 @ 2026-10-17T10:28:56.159695+00:00
   0
 VISUALSTYLE
   5
@@ -19627,7 +20807,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-15F
+180
 330
 2D
 100
@@ -19635,7 +20815,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T19:05:51.557921+00:00
+1.4.4 @ 2026-10-17T10:28:56.166220+00:00
   0
 ENDSEC
   0

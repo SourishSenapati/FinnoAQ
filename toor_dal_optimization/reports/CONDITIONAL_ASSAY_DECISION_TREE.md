@@ -1,6 +1,6 @@
 # CONDITIONAL ASSAY DECISION TREE: DECISION-GATED LAB SPENDING
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Objective:** Provide a formal logical decision tree that blocks unnecessary analytical spending.  
 **Principle:** An expensive laboratory assay is authorized ONLY if a low-cost screening assay yields an ambiguous result.  
 

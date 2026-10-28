@@ -67,7 +67,7 @@ The complete mass and component conservation equations were audited by Acceptanc
 
 ## 3. Thermodynamic & Simulation Reconciliation with Aspen Plus V14
 
-The plant thermal duties were independently validated against rigorous flowsheet simulations in **Aspen Plus V14** (`simulations/aspen/HARAKUTIR_15TPD_CONVERGED.bkp`).
+The plant thermal duties were independently validated against rigorous flowsheet simulations in **Aspen Plus V14** (`simulations/aspen/FINNOAQ_15TPD_CONVERGED.bkp`).
 
 ### 3.1 ZLD Triple-Effect Evaporator System (EV-101)
 - **Feed Stream:** Combined spent soak liquor and rinse effluent ($21,280.14\text{ kg/day} \approx 1,064\text{ kg/h}$ over 20 operating hours).

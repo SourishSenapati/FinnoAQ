@@ -1,7 +1,7 @@
 # ANNOTATED BIBLIOGRAPHY & SCIENTIFIC EVIDENCE REGISTER
 
-**Project:** Harakutir Autonomous Pulse Engineering (Tanzanian Toor Dal vs Indian Benchmark)  
-**Standard:** Ocean Boiling Protocol v3.0 | Harakutir Omega v4  
+**Project:** FinnoaQ Autonomous Pulse Engineering (Tanzanian Toor Dal vs Indian Benchmark)  
+**Standard:** Ocean Boiling Protocol v3.0 | FinnoaQ Omega v4  
 **Date:** October 2026  
 **Scope:** Open-Access Literature, Authoritative Regulatory Compendia, and Public Datasets  
 
@@ -82,7 +82,7 @@
 - **Evidence Class:** `ENGINEERING_CORRELATION` (Methodology)
 - **Core Concept:**
   - Uses the historical exploration DAG / tree as a replay simulator ("dreaming") to test alternative search policies offline, vastly reducing expensive online evaluation calls.
-- **Implementation Classification in Harakutir:**
+- **Implementation Classification in FinnoaQ:**
   - Classified explicitly as `DREAM_RSI_INSPIRED`. Uses `state/discovery_tree.json` to evaluate exploration policies against historical baselines.
 
 ---
@@ -101,4 +101,4 @@
 - **Evidence Class:** `GENERAL_FOOD_SCIENCE`
 - **Composition Baseline:**
   - Energy: 343 kcal/100g | Protein: 21.7 g/100g | Total lipid: 1.49 g/100g | Carbohydrate: 62.78 g/100g | Calcium: 130 mg/100g | Iron: 5.23 mg/100g | Potassium: 1392 mg/100g.
-  - Strictly classified as reference composition, not lot-specific assay of Harakutir Tanzanian samples.
+  - Strictly classified as reference composition, not lot-specific assay of FinnoaQ Tanzanian samples.

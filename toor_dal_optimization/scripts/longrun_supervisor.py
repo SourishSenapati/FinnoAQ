@@ -1,5 +1,5 @@
 """
-Harakutir Omega v4 — Longrun Autonomous R&D Supervisor.
+Client Organization Omega v4 — Longrun Autonomous R&D Supervisor.
 Detached 24h-72h background supervisor with hardware telemetry,
 anti-loop controls, atomic checkpointing, Dream-RSI discovery, and SQLite WAL logging.
 """
@@ -58,26 +58,26 @@ def get_system_telemetry() -> Dict[str, Any]:
         "gpu": gpu
     }
 
-from src.harakutir.provenance import ProvenanceRegistry, compute_sha256
-from src.harakutir.schemas import DatasetKind
-from src.harakutir.ingest import DataIngestionEngine
-from src.harakutir.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
-from src.harakutir.checkpoint import CheckpointManager
-from src.harakutir.statistics import compute_descriptive_stats, compute_comparative_stats
-from src.harakutir.hydration import fit_peleg_model, GPUInverseHydrationModel
-from src.harakutir.claims import get_baseline_phase1_claims
-from src.harakutir.oed import BayesianOEDPlanner
-from src.harakutir.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
-from src.harakutir.reports import ReportGenerator
-from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
-from src.harakutir.virtual_screening import VirtualScreeningPipeline
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
-from src.harakutir.harness import HarnessEngineeringManager
-from src.harakutir.research_registry import ResearchRegistry
-from src.harakutir.open_data_ingest import OpenDataIngestionEngine
-from src.harakutir.gpu_continuous_engine import ContinuousGPUEngine
-from src.harakutir.drying_model import PulseFluidBedDryingModel
-from src.harakutir.process_chemistry import SequentialProcessChemistryEngine
+from src.finnoaq.provenance import ProvenanceRegistry, compute_sha256
+from src.finnoaq.schemas import DatasetKind
+from src.finnoaq.ingest import DataIngestionEngine
+from src.finnoaq.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
+from src.finnoaq.checkpoint import CheckpointManager
+from src.finnoaq.statistics import compute_descriptive_stats, compute_comparative_stats
+from src.finnoaq.hydration import fit_peleg_model, GPUInverseHydrationModel
+from src.finnoaq.claims import get_baseline_phase1_claims
+from src.finnoaq.oed import BayesianOEDPlanner
+from src.finnoaq.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
+from src.finnoaq.reports import ReportGenerator
+from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.harness import HarnessEngineeringManager
+from src.finnoaq.research_registry import ResearchRegistry
+from src.finnoaq.open_data_ingest import OpenDataIngestionEngine
+from src.finnoaq.gpu_continuous_engine import ContinuousGPUEngine
+from src.finnoaq.drying_model import PulseFluidBedDryingModel
+from src.finnoaq.process_chemistry import SequentialProcessChemistryEngine
 
 stop_requested = False
 
@@ -204,7 +204,7 @@ class LongrunSupervisor:
     def run_preflight_and_initial_pipeline(self) -> Dict[str, Any]:
         global stop_requested
         print("\n" + "="*60)
-        print(f"HARAKUTIR OMEGA v4 — DETACHED SUPERVISOR PREFLIGHT (PID {os.getpid()})")
+        print(f"Client Organization OMEGA v4 — DETACHED SUPERVISOR PREFLIGHT (PID {os.getpid()})")
         print(f"Run ID: {self.run_id} | Planned Budget: {self.duration_hours}h | Ceiling: 72h")
         print("="*60)
 
@@ -323,9 +323,9 @@ class LongrunSupervisor:
             # 9. Phase 7: 15 MT/Day Plant Design & Rigorous Mass Balance
             print("\n[PHASE 7] Simulating 15 MT/day industrial plant design & multi-stream mass balance...")
             self.write_heartbeat("Phase_7_Twin", "TASK_08_TWIN")
-            from src.harakutir.plant_design import PlantDesignEngine
-            from src.harakutir.mass_balance import MassBalanceEngine
-            from src.harakutir.dose_calculator import DoseCalculator
+            from src.finnoaq.plant_design import PlantDesignEngine
+            from src.finnoaq.mass_balance import MassBalanceEngine
+            from src.finnoaq.dose_calculator import DoseCalculator
 
             plant_engine = PlantDesignEngine(incoming_feed_kg_day=15000.0)
             plant_schedules = plant_engine.model_operating_schedules(dal_dry_solids_loss_pct=4.35)
@@ -406,10 +406,10 @@ class LongrunSupervisor:
         print(f"Atomic checkpoint interval: {self.checkpoint_interval_sec}s")
 
         last_checkpoint_time = time.time()
-        from src.harakutir.plant_design import PlantDesignEngine
-        from src.harakutir.mass_balance import MassBalanceEngine
-        from src.harakutir.dose_calculator import DoseCalculator
-        from src.harakutir.multiphysics_engine import MultiphysicsCoupledEngine
+        from src.finnoaq.plant_design import PlantDesignEngine
+        from src.finnoaq.mass_balance import MassBalanceEngine
+        from src.finnoaq.dose_calculator import DoseCalculator
+        from src.finnoaq.multiphysics_engine import MultiphysicsCoupledEngine
 
         # Task queue of initial calibration workloads followed by continuous CUDA discovery
         task_queue = [
@@ -737,7 +737,7 @@ class LongrunSupervisor:
         return {"status": "INTERRUPTED_SAFE", "checkpoint": cp_path}
 
 def main():
-    parser = argparse.ArgumentParser(description="Harakutir Omega v4 Longrun Autonomous Supervisor")
+    parser = argparse.ArgumentParser(description="Client Organization Omega v4 Longrun Autonomous Supervisor")
     parser.add_argument("--duration-hours", "-d", type=float, default=24.0, help="Planned duration in hours (default 24, max 72)")
     parser.add_argument("--checkpoint-interval", "-i", type=int, default=300, help="Atomic checkpoint interval in seconds (default 300)")
     parser.add_argument("--run-id", type=str, default=None, help="Unique Run Identifier")

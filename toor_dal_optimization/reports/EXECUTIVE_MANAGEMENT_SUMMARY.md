@@ -1,9 +1,9 @@
-# Harakutir Phase 1 Toor Dal Diagnostic Study
+# FinnoaQ Phase 1 Toor Dal Diagnostic Study
 ## Executive Management Summary
 
-**Date:** 16 October 2026  
-**Prepared for:** Harakutir Management & R&D Steering Committee  
-**Project Contact:** Dr. Archisman Ray  
+**Date:** 28 October 2026  
+**Prepared for:** FinnoaQ Management & R&D Steering Committee  
+**Project Contact:** Technical Advisory Panel  
 **System Status:** `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`  
 
 ---
@@ -16,7 +16,7 @@ Phase 1 was commissioned as an evidence-first, diagnostic R&D investigation to r
 ---
 
 ### 2. Scientific Integrity & Data Gating Status
-In strict compliance with Harakutir Scientific Integrity Principles:
+In strict compliance with FinnoaQ Scientific Integrity Principles:
 1. **No Data Fabrication:** No hand-authored or randomized numbers have been treated as experimental truth.
 2. **Current Analytical Gate:** No physical laboratory assay reports have yet been delivered by external testing laboratories to `data/raw/`.
 3. **Formal Classification:** The empirical root-cause diagnosis is marked **`DATA_READINESS_ONLY`**.
@@ -27,7 +27,7 @@ In strict compliance with Harakutir Scientific Integrity Principles:
 ### 3. Key Accomplishments & Deliverables Delivered
 - **Complete Parameter Registry:** 78 parameters across 10 analytical domains defined with exact AOAC/ISO/BIS standards (`reports/COMPLETE_PARAMETER_REGISTRY.md`).
 - **SOW Requirements Matrix:** Full coverage of all 36 sections of `Phase1_Scope_of_Work_Toor_Dal.docx` (`reports/SOW_REQUIREMENTS_MATRIX.md`).
-- **Offline GPU Inverse Model:** PyTorch mass transfer solver implemented and benchmarked on the NVIDIA RTX 4050 GPU (`src/harakutir/hydration.py`).
+- **Offline GPU Inverse Model:** PyTorch mass transfer solver implemented and benchmarked on the NVIDIA RTX 4050 GPU (`src/finnoaq/hydration.py`).
 - **Bayesian OED & Phase 2 Roadmapping:** Decision-theoretic experimental plan discriminating across 5 competing hypotheses and 8 candidate technologies (`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md`).
 - **Resumable Local Supervisor:** Fault-tolerant, atomic checkpointing supervisor with SQLite event logging (`scripts/run_supervisor.py` / `run.ps1`).
 

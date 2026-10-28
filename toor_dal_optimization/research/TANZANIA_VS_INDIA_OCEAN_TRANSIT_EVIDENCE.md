@@ -2,7 +2,7 @@
 
 **Subject:** Is the 6-whistle cooking delay inherent to Tanzania, or is it induced by maritime bulk carrier ocean transit to India?  
 **Standard:** 5-Sigma Evidence-Linked Forensic Analysis (Zero Hallucination, Peer-Reviewed Literature & Trade Data)  
-**Controlling Context:** Harakutir Phase 1 SOW — Tanzanian vs Indian Benchmark Toor Dal  
+**Controlling Context:** FinnoaQ Phase 1 SOW — Tanzanian vs Indian Benchmark Toor Dal  
 
 ---
 

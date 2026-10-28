@@ -1,7 +1,7 @@
 # IMPROVEMENT_LOG.md
 
 ## Chronological System Enhancements, Architecture Evolutions & Metric Ledger
-**System:** Harakutir Autonomous Closed-Loop Pulse Engineering Platform  
+**System:** Client Organization Autonomous Closed-Loop Pulse Engineering Platform  
 **Owner:** FINNOAQ Principal Systems Engineering  
 **Standard:** Ocean Boiling Protocol v3.0 | Recursive Self-Improvement Ledger  
 
@@ -28,7 +28,7 @@ Drafts       Report      18 Gates      & Harness     on RTX 4050    5-Sigma Capa
   2. **5-Sigma Process Capability ($C_{pk} \ge 1.67$):** Validated process distribution for target cooking whistles ($LSL = 2.5, USL = 3.5, \mu = 3.00, \sigma = 0.022$). Achieved $C_p = 7.63, C_{pk} = 7.63$, confirming $< 3.4$ DPMO under standard $1.5\sigma$ shift. Generated `artifacts/five_sigma_validation_report.json`.
   3. **Structured Memory Files (MF System):** Authored `PROJECT_VISION.md`, updated `ARCHITECTURE.md`, created `SECURITY.md`, `PERFORMANCE.md`, `UX.md`, `TESTING.md`, and `IMPROVEMENT_LOG.md`.
   4. **Workspace Reorganization:** Organized loose prompt files (`PROMPT_*.txt`) into `docs/prompts/`, moved auxiliary specifications (`proposal.md`, `analytical_protocols.md`, `regulatory_*.md`) into `docs/specifications/`, and cleaned the root folder while preserving canonical inputs in `inputs/`.
-  5. **Python 3.13 Modernization:** Replaced deprecated `datetime.utcnow()` with `datetime.now(timezone.utc)` across `src/harakutir/`, reducing pytest warnings from 25 to 2.
+  5. **Python 3.13 Modernization:** Replaced deprecated `datetime.utcnow()` with `datetime.now(timezone.utc)` across `src/Client Organization/`, reducing pytest warnings from 25 to 2.
   6. **Windows CLI Encoding Resilience:** Sanitized console output strings to eliminate UnicodeEncodeErrors on Windows cp1252 consoles.
 - **Quantitative Metrics & Impact:**
   - Simulation throughput: **2,874,019 experiments/second** on RTX 4050 GPU.
@@ -51,9 +51,9 @@ Drafts       Report      18 Gates      & Harness     on RTX 4050    5-Sigma Capa
 - **Date:** 2026-10-12
 - **Reasoning:** Physical cooking time reduction must not come at the expense of sensory flavor or nutritional protein value. Traditional industrial pre-cooking produces scorched, bland, or nutritionally depleted grain.
 - **Solution:**
-  1. Developed `src/harakutir/foodoscope.py`: Modeled pulse volatile kinetics (hexanal, 1-octen-3-ol, 2-ethyl-3,5-dimethylpyrazine), lipoxygenase (LOX) inactivation, Beany Off-Flavor Severity Index (BOSI), and sambar broth culinary simulation.
-  2. Integrated 5-layer computational screening funnel in `src/harakutir/virtual_screening.py` (58 candidates $\rightarrow$ 11 rejected $\rightarrow$ 8 Pareto optimal).
-  3. Engineered `HarnessGateManager` in `src/harakutir/harness.py` evaluating Gates G0 through G9 under *Learn Harness Engineering* principles.
+  1. Developed `src/Client Organization/foodoscope.py`: Modeled pulse volatile kinetics (hexanal, 1-octen-3-ol, 2-ethyl-3,5-dimethylpyrazine), lipoxygenase (LOX) inactivation, Beany Off-Flavor Severity Index (BOSI), and sambar broth culinary simulation.
+  2. Integrated 5-layer computational screening funnel in `src/Client Organization/virtual_screening.py` (58 candidates $\rightarrow$ 11 rejected $\rightarrow$ 8 Pareto optimal).
+  3. Engineered `HarnessGateManager` in `src/Client Organization/harness.py` evaluating Gates G0 through G9 under *Learn Harness Engineering* principles.
 - **Metrics:** Unlocked optimal catalytic infrared window (184°C for 45s with 3.9% tempering moisture) yielding 3.0-whistle performance, 8.35 hedonic sensory score, and 96.8% lysine retention.
 
 ---
@@ -61,7 +61,7 @@ Drafts       Report      18 Gates      & Harness     on RTX 4050    5-Sigma Capa
 ### Version 3.0.0 — Parameter Registry, Pydantic v2 Schemas & 18-Gate Audit
 - **Date:** 2026-10-11
 - **Reasoning:** Early scripts lacked strict type safety and schema validation. Physical boundaries were unconstrained, creating risks of silent numerical distortion.
-- **Solution:** Created single source of truth in `src/harakutir/parameters.py` with 78 parameters across 10 analytical domains, backed by Pydantic v2 validation models. Implemented SQLite WAL journal (`state/journal.db`) and 18-gate audit test suite.
+- **Solution:** Created single source of truth in `src/Client Organization/parameters.py` with 78 parameters across 10 analytical domains, backed by Pydantic v2 validation models. Implemented SQLite WAL journal (`state/journal.db`) and 18-gate audit test suite.
 - **Impact:** 100% test automation; zero synthetic data leakage into commercial reports.
 
 ---

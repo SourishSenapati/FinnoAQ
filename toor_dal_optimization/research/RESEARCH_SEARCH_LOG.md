@@ -1,7 +1,7 @@
 # RESEARCH SEARCH LOG
 
-**Project:** Harakutir Autonomous Pulse Engineering (Tanzanian Toor Dal)  
-**Standard:** Ocean Boiling Protocol v3.0 | Harakutir Omega v4  
+**Project:** FinnoaQ Autonomous Pulse Engineering (Tanzanian Toor Dal)  
+**Standard:** Ocean Boiling Protocol v3.0 | FinnoaQ Omega v4  
 **Log Maintained:** 13 October 2026  
 
 ---
@@ -28,5 +28,5 @@
   - Full institutional raw experimental spreadsheets for Chen et al. (2021) and Chen et al. (2023) remain behind publisher paywalls.
   - In accordance with Omega v4 Section 3.3 ("Do not bypass paywalls... if only an abstract is accessible, use it only for claims the abstract supports"), claims are strictly confined to verified published abstract and peer-reviewed summary values. No unseen data was fabricated.
 - **Physical Laboratory Assays for Target Lot:**
-  - Wet-lab HPLC and texture analyzer testing on Harakutir's specific Tanzanian commercial lots are pending physical sample shipment to NABL/FSSAI accredited facilities.
+  - Wet-lab HPLC and texture analyzer testing on FinnoaQ's specific Tanzanian commercial lots are pending physical sample shipment to NABL/FSSAI accredited facilities.
   - Classified strictly as `DATA_READINESS_ONLY`.

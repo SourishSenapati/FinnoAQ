@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Audit Scope
 
-This document provides a forensic engineering audit of all native 3D Computer-Aided Design (CAD) solids, assemblies, and neutral STEP exchange files developed for the Harakutir 15 TPD Greenfield Plant conceptual FEED.
+This document provides a forensic engineering audit of all native 3D Computer-Aided Design (CAD) solids, assemblies, and neutral STEP exchange files developed for the FinnoaQ 15 TPD Greenfield Plant conceptual FEED.
 
 All 3D models were constructed natively inside **SOLIDWORKS 2025 SP01.2 (`Rev 33.1.2`)** via COM automation (`SldWorks.Application`). Every component features authentic, watertight, multi-feature Boundary Representation (B-Rep) solid geometry, including cylindrical and conical shells, dished heads, structural steel frames, nozzle flanges, rotating impellers, and spring vibration isolators. 
 

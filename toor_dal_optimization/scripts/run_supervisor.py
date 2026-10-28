@@ -1,5 +1,5 @@
 """
-Harakutir Autonomous R&D Local Supervisor.
+Client Organization Autonomous R&D Local Supervisor.
 Main orchestrator and persistent runtime engine.
 Supports modes: Run, Resume, Benchmark, Test, Audit, Ingest.
 Handles graceful Ctrl+C interruption, atomic checkpointing,
@@ -19,21 +19,21 @@ from typing import Dict, Any, List, Optional
 # Add project root to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.provenance import ProvenanceRegistry, compute_sha256
-from src.harakutir.schemas import DatasetKind
-from src.harakutir.ingest import DataIngestionEngine
-from src.harakutir.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
-from src.harakutir.checkpoint import CheckpointManager
-from src.harakutir.statistics import compute_descriptive_stats, compute_comparative_stats
-from src.harakutir.hydration import fit_peleg_model, GPUInverseHydrationModel
-from src.harakutir.claims import get_baseline_phase1_claims
-from src.harakutir.oed import BayesianOEDPlanner
-from src.harakutir.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
-from src.harakutir.reports import ReportGenerator
-from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
-from src.harakutir.virtual_screening import VirtualScreeningPipeline
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
-from src.harakutir.harness import HarnessEngineeringManager
+from src.finnoaq.provenance import ProvenanceRegistry, compute_sha256
+from src.finnoaq.schemas import DatasetKind
+from src.finnoaq.ingest import DataIngestionEngine
+from src.finnoaq.synthetic import generate_synthetic_fixtures, assert_no_synthetic_leakage
+from src.finnoaq.checkpoint import CheckpointManager
+from src.finnoaq.statistics import compute_descriptive_stats, compute_comparative_stats
+from src.finnoaq.hydration import fit_peleg_model, GPUInverseHydrationModel
+from src.finnoaq.claims import get_baseline_phase1_claims
+from src.finnoaq.oed import BayesianOEDPlanner
+from src.finnoaq.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
+from src.finnoaq.reports import ReportGenerator
+from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.harness import HarnessEngineeringManager
 
 stop_requested = False
 
@@ -377,7 +377,7 @@ class Supervisor:
         return self.execute_pipeline()
 
 def main():
-    parser = argparse.ArgumentParser(description="Harakutir Autonomous R&D Supervisor")
+    parser = argparse.ArgumentParser(description="Client Organization Autonomous R&D Supervisor")
     parser.add_argument("--mode", "-m", choices=["Run", "Resume", "Benchmark", "Test", "Audit", "Ingest"], default="Run")
     parser.add_argument("--config", "-c", default="configs/default_config.json")
     args = parser.parse_args()

@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary
 
-This register details the regulatory, engineering, and food safety standards governing the Harakutir 15,000 kg/day Greenfield Plant, and establishes the formal **Human Project Lead Hold Points** required before progressing from Conceptual Front-End Engineering Design (FEED) to Detailed Engineering and Commercial Procurement.
+This register details the regulatory, engineering, and food safety standards governing the FinnoaQ 15,000 kg/day Greenfield Plant, and establishes the formal **Human Project Lead Hold Points** required before progressing from Conceptual Front-End Engineering Design (FEED) to Detailed Engineering and Commercial Procurement.
 
 In strict compliance with the **V4 Master Directive**, all engineering claims are evidence-locked. Unverified theoretical models are clearly separated from validated physics, and the project lead's authority over commercial commitments is strictly maintained.
 
@@ -22,7 +22,7 @@ In strict compliance with the **V4 Master Directive**, all engineering claims ar
 
 The conceptual FEED package conforms to the following recognized Indian and international standards:
 
-| Discipline | Governing Code / Standard | Standard Title / Description | Specific Application to Harakutir 15 TPD Plant | Compliance Status |
+| Discipline | Governing Code / Standard | Standard Title / Description | Specific Application to FinnoaQ 15 TPD Plant | Compliance Status |
 |:---|:---|:---|:---|:---:|
 | **Food Safety & Hygiene** | **FSSAI Act, 2006** | Food Safety and Standards (Food Products Standards and Food Additives) Regulations | Product standard for split pulses (Toor Dal); limits on foreign matter, moisture (<12.0%), damaged grains (<2.0%), uric acid, and aflatoxins. Reagents (Sodium Bicarbonate, Sodium Citrate) must be Food Grade (IS 2124 / IS 5058). | **COMPLIANT IN DESIGN** |
 | **Hygienic Zoning** | **ISO 22000:2018** | Food Safety Management Systems — Requirements for Any Organization in the Food Chain | Four-tier hygienic zoning (Brown: Raw Intake; Grey: Wet Soaking & Drying; White: Packaging Class 8 Cleanroom). Separation of personnel and material flows. | **COMPLIANT IN DESIGN** |
@@ -44,7 +44,7 @@ In accordance with Section 1 of the V4 Master Directive:
 > *"Instruction completeness target: ASD-STM-100 or better as requested by the project owner. Do not claim conformity to ASD-STM-100 as an external published standard unless its authoritative definition is found in the project materials."*
 
 - **Finding:** A thorough search of the workspace, public technical databases, and industrial standard repositories indicates that `ASD-STM-100` represents an internal procedural benchmark and completeness target specified by the project owner, rather than an externally published standard from ISO, ASTM, ASME, or BIS.
-- **Statement of Conformity:** The Harakutir engineering package targets the rigorous, exhaustive completeness level envisioned under the ASD-STM-100 project directive (complete drawing schedules, zero slop, authentic vector CAD, audited mass/energy balances, and documented safety interlocks). However, in strict preservation of scientific integrity, this project makes no claim of conformity to ASD-STM-100 as a public external published standard.
+- **Statement of Conformity:** The FinnoaQ engineering package targets the rigorous, exhaustive completeness level envisioned under the ASD-STM-100 project directive (complete drawing schedules, zero slop, authentic vector CAD, audited mass/energy balances, and documented safety interlocks). However, in strict preservation of scientific integrity, this project makes no claim of conformity to ASD-STM-100 as a public external published standard.
 
 ---
 
@@ -81,7 +81,7 @@ The following formal Hold Points represent critical technical, commercial, and p
 ### HOLD POINT HP-03: Statutory Consent to Establish (CTE) & Pollution Clearance
 - **Status:** **ACTIVE / PENDING STATE POLLUTION CONTROL BOARD FILING**
 - **Technical Barrier:** Operation of a 15 TPD agro-processing facility requiring a $2.0\text{ TPH}$ steam boiler and generating $16.3\text{ m}^3\text{/day}$ spent soak liquor requires statutory Consent to Establish (CTE) under the Water (Prevention and Control of Pollution) Act, 1974, and Air (Prevention and Control of Pollution) Act, 1981.
-- **Requirement for Release:** Formal submission of the Zero Liquid Discharge (ZLD) Triple-Effect Evaporator design basis (`DWG-FIN-15T-010` and `HARAKUTIR_15TPD_CONVERGED.bkp`) to the State Pollution Control Board and receipt of formal CTE before ground breaking.
+- **Requirement for Release:** Formal submission of the Zero Liquid Discharge (ZLD) Triple-Effect Evaporator design basis (`DWG-FIN-15T-010` and `FINNOAQ_15TPD_CONVERGED.bkp`) to the State Pollution Control Board and receipt of formal CTE before ground breaking.
 
 ---
 

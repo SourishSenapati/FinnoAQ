@@ -2,7 +2,7 @@
 FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
 PROJECT REF: FNQ-PR-2026-001 | 15,000 KG/DAY TOOR DAL PROCESSING FACILITY
 LEAD CHEMICAL & PROCESS ENGINEER: Sourish Senapati (FinnoaQ)
-ACADEMIC GUIDANCE: Dr. Archisman Ray (IIT Kharagpur)
+ACADEMIC GUIDANCE: Technical Advisory Panel
 
 MASTER INTEGRATED ENGINEERING DOSSIER GENERATOR (50-PAGE COMPLETE EDITION)
 Features:
@@ -162,7 +162,7 @@ def draw_sheet_frame(c, title, dwg_no, rev="8.0", sheet_idx="1 OF 50", subtitle=
     c.setFont("Helvetica-Bold", 7.5)
     c.drawString(bx + 15, by + 34, "ACADEMIC GUIDANCE & RESEARCH:")
     c.setFont("Helvetica", 7.5)
-    c.drawString(bx + 200, by + 34, "Dr. Archisman Ray (IIT Kharagpur)")
+    c.drawString(bx + 200, by + 34, "Technical Advisory Panel")
     
     c.setFont("Helvetica-Bold", 7.5)
     c.drawString(bx + 15, by + 20, "CAD / SIMULATION PROVENANCE:")
@@ -224,23 +224,25 @@ def draw_notes_panel(c, x, y, w, h, notes_list):
 
 
 def draw_robust_table_panel(c, x, y, w, h, title, headers, rows, col_widths=None):
-    """Draw a robust engineering schedule with zero clipping or overflow."""
+    """Draw a robust engineering schedule with zero clipping or overflow and dynamic row heights."""
     c.saveState()
     c.setFillColor(CLR_BG_LIGHT)
     c.rect(x, y, w, h, fill=True, stroke=True)
     
     # Title Banner (24 pt high)
+    title_h = 24.0
     c.setFillColor(CLR_HEADER_BG)
-    c.rect(x, y + h - 24, w, 24, fill=True, stroke=True)
+    c.rect(x, y + h - title_h, w, title_h, fill=True, stroke=True)
     c.setFillColor(CLR_PRIMARY)
-    c.setFont("Helvetica-Bold", 8.5)
-    c.drawString(x + 10, y + h - 16, title)
+    c.setFont("Helvetica-Bold", 9.0)
+    c.drawString(x + 10, y + h - 16.5, title)
     
-    # Headers Banner (18 pt high)
-    head_y = y + h - 42
+    # Headers Banner (20 pt high)
+    head_h = 20.0
+    head_y = y + h - title_h - head_h
     c.setFillColor(HexColor('#edf2f7'))
-    c.rect(x, head_y, w, 18, fill=True, stroke=True)
-    c.setFont("Helvetica-Bold", 7.2)
+    c.rect(x, head_y, w, head_h, fill=True, stroke=True)
+    c.setFont("Helvetica-Bold", 8.0)
     c.setFillColor(CLR_TEXT_DARK)
     
     n_cols = len(headers)
@@ -249,40 +251,60 @@ def draw_robust_table_panel(c, x, y, w, h, title, headers, rows, col_widths=None
         
     cur_x = x
     for i, h_text in enumerate(headers):
-        c.drawString(cur_x + 6, head_y + 5, str(h_text))
+        c.drawString(cur_x + 8, head_y + 6.0, str(h_text))
         cur_x += col_widths[i]
         if i < n_cols - 1:
             c.setLineWidth(0.5)
             c.setStrokeColor(CLR_GRID)
-            c.line(cur_x, y, cur_x, y + h - 24)
+            c.line(cur_x, y, cur_x, y + h - title_h)
             
-    # Rows (14 pt high per row)
-    cur_y = head_y - 15
-    c.setFont("Helvetica", 7.0)
+    # Rows: DYNAMIC ROW HEIGHT so the table exactly fills the remaining height!
+    n_rows = len(rows)
+    avail_h = head_y - y
+    if n_rows >= 14:
+        row_h = avail_h / float(n_rows)
+    elif n_rows > 0:
+        row_h = min(22.0, avail_h / float(n_rows))
+    else:
+        row_h = 20.0
+        
+    font_size = 8.0 if row_h >= 18.0 else 7.2
+    
     for r_idx, row in enumerate(rows):
-        if cur_y < y + 4:
+        row_bottom = head_y - (r_idx + 1) * row_h
+        if row_bottom < y - 1:
             break
-        # Alternate subtle shading
+        # Subtle alternating row shading
         if r_idx % 2 == 1:
             c.setFillColor(HexColor('#f4f7fb'))
-            c.rect(x + 0.5, cur_y - 2, w - 1, 14, fill=True, stroke=False)
+            c.rect(x + 0.5, row_bottom, w - 1, row_h, fill=True, stroke=False)
             
         cur_x = x
         for c_idx, val in enumerate(row):
             if c_idx < len(col_widths):
-                c.setFillColor(CLR_TEXT_DARK)
                 txt = str(val)
-                # auto-truncate with ellipsis if exceeds column width
-                max_chars = int(col_widths[c_idx] / 4.2)
+                # First column is parameter / tag: bold
+                if c_idx == 0:
+                    c.setFont("Helvetica-Bold", font_size)
+                    c.setFillColor(CLR_PRIMARY)
+                else:
+                    c.setFont("Helvetica", font_size)
+                    c.setFillColor(CLR_TEXT_DARK)
+                    
+                # Truncate with ellipsis if text exceeds column width
+                max_chars = int((col_widths[c_idx] - 14) / (font_size * 0.52))
                 if len(txt) > max_chars and max_chars > 3:
                     txt = txt[:max_chars - 3] + "..."
-                c.drawString(cur_x + 6, cur_y + 2, txt)
+                    
+                # Vertically centered text in cell
+                text_y = row_bottom + (row_h - font_size) / 2.0 + 1.5
+                c.drawString(cur_x + 8, text_y, txt)
                 cur_x += col_widths[c_idx]
                 
-        cur_y -= 14
-        c.setLineWidth(0.3)
+        # Horizontal grid line
+        c.setLineWidth(0.4)
         c.setStrokeColor(HexColor('#d0dbe5'))
-        c.line(x, cur_y + 14, x + w, cur_y + 14)
+        c.line(x, row_bottom, x + w, row_bottom)
         
     c.restoreState()
 
@@ -323,7 +345,7 @@ def build_cover_sheet(out_pdf):
         "4. EFFLUENT GOVERNANCE: 100% Zero Liquid Discharge (ZLD) closed-loop soak liquor recovery via MEE Evaporator EV-101.",
         "5. SCIENTIFIC HOLD NOTICE: Gate G-A Experimental Hold strictly active on commercial lot ID validation.",
         "6. TOOL PROVENANCE: 100% authentic engineering outputs: SolidWorks 2025 SP01.2, AutoCAD 2025, and Aspen Plus V14.",
-        "7. ATTRIBUTION: Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ); Academic Guidance: Dr. Archisman Ray (IIT KGP).",
+        "7. ATTRIBUTION: Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ); Academic Guidance: Technical Advisory Panel.",
         "8. ZERO COMPROMISE LAW: No synthetic approximations, fake coordinate lines, or manual raster mimicry permitted."
     ])
     
@@ -546,23 +568,34 @@ def build_joined_model_exhibition_sheet(out_pdf, joined_config):
 def build_side_by_side_sheet(out_pdf, sbs_config):
     """
     Generate an ISO A2 Landscape sheet featuring:
-      Left Half: 2D CAD Engineering Drawing
-      Right Half: 3D SolidWorks Solid Model Render + Technical Table
+      Left Half: 2D CAD Engineering Drawing + Comprehensive Process Control Schedule
+      Right Half: 3D SolidWorks Solid Model Render + Equipment Sizing & Mechanical Schedule
+    Both spreadsheets dynamically fill their lower panels down to the bottom border with zero blank gap.
     """
     c = canvas.Canvas(out_pdf, pagesize=(PAGE_W, PAGE_H))
     
     title = sbs_config["title"]
     dwg_no = sbs_config["dwg_no"]
-    cad_pdf_path = sbs_config["cad_pdf_path"]
-    model_img_path = sbs_config["model_img_path"]
+    cad_pdf_path = sbs_config.get("cad_pdf_path")
+    if not cad_pdf_path and "cad_pdf" in sbs_config:
+        cad_pdf_path = os.path.join(CAD_PDF_DIR, sbs_config["cad_pdf"])
+        
+    model_img_path = sbs_config.get("model_img_path")
+    if not model_img_path and "model_img" in sbs_config:
+        model_img_path = os.path.join(CAD_PNG_DIR, sbs_config["model_img"])
     
     draw_sheet_frame(c, title, dwg_no, "8.0", "1 OF 1", "INTEGRATED SIDE-BY-SIDE 2D CAD VECTOR & 3D SOLIDWORKS MODEL COMPARISON")
     
     im = 26.0
-    pane_w = (PAGE_W - 2*im - 30) / 2.0
+    pane_w = (PAGE_W - 2*im - 30) / 2.0  # 801.0 pt
     pane_h = 960.0
     
-    # LEFT PANE: 2D CAD Engineering Drawing
+    img_h = 440.0
+    tbl_h = pane_h - 24 - img_h - 16  # 480.0 pt
+    
+    # =========================================================
+    # LEFT PANE: 2D CAD Engineering Drawing & Process Schedule
+    # =========================================================
     left_x = im + 10
     left_y = 160
     c.setFillColor(CLR_WHITE)
@@ -570,19 +603,34 @@ def build_side_by_side_sheet(out_pdf, sbs_config):
     c.setFillColor(CLR_HEADER_BG)
     c.rect(left_x, left_y + pane_h - 24, pane_w, 24, fill=True, stroke=True)
     c.setFillColor(CLR_PRIMARY)
-    c.setFont("Helvetica-Bold", 9)
-    c.drawString(left_x + 15, left_y + pane_h - 16, "PANE 1: AUTOCAD 2025 NATIVE PURE VECTOR CAD ENGINEERING DRAWING")
+    c.setFont("Helvetica-Bold", 9.5)
+    c.drawString(left_x + 15, left_y + pane_h - 16, "PANE 1: AUTOCAD 2025 NATIVE PURE VECTOR CAD DRAWING & PROCESS SCHEDULE")
     
-    if os.path.exists(cad_pdf_path):
+    # Top visual area: CAD drawing
+    cad_box_y = left_y + tbl_h + 16
+    cad_box_h = img_h
+    if cad_pdf_path and os.path.exists(cad_pdf_path):
         cad_doc = fitz.open(cad_pdf_path)
         cad_page = cad_doc[0]
-        pix = cad_page.get_pixmap(dpi=150)
+        r = cad_page.rect
+        # Clip outer 2.5% sheet margin to maximize active drawing area
+        clip_rect = fitz.Rect(r.width * 0.025, r.height * 0.025, r.width * 0.975, r.height * 0.975)
+        pix = cad_page.get_pixmap(clip=clip_rect, dpi=180)
         temp_cad_png = os.path.join(SCRATCH_PAGES_DIR, f"temp_cad_{os.path.basename(cad_pdf_path)}.png")
         pix.save(temp_cad_png)
         cad_doc.close()
-        c.drawImage(temp_cad_png, left_x + 10, left_y + 15, pane_w - 20, pane_h - 55, preserveAspectRatio=True)
+        c.drawImage(temp_cad_png, left_x + 8, cad_box_y + 4, pane_w - 16, cad_box_h - 8, preserveAspectRatio=True)
         
-    # RIGHT PANE: 3D SolidWorks Model & Engineering Data Table
+    # Bottom area: Left Pane Process Spreadsheet
+    left_tbl_title = sbs_config.get("left_tbl_title", "PROCESS CONTROL, INSTRUMENTATION & OPERATING SCHEDULE")
+    left_tbl_headers = sbs_config.get("left_tbl_headers", ["Tag / Parameter", "Engineering Specification", "Setpoint / Range", "Control Action / Logic"])
+    left_tbl_rows = sbs_config.get("left_tbl_rows", [])
+    left_col_widths = sbs_config.get("left_col_widths", [160, 265, 160, 200])
+    draw_robust_table_panel(c, left_x + 8, left_y + 8, pane_w - 16, tbl_h, left_tbl_title, left_tbl_headers, left_tbl_rows, left_col_widths)
+    
+    # =========================================================
+    # RIGHT PANE: 3D SolidWorks Model & Mechanical Schedule
+    # =========================================================
     right_x = left_x + pane_w + 10
     right_y = 160
     c.setFillColor(CLR_WHITE)
@@ -590,28 +638,21 @@ def build_side_by_side_sheet(out_pdf, sbs_config):
     c.setFillColor(CLR_HEADER_BG)
     c.rect(right_x, right_y + pane_h - 24, pane_w, 24, fill=True, stroke=True)
     c.setFillColor(CLR_PRIMARY)
-    c.setFont("Helvetica-Bold", 9)
-    c.drawString(right_x + 15, right_y + pane_h - 16, "PANE 2: AUTHENTIC 3D SOLIDWORKS SOLID MODEL PROJECTION (UPRIGHT HUMAN VIEWING)")
+    c.setFont("Helvetica-Bold", 9.5)
+    c.drawString(right_x + 15, right_y + pane_h - 16, "PANE 2: AUTHENTIC 3D SOLIDWORKS SOLID MODEL PROJECTION & MECHANICAL SCHEDULE")
     
-    img_h = 520.0
-    img_y = right_y + pane_h - 24 - img_h
+    # Top visual area: 3D SolidWorks Render
+    model_box_y = right_y + tbl_h + 16
+    model_box_h = img_h
     if model_img_path and os.path.exists(model_img_path):
-        c.drawImage(model_img_path, right_x + 10, img_y + 10, pane_w - 20, img_h - 20, preserveAspectRatio=True)
+        c.drawImage(model_img_path, right_x + 8, model_box_y + 4, pane_w - 16, model_box_h - 8, preserveAspectRatio=True)
         
-    tbl_h = img_y - right_y - 10
-    tbl_title = sbs_config.get("tbl_title", "EQUIPMENT SIZING & MECHANICAL SPECIFICATIONS")
-    tbl_headers = sbs_config.get("tbl_headers", ["Parameter", "Engineering Design Basis", "Operating Range", "Units"])
-    tbl_rows = sbs_config.get("tbl_rows", [
-        ["Design Standard", "ASME Section VIII Div 1 / IS 2825", "Code Stamped", "-"],
-        ["Operating Pressure", "Atmospheric / Static Head", "0.0 - 0.35", "bar(g)"],
-        ["Design Pressure", "Full Vacuum to 3.5 bar(g) Jacket", "-1.0 / +3.5", "bar(g)"],
-        ["Operating Temperature", "Controlled Rapid-Hydration Soaking", "65.0 - 75.0", "deg C"],
-        ["Material of Construction", "SS316L Contact / SS304 Jacket", "Food Grade", "Ra <= 0.5 um"],
-        ["Total Batch Volume", "5,600 Liters (5.60 m3)", "1,800 x 2,200", "mm Shell"],
-        ["Motor Drive Rating", "SEW-Eurodrive Helical Bevel Gearmotor", "5.5 kW / 48 RPM", "415V, 50Hz"],
-        ["Effluent Drainage Rate", "DN150 Bottom Pneumatic Butterfly Valve", "1,200 - 1,500", "kg/batch min"]
-    ])
-    draw_robust_table_panel(c, right_x + 10, right_y + 10, pane_w - 20, tbl_h, tbl_title, tbl_headers, tbl_rows, [140, 260, 110, 60])
+    # Bottom area: Right Pane Mechanical Spreadsheet
+    right_tbl_title = sbs_config.get("right_tbl_title", "EQUIPMENT SIZING & MECHANICAL FABRICATION SPECIFICATIONS")
+    right_tbl_headers = sbs_config.get("right_tbl_headers", ["Parameter / Tag", "Engineering Design Basis", "Operating Range", "Units / Standard"])
+    right_tbl_rows = sbs_config.get("right_tbl_rows", [])
+    right_col_widths = sbs_config.get("right_col_widths", [165, 280, 175, 165])
+    draw_robust_table_panel(c, right_x + 8, right_y + 8, pane_w - 16, tbl_h, right_tbl_title, right_tbl_headers, right_tbl_rows, right_col_widths)
     
     c.showPage()
     c.save()
@@ -1115,28 +1156,26 @@ def assemble_master_document_50pages():
     # PART 4: SIDE-BY-SIDE DUAL-PANE COMPOSITE SUITE (PAGES 36 TO 46 — 11 PAGES)
     # -------------------------------------------------------------
     print("Generating Side-by-Side Dual-Pane Engineering Composite Sheets...")
-    sbs_sheets = [
-        ("DWG-FIN-15T-001_PFD.pdf", "PLANT-15T_Joined_Iso_HumanView.png", "DWG-FIN-15T-001-SBS", "SIDE-BY-SIDE: PROCESS FLOW DIAGRAM & 3D PLANT GENERAL ARRANGEMENT"),
-        ("DWG-FIN-15T-003_PID_SOAKING.pdf", "TK-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-003-SBS", "SIDE-BY-SIDE: SOAKING SECTION P&ID & TK-101 SOAK TANK 3D SOLID MODEL"),
-        ("DWG-FIN-15T-004_SITE_PLOT_PLAN.pdf", "PLANT-15T_Joined_Top_HumanView.png", "DWG-FIN-15T-004-SBS", "SIDE-BY-SIDE: SITE PLOT PLAN & 3D MASTER BUILDING LAYOUT"),
-        ("DWG-FIN-15T-005_PID_DRYER.pdf", "DR-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-005-SBS", "SIDE-BY-SIDE: DRYER SECTION P&ID & DR-101 FLUID BED DRYER 3D MODEL"),
-        ("DWG-FIN-15T-007_SOAK_TANK_GA.pdf", "TK-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-007-SBS", "SIDE-BY-SIDE: TK-101 SOAK TANK MECHANICAL GA & 3D B-REP SOLID MODEL"),
-        ("DWG-FIN-15T-008_DRYER_GA.pdf", "DR-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-008-SBS", "SIDE-BY-SIDE: DR-101 DRYER MECHANICAL GA & 3D B-REP SOLID MODEL"),
-        ("DWG-FIN-15T-009_DOSING_SKID_GA.pdf", "SK-100_SolidWorks_3D_Iso.png", "DWG-FIN-15T-009-SBS", "SIDE-BY-SIDE: SK-100 CHEMICAL DOSING SKID GA & 3D SOLID MODEL"),
-        ("DWG-FIN-15T-010_PID_EVAPORATOR.pdf", "EV-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-010-SBS", "SIDE-BY-SIDE: EV-101 ZLD EVAPORATOR P&ID & 3D SOLID MODEL"),
-        ("DWG-FIN-15T-011_ELECTRICAL_SLD.pdf", "STR-100_SolidWorks_3D_Iso.png", "DWG-FIN-15T-011-SBS", "SIDE-BY-SIDE: ELECTRICAL SLD & MAIN SCADA / MCC ENCLOSURE 3D MODEL"),
-        ("DWG-FIN-15T-012_DUST_ZONING.pdf", "CY-101_SolidWorks_3D_Iso.png", "DWG-FIN-15T-012-SBS", "SIDE-BY-SIDE: HAZARDOUS DUST ZONING & CY-101 CYCLONE 3D MODEL"),
-        ("DWG-FIN-15T-014_PLANT_GA_MASTER_SHEET.pdf", "PLANT-15T_Joined_Iso_HumanView.png", "DWG-FIN-15T-014-SBS", "SIDE-BY-SIDE: PLANT GA MASTER SHEET & 3D SOLIDWORKS ASSEMBLY")
+    from sbs_master_equipment_data import SBS_CONFIGS
+    
+    sbs_order = [
+        "DWG-FIN-15T-001-SBS",
+        "DWG-FIN-15T-003-SBS",
+        "DWG-FIN-15T-004-SBS",
+        "DWG-FIN-15T-005-SBS",
+        "DWG-FIN-15T-007-SBS",
+        "DWG-FIN-15T-008-SBS",
+        "DWG-FIN-15T-009-SBS",
+        "DWG-FIN-15T-010-SBS",
+        "DWG-FIN-15T-011-SBS",
+        "DWG-FIN-15T-012-SBS",
+        "DWG-FIN-15T-014-SBS"
     ]
     
-    for cad_name, img_name, sbs_tag, sbs_title in sbs_sheets:
+    for sbs_tag in sbs_order:
+        sbs_cfg = SBS_CONFIGS[sbs_tag]
         temp_sbs_pdf = os.path.join(SCRATCH_PAGES_DIR, f"sbs_{sbs_tag}.pdf")
-        build_side_by_side_sheet(temp_sbs_pdf, {
-            "title": sbs_title,
-            "dwg_no": sbs_tag,
-            "cad_pdf_path": os.path.join(CAD_PDF_DIR, cad_name),
-            "model_img_path": os.path.join(CAD_PNG_DIR, img_name)
-        })
+        build_side_by_side_sheet(temp_sbs_pdf, sbs_cfg)
         s_doc = fitz.open(temp_sbs_pdf)
         master_doc.insert_pdf(s_doc)
         s_doc.close()
@@ -1176,9 +1215,26 @@ def assemble_master_document_50pages():
     
     # Save the Complete Master Document
     print(f"Writing Complete 50-Page Master PDF...")
+    portal_pdf_dir = os.path.join(WORKSPACE_ROOT, "portal", "public", "pdf")
+    os.makedirs(portal_pdf_dir, exist_ok=True)
+    portal_pdf_path = os.path.join(portal_pdf_dir, "FINNOAQ_15TPD_MASTER_INTEGRATED_ENGINEERING_DOCUMENT.pdf")
+
     master_doc.save(master_pdf_path, garbage=4, deflate=True)
     master_doc.save(cad_copy_path, garbage=4, deflate=True)
     master_doc.save(artifact_copy_path, garbage=4, deflate=True)
+    master_doc.save(portal_pdf_path, garbage=4, deflate=True)
+    
+    # Export all 50 pages as high-resolution PNGs for the Web Portal Dossier Reader
+    portal_dossier_dir = os.path.join(WORKSPACE_ROOT, "portal", "public", "dossier_pages")
+    os.makedirs(portal_dossier_dir, exist_ok=True)
+    print("Rendering 50 dossier pages for web portal reader...")
+    for idx, page in enumerate(master_doc):
+        page_num = idx + 1
+        pad = f"{page_num:02d}"
+        pix = page.get_pixmap(dpi=150)
+        out_png = os.path.join(portal_dossier_dir, f"page_{pad}.png")
+        pix.save(out_png)
+    print(f"Rendered {len(master_doc)} pages to {portal_dossier_dir}")
     
     doc_len = len(master_doc)
     doc_size = os.path.getsize(master_pdf_path)

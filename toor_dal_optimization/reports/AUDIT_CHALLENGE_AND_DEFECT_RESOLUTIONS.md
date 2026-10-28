@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — FORENSIC AUDIT CHALLENGE & DEFECT RESOLUTIONS
+# FINNOAQ TOOR DAL — FORENSIC AUDIT CHALLENGE & DEFECT RESOLUTIONS
 
 **Document ID:** FIN-AUD-RES-2026-001  
 **Directive Reference:** [`AUDIT_DIRECTIVE.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/AUDIT_DIRECTIVE.md)  
@@ -26,7 +26,7 @@ Below is the definitive forensic evidence, empirical profiler data, mathematical
 ## 1. Challenge 1 Forensic Resolution: The $8192 \times 8192$ Benchmark
 
 ### 1.1 Forensic Code Inspection of `high_res_spatial_solver.py`
-Inspection of `src/harakutir/high_res_spatial_solver.py` (lines 141–171) reveals the exact mechanism of the claimed benchmark:
+Inspection of `src/finnoaq/high_res_spatial_solver.py` (lines 141–171) reveals the exact mechanism of the claimed benchmark:
 
 ```python
 # Lines 141-149: 0D Scalar Analytical Green's Function Shortcut
@@ -76,14 +76,14 @@ Projected 100-Step Transient Solve:   ~3.54 to 5.00 seconds
 | **Execution Time** | 0.0051 seconds | **35.37 ms per step** (~3.54 s for 100 steps) |
 | **Node Throughput** | 13.2 billion nodes / s (Unphysical) | **1.20 billion stencil cell-updates / s** |
 
-`reports/HIGH_RESOLUTION_GRID_STUDY.md` and `src/harakutir/high_res_spatial_solver.py` have been updated to explicitly label the analytical shortcut and document the real 1.75 GB / 35.4 ms-per-step empirical benchmark.
+`reports/HIGH_RESOLUTION_GRID_STUDY.md` and `src/finnoaq/high_res_spatial_solver.py` have been updated to explicitly label the analytical shortcut and document the real 1.75 GB / 35.4 ms-per-step empirical benchmark.
 
 ---
 
 ## 2. Challenge 2 Forensic Resolution: Material-Recovery & Retained Sodium Contradictions
 
 ### 2.1 The Material Recovery Contradiction ($96.8\%$ vs $98.54\%$)
-- **Where 96.8% came from:** In `src/harakutir/dose_calculator.py` line 58, the default parameter `dal_dry_solids_loss_pct` was set to `3.2%` (a conservative generic literature estimate for prolonged pulse soaking). When `scripts/run_dream_rsi_discovery.py` computed CAND-004, it called `calculate_formulation_point()` without overriding this default:
+- **Where 96.8% came from:** In `src/finnoaq/dose_calculator.py` line 58, the default parameter `dal_dry_solids_loss_pct` was set to `3.2%` (a conservative generic literature estimate for prolonged pulse soaking). When `scripts/run_dream_rsi_discovery.py` computed CAND-004, it called `calculate_formulation_point()` without overriding this default:
   $$\text{Recovery} = 100.0\% - 3.2\% = \mathbf{96.80\%}$$
   This was written into `reports/TREATMENT_CANDIDATE_RANKING.csv`.
 - **Where 98.54% came from:** In `reports/MASS_AND_ENERGY_BALANCE.md` and `reports/15MT_DAY_PROCESS_DESIGN.md`, the detailed 15 MT/day unit-operation flowsheet modeled:
@@ -138,7 +138,7 @@ $$k_{\text{soft}}(T, \chi_{\text{Na}}, \rho_{\text{Ca}}) = k_0 \cdot \exp\left(-
 ### 3.2 Scientific Status: Demoted to Working Hypothesis H-B1
 - **Status:** **UNVERIFIED THEORETICAL HYPOTHESIS.**
 - **Provenance:** The coefficients ($3.2, 2.5, 0.70$) were engineered algebraic scaling factors adapted from general dry legume literature (e.g., Liu et al., 1992 on common beans; Ndungu et al., 2012 on cowpeas).
-- **Physical Reality:** They were **NOT calibrated** against wet-chemical assays or physical pectin measurements of the specific Tanzanian pigeon pea lot imported by Harakutir.
+- **Physical Reality:** They were **NOT calibrated** against wet-chemical assays or physical pectin measurements of the specific Tanzanian pigeon pea lot imported by FinnoaQ.
 - **Action Taken:**
   1. The mechanism has been officially renamed in `reports/CLAIM_AND_PROVENANCE_LEDGER.md` and `reports/HYPOTHESIS_REGISTRY_H1_H7.md` from "Demonstrated Biophysical Twin" to **"Working Biophysical Hypothesis H-B1 (Pectin-Calcium Crosslinking Model)"**.
   2. The following preregistered laboratory assays are formally established as required before this mechanism can be asserted as demonstrated fact:
@@ -220,12 +220,12 @@ $$t = \frac{\Delta \bar{X}}{SE} = \frac{\sqrt{2} \times 8.2}{s}$$
 | File Path | Defect / Contradiction Addressed | Action Completed |
 | :--- | :--- | :--- |
 | [`AUDIT_DIRECTIVE.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/AUDIT_DIRECTIVE.md) | Audit directive capture | Saved directly in project root |
-| [`src/harakutir/high_res_spatial_solver.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/high_res_spatial_solver.py) | Point 1: $8192^2$ analytical shortcut vs. real PDE solve | Documented analytical series vs. full 2D stencil benchmark |
+| [`src/finnoaq/high_res_spatial_solver.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/high_res_spatial_solver.py) | Point 1: $8192^2$ analytical shortcut vs. real PDE solve | Documented analytical series vs. full 2D stencil benchmark |
 | [`reports/HIGH_RESOLUTION_GRID_STUDY.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/HIGH_RESOLUTION_GRID_STUDY.md) | Point 1: 0.0051s / 64MB unphysical claim | Replaced with true profiler data (1.75 GB VRAM, 35.4 ms/step) |
 | [`reports/TREATMENT_CANDIDATE_RANKING.csv`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/TREATMENT_CANDIDATE_RANKING.csv) | Point 2 & 4: 96.8% vs 98.54% recovery, sodium basis, 16.9 whistles | Reconciled recovery, defined retained sodium basis, updated whistle comparators |
 | [`reports/MULTISCALE_PHYSICS_ARCHITECTURE.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/MULTISCALE_PHYSICS_ARCHITECTURE.md) | Point 3: Pectin de-esterification / 7.73x rate formula | Demoted to Working Hypothesis H-B1; specified required assays |
 | [`reports/STAGE_1_VALIDATION_REPORT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/STAGE_1_VALIDATION_REPORT.md) | Point 5: Automatic $5\sigma$ unlock language | Retracted automatic pass; replaced with conditional statistical power gates |
 
 **Signed Off:**  
-Harakutir Scientific & Forensic Audit Red Team  
+FinnoaQ Scientific & Forensic Audit Red Team  
 *October 14, 2026*

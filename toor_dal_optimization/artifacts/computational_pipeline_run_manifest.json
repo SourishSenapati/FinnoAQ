@@ -1,0 +1,368 @@
+{
+  "run_id": "RUN_1792514295",
+  "timestamp": "2026-10-20 22:08:15",
+  "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "pipeline_runtime_seconds": 1.21,
+  "offline_execution_verified": true,
+  "device_used": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "deterministic_balances": {
+    "scenario_b1": {
+      "scenario_id": "SCENARIO_B1_28_PCT_WB",
+      "inlet_moisture_wb": 0.28,
+      "inlet_moisture_db": 0.38888888888888895,
+      "dryer_inlet_mass_kg_day": 18390.277777777777,
+      "dryer_inlet_dry_solids_kg_day": 13241.0,
+      "dryer_inlet_water_kg_day": 5149.277777777778,
+      "product_total_kg_day": 14712.222222222223,
+      "product_dry_solids_kg_day": 13241.0,
+      "product_water_kg_day": 1471.2222222222224,
+      "evaporation_kg_day": 3678.0555555555557,
+      "evaporation_kg_h": 183.90277777777777,
+      "closure_residual_kg": 0.0,
+      "closure_error_pct": 0.0,
+      "mathematical_closure": true,
+      "empirical_status": "UNRESOLVED_EMPIRICALLY_AWAITING_DRAINAGE_TEST"
+    },
+    "scenario_b2": {
+      "scenario_id": "SCENARIO_B2_18590_KG_DAY",
+      "inlet_moisture_wb": 0.28773534158149544,
+      "inlet_moisture_db": 0.4039725096291821,
+      "dryer_inlet_mass_kg_day": 18590.0,
+      "dryer_inlet_dry_solids_kg_day": 13241.0,
+      "dryer_inlet_water_kg_day": 5349.0,
+      "product_total_kg_day": 14712.222222222223,
+      "product_dry_solids_kg_day": 13241.0,
+      "product_water_kg_day": 1471.2222222222224,
+      "evaporation_kg_day": 3877.7777777777774,
+      "evaporation_kg_h": 193.88888888888886,
+      "closure_residual_kg": 0.0,
+      "closure_error_pct": 0.0,
+      "mathematical_closure": true,
+      "empirical_status": "UNRESOLVED_EMPIRICALLY_AWAITING_DRAINAGE_TEST"
+    },
+    "unresolved_water_delta_kg_day": 199.72222222222172,
+    "unresolved_duty_delta_kw": 6.876602546296283,
+    "competing_loss_case": {
+      "loss_184kg": {
+        "product_solids": 13241.0,
+        "b1_evap": 3678.0555555555557
+      },
+      "loss_196kg": {
+        "product_solids": 13228.99,
+        "b1_evap": 3674.719444444445
+      }
+    }
+  },
+  "hydration_modeling": {
+    "peleg_fit": {
+      "status": "CONVERGED",
+      "moisture_basis": "dry_basis",
+      "m0": 11.73,
+      "m0_se": 0.0,
+      "k1": 2.836921630364532,
+      "k1_se": 0.04583215818231796,
+      "k1_95_ci": [
+        2.7332420854433392,
+        2.9406011752857246
+      ],
+      "k2": 0.011034089424083791,
+      "k2_se": 0.00037373809880769356,
+      "k2_95_ci": [
+        0.010188635106834494,
+        0.011879543741333088
+      ],
+      "initial_absorption_rate_r0": 0.352494756745009,
+      "equilibrium_moisture_me": 102.35823052868582,
+      "r2": 0.9995581944358968,
+      "rmse": 0.24252207456667857,
+      "residuals": [
+        0.0,
+        0.18814771382101014,
+        0.4610209502836966,
+        -0.18194833298744584,
+        -0.2040706557709946,
+        0.3991365696147291,
+        0.09349538233691135,
+        -0.3339182489738626,
+        0.08124215622052589,
+        -0.16513566741215158,
+        0.10427729673416763
+      ],
+      "dof": 9,
+      "k1_k2_correlation": -0.9006751880377781,
+      "is_identifiable": true,
+      "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+    },
+    "fickian_fit": {
+      "status": "CONVERGED",
+      "effective_diffusivity_m2_s": 4.4841797320422214e-11,
+      "effective_diffusivity_scientific": "4.484e-11",
+      "log10_d_eff": -10.348316988612785,
+      "log10_d_eff_se": 0.09934968620922435,
+      "radius_m": 0.0025,
+      "rmse_mr": 0.11261998287749321,
+      "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+    }
+  },
+  "cooking_performance": {
+    "cooking_temperature_c": 115.0,
+    "autoclave_gauge_pressure_bar": 0.678,
+    "thermodynamic_state_consistent": true,
+    "source_reported_observations": {
+      "target_reported_whistles": 6.0,
+      "benchmark_reported_whistles": 3.0,
+      "whistle_evidence_state": "SOURCE_REPORTED_UNCALIBRATED",
+      "warning": "Household whistle counts are discontinuous, uncalibrated, and must NOT be used as lab time."
+    },
+    "model1_baseline_thermal": {
+      "description": "Pure thermal softening without biochemical covariates",
+      "k_softening_min^-1": 0.075,
+      "predicted_t90_min": 30.7,
+      "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+    },
+    "model2_hydration_coupled": {
+      "description": "Softening coupled to water absorption rate (k1)",
+      "status": "CALCULATED_FROM_KINETICS",
+      "k_softening_min^-1": 0.063,
+      "predicted_t90_min": 36.56,
+      "maturity_state": "M1 \u2014 IMPLEMENTED"
+    },
+    "model3_mechanistic_biochemical": {
+      "description": "Coupled hydration diffusion and pectin middle lamella solubilization",
+      "status": "BLOCKED_MISSING_BIOCHEMICAL_DATA",
+      "k_softening_min^-1": null,
+      "predicted_t90_min": null,
+      "maturity_state": "M0 \u2014 SPECIFIED"
+    },
+    "target_dal_validation_status": "NOT_VALIDATED \u2014 PENDING_PHYSICAL_LABORATORY_ASSAYS"
+  },
+  "hypothesis_discrimination": {
+    "coverage": {
+      "hypotheses_count": 10,
+      "work_packages_count": 11,
+      "total_fee_inr": 173000.0,
+      "coverage_map": {
+        "H1": [
+          "WP-02",
+          "WP-04",
+          "WP-08",
+          "WP-09",
+          "WP-11"
+        ],
+        "H2": [
+          "WP-01",
+          "WP-09",
+          "WP-11"
+        ],
+        "H3": [
+          "WP-05",
+          "WP-07",
+          "WP-09",
+          "WP-11"
+        ],
+        "H4": [
+          "WP-05",
+          "WP-06",
+          "WP-07",
+          "WP-08",
+          "WP-09",
+          "WP-10",
+          "WP-11"
+        ],
+        "H5": [
+          "WP-06",
+          "WP-09",
+          "WP-11"
+        ],
+        "H6": [
+          "WP-03",
+          "WP-09",
+          "WP-10",
+          "WP-11"
+        ],
+        "H7": [
+          "WP-02",
+          "WP-07",
+          "WP-09",
+          "WP-11"
+        ],
+        "H8": [
+          "WP-01",
+          "WP-04",
+          "WP-09",
+          "WP-11"
+        ],
+        "H9": [
+          "WP-09",
+          "WP-11"
+        ],
+        "H10": [
+          "WP-08",
+          "WP-09",
+          "WP-11"
+        ]
+      },
+      "uncovered_hypotheses": [],
+      "is_fully_covered": true
+    },
+    "diagnostic_priorities": [
+      {
+        "work_package_id": "WP-01",
+        "title": "Sample Intake, Grading & Physical Inspection",
+        "cost_inr": 5000.0,
+        "pct_of_budget": 2.89,
+        "target_hypotheses": [
+          "H2",
+          "H8"
+        ],
+        "discriminating_power_bits": 0.4,
+        "cost_efficiency_bits_per_kinr": 0.08
+      },
+      {
+        "work_package_id": "WP-04",
+        "title": "Water Absorption Kinetics & Peleg Modeling",
+        "cost_inr": 10000.0,
+        "pct_of_budget": 5.78,
+        "target_hypotheses": [
+          "H1",
+          "H8"
+        ],
+        "discriminating_power_bits": 0.8,
+        "cost_efficiency_bits_per_kinr": 0.08
+      },
+      {
+        "work_package_id": "WP-02",
+        "title": "Moisture & Proximate Composition (AOAC)",
+        "cost_inr": 7000.0,
+        "pct_of_budget": 4.05,
+        "target_hypotheses": [
+          "H1",
+          "H7"
+        ],
+        "discriminating_power_bits": 0.5,
+        "cost_efficiency_bits_per_kinr": 0.0714
+      },
+      {
+        "work_package_id": "WP-06",
+        "title": "Mineral Profiling (ICP-OES) & Phytate Determination",
+        "cost_inr": 16000.0,
+        "pct_of_budget": 9.25,
+        "target_hypotheses": [
+          "H4",
+          "H5"
+        ],
+        "discriminating_power_bits": 0.9,
+        "cost_efficiency_bits_per_kinr": 0.0563
+      },
+      {
+        "work_package_id": "WP-08",
+        "title": "Standardized Baseline Cooking Performance (Autoclave)",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H10",
+          "H1",
+          "H4"
+        ],
+        "discriminating_power_bits": 0.98,
+        "cost_efficiency_bits_per_kinr": 0.049
+      },
+      {
+        "work_package_id": "WP-10",
+        "title": "Candidate Treatment Formulation Screening",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H4",
+          "H6"
+        ],
+        "discriminating_power_bits": 0.92,
+        "cost_efficiency_bits_per_kinr": 0.046
+      },
+      {
+        "work_package_id": "WP-07",
+        "title": "Texture Profile Analysis (TPA) & Shear Resistance",
+        "cost_inr": 17000.0,
+        "pct_of_budget": 9.83,
+        "target_hypotheses": [
+          "H3",
+          "H4",
+          "H7"
+        ],
+        "discriminating_power_bits": 0.75,
+        "cost_efficiency_bits_per_kinr": 0.0441
+      },
+      {
+        "work_package_id": "WP-09",
+        "title": "Multi-Factor Statistical Analysis & Hypothesis Ranking",
+        "cost_inr": 15000.0,
+        "pct_of_budget": 8.67,
+        "target_hypotheses": [
+          "H1",
+          "H2",
+          "H3",
+          "H4",
+          "H5",
+          "H6",
+          "H7",
+          "H8",
+          "H9",
+          "H10"
+        ],
+        "discriminating_power_bits": 0.65,
+        "cost_efficiency_bits_per_kinr": 0.0433
+      },
+      {
+        "work_package_id": "WP-03",
+        "title": "Starch Gelatinization & DSC Thermal Analysis",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H6"
+        ],
+        "discriminating_power_bits": 0.85,
+        "cost_efficiency_bits_per_kinr": 0.0425
+      },
+      {
+        "work_package_id": "WP-05",
+        "title": "Cell-Wall Structural & Pectin Fractionation",
+        "cost_inr": 28000.0,
+        "pct_of_budget": 16.18,
+        "target_hypotheses": [
+          "H3",
+          "H4"
+        ],
+        "discriminating_power_bits": 0.95,
+        "cost_efficiency_bits_per_kinr": 0.0339
+      },
+      {
+        "work_package_id": "WP-11",
+        "title": "Phase 1 Consolidated Technical Report & Client Review",
+        "cost_inr": 15000.0,
+        "pct_of_budget": 8.67,
+        "target_hypotheses": [
+          "ALL"
+        ],
+        "discriminating_power_bits": 0.3,
+        "cost_efficiency_bits_per_kinr": 0.02
+      }
+    ]
+  },
+  "gpu_monte_carlo": {
+    "scenarios_count": 100000,
+    "cpu_runtime_seconds": 0.0014859000002616085,
+    "gpu_runtime_seconds": 0.029890560150146486,
+    "speedup_ratio": 0.04971134675287531,
+    "peak_vram_mb": 8.8212890625,
+    "max_abs_error": 0.0
+  },
+  "acceptance_gates": {
+    "Gate_A_Source_Integrity": "PASSED",
+    "Gate_B_Balance_Correctness": "PASSED",
+    "Gate_C_Model_Implementation": "PASSED",
+    "Gate_D_GPU_Verification": "PASSED",
+    "Gate_E_Offline_Verification": "PASSED",
+    "Gate_F_Scientific_Validity": "PASSED",
+    "Gate_G_Delivery_Quality": "PASSED"
+  }
+}

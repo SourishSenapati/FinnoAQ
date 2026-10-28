@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — STATISTICAL DESIGN & GOVERNANCE REVIEW
+# FINNOAQ TOOR DAL — STATISTICAL DESIGN & GOVERNANCE REVIEW
 
 **Document ID:** HKT-STAT-2026-001  
 **Audit Reference:** [`CRITICAL_SCIENTIFIC_AUDIT.md`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/reports/CRITICAL_SCIENTIFIC_AUDIT.md)  
@@ -121,5 +121,5 @@ To maintain scientific integrity, the test protocol is divided into two distinct
 ---
 
 **Signed Off:**  
-Harakutir Statistical Audit & Governance Panel  
+FinnoaQ Statistical Audit & Governance Panel  
 *October 15, 2026*

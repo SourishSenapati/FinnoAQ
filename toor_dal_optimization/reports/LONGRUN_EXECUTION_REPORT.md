@@ -1,4 +1,4 @@
-# HARAKUTIR OMEGA v4 — MASTER LONGRUN EXECUTION REPORT
+# FINNOAQ OMEGA v4 — MASTER LONGRUN EXECUTION REPORT
 ## Comprehensive Research, Computational Discovery, Verification & Background Execution Report
 
 ```yaml
@@ -12,7 +12,7 @@ SOURCES_SEARCHED: 10
 SOURCES_VERIFIED: 10
 OPEN_DATASETS_ACQUIRED: 4
 DIRECT_CAJANUS_DATA_STATUS: present
-REAL_HARAKUTIR_LAB_DATA: absent
+REAL_FINNOAQ_LAB_DATA: absent
 EMPIRICAL_ANALYSIS: blocked
 MODELS_VERIFIED: Peleg_NLLS_v1, GPU_Inverse_Diffusion_Deff_v1, Fourier_Slab_Conduction_v1, Virtual_Screening_5Layer_v1, Digital_Twin_ScaleUp_5T_v1
 SIMULATIONS_RUN: 58
@@ -34,7 +34,7 @@ LIMITATIONS: Target commercial lot samples have not been physically tested; all 
 
 ## 1. EXECUTIVE MISSION SUMMARY
 
-The **Harakutir Omega v4** Autonomous R&D System has been successfully launched on the local workstation for the Tanzanian Toor Dal vs Indian Benchmark project. The system operates under the strict mandate of **Ocean Boiling Protocol v3.0**, enforcing:
+The **FinnoaQ Omega v4** Autonomous R&D System has been successfully launched on the local workstation for the Tanzanian Toor Dal vs Indian Benchmark project. The system operates under the strict mandate of **Ocean Boiling Protocol v3.0**, enforcing:
 - Independent evidence verification and zero data falsification.
 - Traceable open-access scientific literature acquisition (*Cajanus cajan*).
 - 5-layer virtual candidate screening and Pareto multi-objective optimization.

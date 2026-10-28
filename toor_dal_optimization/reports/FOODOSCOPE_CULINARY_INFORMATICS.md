@@ -1,6 +1,6 @@
-# HARAKUTIR CULINARY INFORMATICS & FLAVOR CHEMISTRY REPORT
+# FINNOAQ CULINARY INFORMATICS & FLAVOR CHEMISTRY REPORT
 ## Computational Gastronomy, Volatile Aroma Profiling & Recipe Matrix Interactions
-**Framework Integration:** Foodoscope (FlavorDB, RecipeDB, Complex Computation Lab) & Harakutir R&D  
+**Framework Integration:** Foodoscope (FlavorDB, RecipeDB, Complex Computation Lab) & FinnoaQ R&D  
 **Document ID:** HKT-FLV-REP-2026-003  
 **Target Matrix:** Pigeon Pea (*Cajanus cajan*) — Tanzanian Import vs. Indian Benchmark (*Desi* Toor Dal)  
 **System System of Record:** Local Workspace (`toor_dal_optimization/`)  
@@ -11,7 +11,7 @@
 
 Pulses are rarely consumed in isolation; they are cooked within complex culinary recipe matrices featuring acidic broths, polyvalent cations, aromatic spices, and fat temperings (*tadka*). Traditional food formulation optimizes cooking time in neutral distilled water, frequently failing when the product is prepared in commercial Indian households or foodservice settings.
 
-By integrating the computational gastronomy frameworks of **Foodoscope** and **FlavorDB**, Harakutir models:
+By integrating the computational gastronomy frameworks of **Foodoscope** and **FlavorDB**, FinnoaQ models:
 1. **Volatile aroma kinetics:** Enzymatic generation and thermal mitigation of beany off-notes.
 2. **Thermal nutritional preservation:** Balancing nutty pyrazine formation against available lysine degradation.
 3. **Recipe matrix chemistry:** Predicting cooking behavior in acidic media (Sambar with tamarind $\text{pH } 4.1$; Dal Tadka with tomato $\text{pH } 4.8$) versus hard municipal water.
@@ -96,7 +96,7 @@ A critical practical problem identified in pulse gastronomy is the behavior of d
 3. **Biochemical Mechanism:** Middle lamella pectin solubilization is driven by $\beta$-elimination and monovalent cation displacement. At acidic $\text{pH} < 4.5$, pectin methylesterase-derived carboxyl groups remain protonated or strongly chelated with divalent cations ($\text{Ca}^{2+}, \text{Mg}^{2+}$), severely inhibiting pectin solubilization.
 4. **Computational Matrix Prediction:**
    - **Untreated Tanzanian Dal:** In neutral water requires 6.0 whistles; in Sambar broth ($\text{pH } 4.1$, $60\text{ ppm }\text{Ca}^{2+}$) cooking time jumps to **9.3 whistles**, with a **$63.0\%$ incidence of hard-core defect**.
-   - **Conditioned Tanzanian Dal (Harakutir IR + Micronization):** Micro-fissuring and starch pre-gelatinization allow rapid water infiltration into the cotyledon core before acid penetration can cross-link middle lamella pectin. In Sambar broth, cooking requires only **3.9 whistles** with **$0.0\%$ hard-core defect**.
+   - **Conditioned Tanzanian Dal (FinnoaQ IR + Micronization):** Micro-fissuring and starch pre-gelatinization allow rapid water infiltration into the cotyledon core before acid penetration can cross-link middle lamella pectin. In Sambar broth, cooking requires only **3.9 whistles** with **$0.0\%$ hard-core defect**.
 
 ---
 
@@ -110,6 +110,6 @@ $$\text{Hedonic Score} = 0.35 S_{\text{texture}} + 0.25 S_{\text{aroma}} + 0.20 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Raw Tanzanian Dal (Baseline)** | 34.2 N | 38.0% | 0.00 | 0.07 | 100.0% | **4.15 / 9.0** | Substandard / Heavy Grainy Defect |
 | **Indian Benchmark (*Desi* Dal)** | 21.5 N | 0.0% | 0.61 | 0.25 | 100.0% | **8.20 / 9.0** | Premium Grade Benchmark |
-| **Harakutir Conditioned Dal** | **22.0 N** | **0.0%** | **0.74** | **0.72** | **96.8%** | **8.35 / 9.0** | **Premium Grade Benchmark (Indian Parity)** |
+| **FinnoaQ Conditioned Dal** | **22.0 N** | **0.0%** | **0.74** | **0.72** | **96.8%** | **8.35 / 9.0** | **Premium Grade Benchmark (Indian Parity)** |
 
-**Conclusion:** Harakutir's conditioned toor dal matches the physical softness and mouthfeel disintegration of premium Indian dal while scoring *higher* in aroma quality due to the deliberate thermal generation of nutty pyrazines and suppression of raw beany volatiles.
+**Conclusion:** FinnoaQ's conditioned toor dal matches the physical softness and mouthfeel disintegration of premium Indian dal while scoring *higher* in aroma quality due to the deliberate thermal generation of nutty pyrazines and suppression of raw beany volatiles.

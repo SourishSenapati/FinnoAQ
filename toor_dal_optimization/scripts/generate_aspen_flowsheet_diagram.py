@@ -29,7 +29,7 @@ def generate_aspen_flowsheet():
     ax.add_patch(header)
     ax.text(80, 84, "FINNOAQ 15 TPD TOOR DAL FACILITY — ASPEN PLUS V14 CONVERGED THERMODYNAMIC FLOWSHEET",
             color='#FFFFFF', fontsize=12, fontweight='bold', ha='center', va='center')
-    ax.text(80, 80.5, "Thermodynamic Base: STEAM-TA (ASME 1967 Steam Tables) + NRTL Activity Model | Model File: HARAKUTIR_15TPD_CONVERGED.bkp",
+    ax.text(80, 80.5, "Thermodynamic Base: STEAM-TA (ASME 1967 Steam Tables) + NRTL Activity Model | Model File: FINNOAQ_15TPD_CONVERGED.bkp",
             color='#E2E8F0', fontsize=8.5, ha='center', va='center')
 
     # Border

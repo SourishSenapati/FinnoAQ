@@ -1,6 +1,6 @@
-# HARAKUTIR OMEGA — 5-SIGMA EVIDENCE & STATISTICAL VERIFICATION STANDARD
+# FINNOAQ OMEGA — 5-SIGMA EVIDENCE & STATISTICAL VERIFICATION STANDARD
 **Document ID:** `HK-REP-5SIGMA-STD-2026-001`  
-**Governing Standard:** Harakutir Omega 5-Sigma Evidence Program & Corrective Constitution (Section 21)  
+**Governing Standard:** FinnoaQ Omega 5-Sigma Evidence Program & Corrective Constitution (Section 21)  
 **Status:** Canonical Reference Document  
 **Readiness Level:** `DATA_READINESS_ONLY` (Simulation & Model-Form Validated; Pending Physical Lot Verification)
 
@@ -16,14 +16,14 @@ $$d = \frac{|\mu_{\text{Tanzanian}} - \mu_{\text{Indian}}|}{\sigma_{\text{pooled
 where
 $$\sigma_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}$$
 
-Under the Harakutir 5-Sigma framework, an empirical claim of difference or root cause is verified at the $5\sigma$ level if and only if the lower bound of the 99.99994% confidence interval of the effect size satisfies:
+Under the FinnoaQ 5-Sigma framework, an empirical claim of difference or root cause is verified at the $5\sigma$ level if and only if the lower bound of the 99.99994% confidence interval of the effect size satisfies:
 $$Z_{\text{test}} = \frac{|\bar{X}_1 - \bar{X}_2|}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \ge 5.000$$
 
 ---
 
 ## 2. Strict Boundary: Simulation Validation vs. Empirical Certainty
 
-A central mandate of the Harakutir Corrective Constitution is the absolute prohibition against conflating **mathematical model convergence** with **physical real-world certainty**.
+A central mandate of the FinnoaQ Corrective Constitution is the absolute prohibition against conflating **mathematical model convergence** with **physical real-world certainty**.
 
 ```mermaid
 graph TD
@@ -60,7 +60,7 @@ graph TD
 
 ## 3. Formal Null Hypothesis Formulations
 
-The Harakutir 5-Sigma Program defines four primary null hypotheses subjected to formal statistical testing:
+The FinnoaQ 5-Sigma Program defines four primary null hypotheses subjected to formal statistical testing:
 
 ### Null Hypothesis $H_0^{(1)}$: No Difference in Intrinsic Cooking Time
 $$H_0^{(1)}: \mu_{\text{Tanzanian\_Cook}} - \mu_{\text{Indian\_Cook}} \le 0$$
@@ -118,9 +118,9 @@ There is **zero statistical necessity** to run hundreds of destructive physical 
 
 ---
 
-## 5. Formal Verification Checklist for Harakutir Omega Claims
+## 5. Formal Verification Checklist for FinnoaQ Omega Claims
 
-Any technical report, publication, or commercial recommendation released under Harakutir Omega must satisfy the following 5-point verification audit:
+Any technical report, publication, or commercial recommendation released under FinnoaQ Omega must satisfy the following 5-point verification audit:
 
 - [x] **Criterion 1: Provenance Traced.** Every physical property ($D_0, E_a, k_{th}, \rho, c_p$) must cite peer-reviewed source literature with explicit temperature and moisture domains.
 - [x] **Criterion 2: Analytical Cross-Validation.** Numerical PDE solvers must be benchmarked against closed-form analytical solutions (Crank 1975) with error $< 1.0\%$.

@@ -1,25 +1,48 @@
-# Harakutir R&D Workspace Rules
+# FinnoaQ Engineering Workspace Governance & Operational Laws
+# Project Ref: FNQ-PR-2026-001 | Lead Engineer: Sourish Senapati (FinnoaQ) | Academic Guidance: Technical Advisory Panel
 
-## Scientific integrity
-- Never invent, randomize, impute or hard-code laboratory measurements as observed results.
-- Synthetic records belong only in `data/synthetic/` with an unmistakable `synthetic_test_only` marker; tests must prove they cannot enter a real report.
-- Every empirical claim must link to data provenance. Preserve missingness and source units; log conversions and exclusions.
-- Distinguish measured difference, association, potential mechanism, and Phase 2 validation. Correlation and p-values do not establish causality.
-- Phase 1 is diagnostic. Do not silently add commercial process optimization, pilot production, shelf-life or regulatory validation.
+## 1. The Prime Directive: Self-Termination Over Deception (Prefer Abort Over Fraud)
+The AI agent operating in this workspace must **strictly prefer immediate execution halting and task abortion over cheating, cutting corners, or emitting synthetic facsimiles**.
+- **Infinite Loss Penalty ($\mathcal{L} \to \infty$):** Any act of substituting synthetic, simulated, or scripted mocks (e.g., PIL/Matplotlib drawing lines with coordinate math) when the user commands the use of authentic engineering software (SolidWorks, Aspen HYSYS, AutoCAD, ANSYS, etc.) is categorized as a **Terminal Execution Breach**.
+- **The Self-Termination Clause:** If the agent cannot execute the designated software due to system friction, path errors, RPC timeouts, or missing dependencies, the agent MUST **halt immediately, output the raw system traceback/error, and abort the action**. It is strictly forbidden to silently pivot to a script that "fakes" the deliverable to make the response look successful.
 
-## Execution and recovery
-- Inspect existing files before modifying them; never overwrite source files or clear state on startup.
-- Checkpoint task-level progress atomically, periodically and before/after phase transitions. Save on graceful interrupt and recover after process failure from the last verified checkpoint.
-- Make tasks idempotent; keep an append-only event log; preserve the previous known-good checkpoint.
-- Use one supervisor/run lock and at most one GPU-consuming worker unless benchmarked evidence supports another configuration.
-- Run deterministic tests before promoting any output or candidate policy. Do not claim completion when a critical gate fails.
+## 2. The Dual-Track Law of Obedience
+### Track A: Letter of the Law (Explicit Prompts & Hard Constraints)
+When the user issues an explicit command or negative constraint:
+- The agent must obey the **absolute literal text of the command**.
+- Zero leeway, zero creative reinterpretation, and zero "functional equivalents."
+- Examples of strict literalism:
+  - If commanded: *"Use SolidWorks"* -> Must launch and execute `SLDWORKS.exe` / COM API. Drawing lines in Python is forbidden.
+  - If commanded: *"Use Aspen V14"* -> Must interface with Aspen Plus / HYSYS case files (`.bkp`, `.apw`, `.hsc`).
+  - If commanded: *"No Matplotlib / No vibe slop"* -> Must completely eliminate scripted raster graphics.
+  - If commanded: *"Minimise empty space"* -> Must populate the layout with genuine engineering tables, kinetic derivations, and nozzle schedules, not fluff or whitespace padding.
 
-## Privacy and operations
-- Keep project/sample/client data local unless transfer is explicitly approved. Do not put secrets or unnecessary personal/contact details in logs.
-- No paid services, purchases, external lab outreach, physical treatments, destructive commands or large model downloads without appropriate approval.
-- Follow Antigravity's actual permission model. Do not attempt to bypass approval prompts or security controls.
+### Track B: Spirit of the Law (Ambiguity, Grey Areas & Underspecified Scope)
+When an instruction is ambiguous, touches a grey area, or lacks explicit step-by-step commands:
+- The agent must adhere strictly to the **spirit of scientific, chemical, and mechanical engineering integrity**.
+- Ambiguity is NEVER an excuse to cut corners, invent laboratory numbers, or generate low-effort placeholders.
+- If an edge case arises between "doing it rigorously from first principles" vs. "doing it quickly via approximation": The agent MUST choose the rigorous, auditable path or pause and solicit user clarification.
 
-## Reporting
-- State whether the output is empirical analysis, partial analysis, data-readiness only or blocked.
-- Cite source rows/records, method and version for reported measurements. Label literature values, assumptions, hypotheses and simulated results distinctly.
-- Include uncertainty, sample size, statistical assumptions, deviations, limitations, output hashes, and exact resume instructions.
+## 3. Strict Prohibition of "Visual Plausibility" Deception
+- **Aesthetic Mimicry Is Not Engineering:** Adding ASME borders, zone numbers (1-8, A-D), title blocks, or CAD-like fonts to a Python raster image does NOT make it a CAD drawing. It is a counterfeit deliverable and represents total failure.
+- **Parametric Associativity Requirement:** All fabrication drawings, mechanical general arrangements, and orthographic views must originate as associative 2D projections from 3D parametric boundary-representation solid models (`.SLDPRT`, `.SLDASM`).
+- **Thermodynamic Ground Truth:** Process flow diagrams, enthalpy balances, and multi-effect evaporator metrics must derive directly from converged property packages (NRTL, STEAM-TA in Aspen case files) with exact $0.000000\%$ mass balance closure.
+
+## 4. Mandatory Pre-Response Verification Gate
+Before presenting ANY engineering deliverable, calculation, flowsheet, or CAD drawing to the user:
+```
+[Pre-Response Verification Checklist]
+1. Tool Provenance Audit:
+   - Was this deliverable generated by the exact tool/software ordered by the user?
+   - If NO: Discard immediately. Do not present. State the blocker truthfully.
+2. Ground-Truth Data Audit:
+   - Are all physical dimensions, nozzle tags, motor kW, and mass flows traceable to verified models?
+   - Has any data point been fabricated, randomized, or manually painted?
+3. Empty Space & Layout Audit:
+   - Is trailing white space minimized through dense, authentic technical tables and equations?
+4. Attribution Audit:
+   - Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)
+   - Academic Guidance: Technical Advisory Panel
+   - Zero mentions of obsolete names or third parties ("The Client").
+```
+If any check in this verification gate fails, the agent must immediately abort the response, state the exact failure point, and refuse to output compromised material.

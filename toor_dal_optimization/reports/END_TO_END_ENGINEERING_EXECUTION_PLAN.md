@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary & Purpose
 
-This document establishes the master execution plan for the end-to-end design, machine engineering, procurement, installation, and commissioning of a **15,000 kg/day incoming feed** split/dehulled pigeon pea (*Cajanus cajan*) treatment and drying facility for Harakutir Foods.
+This document establishes the master execution plan for the end-to-end design, machine engineering, procurement, installation, and commissioning of a **15,000 kg/day incoming feed** split/dehulled pigeon pea (*Cajanus cajan*) treatment and drying facility for FinnoaQ Foods.
 
 The project mission is strictly two-staged to adhere to the Non-Negotiable Truth Rule:
 1. **Stage 1 (Laboratory & Kitchen Optimization):** Identify and experimentally confirm the lowest-cost, technically feasible treatment on the target Tanzanian lot that matches the Indian benchmark (~3 whistles / ~15 min vs ~6 whistles / ~22 min baseline), while preserving product integrity, colour, taste, and regulatory compliance.

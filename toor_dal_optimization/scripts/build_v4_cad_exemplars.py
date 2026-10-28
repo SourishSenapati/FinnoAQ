@@ -101,7 +101,7 @@ def draw_sheet_border_and_title_block(msp, dwg_no, title, sheet_num, total_sheet
     msp.add_line((tb_x0 + 155, tb_y0), (tb_x0 + 155, tb_y0 + 22), dxfattribs={'layer': 'BORDER_TITLE'})
     
     # Title Block Texts
-    msp.add_text("HARAKUTIR AGRO-PROCESS ENGINEERING PVT. LTD.", height=3.5,
+    msp.add_text("Client Organization AGRO-PROCESS ENGINEERING PVT. LTD.", height=3.5,
                  dxfattribs={'layer': 'ANNOTATION'}).set_placement((tb_x0 + 5, tb_y0 + 46))
     msp.add_text("15,000 kg/day Split Pigeon Pea Optimization Greenfield Project", height=2.2,
                  dxfattribs={'layer': 'ANNOTATION'}).set_placement((tb_x0 + 5, tb_y0 + 40))

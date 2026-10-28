@@ -1,5 +1,5 @@
 """
-Harakutir Omega — 15 MT/Day Industrial Dal Processing Plant Design & Sizing Engine.
+FinnoaQ Omega — 15 MT/Day Industrial Dal Processing Plant Design & Sizing Engine.
 Models 8-hour, 16-hour, and 24-hour operating schedules, equipment capacities,
 unit operation bottlenecks, thermal/electrical loads, and wastewater flows.
 """

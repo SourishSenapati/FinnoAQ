@@ -1,6 +1,6 @@
 """
-Harakutir Continuous GPU Multiphysics & Reaction-Diffusion Multi-Tensor Engine.
-Governing Standard: Harakutir Omega Persistent Autonomous R&D Constitution.
+FinnoaQ Continuous GPU Multiphysics & Reaction-Diffusion Multi-Tensor Engine.
+Governing Standard: FinnoaQ Omega Persistent Autonomous R&D Constitution.
 
 Executes vectorized, physically grounded, coupled 2-stage pulse processing simulations
 on NVIDIA CUDA hardware (GeForce RTX 4050 Laptop GPU, 2,560 CUDA cores, 6 GB VRAM).
@@ -112,7 +112,7 @@ class ContinuousGPUEngine:
 
         if torch is None or not self.device.startswith("cuda"):
             # CPU Fallback
-            from src.harakutir.process_chemistry import SequentialProcessChemistryEngine
+            from src.finnoaq.process_chemistry import SequentialProcessChemistryEngine
             chem = SequentialProcessChemistryEngine()
             res = chem.execute_complete_treatment_pathway(
                 solution_conc_w_w=solution_conc_w_w,

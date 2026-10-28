@@ -1,4 +1,4 @@
-# HARAKUTIR PROTOTYPE ASSESSMENT TEMPLATE
+# FINNOAQ PROTOTYPE ASSESSMENT TEMPLATE
 ## Physical Prototype Validation Scorecard, Critical-to-Quality (CTQ) Acceptance Rules & Go/No-Go Decision Gate
 
 **Document ID:** HKT-PTA-2026-009  
@@ -56,5 +56,5 @@
 
 * **Signatures:**  
   *Technical Reviewer:* _______________________  
-  *Harakutir Project Sponsor:* _______________________  
+  *FinnoaQ Project Sponsor:* _______________________  
   *Date:* _______________________

@@ -1,9 +1,9 @@
-# HARAKUTIR ASSUMPTIONS, UNCERTAINTIES & SENSITIVITY REGISTER
+# FINNOAQ ASSUMPTIONS, UNCERTAINTIES & SENSITIVITY REGISTER
 ## Formal Uncertainty Catalog, Boundary Limits & Risk Mitigations
 
 **Document ID:** HKT-UNC-2026-005  
 **Version:** 3.0.0  
-**Controlling Specification:** Harakutir Autonomous Master Prompt (Sections 7, 9 & 16)  
+**Controlling Specification:** FinnoaQ Autonomous Master Prompt (Sections 7, 9 & 16)  
 **System System of Record:** Local Workspace (`toor_dal_optimization/`)  
 
 ---

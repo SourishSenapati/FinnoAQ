@@ -1,5 +1,5 @@
 """
-Pydantic schemas and data contracts for Harakutir Phase 1 Toor Dal study.
+Pydantic schemas and data contracts for FinnoaQ Phase 1 Toor Dal study.
 Strictly distinguishes observed_raw, derived_from_observed, published_literature,
 assumption, hypothesis, simulation, synthetic_test_only, and missing.
 """

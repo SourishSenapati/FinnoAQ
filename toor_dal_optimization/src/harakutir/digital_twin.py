@@ -9,8 +9,8 @@ from typing import Dict, List, Any, Optional
 from dataclasses import dataclass, field
 import numpy as np
 
-from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
-from src.harakutir.virtual_screening import VirtualScreeningPipeline, CandidateTreatment, ScreeningResult
+from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline, CandidateTreatment, ScreeningResult
 
 @dataclass
 class PosteriorParameter:

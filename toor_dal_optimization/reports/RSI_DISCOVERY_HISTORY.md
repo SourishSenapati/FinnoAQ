@@ -1,5 +1,5 @@
 # DREAM-RSI DISCOVERY HISTORY & POLICY REPLAY REPORT
-## Harakutir Omega v4 Meta-Exploration & Policy Improvement Log
+## FinnoaQ Omega v4 Meta-Exploration & Policy Improvement Log
 
 **Framework:** Dream-RSI-Inspired Policy Evaluator & Replay Engine  
 **Project:** Tanzanian Toor Dal Fast-Cooking Process & Product Optimization  
@@ -10,7 +10,7 @@
 
 ## 1. REPLAY ENVIRONMENT ARCHITECTURE
 
-The Harakutir exploration history is captured as a directed acyclic discovery tree where each node represents an atomic hypothesis, executed pipeline command, cryptographic configuration hash, and reproducible test result.
+The FinnoaQ exploration history is captured as a directed acyclic discovery tree where each node represents an atomic hypothesis, executed pipeline command, cryptographic configuration hash, and reproducible test result.
 
 ```mermaid
 graph TD

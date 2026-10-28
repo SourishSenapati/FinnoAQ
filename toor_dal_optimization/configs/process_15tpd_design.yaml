@@ -1,0 +1,55 @@
+plant_design_15tpd:
+  basis:
+    incoming_feed_rate_kg_day: 15000.0
+    incoming_feed_moisture_wb_pct: 10.0
+    target_product_moisture_wb_pct: 10.0
+    solids_recovery_nominal_wash_pct: 98.54
+    solids_recovery_whole_plant_pct: 95.69
+    finished_saleable_output_kg_day: 14367.9
+    feed_required_if_15tpd_finished_kg: 15675.3
+  operating_schedules:
+    case_8h:
+      hours: 8
+      nom_feed_kg_h: 1875.0
+      design_feed_kg_h: 2536.8
+    case_16h:
+      hours: 16
+      nom_feed_kg_h: 937.5
+      design_feed_kg_h: 1268.4
+    case_24h:
+      hours: 24
+      nom_feed_kg_h: 625.0
+      design_feed_kg_h: 845.6
+  dosing:
+    reagent: Food-Grade Sodium Bicarbonate (NaHCO3)
+    purity_pct: 99.5
+    liquor_ratio: 1.5
+    concentration_pct_in_liquor: 0.5
+    daily_active_kg_liquor_basis: 112.5
+    daily_active_kg_feed_basis: 75.0
+    commercial_reagent_kg_day_liquor_basis: 113.07
+    commercial_reagent_kg_day_feed_basis: 75.38
+  equipment:
+    soak_tanks:
+      count_recommended: 2
+      working_volume_m3: 1.99
+      nominal_capacity_m3: 2.65
+      material: SS304 Food-Contact
+      cycle_time_min: 90.0
+    fluid_bed_dryer:
+      drying_temperature_c: 55.0
+      thermal_duty_gross_kw: 265.1
+      thermal_energy_mj_day: 15268.1
+      blower_air_flow_m3_min: 103.7
+      blower_power_kw: 8.6
+      thermal_efficiency: 0.65
+  economics:
+    reagent_cost_inr_per_kg: 35.0
+    thermal_cost_biomass_inr_per_mj: 0.55
+    thermal_cost_lpg_inr_per_mj: 1.35
+    electricity_cost_inr_per_kwh: 8.5
+    fresh_water_inr_per_kl: 30.0
+    wwtp_treatment_inr_per_kl: 40.0
+    base_net_opex_inr_per_kg_dal: 1.3362
+    low_net_opex_inr_per_kg_dal: 1.1378
+    high_net_opex_inr_per_kg_dal: 1.6973

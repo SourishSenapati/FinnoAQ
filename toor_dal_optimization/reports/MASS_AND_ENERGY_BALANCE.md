@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — 15 MT/DAY MASS & ENERGY BALANCE
+# FINNOAQ TOOR DAL — 15 MT/DAY MASS & ENERGY BALANCE
 
 **Document ID:** HKT-MEB-2026-001  
 **Plant Design Basis:** 15,000 kg/day Incoming Raw Dal at 10.5% Moisture (Wet Basis)  

@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Verification Statement
 
-This document delivers the comprehensive engineering acceptance audit for the **Harakutir 15,000 kg/day Split Pigeon Pea Cooking-Time Optimization Greenfield Plant**. Executed under the strict terms of the **V4 Master Directive — Professional Native Engineering, Offline-First, Evidence-Locked**, this release completely repudiates and replaces all prior crude "matplotlib text-box CAD slop" with authentic, publication-grade, native vector engineering deliverables.
+This document delivers the comprehensive engineering acceptance audit for the **FinnoaQ 15,000 kg/day Split Pigeon Pea Cooking-Time Optimization Greenfield Plant**. Executed under the strict terms of the **V4 Master Directive — Professional Native Engineering, Offline-First, Evidence-Locked**, this release completely repudiates and replaces all prior crude "matplotlib text-box CAD slop" with authentic, publication-grade, native vector engineering deliverables.
 
 The complete engineering package unites native multi-discipline CAD drawings, 3D parametric solid modeling, rigorous chemical process simulation, closed mass-energy balances, and evidence-locked scientific governance:
 
@@ -24,7 +24,7 @@ The complete engineering package unites native multi-discipline CAD drawings, 3D
 2. Native 3D CAD B-Rep Solids:            4 of 4 Multi-Feature SolidWorks Parts (.SLDPRT)
 3. 3D Master Plant Assembly:              1 Native SolidWorks Assembly (.SLDASM, 29.26 Tonnes Mass)
 4. Neutral STEP AP214 Master File:        12,316 Lines of Watertight B-Rep Topology (907.9 KB)
-5. Native Process Simulation:             Aspen Plus V14 Converged Model (HARAKUTIR_15TPD_CONVERGED.bkp)
+5. Native Process Simulation:             Aspen Plus V14 Converged Model (FINNOAQ_15TPD_CONVERGED.bkp)
 6. Automated Bounding-Box QA:             0 Margin Violations, 0 Clipping, 0 LaTeX Syntax Errors
 7. Visual Review Pass Rate:               13 of 13 High-Resolution 150 DPI Renderings Passed
 8. Unit Test Suite Integrity:             81 of 81 Unit Tests Passing (0 Regressions, 13.24s)
@@ -68,7 +68,7 @@ The drawing set was expanded to cover the complete multi-disciplinary FEED scope
 - API-measured mass properties: $29,256.88\text{ kg}$ total mass, $29.2569\text{ m}^3$ solid volume, $142.42\text{ m}^2$ surface area.
 
 ### Phase E: Native Aspen Plus V14 Process Simulation
-- Converged simulation model `HARAKUTIR_15TPD_CONVERGED.bkp` (157,811 bytes) established in `engineering/aspen/`.
+- Converged simulation model `FINNOAQ_15TPD_CONVERGED.bkp` (157,811 bytes) established in `engineering/aspen/`.
 - Rigorous modeling of the 3-effect ZLD evaporator (steam economy 2.38) and the fluid bed dryer steam air heater HE-101 ($512.4\text{ kW}_{\text{th}}$).
 - Full audit documentation in `v4_aspen_process_simulation_audit.json` with explicit boundary disclaimer separating thermodynamic steam/water equilibrium from biological legume cell wall hydration kinetics.
 
@@ -126,7 +126,7 @@ d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/
 │   │       ├── DR-101_Fluid_Bed_Dryer.step (299,302 B, 4,194 lines)
 │   │       └── PLANT-15T_General_Arrangement.step (907,904 B, 12,316 lines) — Master Plant STEP
 │   ├── aspen/
-│   │   └── HARAKUTIR_15TPD_CONVERGED.bkp (157,811 B) — Native Converged Aspen Plus V14 Simulation
+│   │   └── FINNOAQ_15TPD_CONVERGED.bkp (157,811 B) — Native Converged Aspen Plus V14 Simulation
 │   └── verification/v4/
 │       ├── renders/ (13 high-resolution 150 DPI PNG files for visual audit)
 │       ├── v4_drawing_package_qa_report.json (Automated margin and text QA log)
@@ -156,7 +156,7 @@ In accordance with Section 8 of the V4 Master Directive, the fundamental scienti
 
 ## 5. Formal Engineering Acceptance & Sign-Off
 
-The Harakutir 15 TPD Greenfield Plant conceptual FEED package is formally accepted as complete, authentic, native, and evidence-locked:
+The FinnoaQ 15 TPD Greenfield Plant conceptual FEED package is formally accepted as complete, authentic, native, and evidence-locked:
 
 1. **CAD Vector Excellence:** All 12 sheets conform to ASME Y14 / ISO 13567 standards with zero text overlaps, correct layer color mappings, and authentic ASME title blocks.
 2. **3D Geometric Veracity:** The native SolidWorks master plant assembly and STEP AP214 files represent true watertight B-Rep solids with verified physical mass properties ($29,256.88\text{ kg}$).

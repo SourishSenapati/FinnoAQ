@@ -1,0 +1,23 @@
+ClaimID,ClaimDescription,ClaimValue,Units,EvidenceStatus,SourceDocument,VerificationNotes
+CLM-001,Nominal Plant Daily Capacity,15000,kg/day,ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Target conceptual design basis for incoming raw clean pulse feed
+CLM-002,Raw Dal Intake Moisture (Wet Basis),10.5,% w/w,ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Standard commercial imported tropical storage grain moisture
+CLM-003,Raw Dal Dry Solids Intake,13425,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 * (1 - 0.105) exact calculation
+CLM-004,Raw Dal Water Content,1575,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 * 0.105 exact calculation
+CLM-005,Soaking Bath Liquor-to-Grain Ratio,1.5:1.0,kg/kg,ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Pulse hydration engineering benchmark
+CLM-006,Total Daily Hydration Liquor,22500,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 * 1.5 daily volumetric demand
+CLM-007,Chemical Reagent Candidates,NaHCO3 / Na3Citrate,-,PROPOSED,reports/V8_SCREENING_PROTOCOL_STATUS.md,Candidate food-grade buffers pending target-lot screening
+CLM-008,Candidate Chemical Dosing Concentration,0.50,% w/w liquor,ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Calculated on liquor mass basis (not dal)
+CLM-009,Hydrated Dal Moisture at Screen Discharge,28.0 - 58.0,% w/w,PENDING,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Pending laboratory multi-temperature soaking curve
+CLM-010,Finished Dal Storage Moisture,10.0,% w/w,ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,FSSAI / Codex safe commercial pulse storage standard
+CLM-011,Dry Solids Loss Through Leaching,1.37 (184 kg),% (kg/day),ASSUMED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Solubles loss into steep liquor before ZLD concentration
+CLM-012,Finished Saleable Dal Dry Solids,13241,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,13425 kg - 184 kg dry solids loss
+CLM-013,Finished Saleable Dal Output,14712.2,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,13241 / (1 - 0.100) at 10.0% moisture basis
+CLM-014,Continuous Dryer Evaporation Duty,3877.8,kg/day,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Mass balance closure across DR-101 fluid bed dryer
+CLM-015,Single Shift Nominal Processing Rate,1875.0,kg/h,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 kg / 8.0 h operation
+CLM-016,Two Shift Nominal Processing Rate,937.5,kg/h,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 kg / 16.0 h operation (Standard industrial scenario)
+CLM-017,Continuous 24h Nominal Processing Rate,625.0,kg/h,CALCULATED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,15000 kg / 24.0 h operation
+CLM-018,Phase 1 Diagnostic Fixed Professional Fee,173000,INR,VERIFIED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Approved SOW Phase 1 baseline fee (+ applicable GST)
+CLM-019,Phase 1 Contingency Ceiling,200000,INR,VERIFIED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,Requires prior written client authorization
+CLM-020,Phase 1 Diagnostic Turnaround Time,20-25,business days,VERIFIED,reports/V8_REPOSITORY_AND_EVIDENCE_AUDIT.md,From verified receipt of representative 10-15 kg sample
+CLM-021,Aspen Plus V14 Mass Balance Closure,0.000000,%,SIMULATED,portal/src/data/reportData.js,Converged NRTL / STEAM-TA property calculation
+CLM-022,Physical Treatment Efficacy Status,Pending Physical Trials,-,PENDING,reports/V8_SCREENING_PROTOCOL_STATUS.md,Raw physical trials await target grain intake

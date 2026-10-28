@@ -1,6 +1,6 @@
-# HARAKUTIR OMEGA — DREAM-RSI PERSISTENT ORCHESTRATION & RECURSIVE DISCOVERY REPORT
+# FINNOAQ OMEGA — DREAM-RSI PERSISTENT ORCHESTRATION & RECURSIVE DISCOVERY REPORT
 **Document ID:** `HK-REP-RSI-ORCH-2026-001`  
-**Governing Standard:** Harakutir Omega Persistent Autonomous R&D Constitution (Sections 8 & 12)  
+**Governing Standard:** FinnoaQ Omega Persistent Autonomous R&D Constitution (Sections 8 & 12)  
 **Architecture Classification:** `DREAM_RSI_INSPIRED` Recursive Self-Improving R&D Loop  
 **Supervisor Daemon:** [`scripts/longrun_supervisor.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/scripts/longrun_supervisor.py)  
 **Execution Epoch Basis:** 24-Hour Successive Epochs (72-Hour Hard Ceiling per Epoch)
@@ -9,7 +9,7 @@
 
 ## 1. The Recursive Improvement Loop Architecture
 
-Under the Harakutir Corrective Constitution, the automated R&D system operates through an authentic 10-stage recursive discovery loop. It prohibits repeating identical simulations to artificially inflate counters.
+Under the FinnoaQ Corrective Constitution, the automated R&D system operates through an authentic 10-stage recursive discovery loop. It prohibits repeating identical simulations to artificially inflate counters.
 
 ```mermaid
 graph TD

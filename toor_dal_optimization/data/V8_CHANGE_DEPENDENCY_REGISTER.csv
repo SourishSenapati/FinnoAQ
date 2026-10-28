@@ -1,0 +1,6 @@
+source_parameter,dependent_item,affected_models,reconciliation_rule,update_status
+"Incoming Dal Feed (15,000 kg/day @ 10.5% WB)","Daily Dry Solids (13,425 kg) & Daily Water (1,575 kg)","V8_MASTER_DESIGN_BASIS.yaml, All Material Balances","Dry solids = 15,000 * (1 - 0.105)",CONVERGED_LOCKED
+Soaking Liquor Ratio (1.5 : 1.0 kg/kg),"Daily Liquor Volume (22,500 kg/day)","TK-101 Soak Tank Sizing, SK-100 Dosing Skid, Evaporator Load","Liquor = 15,000 * 1.5 = 22,500 kg",CONVERGED_LOCKED
+Reagent Concentration (0.50% w/w on Liquor),Daily Reagent Mass (112.5 kg/day NaHCO3),"SK-100 Tank Sizing, Chemical Cost OPEX, Effluent Salt Load","NaHCO3 = 22,500 * 0.0050 = 112.5 kg/day (7.5 kg/batch)",CONVERGED_LOCKED
+"Operating Schedule (16 h/day, 85% OEE)","Effective Operating Hours (13.6 h) & Design Feed Rate (1,102.9 kg/h)","DR-101 Dryer Airflow, SC-101 Screen Sizing, Conveyor Drives","Design rate = 15,000 / 13.6 = 1,102.9 kg/h",CONVERGED_LOCKED
+Finished Product Moisture (10.0% WB),"Finished Product Mass (14,712.2 kg/day @ 13,241 kg solids)","Dryer Evaporation (3,877.8 kg/day), Packaging Line Sizing","Product = 13,241 / (1 - 0.100) = 14,712.2 kg/day",CONVERGED_LOCKED

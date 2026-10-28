@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — STAGE 1 VALIDATION REPORT
+# FINNOAQ TOOR DAL — STAGE 1 VALIDATION REPORT
 
 **Document ID:** HKT-STG1-2026-001  
 **Project Phase:** Stage 1 — Discovery & Experimental Proof  

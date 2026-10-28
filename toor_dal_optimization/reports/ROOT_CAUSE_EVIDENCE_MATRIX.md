@@ -1,6 +1,6 @@
 # ROOT-CAUSE EVIDENCE MATRIX: TANZANIAN VS. INDIAN TOOR DAL
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Standard:** Strict Evidence Hierarchy (SOW §2.2 & §16–17)  
 **Classification Rules:**  
 - `CONFIRMED_DIFFERENCE`: Traceable measured divergence between samples.
@@ -14,7 +14,7 @@
 
 | Analytical Category | Factor / Characteristic | Evidence Level | Measured / Published Basis | Decision Consequence |
 | :--- | :--- | :--- | :--- | :--- |
-| **Cooking Endpoint** | Household Whistle Count (~6 vs ~3 whistles) | `CONFIRMED_DIFFERENCE` | Harakutir Domestic Observation | Practical symptom; requires instrumental replacement |
+| **Cooking Endpoint** | Household Whistle Count (~6 vs ~3 whistles) | `CONFIRMED_DIFFERENCE` | FinnoaQ Domestic Observation | Practical symptom; requires instrumental replacement |
 | **Cooking Duration** | Standardized Boiling Softening Time (~55 min vs ~28 min) | `CONFIRMED_DIFFERENCE` | Literature & Transport Simulation | Target performance gap to bridge in Phase 2 |
 | **Middle Lamella Pectin** | Insoluble Calcium/Magnesium Pectate Crosslinking | `STRONGLY_ASSOCIATED` | Wainaina et al. (2022); Chen et al. (2021) | **Primary biological culprit**; rate-limiting delay |
 | **Post-Harvest Aging** | Maritime Bulk Cargo Hold Transit (35°C, 80% RH, 30 days) | `STRONGLY_ASSOCIATED` | IPGA Maritime Data; ICRISAT Storage Studies | **Primary supply-chain trigger** of the HTC defect |

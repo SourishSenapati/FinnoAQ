@@ -1,6 +1,6 @@
 """
 Resilience, Atomic Recovery and Persistence Test Suite.
-Validates Section 43 of Harakutir Autonomous Master Prompt:
+Validates Section 43 of FinnoaQ Autonomous Master Prompt:
 - Atomic checkpointing and previous checkpoint fallback
 - SQLite WAL transaction integrity
 - Lock acquisition and duplicate supervisor protection
@@ -14,8 +14,8 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.checkpoint import CheckpointManager
-from src.harakutir.gpu_engine import GPUAccelerationEngine
+from src.finnoaq.checkpoint import CheckpointManager
+from src.finnoaq.gpu_engine import GPUAccelerationEngine
 
 def test_checkpoint_atomic_replacement_and_fallback():
     cp_mgr = CheckpointManager()

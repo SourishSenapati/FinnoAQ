@@ -1,8 +1,8 @@
 # INDEPENDENT ADVERSARIAL RED TEAM AUDIT REPORT
-## Harakutir Omega v4 Scientific Integrity & Engineering Verification
+## FinnoaQ Omega v4 Scientific Integrity & Engineering Verification
 
 **Auditing Entity:** Research Agent F — Independent Adversarial Reviewer  
-**Standard:** Ocean Boiling Protocol v3.0 & Harakutir Master Prompt Omega v4  
+**Standard:** Ocean Boiling Protocol v3.0 & FinnoaQ Master Prompt Omega v4  
 **Project:** Tanzanian Toor Dal vs Indian Benchmark  
 **Date:** 13 October 2026  
 **Final Status:** ALL DEFECTS RESOLVED — RIGID SCIENTIFIC GATING ENFORCED  
@@ -36,7 +36,7 @@ The mandate is to aggressively challenge:
 
 ### Challenge 3: Industrial Pilot & Regulatory Release Gate Claims
 - **Adversarial Critique:** Any claim that an industrial 5.0 T/hr pilot line is "completed" or that "regulatory release is accomplished" is fraudulent when no physical factory has processed these lots.
-- **Evidence Cross-Examination:** Verification of `src/harakutir/digital_twin.py` and `src/harakutir/harness.py`.
+- **Evidence Cross-Examination:** Verification of `src/finnoaq/digital_twin.py` and `src/finnoaq/harness.py`.
 - **Verdict & Correction:** All scale-up unit operations are strictly classified as `OFFLINE_SIMULATION`. Empirical verification is marked `DATA_READINESS_ONLY_PENDING_PILOT`. Gates G7 and G8 remain blocked for physical factory release until authorized physical trials occur.
 
 ---

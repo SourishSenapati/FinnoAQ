@@ -1,7 +1,7 @@
-# Harakutir Prompt Pack — Runbook
+# FinnoaQ Prompt Pack — Runbook
 
 ## Files
-- `HARAKUTIR_MASTER_PROMPT.txt`: the one-shot master prompt to paste into Antigravity.
+- `FINNOAQ_MASTER_PROMPT.txt`: the one-shot master prompt to paste into Antigravity.
 - `PROMPT_RESUME.txt`: use after an IDE restart, terminal interruption or a long-run continuation.
 - `PROMPT_INGEST_NEW_LAB_DATA.txt`: use when actual laboratory data arrive.
 - `PROMPT_DREAM_RSI_CYCLE.txt`: use to run one bounded adaptive exploration/replay cycle.
@@ -14,7 +14,7 @@
 ## First run
 1. Extract the pack into the intended project workspace (or copy `AGENTS.md` and workflow files into the existing repository). Preserve existing files and inspect diffs before accepting changes.
 2. Put `Phase1_Scope_of_Work_Toor_Dal.docx` in the project workspace if the agent must read it locally. Put actual lab measurements in a clearly named input folder; do not mix mock/test files with actual data.
-3. Open the project root in Antigravity and paste the complete contents of `HARAKUTIR_MASTER_PROMPT.txt` into the agent chat. Allow the agent to inspect, implement and test the system within the existing tool permission configuration.
+3. Open the project root in Antigravity and paste the complete contents of `FINNOAQ_MASTER_PROMPT.txt` into the agent chat. Allow the agent to inspect, implement and test the system within the existing tool permission configuration.
 4. The agent should create a local supervisor (`run.ps1`/Python entrypoint) so computation is not tied to the lifetime of the chat context. Inspect its budget/config before starting a multi-day run.
 5. To continue later, start the supervisor with its documented `--resume`/PowerShell option and use `PROMPT_RESUME.txt` in the IDE if code-level orchestration help is needed.
 

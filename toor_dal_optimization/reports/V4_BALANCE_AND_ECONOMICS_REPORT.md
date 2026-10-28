@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Basis of Design
 
-This report establishes the reconciled heat and material balances, utility duty schedules, capital expenditure (CapEx), operating expenditure (OpEx), and financial sensitivity model for the Harakutir 15,000 kg/day Greenfield Processing Facility.
+This report establishes the reconciled heat and material balances, utility duty schedules, capital expenditure (CapEx), operating expenditure (OpEx), and financial sensitivity model for the FinnoaQ 15,000 kg/day Greenfield Processing Facility.
 
 All mass and energy flows are strictly reconciled to a single consistent operating basis:
 - **Nominal Plant Capacity:** $15,000\text{ kg/day}$ ($15.0\text{ TPD}$) incoming as-fed raw Tanzanian split pigeon peas (*Cajanus cajan*).
@@ -73,7 +73,7 @@ Overall Plant Mass Balance Closure:       99.98% (Within analytical precision)
 
 ## 4. Thermal & Utility Energy Balance (Aspen Plus Reconciled)
 
-The thermal duties and steam requirements were simulated and validated using **Aspen Plus V14** (`HARAKUTIR_15TPD_CONVERGED.bkp`) using the `STEAM-TA` (ASME 1967 Steam Tables) and `NRTL` electrolyte activity coefficient methods:
+The thermal duties and steam requirements were simulated and validated using **Aspen Plus V14** (`FINNOAQ_15TPD_CONVERGED.bkp`) using the `STEAM-TA` (ASME 1967 Steam Tables) and `NRTL` electrolyte activity coefficient methods:
 
 ### 4.1 Fluid Bed Dryer Thermal Air Heating Battery (HE-101)
 - **Air Mass Inflow:** $14,150\text{ kg/h}$ ($11,800\text{ m}^3\text{/h}$ at ambient inlet conditions: $28^\circ\text{C}$, $60\%\text{ RH}$).
@@ -156,4 +156,4 @@ Operating economics are modeled on a per-kilogram of finished prime tender dal b
 
 ## 8. Conclusion
 
-The process balance and techno-economic model confirm that the Harakutir 15 TPD Greenfield facility possesses exceptional economic viability and robust downside protection. All physical flows are rigorously closed, utilities are fully sized, and energy efficiency is maximized via the triple-effect ZLD evaporator and heat integration loop.
+The process balance and techno-economic model confirm that the FinnoaQ 15 TPD Greenfield facility possesses exceptional economic viability and robust downside protection. All physical flows are rigorously closed, utilities are fully sized, and energy efficiency is maximized via the triple-effect ZLD evaporator and heat integration loop.

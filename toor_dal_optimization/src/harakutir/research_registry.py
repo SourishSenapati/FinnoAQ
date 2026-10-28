@@ -1,6 +1,6 @@
 """
-Harakutir Research Registry & Scientific Literature Manager.
-Adheres to Harakutir Omega v4 Sections 4.1, 4.3, 5.1.
+FinnoaQ Research Registry & Scientific Literature Manager.
+Adheres to FinnoaQ Omega v4 Sections 4.1, 4.3, 5.1.
 Parses, indexes, verifies SHA-256, and classifies open-access research sources.
 """
 

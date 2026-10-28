@@ -1,0 +1,95 @@
+# ==============================================================================
+# FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
+# MASTER CONTROLLED DESIGN BASIS — 15 TPD TOOR DAL RAPID-HYDRATION & PROCESSING
+# Document Ref: FNQ-DSB-15T-001 (Rev 8.0)
+# Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ)
+# Academic Guidance: Dr. Archisman Ray (IIT Kharagpur)
+# ==============================================================================
+
+project:
+  name: "Tanzanian Toor Dal Cooking Performance Optimization & Commercial Processing Concept"
+  reference: "FNQ-PR-2026-001"
+  execution_mode: "OFFLINE_FIRST_NATIVE_EXECUTION"
+  basis_date: "2026-10-16"
+
+feedstock:
+  commodity: "Split Dehulled Pigeon Pea (Cajanus cajan) - Toor Dal"
+  origin: "Imported Tanzanian Commercial Lot"
+  lot_identifier: "PENDING_COMMERCIAL_LOT_ID" # Placeholder TZ-2026-IMP-001 retired
+  daily_throughput_kg_day: 15000.0
+  inlet_moisture_wet_basis_pct: 10.5
+  dry_solids_kg_day: 13425.0
+  inlet_water_kg_day: 1575.0
+
+operating_schedule:
+  basis_shifts: 2
+  scheduled_hours_per_day: 16.0
+  overall_equipment_effectiveness_pct: 85.0
+  effective_operating_hours_per_day: 13.6
+  nominal_hourly_feed_rate_kg_h: 937.5
+  design_hourly_feed_rate_kg_h: 1102.94
+  batch_count_per_day: 15
+  batch_feed_mass_dal_kg: 1000.0
+  batch_cycle_duration_min: 54.4
+
+soaking_and_conditioning:
+  liquor_to_dal_mass_ratio: 1.5
+  total_daily_liquor_kg_day: 22500.0
+  batch_liquor_volume_m3: 1.5
+  target_soak_temperature_deg_c: 55.0
+  target_soak_duration_min: 45.0
+  reagent_candidate: "Sodium Bicarbonate (NaHCO3)"
+  reagent_status: "HYPOTHESIS_PENDING_PHASE1_LAB_CONFIRMATION"
+  concentration_basis: "LIQUOR_MASS_BASIS"
+  target_concentration_pct_ww: 0.50
+  daily_chemical_consumption_kg_day: 112.5
+  batch_chemical_dosing_kg: 7.5
+  post_soak_dal_moisture_wet_basis_pct: 58.0
+  solids_loss_to_liquor_pct: 1.3706
+  dry_solids_lost_kg_day: 184.0
+  retained_dry_solids_kg_day: 13241.0
+
+dewatering_and_drying:
+  dewatering_screen_type: "High-Frequency Linear Vibratory Screen (SS316L)"
+  surface_water_removal_pct: 92.0
+  dryer_type: "Continuous Vibrating Fluid Bed Dryer (DR-101)"
+  active_bed_length_m: 6.0
+  active_bed_width_m: 1.0
+  bed_area_m2: 6.0
+  fluidization_air_velocity_m_s: 1.25
+  process_air_inlet_temp_deg_c: 85.0
+  drying_zone_temp_deg_c: 75.0
+  cooling_zone_temp_deg_c: 32.0
+  target_outlet_moisture_wet_basis_pct: 10.0
+  final_product_mass_kg_day: 14712.22
+  final_product_dry_solids_kg_day: 13241.0
+  final_product_water_kg_day: 1471.22
+  dryer_daily_water_evaporation_kg_day: 3877.78
+  dryer_nominal_evaporation_rate_kg_h: 242.36
+  dryer_design_evaporation_rate_kg_h: 285.13
+
+utilities_and_thermal:
+  dryer_thermal_duty_kW: 512.4
+  evaporator_duty_kW: 793.5
+  evaporator_steam_consumption_kg_h: 520.0
+  evaporator_water_evaporation_kg_h: 980.0
+  evaporator_steam_economy: 2.38
+  total_peak_plant_steam_demand_kg_h: 1450.0
+  boiler_rating_tonnes_h: 2.0
+  boiler_pressure_bar_g: 4.0
+  electrical_connected_load_kW: 185.0
+  electrical_operating_load_kW: 138.5
+  substation_transformer_kVA: 250.0
+
+commercial_consulting_parameters:
+  phase_1_baseline_fee_inr: 173000.0
+  phase_1_contingency_ceiling_inr: 200000.0
+  tax_terms: "Applicable GST charged additionally"
+  indicative_turnaround_business_days: "20-25"
+  payment_milestones:
+    milestone_1_advance_pct: 40.0
+    milestone_1_amount_inr: 69200.0
+    milestone_2_testing_pct: 40.0
+    milestone_2_amount_inr: 69200.0
+    milestone_3_reporting_pct: 20.0
+    milestone_3_amount_inr: 34600.0

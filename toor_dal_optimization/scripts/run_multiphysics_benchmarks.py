@@ -1,5 +1,5 @@
 """
-Harakutir Multiphysics Benchmark & 5-Sigma Evidence Execution Script.
+Client Organization Multiphysics Benchmark & 5-Sigma Evidence Execution Script.
 Executes and validates:
 1. Statistical reproduction of Malawi 2025 genotype dataset (Machinjili et al.).
 2. Model A: Peleg NLLS fitting and 95% confidence intervals.
@@ -22,7 +22,7 @@ import numpy as np
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import torch
-from src.harakutir.multiphysics_engine import (
+from src.finnoaq.multiphysics_engine import (
     ModelA_EmpiricalHydration,
     ModelB_AnalyticalDiffusion,
     ModelC_HeatTransfer,
@@ -201,7 +201,7 @@ def run_gpu_cpu_multiphysics_benchmark(n_cases: int = 250) -> Dict[str, Any]:
 
 def main():
     print("=" * 70)
-    print("HARAKUTIR OMEGA — 5-SIGMA MULTIPHYSICS BENCHMARK & REPRODUCTION")
+    print("Client Organization OMEGA — 5-SIGMA MULTIPHYSICS BENCHMARK & REPRODUCTION")
     print("=" * 70)
 
     # 1. Malawi reproduction

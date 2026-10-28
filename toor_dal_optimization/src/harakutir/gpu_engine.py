@@ -1,5 +1,5 @@
 """
-GPU-Accelerated Scientific Computing Engine for Harakutir Pulse Processing.
+GPU-Accelerated Scientific Computing Engine for FinnoaQ Pulse Processing.
 Optimized for NVIDIA GeForce RTX 4050 Laptop GPU (CUDA) with graceful CPU fallback.
 Provides:
 1. 1D Radial Finite-Volume Coupled Heat & Moisture Transfer PDE Solver.

@@ -8,7 +8,7 @@ Used solely for testing computational code, GPU models, recovery, and statistics
 import json
 import os
 from typing import List, Dict, Any
-from src.harakutir.schemas import DatasetKind, ProvenanceRecord
+from src.finnoaq.schemas import DatasetKind, ProvenanceRecord
 
 def generate_synthetic_fixtures(out_dir: str = "data/synthetic") -> str:
     """Generate isolated synthetic fixtures for pipeline testing."""

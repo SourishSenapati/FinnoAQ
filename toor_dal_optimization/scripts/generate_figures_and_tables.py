@@ -11,9 +11,9 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.gpu_engine import GPUAccelerationEngine
-from src.harakutir.virtual_screening import VirtualScreeningPipeline
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.gpu_engine import GPUAccelerationEngine
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
 
 def generate_reproducible_artifacts(artifacts_dir: str = "artifacts"):
     os.makedirs(artifacts_dir, exist_ok=True)

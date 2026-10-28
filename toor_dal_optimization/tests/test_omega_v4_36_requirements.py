@@ -1,6 +1,6 @@
 """
-Harakutir Omega v4 — Exhaustive 36-Area Verification Test Suite.
-Directly implements and audits all test requirements from Section 20 of Harakutir Omega v4:
+FinnoaQ Omega v4 — Exhaustive 36-Area Verification Test Suite.
+Directly implements and audits all test requirements from Section 20 of FinnoaQ Omega v4:
 - Literature provenance, DOI deduplication, and license compliance
 - Data harmonization, unit conversions, and anti-leakage quarantine
 - Biophysical transport PDE verification (Fourier series, limiting bounds, CFL stability)
@@ -21,14 +21,14 @@ import numpy as np
 # Ensure root is on path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.research_registry import ResearchRegistry
-from src.harakutir.open_data_ingest import OpenDataIngestionEngine
-from src.harakutir.schemas import DatasetKind
-from src.harakutir.virtual_screening import VirtualScreeningPipeline, CandidateTreatment
-from src.harakutir.oed import BayesianOEDPlanner
-from src.harakutir.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
-from src.harakutir.harness import HarnessEngineeringManager
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.research_registry import ResearchRegistry
+from src.finnoaq.open_data_ingest import OpenDataIngestionEngine
+from src.finnoaq.schemas import DatasetKind
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline, CandidateTreatment
+from src.finnoaq.oed import BayesianOEDPlanner
+from src.finnoaq.dream_rsi import DiscoveryNode, DiscoveryTree, DreamRSIPolicyEvaluator
+from src.finnoaq.harness import HarnessEngineeringManager
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
 
 
 # 1. Source-data hash, DOI, and record deduplication
@@ -120,7 +120,7 @@ def test_omega_heat_transfer_fourier_analytical_benchmark():
 
 # 7. Mass-transfer Peleg model parameter identifiability
 def test_omega_mass_transfer_peleg_identifiability():
-    from src.harakutir.hydration import fit_peleg_model
+    from src.finnoaq.hydration import fit_peleg_model
     t = [0.0, 15.0, 30.0, 60.0, 120.0, 240.0, 360.0]
     # True parameters: k1 = 0.88, k2 = 0.0078, M0 = 10.5
     m_true = [10.5 + ti / (0.88 + 0.0078 * ti) for ti in t]

@@ -1,7 +1,7 @@
 # PERFORMANCE.md
 
 ## High-Performance Computing & Hardware Profiling Report
-**System:** Harakutir Autonomous Closed-Loop Pulse Engineering Platform  
+**System:** Client Organization Autonomous Closed-Loop Pulse Engineering Platform  
 **Host Processor:** AMD Ryzen AI 9 365 w/ Radeon 880M (10 Physical Cores: 4 Zen 5 + 6 Zen 5c, 20 Logical Processors @ 2.0–5.0 GHz)  
 **Integrated GPU:** AMD Radeon(TM) 880M Graphics (Driver 32.0.13058.8001, 56°C)  
 **Neural Processing Unit:** AMD XDNA NPU (NPU Compute Accelerator, 50 TOPS)  

@@ -1,6 +1,6 @@
-# HARAKUTIR OMEGA — 15 MT/DAY INDUSTRIAL TOOR DAL PROCESSING & SCALE-UP REPORT
+# FINNOAQ OMEGA — 15 MT/DAY INDUSTRIAL TOOR DAL PROCESSING & SCALE-UP REPORT
 **Document ID:** `HK-REP-15TPD-SCALEUP-2026-001`  
-**Governing Standard:** Harakutir Omega Persistent Autonomous R&D Constitution  
+**Governing Standard:** FinnoaQ Omega Persistent Autonomous R&D Constitution  
 **Incoming Feed Basis:** **15,000 kg / Day** raw Tanzanian split toor dal (*Cajanus cajan*)  
 **Primary Optimization Objective:** **Minimum Dal-Origin Solids Loss & Maximum Recovery at Target Cooking Improvement**  
 **Engineering Units:** SI Units (kg, h, kW, MJ, m³, m²) | Currency: Indian Rupee (INR / ₹)
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary & Design Basis Reconciliation
 
-Under the Harakutir Omega Persistent Autonomous R&D Constitution, the plant design basis is corrected from arbitrary throughputs to a strictly enforced **15,000 kg/day of incoming dal feed**.
+Under the FinnoaQ Omega Persistent Autonomous R&D Constitution, the plant design basis is corrected from arbitrary throughputs to a strictly enforced **15,000 kg/day of incoming dal feed**.
 
 ### Core Engineering Realities:
 1. **Never Assume 15,000 kg Feed = 15,000 kg Saleable Product:**

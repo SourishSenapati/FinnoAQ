@@ -1,8 +1,8 @@
 # V10 Claim & Evidence Traceability Matrix
 **Project Reference:** FNQ-PR-2026-001 | Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006)  
 **Document Ref:** FNQ-V10-EVI-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -72,8 +72,8 @@ Under Section 0.2 and Section 4.3 of the V10 Master Directive, every statement, 
 4. Attribution Audit:
    - Executing R&D Contractor: FinnoaQ Agro-Industrial Technologies Ltd.
    - Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ)
-   - Academic Guidance & Advisory: Dr. Archisman Ray (IIT Kharagpur)
-   - Client Organization: Harakutir (Kolkata)
-   - Obsolete/Banned Names: Zero occurrences of "Harakuntir".
+   - Academic Guidance & Advisory: Technical Advisory Panel
+   - Client Organization: Client Organization (Kolkata)
+   - Obsolete/Banned Names: Zero occurrences of "The Client".
    -> RESULT: PASS
 ```

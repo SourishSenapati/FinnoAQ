@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461330.8476967593
+2461331.665983796
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461330.8476967593
+2461331.665983796
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-E9
+EE
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{37F30D0B-49E9-419A-8A2E-53906326F5B7}
+{E667DAAB-E84E-4850-969D-486ED720DBED}
   9
 $VERSIONGUID
   2
-{4484EF92-5E84-4476-9ECA-9E58CE43E173}
+{F0376EC2-73DA-4AE7-8C5B-F50CF29173DC}
   9
 $EXTNAMES
 290
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-E5
+EB
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-E6
+EC
 330
 3
 100
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
 FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
 HAZARDOUS AREA CLASSIFICATION & DUST ZONING
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: SAFETY | STAGE: CONCEPTUAL FEED
+DISCIPLINE: SAFETY | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-012
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 12 OF 12
+SHEET: 12 OF 13
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6689,23 +6689,23 @@ AcDbPolyline
  70
 0
  10
-50.0
+35.0
  20
 160.0
  10
-350.0
+330.0
  20
 160.0
  10
-350.0
+330.0
  20
-320.0
+390.0
  10
-50.0
+35.0
  20
-320.0
+390.0
  10
-50.0
+35.0
  20
 160.0
   0
@@ -6721,19 +6721,19 @@ ANNOTATION
 100
 AcDbText
  10
-60.0
+45.0
  20
-326.0
+394.0
  30
 0.0
  40
-2.5
+2.4
   1
 PROCESSING BUILDING - PLAN VIEW COMBUSTIBLE DUST ZONING (NFPA 652 / IEC 60079-10-2)
  11
-60.0
+45.0
  21
-326.0
+394.0
  31
 0.0
 100
@@ -6749,17 +6749,17 @@ AcDbEntity
   8
 VALVES
 370
-40
+50
 100
 AcDbCircle
  10
 75.0
  20
-270.0
+330.0
  30
 0.0
  40
-15.0
+16.0
   0
 CIRCLE
   5
@@ -6771,17 +6771,17 @@ AcDbEntity
   8
 VALVES
 370
-40
+50
 100
 AcDbCircle
  10
-110.0
+115.0
  20
-270.0
+330.0
  30
 0.0
  40
-15.0
+16.0
   0
 TEXT
   5
@@ -6795,19 +6795,19 @@ VALVES
 100
 AcDbText
  10
-68.0
+66.0
  20
-270.0
+330.0
  30
 0.0
  40
-2.0
+2.2
   1
 ZONE 20
  11
-68.0
+66.0
  21
-270.0
+330.0
  31
 0.0
 100
@@ -6825,19 +6825,19 @@ VALVES
 100
 AcDbText
  10
-103.0
+106.0
  20
-270.0
+330.0
  30
 0.0
  40
-2.0
+2.2
   1
 ZONE 20
  11
-103.0
+106.0
  21
-270.0
+330.0
  31
 0.0
 100
@@ -6855,19 +6855,19 @@ ANNOTATION
 100
 AcDbText
  10
-65.0
+62.0
  20
-290.0
+352.0
  30
 0.0
  40
-1.6
+1.7
   1
 RAW GRAIN SILOS (INTERIOR)
  11
-65.0
+62.0
  21
-290.0
+352.0
  31
 0.0
 100
@@ -6883,7 +6883,7 @@ AcDbEntity
   8
 VALVES
 370
-40
+50
 100
 AcDbPolyline
  90
@@ -6891,25 +6891,25 @@ AcDbPolyline
  70
 0
  10
-180.0
+165.0
  20
-245.0
- 10
 280.0
- 20
-245.0
  10
+275.0
+ 20
 280.0
- 20
-275.0
  10
-180.0
- 20
 275.0
- 10
-180.0
  20
-245.0
+325.0
+ 10
+165.0
+ 20
+325.0
+ 10
+165.0
+ 20
+280.0
   0
 TEXT
   5
@@ -6923,19 +6923,19 @@ VALVES
 100
 AcDbText
  10
-185.0
+170.0
  20
-258.0
+300.0
  30
 0.0
  40
-1.8
+2.0
   1
-ZONE 20 (FLUID BED DRYER DR-101 INTERIOR)
+ZONE 20: FLUID BED DRYER DR-101 INTERIOR
  11
-185.0
+170.0
  21
-258.0
+300.0
  31
 0.0
 100
@@ -6951,7 +6951,7 @@ AcDbEntity
   8
 VALVES
 370
-40
+50
 100
 AcDbPolyline
  90
@@ -6959,25 +6959,25 @@ AcDbPolyline
  70
 0
  10
-295.0
- 20
-240.0
- 10
-335.0
- 20
-240.0
- 10
-335.0
- 20
 285.0
- 10
-295.0
  20
+280.0
+ 10
+325.0
+ 20
+280.0
+ 10
+325.0
+ 20
+345.0
+ 10
 285.0
- 10
-295.0
  20
-240.0
+345.0
+ 10
+285.0
+ 20
+280.0
   0
 TEXT
   5
@@ -6991,19 +6991,19 @@ VALVES
 100
 AcDbText
  10
-305.0
+292.0
  20
-265.0
+315.0
  30
 0.0
  40
-1.8
+2.0
   1
 ZONE 20
  11
-305.0
+292.0
  21
-265.0
+315.0
  31
 0.0
 100
@@ -7021,19 +7021,19 @@ ANNOTATION
 100
 AcDbText
  10
-290.0
+286.0
  20
-290.0
+350.0
  30
 0.0
  40
-1.5
+1.6
   1
-DUST COLLECTOR BF-102
+BAG FILTER BF-102
  11
-290.0
+286.0
  21
-290.0
+350.0
  31
 0.0
 100
@@ -7057,7 +7057,7 @@ AcDbCircle
  10
 140.0
  20
-260.0
+300.0
  30
 0.0
  40
@@ -7077,7 +7077,7 @@ AcDbText
  10
 125.0
  20
-260.0
+300.0
  30
 0.0
  40
@@ -7087,7 +7087,7 @@ ZONE 21 (1.5m)
  11
 125.0
  21
-260.0
+300.0
  31
 0.0
 100
@@ -7113,23 +7113,23 @@ AcDbPolyline
  70
 0
  10
-240.0
+200.0
  20
 180.0
  10
-310.0
+290.0
  20
 180.0
  10
-310.0
+290.0
  20
-230.0
+250.0
  10
-240.0
+200.0
  20
-230.0
+250.0
  10
-240.0
+200.0
  20
 180.0
   0
@@ -7145,19 +7145,19 @@ INSTRUMENTATION
 100
 AcDbText
  10
-242.0
- 20
 205.0
+ 20
+215.0
  30
 0.0
  40
-1.8
+2.0
   1
-ZONE 21 (PACKAGING & WEIGHING)
+ZONE 21: PACKAGING & WEIGHING HALL
  11
-242.0
- 21
 205.0
+ 21
+215.0
  31
 0.0
 100
@@ -7175,9 +7175,9 @@ DIMENSIONS
 100
 AcDbText
  10
-58.0
+43.0
  20
-172.0
+170.0
  30
 0.0
  40
@@ -7185,9 +7185,9 @@ AcDbText
   1
 ZONE 22: ENTIRE UNCONTROLLED DRY PROCESSING HALL (3.0m RADIUS FROM DUST SOURCES)
  11
-58.0
+43.0
  21
-172.0
+170.0
  31
 0.0
 100
@@ -7211,23 +7211,23 @@ AcDbPolyline
  70
 0
  10
-120.0
+55.0
  20
 180.0
  10
-190.0
+155.0
  20
 180.0
  10
-190.0
+155.0
  20
-230.0
+260.0
  10
-120.0
+55.0
  20
-230.0
+260.0
  10
-120.0
+55.0
  20
 180.0
   0
@@ -7243,19 +7243,19 @@ EQUIPMENT
 100
 AcDbText
  10
-125.0
+75.0
  20
-208.0
+225.0
  30
 0.0
  40
-2.0
+2.2
   1
 NON-HAZARDOUS
  11
-125.0
+75.0
  21
-208.0
+225.0
  31
 0.0
 100
@@ -7273,19 +7273,19 @@ EQUIPMENT
 100
 AcDbText
  10
-122.0
+60.0
  20
-200.0
+215.0
  30
 0.0
  40
-1.6
+1.7
   1
-(WET WASHDOWN AREA)
+(WET HYGIENIC WASHDOWN HALL)
  11
-122.0
+60.0
  21
-200.0
+215.0
  31
 0.0
 100
@@ -7309,25 +7309,25 @@ AcDbPolyline
  70
 0
  10
-365.0
- 20
 340.0
- 10
-570.0
  20
+395.0
+ 10
+565.0
+ 20
+395.0
+ 10
+565.0
+ 20
+165.0
+ 10
 340.0
- 10
-570.0
  20
-90.0
+165.0
  10
-365.0
- 20
-90.0
- 10
-365.0
- 20
 340.0
+ 20
+395.0
   0
 TEXT
   5
@@ -7341,19 +7341,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-332.0
+387.0
  30
 0.0
  40
 2.2
   1
-DUST HAZARD DATA & COMPLIANCE:
+COMBUSTIBLE DUST CHARACTERISTICS (NFPA 652):
  11
-369.0
+344.0
  21
-332.0
+387.0
  31
 0.0
 100
@@ -7371,15 +7371,15 @@ BORDER_TITLE
 100
 AcDbLine
  10
-365.0
+340.0
  20
-328.0
+383.0
  30
 0.0
  11
-570.0
+565.0
  21
-328.0
+383.0
  31
 0.0
   0
@@ -7395,19 +7395,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-320.0
+375.0
  30
 0.0
  40
 1.7
   1
-1. Material: Toor Dal (Pigeon Pea) Grain Dust
+1. Material: Tanzanian Toor Dal Grain Dust (Cajanus cajan)
  11
-369.0
+344.0
  21
-320.0
+375.0
  31
 0.0
 100
@@ -7425,19 +7425,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-312.2
+360.5
  30
 0.0
  40
 1.7
   1
-2. Dust Deflagration Class: St 1 (Kst: 85 bar-m/s)
+2. Dust Deflagration Class: St 1 (Kst: 85 bar-m/s, moderate)
  11
-369.0
+344.0
  21
-312.2
+360.5
  31
 0.0
 100
@@ -7455,9 +7455,9 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-304.4
+346.0
  30
 0.0
  40
@@ -7465,9 +7465,9 @@ AcDbText
   1
 3. Maximum Explosion Pressure Pmax: 7.6 bar g
  11
-369.0
+344.0
  21
-304.4
+346.0
  31
 0.0
 100
@@ -7485,19 +7485,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-296.6
+331.5
  30
 0.0
  40
 1.7
   1
-4. Minimum Ignition Energy (MIE): > 30 mJ
+4. Minimum Ignition Energy (MIE): > 30 mJ (No spark hazard)
  11
-369.0
+344.0
  21
-296.6
+331.5
  31
 0.0
 100
@@ -7515,9 +7515,9 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-288.8
+317.0
  30
 0.0
  40
@@ -7525,9 +7525,9 @@ AcDbText
   1
 5. Minimum Ignition Temp (MIT - Cloud): 430 deg C
  11
-369.0
+344.0
  21
-288.8
+317.0
  31
 0.0
 100
@@ -7545,9 +7545,9 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-281.0
+302.5
  30
 0.0
  40
@@ -7555,9 +7555,9 @@ AcDbText
   1
 6. Layer Ignition Temperature (LIT - 5mm): 260 deg C
  11
-369.0
+344.0
  21
-281.0
+302.5
  31
 0.0
 100
@@ -7575,9 +7575,9 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-273.2
+288.0
  30
 0.0
  40
@@ -7585,9 +7585,9 @@ AcDbText
   1
 7. Permissible Equipment Surface Temp: T120 deg C
  11
-369.0
+344.0
  21
-273.2
+288.0
  31
 0.0
 100
@@ -7605,19 +7605,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-265.4
+273.5
  30
 0.0
  40
 1.7
   1
-   (Max 2/3 of LIT per IEC 60079-0)
+   (Max 2/3 of MIT / 75K below LIT per IEC 60079-0)
  11
-369.0
+344.0
  21
-265.4
+273.5
  31
 0.0
 100
@@ -7635,19 +7635,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-257.6
+259.0
  30
 0.0
  40
 1.7
   1
-8. Zone 20 Enclosures: IP65 Ex tb IIIC T120 deg C
+8. Zone 20 Enclosures: IP65 Ex tb IIIC T120 deg C Da
  11
-369.0
+344.0
  21
-257.6
+259.0
  31
 0.0
 100
@@ -7665,19 +7665,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-249.8
+244.5
  30
 0.0
  40
 1.7
   1
-9. Zone 21/22 Enclosures: IP55 Ex tc IIIC T120 deg C
+9. Zone 21/22 Enclosures: IP55 Ex tc IIIC T120 deg C Dc
  11
-369.0
+344.0
  21
-249.8
+244.5
  31
 0.0
 100
@@ -7695,19 +7695,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-242.0
+230.0
  30
 0.0
  40
 1.7
   1
-10. Explosion Relief: Flameless explosion vents
+10. Explosion Relief: Dual certified NFPA 68 burst panels
  11
-369.0
+344.0
  21
-242.0
+230.0
  31
 0.0
 100
@@ -7725,19 +7725,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-234.2
+215.5
  30
 0.0
  40
 1.7
   1
-    on Baghouse BF-102 and Cyclone CY-101
+    on DR-101 hood and flameless vents on BF-102.
  11
-369.0
+344.0
  21
-234.2
+215.5
  31
 0.0
 100
@@ -7755,19 +7755,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-226.4
+201.0
  30
 0.0
  40
 1.7
   1
-    certified per NFPA 68 / EN 14491.
+11. Static Bonding: All pipes, ductwork, filter cages and
  11
-369.0
+344.0
  21
-226.4
+201.0
  31
 0.0
 100
@@ -7785,19 +7785,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-218.60000000000002
+186.5
  30
 0.0
  40
 1.7
   1
-11. Static Bonding: All pipes, ductwork, filter
+    vessels bonded to earthing grid (< 10 ohms resistance).
  11
-369.0
+344.0
  21
-218.60000000000002
+186.5
  31
 0.0
 100
@@ -7815,19 +7815,19 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-210.8
+172.0
  30
 0.0
  40
 1.7
   1
-    cages and vessels bonded to earth (< 10 ohms).
+12. Housekeeping Standard: Scheduled vacuum cleaning
  11
-369.0
+344.0
  21
-210.8
+172.0
  31
 0.0
 100
@@ -7845,27 +7845,65 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+344.0
  20
-203.0
+157.5
  30
 0.0
  40
 1.7
   1
-12. Housekeeping: Scheduled dry vacuum cleaning
+    preventing dust layer accumulation > 1.0 mm.
  11
-369.0
+344.0
  21
-203.0
+157.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E4
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+155.0
+ 10
+565.0
+ 20
+155.0
+ 10
+565.0
+ 20
+65.0
+ 10
+25.0
+ 20
+65.0
+ 10
+25.0
+ 20
+155.0
+  0
+TEXT
+  5
+E5
 330
 17
 100
@@ -7875,19 +7913,73 @@ ANNOTATION
 100
 AcDbText
  10
-369.0
+29.0
  20
-195.2
+147.0
+ 30
+0.0
+ 40
+2.2
+  1
+HAZARDOUS AREA ZONE CLASSIFICATION DEFINITIONS & APPLICABLE STANDARDS:
+ 11
+29.0
+ 21
+147.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+E6
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbLine
+ 10
+25.0
+ 20
+143.0
+ 30
+0.0
+ 11
+565.0
+ 21
+143.0
+ 31
+0.0
+  0
+TEXT
+  5
+E7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+133.0
  30
 0.0
  40
 1.7
   1
-    preventing dust layer buildup > 1.0 mm.
+ZONE 20: A place in which an explosive atmosphere in the form of a cloud of combustible dust in air is present continuously, or for long periods or frequently (> 1,000 h/year). Equipment must be Category 1D / EPL Da certified.
  11
-369.0
+29.0
  21
-195.2
+133.0
  31
 0.0
 100
@@ -7901,23 +7993,83 @@ E8
 100
 AcDbEntity
   8
-BORDER_TITLE
+ANNOTATION
 100
 AcDbText
  10
-389.0
+29.0
  20
-48.0
+115.0
  30
 0.0
  40
-2.0
+1.7
   1
-ENGR: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
+ZONE 21: A place in which an explosive atmosphere in the form of a cloud of combustible dust in air is likely to occur in normal operation occasionally (10 to 1,000 h/year). Equipment must be Category 2D / EPL Db certified.
  11
-389.0
+29.0
  21
-48.0
+115.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+E9
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+97.0
+ 30
+0.0
+ 40
+1.7
+  1
+ZONE 22: A place in which an explosive atmosphere in the form of a cloud of combustible dust in air is not likely to occur in normal operation but, if it does occur, will persist for a short period only (< 10 h/year). Category 3D / EPL Dc.
+ 11
+29.0
+ 21
+97.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+EA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+29.0
+ 20
+79.0
+ 30
+0.0
+ 40
+1.7
+  1
+REGULATORY COMPLIANCE: NFPA 652 (Standard on the Fundamentals of Combustible Dust), NFPA 68 (Standard on Explosion Protection by Deflagration Venting), IEC 60079-10-2 (Explosive Atmospheres - Dust Area Classification), OSHA 1910.307.
+ 11
+29.0
+ 21
+79.0
  31
 0.0
 100
@@ -9013,7 +9165,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-E7
+ED
   0
 DICTIONARYVAR
   5
@@ -9025,7 +9177,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:14:11.808771+00:00
+1.4.4 @ 2026-10-17T10:29:01.575931+00:00
   0
 VISUALSTYLE
   5
@@ -15579,7 +15731,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-E7
+ED
 330
 2D
 100
@@ -15587,7 +15739,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T14:50:41.481842+00:00
+1.4.4 @ 2026-10-17T10:29:01.581297+00:00
   0
 ENDSEC
   0

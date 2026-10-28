@@ -1,4 +1,4 @@
-# HARAKUTIR PRODUCT REQUIREMENTS DOCUMENT (PRD)
+# FINNOAQ PRODUCT REQUIREMENTS DOCUMENT (PRD)
 ## Quick-Cooking Split Toor Dal (*Cajanus cajan*) — Product Specifications & Client Acceptance Boundaries
 
 **Document ID:** HKT-PRD-2026-001  
@@ -47,7 +47,7 @@ This engineering programme **does not silently convert** into an instant, pre-co
 
 ## 3. Client Sign-Off & Specification Freezing
 
-* **Client Commercial Sponsor:** Harakutir Management  
-* **Technical Lead Reviewer:** Harakutir Autonomous R&D Team  
+* **Client Commercial Sponsor:** FinnoaQ Management  
+* **Technical Lead Reviewer:** FinnoaQ Autonomous R&D Team  
 * **Approval Date:** `PENDING_CLIENT_FORMAL_GATE_REVIEW`  
-* **Formal Decision Boundary:** All numerical thresholds marked `TBD_CLIENT_APPROVAL` will remain provisional design targets until Harakutir formally signs Gate G0/G1 authorization.
+* **Formal Decision Boundary:** All numerical thresholds marked `TBD_CLIENT_APPROVAL` will remain provisional design targets until FinnoaQ formally signs Gate G0/G1 authorization.

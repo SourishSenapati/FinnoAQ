@@ -2,7 +2,7 @@
 **Document Ref:** FNQ-ANX-15T-002 (Rev 8.0)  
 **Classification:** CONCEPTUAL FEED — PRELIMINARY — NOT FOR FABRICATION / NOT FOR PROCUREMENT  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
+**Academic Guidance:** Technical Advisory Panel  
 **Authoring Application:** SolidWorks 2025 SP01.2 Native Parametric Assembly (`PLANT-15T_General_Arrangement.SLDASM`)  
 
 ---

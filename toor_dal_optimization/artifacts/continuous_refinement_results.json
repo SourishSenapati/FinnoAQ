@@ -1,0 +1,3924 @@
+{
+  "timestamp": "2026-10-22T15:08:10.880835+00:00",
+  "total_points_evaluated": 120,
+  "qualifying_2_whistle_fssai_count": 48,
+  "top_pareto_candidates": [
+    {
+      "node_id": "CONT_NODE_0037",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 71.8,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0038",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 60.3,
+        "retained_k_mg_100g": 1269.5,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0039",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 52.9,
+        "retained_k_mg_100g": 1282.1,
+        "opex_inr_kg": 1.12
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0040",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 43.1,
+        "retained_k_mg_100g": 1298.7,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0073",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 63.6,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.16
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0074",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 53.8,
+        "retained_k_mg_100g": 1266.7,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0075",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 47.4,
+        "retained_k_mg_100g": 1277.5,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0076",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 39.0,
+        "retained_k_mg_100g": 1291.7,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0077",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 73.7,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.19
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0078",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 61.8,
+        "retained_k_mg_100g": 1270.1,
+        "opex_inr_kg": 1.2
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0079",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 54.2,
+        "retained_k_mg_100g": 1283.2,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0080",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 44.1,
+        "retained_k_mg_100g": 1300.3,
+        "opex_inr_kg": 1.22
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0097",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 72.3,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.23
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0098",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 60.8,
+        "retained_k_mg_100g": 1269.7,
+        "opex_inr_kg": 1.24
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0113",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 64.4,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.24
+      }
+    }
+  ],
+  "all_results": [
+    {
+      "node_id": "CONT_NODE_0001",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 88.1,
+        "core_center_ca_remaining_pct": 70.8,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.9,
+        "final_shear_core_N": 34.6,
+        "retained_na_mg_100g": 30.9,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 0.93
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0002",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 88.1,
+        "core_center_ca_remaining_pct": 70.8,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.9,
+        "final_shear_core_N": 34.6,
+        "retained_na_mg_100g": 27.6,
+        "retained_k_mg_100g": 1255.6,
+        "opex_inr_kg": 0.94
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0003",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 88.1,
+        "core_center_ca_remaining_pct": 70.8,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.9,
+        "final_shear_core_N": 34.6,
+        "retained_na_mg_100g": 25.5,
+        "retained_k_mg_100g": 1259.2,
+        "opex_inr_kg": 0.94
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0004",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 88.1,
+        "core_center_ca_remaining_pct": 70.8,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.9,
+        "final_shear_core_N": 34.6,
+        "retained_na_mg_100g": 22.7,
+        "retained_k_mg_100g": 1263.9,
+        "opex_inr_kg": 0.94
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0005",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 92.0,
+        "core_center_ca_remaining_pct": 69.2,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.3,
+        "retained_na_mg_100g": 39.6,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 0.96
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0006",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 92.0,
+        "core_center_ca_remaining_pct": 69.2,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.3,
+        "retained_na_mg_100g": 34.6,
+        "retained_k_mg_100g": 1258.5,
+        "opex_inr_kg": 0.97
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0007",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 92.0,
+        "core_center_ca_remaining_pct": 69.2,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.3,
+        "retained_na_mg_100g": 31.3,
+        "retained_k_mg_100g": 1264.1,
+        "opex_inr_kg": 0.97
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0008",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 92.0,
+        "core_center_ca_remaining_pct": 69.2,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.3,
+        "retained_na_mg_100g": 27.1,
+        "retained_k_mg_100g": 1271.4,
+        "opex_inr_kg": 0.98
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0009",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.5,
+        "core_center_ca_remaining_pct": 64.9,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.1,
+        "retained_na_mg_100g": 48.4,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 0.99
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0010",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.5,
+        "core_center_ca_remaining_pct": 64.9,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.1,
+        "retained_na_mg_100g": 41.6,
+        "retained_k_mg_100g": 1261.5,
+        "opex_inr_kg": 1.0
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0011",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.5,
+        "core_center_ca_remaining_pct": 64.9,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.1,
+        "retained_na_mg_100g": 37.2,
+        "retained_k_mg_100g": 1269.0,
+        "opex_inr_kg": 1.01
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0012",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.5,
+        "core_center_ca_remaining_pct": 64.9,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.1,
+        "retained_na_mg_100g": 31.4,
+        "retained_k_mg_100g": 1278.8,
+        "opex_inr_kg": 1.01
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0013",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 96.4,
+        "core_center_ca_remaining_pct": 59.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 26.0,
+        "retained_na_mg_100g": 59.9,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.03
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0014",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 96.4,
+        "core_center_ca_remaining_pct": 59.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 26.0,
+        "retained_na_mg_100g": 50.8,
+        "retained_k_mg_100g": 1265.4,
+        "opex_inr_kg": 1.04
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0015",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 96.4,
+        "core_center_ca_remaining_pct": 59.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 26.0,
+        "retained_na_mg_100g": 44.9,
+        "retained_k_mg_100g": 1275.5,
+        "opex_inr_kg": 1.04
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0016",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 96.4,
+        "core_center_ca_remaining_pct": 59.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 26.0,
+        "retained_na_mg_100g": 37.2,
+        "retained_k_mg_100g": 1288.6,
+        "opex_inr_kg": 1.05
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0017",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.9,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.3,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 69.2,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.06
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0018",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.9,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.3,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 58.3,
+        "retained_k_mg_100g": 1268.6,
+        "opex_inr_kg": 1.07
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0019",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.9,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.3,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 51.2,
+        "retained_k_mg_100g": 1280.7,
+        "opex_inr_kg": 1.08
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0020",
+      "params": {
+        "temp_c": 25.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.9,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.3,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 41.9,
+        "retained_k_mg_100g": 1296.5,
+        "opex_inr_kg": 1.09
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0021",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.3,
+        "core_center_ca_remaining_pct": 69.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.5,
+        "final_shear_core_N": 33.7,
+        "retained_na_mg_100g": 31.7,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 0.97
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0022",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.3,
+        "core_center_ca_remaining_pct": 69.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.5,
+        "final_shear_core_N": 33.7,
+        "retained_na_mg_100g": 28.2,
+        "retained_k_mg_100g": 1255.8,
+        "opex_inr_kg": 0.98
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0023",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.3,
+        "core_center_ca_remaining_pct": 69.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.5,
+        "final_shear_core_N": 33.7,
+        "retained_na_mg_100g": 26.0,
+        "retained_k_mg_100g": 1259.6,
+        "opex_inr_kg": 0.98
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0024",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.3,
+        "core_center_ca_remaining_pct": 69.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.5,
+        "final_shear_core_N": 33.7,
+        "retained_na_mg_100g": 23.1,
+        "retained_k_mg_100g": 1264.6,
+        "opex_inr_kg": 0.98
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0025",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.1,
+        "core_center_ca_remaining_pct": 62.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 28.6,
+        "retained_na_mg_100g": 40.8,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.01
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0026",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.1,
+        "core_center_ca_remaining_pct": 62.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 28.6,
+        "retained_na_mg_100g": 35.5,
+        "retained_k_mg_100g": 1258.9,
+        "opex_inr_kg": 1.01
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0027",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.1,
+        "core_center_ca_remaining_pct": 62.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 28.6,
+        "retained_na_mg_100g": 32.1,
+        "retained_k_mg_100g": 1264.7,
+        "opex_inr_kg": 1.01
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0028",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.1,
+        "core_center_ca_remaining_pct": 62.7,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 28.6,
+        "retained_na_mg_100g": 27.6,
+        "retained_k_mg_100g": 1272.3,
+        "opex_inr_kg": 1.02
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0029",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.6,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.33,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 49.9,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.04
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0030",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.6,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.33,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 42.8,
+        "retained_k_mg_100g": 1262.0,
+        "opex_inr_kg": 1.04
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0031",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.6,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.33,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 38.2,
+        "retained_k_mg_100g": 1269.9,
+        "opex_inr_kg": 1.05
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0032",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.6,
+        "core_center_ca_remaining_pct": 45.6,
+        "t90_min": 24.33,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 17.8,
+        "retained_na_mg_100g": 32.2,
+        "retained_k_mg_100g": 1280.1,
+        "opex_inr_kg": 1.05
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0033",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 20.7,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 7.0,
+        "retained_na_mg_100g": 62.0,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.07
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0034",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 20.7,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 7.0,
+        "retained_na_mg_100g": 52.5,
+        "retained_k_mg_100g": 1266.1,
+        "opex_inr_kg": 1.08
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0035",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 20.7,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 7.0,
+        "retained_na_mg_100g": 46.3,
+        "retained_k_mg_100g": 1276.6,
+        "opex_inr_kg": 1.09
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0036",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 20.7,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 7.0,
+        "retained_na_mg_100g": 38.2,
+        "retained_k_mg_100g": 1290.4,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0037",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 71.8,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0038",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 60.3,
+        "retained_k_mg_100g": 1269.5,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0039",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 52.9,
+        "retained_k_mg_100g": 1282.1,
+        "opex_inr_kg": 1.12
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0040",
+      "params": {
+        "temp_c": 30.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 35.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 43.1,
+        "retained_k_mg_100g": 1298.7,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0041",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 90.5,
+        "core_center_ca_remaining_pct": 70.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.6,
+        "final_shear_core_N": 34.0,
+        "retained_na_mg_100g": 31.5,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.02
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0042",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 90.5,
+        "core_center_ca_remaining_pct": 70.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.6,
+        "final_shear_core_N": 34.0,
+        "retained_na_mg_100g": 28.1,
+        "retained_k_mg_100g": 1255.8,
+        "opex_inr_kg": 1.02
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0043",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 90.5,
+        "core_center_ca_remaining_pct": 70.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.6,
+        "final_shear_core_N": 34.0,
+        "retained_na_mg_100g": 25.9,
+        "retained_k_mg_100g": 1259.5,
+        "opex_inr_kg": 1.02
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0044",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 90.5,
+        "core_center_ca_remaining_pct": 70.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.6,
+        "final_shear_core_N": 34.0,
+        "retained_na_mg_100g": 23.0,
+        "retained_k_mg_100g": 1264.4,
+        "opex_inr_kg": 1.03
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0045",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.4,
+        "core_center_ca_remaining_pct": 65.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.2,
+        "retained_na_mg_100g": 40.5,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.05
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0046",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.4,
+        "core_center_ca_remaining_pct": 65.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.2,
+        "retained_na_mg_100g": 35.3,
+        "retained_k_mg_100g": 1258.8,
+        "opex_inr_kg": 1.05
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0047",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.4,
+        "core_center_ca_remaining_pct": 65.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.2,
+        "retained_na_mg_100g": 31.9,
+        "retained_k_mg_100g": 1264.6,
+        "opex_inr_kg": 1.06
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0048",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.4,
+        "core_center_ca_remaining_pct": 65.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 30.2,
+        "retained_na_mg_100g": 27.5,
+        "retained_k_mg_100g": 1272.1,
+        "opex_inr_kg": 1.06
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0049",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.0,
+        "core_center_ca_remaining_pct": 52.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 21.5,
+        "retained_na_mg_100g": 49.6,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.08
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0050",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.0,
+        "core_center_ca_remaining_pct": 52.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 21.5,
+        "retained_na_mg_100g": 42.5,
+        "retained_k_mg_100g": 1261.9,
+        "opex_inr_kg": 1.09
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0051",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.0,
+        "core_center_ca_remaining_pct": 52.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 21.5,
+        "retained_na_mg_100g": 38.0,
+        "retained_k_mg_100g": 1269.7,
+        "opex_inr_kg": 1.09
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0052",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.0,
+        "core_center_ca_remaining_pct": 52.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 21.5,
+        "retained_na_mg_100g": 32.0,
+        "retained_k_mg_100g": 1279.8,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0053",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.8,
+        "core_center_ca_remaining_pct": 31.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 10.9,
+        "retained_na_mg_100g": 61.5,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0054",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.8,
+        "core_center_ca_remaining_pct": 31.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 10.9,
+        "retained_na_mg_100g": 52.1,
+        "retained_k_mg_100g": 1266.0,
+        "opex_inr_kg": 1.12
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0055",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.8,
+        "core_center_ca_remaining_pct": 31.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 10.9,
+        "retained_na_mg_100g": 46.0,
+        "retained_k_mg_100g": 1276.4,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0056",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.8,
+        "core_center_ca_remaining_pct": 31.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 10.9,
+        "retained_na_mg_100g": 38.0,
+        "retained_k_mg_100g": 1290.0,
+        "opex_inr_kg": 1.14
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0057",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.8,
+        "core_center_ca_remaining_pct": 11.6,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.7,
+        "retained_na_mg_100g": 71.2,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.15
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0058",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.8,
+        "core_center_ca_remaining_pct": 11.6,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.7,
+        "retained_na_mg_100g": 59.8,
+        "retained_k_mg_100g": 1269.3,
+        "opex_inr_kg": 1.16
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0059",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.8,
+        "core_center_ca_remaining_pct": 11.6,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.7,
+        "retained_na_mg_100g": 52.5,
+        "retained_k_mg_100g": 1281.8,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0060",
+      "params": {
+        "temp_c": 35.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.8,
+        "core_center_ca_remaining_pct": 11.6,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.7,
+        "retained_na_mg_100g": 42.8,
+        "retained_k_mg_100g": 1298.2,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0061",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 93.5,
+        "core_center_ca_remaining_pct": 67.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.2,
+        "final_shear_core_N": 31.7,
+        "retained_na_mg_100g": 32.2,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.06
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0062",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 93.5,
+        "core_center_ca_remaining_pct": 67.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.2,
+        "final_shear_core_N": 31.7,
+        "retained_na_mg_100g": 28.7,
+        "retained_k_mg_100g": 1256.0,
+        "opex_inr_kg": 1.06
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0063",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 93.5,
+        "core_center_ca_remaining_pct": 67.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.2,
+        "final_shear_core_N": 31.7,
+        "retained_na_mg_100g": 26.4,
+        "retained_k_mg_100g": 1259.9,
+        "opex_inr_kg": 1.07
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0064",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 93.5,
+        "core_center_ca_remaining_pct": 67.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.2,
+        "final_shear_core_N": 31.7,
+        "retained_na_mg_100g": 23.4,
+        "retained_k_mg_100g": 1265.1,
+        "opex_inr_kg": 1.07
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0065",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.4,
+        "core_center_ca_remaining_pct": 48.4,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 19.4,
+        "retained_na_mg_100g": 41.6,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.09
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0066",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.4,
+        "core_center_ca_remaining_pct": 48.4,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 19.4,
+        "retained_na_mg_100g": 36.2,
+        "retained_k_mg_100g": 1259.2,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0067",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.4,
+        "core_center_ca_remaining_pct": 48.4,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 19.4,
+        "retained_na_mg_100g": 32.7,
+        "retained_k_mg_100g": 1265.2,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0068",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 97.4,
+        "core_center_ca_remaining_pct": 48.4,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 19.4,
+        "retained_na_mg_100g": 28.1,
+        "retained_k_mg_100g": 1273.1,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0069",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 18.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 6.3,
+        "retained_na_mg_100g": 51.1,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.12
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0070",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 18.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 6.3,
+        "retained_na_mg_100g": 43.8,
+        "retained_k_mg_100g": 1262.4,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0071",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 18.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 6.3,
+        "retained_na_mg_100g": 39.0,
+        "retained_k_mg_100g": 1270.5,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0072",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.4,
+        "core_center_ca_remaining_pct": 18.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 6.3,
+        "retained_na_mg_100g": 32.8,
+        "retained_k_mg_100g": 1281.1,
+        "opex_inr_kg": 1.14
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0073",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 63.6,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.16
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0074",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 53.8,
+        "retained_k_mg_100g": 1266.7,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0075",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 47.4,
+        "retained_k_mg_100g": 1277.5,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0076",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 39.0,
+        "retained_k_mg_100g": 1291.7,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0077",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 73.7,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.19
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0078",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 61.8,
+        "retained_k_mg_100g": 1270.1,
+        "opex_inr_kg": 1.2
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0079",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 54.2,
+        "retained_k_mg_100g": 1283.2,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0080",
+      "params": {
+        "temp_c": 40.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 30.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 44.1,
+        "retained_k_mg_100g": 1300.3,
+        "opex_inr_kg": 1.22
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0081",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.9,
+        "core_center_ca_remaining_pct": 69.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.2,
+        "retained_na_mg_100g": 31.8,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.1
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0082",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.9,
+        "core_center_ca_remaining_pct": 69.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.2,
+        "retained_na_mg_100g": 28.4,
+        "retained_k_mg_100g": 1255.9,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0083",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.9,
+        "core_center_ca_remaining_pct": 69.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.2,
+        "retained_na_mg_100g": 26.1,
+        "retained_k_mg_100g": 1259.7,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0084",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 91.9,
+        "core_center_ca_remaining_pct": 69.1,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.4,
+        "final_shear_core_N": 33.2,
+        "retained_na_mg_100g": 23.2,
+        "retained_k_mg_100g": 1264.7,
+        "opex_inr_kg": 1.11
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0085",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.8,
+        "core_center_ca_remaining_pct": 59.5,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.0,
+        "final_shear_core_N": 26.3,
+        "retained_na_mg_100g": 41.0,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.13
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0086",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.8,
+        "core_center_ca_remaining_pct": 59.5,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.0,
+        "final_shear_core_N": 26.3,
+        "retained_na_mg_100g": 35.7,
+        "retained_k_mg_100g": 1259.0,
+        "opex_inr_kg": 1.14
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0087",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.8,
+        "core_center_ca_remaining_pct": 59.5,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.0,
+        "final_shear_core_N": 26.3,
+        "retained_na_mg_100g": 32.3,
+        "retained_k_mg_100g": 1264.9,
+        "opex_inr_kg": 1.14
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0088",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 95.8,
+        "core_center_ca_remaining_pct": 59.5,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.0,
+        "final_shear_core_N": 26.3,
+        "retained_na_mg_100g": 27.8,
+        "retained_k_mg_100g": 1272.6,
+        "opex_inr_kg": 1.15
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0089",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.2,
+        "core_center_ca_remaining_pct": 38.1,
+        "t90_min": 12.1,
+        "whistles_at_t90": 4,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 13.9,
+        "retained_na_mg_100g": 50.3,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.16
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0090",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.2,
+        "core_center_ca_remaining_pct": 38.1,
+        "t90_min": 12.1,
+        "whistles_at_t90": 4,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 13.9,
+        "retained_na_mg_100g": 43.1,
+        "retained_k_mg_100g": 1262.2,
+        "opex_inr_kg": 1.17
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0091",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.2,
+        "core_center_ca_remaining_pct": 38.1,
+        "t90_min": 12.1,
+        "whistles_at_t90": 4,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 13.9,
+        "retained_na_mg_100g": 38.5,
+        "retained_k_mg_100g": 1270.1,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0092",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.2,
+        "core_center_ca_remaining_pct": 38.1,
+        "t90_min": 12.1,
+        "whistles_at_t90": 4,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 13.9,
+        "retained_na_mg_100g": 32.4,
+        "retained_k_mg_100g": 1280.4,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0093",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.7,
+        "core_center_ca_remaining_pct": 12.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.9,
+        "retained_na_mg_100g": 62.4,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.2
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0094",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.7,
+        "core_center_ca_remaining_pct": 12.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.9,
+        "retained_na_mg_100g": 52.9,
+        "retained_k_mg_100g": 1266.3,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0095",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.7,
+        "core_center_ca_remaining_pct": 12.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.9,
+        "retained_na_mg_100g": 46.6,
+        "retained_k_mg_100g": 1276.9,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0096",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.7,
+        "core_center_ca_remaining_pct": 12.5,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.9,
+        "retained_na_mg_100g": 38.5,
+        "retained_k_mg_100g": 1290.8,
+        "opex_inr_kg": 1.22
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0097",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 72.3,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.23
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0098",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 60.8,
+        "retained_k_mg_100g": 1269.7,
+        "opex_inr_kg": 1.24
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0099",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 53.2,
+        "retained_k_mg_100g": 1282.5,
+        "opex_inr_kg": 1.25
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0100",
+      "params": {
+        "temp_c": 45.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 43.4,
+        "retained_k_mg_100g": 1299.2,
+        "opex_inr_kg": 1.26
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0101",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.04,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.01
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.7,
+        "core_center_ca_remaining_pct": 64.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 29.5,
+        "retained_na_mg_100g": 32.5,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.14
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0102",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.04,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 5.602,
+        "mass_K3Cit_g_L": 1.545,
+        "tds_wt_vol_pct": 1.03
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.7,
+        "core_center_ca_remaining_pct": 64.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 29.5,
+        "retained_na_mg_100g": 28.9,
+        "retained_k_mg_100g": 1256.1,
+        "opex_inr_kg": 1.15
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0103",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.04,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 4.691,
+        "mass_K3Cit_g_L": 2.549,
+        "tds_wt_vol_pct": 1.04
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.7,
+        "core_center_ca_remaining_pct": 64.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 29.5,
+        "retained_na_mg_100g": 26.6,
+        "retained_k_mg_100g": 1260.1,
+        "opex_inr_kg": 1.15
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0104",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.04,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 3.111,
+        "mass_Na3Cit_g_L": 3.501,
+        "mass_K3Cit_g_L": 3.862,
+        "tds_wt_vol_pct": 1.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 94.7,
+        "core_center_ca_remaining_pct": 64.0,
+        "t90_min": 25.0,
+        "whistles_at_t90": 13,
+        "final_shear_force_N": 4.1,
+        "final_shear_core_N": 29.5,
+        "retained_na_mg_100g": 23.5,
+        "retained_k_mg_100g": 1265.3,
+        "opex_inr_kg": 1.15
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0105",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.06,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 10.503,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 1.52
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.5,
+        "core_center_ca_remaining_pct": 35.4,
+        "t90_min": 10.2,
+        "whistles_at_t90": 3,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 12.6,
+        "retained_na_mg_100g": 42.1,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0106",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.06,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 8.403,
+        "mass_K3Cit_g_L": 2.317,
+        "tds_wt_vol_pct": 1.54
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.5,
+        "core_center_ca_remaining_pct": 35.4,
+        "t90_min": 10.2,
+        "whistles_at_t90": 3,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 12.6,
+        "retained_na_mg_100g": 36.6,
+        "retained_k_mg_100g": 1259.4,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0107",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.06,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 7.037,
+        "mass_K3Cit_g_L": 3.823,
+        "tds_wt_vol_pct": 1.55
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.5,
+        "core_center_ca_remaining_pct": 35.4,
+        "t90_min": 10.2,
+        "whistles_at_t90": 3,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 12.6,
+        "retained_na_mg_100g": 33.0,
+        "retained_k_mg_100g": 1265.5,
+        "opex_inr_kg": 1.18
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0108",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.06,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 4.666,
+        "mass_Na3Cit_g_L": 5.252,
+        "mass_K3Cit_g_L": 5.793,
+        "tds_wt_vol_pct": 1.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 98.5,
+        "core_center_ca_remaining_pct": 35.4,
+        "t90_min": 10.2,
+        "whistles_at_t90": 3,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 12.6,
+        "retained_na_mg_100g": 28.3,
+        "retained_k_mg_100g": 1273.5,
+        "opex_inr_kg": 1.19
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0109",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.0,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 14.005,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.02
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 8.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.1,
+        "retained_na_mg_100g": 51.7,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0110",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.2,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 11.204,
+        "mass_K3Cit_g_L": 3.09,
+        "tds_wt_vol_pct": 2.05
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 8.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.1,
+        "retained_na_mg_100g": 44.3,
+        "retained_k_mg_100g": 1262.7,
+        "opex_inr_kg": 1.21
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0111",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.33,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 9.383,
+        "mass_K3Cit_g_L": 5.098,
+        "tds_wt_vol_pct": 2.07
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 8.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.1,
+        "retained_na_mg_100g": 39.5,
+        "retained_k_mg_100g": 1270.9,
+        "opex_inr_kg": 1.22
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0112",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.07999999999999999,
+        "f_k": 0.5,
+        "ph": 5.2,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 6.221,
+        "mass_Na3Cit_g_L": 7.002,
+        "mass_K3Cit_g_L": 7.724,
+        "tds_wt_vol_pct": 2.09
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 99.9,
+        "core_center_ca_remaining_pct": 8.3,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 4.1,
+        "retained_na_mg_100g": 33.1,
+        "retained_k_mg_100g": 1281.7,
+        "opex_inr_kg": 1.22
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0113",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 18.637,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 2.57
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 64.4,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.24
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0114",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 14.91,
+        "mass_K3Cit_g_L": 4.112,
+        "tds_wt_vol_pct": 2.61
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 54.5,
+        "retained_k_mg_100g": 1267.0,
+        "opex_inr_kg": 1.25
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0115",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 12.487,
+        "mass_K3Cit_g_L": 6.784,
+        "tds_wt_vol_pct": 2.63
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 48.0,
+        "retained_k_mg_100g": 1278.0,
+        "opex_inr_kg": 1.26
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0116",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.09999999999999999,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 7.038,
+        "mass_Na3Cit_g_L": 9.318,
+        "mass_K3Cit_g_L": 10.279,
+        "tds_wt_vol_pct": 2.66
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 39.5,
+        "retained_k_mg_100g": 1292.5,
+        "opex_inr_kg": 1.27
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0117",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.12,
+        "f_k": 0.0,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 22.364,
+        "mass_K3Cit_g_L": 0.0,
+        "tds_wt_vol_pct": 3.08
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 74.7,
+        "retained_k_mg_100g": 1250.0,
+        "opex_inr_kg": 1.27
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0118",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.12,
+        "f_k": 0.2,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 17.891,
+        "mass_K3Cit_g_L": 4.934,
+        "tds_wt_vol_pct": 3.13
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 62.7,
+        "retained_k_mg_100g": 1270.5,
+        "opex_inr_kg": 1.28
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0119",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.12,
+        "f_k": 0.33,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 14.984,
+        "mass_K3Cit_g_L": 8.141,
+        "tds_wt_vol_pct": 3.16
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 54.9,
+        "retained_k_mg_100g": 1283.8,
+        "opex_inr_kg": 1.29
+      }
+    },
+    {
+      "node_id": "CONT_NODE_0120",
+      "params": {
+        "temp_c": 50.0,
+        "cit_m": 0.12,
+        "f_k": 0.5,
+        "ph": 5.4,
+        "t_soak": 25.0,
+        "rinse_l_kg": 0.15,
+        "hardness_ppm": 150.0
+      },
+      "speciation": {
+        "mass_CA_g_L": 8.445,
+        "mass_Na3Cit_g_L": 11.182,
+        "mass_K3Cit_g_L": 12.335,
+        "tds_wt_vol_pct": 3.2
+      },
+      "performance": {
+        "whole_grain_ca_disp_pct": 100.0,
+        "core_center_ca_remaining_pct": 6.8,
+        "t90_min": 9.23,
+        "whistles_at_t90": 2,
+        "final_shear_force_N": 3.9,
+        "final_shear_core_N": 3.9,
+        "retained_na_mg_100g": 44.6,
+        "retained_k_mg_100g": 1301.2,
+        "opex_inr_kg": 1.3
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 """
-Complete Parameter Registry and SOW Requirements Matrix for Harakutir Phase 1 Study.
+Complete Parameter Registry and SOW Requirements Matrix for FinnoaQ Phase 1 Study.
 Meticulously defines every single physical, chemical, thermal, hydration, structural,
 pectin, mineral, texture, cooking, commercial, and administrative parameter.
 """
@@ -1555,7 +1555,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§1",
             "title": "Project Background",
             "requirement": "Address practical household observation: ~6 whistles for Tanzanian dal vs ~3 whistles for Indian benchmark. Whistle count is an initial practical observation, not the sole scientific endpoint.",
-            "implementation_module": "src.harakutir.schemas (CookingAssay), src.harakutir.cooking",
+            "implementation_module": "src.finnoaq.schemas (CookingAssay), src.finnoaq.cooking",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Objective endpoints defined; whistle count logged as operational context."
@@ -1564,7 +1564,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§2",
             "title": "Project Objective",
             "requirement": "Establish physical, chemical, structural, hydration, thermal, mineral, texture, and controlled cooking baseline. Adhere strictly to measured difference -> association -> potential mechanism -> Phase 2 validation hierarchy. Phase 1 is diagnostic, not commercial optimization.",
-            "implementation_module": "src.harakutir.claims (RootCauseClaimLedger), src.harakutir.schemas",
+            "implementation_module": "src.finnoaq.claims (RootCauseClaimLedger), src.finnoaq.schemas",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Evidence hierarchy codified; no causality claimed without controlled experimental validation."
@@ -1573,7 +1573,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§3",
             "title": "Sample Requirements",
             "requirement": "Sample A (Tanzanian commercial/imported batch) vs Sample B (comparable Indian benchmark). 2 independent lots each where possible. Recommended quantity ~2.5–3.0 kg per lot. Track origin, variety, lot/batch, dehulling/processing, storage history, moisture/temperature/RH, supplier.",
-            "implementation_module": "src.harakutir.schemas (SampleMetadata, LotMetadata)",
+            "implementation_module": "src.finnoaq.schemas (SampleMetadata, LotMetadata)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Typed schemas with full provenance tracking; independent lots strictly separated."
@@ -1582,7 +1582,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§4",
             "title": "Overall Technical Approach",
             "requirement": "Integrated analytical pathway: raw material -> physical -> chemical -> hydration -> seed-coat/cotyledon -> cell-wall/pectin -> minerals/phytate -> starch -> hardness -> controlled cooking -> root cause -> Phase 2. Sequence is an investigative order, not causal proof.",
-            "implementation_module": "src.harakutir.analysis (IntegratedPipeline)",
+            "implementation_module": "src.finnoaq.analysis (IntegratedPipeline)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Non-causal investigative sequence enforced by design."
@@ -1591,7 +1591,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§5",
             "title": "Physical & Preliminary Characterization",
             "requirement": "Characterize colour, dimensions (L, W, T, L/W), size distribution, 1000-grain weight, bulk density, broken grain %, visible defects %, surface characteristics, seed coat traits, raw hardness.",
-            "implementation_module": "src.harakutir.schemas (PhysicalAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (PhysicalAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "19 physical parameters explicitly registered with standard test methods."
@@ -1600,7 +1600,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§6",
             "title": "Proximate Chemical Characterization",
             "requirement": "Measure moisture, protein, fat, crude fibre, ash, total carbohydrate, and starch using validated AOAC/ISO/BIS/FSSAI-compatible methods. Identify exact analytical method used.",
-            "implementation_module": "src.harakutir.schemas (ProximateAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (ProximateAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "All 7 proximates registered with AOAC/ISO standard citations."
@@ -1609,7 +1609,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§7",
             "title": "Starch & Gelatinization Characterization",
             "requirement": "Assess total starch, amylose, amylose/amylopectin ratio; DSC onset, peak, conclusion temps, range, enthalpy; RVA pasting profile where feasible.",
-            "implementation_module": "src.harakutir.schemas (StarchThermalAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (StarchThermalAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "13 thermal and pasting parameters registered."
@@ -1618,7 +1618,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§8",
             "title": "Hydration & Water-Absorption Study",
             "requirement": "Controlled soaking at 0, 15, 30, 60, 120, 240, 480 min. Measure water uptake, hydration rate, WAI, mass and volume gain, swelling, moisture gain. Produce hydration curves and Peleg model.",
-            "implementation_module": "src.harakutir.hydration (PelegModel, GPUInverseHydrationModel)",
+            "implementation_module": "src.finnoaq.hydration (PelegModel, GPUInverseHydrationModel)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Peleg NLLS fitting + offline PyTorch CUDA inverse diffusion model implemented."
@@ -1627,7 +1627,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§9",
             "title": "Seed-Coat & Cotyledon Structural Investigation",
             "requirement": "Optical microscopy, image analysis, SEM where feasible. Thickness, surface morphology, cracks, integrity, permeability traits, cotyledon cellular compactness, post-hydration/cooking changes.",
-            "implementation_module": "src.harakutir.schemas (StructuralAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (StructuralAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "7 structural parameters registered; subject to lab instrument capability."
@@ -1636,7 +1636,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§10",
             "title": "Pectin & Cell-Wall Characterization",
             "requirement": "Total pectin, soluble pectin (WSP), insoluble/chelator-soluble pectin (CSP), alkali-soluble (ASP), pectin-associated Ca and Mg, degree of esterification, cell-wall integrity.",
-            "implementation_module": "src.harakutir.schemas (PectinAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (PectinAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "8 pectin and cell wall parameters registered."
@@ -1645,7 +1645,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§11",
             "title": "Mineral & Phytate Profile",
             "requirement": "Quantify calcium, magnesium, iron, phosphorus, and phytate/phytic acid using ICP-OES / AAS / spectrophotometry. Define units and stoichiometric molar ratios.",
-            "implementation_module": "src.harakutir.schemas (MineralPhytateAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (MineralPhytateAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "7 mineral and phytate parameters with molar chelation ratios registered."
@@ -1654,7 +1654,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§12",
             "title": "Hardness & Texture Analysis",
             "requirement": "Texture Analyzer assessment across 3 stages: raw dal (breaking force, fracture), hydrated dal (firmness, softening index), cooked dal (firmness, softness, TPA, hard-core %, disintegration).",
-            "implementation_module": "src.harakutir.schemas (TextureAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (TextureAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "8 texture parameters registered across raw, hydrated, and cooked stages."
@@ -1663,7 +1663,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§13",
             "title": "Standardized Cooking-Performance Study",
             "requirement": "Standardize sample weight, water-to-dal ratio, soaking conditions, vessel, pressure, temperature profile, heating rate, duration, preparation, cooling, and objective endpoint.",
-            "implementation_module": "src.harakutir.schemas (CookingAssay), src.harakutir.cooking",
+            "implementation_module": "src.finnoaq.schemas (CookingAssay), src.finnoaq.cooking",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Full standardized protocol variables established."
@@ -1672,7 +1672,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§14",
             "title": "Comparative Cooking Test Design",
             "requirement": "Conduct 3 comparative tests: Test A (No Soaking), Test B (Standardized Soaking), Test C (Controlled Pressure Cooking).",
-            "implementation_module": "src.harakutir.cooking (ComparativeCookingDesign)",
+            "implementation_module": "src.finnoaq.cooking (ComparativeCookingDesign)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Tests A, B, and C integrated into experimental framework."
@@ -1681,7 +1681,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§15",
             "title": "Cooking Performance Measurements",
             "requirement": "Measure time to predefined objective endpoint, pressure/temperature history, hard-core %, texture, swelling, absorption, cooking loss, disintegration, final moisture.",
-            "implementation_module": "src.harakutir.schemas (CookingAssay), src.harakutir.parameters",
+            "implementation_module": "src.finnoaq.schemas (CookingAssay), src.finnoaq.parameters",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "All 9 cooking endpoints registered."
@@ -1690,7 +1690,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§16",
             "title": "Root-Cause Analysis Framework",
             "requirement": "Classify findings into Categories A (Confirmed Differences), B (Strongly Associated Factors), C (Potential Mechanisms), and D (Factors Unlikely to Be Responsible).",
-            "implementation_module": "src.harakutir.claims (RootCauseClaimLedger)",
+            "implementation_module": "src.finnoaq.claims (RootCauseClaimLedger)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Four-category taxonomy strictly enforced."
@@ -1699,7 +1699,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§17",
             "title": "Root-Cause Analytical Pathway",
             "requirement": "Investigate question sequence from raw material to cooking. Treat as investigative sequence, not predetermined causality.",
-            "implementation_module": "src.harakutir.claims",
+            "implementation_module": "src.finnoaq.claims",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Sequence explicitly documented as investigative only."
@@ -1708,7 +1708,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§18",
             "title": "Phase 2 Technology Recommendations",
             "requirement": "Evidence-dependent high-level recommendations across 8 candidate families: Controlled Hydration, Hydrothermal, Thermal Pre-Treatment, Food-Grade Conditioning, Enzyme-Assisted, Controlled Drying, Extrusion, Combinations. Exclude commercial optimization from Phase 1.",
-            "implementation_module": "src.harakutir.oed (Phase2CandidateTechnologies)",
+            "implementation_module": "src.finnoaq.oed (Phase2CandidateTechnologies)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "All 8 technology candidate matrices detailed with risk/benefit analysis."
@@ -1717,7 +1717,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§19",
             "title": "Quality Control & Statistical Requirements",
             "requirement": "Duplicate/triplicate measurements, standardized preparation, analytical controls, calibration, defined methods, raw/summary data, Welch's t-test, Mann-Whitney, multiple comparison correction, effect sizes.",
-            "implementation_module": "src.harakutir.statistics",
+            "implementation_module": "src.finnoaq.statistics",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Rigorous statistical engine implemented with multiple comparison handling."
@@ -1726,7 +1726,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§20",
             "title": "Integrated Data Analysis",
             "requirement": "Integrate physical, chemical, structural, hydration, thermal, mineral, texture, and cooking data into coherent synthesis.",
-            "implementation_module": "src.harakutir.analysis",
+            "implementation_module": "src.finnoaq.analysis",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Integrated multi-domain synthesis framework built."
@@ -1735,7 +1735,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§21",
             "title": "Key Deliverables",
             "requirement": "Deliver: Sample Characterization, Proximate, Starch/Gelatinization, Hydration/WAI, Structural, Pectin/Cell-wall, Mineral/Phytate, Texture, Cooking, Benchmarking Matrix, Root-Cause Assessment, Phase 2 Recommendations, Executive Summary, Final Technical Report.",
-            "implementation_module": "src.harakutir.reports",
+            "implementation_module": "src.finnoaq.reports",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "All 14 SOW deliverables fully accounted for in report generator."
@@ -1744,7 +1744,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§22",
             "title": "Final Technical Report Structure",
             "requirement": "Follow 23-part report structure from Executive Summary to Raw/Summary Data Appendix.",
-            "implementation_module": "src.harakutir.reports (GenerateTechnicalReport)",
+            "implementation_module": "src.finnoaq.reports (GenerateTechnicalReport)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "All 23 parts implemented in Markdown and DOCX generators."
@@ -1753,7 +1753,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§23",
             "title": "Preferred Laboratory / R&D Partners",
             "requirement": "Treat Eureka Analytical, Mitra S.K., CSIR-CGCRI, IIT Kharagpur as candidate providers for RFQ/quotation, not confirmed contractors.",
-            "implementation_module": "src.harakutir.schemas (LabRegistry)",
+            "implementation_module": "src.finnoaq.schemas (LabRegistry)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Candidate labs registered with selection criteria and RFQ requirements."
@@ -1762,7 +1762,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§24",
             "title": "Indicative Technical Cost Structure",
             "requirement": "Total indicative professional fee in source: ₹1,73,000 + GST across 11 components. Treat as indicative budget reference, not verified invoice.",
-            "implementation_module": "configs/default_config.json, src.harakutir.oed",
+            "implementation_module": "configs/default_config.json, src.finnoaq.oed",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Indicative cost structure embedded in OED and financial tracking."
@@ -1771,7 +1771,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§25",
             "title": "Indicative Cost Range for Individual Testing",
             "requirement": "Preserve indicative test ranges (₹2,000 - ₹10,000 / sample across 8 testing areas). Do not treat as confirmed current quotes.",
-            "implementation_module": "configs/default_config.json, src.harakutir.oed",
+            "implementation_module": "configs/default_config.json, src.finnoaq.oed",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Assay cost ranges parameterized in OED utility calculations."
@@ -1816,7 +1816,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§30",
             "title": "Sample Handling & Retention",
             "requirement": "Traceable sample receipt/coding, separate lot handling, consistent documented storage, reference retention samples, retention/disposal agreement, deviation logging.",
-            "implementation_module": "src.harakutir.schemas (SampleTraceability)",
+            "implementation_module": "src.finnoaq.schemas (SampleTraceability)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Traceability schema requires unique lot codes and retention volume logging."
@@ -1825,7 +1825,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§31",
             "title": "Confidentiality & Data Ownership",
             "requirement": "All data, samples, results confidential to client. No external disclosure without written consent. Third party outsourcing requires equivalent confidentiality.",
-            "implementation_module": "AGENTS.md, src.harakutir.security",
+            "implementation_module": "AGENTS.md, src.finnoaq.security",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Local-only execution policy enforced; external network uploads blocked."
@@ -1843,7 +1843,7 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§33",
             "title": "Phase 1 Success Definition",
             "requirement": "Success is defined by evidence quality, documented comparison, objective cooking endpoint, replicated statistics, integrated root-cause classification, and prioritized Phase 2 candidates—not by cooking-time reduction.",
-            "implementation_module": "src.harakutir.reports",
+            "implementation_module": "src.finnoaq.reports",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Success criteria decoupled from cooking-time reduction."
@@ -1852,16 +1852,16 @@ def get_sow_sections_matrix() -> List[Dict[str, Any]]:
             "section": "§34",
             "title": "Proposed Phase 2 Direction",
             "requirement": "Phase 2 scoped, budgeted, and approved separately. May cover mechanism validation, lab trials of candidate treatments, optimization, quality/nutrition, and subsequent pilot work.",
-            "implementation_module": "src.harakutir.oed (Phase2CandidateTechnologies)",
+            "implementation_module": "src.finnoaq.oed (Phase2CandidateTechnologies)",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Phase 2 roadmapped as separate scoped program."
         },
         {
             "section": "§35",
-            "title": "Project Contact — Harakutir",
+            "title": "Project Contact — FinnoaQ",
             "requirement": "Use contact reference only where appropriate from source. Do not needlessly expose phone, personal address or email in code, logs, or public artifacts.",
-            "implementation_module": "src.harakutir.reports",
+            "implementation_module": "src.finnoaq.reports",
             "status": "complete_framework",
             "evidence_status": "DATA_READINESS_ONLY",
             "reviewer_notes": "Personal contact details masked/protected in logs and runtime code."

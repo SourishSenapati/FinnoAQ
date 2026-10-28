@@ -41,7 +41,7 @@ Our audit traced this discrepancy across project git history and CAD script iter
    - This design was subsequently superseded because four separate tanks increased valve count, floor area, and CIP complexity.
 
 2. **Origin of the $6.9115\text{ m}^3$ Geometry:**
-   - In report `CONCEPTUAL_FEED_WORK_PLAN_AND_SCENARIOS.md` and `src/harakutir/plant_design_15tpd.py`, the soaking battery was optimized to **two alternating large tanks** (`TK-101A` and `TK-101B`).
+   - In report `CONCEPTUAL_FEED_WORK_PLAN_AND_SCENARIOS.md` and `src/finnoaq/plant_design_15tpd.py`, the soaking battery was optimized to **two alternating large tanks** (`TK-101A` and `TK-101B`).
    - Sizing: Outside Diameter $D_o = 2.000\text{ m}$ (Radius $R_o = 1.000\text{ m}$), Straight Cylindrical Shell Height $H = 2.200\text{ m}$.
    - Solid Cylindrical Displacement Volume:
      $$V_{\text{displacement}} = \pi \times R_o^2 \times H = \pi \times (1.000)^2 \times 2.200 = \mathbf{6.9115038\text{ m}^3}$$

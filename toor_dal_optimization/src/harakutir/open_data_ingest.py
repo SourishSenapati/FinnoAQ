@@ -1,6 +1,6 @@
 """
-Harakutir Open Data Ingestion & Normalization Engine.
-Adheres to Harakutir Omega v4 Section 5.
+FinnoaQ Open Data Ingestion & Normalization Engine.
+Adheres to FinnoaQ Omega v4 Section 5.
 Ingests published literature datasets and official standards with strict unit normalization and data quality checks.
 """
 
@@ -8,7 +8,7 @@ import os
 import json
 from typing import Dict, Any, List, Optional
 from datetime import datetime, timezone
-from src.harakutir.schemas import DatasetKind
+from src.finnoaq.schemas import DatasetKind
 
 
 class OpenDataIngestionEngine:

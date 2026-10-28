@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461331.0249189814
+2461331.665949074
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461331.0249189814
+2461331.665949074
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-121
+1BA
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{1A878ECF-443C-4912-9628-51D094A99083}
+{1EBA82D3-BA5C-4230-AEA4-79C87CEAB595}
   9
 $VERSIONGUID
   2
-{9DDC933F-B88C-426C-9E72-5A834FC7761B}
+{9F89C024-4BAA-4336-9BDB-24CD4B2CDD21}
   9
 $EXTNAMES
 290
@@ -1327,9 +1327,9 @@ ISM
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -1343,9 +1343,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-11E
+1B7
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-11F
+1B8
 330
 3
 100
@@ -9195,6 +9195,44 @@ AcDbEntity
   8
 BORDER_TITLE
 370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+135.0
+ 10
+290.0
+ 20
+135.0
+ 10
+290.0
+ 20
+67.0
+ 10
+25.0
+ 20
+67.0
+ 10
+25.0
+ 20
+135.0
+  0
+LWPOLYLINE
+  5
+116
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
 35
 100
 AcDbPolyline
@@ -9205,55 +9243,25 @@ AcDbPolyline
  10
 25.0
  20
-125.0
+135.0
  10
-565.0
+290.0
  20
-125.0
+135.0
  10
-565.0
+290.0
  20
-70.0
- 10
-25.0
- 20
-70.0
+126.0
  10
 25.0
  20
-125.0
+126.0
+ 10
+25.0
+ 20
+135.0
   0
 TEXT
-  5
-116
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-29.0
- 20
-118.0
- 30
-0.0
- 40
-2.2
-  1
-ZLD TRIPLE-EFFECT EVAPORATOR OPERATING SPECIFICATIONS & INSTRUMENTATION:
- 11
-29.0
- 21
-118.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
   5
 117
 330
@@ -9263,21 +9271,27 @@ AcDbEntity
   8
 BORDER_TITLE
 100
-AcDbLine
+AcDbText
  10
-25.0
+33.0
  20
-115.0
+128.5
  30
 0.0
+ 40
+2.2
+  1
+ZLD TRIPLE-EFFECT THERMAL PERFORMANCE & MASS BALANCE SCHEDULE
  11
-565.0
+33.0
  21
-115.0
+128.5
  31
 0.0
+100
+AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 118
 330
@@ -9285,27 +9299,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-29.0
+25.0
  20
-108.0
- 30
-0.0
- 40
-1.7
-  1
-1. Feed Rate: 1,018.75 kg/h spent soak liquor @ 0.63 wt% dissolved organic/mineral solids.
- 11
-29.0
- 21
-108.0
- 31
-0.0
-100
-AcDbText
+126.0
+ 10
+63.0
+ 20
+126.0
+ 10
+63.0
+ 20
+118.0
+ 10
+25.0
+ 20
+118.0
+ 10
+25.0
+ 20
+126.0
   0
 TEXT
   5
@@ -9315,29 +9337,29 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-29.0
+26.2
  20
-101.2
+120.5
  30
 0.0
  40
-1.7
+1.5
   1
-2. Evaporation Capacity: 980.0 kg/h clean distillate recovery (96.2% volumetric water recovery rate).
+EFFECT / UNIT
  11
-29.0
+26.2
  21
-101.2
+120.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 11A
 330
@@ -9345,27 +9367,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-29.0
+63.0
  20
-94.4
- 30
-0.0
- 40
-1.7
-  1
-3. Steam Economy: 2.38 kg H2O evaporated per kg 3.0 bar g motive steam supplied (0.42 kg steam / kg H2O).
- 11
-29.0
- 21
-94.4
- 31
-0.0
-100
-AcDbText
+126.0
+ 10
+91.0
+ 20
+126.0
+ 10
+91.0
+ 20
+118.0
+ 10
+63.0
+ 20
+118.0
+ 10
+63.0
+ 20
+126.0
   0
 TEXT
   5
@@ -9375,29 +9405,29 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-29.0
+64.2
  20
-87.6
+120.5
  30
 0.0
  40
-1.7
+1.5
   1
-4. Distillate Quality: Total Dissolved Solids (TDS) < 25 ppm, Conductivity < 40 uS/cm (Recycled directly to soak process).
+OP. TEMP
  11
-29.0
+64.2
  21
-87.6
+120.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 11C
 330
@@ -9405,27 +9435,35 @@ TEXT
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-29.0
+91.0
  20
-80.8
- 30
-0.0
- 40
-1.7
-  1
-5. Instrumentation: Full ISA-5.1 control loops (TIC-401 steam feed, LIC-401/402 inter-effect, DIC-403 density bleed).
- 11
-29.0
- 21
-80.8
- 31
-0.0
-100
-AcDbText
+126.0
+ 10
+119.0
+ 20
+126.0
+ 10
+119.0
+ 20
+118.0
+ 10
+91.0
+ 20
+118.0
+ 10
+91.0
+ 20
+126.0
   0
 TEXT
   5
@@ -9435,23 +9473,5229 @@ TEXT
 100
 AcDbEntity
   8
+BORDER_TITLE
+100
+AcDbText
+ 10
+92.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+ABS PRESS
+ 11
+92.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+126.0
+ 10
+157.0
+ 20
+126.0
+ 10
+157.0
+ 20
+118.0
+ 10
+119.0
+ 20
+118.0
+ 10
+119.0
+ 20
+126.0
+  0
+TEXT
+  5
+11F
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+120.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+EVAP RATE
+ 11
+120.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+126.0
+ 10
+205.0
+ 20
+126.0
+ 10
+205.0
+ 20
+118.0
+ 10
+157.0
+ 20
+118.0
+ 10
+157.0
+ 20
+126.0
+  0
+TEXT
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+158.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+FEED / OUTLET CONC
+ 11
+158.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+122
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+126.0
+ 10
+240.0
+ 20
+126.0
+ 10
+240.0
+ 20
+118.0
+ 10
+205.0
+ 20
+118.0
+ 10
+205.0
+ 20
+126.0
+  0
+TEXT
+  5
+123
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+206.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+HEAT DUTY
+ 11
+206.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+124
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+126.0
+ 10
+290.0
+ 20
+126.0
+ 10
+290.0
+ 20
+118.0
+ 10
+240.0
+ 20
+118.0
+ 10
+240.0
+ 20
+126.0
+  0
+TEXT
+  5
+125
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+241.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+SPECIFIC STEAM
+ 11
+241.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+126
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+118.0
+ 10
+63.0
+ 20
+118.0
+ 10
+63.0
+ 20
+108.0
+ 10
+25.0
+ 20
+108.0
+ 10
+25.0
+ 20
+118.0
+  0
+TEXT
+  5
+127
+330
+17
+100
+AcDbEntity
+  8
 ANNOTATION
 100
 AcDbText
  10
-29.0
+26.2
  20
-74.0
+111.5
  30
 0.0
  40
-1.7
+1.4
   1
-6. Concentrate Discharge: 38.75 kg/h heavy slurry (40% total solids) to solar crystallization pan.
+1st Effect (EV-101A)
  11
-29.0
+26.2
  21
-74.0
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+128
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+63.0
+ 20
+118.0
+ 10
+91.0
+ 20
+118.0
+ 10
+91.0
+ 20
+108.0
+ 10
+63.0
+ 20
+108.0
+ 10
+63.0
+ 20
+118.0
+  0
+TEXT
+  5
+129
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+64.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+85.0 deg C
+ 11
+64.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+91.0
+ 20
+118.0
+ 10
+119.0
+ 20
+118.0
+ 10
+119.0
+ 20
+108.0
+ 10
+91.0
+ 20
+108.0
+ 10
+91.0
+ 20
+118.0
+  0
+TEXT
+  5
+12B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+92.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.58 bar a
+ 11
+92.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+118.0
+ 10
+157.0
+ 20
+118.0
+ 10
+157.0
+ 20
+108.0
+ 10
+119.0
+ 20
+108.0
+ 10
+119.0
+ 20
+118.0
+  0
+TEXT
+  5
+12D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+120.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+340.0 kg/h
+ 11
+120.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+118.0
+ 10
+205.0
+ 20
+118.0
+ 10
+205.0
+ 20
+108.0
+ 10
+157.0
+ 20
+108.0
+ 10
+157.0
+ 20
+118.0
+  0
+TEXT
+  5
+12F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.63% -> 0.95% wt
+ 11
+158.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+118.0
+ 10
+240.0
+ 20
+118.0
+ 10
+240.0
+ 20
+108.0
+ 10
+205.0
+ 20
+108.0
+ 10
+205.0
+ 20
+118.0
+  0
+TEXT
+  5
+131
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+206.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+225.4 kW
+ 11
+206.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+132
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+118.0
+ 10
+290.0
+ 20
+118.0
+ 10
+290.0
+ 20
+108.0
+ 10
+240.0
+ 20
+108.0
+ 10
+240.0
+ 20
+118.0
+  0
+TEXT
+  5
+133
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+241.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.42 kg steam / kg H2O
+ 11
+241.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+134
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+108.0
+ 10
+63.0
+ 20
+108.0
+ 10
+63.0
+ 20
+98.0
+ 10
+25.0
+ 20
+98.0
+ 10
+25.0
+ 20
+108.0
+  0
+TEXT
+  5
+135
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+2nd Effect (EV-101B)
+ 11
+26.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+136
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+63.0
+ 20
+108.0
+ 10
+91.0
+ 20
+108.0
+ 10
+91.0
+ 20
+98.0
+ 10
+63.0
+ 20
+98.0
+ 10
+63.0
+ 20
+108.0
+  0
+TEXT
+  5
+137
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+64.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+70.0 deg C
+ 11
+64.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+138
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+91.0
+ 20
+108.0
+ 10
+119.0
+ 20
+108.0
+ 10
+119.0
+ 20
+98.0
+ 10
+91.0
+ 20
+98.0
+ 10
+91.0
+ 20
+108.0
+  0
+TEXT
+  5
+139
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+92.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.31 bar a
+ 11
+92.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+108.0
+ 10
+157.0
+ 20
+108.0
+ 10
+157.0
+ 20
+98.0
+ 10
+119.0
+ 20
+98.0
+ 10
+119.0
+ 20
+108.0
+  0
+TEXT
+  5
+13B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+120.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+325.0 kg/h
+ 11
+120.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+108.0
+ 10
+205.0
+ 20
+108.0
+ 10
+205.0
+ 20
+98.0
+ 10
+157.0
+ 20
+98.0
+ 10
+157.0
+ 20
+108.0
+  0
+TEXT
+  5
+13D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.95% -> 1.88% wt
+ 11
+158.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+108.0
+ 10
+240.0
+ 20
+108.0
+ 10
+240.0
+ 20
+98.0
+ 10
+205.0
+ 20
+98.0
+ 10
+205.0
+ 20
+108.0
+  0
+TEXT
+  5
+13F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+206.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+215.1 kW
+ 11
+206.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+140
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+108.0
+ 10
+290.0
+ 20
+108.0
+ 10
+290.0
+ 20
+98.0
+ 10
+240.0
+ 20
+98.0
+ 10
+240.0
+ 20
+108.0
+  0
+TEXT
+  5
+141
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+241.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+Re-uses 1st effect vapor
+ 11
+241.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+142
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+98.0
+ 10
+63.0
+ 20
+98.0
+ 10
+63.0
+ 20
+88.0
+ 10
+25.0
+ 20
+88.0
+ 10
+25.0
+ 20
+98.0
+  0
+TEXT
+  5
+143
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+3rd Effect (EV-101C)
+ 11
+26.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+144
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+63.0
+ 20
+98.0
+ 10
+91.0
+ 20
+98.0
+ 10
+91.0
+ 20
+88.0
+ 10
+63.0
+ 20
+88.0
+ 10
+63.0
+ 20
+98.0
+  0
+TEXT
+  5
+145
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+64.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+55.0 deg C
+ 11
+64.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+146
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+91.0
+ 20
+98.0
+ 10
+119.0
+ 20
+98.0
+ 10
+119.0
+ 20
+88.0
+ 10
+91.0
+ 20
+88.0
+ 10
+91.0
+ 20
+98.0
+  0
+TEXT
+  5
+147
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+92.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.16 bar a
+ 11
+92.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+148
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+98.0
+ 10
+157.0
+ 20
+98.0
+ 10
+157.0
+ 20
+88.0
+ 10
+119.0
+ 20
+88.0
+ 10
+119.0
+ 20
+98.0
+  0
+TEXT
+  5
+149
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+120.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+315.0 kg/h
+ 11
+120.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+98.0
+ 10
+205.0
+ 20
+98.0
+ 10
+205.0
+ 20
+88.0
+ 10
+157.0
+ 20
+88.0
+ 10
+157.0
+ 20
+98.0
+  0
+TEXT
+  5
+14B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+1.88% -> 40.0% wt
+ 11
+158.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+98.0
+ 10
+240.0
+ 20
+98.0
+ 10
+240.0
+ 20
+88.0
+ 10
+205.0
+ 20
+88.0
+ 10
+205.0
+ 20
+98.0
+  0
+TEXT
+  5
+14D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+206.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+208.7 kW
+ 11
+206.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+98.0
+ 10
+290.0
+ 20
+98.0
+ 10
+290.0
+ 20
+88.0
+ 10
+240.0
+ 20
+88.0
+ 10
+240.0
+ 20
+98.0
+  0
+TEXT
+  5
+14F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+241.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+Re-uses 2nd effect vapor
+ 11
+241.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+150
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+88.0
+ 10
+63.0
+ 20
+88.0
+ 10
+63.0
+ 20
+78.0
+ 10
+25.0
+ 20
+78.0
+ 10
+25.0
+ 20
+88.0
+  0
+TEXT
+  5
+151
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+Condenser (HE-103)
+ 11
+26.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+152
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+63.0
+ 20
+88.0
+ 10
+91.0
+ 20
+88.0
+ 10
+91.0
+ 20
+78.0
+ 10
+63.0
+ 20
+78.0
+ 10
+63.0
+ 20
+88.0
+  0
+TEXT
+  5
+153
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+64.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+38.0 deg C
+ 11
+64.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+154
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+91.0
+ 20
+88.0
+ 10
+119.0
+ 20
+88.0
+ 10
+119.0
+ 20
+78.0
+ 10
+91.0
+ 20
+78.0
+ 10
+91.0
+ 20
+88.0
+  0
+TEXT
+  5
+155
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+92.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.14 bar a
+ 11
+92.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+156
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+88.0
+ 10
+157.0
+ 20
+88.0
+ 10
+157.0
+ 20
+78.0
+ 10
+119.0
+ 20
+78.0
+ 10
+119.0
+ 20
+88.0
+  0
+TEXT
+  5
+157
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+120.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+315.0 kg/h
+ 11
+120.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+158
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+88.0
+ 10
+205.0
+ 20
+88.0
+ 10
+205.0
+ 20
+78.0
+ 10
+157.0
+ 20
+78.0
+ 10
+157.0
+ 20
+88.0
+  0
+TEXT
+  5
+159
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+Distillate TDS < 25 ppm
+ 11
+158.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+88.0
+ 10
+240.0
+ 20
+88.0
+ 10
+240.0
+ 20
+78.0
+ 10
+205.0
+ 20
+78.0
+ 10
+205.0
+ 20
+88.0
+  0
+TEXT
+  5
+15B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+206.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+212.0 kW
+ 11
+206.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+88.0
+ 10
+290.0
+ 20
+88.0
+ 10
+290.0
+ 20
+78.0
+ 10
+240.0
+ 20
+78.0
+ 10
+240.0
+ 20
+88.0
+  0
+TEXT
+  5
+15D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+241.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+Cooling water 32 -> 38 deg C
+ 11
+241.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+78.0
+ 10
+63.0
+ 20
+78.0
+ 10
+63.0
+ 20
+68.0
+ 10
+25.0
+ 20
+68.0
+ 10
+25.0
+ 20
+78.0
+  0
+TEXT
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+OVERALL ZLD SYSTEM
+ 11
+26.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+63.0
+ 20
+78.0
+ 10
+91.0
+ 20
+78.0
+ 10
+91.0
+ 20
+68.0
+ 10
+63.0
+ 20
+68.0
+ 10
+63.0
+ 20
+78.0
+  0
+TEXT
+  5
+161
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+64.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+Net dT=30C
+ 11
+64.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+162
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+91.0
+ 20
+78.0
+ 10
+119.0
+ 20
+78.0
+ 10
+119.0
+ 20
+68.0
+ 10
+91.0
+ 20
+68.0
+ 10
+91.0
+ 20
+78.0
+  0
+TEXT
+  5
+163
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+92.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+PR = 2.38
+ 11
+92.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+119.0
+ 20
+78.0
+ 10
+157.0
+ 20
+78.0
+ 10
+157.0
+ 20
+68.0
+ 10
+119.0
+ 20
+68.0
+ 10
+119.0
+ 20
+78.0
+  0
+TEXT
+  5
+165
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+120.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+980.0 kg/h
+ 11
+120.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+166
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+157.0
+ 20
+78.0
+ 10
+205.0
+ 20
+78.0
+ 10
+205.0
+ 20
+68.0
+ 10
+157.0
+ 20
+68.0
+ 10
+157.0
+ 20
+78.0
+  0
+TEXT
+  5
+167
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+158.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+96.2% Water Recovery
+ 11
+158.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+168
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+205.0
+ 20
+78.0
+ 10
+240.0
+ 20
+78.0
+ 10
+240.0
+ 20
+68.0
+ 10
+205.0
+ 20
+68.0
+ 10
+205.0
+ 20
+78.0
+  0
+TEXT
+  5
+169
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+206.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+649.2 kW
+ 11
+206.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+240.0
+ 20
+78.0
+ 10
+290.0
+ 20
+78.0
+ 10
+290.0
+ 20
+68.0
+ 10
+240.0
+ 20
+68.0
+ 10
+240.0
+ 20
+78.0
+  0
+TEXT
+  5
+16B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+241.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.00 m3/day Liquid Effluent
+ 11
+241.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16C
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+135.0
+ 10
+565.0
+ 20
+135.0
+ 10
+565.0
+ 20
+67.0
+ 10
+300.0
+ 20
+67.0
+ 10
+300.0
+ 20
+135.0
+  0
+LWPOLYLINE
+  5
+16D
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+135.0
+ 10
+565.0
+ 20
+135.0
+ 10
+565.0
+ 20
+126.0
+ 10
+300.0
+ 20
+126.0
+ 10
+300.0
+ 20
+135.0
+  0
+TEXT
+  5
+16E
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+312.0
+ 20
+128.5
+ 30
+0.0
+ 40
+2.2
+  1
+ZLD EVAPORATOR INSTRUMENTATION & ISA-5.1 CONTROL LOOPS
+ 11
+312.0
+ 21
+128.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16F
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+126.0
+ 10
+328.0
+ 20
+126.0
+ 10
+328.0
+ 20
+118.0
+ 10
+300.0
+ 20
+118.0
+ 10
+300.0
+ 20
+126.0
+  0
+TEXT
+  5
+170
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+301.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+LOOP TAG
+ 11
+301.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+171
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+126.0
+ 10
+380.0
+ 20
+126.0
+ 10
+380.0
+ 20
+118.0
+ 10
+328.0
+ 20
+118.0
+ 10
+328.0
+ 20
+126.0
+  0
+TEXT
+  5
+172
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+329.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+MEASURED PARAMETER
+ 11
+329.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+173
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+126.0
+ 10
+432.0
+ 20
+126.0
+ 10
+432.0
+ 20
+118.0
+ 10
+380.0
+ 20
+118.0
+ 10
+380.0
+ 20
+126.0
+  0
+TEXT
+  5
+174
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+381.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+PRIMARY SENSOR
+ 11
+381.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+175
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+126.0
+ 10
+484.0
+ 20
+126.0
+ 10
+484.0
+ 20
+118.0
+ 10
+432.0
+ 20
+118.0
+ 10
+432.0
+ 20
+126.0
+  0
+TEXT
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+433.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+CONTROL ELEMENT
+ 11
+433.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+177
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+126.0
+ 10
+520.0
+ 20
+126.0
+ 10
+520.0
+ 20
+118.0
+ 10
+484.0
+ 20
+118.0
+ 10
+484.0
+ 20
+126.0
+  0
+TEXT
+  5
+178
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+485.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+FAIL ACTION
+ 11
+485.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+179
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+126.0
+ 10
+565.0
+ 20
+126.0
+ 10
+565.0
+ 20
+118.0
+ 10
+520.0
+ 20
+118.0
+ 10
+520.0
+ 20
+126.0
+  0
+TEXT
+  5
+17A
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+521.2
+ 20
+120.5
+ 30
+0.0
+ 40
+1.5
+  1
+NORMAL SETPOINT
+ 11
+521.2
+ 21
+120.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+118.0
+ 10
+328.0
+ 20
+118.0
+ 10
+328.0
+ 20
+108.0
+ 10
+300.0
+ 20
+108.0
+ 10
+300.0
+ 20
+118.0
+  0
+TEXT
+  5
+17C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+301.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+TIC-401
+ 11
+301.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+118.0
+ 10
+380.0
+ 20
+118.0
+ 10
+380.0
+ 20
+108.0
+ 10
+328.0
+ 20
+108.0
+ 10
+328.0
+ 20
+118.0
+  0
+TEXT
+  5
+17E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+329.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+1st Effect Calandria Temp
+ 11
+329.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+118.0
+ 10
+432.0
+ 20
+118.0
+ 10
+432.0
+ 20
+108.0
+ 10
+380.0
+ 20
+108.0
+ 10
+380.0
+ 20
+118.0
+  0
+TEXT
+  5
+180
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+381.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+Dual RTD PT100 (3-wire)
+ 11
+381.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+181
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+118.0
+ 10
+484.0
+ 20
+118.0
+ 10
+484.0
+ 20
+108.0
+ 10
+432.0
+ 20
+108.0
+ 10
+432.0
+ 20
+118.0
+  0
+TEXT
+  5
+182
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+433.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+TCV-401 Steam Globe Valve
+ 11
+433.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+183
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+118.0
+ 10
+520.0
+ 20
+118.0
+ 10
+520.0
+ 20
+108.0
+ 10
+484.0
+ 20
+108.0
+ 10
+484.0
+ 20
+118.0
+  0
+TEXT
+  5
+184
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+485.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+Fail Closed (FC)
+ 11
+485.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+185
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+118.0
+ 10
+565.0
+ 20
+118.0
+ 10
+565.0
+ 20
+108.0
+ 10
+520.0
+ 20
+108.0
+ 10
+520.0
+ 20
+118.0
+  0
+TEXT
+  5
+186
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+521.2
+ 20
+111.5
+ 30
+0.0
+ 40
+1.4
+  1
+85.0 deg C +/- 0.5 deg C
+ 11
+521.2
+ 21
+111.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+187
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+108.0
+ 10
+328.0
+ 20
+108.0
+ 10
+328.0
+ 20
+98.0
+ 10
+300.0
+ 20
+98.0
+ 10
+300.0
+ 20
+108.0
+  0
+TEXT
+  5
+188
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+301.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+LIC-401
+ 11
+301.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+189
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+108.0
+ 10
+380.0
+ 20
+108.0
+ 10
+380.0
+ 20
+98.0
+ 10
+328.0
+ 20
+98.0
+ 10
+328.0
+ 20
+108.0
+  0
+TEXT
+  5
+18A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+329.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+1st Effect Sump Level
+ 11
+329.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+108.0
+ 10
+432.0
+ 20
+108.0
+ 10
+432.0
+ 20
+98.0
+ 10
+380.0
+ 20
+98.0
+ 10
+380.0
+ 20
+108.0
+  0
+TEXT
+  5
+18C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+381.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+HART DP Level Transmitter
+ 11
+381.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+108.0
+ 10
+484.0
+ 20
+108.0
+ 10
+484.0
+ 20
+98.0
+ 10
+432.0
+ 20
+98.0
+ 10
+432.0
+ 20
+108.0
+  0
+TEXT
+  5
+18E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+433.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+LCV-401 Inter-Stage Valve
+ 11
+433.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+108.0
+ 10
+520.0
+ 20
+108.0
+ 10
+520.0
+ 20
+98.0
+ 10
+484.0
+ 20
+98.0
+ 10
+484.0
+ 20
+108.0
+  0
+TEXT
+  5
+190
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+485.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+Fail Closed (FC)
+ 11
+485.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+191
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+108.0
+ 10
+565.0
+ 20
+108.0
+ 10
+565.0
+ 20
+98.0
+ 10
+520.0
+ 20
+98.0
+ 10
+520.0
+ 20
+108.0
+  0
+TEXT
+  5
+192
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+521.2
+ 20
+101.5
+ 30
+0.0
+ 40
+1.4
+  1
+450 mm (50% Sump Height)
+ 11
+521.2
+ 21
+101.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+193
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+98.0
+ 10
+328.0
+ 20
+98.0
+ 10
+328.0
+ 20
+88.0
+ 10
+300.0
+ 20
+88.0
+ 10
+300.0
+ 20
+98.0
+  0
+TEXT
+  5
+194
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+301.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+LIC-402
+ 11
+301.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+195
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+98.0
+ 10
+380.0
+ 20
+98.0
+ 10
+380.0
+ 20
+88.0
+ 10
+328.0
+ 20
+88.0
+ 10
+328.0
+ 20
+98.0
+  0
+TEXT
+  5
+196
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+329.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+2nd Effect Sump Level
+ 11
+329.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+197
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+98.0
+ 10
+432.0
+ 20
+98.0
+ 10
+432.0
+ 20
+88.0
+ 10
+380.0
+ 20
+88.0
+ 10
+380.0
+ 20
+98.0
+  0
+TEXT
+  5
+198
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+381.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+HART DP Level Transmitter
+ 11
+381.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+199
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+98.0
+ 10
+484.0
+ 20
+98.0
+ 10
+484.0
+ 20
+88.0
+ 10
+432.0
+ 20
+88.0
+ 10
+432.0
+ 20
+98.0
+  0
+TEXT
+  5
+19A
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+433.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+LCV-402 Inter-Stage Valve
+ 11
+433.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19B
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+98.0
+ 10
+520.0
+ 20
+98.0
+ 10
+520.0
+ 20
+88.0
+ 10
+484.0
+ 20
+88.0
+ 10
+484.0
+ 20
+98.0
+  0
+TEXT
+  5
+19C
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+485.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+Fail Closed (FC)
+ 11
+485.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19D
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+98.0
+ 10
+565.0
+ 20
+98.0
+ 10
+565.0
+ 20
+88.0
+ 10
+520.0
+ 20
+88.0
+ 10
+520.0
+ 20
+98.0
+  0
+TEXT
+  5
+19E
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+521.2
+ 20
+91.5
+ 30
+0.0
+ 40
+1.4
+  1
+450 mm (50% Sump Height)
+ 11
+521.2
+ 21
+91.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19F
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+88.0
+ 10
+328.0
+ 20
+88.0
+ 10
+328.0
+ 20
+78.0
+ 10
+300.0
+ 20
+78.0
+ 10
+300.0
+ 20
+88.0
+  0
+TEXT
+  5
+1A0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+301.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+DIC-403
+ 11
+301.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+88.0
+ 10
+380.0
+ 20
+88.0
+ 10
+380.0
+ 20
+78.0
+ 10
+328.0
+ 20
+78.0
+ 10
+328.0
+ 20
+88.0
+  0
+TEXT
+  5
+1A2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+329.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+3rd Effect Slurry Density
+ 11
+329.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+88.0
+ 10
+432.0
+ 20
+88.0
+ 10
+432.0
+ 20
+78.0
+ 10
+380.0
+ 20
+78.0
+ 10
+380.0
+ 20
+88.0
+  0
+TEXT
+  5
+1A4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+381.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+Coriolis Mass/Density Meter
+ 11
+381.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+88.0
+ 10
+484.0
+ 20
+88.0
+ 10
+484.0
+ 20
+78.0
+ 10
+432.0
+ 20
+78.0
+ 10
+432.0
+ 20
+88.0
+  0
+TEXT
+  5
+1A6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+433.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+LCV-403 Concentrate Bleed
+ 11
+433.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A7
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+88.0
+ 10
+520.0
+ 20
+88.0
+ 10
+520.0
+ 20
+78.0
+ 10
+484.0
+ 20
+78.0
+ 10
+484.0
+ 20
+88.0
+  0
+TEXT
+  5
+1A8
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+485.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+Fail Closed (FC)
+ 11
+485.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A9
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+88.0
+ 10
+565.0
+ 20
+88.0
+ 10
+565.0
+ 20
+78.0
+ 10
+520.0
+ 20
+78.0
+ 10
+520.0
+ 20
+88.0
+  0
+TEXT
+  5
+1AA
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+521.2
+ 20
+81.5
+ 30
+0.0
+ 40
+1.4
+  1
+1.185 g/cm3 (40 wt% solids)
+ 11
+521.2
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AB
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+300.0
+ 20
+78.0
+ 10
+328.0
+ 20
+78.0
+ 10
+328.0
+ 20
+68.0
+ 10
+300.0
+ 20
+68.0
+ 10
+300.0
+ 20
+78.0
+  0
+TEXT
+  5
+1AC
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+301.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+PIC-404
+ 11
+301.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AD
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+328.0
+ 20
+78.0
+ 10
+380.0
+ 20
+78.0
+ 10
+380.0
+ 20
+68.0
+ 10
+328.0
+ 20
+68.0
+ 10
+328.0
+ 20
+78.0
+  0
+TEXT
+  5
+1AE
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+329.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+Vacuum Header Pressure
+ 11
+329.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AF
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+380.0
+ 20
+78.0
+ 10
+432.0
+ 20
+78.0
+ 10
+432.0
+ 20
+68.0
+ 10
+380.0
+ 20
+68.0
+ 10
+380.0
+ 20
+78.0
+  0
+TEXT
+  5
+1B0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+381.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+Capacitance Manometer
+ 11
+381.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B1
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+432.0
+ 20
+78.0
+ 10
+484.0
+ 20
+78.0
+ 10
+484.0
+ 20
+68.0
+ 10
+432.0
+ 20
+68.0
+ 10
+432.0
+ 20
+78.0
+  0
+TEXT
+  5
+1B2
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+433.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+PCV-404 Vacuum Bleed Valve
+ 11
+433.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B3
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+484.0
+ 20
+78.0
+ 10
+520.0
+ 20
+78.0
+ 10
+520.0
+ 20
+68.0
+ 10
+484.0
+ 20
+68.0
+ 10
+484.0
+ 20
+78.0
+  0
+TEXT
+  5
+1B4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+485.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+Fail Open (FO)
+ 11
+485.2
+ 21
+71.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B5
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+520.0
+ 20
+78.0
+ 10
+565.0
+ 20
+78.0
+ 10
+565.0
+ 20
+68.0
+ 10
+520.0
+ 20
+68.0
+ 10
+520.0
+ 20
+78.0
+  0
+TEXT
+  5
+1B6
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+521.2
+ 20
+71.5
+ 30
+0.0
+ 40
+1.4
+  1
+0.140 bar a +/- 0.005 bar
+ 11
+521.2
+ 21
+71.5
  31
 0.0
 100
@@ -10547,7 +15791,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-120
+1B9
   0
 DICTIONARYVAR
   5
@@ -10559,7 +15803,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T19:05:53.041566+00:00
+1.4.4 @ 2026-10-17T10:28:58.927177+00:00
   0
 VISUALSTYLE
   5
@@ -17113,7 +22357,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-120
+1B9
 330
 2D
 100
@@ -17121,7 +22365,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T19:05:53.046134+00:00
+1.4.4 @ 2026-10-17T10:28:58.938077+00:00
   0
 ENDSEC
   0

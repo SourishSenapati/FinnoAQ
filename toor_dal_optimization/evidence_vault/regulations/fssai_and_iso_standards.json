@@ -1,0 +1,47 @@
+{
+  "fssai_standards": {
+    "regulation_title": "Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011",
+    "category_2_4_6_15": "Pulses (Dehusked Split Arhar / Toor Dal)",
+    "max_moisture_wb_pct": 14.0,
+    "finnoaq_target_moisture_wb_pct": 10.5,
+    "permitted_gmp_substances": [
+      {
+        "ins_number": "INS 330",
+        "name": "Citric Acid",
+        "functional_class": "Acidity regulator / sequestrant",
+        "limit": "GMP"
+      },
+      {
+        "ins_number": "INS 331(iii)",
+        "name": "Trisodium Citrate",
+        "functional_class": "Acidity regulator / sequestrant / stabilizer",
+        "limit": "GMP"
+      },
+      {
+        "ins_number": "INS 332(ii)",
+        "name": "Tripotassium Citrate",
+        "functional_class": "Acidity regulator / sequestrant / stabilizer",
+        "limit": "GMP"
+      },
+      {
+        "ins_number": "INS 500(ii)",
+        "name": "Sodium Hydrogen Carbonate",
+        "functional_class": "Acidity regulator / raising agent",
+        "limit": "GMP"
+      }
+    ],
+    "processing_aid_vs_retained_additive_distinction": "Under FSSAI rules, a substance used during conditioning that is washed off and has no technical effect in the finished food is a Processing Aid. However, when citrate/K+/Na+ penetrates the cotyledon to chelate middle-lamella calcium and accelerate home cooking, internal pore solute (~250-450 mg/100g) remains in the dry grain. Therefore, for retail/institutional transparency and strict regulatory compliance, the product must either declare 'Acidity Regulators / Sequestrants (INS 332, INS 331, INS 330)' on the ingredient label or be marketed as 'Conditioned Quick-Cooking Toor Dal'."
+  },
+  "iso_sensory_standards": {
+    "standard_id": "ISO 11136:2014 (Amd 1:2020) / Catalogue 50125",
+    "url": "https://www.iso.org/standard/50125.html",
+    "title": "Sensory analysis — Methodology — General guidance for conducting hedonic tests with consumers in a controlled area",
+    "mandatory_controls": [
+      "Blind 3-digit randomized sample codes",
+      "Williams Latin Square counterbalanced serving order",
+      "Controlled temperature (65 +/- 2°C at serving) and standardized dal:water ratio (1:3.5 w/w)",
+      "Evaluation in both unspiced boiled state (worst-case off-note detection) and standardized tadka state",
+      "Minimum N = 72-100 naive regular toor dal consumers for TOST equivalence power >= 90%"
+    ]
+  }
+}

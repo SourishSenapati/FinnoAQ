@@ -1,6 +1,6 @@
 # OPEN-SOURCE SCIENTIFIC EVIDENCE & MARITIME DATA REPORT
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Standard:** Open-Access Verification, SHA-256 Provenance & Zero Hallucination  
 **Controlling Documents:** SOW §1.2 & Corrective Constitution Part III  
 

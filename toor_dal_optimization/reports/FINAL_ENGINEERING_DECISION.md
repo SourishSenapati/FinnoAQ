@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — FINAL ENGINEERING DECISION & STRATEGIC RECOMMENDATION
+# FINNOAQ TOOR DAL — FINAL ENGINEERING DECISION & STRATEGIC RECOMMENDATION
 
 **Document ID:** HKT-DEC-2026-001  
 **Controlling Standard:** Master Execution Prompt Section 15 (Epistemic Governance)  
@@ -79,4 +79,4 @@ The single physical experiment most capable of confirming the treatment, establi
 
 All numerical balances, equipment flowsheets, hardware benchmarks, and uncertainty limits are hereby completed, cross-referenced, and permanently archived in the repository.
 
-The technical foundation for Harakutir Toor Dal is established, verified, and ready for physical kitchen confirmation.
+The technical foundation for FinnoaQ Toor Dal is established, verified, and ready for physical kitchen confirmation.

@@ -1,6 +1,6 @@
 {
-  "title": "Harakutir Pulse Process 5-Sigma Capability & Statistical Quality Report",
-  "generated_at": "2026-10-13T14:56:43.094252+00:00",
+  "title": "Client Organization Pulse Process 5-Sigma Capability & Statistical Quality Report",
+  "generated_at": "2026-10-20T22:55:40.271260+00:00",
   "hardware_platform": {
     "host_cpu": "AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)",
     "discrete_gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
@@ -9,8 +9,8 @@
     "peak_vram_reserved_mb": 182.0
   },
   "total_simulations": 1000000,
-  "runtime_seconds": 0.28,
-  "throughput_eps": 3511511.6,
+  "runtime_seconds": 0.38,
+  "throughput_eps": 2597882.1,
   "five_sigma_metrics": {
     "specification_limits": {
       "nominal_target_whistles": 3.0,

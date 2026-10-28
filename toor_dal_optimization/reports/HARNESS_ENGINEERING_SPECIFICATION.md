@@ -1,6 +1,6 @@
-# HARAKUTIR HARNESS ENGINEERING SPECIFICATION
+# FINNOAQ HARNESS ENGINEERING SPECIFICATION
 ## System of Record, Deterministic Verification Gates & Continuous Loop Orchestration
-**Methodology Reference:** *Learn Harness Engineering* (WalkingLabs) & Harakutir Autonomous Master Prompt  
+**Methodology Reference:** *Learn Harness Engineering* (WalkingLabs) & FinnoaQ Autonomous Master Prompt  
 **Document ID:** HKT-HRN-SPEC-2026-004  
 **Target Hardware:** AMD Ryzen 9 + NVIDIA GeForce RTX 4050 Laptop GPU (CUDA 12.4, Windows-first)  
 **System System of Record:** Local Workspace (`toor_dal_optimization/`)  
@@ -30,7 +30,7 @@ graph TD
     end
 
     subgraph "Verification & Execution Harness"
-        HM[src/harakutir/harness.py: Gate Evaluator G0-G9]
+        HM[src/finnoaq/harness.py: Gate Evaluator G0-G9]
         SUP[scripts/run_supervisor.py: Task Loop Runner]
         AUD[scripts/generate_audit_report.py: Red-Team Auditor]
         PYT[tests/test_acceptance_and_audit.py: 14 Acceptance Gates]
@@ -55,20 +55,20 @@ graph TD
 
 ## 3. Decision Gate Harness (Gates G0–G9)
 
-Implemented in `src/harakutir/harness.py`, the `HarnessEngineeringManager` deterministically evaluates all decision gates:
+Implemented in `src/finnoaq/harness.py`, the `HarnessEngineeringManager` deterministically evaluates all decision gates:
 
 | Gate | Target Function | Evaluation Verification Rules | System-of-Record Evidence |
 | :--- | :--- | :--- | :--- |
 | **G0** | `verify_gate_g0_product_definition()` | Verifies that product format is dry split dal and baseline 3 vs 6 whistle specification is documented. | `reports/COMPLETE_PARAMETER_REGISTRY.md`<br>`reports/INDIAN_VS_TANZANIAN_BENCHMARK_MATRIX.md` |
 | **G1** | `verify_gate_g1_evidence_readiness()` | Enforces cryptographic SHA-256 validation. When physical wet lab data files are missing, gates status as `VERIFIED_DATA_GATED`. Prevents synthetic leakage. | `state/provenance_registry.json`<br>`reports/DATA_READINESS_REPORT.md` |
-| **G2** | `verify_gate_g2_design_space_feasibility()` | Runs Layer 1 hard-constraint screening. Asserts that non-permitted chemicals (e.g. EDTA) and thermal scorching ($T > 220^\circ\text{C}$) are eliminated. | `src/harakutir/virtual_screening.py` |
-| **G3** | `verify_gate_g3_virtual_shortlist()` | Evaluates 5-layer screening and non-dominated Pareto front generation across cooking time, texture, OPEX, and lysine. | `src/harakutir/virtual_screening.py`<br>`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md` |
-| **G4** | `verify_gate_g4_experimental_evidence()` | Verifies that Bayesian Optimal Experimental Design (OED) matrix discriminates H1–H5 within the ₹2.00L ceiling. | `src/harakutir/oed.py`<br>`PROMPT_PHASE2_OED.txt` |
-| **G5** | `verify_gate_g5_prototype_release()` | Verifies Critical-to-Quality (CTQ) acceptance rules: whistles $\le 3.5$, firmness $20 - 24\text{ N}$, hedonic sensory score $\ge 7.8/9.0$. | `src/harakutir/foodoscope.py`<br>`src/harakutir/digital_twin.py` |
-| **G6** | `verify_gate_g6_scale_up_readiness()` | Simulates industrial 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX. Asserts yield $> 95\%$. | `src/harakutir/digital_twin.py` |
+| **G2** | `verify_gate_g2_design_space_feasibility()` | Runs Layer 1 hard-constraint screening. Asserts that non-permitted chemicals (e.g. EDTA) and thermal scorching ($T > 220^\circ\text{C}$) are eliminated. | `src/finnoaq/virtual_screening.py` |
+| **G3** | `verify_gate_g3_virtual_shortlist()` | Evaluates 5-layer screening and non-dominated Pareto front generation across cooking time, texture, OPEX, and lysine. | `src/finnoaq/virtual_screening.py`<br>`reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md` |
+| **G4** | `verify_gate_g4_experimental_evidence()` | Verifies that Bayesian Optimal Experimental Design (OED) matrix discriminates H1–H5 within the ₹2.00L ceiling. | `src/finnoaq/oed.py`<br>`PROMPT_PHASE2_OED.txt` |
+| **G5** | `verify_gate_g5_prototype_release()` | Verifies Critical-to-Quality (CTQ) acceptance rules: whistles $\le 3.5$, firmness $20 - 24\text{ N}$, hedonic sensory score $\ge 7.8/9.0$. | `src/finnoaq/foodoscope.py`<br>`src/finnoaq/digital_twin.py` |
+| **G6** | `verify_gate_g6_scale_up_readiness()` | Simulates industrial 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX. Asserts yield $> 95\%$. | `src/finnoaq/digital_twin.py` |
 | **G7** | `verify_gate_g7_validated_pilot()` | Verifies 25–100 kg pilot trial protocols and verifies strict commercial isolation from Phase 1 diagnostic scope. | `reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md` |
 | **G8** | `verify_gate_g8_manufacturing_release()` | Verifies FSSAI regulatory compliance (moisture $\le 14\%$, $a_w \le 0.65$), HACCP hazard validation, and QA release. | `regulatory_and_lab_compliance_framework.md`<br>`reports/CLOSED_LOOP_PRODUCT_LIFECYCLE.md` |
-| **G9** | `verify_gate_g9_sustained_performance()` | Verifies closed-loop operational twin and Bayesian posterior parameter updating engine (`update_from_experiment`). | `src/harakutir/digital_twin.py`<br>`src/harakutir/harness.py` |
+| **G9** | `verify_gate_g9_sustained_performance()` | Verifies closed-loop operational twin and Bayesian posterior parameter updating engine (`update_from_experiment`). | `src/finnoaq/digital_twin.py`<br>`src/finnoaq/harness.py` |
 
 ---
 

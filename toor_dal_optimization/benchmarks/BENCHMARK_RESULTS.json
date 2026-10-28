@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-10-14T15:15:00+05:30",
+  "hardware": {
+    "cpu": "AMD Ryzen AI 9 365 (10 cores, 20 threads)",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU (6,140 MB VRAM)",
+    "cuda": "12.4",
+    "pytorch": "2.6.0+cu124",
+    "python": "3.13.7"
+  },
+  "benchmarks": {
+    "small_pde_250_grains": {
+      "cpu_wall_sec": 13.85,
+      "gpu_wall_sec": 25.79,
+      "speedup": 0.54,
+      "recommendation": "CPU_FASTER"
+    },
+    "medium_ensemble_5000_grains": {
+      "cpu_wall_sec": 2.45,
+      "gpu_wall_sec": 0.18,
+      "speedup": 13.61,
+      "recommendation": "GPU_ACCELERATED"
+    },
+    "large_ensemble_25000_grains": {
+      "cpu_wall_sec": 12.18,
+      "gpu_wall_sec": 0.16,
+      "speedup": 76.12,
+      "recommendation": "GPU_ACCELERATED"
+    },
+    "spatial_8192_nodes_1000_grains": {
+      "cpu_wall_sec": 184.20,
+      "gpu_wall_sec": 1.42,
+      "speedup": 129.72,
+      "recommendation": "GPU_ACCELERATED"
+    },
+    "spatial_8192_nodes_10000_grains": {
+      "cpu_wall_sec": 1850.00,
+      "gpu_wall_sec": 13.68,
+      "speedup": 135.23,
+      "allocated_vram_mb": 2684.0,
+      "recommendation": "GPU_ACCELERATED_CHUNKED"
+    }
+  },
+  "memory_policy": {
+    "soft_ceiling_mb": 4500.0,
+    "max_chunk_size_3d_grains": 10000,
+    "unbatched_250k_grains_status": "BLOCKED_PREVENTS_65GB_OOM"
+  }
+}

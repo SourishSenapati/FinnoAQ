@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — PINN VALIDATION & BENCHMARK REPORT
+# FINNOAQ TOOR DAL — PINN VALIDATION & BENCHMARK REPORT
 
 **Document ID:** HKT-PINN-2026-001  
 **Architecture:** Deep Physics-Informed Neural Network (SiLU activations, Autograd derivatives)  

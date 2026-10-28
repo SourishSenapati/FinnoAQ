@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 V10 Master Proposal Generator: Phase 1 Comparative Diagnostic R&D Study
-Client: Harakutir (Kolkata) | Lead Engineer: Sourish Senapati (FinnoaQ)
-Academic Guidance: Dr. Archisman Ray (IIT Kharagpur)
+Client: Client Organization (Kolkata) | Lead Engineer: Sourish Senapati (FinnoaQ)
+Academic Guidance: Technical Advisory Panel
 """
 
 import os

@@ -1,9 +1,9 @@
-# HARAKUTIR BAYESIAN OPTIMAL EXPERIMENTAL DESIGN (OED) MATRIX
+# FINNOAQ BAYESIAN OPTIMAL EXPERIMENTAL DESIGN (OED) MATRIX
 ## Sequential DoE Protocol, Hypothesis Discrimination (H1–H5) & Sample Allocation
 
 **Document ID:** HKT-OED-2026-008  
 **Version:** 3.0.0  
-**Implementation:** `src/harakutir/oed.py`  
+**Implementation:** `src/finnoaq/oed.py`  
 **Commercial Ceiling:** ₹2,00,000 + GST (Estimated Execution Cost: **₹70,000.00**)  
 **Sample Allocation:** 14.5 kg Tanzanian Dal (from 25 kg lot) + 6.0 kg Indian Benchmark  
 

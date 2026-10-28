@@ -16,7 +16,13 @@ This Layer of Protection Analysis (LOPA) establishes the quantitative safety env
 - **Category B (Severe Asset Loss / Single Severe Injury):** Target Tolerable Frequency $f_{tol} \le 1.0 \times 10^{-5}\text{ /year}$.
 - **Category C (Moderate Asset Damage / Food Safety / Batch Scrap):** Target Tolerable Frequency $f_{tol} \le 1.0 \times 10^{-4}\text{ /year}$.
 
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_002_pfd.png" alt="FinnoaQ Process Flow Diagram & Credited Safeguards" width="100%" />
+</p>
+<p align="center"><em>Figure 1.1: Process Flow Diagram detailing Pressure Relief, High-High Interlocks, and IPL Boundaries (DWG-FIN-15T-002).</em></p>
+
 ---
+
 
 ## 2. Independent Protection Layer (IPL) Qualification Rules
 
@@ -153,6 +159,11 @@ In strict compliance with IEC 61511 Section 9.2, every safeguard credited as an 
   $$A = \frac{W}{C \cdot K_d \cdot P_1 \cdot K_b} \sqrt{\frac{T \cdot Z}{M}} = \mathbf{196.4\text{ mm}^2}$$
 - **Selected Standard Valve:** **Orifice 'F' ($A = 198.0\text{ mm}^2$)**, DN50 (2-inch) Inlet Class 150 $\times$ DN80 (3-inch) Outlet Class 150, cast stainless steel body, Inconel spring, manual test easing lever, lifting cap, and discharge elbow directing steam safely upward above personnel reach.
 
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_005_soak_tank.png" alt="FinnoaQ Soak Tank General Arrangement & Relief Nozzle Detail" width="100%" />
+</p>
+<p align="center"><em>Figure 5.1: Soak Tank General Arrangement showing PSV-101 Nozzle N4 and Gravity Overflow N11 (DWG-FIN-15T-005).</em></p>
+
 ### 2. NFPA 68 Dust Explosion Vent Panels (`EV-101A/B` & `CY-101`)
 - **Governing Standard:** NFPA 68 Standard on Explosion Protection by Deflagration Venting (2023 Edition).
 - **Material Characteristics (Tanzanian Toor Dal Flour / Fine Dust):**
@@ -166,5 +177,11 @@ In strict compliance with IEC 61511 Section 9.2, every safeguard credited as an 
   $$A_v = 1.0 \times 10^{-4} \cdot (1 + 1.54 \cdot P_{stat}^{4/3}) \cdot K_{st} \cdot V^{3/4} \cdot \sqrt{\frac{P_{max}}{P_{red}} - 1} = \mathbf{0.485\text{ m}^2}$$
 - **Selected Vent Panels:** Dual $600 \times 400\text{ mm}$ rectangular burst panels on dryer canopy ($A_v = 0.24\text{ m}^2 \times 2 = \mathbf{0.480\text{ m}^2}$) plus top burst disc on cyclone separator ($\varnothing 600\text{ mm}$, $A_v = \mathbf{0.283\text{ m}^2}$). Panels feature sanitary food-grade PTFE seals and stainless deflector hoods directing deflagration upward into safe discharge zones.
 
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_007_fluid_bed_dryer.png" alt="FinnoaQ Fluid Bed Dryer with Dual NFPA 68 Explosion Relief Vent Panels" width="100%" />
+</p>
+<p align="center"><em>Figure 5.2: Continuous Fluid Bed Dryer detailing Dual NFPA 68 Explosion Vent Panels EV-101A/B and Exhaust Nozzles (DWG-FIN-15T-007).</em></p>
+
 ---
+
 *Authorized for engineering implementation under V5 Master Directive Governance.*

@@ -64,7 +64,7 @@ DESIGN_BASIS_SCHEMA = {
 
 design_basis_data = {
     "metadata": {
-        "project_name": "Harakutir 15,000 kg/day Imported Pigeon Pea Optimization Plant",
+        "project_name": "Client Organization 15,000 kg/day Imported Pigeon Pea Optimization Plant",
         "document_id": "ENG-MB-DB-001",
         "revision": "V5.0",
         "governing_flowsheet_case": "16h_operating_schedule_base_case",

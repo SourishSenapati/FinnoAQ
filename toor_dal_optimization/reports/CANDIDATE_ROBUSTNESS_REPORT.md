@@ -1,6 +1,6 @@
 # CANDIDATE ROBUSTNESS & MONTE CARLO UNCERTAINTY REPORT
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Goal:** Evaluate the robustness of the 8 surviving Pareto-optimal candidates under real-world raw material variability.  
 **Variability Distributions Tested:**  
 - Grain Radius: $R \sim \mathcal{N}(2.6\text{ mm}, 0.35\text{ mm})$, clamped to $[1.8, 3.6]\text{ mm}$ ($\pm 25\%$).

@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "project_ref": "FNQ-PR-2026-001",
+    "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+    "executed_at_utc": "2026-10-28T06:53:31.755889+00:00",
+    "compute_device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "cuda_version": "12.4",
+    "pytorch_version": "2.6.0+cu124",
+    "peak_gpu_memory_allocated_mb": 472.94,
+    "total_2d_pde_and_mc_trajectories": 900000,
+    "total_gpu_wall_time_s": 22.8618
+  },
+  "stage1_uncertainty_quantification": {
+    "n_mc_2d_pde_trajectories": 20000,
+    "grid_resolution": "16x16 cylindrical (r, z)",
+    "total_2d_grid_time_steps": 18000000,
+    "gpu_elapsed_s": 12.5327,
+    "provisional_threshold_note": "18.0 N is classified as a PROVISIONAL_PROJECT_CUTOFF pending calibration against 3-whistle cooked Indian Latur reference dal on the client's specific texture analyzer.",
+    "margin_audit_20min_vs_24min": {
+      "nominal_20min_point_estimate_N": 17.346,
+      "nominal_20min_margin_below_18N": 0.654,
+      "mc_20min_mean_N": 17.39,
+      "mc_20min_ci95_N": [
+        14.87,
+        20.03
+      ],
+      "mc_20min_p95_N": 19.61,
+      "mc_20min_prob_pass_pct": 67.05,
+      "mc_24min_mean_N": 14.77,
+      "mc_24min_ci95_N": [
+        13.08,
+        16.93
+      ],
+      "mc_24min_p95_N": 16.51,
+      "mc_24min_prob_pass_pct": 99.72,
+      "engineering_conclusion": "Deterministic nominal at 20.0 min: 17.35 N. Under joint parameter uncertainty at 20 min: mean 17.39 N, 95% interval [14.87, 20.03] N, P95 19.61 N, P(<=18 N) 67.05%. At 24 min: mean 14.77 N, 95% interval [13.08, 16.93] N, P95 16.51 N, P(<=18 N) 99.72%. Model output only; 18.0 N is a provisional cutoff."
+    },
+    "nominal_point_deterministic_gpu": [
+      {
+        "soak_time_min": 12.0,
+        "f_wb_core_w2_N": 23.006,
+        "core_ca_removed_pct": 29.15
+      },
+      {
+        "soak_time_min": 15.0,
+        "f_wb_core_w2_N": 21.533,
+        "core_ca_removed_pct": 50.04
+      },
+      {
+        "soak_time_min": 18.0,
+        "f_wb_core_w2_N": 19.142,
+        "core_ca_removed_pct": 70.03
+      },
+      {
+        "soak_time_min": 20.0,
+        "f_wb_core_w2_N": 17.346,
+        "core_ca_removed_pct": 80.72
+      },
+      {
+        "soak_time_min": 22.0,
+        "f_wb_core_w2_N": 15.771,
+        "core_ca_removed_pct": 88.61
+      },
+      {
+        "soak_time_min": 24.0,
+        "f_wb_core_w2_N": 14.62,
+        "core_ca_removed_pct": 93.83
+      },
+      {
+        "soak_time_min": 26.0,
+        "f_wb_core_w2_N": 13.9,
+        "core_ca_removed_pct": 96.93
+      },
+      {
+        "soak_time_min": 30.0,
+        "f_wb_core_w2_N": 13.31,
+        "core_ca_removed_pct": 99.4
+      }
+    ],
+    "prior_distributions": {
+      "half_thickness_mm": "Normal(1.10, 0.045) clipped [0.94, 1.27]",
+      "eq_radius_mm": "Normal(2.45, 0.10) clipped [2.10, 2.80]",
+      "initial_moisture_wb": "Normal(0.098, 0.004) clipped [0.084, 0.112]",
+      "bound_ca_mol_m3": "Normal(35.37, 2.1) clipped [28.0, 43.0]",
+      "pectin_DE": "Normal(0.28, 0.025) clipped [0.20, 0.38]",
+      "soak_temp_C": "Normal(55.0, 1.2) clipped [51, 59]",
+      "active_chelator_M": "Normal(nominal, 0.004) clipped +/-12%",
+      "softening_rate_multiplier": "Normal(1.0, 0.055) clipped [0.82, 1.18]",
+      "basis": "ASSUMPTION - spreads chosen by engineering judgement, not fitted to measured lot data"
+    },
+    "duration_sweep": [
+      {
+        "soak_time_min": 12.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 85.18,
+        "core_ca_removed_mean_pct": 29.55,
+        "core_ca_removed_ci95_pct": [
+          19.04,
+          42.62
+        ],
+        "f_wb_core_w2_mean_N": 22.95,
+        "f_wb_core_w2_sd_N": 0.51,
+        "f_wb_core_w2_median_N": 22.99,
+        "f_wb_core_w2_p95_N": 23.71,
+        "f_wb_core_w2_ci95_N": [
+          21.83,
+          23.84
+        ],
+        "f_wb_bulk_w2_mean_N": 16.63,
+        "prob_f_wb_core_le_18N_pct": 0.0
+      },
+      {
+        "soak_time_min": 15.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 92.32,
+        "core_ca_removed_mean_pct": 50.19,
+        "core_ca_removed_ci95_pct": [
+          35.49,
+          66.16
+        ],
+        "f_wb_core_w2_mean_N": 21.44,
+        "f_wb_core_w2_sd_N": 0.91,
+        "f_wb_core_w2_median_N": 21.53,
+        "f_wb_core_w2_p95_N": 22.77,
+        "f_wb_core_w2_ci95_N": [
+          19.42,
+          22.96
+        ],
+        "f_wb_bulk_w2_mean_N": 15.41,
+        "prob_f_wb_core_le_18N_pct": 0.07
+      },
+      {
+        "soak_time_min": 18.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 96.47,
+        "core_ca_removed_mean_pct": 69.72,
+        "core_ca_removed_ci95_pct": [
+          54.05,
+          84.04
+        ],
+        "f_wb_core_w2_mean_N": 19.1,
+        "f_wb_core_w2_sd_N": 1.28,
+        "f_wb_core_w2_median_N": 19.16,
+        "f_wb_core_w2_p95_N": 21.11,
+        "f_wb_core_w2_ci95_N": [
+          16.46,
+          21.45
+        ],
+        "f_wb_bulk_w2_mean_N": 14.43,
+        "prob_f_wb_core_le_18N_pct": 20.02
+      },
+      {
+        "soak_time_min": 20.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 98.04,
+        "core_ca_removed_mean_pct": 80.16,
+        "core_ca_removed_ci95_pct": [
+          65.95,
+          91.5
+        ],
+        "f_wb_core_w2_mean_N": 17.39,
+        "f_wb_core_w2_sd_N": 1.33,
+        "f_wb_core_w2_median_N": 17.38,
+        "f_wb_core_w2_p95_N": 19.61,
+        "f_wb_core_w2_ci95_N": [
+          14.87,
+          20.03
+        ],
+        "f_wb_bulk_w2_mean_N": 13.95,
+        "prob_f_wb_core_le_18N_pct": 67.05
+      },
+      {
+        "soak_time_min": 22.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 98.98,
+        "core_ca_removed_mean_pct": 87.93,
+        "core_ca_removed_ci95_pct": [
+          76.36,
+          95.93
+        ],
+        "f_wb_core_w2_mean_N": 15.89,
+        "f_wb_core_w2_sd_N": 1.2,
+        "f_wb_core_w2_median_N": 15.81,
+        "f_wb_core_w2_p95_N": 17.99,
+        "f_wb_core_w2_ci95_N": [
+          13.77,
+          18.44
+        ],
+        "f_wb_bulk_w2_mean_N": 13.62,
+        "prob_f_wb_core_le_18N_pct": 95.07
+      },
+      {
+        "soak_time_min": 24.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 99.5,
+        "core_ca_removed_mean_pct": 93.18,
+        "core_ca_removed_ci95_pct": [
+          84.65,
+          98.22
+        ],
+        "f_wb_core_w2_mean_N": 14.77,
+        "f_wb_core_w2_sd_N": 0.99,
+        "f_wb_core_w2_median_N": 14.68,
+        "f_wb_core_w2_p95_N": 16.51,
+        "f_wb_core_w2_ci95_N": [
+          13.08,
+          16.93
+        ],
+        "f_wb_bulk_w2_mean_N": 13.41,
+        "prob_f_wb_core_le_18N_pct": 99.72
+      },
+      {
+        "soak_time_min": 26.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 99.77,
+        "core_ca_removed_mean_pct": 96.41,
+        "core_ca_removed_ci95_pct": [
+          90.71,
+          99.29
+        ],
+        "f_wb_core_w2_mean_N": 14.03,
+        "f_wb_core_w2_sd_N": 0.79,
+        "f_wb_core_w2_median_N": 13.98,
+        "f_wb_core_w2_p95_N": 15.41,
+        "f_wb_core_w2_ci95_N": [
+          12.64,
+          15.75
+        ],
+        "f_wb_bulk_w2_mean_N": 13.3,
+        "prob_f_wb_core_le_18N_pct": 99.98
+      },
+      {
+        "soak_time_min": 30.0,
+        "n_2d_pde_trajectories": 20000,
+        "bulk_ca_removed_mean_pct": 99.96,
+        "core_ca_removed_mean_pct": 99.18,
+        "core_ca_removed_ci95_pct": [
+          97.24,
+          99.91
+        ],
+        "f_wb_core_w2_mean_N": 13.38,
+        "f_wb_core_w2_sd_N": 0.62,
+        "f_wb_core_w2_median_N": 13.36,
+        "f_wb_core_w2_p95_N": 14.44,
+        "f_wb_core_w2_ci95_N": [
+          12.23,
+          14.66
+        ],
+        "f_wb_bulk_w2_mean_N": 13.2,
+        "prob_f_wb_core_le_18N_pct": 100.0
+      }
+    ]
+  },
+  "stage2_washing_and_sensory_surface": {
+    "n_mc_trajectories": 100000,
+    "gpu_elapsed_s": 0.0503,
+    "operational_definitions_enforced": {
+      "PREDICTED_MINIMUM": "Lowest residual solute/volatile level & R_off estimated by mass-transfer model (Achieved by S2-10-WINNER: R_off = 0.164, d' = 0.22).",
+      "SENSORY_NONDETECTION": "No statistically significant difference between treated and untreated reference in blind ISO 4120 triangle test (N >= 24, alpha = 0.05, power >= 0.80) \u2014 Status: NOT_VERIFIED (Requires EXP-05).",
+      "INDIAN_REFERENCE_EQUIVALENCE": "90% CI for hedonic difference (mu_treated - mu_IndianRef) lies within [-0.75, +0.75] on 9-point scale under ISO 11136:2014 TOST (N >= 72 consumers) \u2014 Status: NOT_VERIFIED (Requires EXP-05)."
+    },
+    "spray_duration_sweep": [
+      {
+        "active_spray_time_s": 0.0,
+        "full_station_residence_time_min": 3.5,
+        "surface_film_mean_ppm": 1755.7,
+        "surface_film_p95_ppm": 2141.3,
+        "prob_surface_film_lt_50ppm_pct": 0.0,
+        "r_off_mean": 0.402,
+        "r_off_ci95": [
+          0.294,
+          0.555
+        ],
+        "thurstonian_d_prime_mean": 0.54,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      },
+      {
+        "active_spray_time_s": 6.0,
+        "full_station_residence_time_min": 4.0,
+        "surface_film_mean_ppm": 211.4,
+        "surface_film_p95_ppm": 337.9,
+        "prob_surface_film_lt_50ppm_pct": 0.0,
+        "r_off_mean": 0.213,
+        "r_off_ci95": [
+          0.153,
+          0.297
+        ],
+        "thurstonian_d_prime_mean": 0.29,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      },
+      {
+        "active_spray_time_s": 12.0,
+        "full_station_residence_time_min": 4.0,
+        "surface_film_mean_ppm": 27.6,
+        "surface_film_p95_ppm": 61.4,
+        "prob_surface_film_lt_50ppm_pct": 90.2,
+        "r_off_mean": 0.19,
+        "r_off_ci95": [
+          0.136,
+          0.265
+        ],
+        "thurstonian_d_prime_mean": 0.26,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      },
+      {
+        "active_spray_time_s": 15.0,
+        "full_station_residence_time_min": 4.0,
+        "surface_film_mean_ppm": 10.3,
+        "surface_film_p95_ppm": 26.3,
+        "prob_surface_film_lt_50ppm_pct": 99.44,
+        "r_off_mean": 0.187,
+        "r_off_ci95": [
+          0.134,
+          0.262
+        ],
+        "thurstonian_d_prime_mean": 0.25,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      },
+      {
+        "active_spray_time_s": 20.0,
+        "full_station_residence_time_min": 4.0,
+        "surface_film_mean_ppm": 2.1,
+        "surface_film_p95_ppm": 6.4,
+        "prob_surface_film_lt_50ppm_pct": 100.0,
+        "r_off_mean": 0.186,
+        "r_off_ci95": [
+          0.133,
+          0.26
+        ],
+        "thurstonian_d_prime_mean": 0.25,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      },
+      {
+        "active_spray_time_s": 30.0,
+        "full_station_residence_time_min": 4.0,
+        "surface_film_mean_ppm": 0.1,
+        "surface_film_p95_ppm": 0.4,
+        "prob_surface_film_lt_50ppm_pct": 100.0,
+        "r_off_mean": 0.185,
+        "r_off_ci95": [
+          0.132,
+          0.259
+        ],
+        "thurstonian_d_prime_mean": 0.25,
+        "operational_classification": "PREDICTED_MINIMUM (Requires N=24 ISO 4120 Triangle + N=72 ISO 11136 TOST)"
+      }
+    ]
+  },
+  "stage3_robust_policy_comparison": {
+    "n_simulated_batches": 10000,
+    "gpu_elapsed_s": 7.2881,
+    "p95_mismatch_diagnosis_and_resolution": {
+      "baseline_noisy_adaptive_pass_rate_150_cpu_pct": 78.0,
+      "baseline_noisy_adaptive_p95_150_cpu_N": 20.34,
+      "gpu_10000_noisy_adaptive_pass_rate_pct": 85.11,
+      "gpu_10000_noisy_adaptive_p95_N": 19.06,
+      "gpu_10000_robust_adaptive_pass_rate_pct": 99.9,
+      "gpu_10000_robust_adaptive_p95_N": 15.77,
+      "mathematical_explanation": "Because the 95th percentile (P95) is exceeded by 5% of all batches, any policy with a <95% pass rate (such as ADAPTIVE_NOISY_STANDARD at 78.0% CPU / 85.11% GPU pass rate, where >20% of batches exceed 18.0 N) MUST mathematically have P95(F_WB,core) > 18.0 N (specifically 20.34 N on the 150-batch sample and 19.06 N across 10,000 GPU batches)! Two mechanisms cause this: (1) 3.8% of batches suffer false-under-treatment due to noisy WAI_3min intake readings, and (2) nominal Tier 2 (20 min) operates with only a 0.65 N margin below 18.0 N.",
+      "robust_policy_solution": "ADAPTIVE_ROBUST_P95 applies a conservative uncertainty buffer to the intake classification thresholds ([24.0, 35.5] instead of [28.0, 42.0]) and uses uncertainty-buffered soak durations ([18, 24, 30] min plus 34 min for OOD lots). This slashes false-under-treatment from 3.8% to 0.14%, lifts the simulation-conditional pass rate to 99.9%, and lowers P95(F_WB,core) to 15.77 N <= 18.0 N."
+    },
+    "policies_comparison": [
+      {
+        "policy_id": "UNTREATED_CONTROL",
+        "n_batches": 10000,
+        "pass_rate_le_18N_pct": 0.0,
+        "f_wb_core_mean_N": 25.57,
+        "f_wb_core_sd_N": 1.42,
+        "f_wb_core_median_N": 26.16,
+        "f_wb_core_p90_N": 26.9,
+        "f_wb_core_p95_N": 27.04,
+        "f_wb_core_p99_N": 27.22,
+        "evidence_status": "SIMULATION_CONDITIONAL"
+      },
+      {
+        "policy_id": "FIXED_TIER2_20MIN",
+        "n_batches": 10000,
+        "pass_rate_le_18N_pct": 72.31,
+        "f_wb_core_mean_N": 16.35,
+        "f_wb_core_sd_N": 3.08,
+        "f_wb_core_median_N": 15.61,
+        "f_wb_core_p90_N": 21.13,
+        "f_wb_core_p95_N": 22.56,
+        "f_wb_core_p99_N": 23.79,
+        "evidence_status": "SIMULATION_CONDITIONAL"
+      },
+      {
+        "policy_id": "ADAPTIVE_NOISY_STANDARD",
+        "n_batches": 10000,
+        "pass_rate_le_18N_pct": 85.11,
+        "f_wb_core_mean_N": 15.95,
+        "f_wb_core_sd_N": 1.81,
+        "f_wb_core_median_N": 15.69,
+        "f_wb_core_p90_N": 18.43,
+        "f_wb_core_p95_N": 19.06,
+        "f_wb_core_p99_N": 20.48,
+        "evidence_status": "SIMULATION_CONDITIONAL",
+        "false_under_treatment_pct": 3.8,
+        "conservative_over_treatment_pct": 4.43,
+        "exact_tier_accuracy_pct": 91.77
+      },
+      {
+        "policy_id": "ADAPTIVE_ROBUST_P95",
+        "n_batches": 10000,
+        "pass_rate_le_18N_pct": 99.9,
+        "f_wb_core_mean_N": 13.75,
+        "f_wb_core_sd_N": 0.89,
+        "f_wb_core_median_N": 13.29,
+        "f_wb_core_p90_N": 15.24,
+        "f_wb_core_p95_N": 15.77,
+        "f_wb_core_p99_N": 16.64,
+        "evidence_status": "SIMULATION_CONDITIONAL",
+        "false_under_treatment_pct": 0.14,
+        "conservative_over_treatment_pct": 24.17
+      }
+    ]
+  },
+  "stage4_plant_dual_basis_monte_carlo": {
+    "n_mc_realizations": 100000,
+    "gpu_elapsed_s": 0.001,
+    "dual_basis_reconciliation": {
+      "Basis_I_15000kg_Raw_Feed": {
+        "raw_dal_input_kg_day": 15000.0,
+        "raw_moisture_wb_pct": 9.8,
+        "raw_dry_solids_kg_day": 13530.0,
+        "gross_leached_solids_pct": 0.42,
+        "retained_citrate_ions_pct": 0.07,
+        "net_dry_solids_change_pct": -0.35,
+        "conditioned_dry_solids_kg_day": 13482.65,
+        "total_dried_conditioned_dal_at_11_75pct_wb_kg_day": 15277.79,
+        "screened_broken_splits_0_35pct_kg_day": 53.47,
+        "net_saleable_prime_whole_splits_at_10_5pct_equiv_kg_day": 14884.8,
+        "net_saleable_prime_whole_splits_at_11_75pct_wb_kg_day": 15224.32
+      },
+      "Basis_II_15000kg_Net_Saleable_Prime_Output": {
+        "target_net_saleable_prime_output_kg_day": 15000.0,
+        "required_raw_dal_input_kg_day": 15116.1,
+        "required_hourly_raw_feed_20h_kg_h": 755.81,
+        "leached_dry_solids_0_42pct_kg_day": 57.29,
+        "screened_broken_splits_0_35pct_kg_day": 52.68,
+        "byproduct_broken_dal_flour_recovery_note": "52.68 kg/day broken splits sold as Grade-B dal flour/besan feedstock (net value loss \u20b942/kg = \u20b92,212.56/day = \u20b90.148/kg prime output)."
+      }
+    },
+    "opex_85pct_recycle_uncertainty": {
+      "reagent_cost_mean_inr_kg": 3.63,
+      "reagent_cost_ci95_inr_kg": [
+        3.32,
+        3.94
+      ],
+      "total_opex_mean_inr_kg": 6.34,
+      "total_opex_sd_inr_kg": 0.2,
+      "total_opex_ci95_inr_kg": [
+        5.95,
+        6.74
+      ]
+    }
+  },
+  "artifact_sha256": "ab384574964f194d0cfa3336e1d435bf99f69770deacf12c2700c2aab1f50df0"
+}

@@ -1,6 +1,6 @@
 {
-  "engine": "Harakutir GPUMillionExperimentEngine v4.0",
-  "execution_timestamp": "2026-10-13T14:56:43.093290+00:00",
+  "engine": "Client Organization GPUMillionExperimentEngine v4.0",
+  "execution_timestamp": "2026-10-20T22:55:40.269893+00:00",
   "hardware_platform": {
     "host_cpu": "AMD Ryzen AI 9 365 w/ Radeon 880M (10 cores, 20 logical threads)",
     "discrete_gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
@@ -10,8 +10,8 @@
   },
   "total_experiments_evaluated": 1000000,
   "total_generations": 10,
-  "total_runtime_seconds": 0.28,
-  "throughput_experiments_per_sec": 3511511.6,
+  "total_runtime_seconds": 0.38,
+  "throughput_experiments_per_sec": 2597882.1,
   "convergence_plateau_detected": false,
   "final_5_sigma_validation": {
     "specification_limits": {
@@ -41,7 +41,7 @@
       "generation": 1,
       "batch_experiments": 100000,
       "cumulative_experiments": 100000,
-      "runtime_seconds": 0.105,
+      "runtime_seconds": 0.202,
       "mean_loss": 1.977,
       "std_loss": 2.64,
       "pareto_optimal_front_count": 46,

@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — REPRODUCIBILITY & DETERMINISM AUDIT
+# FINNOAQ TOOR DAL — REPRODUCIBILITY & DETERMINISM AUDIT
 
 **Document ID:** HKT-REP-2026-002  
 **Date:** 2026-10-14  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This reproducibility audit evaluates the technical stack, mathematical engines, seed control, checkpointing mechanisms, and offline autonomy of the Harakutir Toor Dal engineering system. 
+This reproducibility audit evaluates the technical stack, mathematical engines, seed control, checkpointing mechanisms, and offline autonomy of the FinnoaQ Toor Dal engineering system. 
 
 The audit confirms:
 1. **100% Offline Autonomy:** Zero reliance on external cloud APIs, remote servers, or proprietary paid engines. All simulations, PDE solvers, Navier-Stokes correlations, and optimization loops run on the local host (AMD Ryzen AI 9 365 + NVIDIA RTX 4050 Laptop GPU).
@@ -76,8 +76,8 @@ cd d:\PROJECT\02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING\finnoaq\toor_dal_optimizati
 & "C:\Python313\python.exe" -m pytest tests/ -v
 
 # 3. Verify dose calculator multi-basis reconciliation
-& "C:\Python313\python.exe" -c "from src.harakutir.dose_calculator import DoseCalculator; dc = DoseCalculator(); print(dc.generate_reference_report())"
+& "C:\Python313\python.exe" -c "from src.finnoaq.dose_calculator import DoseCalculator; dc = DoseCalculator(); print(dc.generate_reference_report())"
 
 # 4. Run spatial 3D 8,192-node GPU benchmark
-& "C:\Python313\python.exe" -c "from src.harakutir.spatial_3d_engine import Spatial3DEngine; eng = Spatial3DEngine(); res = eng.simulate_grain_batch_cuda(num_grains=1000); print('8192-node CUDA benchmark successful:', res['mean_cook_time_min'], 'min')"
+& "C:\Python313\python.exe" -c "from src.finnoaq.spatial_3d_engine import Spatial3DEngine; eng = Spatial3DEngine(); res = eng.simulate_grain_batch_cuda(num_grains=1000); print('8192-node CUDA benchmark successful:', res['mean_cook_time_min'], 'min')"
 ```

@@ -1,14 +1,14 @@
-# Harakutir Independent Red-Team Adversarial Audit Report
+# FinnoaQ Independent Red-Team Adversarial Audit Report
 
 **Audit Date:** 13 October 2026  
 **Audit Result:** `PASSED — ZERO CRITICAL DEFECTS`  
 **Critical Findings Count:** `0`  
-**Governing Standards:** Sections 15 & 17 of HARAKUTIR_MASTER_PROMPT, Learn Harness Engineering, Foodoscope Informatics  
+**Governing Standards:** Sections 15 & 17 of FINNOAQ_MASTER_PROMPT, Learn Harness Engineering, Foodoscope Informatics  
 
 ---
 
 ### 1. Adversarial Audit Scope & Methodology
-An independent automated verification suite evaluated the entire Harakutir Phase 1 system against 18 mandatory contract gates:
+An independent automated verification suite evaluated the entire FinnoaQ Phase 1 system against 18 mandatory contract gates:
 1. Complete SOW §§1–36 coverage
 2. Source hash reconciliation and input immutability
 3. Unit conversion and dimensional consistency
@@ -61,4 +61,4 @@ No critical defects identified. System is approved for release.
 ---
 
 ### 4. Final Auditor Certification
-The Harakutir Autonomous R&D system satisfies all scientific integrity, architectural, and contractual standards set forth in Version 1.0 of the Master Prompt, Learn Harness Engineering, and Foodoscope Informatics. Empirical root-cause conclusions remain gated awaiting physical laboratory measurements.
+The FinnoaQ Autonomous R&D system satisfies all scientific integrity, architectural, and contractual standards set forth in Version 1.0 of the Master Prompt, Learn Harness Engineering, and Foodoscope Informatics. Empirical root-cause conclusions remain gated awaiting physical laboratory measurements.

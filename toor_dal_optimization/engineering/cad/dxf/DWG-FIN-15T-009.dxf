@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461330.8476967593
+2461331.6659375
   9
 $TDUCREATE
  40
@@ -501,7 +501,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461330.8476967593
+2461331.6659375
   9
 $TDUUPDATE
  40
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-F1
+1C1
   9
 $SURFTAB1
  70
@@ -933,11 +933,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{10923AEE-CA14-421F-9DD6-CBED86BE13B1}
+{C2A2DB90-097A-4F0C-8904-CE1FCAF77670}
   9
 $VERSIONGUID
   2
-{7371A45A-41C7-47AA-8498-959AAFEDB516}
+{F2E68A0F-2A6A-449D-906D-F44D715AF1E7}
   9
 $EXTNAMES
 290
@@ -3353,7 +3353,7 @@ ACAD
   0
 APPID
   5
-ED
+1BE
 330
 3
 100
@@ -3367,7 +3367,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-EE
+1BF
 330
 3
 100
@@ -6205,13 +6205,13 @@ AcDbLine
  10
 384.0
  20
-53.0
+55.0
  30
 0.0
  11
 579.0
  21
-53.0
+55.0
  31
 0.0
   0
@@ -6229,13 +6229,13 @@ AcDbLine
  10
 384.0
  20
-37.0
+39.0
  30
 0.0
  11
 579.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6253,13 +6253,13 @@ AcDbLine
  10
 384.0
  20
-26.0
+27.0
  30
 0.0
  11
 579.0
  21
-26.0
+27.0
  31
 0.0
   0
@@ -6283,7 +6283,7 @@ AcDbLine
  11
 499.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6307,7 +6307,7 @@ AcDbLine
  11
 539.0
  21
-37.0
+39.0
  31
 0.0
   0
@@ -6325,17 +6325,17 @@ AcDbText
  10
 389.0
  20
-61.0
+62.0
  30
 0.0
  40
-3.5
+3.6
   1
 FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
  11
 389.0
  21
-61.0
+62.0
  31
 0.0
 100
@@ -6355,7 +6355,7 @@ AcDbText
  10
 389.0
  20
-55.0
+57.0
  30
 0.0
  40
@@ -6365,7 +6365,7 @@ AcDbText
  11
 389.0
  21
-55.0
+57.0
  31
 0.0
 100
@@ -6385,17 +6385,17 @@ AcDbText
  10
 389.0
  20
-43.0
+45.0
  30
 0.0
  40
-3.8
+3.5
   1
-EQUIPMENT GENERAL ARRANGEMENT - CHEMICAL DOSING SKID SK-100
+EQUIPMENT GA - CHEMICAL DOSING SKID SK-100
  11
 389.0
  21
-43.0
+45.0
  31
 0.0
 100
@@ -6415,17 +6415,17 @@ AcDbText
  10
 389.0
  20
-39.0
+41.0
  30
 0.0
  40
-2.0
+1.7
   1
-DISCIPLINE: MECHANICAL | STAGE: CONCEPTUAL FEED
+DISCIPLINE: MECHANICAL | LEAD: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
  11
 389.0
  21
-39.0
+41.0
  31
 0.0
 100
@@ -6445,7 +6445,7 @@ AcDbText
  10
 389.0
  20
-29.0
+30.0
  30
 0.0
  40
@@ -6455,7 +6455,7 @@ DWG NO: DWG-FIN-15T-009
  11
 389.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6475,17 +6475,17 @@ AcDbText
  10
 504.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-REV: V4.0
+REV: V8.0
  11
 504.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6505,17 +6505,17 @@ AcDbText
  10
 544.0
  20
-29.0
+30.0
  30
 0.0
  40
 2.5
   1
-SHEET: 9 OF 12
+SHEET: 9 OF 13
  11
 544.0
  21
-29.0
+30.0
  31
 0.0
 100
@@ -6571,7 +6571,7 @@ AcDbText
  40
 2.0
   1
-DATE: 2026-10-15
+DATE: 2026-10-17
  11
 439.0
  21
@@ -6659,9 +6659,9 @@ AcDbText
  30
 0.0
  40
-2.5
+2.2
   1
-CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT
+CONCEPTUAL FEED - PRELIMINARY - NOT FOR CONSTRUCTION / NOT FOR PROCUREMENT | COPYRIGHT FINNOAQ
  11
 25.0
  21
@@ -6685,7 +6685,7 @@ EQUIPMENT
 100
 AcDbPolyline
  90
-9
+5
  70
 0
  10
@@ -6693,33 +6693,17 @@ AcDbPolyline
  20
 190.0
  10
-210.0
+170.0
  20
 190.0
  10
-210.0
+170.0
  20
-210.0
- 10
-205.0
- 20
-210.0
- 10
-205.0
- 20
-195.0
- 10
-55.0
- 20
-195.0
- 10
-55.0
- 20
-210.0
+180.0
  10
 50.0
  20
-210.0
+180.0
  10
 50.0
  20
@@ -6737,19 +6721,19 @@ ANNOTATION
 100
 AcDbText
  10
-65.0
+60.0
  20
-184.0
+174.0
  30
 0.0
  40
 1.8
   1
-SECONDARY CONTAINMENT BUND (110% SPILL VOLUME)
+STRUCTURAL CHANNEL BASE (ISMC 150) WITH 110% BUND
  11
-65.0
+60.0
  21
-184.0
+174.0
  31
 0.0
 100
@@ -6764,6 +6748,78 @@ BF
 AcDbEntity
   8
 EQUIPMENT
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+67.0
+ 20
+180.0
+ 10
+83.0
+ 20
+180.0
+ 10
+83.0
+ 20
+186.0
+ 10
+67.0
+ 20
+186.0
+ 10
+67.0
+ 20
+180.0
+  0
+LWPOLYLINE
+  5
+C0
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+127.0
+ 20
+180.0
+ 10
+143.0
+ 20
+180.0
+ 10
+143.0
+ 20
+186.0
+ 10
+127.0
+ 20
+186.0
+ 10
+127.0
+ 20
+180.0
+  0
+LWPOLYLINE
+  5
+C1
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
 370
 50
 100
@@ -6773,29 +6829,29 @@ AcDbPolyline
  70
 0
  10
-65.0
+60.0
  20
-210.0
+190.0
  10
-110.0
+96.0
  20
-210.0
+190.0
  10
-110.0
+96.0
  20
-285.0
+260.0
  10
-65.0
+60.0
  20
-285.0
+260.0
  10
-65.0
+60.0
  20
-210.0
+190.0
   0
 TEXT
   5
-C0
+C2
 330
 17
 100
@@ -6805,9 +6861,9 @@ ANNOTATION
 100
 AcDbText
  10
-67.0
+62.0
  20
-290.0
+264.0
  30
 0.0
  40
@@ -6815,9 +6871,9 @@ AcDbText
   1
 TK-102A (DUTY)
  11
-67.0
+62.0
  21
-290.0
+264.0
  31
 0.0
 100
@@ -6825,7 +6881,7 @@ AcDbText
   0
 TEXT
   5
-C1
+C3
 330
 17
 100
@@ -6835,9 +6891,9 @@ ANNOTATION
 100
 AcDbText
  10
-77.0
+68.0
  20
-245.0
+225.0
  30
 0.0
  40
@@ -6845,9 +6901,9 @@ AcDbText
   1
 500L HDPE
  11
-77.0
+68.0
  21
-245.0
+225.0
  31
 0.0
 100
@@ -6855,7 +6911,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-C2
+C4
 330
 17
 100
@@ -6871,79 +6927,27 @@ AcDbPolyline
  70
 0
  10
-83.0
+74.0
  20
-285.0
+260.0
  10
-92.0
+82.0
  20
-285.0
+260.0
  10
-92.0
+82.0
  20
-305.0
+275.0
  10
-83.0
+74.0
  20
-305.0
+275.0
  10
-83.0
+74.0
  20
-285.0
+260.0
   0
 LINE
-  5
-C3
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-35
-100
-AcDbLine
- 10
-87.5
- 20
-285.0
- 30
-0.0
- 11
-87.5
- 21
-225.0
- 31
-0.0
-  0
-LINE
-  5
-C4
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-35
-100
-AcDbLine
- 10
-79.0
- 20
-225.0
- 30
-0.0
- 11
-96.0
- 21
-225.0
- 31
-0.0
-  0
-TEXT
   5
 C5
 330
@@ -6951,29 +6955,25 @@ C5
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+35
 100
-AcDbText
+AcDbLine
  10
-77.0
+78.0
  20
-308.0
+260.0
  30
 0.0
- 40
-1.5
-  1
-AG-102A
  11
-77.0
+78.0
  21
-308.0
+205.0
  31
 0.0
-100
-AcDbText
   0
-LWPOLYLINE
+LINE
   5
 C6
 330
@@ -6983,33 +6983,21 @@ AcDbEntity
   8
 EQUIPMENT
 370
-50
+35
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbLine
  10
-120.0
+70.0
  20
-210.0
- 10
-165.0
- 20
-210.0
- 10
-165.0
- 20
-285.0
- 10
-120.0
- 20
-285.0
- 10
-120.0
- 20
-210.0
+205.0
+ 30
+0.0
+ 11
+86.0
+ 21
+205.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7023,27 +7011,65 @@ ANNOTATION
 100
 AcDbText
  10
-122.0
+64.0
  20
-290.0
+278.0
  30
 0.0
  40
-1.8
+1.4
   1
-TK-102B (STANDBY)
+AG-102A (0.75 kW)
  11
-122.0
+64.0
  21
-290.0
+278.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 C8
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+105.0
+ 20
+190.0
+ 10
+141.0
+ 20
+190.0
+ 10
+141.0
+ 20
+260.0
+ 10
+105.0
+ 20
+260.0
+ 10
+105.0
+ 20
+190.0
+  0
+TEXT
+  5
+C9
 330
 17
 100
@@ -7053,63 +7079,25 @@ ANNOTATION
 100
 AcDbText
  10
-132.0
+107.0
  20
-245.0
+264.0
  30
 0.0
  40
-1.6
+1.8
   1
-500L HDPE
+TK-102B (STANDBY)
  11
-132.0
+107.0
  21
-245.0
+264.0
  31
 0.0
 100
 AcDbText
   0
-LWPOLYLINE
-  5
-C9
-330
-17
-100
-AcDbEntity
-  8
-EQUIPMENT
-370
-40
-100
-AcDbPolyline
- 90
-5
- 70
-0
- 10
-138.0
- 20
-285.0
- 10
-147.0
- 20
-285.0
- 10
-147.0
- 20
-305.0
- 10
-138.0
- 20
-305.0
- 10
-138.0
- 20
-285.0
-  0
-LINE
+TEXT
   5
 CA
 330
@@ -7117,25 +7105,29 @@ CA
 100
 AcDbEntity
   8
-EQUIPMENT
-370
-35
+ANNOTATION
 100
-AcDbLine
+AcDbText
  10
-142.5
+113.0
  20
-285.0
+225.0
  30
 0.0
+ 40
+1.6
+  1
+500L HDPE
  11
-142.5
+113.0
  21
 225.0
  31
 0.0
+100
+AcDbText
   0
-LINE
+LWPOLYLINE
   5
 CB
 330
@@ -7145,23 +7137,35 @@ AcDbEntity
   8
 EQUIPMENT
 370
-35
+40
 100
-AcDbLine
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-134.0
+119.0
  20
-225.0
- 30
-0.0
- 11
-151.0
- 21
-225.0
- 31
-0.0
+260.0
+ 10
+127.0
+ 20
+260.0
+ 10
+127.0
+ 20
+275.0
+ 10
+119.0
+ 20
+275.0
+ 10
+119.0
+ 20
+260.0
   0
-TEXT
+LINE
   5
 CC
 330
@@ -7169,29 +7173,25 @@ CC
 100
 AcDbEntity
   8
-ANNOTATION
+EQUIPMENT
+370
+35
 100
-AcDbText
+AcDbLine
  10
-132.0
+123.0
  20
-308.0
+260.0
  30
 0.0
- 40
-1.5
-  1
-AG-102B
  11
-132.0
+123.0
  21
-308.0
+205.0
  31
 0.0
-100
-AcDbText
   0
-LWPOLYLINE
+LINE
   5
 CD
 330
@@ -7201,33 +7201,21 @@ AcDbEntity
   8
 EQUIPMENT
 370
-40
+35
 100
-AcDbPolyline
- 90
-5
- 70
-0
+AcDbLine
  10
-175.0
+115.0
  20
-225.0
- 10
-200.0
- 20
-225.0
- 10
-200.0
- 20
-247.0
- 10
-175.0
- 20
-247.0
- 10
-175.0
- 20
-225.0
+205.0
+ 30
+0.0
+ 11
+131.0
+ 21
+205.0
+ 31
+0.0
   0
 TEXT
   5
@@ -7241,49 +7229,19 @@ ANNOTATION
 100
 AcDbText
  10
-177.0
+109.0
  20
-250.0
- 30
-0.0
- 40
-1.8
-  1
-P-102A
- 11
-177.0
- 21
-250.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-CF
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-177.0
- 20
-239.0
+278.0
  30
 0.0
  40
 1.4
   1
-DIAPHRAGM
+AG-102B (0.75 kW)
  11
-177.0
+109.0
  21
-239.0
+278.0
  31
 0.0
 100
@@ -7291,7 +7249,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-D0
+CF
 330
 17
 100
@@ -7307,25 +7265,55 @@ AcDbPolyline
  70
 0
  10
-175.0
+146.0
  20
-260.0
+205.0
  10
-200.0
+164.0
  20
-260.0
+205.0
  10
-200.0
+164.0
  20
-282.0
+223.0
  10
-175.0
+146.0
  20
-282.0
+223.0
  10
-175.0
+146.0
  20
-260.0
+205.0
+  0
+TEXT
+  5
+D0
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+148.0
+ 20
+225.0
+ 30
+0.0
+ 40
+1.7
+  1
+P-102A
+ 11
+148.0
+ 21
+225.0
+ 31
+0.0
+100
+AcDbText
   0
 TEXT
   5
@@ -7339,27 +7327,65 @@ ANNOTATION
 100
 AcDbText
  10
-177.0
+147.0
  20
-285.0
+215.0
  30
 0.0
  40
-1.8
+1.2
   1
-P-102B
+DIAPHRAGM
  11
-177.0
+147.0
  21
-285.0
+215.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 D2
+330
+17
+100
+AcDbEntity
+  8
+EQUIPMENT
+370
+40
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+146.0
+ 20
+233.0
+ 10
+164.0
+ 20
+233.0
+ 10
+164.0
+ 20
+251.0
+ 10
+146.0
+ 20
+251.0
+ 10
+146.0
+ 20
+233.0
+  0
+TEXT
+  5
+D3
 330
 17
 100
@@ -7369,19 +7395,49 @@ ANNOTATION
 100
 AcDbText
  10
-177.0
+148.0
  20
-274.0
+253.0
  30
 0.0
  40
-1.4
+1.7
+  1
+P-102B
+ 11
+148.0
+ 21
+253.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+D4
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+147.0
+ 20
+243.0
+ 30
+0.0
+ 40
+1.2
   1
 DIAPHRAGM
  11
-177.0
+147.0
  21
-274.0
+243.0
  31
 0.0
 100
@@ -7389,7 +7445,7 @@ AcDbText
   0
 LWPOLYLINE
   5
-D3
+D5
 330
 17
 100
@@ -7405,85 +7461,25 @@ AcDbPolyline
  70
 0
  10
-162.0
+138.0
  20
-210.0
+205.0
  10
-170.0
+144.0
  20
-210.0
+205.0
  10
-170.0
+144.0
  20
-275.0
+245.0
  10
-162.0
+138.0
  20
-275.0
+245.0
  10
-162.0
+138.0
  20
-210.0
-  0
-TEXT
-  5
-D4
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-162.0
- 20
-280.0
- 30
-0.0
- 40
-1.4
-  1
-CALIB
- 11
-162.0
- 21
-280.0
- 31
-0.0
-100
-AcDbText
-  0
-TEXT
-  5
-D5
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-163.0
- 20
-273.0
- 30
-0.0
- 40
-1.4
-  1
-COL
- 11
-163.0
- 21
-273.0
- 31
-0.0
-100
-AcDbText
+205.0
   0
 TEXT
   5
@@ -7493,23 +7489,23 @@ D6
 100
 AcDbEntity
   8
-DIMENSIONS
+ANNOTATION
 100
 AcDbText
  10
-95.0
+136.0
  20
-175.0
+248.0
  30
 0.0
  40
-2.2
+1.3
   1
-2,400 mm OVERALL SKID LENGTH
+CALIB COL
  11
-95.0
+136.0
  21
-175.0
+248.0
  31
 0.0
 100
@@ -7527,19 +7523,49 @@ DIMENSIONS
 100
 AcDbText
  10
-22.0
+85.0
  20
-250.0
+164.0
  30
 0.0
  40
-2.2
+2.0
   1
-1,900 mm OVERALL HEIGHT
+OVERALL LENGTH: 2,400 mm
  11
-22.0
+85.0
  21
-250.0
+164.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+D8
+330
+17
+100
+AcDbEntity
+  8
+DIMENSIONS
+100
+AcDbText
+ 10
+18.0
+ 20
+235.0
+ 30
+0.0
+ 40
+2.0
+  1
+OVERALL HEIGHT: 1,900 mm
+ 11
+18.0
+ 21
+235.0
  31
 0.0
 100
@@ -7547,7 +7573,45 @@ AcDbText
   0
 LWPOLYLINE
   5
-D8
+D9
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+395.0
+ 10
+565.0
+ 20
+395.0
+ 10
+565.0
+ 20
+170.0
+ 10
+200.0
+ 20
+170.0
+ 10
+200.0
+ 20
+395.0
+  0
+LWPOLYLINE
+  5
+DA
 330
 17
 100
@@ -7563,79 +7627,25 @@ AcDbPolyline
  70
 0
  10
-230.0
+200.0
  20
-340.0
+395.0
  10
-570.0
+565.0
  20
-340.0
+395.0
  10
-570.0
+565.0
  20
-75.0
+386.5
  10
-230.0
+200.0
  20
-75.0
+386.5
  10
-230.0
+200.0
  20
-340.0
-  0
-TEXT
-  5
-D9
-330
-17
-100
-AcDbEntity
-  8
-ANNOTATION
-100
-AcDbText
- 10
-234.0
- 20
-332.0
- 30
-0.0
- 40
-2.2
-  1
-CHEMICAL REAGENT DOSING SKID SPECIFICATION & BILL OF MATERIALS (SK-100):
- 11
-234.0
- 21
-332.0
- 31
-0.0
-100
-AcDbText
-  0
-LINE
-  5
-DA
-330
-17
-100
-AcDbEntity
-  8
-BORDER_TITLE
-100
-AcDbLine
- 10
-230.0
- 20
-328.0
- 30
-0.0
- 11
-570.0
- 21
-328.0
- 31
-0.0
+395.0
   0
 TEXT
   5
@@ -7645,29 +7655,29 @@ DB
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+206.0
  20
-320.0
+389.0
  30
 0.0
  40
-1.7
+2.0
   1
-ITEM 01: Solution Preparation Tanks TK-102A/B (2 Units, Duty / Standby)
+CHEMICAL REAGENT DOSING SKID SPECIFICATION & BILL OF MATERIALS (SK-100)
  11
-234.0
+206.0
  21
-320.0
+389.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 DC
 330
@@ -7675,27 +7685,35 @@ DC
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+200.0
  20
-312.5
- 30
-0.0
- 40
-1.7
-  1
-  - Net Volume: 500 Liters each | Material: UV-Stabilized Food-Grade Cross-Linked HDPE.
- 11
-234.0
- 21
-312.5
- 31
-0.0
-100
-AcDbText
+386.5
+ 10
+236.0
+ 20
+386.5
+ 10
+236.0
+ 20
+378.5
+ 10
+200.0
+ 20
+378.5
+ 10
+200.0
+ 20
+386.5
   0
 TEXT
   5
@@ -7705,29 +7723,29 @@ DD
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+201.5
  20
-305.0
+381.5
  30
 0.0
  40
-1.7
+1.45
   1
-  - Tank Dimensions: 800 mm Dia x 1,100 mm Straight Height | Conical bottom with 1.5" drain.
+TAG
  11
-234.0
+201.5
  21
-305.0
+381.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 DE
 330
@@ -7735,27 +7753,35 @@ DE
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+236.0
  20
-297.5
- 30
-0.0
- 40
-1.7
-  1
-  - Accessories: Hinged loading hatch, dust screen, level gauge glass with ultrasonic transmitter.
- 11
-234.0
- 21
-297.5
- 31
-0.0
-100
-AcDbText
+386.5
+ 10
+320.0
+ 20
+386.5
+ 10
+320.0
+ 20
+378.5
+ 10
+236.0
+ 20
+378.5
+ 10
+236.0
+ 20
+386.5
   0
 TEXT
   5
@@ -7765,29 +7791,29 @@ DF
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+237.5
  20
-290.0
+381.5
  30
 0.0
  40
-1.7
+1.45
   1
-ITEM 02: High-Shear Agitator Mixers AG-102A/B (2 Units)
+EQUIPMENT / COMPONENT
  11
-234.0
+237.5
  21
-290.0
+381.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E0
 330
@@ -7795,27 +7821,35 @@ E0
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+320.0
  20
-282.5
- 30
-0.0
- 40
-1.7
-  1
-  - Motor: 0.75 kW, 415V, 3-Phase, IP55, TEFC | Shaft & Impeller: SS316L 4-Blade Marine Propeller.
- 11
-234.0
- 21
-282.5
- 31
-0.0
-100
-AcDbText
+386.5
+ 10
+385.0
+ 20
+386.5
+ 10
+385.0
+ 20
+378.5
+ 10
+320.0
+ 20
+378.5
+ 10
+320.0
+ 20
+386.5
   0
 TEXT
   5
@@ -7825,29 +7859,29 @@ E1
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+321.5
  20
-275.0
+381.5
  30
 0.0
  40
-1.7
+1.45
   1
-  - Duty: Rapid dissolution of food-grade Sodium Bicarbonate / Citrate salts @ 25-35 deg C.
+CAPACITY / RATING
  11
-234.0
+321.5
  21
-275.0
+381.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E2
 330
@@ -7855,27 +7889,35 @@ E2
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+385.0
  20
-267.5
- 30
-0.0
- 40
-1.7
-  1
-ITEM 03: Precision Metering Chemical Pumps P-102A/B (2 Units, Duty / Standby)
- 11
-234.0
- 21
-267.5
- 31
-0.0
-100
-AcDbText
+386.5
+ 10
+435.0
+ 20
+386.5
+ 10
+435.0
+ 20
+378.5
+ 10
+385.0
+ 20
+378.5
+ 10
+385.0
+ 20
+386.5
   0
 TEXT
   5
@@ -7885,29 +7927,29 @@ E3
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+386.5
  20
-260.0
+381.5
  30
 0.0
  40
-1.7
+1.45
   1
-  - Type: Positive Displacement Mechanically Actuated PTFE Diaphragm Pumps.
+METALLURGY
  11
-234.0
+386.5
  21
-260.0
+381.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E4
 330
@@ -7915,27 +7957,35 @@ E4
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
+370
+25
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+435.0
  20
-252.5
- 30
-0.0
- 40
-1.7
-  1
-  - Flow Range: 5.0 to 50.0 L/h (Design Operating Point: 9.38 L/h for 0.50 wt% liquor recipe).
- 11
-234.0
- 21
-252.5
- 31
-0.0
-100
-AcDbText
+386.5
+ 10
+565.0
+ 20
+386.5
+ 10
+565.0
+ 20
+378.5
+ 10
+435.0
+ 20
+378.5
+ 10
+435.0
+ 20
+386.5
   0
 TEXT
   5
@@ -7945,29 +7995,29 @@ E5
 100
 AcDbEntity
   8
-ANNOTATION
+BORDER_TITLE
 100
 AcDbText
  10
-234.0
+436.5
  20
-245.0
+381.5
  30
 0.0
  40
-1.7
+1.45
   1
-  - Turndown: 10:1 Turndown ratio with stroke length micrometer + 4-20mA VFD speed modulation.
+PROCESS SERVICE & SPECIFICATION
  11
-234.0
+436.5
  21
-245.0
+381.5
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E6
 330
@@ -7975,27 +8025,35 @@ E6
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+15
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+200.0
  20
-237.5
- 30
-0.0
- 40
-1.7
-  1
-  - Wetted Materials: PVDF Liquid End, Ceramic Double Ball Check Valves, PTFE Diaphragm.
- 11
-234.0
- 21
-237.5
- 31
-0.0
-100
-AcDbText
+378.5
+ 10
+236.0
+ 20
+378.5
+ 10
+236.0
+ 20
+367.0
+ 10
+200.0
+ 20
+367.0
+ 10
+200.0
+ 20
+378.5
   0
 TEXT
   5
@@ -8009,25 +8067,25 @@ ANNOTATION
 100
 AcDbText
  10
-234.0
+201.5
  20
-230.0
+371.0
  30
 0.0
  40
-1.7
+1.35
   1
-ITEM 04: Skid Piping, Instrumentation & Safety System
+TK-102A/B
  11
-234.0
+201.5
  21
-230.0
+371.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 E8
 330
@@ -8035,27 +8093,35 @@ E8
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+15
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+236.0
  20
-222.5
- 30
-0.0
- 40
-1.7
-  1
-  - Process Piping: 1" NB Schedule 10S SS316L piping with sanitary tri-clamp connections.
- 11
-234.0
- 21
-222.5
- 31
-0.0
-100
-AcDbText
+378.5
+ 10
+320.0
+ 20
+378.5
+ 10
+320.0
+ 20
+367.0
+ 10
+236.0
+ 20
+367.0
+ 10
+236.0
+ 20
+378.5
   0
 TEXT
   5
@@ -8069,25 +8135,25 @@ ANNOTATION
 100
 AcDbText
  10
-234.0
+237.5
  20
-215.0
+371.0
  30
 0.0
  40
-1.7
+1.35
   1
-  - Safety Relief Valves PSV-102A/B: Set @ 4.0 bar g with full recirculation return to suction tank.
+Dosing Batch Tanks (2x)
  11
-234.0
+237.5
  21
-215.0
+371.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 EA
 330
@@ -8095,27 +8161,35 @@ EA
 100
 AcDbEntity
   8
-ANNOTATION
+TABLE_GRID
+370
+15
 100
-AcDbText
+AcDbPolyline
+ 90
+5
+ 70
+0
  10
-234.0
+320.0
  20
-207.5
- 30
-0.0
- 40
-1.7
-  1
-  - Pulsation Dampener: Bladder-type 0.5L dampener smoothing discharge flow pulsation to < +/-3%.
- 11
-234.0
- 21
-207.5
- 31
-0.0
-100
-AcDbText
+378.5
+ 10
+385.0
+ 20
+378.5
+ 10
+385.0
+ 20
+367.0
+ 10
+320.0
+ 20
+367.0
+ 10
+320.0
+ 20
+378.5
   0
 TEXT
   5
@@ -8129,27 +8203,65 @@ ANNOTATION
 100
 AcDbText
  10
-234.0
+321.5
  20
-200.0
+371.0
  30
 0.0
  40
-1.7
+1.35
   1
-  - Calibration Column: 1,000 mL Borosilicate glass cylinder with 3-way isolation valve for flow QA.
+500 L (800 Dia x 1100)
  11
-234.0
+321.5
  21
-200.0
+371.0
  31
 0.0
 100
 AcDbText
   0
-TEXT
+LWPOLYLINE
   5
 EC
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+378.5
+ 10
+435.0
+ 20
+378.5
+ 10
+435.0
+ 20
+367.0
+ 10
+385.0
+ 20
+367.0
+ 10
+385.0
+ 20
+378.5
+  0
+TEXT
+  5
+ED
 330
 17
 100
@@ -8159,19 +8271,3555 @@ ANNOTATION
 100
 AcDbText
  10
-234.0
+386.5
  20
-192.5
+371.0
  30
 0.0
  40
-1.7
+1.35
   1
-  - Containment: 110% Bund capacity (600L) with optical liquid leakage switch LS-102 interlocked to ESD.
+Food-Grade HDPE
  11
-234.0
+386.5
  21
-192.5
+371.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+EE
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+378.5
+ 10
+565.0
+ 20
+378.5
+ 10
+565.0
+ 20
+367.0
+ 10
+435.0
+ 20
+367.0
+ 10
+435.0
+ 20
+378.5
+  0
+TEXT
+  5
+EF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+371.0
+ 30
+0.0
+ 40
+1.35
+  1
+Dual batch prep (duty/standby), ultrasonic LT-102
+ 11
+436.5
+ 21
+371.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F0
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+367.0
+ 10
+236.0
+ 20
+367.0
+ 10
+236.0
+ 20
+355.5
+ 10
+200.0
+ 20
+355.5
+ 10
+200.0
+ 20
+367.0
+  0
+TEXT
+  5
+F1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+359.5
+ 30
+0.0
+ 40
+1.35
+  1
+AG-102A/B
+ 11
+201.5
+ 21
+359.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F2
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+367.0
+ 10
+320.0
+ 20
+367.0
+ 10
+320.0
+ 20
+355.5
+ 10
+236.0
+ 20
+355.5
+ 10
+236.0
+ 20
+367.0
+  0
+TEXT
+  5
+F3
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+359.5
+ 30
+0.0
+ 40
+1.35
+  1
+High-Shear Agitators (2x)
+ 11
+237.5
+ 21
+359.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F4
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+367.0
+ 10
+385.0
+ 20
+367.0
+ 10
+385.0
+ 20
+355.5
+ 10
+320.0
+ 20
+355.5
+ 10
+320.0
+ 20
+367.0
+  0
+TEXT
+  5
+F5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+359.5
+ 30
+0.0
+ 40
+1.35
+  1
+0.75 kW @ 1440 RPM
+ 11
+321.5
+ 21
+359.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F6
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+367.0
+ 10
+435.0
+ 20
+367.0
+ 10
+435.0
+ 20
+355.5
+ 10
+385.0
+ 20
+355.5
+ 10
+385.0
+ 20
+367.0
+  0
+TEXT
+  5
+F7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+359.5
+ 30
+0.0
+ 40
+1.35
+  1
+AISI SS316L
+ 11
+386.5
+ 21
+359.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+F8
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+367.0
+ 10
+565.0
+ 20
+367.0
+ 10
+565.0
+ 20
+355.5
+ 10
+435.0
+ 20
+355.5
+ 10
+435.0
+ 20
+367.0
+  0
+TEXT
+  5
+F9
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+359.5
+ 30
+0.0
+ 40
+1.35
+  1
+Rapid salt dissolution (bicarbonate/citrate salts)
+ 11
+436.5
+ 21
+359.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+FA
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+355.5
+ 10
+236.0
+ 20
+355.5
+ 10
+236.0
+ 20
+344.0
+ 10
+200.0
+ 20
+344.0
+ 10
+200.0
+ 20
+355.5
+  0
+TEXT
+  5
+FB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+348.0
+ 30
+0.0
+ 40
+1.35
+  1
+P-102A/B
+ 11
+201.5
+ 21
+348.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+FC
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+355.5
+ 10
+320.0
+ 20
+355.5
+ 10
+320.0
+ 20
+344.0
+ 10
+236.0
+ 20
+344.0
+ 10
+236.0
+ 20
+355.5
+  0
+TEXT
+  5
+FD
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+348.0
+ 30
+0.0
+ 40
+1.35
+  1
+Metering Pumps (2x)
+ 11
+237.5
+ 21
+348.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+FE
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+355.5
+ 10
+385.0
+ 20
+355.5
+ 10
+385.0
+ 20
+344.0
+ 10
+320.0
+ 20
+344.0
+ 10
+320.0
+ 20
+355.5
+  0
+TEXT
+  5
+FF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+348.0
+ 30
+0.0
+ 40
+1.35
+  1
+14.06 L/h (5-50 L/h)
+ 11
+321.5
+ 21
+348.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+100
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+355.5
+ 10
+435.0
+ 20
+355.5
+ 10
+435.0
+ 20
+344.0
+ 10
+385.0
+ 20
+344.0
+ 10
+385.0
+ 20
+355.5
+  0
+TEXT
+  5
+101
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+348.0
+ 30
+0.0
+ 40
+1.35
+  1
+PVDF / PTFE Diaph
+ 11
+386.5
+ 21
+348.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+102
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+355.5
+ 10
+565.0
+ 20
+355.5
+ 10
+565.0
+ 20
+344.0
+ 10
+435.0
+ 20
+344.0
+ 10
+435.0
+ 20
+355.5
+  0
+TEXT
+  5
+103
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+348.0
+ 30
+0.0
+ 40
+1.35
+  1
+Positive displacement diaphragm, 10:1 turndown VFD
+ 11
+436.5
+ 21
+348.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+104
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+344.0
+ 10
+236.0
+ 20
+344.0
+ 10
+236.0
+ 20
+332.5
+ 10
+200.0
+ 20
+332.5
+ 10
+200.0
+ 20
+344.0
+  0
+TEXT
+  5
+105
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+336.5
+ 30
+0.0
+ 40
+1.35
+  1
+PSV-102A/B
+ 11
+201.5
+ 21
+336.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+106
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+344.0
+ 10
+320.0
+ 20
+344.0
+ 10
+320.0
+ 20
+332.5
+ 10
+236.0
+ 20
+332.5
+ 10
+236.0
+ 20
+344.0
+  0
+TEXT
+  5
+107
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+336.5
+ 30
+0.0
+ 40
+1.35
+  1
+Safety Relief Valves
+ 11
+237.5
+ 21
+336.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+108
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+344.0
+ 10
+385.0
+ 20
+344.0
+ 10
+385.0
+ 20
+332.5
+ 10
+320.0
+ 20
+332.5
+ 10
+320.0
+ 20
+344.0
+  0
+TEXT
+  5
+109
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+336.5
+ 30
+0.0
+ 40
+1.35
+  1
+Set @ 4.0 bar g
+ 11
+321.5
+ 21
+336.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+10A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+344.0
+ 10
+435.0
+ 20
+344.0
+ 10
+435.0
+ 20
+332.5
+ 10
+385.0
+ 20
+332.5
+ 10
+385.0
+ 20
+344.0
+  0
+TEXT
+  5
+10B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+336.5
+ 30
+0.0
+ 40
+1.35
+  1
+PVDF Liquid End
+ 11
+386.5
+ 21
+336.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+10C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+344.0
+ 10
+565.0
+ 20
+344.0
+ 10
+565.0
+ 20
+332.5
+ 10
+435.0
+ 20
+332.5
+ 10
+435.0
+ 20
+344.0
+  0
+TEXT
+  5
+10D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+336.5
+ 30
+0.0
+ 40
+1.35
+  1
+Full bypass recirculation back to preparation tank
+ 11
+436.5
+ 21
+336.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+10E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+332.5
+ 10
+236.0
+ 20
+332.5
+ 10
+236.0
+ 20
+321.0
+ 10
+200.0
+ 20
+321.0
+ 10
+200.0
+ 20
+332.5
+  0
+TEXT
+  5
+10F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+325.0
+ 30
+0.0
+ 40
+1.35
+  1
+PD-102
+ 11
+201.5
+ 21
+325.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+110
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+332.5
+ 10
+320.0
+ 20
+332.5
+ 10
+320.0
+ 20
+321.0
+ 10
+236.0
+ 20
+321.0
+ 10
+236.0
+ 20
+332.5
+  0
+TEXT
+  5
+111
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+325.0
+ 30
+0.0
+ 40
+1.35
+  1
+Pulsation Dampener
+ 11
+237.5
+ 21
+325.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+112
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+332.5
+ 10
+385.0
+ 20
+332.5
+ 10
+385.0
+ 20
+321.0
+ 10
+320.0
+ 20
+321.0
+ 10
+320.0
+ 20
+332.5
+  0
+TEXT
+  5
+113
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+325.0
+ 30
+0.0
+ 40
+1.35
+  1
+0.5 L Bladder Type
+ 11
+321.5
+ 21
+325.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+114
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+332.5
+ 10
+435.0
+ 20
+332.5
+ 10
+435.0
+ 20
+321.0
+ 10
+385.0
+ 20
+321.0
+ 10
+385.0
+ 20
+332.5
+  0
+TEXT
+  5
+115
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+325.0
+ 30
+0.0
+ 40
+1.35
+  1
+PVDF / Viton
+ 11
+386.5
+ 21
+325.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+116
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+332.5
+ 10
+565.0
+ 20
+332.5
+ 10
+565.0
+ 20
+321.0
+ 10
+435.0
+ 20
+321.0
+ 10
+435.0
+ 20
+332.5
+  0
+TEXT
+  5
+117
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+325.0
+ 30
+0.0
+ 40
+1.35
+  1
+Smooths discharge pulsation to < +/-2.5% variation
+ 11
+436.5
+ 21
+325.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+118
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+321.0
+ 10
+236.0
+ 20
+321.0
+ 10
+236.0
+ 20
+309.5
+ 10
+200.0
+ 20
+309.5
+ 10
+200.0
+ 20
+321.0
+  0
+TEXT
+  5
+119
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+313.5
+ 30
+0.0
+ 40
+1.35
+  1
+CC-102
+ 11
+201.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+11A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+321.0
+ 10
+320.0
+ 20
+321.0
+ 10
+320.0
+ 20
+309.5
+ 10
+236.0
+ 20
+309.5
+ 10
+236.0
+ 20
+321.0
+  0
+TEXT
+  5
+11B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+313.5
+ 30
+0.0
+ 40
+1.35
+  1
+Calibration Column
+ 11
+237.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+11C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+321.0
+ 10
+385.0
+ 20
+321.0
+ 10
+385.0
+ 20
+309.5
+ 10
+320.0
+ 20
+309.5
+ 10
+320.0
+ 20
+321.0
+  0
+TEXT
+  5
+11D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+313.5
+ 30
+0.0
+ 40
+1.35
+  1
+1,000 mL Cylinder
+ 11
+321.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+11E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+321.0
+ 10
+435.0
+ 20
+321.0
+ 10
+435.0
+ 20
+309.5
+ 10
+385.0
+ 20
+309.5
+ 10
+385.0
+ 20
+321.0
+  0
+TEXT
+  5
+11F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+313.5
+ 30
+0.0
+ 40
+1.35
+  1
+Borosilicate Glass
+ 11
+386.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+120
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+321.0
+ 10
+565.0
+ 20
+321.0
+ 10
+565.0
+ 20
+309.5
+ 10
+435.0
+ 20
+309.5
+ 10
+435.0
+ 20
+321.0
+  0
+TEXT
+  5
+121
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+313.5
+ 30
+0.0
+ 40
+1.35
+  1
+3-Way valve draw-down flow verification cylinder
+ 11
+436.5
+ 21
+313.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+122
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+309.5
+ 10
+236.0
+ 20
+309.5
+ 10
+236.0
+ 20
+298.0
+ 10
+200.0
+ 20
+298.0
+ 10
+200.0
+ 20
+309.5
+  0
+TEXT
+  5
+123
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+302.0
+ 30
+0.0
+ 40
+1.35
+  1
+PIP-102
+ 11
+201.5
+ 21
+302.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+124
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+309.5
+ 10
+320.0
+ 20
+309.5
+ 10
+320.0
+ 20
+298.0
+ 10
+236.0
+ 20
+298.0
+ 10
+236.0
+ 20
+309.5
+  0
+TEXT
+  5
+125
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+302.0
+ 30
+0.0
+ 40
+1.35
+  1
+Skid Piping Network
+ 11
+237.5
+ 21
+302.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+126
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+309.5
+ 10
+385.0
+ 20
+309.5
+ 10
+385.0
+ 20
+298.0
+ 10
+320.0
+ 20
+298.0
+ 10
+320.0
+ 20
+309.5
+  0
+TEXT
+  5
+127
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+302.0
+ 30
+0.0
+ 40
+1.35
+  1
+1" NB Schedule 10S
+ 11
+321.5
+ 21
+302.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+128
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+309.5
+ 10
+435.0
+ 20
+309.5
+ 10
+435.0
+ 20
+298.0
+ 10
+385.0
+ 20
+298.0
+ 10
+385.0
+ 20
+309.5
+  0
+TEXT
+  5
+129
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+302.0
+ 30
+0.0
+ 40
+1.35
+  1
+AISI SS316L
+ 11
+386.5
+ 21
+302.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+309.5
+ 10
+565.0
+ 20
+309.5
+ 10
+565.0
+ 20
+298.0
+ 10
+435.0
+ 20
+298.0
+ 10
+435.0
+ 20
+309.5
+  0
+TEXT
+  5
+12B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+302.0
+ 30
+0.0
+ 40
+1.35
+  1
+Sanitary tri-clamp spools, zero dead-leg geometry
+ 11
+436.5
+ 21
+302.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+298.0
+ 10
+236.0
+ 20
+298.0
+ 10
+236.0
+ 20
+286.5
+ 10
+200.0
+ 20
+286.5
+ 10
+200.0
+ 20
+298.0
+  0
+TEXT
+  5
+12D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+290.5
+ 30
+0.0
+ 40
+1.35
+  1
+BD-102
+ 11
+201.5
+ 21
+290.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+12E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+298.0
+ 10
+320.0
+ 20
+298.0
+ 10
+320.0
+ 20
+286.5
+ 10
+236.0
+ 20
+286.5
+ 10
+236.0
+ 20
+298.0
+  0
+TEXT
+  5
+12F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+290.5
+ 30
+0.0
+ 40
+1.35
+  1
+Spill Containment Bund
+ 11
+237.5
+ 21
+290.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+130
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+298.0
+ 10
+385.0
+ 20
+298.0
+ 10
+385.0
+ 20
+286.5
+ 10
+320.0
+ 20
+286.5
+ 10
+320.0
+ 20
+298.0
+  0
+TEXT
+  5
+131
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+290.5
+ 30
+0.0
+ 40
+1.35
+  1
+600 L (110% Capacity)
+ 11
+321.5
+ 21
+290.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+132
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+298.0
+ 10
+435.0
+ 20
+298.0
+ 10
+435.0
+ 20
+286.5
+ 10
+385.0
+ 20
+286.5
+ 10
+385.0
+ 20
+298.0
+  0
+TEXT
+  5
+133
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+290.5
+ 30
+0.0
+ 40
+1.35
+  1
+FRP Lined CS
+ 11
+386.5
+ 21
+290.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+134
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+298.0
+ 10
+565.0
+ 20
+298.0
+ 10
+565.0
+ 20
+286.5
+ 10
+435.0
+ 20
+286.5
+ 10
+435.0
+ 20
+298.0
+  0
+TEXT
+  5
+135
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+290.5
+ 30
+0.0
+ 40
+1.35
+  1
+Containment tray with optical liquid leak sensor LS-102
+ 11
+436.5
+ 21
+290.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+136
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+286.5
+ 10
+236.0
+ 20
+286.5
+ 10
+236.0
+ 20
+275.0
+ 10
+200.0
+ 20
+275.0
+ 10
+200.0
+ 20
+286.5
+  0
+TEXT
+  5
+137
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+279.0
+ 30
+0.0
+ 40
+1.35
+  1
+V-102A-H
+ 11
+201.5
+ 21
+279.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+138
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+286.5
+ 10
+320.0
+ 20
+286.5
+ 10
+320.0
+ 20
+275.0
+ 10
+236.0
+ 20
+275.0
+ 10
+236.0
+ 20
+286.5
+  0
+TEXT
+  5
+139
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+279.0
+ 30
+0.0
+ 40
+1.35
+  1
+Sanitary Ball Valves
+ 11
+237.5
+ 21
+279.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+286.5
+ 10
+385.0
+ 20
+286.5
+ 10
+385.0
+ 20
+275.0
+ 10
+320.0
+ 20
+275.0
+ 10
+320.0
+ 20
+286.5
+  0
+TEXT
+  5
+13B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+279.0
+ 30
+0.0
+ 40
+1.35
+  1
+1" NB 150# Tri-Clamp
+ 11
+321.5
+ 21
+279.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+286.5
+ 10
+435.0
+ 20
+286.5
+ 10
+435.0
+ 20
+275.0
+ 10
+385.0
+ 20
+275.0
+ 10
+385.0
+ 20
+286.5
+  0
+TEXT
+  5
+13D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+279.0
+ 30
+0.0
+ 40
+1.35
+  1
+AISI SS316L / PTFE
+ 11
+386.5
+ 21
+279.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+13E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+286.5
+ 10
+565.0
+ 20
+286.5
+ 10
+565.0
+ 20
+275.0
+ 10
+435.0
+ 20
+275.0
+ 10
+435.0
+ 20
+286.5
+  0
+TEXT
+  5
+13F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+279.0
+ 30
+0.0
+ 40
+1.35
+  1
+Cavity filled, 3-piece full bore isolation valves
+ 11
+436.5
+ 21
+279.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+140
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+275.0
+ 10
+236.0
+ 20
+275.0
+ 10
+236.0
+ 20
+263.5
+ 10
+200.0
+ 20
+263.5
+ 10
+200.0
+ 20
+275.0
+  0
+TEXT
+  5
+141
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+267.5
+ 30
+0.0
+ 40
+1.35
+  1
+CP-102
+ 11
+201.5
+ 21
+267.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+142
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+275.0
+ 10
+320.0
+ 20
+275.0
+ 10
+320.0
+ 20
+263.5
+ 10
+236.0
+ 20
+263.5
+ 10
+236.0
+ 20
+275.0
+  0
+TEXT
+  5
+143
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+267.5
+ 30
+0.0
+ 40
+1.35
+  1
+Local Control Panel
+ 11
+237.5
+ 21
+267.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+144
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+275.0
+ 10
+385.0
+ 20
+275.0
+ 10
+385.0
+ 20
+263.5
+ 10
+320.0
+ 20
+263.5
+ 10
+320.0
+ 20
+275.0
+  0
+TEXT
+  5
+145
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+267.5
+ 30
+0.0
+ 40
+1.35
+  1
+IP65 Wall Mount
+ 11
+321.5
+ 21
+267.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+146
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+275.0
+ 10
+435.0
+ 20
+275.0
+ 10
+435.0
+ 20
+263.5
+ 10
+385.0
+ 20
+263.5
+ 10
+385.0
+ 20
+275.0
+  0
+TEXT
+  5
+147
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+267.5
+ 30
+0.0
+ 40
+1.35
+  1
+AISI SS304 Casing
+ 11
+386.5
+ 21
+267.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+148
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+275.0
+ 10
+565.0
+ 20
+275.0
+ 10
+565.0
+ 20
+263.5
+ 10
+435.0
+ 20
+263.5
+ 10
+435.0
+ 20
+275.0
+  0
+TEXT
+  5
+149
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+267.5
+ 30
+0.0
+ 40
+1.35
+  1
+VFD drives, manual stroke control, E-Stop push button
+ 11
+436.5
+ 21
+267.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+263.5
+ 10
+236.0
+ 20
+263.5
+ 10
+236.0
+ 20
+252.0
+ 10
+200.0
+ 20
+252.0
+ 10
+200.0
+ 20
+263.5
+  0
+TEXT
+  5
+14B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+201.5
+ 20
+256.0
+ 30
+0.0
+ 40
+1.35
+  1
+SKID FRAME
+ 11
+201.5
+ 21
+256.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+236.0
+ 20
+263.5
+ 10
+320.0
+ 20
+263.5
+ 10
+320.0
+ 20
+252.0
+ 10
+236.0
+ 20
+252.0
+ 10
+236.0
+ 20
+263.5
+  0
+TEXT
+  5
+14D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+237.5
+ 20
+256.0
+ 30
+0.0
+ 40
+1.35
+  1
+Structural Base Skid
+ 11
+237.5
+ 21
+256.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+14E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+320.0
+ 20
+263.5
+ 10
+385.0
+ 20
+263.5
+ 10
+385.0
+ 20
+252.0
+ 10
+320.0
+ 20
+252.0
+ 10
+320.0
+ 20
+263.5
+  0
+TEXT
+  5
+14F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+321.5
+ 20
+256.0
+ 30
+0.0
+ 40
+1.35
+  1
+2,400 x 1,400 x 1,900
+ 11
+321.5
+ 21
+256.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+150
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+385.0
+ 20
+263.5
+ 10
+435.0
+ 20
+263.5
+ 10
+435.0
+ 20
+252.0
+ 10
+385.0
+ 20
+252.0
+ 10
+385.0
+ 20
+263.5
+  0
+TEXT
+  5
+151
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+386.5
+ 20
+256.0
+ 30
+0.0
+ 40
+1.35
+  1
+AISI SS304 Box Sec
+ 11
+386.5
+ 21
+256.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+152
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+435.0
+ 20
+263.5
+ 10
+565.0
+ 20
+263.5
+ 10
+565.0
+ 20
+252.0
+ 10
+435.0
+ 20
+252.0
+ 10
+435.0
+ 20
+263.5
+  0
+TEXT
+  5
+153
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+436.5
+ 20
+256.0
+ 30
+0.0
+ 40
+1.35
+  1
+Epoxy-grouted leveling feet, seismic anchor lugs
+ 11
+436.5
+ 21
+256.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+154
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+20
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+200.0
+ 20
+250.0
+ 10
+565.0
+ 20
+250.0
+ 10
+565.0
+ 20
+170.0
+ 10
+200.0
+ 20
+170.0
+ 10
+200.0
+ 20
+250.0
+  0
+TEXT
+  5
+155
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+203.0
+ 20
+243.0
+ 30
+0.0
+ 40
+1.3
+  1
+DESIGN COMPLIANCE: FDA 21 CFR 177.1520 food-contact certified; CGMP sanitary construction.
+ 11
+203.0
+ 21
+243.0
  31
 0.0
 100
@@ -8179,7 +11827,173 @@ AcDbText
   0
 TEXT
   5
-F0
+156
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+203.0
+ 20
+233.0
+ 30
+0.0
+ 40
+1.3
+  1
+AUTOMATION INTEGRATION: Modbus TCP communication to central SCADA; 4-20mA pacing proportional to dal flow.
+ 11
+203.0
+ 21
+233.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+157
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+203.0
+ 20
+223.0
+ 30
+0.0
+ 40
+1.3
+  1
+DOSING ACCURACY: Micro-meter stroke adjustment delivering +/- 0.5% volumetric repeatability across range.
+ 11
+203.0
+ 21
+223.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+158
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+203.0
+ 20
+213.0
+ 30
+0.0
+ 40
+1.3
+  1
+ENVIRONMENTAL SAFETY: 110% bund capacity prevents chemical runoff; interlocked with plant emergency shutdown.
+ 11
+203.0
+ 21
+213.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+159
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+50
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+160.0
+ 10
+565.0
+ 20
+160.0
+ 10
+565.0
+ 20
+65.0
+ 10
+25.0
+ 20
+65.0
+ 10
+25.0
+ 20
+160.0
+  0
+LWPOLYLINE
+  5
+15A
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+35
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+160.0
+ 10
+565.0
+ 20
+160.0
+ 10
+565.0
+ 20
+151.5
+ 10
+25.0
+ 20
+151.5
+ 10
+25.0
+ 20
+160.0
+  0
+TEXT
+  5
+15B
 330
 17
 100
@@ -8189,19 +12003,3351 @@ BORDER_TITLE
 100
 AcDbText
  10
-389.0
+31.0
  20
-48.0
+154.0
  30
 0.0
  40
 2.0
   1
-ENGR: SOURISH SENAPATI | GUIDANCE: DR. ARCHISMAN RAY (IIT KGP)
+SKID NOZZLE SCHEDULE & UTILITY INTERFACE SCHEDULE
  11
-389.0
+31.0
  21
-48.0
+154.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15C
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+151.5
+ 10
+60.0
+ 20
+151.5
+ 10
+60.0
+ 20
+143.5
+ 10
+25.0
+ 20
+143.5
+ 10
+25.0
+ 20
+151.5
+  0
+TEXT
+  5
+15D
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+26.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+NOZZLE
+ 11
+26.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+15E
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+151.5
+ 10
+190.0
+ 20
+151.5
+ 10
+190.0
+ 20
+143.5
+ 10
+60.0
+ 20
+143.5
+ 10
+60.0
+ 20
+151.5
+  0
+TEXT
+  5
+15F
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+61.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+SERVICE DESCRIPTION
+ 11
+61.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+160
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+151.5
+ 10
+235.0
+ 20
+151.5
+ 10
+235.0
+ 20
+143.5
+ 10
+190.0
+ 20
+143.5
+ 10
+190.0
+ 20
+151.5
+  0
+TEXT
+  5
+161
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+191.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+SIZE
+ 11
+191.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+162
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+151.5
+ 10
+290.0
+ 20
+151.5
+ 10
+290.0
+ 20
+143.5
+ 10
+235.0
+ 20
+143.5
+ 10
+235.0
+ 20
+151.5
+  0
+TEXT
+  5
+163
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+236.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+RATING
+ 11
+236.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+164
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+151.5
+ 10
+345.0
+ 20
+151.5
+ 10
+345.0
+ 20
+143.5
+ 10
+290.0
+ 20
+143.5
+ 10
+290.0
+ 20
+151.5
+  0
+TEXT
+  5
+165
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+291.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+FACING
+ 11
+291.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+166
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+151.5
+ 10
+420.0
+ 20
+151.5
+ 10
+420.0
+ 20
+143.5
+ 10
+345.0
+ 20
+143.5
+ 10
+345.0
+ 20
+151.5
+  0
+TEXT
+  5
+167
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+346.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+METALLURGY
+ 11
+346.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+168
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+370
+25
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+151.5
+ 10
+565.0
+ 20
+151.5
+ 10
+565.0
+ 20
+143.5
+ 10
+420.0
+ 20
+143.5
+ 10
+420.0
+ 20
+151.5
+  0
+TEXT
+  5
+169
+330
+17
+100
+AcDbEntity
+  8
+BORDER_TITLE
+100
+AcDbText
+ 10
+421.5
+ 20
+146.5
+ 30
+0.0
+ 40
+1.45
+  1
+CONNECTED TERMINATION
+ 11
+421.5
+ 21
+146.5
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+143.5
+ 10
+60.0
+ 20
+143.5
+ 10
+60.0
+ 20
+132.5
+ 10
+25.0
+ 20
+132.5
+ 10
+25.0
+ 20
+143.5
+  0
+TEXT
+  5
+16B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+N1
+ 11
+26.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+143.5
+ 10
+190.0
+ 20
+143.5
+ 10
+190.0
+ 20
+132.5
+ 10
+60.0
+ 20
+132.5
+ 10
+60.0
+ 20
+143.5
+  0
+TEXT
+  5
+16D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+Soft Water Supply Infeed
+ 11
+61.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+16E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+143.5
+ 10
+235.0
+ 20
+143.5
+ 10
+235.0
+ 20
+132.5
+ 10
+190.0
+ 20
+132.5
+ 10
+190.0
+ 20
+143.5
+  0
+TEXT
+  5
+16F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+1.5" NB
+ 11
+191.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+170
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+143.5
+ 10
+290.0
+ 20
+143.5
+ 10
+290.0
+ 20
+132.5
+ 10
+235.0
+ 20
+132.5
+ 10
+235.0
+ 20
+143.5
+  0
+TEXT
+  5
+171
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+ANSI 150#
+ 11
+236.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+172
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+143.5
+ 10
+345.0
+ 20
+143.5
+ 10
+345.0
+ 20
+132.5
+ 10
+290.0
+ 20
+132.5
+ 10
+290.0
+ 20
+143.5
+  0
+TEXT
+  5
+173
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+Flat Face
+ 11
+291.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+174
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+143.5
+ 10
+420.0
+ 20
+143.5
+ 10
+420.0
+ 20
+132.5
+ 10
+345.0
+ 20
+132.5
+ 10
+345.0
+ 20
+143.5
+  0
+TEXT
+  5
+175
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+AISI SS316L
+ 11
+346.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+176
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+143.5
+ 10
+565.0
+ 20
+143.5
+ 10
+565.0
+ 20
+132.5
+ 10
+420.0
+ 20
+132.5
+ 10
+420.0
+ 20
+143.5
+  0
+TEXT
+  5
+177
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+136.0
+ 30
+0.0
+ 40
+1.4
+  1
+WTP-01 Header @ 2.5 bar g
+ 11
+421.8
+ 21
+136.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+178
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+132.5
+ 10
+60.0
+ 20
+132.5
+ 10
+60.0
+ 20
+121.5
+ 10
+25.0
+ 20
+121.5
+ 10
+25.0
+ 20
+132.5
+  0
+TEXT
+  5
+179
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+N2
+ 11
+26.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+132.5
+ 10
+190.0
+ 20
+132.5
+ 10
+190.0
+ 20
+121.5
+ 10
+60.0
+ 20
+121.5
+ 10
+60.0
+ 20
+132.5
+  0
+TEXT
+  5
+17B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+Chemical Dosing Discharge
+ 11
+61.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+132.5
+ 10
+235.0
+ 20
+132.5
+ 10
+235.0
+ 20
+121.5
+ 10
+190.0
+ 20
+121.5
+ 10
+190.0
+ 20
+132.5
+  0
+TEXT
+  5
+17D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+1.0" NB
+ 11
+191.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+17E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+132.5
+ 10
+290.0
+ 20
+132.5
+ 10
+290.0
+ 20
+121.5
+ 10
+235.0
+ 20
+121.5
+ 10
+235.0
+ 20
+132.5
+  0
+TEXT
+  5
+17F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+ANSI 150#
+ 11
+236.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+180
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+132.5
+ 10
+345.0
+ 20
+132.5
+ 10
+345.0
+ 20
+121.5
+ 10
+290.0
+ 20
+121.5
+ 10
+290.0
+ 20
+132.5
+  0
+TEXT
+  5
+181
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+Raised Face
+ 11
+291.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+182
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+132.5
+ 10
+420.0
+ 20
+132.5
+ 10
+420.0
+ 20
+121.5
+ 10
+345.0
+ 20
+121.5
+ 10
+345.0
+ 20
+132.5
+  0
+TEXT
+  5
+183
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+AISI SS316L
+ 11
+346.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+184
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+132.5
+ 10
+565.0
+ 20
+132.5
+ 10
+565.0
+ 20
+121.5
+ 10
+420.0
+ 20
+121.5
+ 10
+420.0
+ 20
+132.5
+  0
+TEXT
+  5
+185
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+125.0
+ 30
+0.0
+ 40
+1.4
+  1
+Soak Battery TK-101 Feed Spool
+ 11
+421.8
+ 21
+125.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+186
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+121.5
+ 10
+60.0
+ 20
+121.5
+ 10
+60.0
+ 20
+110.5
+ 10
+25.0
+ 20
+110.5
+ 10
+25.0
+ 20
+121.5
+  0
+TEXT
+  5
+187
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+N3
+ 11
+26.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+188
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+121.5
+ 10
+190.0
+ 20
+121.5
+ 10
+190.0
+ 20
+110.5
+ 10
+60.0
+ 20
+110.5
+ 10
+60.0
+ 20
+121.5
+  0
+TEXT
+  5
+189
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+Containment Bund Drain
+ 11
+61.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+121.5
+ 10
+235.0
+ 20
+121.5
+ 10
+235.0
+ 20
+110.5
+ 10
+190.0
+ 20
+110.5
+ 10
+190.0
+ 20
+121.5
+  0
+TEXT
+  5
+18B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+2.0" NB
+ 11
+191.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+121.5
+ 10
+290.0
+ 20
+121.5
+ 10
+290.0
+ 20
+110.5
+ 10
+235.0
+ 20
+110.5
+ 10
+235.0
+ 20
+121.5
+  0
+TEXT
+  5
+18D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+ANSI 150#
+ 11
+236.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+18E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+121.5
+ 10
+345.0
+ 20
+121.5
+ 10
+345.0
+ 20
+110.5
+ 10
+290.0
+ 20
+110.5
+ 10
+290.0
+ 20
+121.5
+  0
+TEXT
+  5
+18F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+Flat Face
+ 11
+291.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+190
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+121.5
+ 10
+420.0
+ 20
+121.5
+ 10
+420.0
+ 20
+110.5
+ 10
+345.0
+ 20
+110.5
+ 10
+345.0
+ 20
+121.5
+  0
+TEXT
+  5
+191
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+AISI SS304
+ 11
+346.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+192
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+121.5
+ 10
+565.0
+ 20
+121.5
+ 10
+565.0
+ 20
+110.5
+ 10
+420.0
+ 20
+110.5
+ 10
+420.0
+ 20
+121.5
+  0
+TEXT
+  5
+193
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+114.0
+ 30
+0.0
+ 40
+1.4
+  1
+ETP Equalization Pit TK-104
+ 11
+421.8
+ 21
+114.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+194
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+110.5
+ 10
+60.0
+ 20
+110.5
+ 10
+60.0
+ 20
+99.5
+ 10
+25.0
+ 20
+99.5
+ 10
+25.0
+ 20
+110.5
+  0
+TEXT
+  5
+195
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+N4
+ 11
+26.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+196
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+110.5
+ 10
+190.0
+ 20
+110.5
+ 10
+190.0
+ 20
+99.5
+ 10
+60.0
+ 20
+99.5
+ 10
+60.0
+ 20
+110.5
+  0
+TEXT
+  5
+197
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+Tank Overflow Vent
+ 11
+61.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+198
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+110.5
+ 10
+235.0
+ 20
+110.5
+ 10
+235.0
+ 20
+99.5
+ 10
+190.0
+ 20
+99.5
+ 10
+190.0
+ 20
+110.5
+  0
+TEXT
+  5
+199
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+1.5" NB
+ 11
+191.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19A
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+110.5
+ 10
+290.0
+ 20
+110.5
+ 10
+290.0
+ 20
+99.5
+ 10
+235.0
+ 20
+99.5
+ 10
+235.0
+ 20
+110.5
+  0
+TEXT
+  5
+19B
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+ANSI 150#
+ 11
+236.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19C
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+110.5
+ 10
+345.0
+ 20
+110.5
+ 10
+345.0
+ 20
+99.5
+ 10
+290.0
+ 20
+99.5
+ 10
+290.0
+ 20
+110.5
+  0
+TEXT
+  5
+19D
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+Atmospheric
+ 11
+291.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+19E
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+110.5
+ 10
+420.0
+ 20
+110.5
+ 10
+420.0
+ 20
+99.5
+ 10
+345.0
+ 20
+99.5
+ 10
+345.0
+ 20
+110.5
+  0
+TEXT
+  5
+19F
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+Food-Grade HDPE
+ 11
+346.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A0
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+110.5
+ 10
+565.0
+ 20
+110.5
+ 10
+565.0
+ 20
+99.5
+ 10
+420.0
+ 20
+99.5
+ 10
+420.0
+ 20
+110.5
+  0
+TEXT
+  5
+1A1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+103.0
+ 30
+0.0
+ 40
+1.4
+  1
+Gravity drain to internal skid bund
+ 11
+421.8
+ 21
+103.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A2
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+99.5
+ 10
+60.0
+ 20
+99.5
+ 10
+60.0
+ 20
+88.5
+ 10
+25.0
+ 20
+88.5
+ 10
+25.0
+ 20
+99.5
+  0
+TEXT
+  5
+1A3
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+E1
+ 11
+26.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A4
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+99.5
+ 10
+190.0
+ 20
+99.5
+ 10
+190.0
+ 20
+88.5
+ 10
+60.0
+ 20
+88.5
+ 10
+60.0
+ 20
+99.5
+  0
+TEXT
+  5
+1A5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+Main Electrical Power Feed
+ 11
+61.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A6
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+99.5
+ 10
+235.0
+ 20
+99.5
+ 10
+235.0
+ 20
+88.5
+ 10
+190.0
+ 20
+88.5
+ 10
+190.0
+ 20
+99.5
+  0
+TEXT
+  5
+1A7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+4-Core 4 mm2
+ 11
+191.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1A8
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+99.5
+ 10
+290.0
+ 20
+99.5
+ 10
+290.0
+ 20
+88.5
+ 10
+235.0
+ 20
+88.5
+ 10
+235.0
+ 20
+99.5
+  0
+TEXT
+  5
+1A9
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+415V / 50Hz
+ 11
+236.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AA
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+99.5
+ 10
+345.0
+ 20
+99.5
+ 10
+345.0
+ 20
+88.5
+ 10
+290.0
+ 20
+88.5
+ 10
+290.0
+ 20
+99.5
+  0
+TEXT
+  5
+1AB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+Glanded
+ 11
+291.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AC
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+99.5
+ 10
+420.0
+ 20
+99.5
+ 10
+420.0
+ 20
+88.5
+ 10
+345.0
+ 20
+88.5
+ 10
+345.0
+ 20
+99.5
+  0
+TEXT
+  5
+1AD
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+Armoured Cu
+ 11
+346.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1AE
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+99.5
+ 10
+565.0
+ 20
+99.5
+ 10
+565.0
+ 20
+88.5
+ 10
+420.0
+ 20
+88.5
+ 10
+420.0
+ 20
+99.5
+  0
+TEXT
+  5
+1AF
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+92.0
+ 30
+0.0
+ 40
+1.4
+  1
+MCC-01 Feeder Feat-04 (3.5 kW connected)
+ 11
+421.8
+ 21
+92.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B0
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+25.0
+ 20
+88.5
+ 10
+60.0
+ 20
+88.5
+ 10
+60.0
+ 20
+77.5
+ 10
+25.0
+ 20
+77.5
+ 10
+25.0
+ 20
+88.5
+  0
+TEXT
+  5
+1B1
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+26.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+I1
+ 11
+26.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B2
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+60.0
+ 20
+88.5
+ 10
+190.0
+ 20
+88.5
+ 10
+190.0
+ 20
+77.5
+ 10
+60.0
+ 20
+77.5
+ 10
+60.0
+ 20
+88.5
+  0
+TEXT
+  5
+1B3
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+61.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+Automation Signal Trunk
+ 11
+61.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B4
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+190.0
+ 20
+88.5
+ 10
+235.0
+ 20
+88.5
+ 10
+235.0
+ 20
+77.5
+ 10
+190.0
+ 20
+77.5
+ 10
+190.0
+ 20
+88.5
+  0
+TEXT
+  5
+1B5
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+191.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+12-Pair Shielded
+ 11
+191.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B6
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+235.0
+ 20
+88.5
+ 10
+290.0
+ 20
+88.5
+ 10
+290.0
+ 20
+77.5
+ 10
+235.0
+ 20
+77.5
+ 10
+235.0
+ 20
+88.5
+  0
+TEXT
+  5
+1B7
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+236.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+4-20mA / DI
+ 11
+236.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1B8
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+290.0
+ 20
+88.5
+ 10
+345.0
+ 20
+88.5
+ 10
+345.0
+ 20
+77.5
+ 10
+290.0
+ 20
+77.5
+ 10
+290.0
+ 20
+88.5
+  0
+TEXT
+  5
+1B9
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+291.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+Glanded
+ 11
+291.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1BA
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+345.0
+ 20
+88.5
+ 10
+420.0
+ 20
+88.5
+ 10
+420.0
+ 20
+77.5
+ 10
+345.0
+ 20
+77.5
+ 10
+345.0
+ 20
+88.5
+  0
+TEXT
+  5
+1BB
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+346.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+Tinned Cu
+ 11
+346.8
+ 21
+81.0
+ 31
+0.0
+100
+AcDbText
+  0
+LWPOLYLINE
+  5
+1BC
+330
+17
+100
+AcDbEntity
+  8
+TABLE_GRID
+370
+15
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+420.0
+ 20
+88.5
+ 10
+565.0
+ 20
+88.5
+ 10
+565.0
+ 20
+77.5
+ 10
+420.0
+ 20
+77.5
+ 10
+420.0
+ 20
+88.5
+  0
+TEXT
+  5
+1BD
+330
+17
+100
+AcDbEntity
+  8
+ANNOTATION
+100
+AcDbText
+ 10
+421.8
+ 20
+81.0
+ 30
+0.0
+ 40
+1.4
+  1
+Remote I/O Panel RIO-02 (Modbus TCP)
+ 11
+421.8
+ 21
+81.0
  31
 0.0
 100
@@ -9297,7 +16443,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-EF
+1C0
   0
 DICTIONARYVAR
   5
@@ -9309,7 +16455,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-15T18:14:08.961150+00:00
+1.4.4 @ 2026-10-17T10:28:57.519109+00:00
   0
 VISUALSTYLE
   5
@@ -15863,7 +23009,7 @@ strokes_ogs.tif
   0
 DICTIONARYVAR
   5
-EF
+1C0
 330
 2D
 100
@@ -15871,7 +23017,7 @@ DictionaryVariables
 280
 0
   1
-1.4.4 @ 2026-10-16T14:50:41.432381+00:00
+1.4.4 @ 2026-10-17T10:28:57.529968+00:00
   0
 ENDSEC
   0

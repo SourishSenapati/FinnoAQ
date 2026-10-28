@@ -21,47 +21,19 @@ The 15 MT/day imported Tanzanian Split Pigeon Pea (*Cajanus cajan*) Rapid-Cookin
 
 ## 2. SCADA System Hardware & Network Topology (ISA-95)
 
-```mermaid
-graph TD
-    subgraph Level_2_Supervisory_Control
-        HMI1[Control Room SCADA Client 1 - 24" LED]
-        HMI2[Control Room SCADA Client 2 - 24" LED]
-        SRV[Redundant SCADA Server & Historian - WinCC Pro]
-        HMI1 --- SRV
-        HMI2 --- SRV
-    end
+| ISA-95 Level | Automation Layer | Hardware Elements & Redundancy | Communications Protocol |
+| :---: | :--- | :--- | :--- |
+| **Level 3 / ERP** | Enterprise & Manufacturing Ops | SAP S/4HANA ERP, Quality Lab LIMS, Historian Interface | Secure HTTPS / OPC-UA via DMZ Firewall |
+| **Level 2** | Supervisory Control & SCADA | Dual 24" Redundant SCADA Servers (Siemens WinCC Unified), Historian Database | Industrial Ethernet (1000BASE-T), IEC 62443 DMZ |
+| **Level 1** | Primary Process & Safety Control | Primary PLC (Siemens S7-1500 CPU 1515-2 PN) + Fail-Safe Safety PLC (CPU 1515F-2 PN) | Profinet MRP Industrial Ring (100 Mbps, <50ms failover) |
+| **Level 1 (Field)** | Automation Panels & Distributed I/O | Main Panel `SCP-100` (21.5" HMI), Mezzanine Drop `RIO-101`, Skid Drop `RIO-102` | Profinet / Profisafe Shielded Industrial Cable |
+| **Level 0** | Field Instrumentation & Final Elements | 72 Field I/O (Radar Level, RTDs, Coriolis Flow, pH, VFD Inverters, Safety Solenoids) | 4–20 mA HART, Pt100 RTD 4-wire, 24V DC Discrete |
 
-    subgraph Industrial_DMZ_IEC_62443
-        FW[Industrial Security Firewall Scalance S615]
-        SRV --- FW
-    end
+<p align="center">
+  <img src="../engineering/cad/png/finnoaq_dwg_009_electrical_sld.png" alt="FinnoaQ Electrical Single Line Diagram & Control System Architecture" width="100%" />
+</p>
+<p align="center"><em>Figure 2.1: Electrical Single Line Diagram (SLD) & Automation Network Topology (DWG-FIN-15T-009).</em></p>
 
-    subgraph Level_1_Process_Control
-        PLC[Primary Process Controller - Siemens S7-1500 CPU 1515-2 PN]
-        FPLC[Fail-Safe Safety Controller - CPU 1515F-2 PN]
-        FW --- PLC
-        PLC --- FPLC
-        
-        RING((Profinet MRP Industrial Ethernet Ring - 100 Mbps))
-        PLC --- RING
-        
-        SCP[Main Automation Panel SCP-100 - 21.5" Field HMI]
-        RIO1[Mezzanine Remote I/O Drop RIO-101 - ET200SP]
-        RIO2[Dosing Skid Remote I/O Drop RIO-102 - ET200SP]
-        VFD_RACK[VFD Inverter Suite - Sinamics G120 / Danfoss FC-102]
-        
-        RING --- SCP
-        RING --- RIO1
-        RING --- RIO2
-        RING --- VFD_RACK
-    end
-
-    subgraph Level_0_Field_Instruments_and_Drives
-        RIO1 --> SENS_MEZZ[TK-101A/B Radar Level, RTDs, Valves FCV-101A/B]
-        RIO2 --> SENS_SKID[SK-100 Flowmeters, Dosing Pumps, pH Transmitters]
-        VFD_RACK --> MOTORS[Agitators AG-101A/B, Screen SC-101, Blower BL-101]
-    end
-```
 
 ### Hardware Specifications:
 - **Main SCADA Control Panel (`SCP-100`):**
@@ -145,28 +117,22 @@ The SCADA system manages 72 discrete field I/O signals cross-referenced to [`ins
 
 ## 4. Batch Control Philosophy per ISA-88
 
-The facility operates under modular batch control defined in ISA-88.01:
+The facility operates under modular batch control defined in ISA-88.01, segregating operations into Unit Procedures, Operations, and Phases with deterministic state transitions:
 
-```text
-[Procedure: 15-TPD Toor Dal Rapid-Hydration & Drying]
-   │
-   ├── [Unit Procedure 1: Rapid-Hydration Soaking (TK-101A / TK-101B)]
-   │      ├── Phase 1.1: Pre-Check & Valve Lineup Verification
-   │      ├── Phase 1.2: Water Pre-Fill & Chemical Reagent Metering (0.50% NaHCO3, pH 8.4)
-   │      ├── Phase 1.3: Grain Charging & Agitator Start (35 RPM gentle pulse)
-   │      ├── Phase 1.4: Ambient Soak Soak Hold (3.5 Hours, T = 35°C, Delta-M = +18.27%)
-   │      └── Phase 1.5: Automated Slurry Dump (FCV-101 open, gravity slide to screen)
-   │
-   ├── [Unit Procedure 2: Dewatering & Surface Liquor Separation (SC-101)]
-   │      ├── Phase 2.1: Vibratory Exciter Start & Spray Rinse Active
-   │      └── Phase 2.2: Free Moisture Drainage (Discharge moisture < 28.8% w.b.)
-   │
-   └── [Unit Procedure 3: Continuous Thermal Fluidized Bed Drying & Cooling (DR-101)]
-          ├── Phase 3.1: Air Blower & Steam Coil Warmup (T_bed ramp to 68°C)
-          ├── Phase 3.2: Continuous Grain Fluidization & Drying (4.5m active bed)
-          ├── Phase 3.3: In-Bed Fresh Air Cooling (1.5m active bed, T_exit < 28°C)
-          └── Phase 3.4: Discharge Weir Overflow to Cleanroom Packing Line
-```
+| ISA-88 Level | Operational Unit | Phase ID & Name | Governing Equipment | Key Parameters & Transition Criteria | Safety / Quality Interlock |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Unit Procedure 1** | Rapid Hydration Soaking | **Phase 1.1:** Pre-Check & Lineup | `TK-101A/B`, Valves | Verify valve positions `ZSC-101`, jacket empty, seal water OK | Interlock: Cannot charge if dump valve open |
+| | | **Phase 1.2:** Reagent & Water Metering | `SK-100`, `P-101`, `FIT-102` | Charge $3,750\text{ kg}$ water + $18.75\text{ kg } NaHCO_3$ ($0.50\% \pm 0.02\%$) | Interlock: `pHIT-101` must be $8.4 \pm 0.2$ (SIF-04) |
+| | | **Phase 1.3:** Grain Charging & Agitation | Hopper, `AG-101A/B` | Charge $2,500\text{ kg}$ dry dal ($1:1.5$ ratio); start agitator at $35\text{ RPM}$ | Interlock: Agitator zero-speed proof `ZSS-101` |
+| | | **Phase 1.4:** Hydration Soak Hold | Steam Jacket, `TCV-102` | Hold $3.5\text{ hours}$ at $35.0 \pm 0.5^\circ\text{C}$; target $\Delta M = +18.27\%$ | Interlock: `PIT-101` $< 3.2\text{ bar g}$ (SIF-03) |
+| | | **Phase 1.5:** Slurry Gravity Dump | `FCV-101A/B`, `CHU-100` | Open cone valve; slurry gravity-slides down $52.65^\circ$ chute | Interlock: Dewatering screen `SC-101` must be running |
+| **Unit Procedure 2** | Dewatering & Surface Liquor Separation | **Phase 2.1:** Screening & Mist Wash | `SC-101`, Mist Header | Continuous dewatering on $0.5\text{ mm}$ wedge-wire deck; fresh mist wash | Interlock: Catch pan level transmitter low alarm |
+| | | **Phase 2.2:** Gravity Drainage | `CHU-102` | Gravity transfer to dryer boot; target moisture $< 28.8\%$ w.b. | Interlock: Metal detector `MD-101` online |
+| **Unit Procedure 3** | Continuous Fluid Bed Drying & Cooling | **Phase 3.1:** Blower & Steam Warmup | `BL-101`, `TCV-101` | Establish fluidizing air ($10,500\text{ m}^3\text{/h}$); ramp bed to $68.0^\circ\text{C}$ | Interlock: Airflow differential switch `PDS-101` |
+| | | **Phase 3.2:** Active Fluidized Drying | `DR-101` (4.5m section) | Heat duty $347\text{ kW}$; bed temp $68.0 \pm 0.5^\circ\text{C}$; $t_{res} = 18\text{ min}$ | Interlock: Dual RTD `TT-105A/B` trip at $95^\circ\text{C}$ (SIF-01) |
+| | | **Phase 3.3:** In-Bed Fresh Air Cooling | `DR-101` (1.5m section) | Counter-current ambient air cooling; product exit temp $< 28^\circ\text{C}$ | Interlock: Microwave moisture `MIT-101` $10.0 \pm 0.2\%$ |
+| | | **Phase 3.4:** Product Packaging Transfer | Discharge Weir, Conveyor | Overflow weir discharge into cleanroom packaging line | Interlock: Nitrogen purge oxygen $< 0.8\%$ `AIT-108` |
+
 
 ---
 

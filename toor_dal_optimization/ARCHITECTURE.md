@@ -1,6 +1,6 @@
 # ARCHITECTURE.md
 
-## System: Harakutir Autonomous Closed-Loop Pulse Engineering Platform
+## System: Client Organization Autonomous Closed-Loop Pulse Engineering Platform
 **Owner:** FINNOAQ Autonomous R&D Engineering  
 **Version:** 4.0.0 (Ocean Boiling Protocol v3.0)  
 **Standard:** Global Principal / Staff Systems Architecture  
@@ -12,7 +12,7 @@
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                 HARAKUTIR CLOSED-LOOP TOPOLOGY                                   │
+│                                 Client Organization CLOSED-LOOP TOPOLOGY                                   │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
                                                  │
                                  ┌───────────────▼──────────────┐
@@ -23,7 +23,7 @@
                                                  │
                                  ┌───────────────▼──────────────┐
                                  │   LEARN HARNESS CONTROLLER   │
-                                 │     src/harakutir/harness.py │
+                                 │     src/Client Organization/harness.py │
                                  │      (Stage Gates G0 - G9)   │
                                  └───────────────┬──────────────┘
                                                  │
@@ -64,18 +64,18 @@
 
 | Subsystem Module | File Path | Core Architectural Responsibility | Key Outputs & Interfaces |
 |------------------|-----------|----------------------------------|--------------------------|
-| **Learn Harness Gate Supervisor** | `src/harakutir/harness.py` | Governs stage gates G0–G9 based on *Learn Harness Engineering* patterns. Blocks premature spend. | `evaluate_all_gates()`, `GateEvaluationReport` |
-| **GPU Multi-Physics Engine** | `src/harakutir/gpu_engine.py` | High-performance CUDA PyTorch tensor kernels. Solves 1D spherical coupled Fourier heat & mass transfer PDEs, N=50,000 Monte Carlo, and Pareto sorting. | `solve_coupled_radial_diffusion_pde()`, `run_gpu_monte_carlo_sensitivity()` |
+| **Learn Harness Gate Supervisor** | `src/Client Organization/harness.py` | Governs stage gates G0–G9 based on *Learn Harness Engineering* patterns. Blocks premature spend. | `evaluate_all_gates()`, `GateEvaluationReport` |
+| **GPU Multi-Physics Engine** | `src/Client Organization/gpu_engine.py` | High-performance CUDA PyTorch tensor kernels. Solves 1D spherical coupled Fourier heat & mass transfer PDEs, N=50,000 Monte Carlo, and Pareto sorting. | `solve_coupled_radial_diffusion_pde()`, `run_gpu_monte_carlo_sensitivity()` |
 | **Million-Scale 5-Sigma Engine** | `scripts/run_gpu_million_scale.py` | 1,000,000 candidate simulation in 10 tensor batches. Recursive self-improvement (Dream-RSI), convergence tracking, $C_{pk}$ and Six Sigma metrics. | `artifacts/gpu_million_experiment_convergence.json`, `artifacts/five_sigma_validation_report.json` |
-| **Multi-Layer Digital Twin** | `src/harakutir/digital_twin.py` | Hybrid physics-informed digital product model. Manages 5 cotyledon states, Bayesian conjugate priors, and 5.0 T/hr mass/energy line balances. | `DigitalTwinModel`, `update_from_experiment()`, `simulate_continuous_line()` |
-| **Foodoscope Culinary Informatics** | `src/harakutir/foodoscope.py` | Flavor chemistry, pulse volatile kinetics (hexanal, 1-octen-3-ol, 2-ethyl-3,5-dimethylpyrazine), lipoxygenase inactivation, and sambar broth broth simulation. | `calculate_flavor_score()`, `simulate_sambar_culinary_performance()` |
-| **Virtual Screening Engine** | `src/harakutir/virtual_screening.py` | 5-layer computational screening funnel (Physical Feasibility, Thermodynamic Plausibility, Kinetic Viability, Regulatory Safety, Techno-Economic). | 58 candidates generated $\rightarrow$ 11 eliminated $\rightarrow$ 8 Pareto optimal |
-| **Sequential Bayesian OED** | `src/harakutir/oed.py` | Information-efficient experimental design. Computes D-optimal information matrices to design minimal physical runs within ₹70k budget. | 14-run sequential DoE matrix in `reports/OED_EXPERIMENT_MATRIX.md` |
-| **Parameter & Schema Layer** | `src/harakutir/parameters.py`, `schemas.py` | Single source of truth for 78 physicochemical parameters mapped to international standards (AOAC, ISO, BIS, Blumenkrantz, AACC). | Pydantic v2 strict models, physical boundaries, and units |
-| **Persistence & Checkpointing** | `src/harakutir/checkpoint.py` | Crash-resilient persistence via atomic file swaps (`.tmp` $\rightarrow$ `.json`), OS file locking (`msvcrt`), and SQLite WAL journal (`state/journal.db`). | `atomic_save_checkpoint()`, `acquire_run_lock()` |
-| **Cryptographic Provenance** | `src/harakutir/provenance.py` | SHA-256 file hashing, data provenance registry, and source code tamper-proofing. | `ProvenanceRegistry`, `state/provenance_registry.json` |
-| **Claim & Audit Ledger** | `src/harakutir/claims.py` | SOW §16 & §20 evidence taxonomy (Categories A, B, C, D) enforcing strict distinction between measured fact and hypothesis. | `ClaimRegister`, `reports/CLAIM_AND_PROVENANCE_LEDGER.md` |
-| **Report Generation Engine** | `src/harakutir/reports.py` | Compiles 23-part technical report conforming exactly to SOW §22, including native Microsoft Word `.docx` generation. | `reports/PHASE1_TECHNICAL_REPORT.docx`, `.md` |
+| **Multi-Layer Digital Twin** | `src/Client Organization/digital_twin.py` | Hybrid physics-informed digital product model. Manages 5 cotyledon states, Bayesian conjugate priors, and 5.0 T/hr mass/energy line balances. | `DigitalTwinModel`, `update_from_experiment()`, `simulate_continuous_line()` |
+| **Foodoscope Culinary Informatics** | `src/Client Organization/foodoscope.py` | Flavor chemistry, pulse volatile kinetics (hexanal, 1-octen-3-ol, 2-ethyl-3,5-dimethylpyrazine), lipoxygenase inactivation, and sambar broth broth simulation. | `calculate_flavor_score()`, `simulate_sambar_culinary_performance()` |
+| **Virtual Screening Engine** | `src/Client Organization/virtual_screening.py` | 5-layer computational screening funnel (Physical Feasibility, Thermodynamic Plausibility, Kinetic Viability, Regulatory Safety, Techno-Economic). | 58 candidates generated $\rightarrow$ 11 eliminated $\rightarrow$ 8 Pareto optimal |
+| **Sequential Bayesian OED** | `src/Client Organization/oed.py` | Information-efficient experimental design. Computes D-optimal information matrices to design minimal physical runs within ₹70k budget. | 14-run sequential DoE matrix in `reports/OED_EXPERIMENT_MATRIX.md` |
+| **Parameter & Schema Layer** | `src/Client Organization/parameters.py`, `schemas.py` | Single source of truth for 78 physicochemical parameters mapped to international standards (AOAC, ISO, BIS, Blumenkrantz, AACC). | Pydantic v2 strict models, physical boundaries, and units |
+| **Persistence & Checkpointing** | `src/Client Organization/checkpoint.py` | Crash-resilient persistence via atomic file swaps (`.tmp` $\rightarrow$ `.json`), OS file locking (`msvcrt`), and SQLite WAL journal (`state/journal.db`). | `atomic_save_checkpoint()`, `acquire_run_lock()` |
+| **Cryptographic Provenance** | `src/Client Organization/provenance.py` | SHA-256 file hashing, data provenance registry, and source code tamper-proofing. | `ProvenanceRegistry`, `state/provenance_registry.json` |
+| **Claim & Audit Ledger** | `src/Client Organization/claims.py` | SOW §16 & §20 evidence taxonomy (Categories A, B, C, D) enforcing strict distinction between measured fact and hypothesis. | `ClaimRegister`, `reports/CLAIM_AND_PROVENANCE_LEDGER.md` |
+| **Report Generation Engine** | `src/Client Organization/reports.py` | Compiles 23-part technical report conforming exactly to SOW §22, including native Microsoft Word `.docx` generation. | `reports/PHASE1_TECHNICAL_REPORT.docx`, `.md` |
 
 ---
 

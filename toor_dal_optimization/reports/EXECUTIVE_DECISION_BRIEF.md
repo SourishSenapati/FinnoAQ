@@ -1,8 +1,8 @@
-# HARAKUTIR TOOR DAL — EXECUTIVE DECISION BRIEF
+# FINNOAQ TOOR DAL — EXECUTIVE DECISION BRIEF
 
 **Document ID:** FIN-EDB-2026-002  
 **Date:** 15 October 2026  
-**Audience:** Harakutir Executive Management, Food Process Engineering, Commercial Operations  
+**Audience:** FinnoaQ Executive Management, Food Process Engineering, Commercial Operations  
 **Governance Status:** **STAGE 1 HYPOTHESIS PHASE — STAGE 2 SCALE-UP LOCKED**  
 
 ---
@@ -11,7 +11,7 @@
 
 1. **The Physical Problem:** Untreated imported Tanzanian split/dehulled pigeon pea (*Cajanus cajan*) reportedly requires approximately **6 whistles ($\approx 22\text{ minutes}$)** in domestic pressure cookers ($115^\circ\text{C}, 15\text{ psi}$), compared with approximately **3 whistles ($\approx 12\text{--}15\text{ minutes}$)** for domestic Indian benchmark dal.
 2. **Biophysical Root Cause:** African cultivars grown under semi-arid conditions exhibit storage-hardening (hard-to-cook defect), wherein divalent $\text{Ca}^{2+}$ and $\text{Mg}^{2+}$ ions form insoluble calcium pectate bridges in the middle lamella, preventing cell separation upon boiling.
-3. **Flaking Route Disqualified:** Sethi et al. (2014) established that soaking in salt and rolling into flakes reduces cooking time to $6\text{ min}$, but permanently alters dal form, causes rapid rancidity (peroxide value $30.7\text{ meq/kg}$), and triples cooking time after 10 months. Harakutir requires ordinary split dal form.
+3. **Flaking Route Disqualified:** Sethi et al. (2014) established that soaking in salt and rolling into flakes reduces cooking time to $6\text{ min}$, but permanently alters dal form, causes rapid rancidity (peroxide value $30.7\text{ meq/kg}$), and triples cooking time after 10 months. FinnoaQ requires ordinary split dal form.
 4. **Ultrasound Disqualified for Split Dal:** Literature (Vásquez et al. 2021) shows ultrasound primarily erodes the outer seed coat of whole seeds; dehulled split dal has no seed coat, making ultrasound CapEx uneconomical.
 5. **Reconciled Mass Balance & Exact Conservation:** The 15 MT/day process flowsheet achieves **$0.000000\%$ closure error**. Whole-plant dry solids recovery is **$95.69\%$** ($1.46\%$ wash leaching loss + $2.89\%$ mechanical fines). Finished output from $15,000\text{ kg/day}$ feed is **$14,353.5\text{ kg/day}$**.
 6. **FSSAI Food Additive Compliance:** Sodium bicarbonate (INS 500(ii)) is legally permitted under FSSAI Table 3 (GMP). Retained elemental sodium ($53.9\text{ mg / 100g}$) is vastly below the $350\text{ mg}$ threshold. It must be declared on the ingredient panel.
@@ -39,7 +39,7 @@
 
 ### 3. Critical Open Decisions & Commercial Trade-Offs
 
-1. **Product Labeling Strategy:** Does Harakutir prefer front-of-pack positioning as *"Quick-Cooking Toor Dal (Treated with Food-Grade NaHCO3)"* or as an ingredient on the back panel? Under FSSAI regulations, functional additives must be declared in the ingredient list.
+1. **Product Labeling Strategy:** Does FinnoaQ prefer front-of-pack positioning as *"Quick-Cooking Toor Dal (Treated with Food-Grade NaHCO3)"* or as an ingredient on the back panel? Under FSSAI regulations, functional additives must be declared in the ingredient list.
 2. **Dosing Basis Resolution:** At $15\text{ MT/day}$ and $1:1.5$ liquor ratio, $0.50\%$ in liquor requires **$112.5\text{ kg/day}$** active chemical (₹11.87 Lakhs/yr); $0.50\%$ of feed requires **$75.0\text{ kg/day}$** (₹7.91 Lakhs/yr). The baseline adopts $112.5\text{ kg/day}$ for thermodynamic efficacy.
 3. **Boiler Fuel Selection:** Biomass briquette steam achieves ₹0.55/MJ (₹0.58/kg dal). If industrial LPG is required due to local environmental zoning, thermal OpEx increases to ₹1.43/kg dal (total OpEx ₹2.18/kg).
 
@@ -48,7 +48,7 @@
 ### 4. Immediate Action Plan & Confidence Rating
 
 ```
-  STEP 1: Draw 5.0 kg representative sample from Harakutir's imported Tanzanian consignment.
+  STEP 1: Draw 5.0 kg representative sample from FinnoaQ's imported Tanzanian consignment.
   STEP 2: Execute 8-batch physical kitchen protocol (4 control vs 4 treated @ 0.5% NaHCO3).
   STEP 3: Record whistle timestamps, thermocouple profiles, and tactile tenderness.
   STEP 4: Run two-sample Welch's t-test. If tobs >= 3.707 (p <= 0.005), Stage 1 passes.

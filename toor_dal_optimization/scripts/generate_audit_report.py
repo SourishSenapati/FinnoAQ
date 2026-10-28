@@ -15,15 +15,15 @@ from datetime import datetime, timezone
 # Add root to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.provenance import compute_sha256, ProvenanceRegistry
-from src.harakutir.synthetic import assert_no_synthetic_leakage
-from src.harakutir.parameters import get_all_parameters, get_sow_sections_matrix
-from src.harakutir.claims import get_baseline_phase1_claims
-from src.harakutir.checkpoint import CheckpointManager
-from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
-from src.harakutir.virtual_screening import VirtualScreeningPipeline
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
-from src.harakutir.harness import HarnessEngineeringManager
+from src.finnoaq.provenance import compute_sha256, ProvenanceRegistry
+from src.finnoaq.synthetic import assert_no_synthetic_leakage
+from src.finnoaq.parameters import get_all_parameters, get_sow_sections_matrix
+from src.finnoaq.claims import get_baseline_phase1_claims
+from src.finnoaq.checkpoint import CheckpointManager
+from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.harness import HarnessEngineeringManager
 
 def run_adversarial_audit(reports_dir: str = "reports", artifacts_dir: str = "artifacts") -> str:
     os.makedirs(reports_dir, exist_ok=True)
@@ -160,7 +160,7 @@ def run_adversarial_audit(reports_dir: str = "reports", artifacts_dir: str = "ar
     # Generate payload
     payload = {
         "audit_timestamp": datetime.now(timezone.utc).isoformat(),
-        "auditor": "Harakutir Independent Red-Team Verifier",
+        "auditor": "Client Organization Independent Red-Team Verifier",
         "critical_findings_count": critical_findings_count,
         "total_checks_evaluated": 18,
         "audit_status": "PASSED" if critical_findings_count == 0 else "FAILED",
@@ -178,7 +178,7 @@ def run_adversarial_audit(reports_dir: str = "reports", artifacts_dir: str = "ar
 
     # Generate Markdown Report
     lines = [
-        "# Harakutir Independent Red-Team Adversarial Audit Report",
+        "# Client Organization Independent Red-Team Adversarial Audit Report",
         "",
         f"**Audit Date:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  ",
         f"**Audit Result:** `{'PASSED — ZERO CRITICAL DEFECTS' if critical_findings_count == 0 else 'FAILED'}`  ",
@@ -188,7 +188,7 @@ def run_adversarial_audit(reports_dir: str = "reports", artifacts_dir: str = "ar
         "---",
         "",
         "### 1. Adversarial Audit Scope & Methodology",
-        "An independent automated verification suite evaluated the entire Harakutir Phase 1 system against 18 mandatory contract gates:",
+        "An independent automated verification suite evaluated the entire Client Organization Phase 1 system against 18 mandatory contract gates:",
         "1. Complete SOW §§1–36 coverage",
         "2. Source hash reconciliation and input immutability",
         "3. Unit conversion and dimensional consistency",
@@ -241,7 +241,7 @@ def run_adversarial_audit(reports_dir: str = "reports", artifacts_dir: str = "ar
         "---",
         "",
         "### 4. Final Auditor Certification",
-        "The Harakutir Autonomous R&D system satisfies all scientific integrity, architectural, and contractual standards set forth in Version 1.0 of the Master Prompt, Learn Harness Engineering, and Foodoscope Informatics. Empirical root-cause conclusions remain gated awaiting physical laboratory measurements."
+        "The Client Organization Autonomous R&D system satisfies all scientific integrity, architectural, and contractual standards set forth in Version 1.0 of the Master Prompt, Learn Harness Engineering, and Foodoscope Informatics. Empirical root-cause conclusions remain gated awaiting physical laboratory measurements."
     ]
 
     with open(out_md, "w", encoding="utf-8") as f:

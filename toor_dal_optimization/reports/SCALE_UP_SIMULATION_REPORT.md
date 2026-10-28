@@ -1,4 +1,4 @@
-# HARAKUTIR INDUSTRIAL SCALE-UP SIMULATION REPORT
+# FINNOAQ INDUSTRIAL SCALE-UP SIMULATION REPORT
 ## 5.0 Tonnes/Hour Continuous Line — Mass Balances, Thermal Duties & Unit Operations
 
 **Document ID:** HKT-SCL-2026-010  

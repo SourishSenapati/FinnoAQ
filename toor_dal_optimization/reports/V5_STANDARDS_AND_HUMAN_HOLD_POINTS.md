@@ -105,7 +105,7 @@ To maintain rigorous quality assurance throughout equipment procurement, detaile
 
 ## 4. Governance Signoff
 
-This document establishes the binding regulatory standards and hold point protocol for the Harakutir 15 TPD greenfield engineering baseline. All modifications to the Master Data or release of hold points require formal engineering change notices (ECN) and multidisciplinary signoff.
+This document establishes the binding regulatory standards and hold point protocol for the FinnoaQ 15 TPD greenfield engineering baseline. All modifications to the Master Data or release of hold points require formal engineering change notices (ECN) and multidisciplinary signoff.
 
 **Approved under V5 Master Directive Governance.**  
 *Hold Status: GATE G-A ACTIVE.*

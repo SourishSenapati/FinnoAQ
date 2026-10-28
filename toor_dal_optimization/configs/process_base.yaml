@@ -1,0 +1,48 @@
+# FinnoaQ Agro-Industrial Technologies Ltd. — Base Process Engineering Configuration
+# Plant Design Basis: 15,000 kg/day incoming raw dal
+
+plant_basis:
+  incoming_feed_rate_kg_day: 15000.0
+  incoming_moisture_wb_pct: 10.5
+  initial_dry_solids_kg_day: 13425.0
+  operating_hours_per_day: 16.0  # Two 8-hour shifts default
+  production_days_per_year: 300
+  plant_annual_feed_tonnes: 4500.0
+
+treatment_chemistry:
+  reagent_name: "Sodium Bicarbonate"
+  chemical_formula: "NaHCO3"
+  cas_number: "144-55-8"
+  fssai_food_grade_purity_pct: 99.5
+  molecular_weight_g_mol: 84.007
+  reagent_cost_inr_per_kg: 35.0
+  solution_concentration_w_w_pct: 0.50
+  liquor_to_dal_ratio: 1.50
+  soak_bath_temperature_c: 25.0
+  soak_duration_minutes: 30.0
+
+soaking_and_dewatering:
+  bath_volume_liters_per_day: 22500.0
+  active_chemical_kg_per_day: 112.50
+  commercial_chemical_kg_per_day: 113.07
+  absorption_fraction: 0.35
+  unabsorbed_drainage_fraction: 0.65
+  rinse_washout_fraction: 0.25
+  rinse_water_ratio: 0.25
+
+drying_and_finishing:
+  dryer_type: "Continuous Vibratory Fluid-Bed Dryer"
+  inlet_air_temperature_c: 65.0
+  exhaust_air_temperature_c: 52.0
+  max_grain_temperature_c: 48.0
+  target_finished_moisture_wb_pct: 10.0
+  dry_solids_recovery_pct: 98.54
+  saleable_finished_product_kg_day: 14698.88
+  daily_water_evaporated_kg_day: 3512.4
+
+product_quality_limits:
+  max_retained_sodium_mg_100g: 350.0  # FSSAI low sodium threshold
+  nominal_retained_sodium_mg_100g: 6.4
+  cooking_time_target_min: 15.0
+  cooking_time_target_whistles: 3.5
+  initial_untreated_whistles: 6.0

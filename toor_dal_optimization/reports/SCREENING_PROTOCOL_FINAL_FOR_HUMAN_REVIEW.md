@@ -23,7 +23,7 @@ The objective of this pre-registered protocol is to conduct an unbiased, reprodu
    - **Species:** *Cajanus cajan* (Split / dehulled yellow cotyledons, imported Tanzanian origin).
    - **Lot Identifier:** `[UNVERIFIED_INTERNAL_PLACEHOLDER — Genuine Supplier Lot ID / Bill of Lading Requested]` (Formerly referenced provisionally as `TZ-2026-IMP-001`).
    - **Consignment Delivery Date:** October 2026 (Pending arrival confirmation).
-   - **Custody Location:** Harakutir Foods R&D Pilot Facility, Ambient Grain Store ($22 \pm 3^\circ\text{C}$, $<60\%\text{ RH}$).
+   - **Custody Location:** FinnoaQ Foods R&D Pilot Facility, Ambient Grain Store ($22 \pm 3^\circ\text{C}$, $<60\%\text{ RH}$).
 
 > [!WARNING]
 > **Lot Traceability Notice:** The identifier `TZ-2026-IMP-001` was generated as an internal code string and does **not** correspond to an external supplier certificate of analysis, bill of lading, or phytosanitary certificate. The human lead and procurement team must provide the actual traceable commercial lot number and import documentation before physical sample splitting begins.
@@ -220,7 +220,7 @@ The evaluation team pre-commits to the following non-negotiable decision gates:
   - Because sodium bicarbonate exerts a deliberate functional effect during consumer cooking (cleaving pectin bridges), it **cannot legally be hidden as an undeclared processing aid**.
   - Packaging artwork and labeling must state:  
     `"Ingredients: Split Pigeon Pea, Acidity Regulator (INS 500(ii))"`.
-  - Harakutir Regulatory Affairs must sign the release sheet before commercial packaging freeze.
+  - FinnoaQ Regulatory Affairs must sign the release sheet before commercial packaging freeze.
 
 ---
 
@@ -245,7 +245,7 @@ The computational modeling and audit phase is formally halted. Physical trial ex
    Name: ____________________________  Signature: __________________  Date: ________
    Confirmation: Approved FSSAI INS 500(ii) labeling and double-blind protocol.
 
-4. Client Project Director (Harakutir Foods):
+4. Client Project Director (FinnoaQ Foods):
    Name: ____________________________  Signature: __________________  Date: ________
    Confirmation: Authorized execution of 16-batch screening trial per PROTOCOL-SCR-2026-004.
 ================================================================================

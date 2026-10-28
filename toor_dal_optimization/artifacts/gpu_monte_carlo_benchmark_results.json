@@ -1,0 +1,87 @@
+{
+  "benchmark_summary": [
+    {
+      "scenarios_count": 100,
+      "cpu_time_sec": 6e-05,
+      "gpu_time_sec": 0.03205,
+      "speedup_ratio": 0.0,
+      "is_gpu_faster": false,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 3.0517578125e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 0.05
+    },
+    {
+      "scenarios_count": 1000,
+      "cpu_time_sec": 8e-05,
+      "gpu_time_sec": 0.00065,
+      "speedup_ratio": 0.13,
+      "is_gpu_faster": false,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 4.57763671875e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 0.13
+    },
+    {
+      "scenarios_count": 10000,
+      "cpu_time_sec": 0.00023,
+      "gpu_time_sec": 0.00065,
+      "speedup_ratio": 0.36,
+      "is_gpu_faster": false,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 4.57763671875e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 0.93
+    },
+    {
+      "scenarios_count": 50000,
+      "cpu_time_sec": 0.00072,
+      "gpu_time_sec": 0.0017,
+      "speedup_ratio": 0.42,
+      "is_gpu_faster": false,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 4.57763671875e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 4.43
+    },
+    {
+      "scenarios_count": 100000,
+      "cpu_time_sec": 0.00121,
+      "gpu_time_sec": 0.00172,
+      "speedup_ratio": 0.7,
+      "is_gpu_faster": false,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 4.57763671875e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 8.82
+    },
+    {
+      "scenarios_count": 250000,
+      "cpu_time_sec": 0.00324,
+      "gpu_time_sec": 0.00308,
+      "speedup_ratio": 1.05,
+      "is_gpu_faster": true,
+      "max_abs_error_evap_kg": 0.0,
+      "max_abs_error_duty_kw": 4.57763671875e-05,
+      "is_numerically_equivalent": true,
+      "peak_vram_mb": 21.98
+    }
+  ],
+  "uncertainty_distribution_100k": {
+    "evaporation_kg_day": {
+      "mean": 3926.563232421875,
+      "p5": 3235.556640625,
+      "p95": 4648.419921875
+    },
+    "thermal_duty_kw": {
+      "mean": 142.74496459960938,
+      "p5": 118.94992065429688,
+      "p95": 167.6082000732422
+    },
+    "t90_cooking_min": {
+      "mean": 36.123374938964844,
+      "p5": 25.37888526916504,
+      "p95": 45.197021484375
+    }
+  }
+}

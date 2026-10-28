@@ -1,8 +1,8 @@
 # V10 Review Findings Disposition and Forensic Changelog
 **Project Reference:** FNQ-PR-2026-001 | Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006)  
 **Document Ref:** FNQ-V10-LOG-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -149,5 +149,5 @@ Finding F: Provisional Status of 15 MT/day Industrial Plant       -> STATUS: RES
 
 ## 3. Verification Sign-Off
 - **Lead Chemical & Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)
-- **Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)
+- **Academic Guidance:** Technical Advisory Panel
 - **Status:** All 6 Findings Verified and Closed for Release Rev V10.

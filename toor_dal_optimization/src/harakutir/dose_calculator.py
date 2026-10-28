@@ -1,5 +1,5 @@
 """
-Harakutir Omega — Industrial Dose Calculator & Treatment Formulation Engine.
+FinnoaQ Omega — Industrial Dose Calculator & Treatment Formulation Engine.
 Strictly separates:
 A. Solution Concentration (% w/w, % w/v, Molarity)
 B. Applied Treatment per Incoming Dal (kg/100kg, kg/tonne, % of incoming feed)

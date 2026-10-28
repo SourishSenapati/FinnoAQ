@@ -1,6 +1,6 @@
 # PROJECT_VISION.md
 
-## Harakutir Autonomous Closed-Loop Pulse Engineering Platform
+## Client Organization Autonomous Closed-Loop Pulse Engineering Platform
 **Project:** Tanzanian Toor Dal (*Cajanus cajan*) — Diagnostic R&D, Fast-Cooking Product Engineering, and Industrial Scale-Up  
 **Standard:** Ocean Boiling Protocol v3.0 | Global Staff / Principal Engineering Specification  
 **Governing Documents:** `inputs/Phase1_Scope_of_Work_Toor_Dal.docx`, `reports/PHASE1_TECHNICAL_REPORT.docx`, `phase1_sow_dump.txt`  
@@ -10,7 +10,7 @@
 
 ## 1. Executive Purpose & Mission
 
-The Harakutir Pulse Engineering Platform transforms pulse processing from traditional empirical trial-and-error milling into a closed-loop, physics-informed, AI-accelerated digital manufacturing discipline.
+The Client Organization Pulse Engineering Platform transforms pulse processing from traditional empirical trial-and-error milling into a closed-loop, physics-informed, AI-accelerated digital manufacturing discipline.
 
 The primary engineering challenge is the **Hard-to-Cook (HTC) defect** observed in imported Tanzanian Toor Dal:
 - **Baseline Observation:** Commercial Tanzanian Toor Dal requires approximately **6 pressure-cooker whistles** (~28–32 minutes), whereas Indian commercial benchmark dal softens to acceptable culinary table quality in approximately **3 pressure-cooker whistles** (~14–16 minutes).
@@ -20,7 +20,7 @@ The primary engineering challenge is the **Hard-to-Cook (HTC) defect** observed 
 [Imported Tanzanian Toor Dal (~6 Whistles)]
                   │
                   ▼
-[Harakutir Closed-Loop Digital Engineering Engine]
+[Client Organization Closed-Loop Digital Engineering Engine]
    ├── Phase 1: 78-Parameter Physicochemical Diagnostic Baseline (SOW §§1-36)
    ├── Multi-Physics Digital Twin (Coupled Fourier Heat & Mass Diffusion PDE)
    ├── Foodoscope Culinary & Flavor Informatics (Volatiles, BOSI, Lysine)
@@ -38,7 +38,7 @@ The primary engineering challenge is the **Hard-to-Cook (HTC) defect** observed 
 
 | Stakeholder Persona | Primary Need / Pain Point | Delivered Solution & Quantitative Value |
 |---------------------|---------------------------|----------------------------------------|
-| **Executive Management / Board (Harakutir)** | Massive margin loss from discounting imported Tanzanian toor dal due to consumer complaints regarding extended cooking times. | Unlocks **₹18.89/kg net margin arbitrage** (₹56.67 Crore annual EBITDA on a 5.0 T/hr continuous plant). Repositions imported grain as a premium quick-cooking product. |
+| **Executive Management / Board (Client Organization)** | Massive margin loss from discounting imported Tanzanian toor dal due to consumer complaints regarding extended cooking times. | Unlocks **₹18.89/kg net margin arbitrage** (₹56.67 Crore annual EBITDA on a 5.0 T/hr continuous plant). Repositions imported grain as a premium quick-cooking product. |
 | **Lead R&D Scientist / Laboratory Partner** | Avoiding wasteful laboratory runs, establishing rigorous protocols, and preventing false-positive causality claims. | Complete 23-part SOW §22 diagnostic framework, 78 verified parameters, automated statistical multiplicity control (Welch + Mann-Whitney + Holm-Bonferroni), and 14-run Bayesian OED matrix saving >₹1.03 Lakh in physical testing. |
 | **Process / Plant Operations Engineer** | Lack of continuous processing parameters, thermal degradation of protein, energy overconsumption in drying. | Fully validated continuous 5.0 T/hr mass/energy balance, catalytic infrared (FIR/MIR) emitter configuration (184°C for 45s), tempering hydration control (3.9% moisture), and HACCP CCP safety checklists. |
 | **Consumer / Culinary End-User** | Frustration with unsoftened "hard-core" dal, extended LPG cooking fuel consumption, bland or beany flavor. | 50% domestic cooking time reduction (3 whistles / 14 min), zero hard-core defects (<1.0%), enhanced roasted pyrazine aroma, and full sambar culinary compatibility. |
@@ -47,7 +47,7 @@ The primary engineering challenge is the **Hard-to-Cook (HTC) defect** observed 
 
 ## 3. Commercial Arbitrage & Economic Foundation
 
-The commercial viability of Harakutir relies on an undeniable commodity price disparity between East African imports and domestic Indian produce:
+The commercial viability of Client Organization relies on an undeniable commodity price disparity between East African imports and domestic Indian produce:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -74,7 +74,7 @@ The commercial viability of Harakutir relies on an undeniable commodity price di
 
 ## 4. Competitive Advantages & Moats
 
-1. **AI-Native Digital Twin vs. Blind Empiricism:** Competitors rely on trial-and-error roasting or caustic alkaline chemical soaks that violate food safety norms. Harakutir uses physics-informed analytical Fourier series coupled with enzymatic and pectin demethylation kinetics on GPU tensors.
+1. **AI-Native Digital Twin vs. Blind Empiricism:** Competitors rely on trial-and-error roasting or caustic alkaline chemical soaks that violate food safety norms. Client Organization uses physics-informed analytical Fourier series coupled with enzymatic and pectin demethylation kinetics on GPU tensors.
 2. **Foodoscope Culinary Informatics:** Integrates pulse flavor profiling, Beany Off-Flavor Severity Index (BOSI) reduction via lipoxygenase (LOX) inactivation, and competitive lysine vs. pyrazine kinetics. The product cooks faster *and* tastes richer.
 3. **5-Sigma Manufacturing Reliability:** $1,000,000$ virtual experiments simulated on NVIDIA RTX 4050 GPU converge to a Process Capability index $C_{pk} \ge 1.67$, guaranteeing fewer than 3.4 defects per million opportunities in commercial production.
 4. **Learn Harness Engineering Gate Supervisor:** Automated 10-gate quality governor (Gates G0 through G9) that prevents proceeding to capital-intensive physical stages without computational validation.
@@ -86,7 +86,7 @@ The commercial viability of Harakutir relies on an undeniable commodity price di
 
 ```mermaid
 gantt
-    title Harakutir 5-Programme Closed-Loop Product Lifecycle
+    title Client Organization 5-Programme Closed-Loop Product Lifecycle
     dateFormat  YYYY-MM
     section Prog A: Phase 1 Diagnostic
     Analytical Baseline & 78-Param Registry :done, progA1, 2026-09, 2026-10

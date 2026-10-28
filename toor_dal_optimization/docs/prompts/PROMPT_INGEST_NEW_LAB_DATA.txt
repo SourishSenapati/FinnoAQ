@@ -1,6 +1,6 @@
 INGEST NEW LAB DATA PROMPT
 
-Ingest newly supplied Harakutir Toor Dal laboratory data into the existing project without modifying the original files.
+Ingest newly supplied Client Organization Toor Dal laboratory data into the existing project without modifying the original files.
 
 - First identify the exact new input files, hash them, inspect structure/sheets/pages and produce an import preview. Do not guess units or group labels. Record ambiguities.
 - Map each field to the existing typed data contract: sample_id, lot_id, group/origin, analyte/parameter, reported value/unit, normalized value/unit, method, replicate, experimental conditions, date, QC flags and exact source-row/page/cell pointer.

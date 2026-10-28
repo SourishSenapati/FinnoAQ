@@ -1,8 +1,8 @@
 # MODEL VERIFICATION & NUMERICAL INTEGRITY REPORT
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Standard:** Rigorous Numerical Solver Verification & CFL Stability (Corrective Constitution Part IV)  
-**Audited Codebase:** `src/harakutir/hydration.py`, `src/harakutir/gpu_continuous_engine.py`  
+**Audited Codebase:** `src/finnoaq/hydration.py`, `src/finnoaq/gpu_continuous_engine.py`  
 
 ---
 
@@ -87,4 +87,4 @@ Split cotyledons possess a lenticular disc shape rather than a sphere. Finite an
 
 ## 4. DOCUMENTED MODEL LIMITATIONS
 1. **Spherical vs. Lenticular Geometry:** Split toor dal cotyledons are hemispherical/lenticular discs, not perfect spheres. Equivalent volume radius ($R_{\text{eq}} \approx 2.6\text{ mm}$) provides a sound 1D approximation but underestimates surface-area-to-volume ratio by ~12–15%.
-2. **Pectin Rate Constant Identifiability:** While the Arrhenius form is physically sound, the exact kinetic rate constants ($k_{\text{soft}}$) for Harakutir's specific Tanzanian lot cannot be calibrated without physical test numbers.
+2. **Pectin Rate Constant Identifiability:** While the Arrhenius form is physically sound, the exact kinetic rate constants ($k_{\text{soft}}$) for FinnoaQ's specific Tanzanian lot cannot be calibrated without physical test numbers.

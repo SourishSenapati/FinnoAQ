@@ -1,4 +1,4 @@
-# HARAKUTIR TECHNO-ECONOMIC ANALYSIS (TEA) & COMMERCIAL MODEL
+# FINNOAQ TECHNO-ECONOMIC ANALYSIS (TEA) & COMMERCIAL MODEL
 ## Industrial OPEX, Turnkey CAPEX, Unit Economics & Margin Arbitrage Spread
 
 **Document ID:** HKT-TEA-2026-012  
@@ -47,7 +47,7 @@ The fundamental commercial driver is the price arbitrage between imported raw Ta
 
 * **Raw Imported Tanzanian Dal Landed Cost:** **₹78.00 / kg**
 * **Direct Added Processing Cost (OPEX + Yield Loss):** **₹1.11 / kg**
-* **Total Cost of Goods Sold (COGS) for Harakutir Dal:** **₹79.11 / kg**
+* **Total Cost of Goods Sold (COGS) for FinnoaQ Dal:** **₹79.11 / kg**
 * **Benchmark Wholesale Price of Indian Desi Dal:** **₹98.00 / kg**
 * **Net Value Arbitrage Spread:** **INR 18.89 / kg (₹18,890 per tonne)**
 * **Annual Line Capacity (20 hrs/day, 300 days/yr):** $30,000\text{ Tonnes / year}$

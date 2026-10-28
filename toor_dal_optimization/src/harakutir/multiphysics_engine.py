@@ -1,5 +1,5 @@
 """
-Harakutir 5-Sigma Multiphysics Engine.
+FinnoaQ 5-Sigma Multiphysics Engine.
 Implements the full Model A-F hierarchy:
 - Model A: Empirical Peleg Hydration with non-linear least squares & covariance.
 - Model B: Analytical Diffusion (Crank 1975) & Geometric Comparison (Sphere vs Slab vs Disc).

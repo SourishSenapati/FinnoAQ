@@ -1,12 +1,12 @@
 """
 Unit & Integration Tests for 15 MT/Day Plant Design, Mass Balance, and Dose Calculator.
-Verifies compliance with the Harakutir Omega Persistent Autonomous R&D Constitution.
+Verifies compliance with the FinnoaQ Omega Persistent Autonomous R&D Constitution.
 """
 
 import pytest
-from src.harakutir.dose_calculator import DoseCalculator
-from src.harakutir.plant_design import PlantDesignEngine
-from src.harakutir.mass_balance import MassBalanceEngine
+from src.finnoaq.dose_calculator import DoseCalculator
+from src.finnoaq.plant_design import PlantDesignEngine
+from src.finnoaq.mass_balance import MassBalanceEngine
 
 
 def test_dose_calculator_multi_basis_separation():

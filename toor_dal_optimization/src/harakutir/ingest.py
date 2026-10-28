@@ -9,8 +9,8 @@ import glob
 import json
 from typing import Dict, Any, List, Optional
 from datetime import datetime, timezone
-from src.harakutir.schemas import DatasetKind
-from src.harakutir.provenance import ProvenanceRegistry, compute_sha256
+from src.finnoaq.schemas import DatasetKind
+from src.finnoaq.provenance import ProvenanceRegistry, compute_sha256
 
 class DataIngestionEngine:
     def __init__(
@@ -74,7 +74,7 @@ class DataIngestionEngine:
         files_list = info.get("files_list", [])
         status_banner = "DATA_READINESS_ONLY" if real_data_status == "ABSENT" else "DATA_INGESTION_ACTIVE"
         
-        content = f"""# Harakutir Toor Dal Diagnostic R&D Study — Phase 1
+        content = f"""# FinnoaQ Toor Dal Diagnostic R&D Study — Phase 1
 ## Data Readiness & Ingestion Audit Report
 
 **Report Date:** {datetime.now(timezone.utc).strftime('%d %B %Y')}  
@@ -85,7 +85,7 @@ class DataIngestionEngine:
 ---
 
 ### 1. Executive Summary & Scientific Integrity Statement
-In strict adherence to **Section 1 of the Harakutir Autonomous R&D Master Prompt**:
+In strict adherence to **Section 1 of the FinnoaQ Autonomous R&D Master Prompt**:
 - **Zero Fabrication Rule:** No randomized, synthetic, or hand-authored values have been imported into the real-data namespace.
 - **Current Observation:** The project workspace contains the contract scope document (`Phase1_Scope_of_Work_Toor_Dal.docx`) and technical proposals, but **no raw laboratory analytical assay files** (CSV, XLSX, or instrument output) have been received from external testing laboratories.
 - **Gating Decision:** Empirical root-cause diagnosis is formally marked as **`BLOCKED_BY_MISSING_DATA`**. All software pipelines, schemas, GPU inverse solvers, Bayesian OED modules, checkpoint managers, and test suites are 100% verified using isolated synthetic fixtures under `data/synthetic/`.
@@ -129,17 +129,17 @@ When physical laboratory test results become available from candidate partners (
    ```
 3. The automated validator will:
    - Compute and log SHA-256 hashes in `state/provenance_registry.json`.
-   - Validate against Pydantic schemas in `src/harakutir/schemas.py`.
+   - Validate against Pydantic schemas in `src/Client Organization/schemas.py`.
    - Flag outliers, duplicate records, missing entries, and unit discrepancies.
    - Advance the system status to `EMPIRICAL_ANALYSIS_ACTIVE`.
 
 ---
 
 ### 5. Architectural Readiness Summary
-- **Pydantic Schemas:** Fully defined across all 10 assay domains (`src/harakutir/schemas.py`).
+- **Pydantic Schemas:** Fully defined across all 10 assay domains (`src/Client Organization/schemas.py`).
 - **Parameter Registry:** 78 individual parameters meticulously mapped with analytical standards (`reports/COMPLETE_PARAMETER_REGISTRY.md`).
-- **Provenance System:** SHA-256 tracking active (`src/harakutir/provenance.py`).
-- **Synthetic Isolation Gate:** 100% active, preventing test data leakage (`src/harakutir/synthetic.py`).
+- **Provenance System:** SHA-256 tracking active (`src/Client Organization/provenance.py`).
+- **Synthetic Isolation Gate:** 100% active, preventing test data leakage (`src/Client Organization/synthetic.py`).
 """
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(content)

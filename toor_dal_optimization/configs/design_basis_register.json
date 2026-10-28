@@ -1,0 +1,302 @@
+[
+  {
+    "id": "FEED-001",
+    "description": "Raw feed dal daily processing capacity",
+    "value": 15000.0,
+    "units": "kg/day",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "Final_Proposal.docx (Section 2, SOW Item 4)",
+    "type": "specified_capacity",
+    "plausible_range": [
+      10000.0,
+      20000.0
+    ],
+    "approval_status": "APPROVED_PROVISIONAL_BASIS",
+    "consumers": [
+      "deterministic_balances",
+      "gpu_accelerator",
+      "plant_design"
+    ]
+  },
+  {
+    "id": "FEED-002",
+    "description": "Raw feed dal initial moisture content (wet basis)",
+    "value": 10.5,
+    "units": "% WB",
+    "evidence_state": "LITERATURE_SUPPORTED",
+    "source_path": "IS 4333 / SOW Table 40",
+    "type": "feed_specification",
+    "plausible_range": [
+      9.5,
+      12.5
+    ],
+    "approval_status": "APPROVED_PROVISIONAL_BASIS",
+    "consumers": [
+      "deterministic_balances",
+      "hydration_kinetics"
+    ]
+  },
+  {
+    "id": "LOSS-001A",
+    "description": "Soaking and screening dry solids loss (Scenario 1)",
+    "value": 184.0,
+    "units": "kg/day",
+    "evidence_state": "CALCULATED",
+    "source_path": "Calculations/StreamBalance.xlsx (1.3706% of dry solids)",
+    "type": "process_loss",
+    "plausible_range": [
+      150.0,
+      250.0
+    ],
+    "approval_status": "PROVISIONAL_UNVALIDATED",
+    "consumers": [
+      "deterministic_balances"
+    ]
+  },
+  {
+    "id": "LOSS-001B",
+    "description": "Soaking and screening dry solids loss (Scenario 2 - general literature)",
+    "value": 196.01,
+    "units": "kg/day",
+    "evidence_state": "ASSUMPTION",
+    "source_path": "SOW preliminary literature review (1.46% of dry solids)",
+    "type": "process_loss",
+    "plausible_range": [
+      150.0,
+      250.0
+    ],
+    "approval_status": "COMPETING_SCENARIO_UNVERIFIED",
+    "consumers": [
+      "deterministic_balances"
+    ]
+  },
+  {
+    "id": "DRYER-IN-B1",
+    "description": "Pre-dryer wet dal mass (Scenario B1: 28.00% WB moisture)",
+    "value": 18390.28,
+    "units": "kg/day",
+    "evidence_state": "CALCULATED",
+    "source_path": "Calculations/StreamBalance.xlsx (Scenario B1)",
+    "type": "stream_mass",
+    "plausible_range": [
+      17500.0,
+      19500.0
+    ],
+    "approval_status": "CONDITIONALLY_CALCULATED",
+    "consumers": [
+      "deterministic_balances",
+      "thermal_drying_model"
+    ]
+  },
+  {
+    "id": "DRYER-IN-B2",
+    "description": "Pre-dryer wet dal mass (Scenario B2: reported 18,590 kg/day)",
+    "value": 18590.0,
+    "units": "kg/day",
+    "evidence_state": "SOURCE_REPORTED",
+    "source_path": "SOW preliminary flowsheet table",
+    "type": "stream_mass",
+    "plausible_range": [
+      17500.0,
+      19500.0
+    ],
+    "approval_status": "UNRESOLVED_EMPIRICALLY",
+    "consumers": [
+      "deterministic_balances",
+      "thermal_drying_model"
+    ]
+  },
+  {
+    "id": "PROD-001",
+    "description": "Target finished dal product moisture (wet basis)",
+    "value": 10.0,
+    "units": "% WB",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "FSSAI Pulse Standards (max 14.0% WB, target 10.0% WB)",
+    "type": "product_specification",
+    "plausible_range": [
+      9.0,
+      12.0
+    ],
+    "approval_status": "APPROVED_SPECIFICATION",
+    "consumers": [
+      "deterministic_balances",
+      "thermal_drying_model"
+    ]
+  },
+  {
+    "id": "SOAK-001",
+    "description": "Conditioning liquor-to-grain mass ratio",
+    "value": 1.5,
+    "units": "kg liquor / kg dal",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "SOW Section 2 (WP-03)",
+    "type": "process_ratio",
+    "plausible_range": [
+      1.2,
+      2.0
+    ],
+    "approval_status": "APPROVED_PROTOCOL_INPUT",
+    "consumers": [
+      "deterministic_balances",
+      "process_chemistry"
+    ]
+  },
+  {
+    "id": "SOAK-002",
+    "description": "Conditioning soak time (chemical conditioning arms)",
+    "value": 30.0,
+    "units": "min",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "reports/EXPERIMENTAL_DESIGN_AND_COOKING_TEST_PROTOCOL.md",
+    "type": "kinetic_duration",
+    "plausible_range": [
+      15.0,
+      60.0
+    ],
+    "approval_status": "APPROVED_PROTOCOL_INPUT",
+    "consumers": [
+      "hydration_kinetics",
+      "process_chemistry"
+    ]
+  },
+  {
+    "id": "COOK-001",
+    "description": "Preliminary client reported target dal cooking whistles",
+    "value": 6.0,
+    "units": "whistles",
+    "evidence_state": "SOURCE_REPORTED",
+    "source_path": "Client informal onboarding report",
+    "type": "uncalibrated_observation",
+    "plausible_range": [
+      5.0,
+      8.0
+    ],
+    "approval_status": "UNVERIFIED_OBSERVATION",
+    "consumers": [
+      "cooking_model"
+    ]
+  },
+  {
+    "id": "COOK-002",
+    "description": "Preliminary client reported benchmark dal cooking whistles",
+    "value": 3.0,
+    "units": "whistles",
+    "evidence_state": "SOURCE_REPORTED",
+    "source_path": "Client informal onboarding report",
+    "type": "uncalibrated_observation",
+    "plausible_range": [
+      2.0,
+      4.0
+    ],
+    "approval_status": "UNVERIFIED_OBSERVATION",
+    "consumers": [
+      "cooking_model"
+    ]
+  },
+  {
+    "id": "COOK-003",
+    "description": "Standardized laboratory autoclave temperature",
+    "value": 115.0,
+    "units": "deg C",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "reports/EXPERIMENTAL_DESIGN_AND_COOKING_TEST_PROTOCOL.md",
+    "type": "calibrated_thermal_condition",
+    "plausible_range": [
+      110.0,
+      121.0
+    ],
+    "approval_status": "PROPOSED_PROTOCOL_INPUT",
+    "consumers": [
+      "cooking_model"
+    ]
+  },
+  {
+    "id": "COOK-004",
+    "description": "Autoclave saturated steam absolute pressure at 115 deg C",
+    "value": 1.691,
+    "units": "bar_abs",
+    "evidence_state": "CALCULATED",
+    "source_path": "IAPWS-97 steam tables (115 deg C saturated steam)",
+    "type": "thermodynamic_property",
+    "plausible_range": [
+      1.6,
+      1.75
+    ],
+    "approval_status": "VERIFIED_THERMODYNAMIC_PHYSICS",
+    "consumers": [
+      "cooking_model"
+    ]
+  },
+  {
+    "id": "COOK-005",
+    "description": "Autoclave saturated steam gauge pressure at 115 deg C",
+    "value": 0.678,
+    "units": "bar_g",
+    "evidence_state": "CALCULATED",
+    "source_path": "P_gauge = P_abs - 1.01325 bar",
+    "type": "thermodynamic_property",
+    "plausible_range": [
+      0.6,
+      0.75
+    ],
+    "approval_status": "VERIFIED_THERMODYNAMIC_PHYSICS",
+    "consumers": [
+      "cooking_model"
+    ]
+  },
+  {
+    "id": "PELEG-K1-EST",
+    "description": "Estimated Peleg rate constant at 25 deg C (literature prior)",
+    "value": 2.35,
+    "units": "min / % moisture",
+    "evidence_state": "LITERATURE_SUPPORTED",
+    "source_path": "Pigeon pea hydration literature (Singh & Prasad)",
+    "type": "kinetic_parameter",
+    "plausible_range": [
+      1.2,
+      4.5
+    ],
+    "approval_status": "PRIOR_HYPOTHESIS_PENDING_DATA",
+    "consumers": [
+      "hydration_kinetics",
+      "gpu_accelerator"
+    ]
+  },
+  {
+    "id": "PELEG-K2-EST",
+    "description": "Estimated Peleg capacity constant at 25 deg C (literature prior)",
+    "value": 0.0125,
+    "units": "% moisture^-1",
+    "evidence_state": "LITERATURE_SUPPORTED",
+    "source_path": "Pigeon pea hydration literature (Singh & Prasad)",
+    "type": "kinetic_parameter",
+    "plausible_range": [
+      0.008,
+      0.02
+    ],
+    "approval_status": "PRIOR_HYPOTHESIS_PENDING_DATA",
+    "consumers": [
+      "hydration_kinetics",
+      "gpu_accelerator"
+    ]
+  },
+  {
+    "id": "BUDGET-PHASE1",
+    "description": "Total agreed fee for Phase 1 Diagnostic R&D (Option 1)",
+    "value": 173000.0,
+    "units": "INR",
+    "evidence_state": "OFFICIAL_SOURCE",
+    "source_path": "Final_Proposal.docx (Table 4, SOW Table 40)",
+    "type": "commercial_budget",
+    "plausible_range": [
+      173000.0,
+      200000.0
+    ],
+    "approval_status": "OFFICIALLY_COMMITTED",
+    "consumers": [
+      "hypothesis_discrimination",
+      "project_governance"
+    ]
+  }
+]

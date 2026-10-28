@@ -1,7 +1,7 @@
 # LICENSE AND DATA ACCESS AUDIT
 
-**Project:** Harakutir Autonomous Pulse Engineering  
-**Standard:** Ocean Boiling Protocol v3.0 | Harakutir Omega v4  
+**Project:** FinnoaQ Autonomous Pulse Engineering  
+**Standard:** Ocean Boiling Protocol v3.0 | FinnoaQ Omega v4  
 **Date:** October 2026  
 
 ---
@@ -24,5 +24,5 @@
 ## 2. Anti-Leakage & Data Governance Boundary Guarantees
 
 1. **Synthetic Data Quarantine:** Synthetic fixtures created for software benchmarks are watermarked with `"dataset_kind": "synthetic_test_only"` and restricted exclusively to `data/synthetic/`. They are blocked by automated gate tests from entering empirical reporting.
-2. **Literature Isolation:** Literature datasets from other varieties or species (e.g. Malawi pigeon pea or common beans) are tagged with `"dataset_kind": "published_literature"` and cannot be presented as physical assays of Harakutir's commercial lot.
+2. **Literature Isolation:** Literature datasets from other varieties or species (e.g. Malawi pigeon pea or common beans) are tagged with `"dataset_kind": "published_literature"` and cannot be presented as physical assays of FinnoaQ's commercial lot.
 3. **Target Lot Empirical Status:** Wet-lab assays on the specific Tanzanian commercial dal lot remain categorized as **`DATA_READINESS_ONLY`** until physical certified test reports from an accredited NABL/FSSAI laboratory are uploaded.

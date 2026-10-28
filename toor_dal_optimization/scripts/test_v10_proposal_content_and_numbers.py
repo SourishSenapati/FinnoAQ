@@ -28,7 +28,7 @@ def test_docx_audit():
     
     # 2. Check prohibited strings (Anti-Fraud / Quality Governance)
     prohibited = [
-        "Harakuntir", # Must be Harakutir (no 'n')
+        "The Client", # Must be Client Organization (no 'n')
         "five-sigma",
         "proven mechanism",
         "guaranteed cooking",
@@ -41,10 +41,10 @@ def test_docx_audit():
         assert len(matches) == 0, f"Prohibited string '{p_str}' found in document!"
 
     # 3. Check Mandatory Identities
-    assert "Harakutir" in all_str, "Client Harakutir missing"
+    assert "Client Organization" in all_str, "Client Client Organization missing"
     assert "FinnoaQ" in all_str, "FinnoaQ missing"
     assert "Sourish Senapati" in all_str, "Lead Engineer missing"
-    assert "Dr. Archisman Ray" in all_str, "Academic Guidance missing"
+    assert "Technical Advisory Panel" in all_str, "Academic Guidance missing"
     assert "IIT Kharagpur" in all_str, "IIT Kharagpur missing"
     
     # 4. Check Mandatory Commercial Numbers

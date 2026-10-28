@@ -1,0 +1,695 @@
+{
+  "run_id": "INV_1792534657",
+  "timestamp": "2026-10-21 03:47:37",
+  "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "total_runtime_seconds": 7.472,
+  "offline_verified": true,
+  "forensic_audit": {
+    "register_size": 17,
+    "audit_points": {
+      "audit_1_whistle_counts": {
+        "status": "PROVISIONAL_OBSERVATION_UNCALIBRATED",
+        "finding": "Preliminary household observation (~6 vs 3 whistles) is uncalibrated, discontinuous, and cannot serve as standardized laboratory time. Calibrated standard: 50-grain 500g mechanical compression endpoint T90 at 115 deg C in saturated steam."
+      },
+      "audit_2_solids_loss": {
+        "status": "UNRESOLVED_COMPETING_SCENARIOS",
+        "finding": "184 kg/day (1.3706%) is from steep liquor stoichiometric derivation; 196.01 kg/day (1.46%) is from generic pulse milling literature. Kept distinct."
+      },
+      "audit_3_predryer_moisture": {
+        "status": "EMPIRICALLY_UNRESOLVED_MATHEMATICALLY_CLOSED",
+        "finding": "Scenario B1 (28.0% WB, 3,678.06 kg evap, 134.23 kWth) vs Scenario B2 (18,590 kg wet feed, 28.7735% WB, 3,877.78 kg evap, 141.11 kWth). Both close with 0.000000% error. Physical delta of 199.72 kg/day water (+6.88 kWth duty) represents entrained surface liquor following dewatering screen; remains empirically unresolved until physical dal screen drainage test is performed."
+      },
+      "audit_4_autoclave_thermodynamics": {
+        "status": "THERMODYNAMIC_STATE_RECONCILED",
+        "finding": "Saturated steam at 115 deg C has absolute pressure P_abs = 1.691 bar (0.678 bar_gauge). The reported 1.05 bar must be treated as absolute pressure (T_sat = 101.3 deg C) or resolved to 0.678 bar_gauge prior to testing."
+      },
+      "audit_5_mechanical_endpoint": {
+        "status": "PROPOSED_METHODOLOGY_UNVALIDATED",
+        "finding": "500 g load with 50-grain sampling is a proposed methodology, unvalidated for repeatability on target dal."
+      },
+      "audit_6_chemical_treatments": {
+        "status": "COMPUTATIONAL_HYPOTHESIS",
+        "finding": "All candidate reagents (NaHCO3, Na2CO3, Citrate, Hydrothermal) are hypothetical screening treatments until target physical lot is tested."
+      },
+      "audit_7_replication_hierarchy": {
+        "status": "HIERARCHICAL_STRUCTURE_ENFORCED",
+        "finding": "Enforces 3 preparation batches x 3 technical repeats. Degrees of freedom for treatment comparisons restricted to N = 3 preparation batches."
+      },
+      "audit_8_aspen_simulation_scope": {
+        "status": "SCOPE_BOUNDARY_VERIFIED",
+        "finding": "Aspen Plus simulation (EV-101) balances aqueous steep liquor thermodynamics; it provides zero evidence regarding grain hydration, cell wall, or cooking kinetics."
+      }
+    },
+    "unresolved_inputs": [
+      {
+        "parameter": "Pre-dryer surface liquor moisture",
+        "range": "28.0% to 28.77% WB",
+        "physical_impact": "199.72 kg/day evaporation (6.88 kWth duty)",
+        "resolving_test": "WP-01/WP-04 5-minute screen drainage test"
+      },
+      {
+        "parameter": "Soaking dry-solids loss",
+        "range": "184.0 kg/day to 196.01 kg/day",
+        "physical_impact": "12.01 kg/day dry solids (13.34 kg/day product)",
+        "resolving_test": "WP-02 Gravimetric steep liquor drying"
+      },
+      {
+        "parameter": "Target dal Peleg k1 rate constant",
+        "range": "2.20 to 4.20 min/%",
+        "physical_impact": "+/- 35% hydration time to equilibrium",
+        "resolving_test": "WP-04 Water absorption kinetics at 25/40/60 C"
+      },
+      {
+        "parameter": "Cell-wall pectin fractions (WSP/CSP/ASP)",
+        "range": "Unknown for target lot",
+        "physical_impact": "Determines whether HTC crosslinking exists",
+        "resolving_test": "WP-05 Sequential pectin extraction"
+      },
+      {
+        "parameter": "Phytate to (Ca+Mg) molar ratio",
+        "range": "Unknown for target lot",
+        "physical_impact": "Determines cation mobilization potential",
+        "resolving_test": "WP-06 ICP-OES and phytic acid assay"
+      },
+      {
+        "parameter": "Standardized autoclave T90 cooking time",
+        "range": "Unknown under 115 C / 0.68 bar_g",
+        "physical_impact": "Establishes ground-truth cooking defect magnitude",
+        "resolving_test": "WP-08 Calibrated autoclave cooking test"
+      }
+    ]
+  },
+  "hypotheses_and_oed": {
+    "coverage": {
+      "hypotheses_count": 10,
+      "work_packages_count": 11,
+      "total_fee_inr": 173000.0,
+      "coverage_map": {
+        "H1": [
+          "WP-02",
+          "WP-04",
+          "WP-08",
+          "WP-09",
+          "WP-11"
+        ],
+        "H2": [
+          "WP-01",
+          "WP-09",
+          "WP-11"
+        ],
+        "H3": [
+          "WP-05",
+          "WP-07",
+          "WP-09",
+          "WP-11"
+        ],
+        "H4": [
+          "WP-05",
+          "WP-06",
+          "WP-07",
+          "WP-08",
+          "WP-09",
+          "WP-10",
+          "WP-11"
+        ],
+        "H5": [
+          "WP-06",
+          "WP-09",
+          "WP-11"
+        ],
+        "H6": [
+          "WP-03",
+          "WP-09",
+          "WP-10",
+          "WP-11"
+        ],
+        "H7": [
+          "WP-02",
+          "WP-07",
+          "WP-09",
+          "WP-11"
+        ],
+        "H8": [
+          "WP-01",
+          "WP-04",
+          "WP-09",
+          "WP-11"
+        ],
+        "H9": [
+          "WP-09",
+          "WP-11"
+        ],
+        "H10": [
+          "WP-08",
+          "WP-09",
+          "WP-11"
+        ]
+      },
+      "uncovered_hypotheses": [],
+      "is_fully_covered": true
+    },
+    "priorities": [
+      {
+        "work_package_id": "WP-01",
+        "title": "Sample Intake, Grading & Physical Inspection",
+        "cost_inr": 5000.0,
+        "pct_of_budget": 2.89,
+        "target_hypotheses": [
+          "H2",
+          "H8"
+        ],
+        "discriminating_power_bits": 0.4,
+        "cost_efficiency_bits_per_kinr": 0.08
+      },
+      {
+        "work_package_id": "WP-04",
+        "title": "Water Absorption Kinetics & Peleg Modeling",
+        "cost_inr": 10000.0,
+        "pct_of_budget": 5.78,
+        "target_hypotheses": [
+          "H1",
+          "H8"
+        ],
+        "discriminating_power_bits": 0.8,
+        "cost_efficiency_bits_per_kinr": 0.08
+      },
+      {
+        "work_package_id": "WP-02",
+        "title": "Moisture & Proximate Composition (AOAC)",
+        "cost_inr": 7000.0,
+        "pct_of_budget": 4.05,
+        "target_hypotheses": [
+          "H1",
+          "H7"
+        ],
+        "discriminating_power_bits": 0.5,
+        "cost_efficiency_bits_per_kinr": 0.0714
+      },
+      {
+        "work_package_id": "WP-06",
+        "title": "Mineral Profiling (ICP-OES) & Phytate Determination",
+        "cost_inr": 16000.0,
+        "pct_of_budget": 9.25,
+        "target_hypotheses": [
+          "H4",
+          "H5"
+        ],
+        "discriminating_power_bits": 0.9,
+        "cost_efficiency_bits_per_kinr": 0.0563
+      },
+      {
+        "work_package_id": "WP-08",
+        "title": "Standardized Baseline Cooking Performance (Autoclave)",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H10",
+          "H1",
+          "H4"
+        ],
+        "discriminating_power_bits": 0.98,
+        "cost_efficiency_bits_per_kinr": 0.049
+      },
+      {
+        "work_package_id": "WP-10",
+        "title": "Candidate Treatment Formulation Screening",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H4",
+          "H6"
+        ],
+        "discriminating_power_bits": 0.92,
+        "cost_efficiency_bits_per_kinr": 0.046
+      },
+      {
+        "work_package_id": "WP-07",
+        "title": "Texture Profile Analysis (TPA) & Shear Resistance",
+        "cost_inr": 17000.0,
+        "pct_of_budget": 9.83,
+        "target_hypotheses": [
+          "H3",
+          "H4",
+          "H7"
+        ],
+        "discriminating_power_bits": 0.75,
+        "cost_efficiency_bits_per_kinr": 0.0441
+      },
+      {
+        "work_package_id": "WP-09",
+        "title": "Multi-Factor Statistical Analysis & Hypothesis Ranking",
+        "cost_inr": 15000.0,
+        "pct_of_budget": 8.67,
+        "target_hypotheses": [
+          "H1",
+          "H2",
+          "H3",
+          "H4",
+          "H5",
+          "H6",
+          "H7",
+          "H8",
+          "H9",
+          "H10"
+        ],
+        "discriminating_power_bits": 0.65,
+        "cost_efficiency_bits_per_kinr": 0.0433
+      },
+      {
+        "work_package_id": "WP-03",
+        "title": "Starch Gelatinization & DSC Thermal Analysis",
+        "cost_inr": 20000.0,
+        "pct_of_budget": 11.56,
+        "target_hypotheses": [
+          "H6"
+        ],
+        "discriminating_power_bits": 0.85,
+        "cost_efficiency_bits_per_kinr": 0.0425
+      },
+      {
+        "work_package_id": "WP-05",
+        "title": "Cell-Wall Structural & Pectin Fractionation",
+        "cost_inr": 28000.0,
+        "pct_of_budget": 16.18,
+        "target_hypotheses": [
+          "H3",
+          "H4"
+        ],
+        "discriminating_power_bits": 0.95,
+        "cost_efficiency_bits_per_kinr": 0.0339
+      },
+      {
+        "work_package_id": "WP-11",
+        "title": "Phase 1 Consolidated Technical Report & Client Review",
+        "cost_inr": 15000.0,
+        "pct_of_budget": 8.67,
+        "target_hypotheses": [
+          "ALL"
+        ],
+        "discriminating_power_bits": 0.3,
+        "cost_efficiency_bits_per_kinr": 0.02
+      }
+    ]
+  },
+  "multifidelity_physics": {
+    "fidelity_0_balances": {
+      "scenario_b1": {
+        "scenario_id": "SCENARIO_B1_28_PCT_WB",
+        "inlet_moisture_wb": 0.28,
+        "inlet_moisture_db": 0.38888888888888895,
+        "dryer_inlet_mass_kg_day": 18390.277777777777,
+        "dryer_inlet_dry_solids_kg_day": 13241.0,
+        "dryer_inlet_water_kg_day": 5149.277777777778,
+        "product_total_kg_day": 14712.222222222223,
+        "product_dry_solids_kg_day": 13241.0,
+        "product_water_kg_day": 1471.2222222222224,
+        "evaporation_kg_day": 3678.0555555555557,
+        "evaporation_kg_h": 183.90277777777777,
+        "closure_residual_kg": 0.0,
+        "closure_error_pct": 0.0,
+        "mathematical_closure": true,
+        "empirical_status": "UNRESOLVED_EMPIRICALLY_AWAITING_DRAINAGE_TEST"
+      },
+      "scenario_b2": {
+        "scenario_id": "SCENARIO_B2_18590_KG_DAY",
+        "inlet_moisture_wb": 0.28773534158149544,
+        "inlet_moisture_db": 0.4039725096291821,
+        "dryer_inlet_mass_kg_day": 18590.0,
+        "dryer_inlet_dry_solids_kg_day": 13241.0,
+        "dryer_inlet_water_kg_day": 5349.0,
+        "product_total_kg_day": 14712.222222222223,
+        "product_dry_solids_kg_day": 13241.0,
+        "product_water_kg_day": 1471.2222222222224,
+        "evaporation_kg_day": 3877.7777777777774,
+        "evaporation_kg_h": 193.88888888888886,
+        "closure_residual_kg": 0.0,
+        "closure_error_pct": 0.0,
+        "mathematical_closure": true,
+        "empirical_status": "UNRESOLVED_EMPIRICALLY_AWAITING_DRAINAGE_TEST"
+      },
+      "thermal_b1": {
+        "thermal_duty_kw": 134.2332938734568,
+        "thermal_duty_mj_h": 483.2398579444445,
+        "latent_heat_evap_kj_kg": 2406.86,
+        "evaporation_kg_h": 183.90277777777777,
+        "air_mass_flow_kg_h": 14712.22222222222,
+        "air_volumetric_flow_m3_h": 13042.750197005516
+      },
+      "thermal_b2": {
+        "thermal_duty_kw": 141.10989641975308,
+        "thermal_duty_mj_h": 507.9956271111111,
+        "latent_heat_evap_kj_kg": 2406.86,
+        "evaporation_kg_h": 193.88888888888886,
+        "air_mass_flow_kg_h": 15511.111111111108,
+        "air_volumetric_flow_m3_h": 13750.985027580771
+      },
+      "water_delta_kg_day": 199.72222222222172,
+      "duty_delta_kw": 6.876602546296283,
+      "competing_loss_196kg": {
+        "remaining_solids": 13228.99,
+        "evaporation": 3674.719444444445
+      }
+    },
+    "fidelity_1_hydration": {
+      "peleg_fit": {
+        "status": "CONVERGED",
+        "moisture_basis": "dry_basis",
+        "m0": 11.73,
+        "m0_se": 0.0,
+        "k1": 2.836900000000001,
+        "k1_se": 1.8859140778701556e-15,
+        "k1_95_ci": [
+          2.8368999999999964,
+          2.8369000000000053
+        ],
+        "k2": 0.010999999999999972,
+        "k2_se": 1.537108259491715e-17,
+        "k2_95_ci": [
+          0.010999999999999937,
+          0.011000000000000006
+        ],
+        "initial_absorption_rate_r0": 0.35249744439352804,
+        "equilibrium_moisture_me": 102.63909090909115,
+        "r2": 1.0,
+        "rmse": 9.991334336530416e-15,
+        "residuals": [
+          0.0,
+          0.0,
+          0.0,
+          3.552713678800501e-15,
+          0.0,
+          0.0,
+          -3.552713678800501e-15,
+          -3.552713678800501e-15,
+          -7.105427357601002e-15,
+          -1.4210854715202004e-14,
+          -2.842170943040401e-14
+        ],
+        "dof": 9,
+        "k1_k2_correlation": -0.9007957790305374,
+        "is_identifiable": true,
+        "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+      },
+      "fickian_fit": {
+        "status": "CONVERGED",
+        "effective_diffusivity_m2_s": 4.4988220589311054e-11,
+        "effective_diffusivity_scientific": "4.499e-11",
+        "log10_d_eff": -10.346901184063285,
+        "log10_d_eff_se": 0.10060410395558302,
+        "radius_m": 0.0025,
+        "rmse_mr": 0.11412594887493316,
+        "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+      }
+    },
+    "fidelity_2_pde_profile": {
+      "cotyledon_half_thickness_mm": 1.1,
+      "nodes_count": 31,
+      "mean_theta_solubility": 0.1116,
+      "solids_recovery_pct": 99.4
+    },
+    "fidelity_3_cooking": {
+      "cooking_temperature_c": 115.0,
+      "autoclave_gauge_pressure_bar": 0.678,
+      "thermodynamic_state_consistent": true,
+      "source_reported_observations": {
+        "target_reported_whistles": 6.0,
+        "benchmark_reported_whistles": 3.0,
+        "whistle_evidence_state": "SOURCE_REPORTED_UNCALIBRATED",
+        "warning": "Household whistle counts are discontinuous, uncalibrated, and must NOT be used as lab time."
+      },
+      "model1_baseline_thermal": {
+        "description": "Pure thermal softening without biochemical covariates",
+        "k_softening_min^-1": 0.075,
+        "predicted_t90_min": 30.7,
+        "maturity_state": "M2 \u2014 NUMERICALLY_VERIFIED"
+      },
+      "model2_hydration_coupled": {
+        "description": "Softening coupled to water absorption rate (k1)",
+        "status": "CALCULATED_FROM_KINETICS",
+        "k_softening_min^-1": 0.063,
+        "predicted_t90_min": 36.56,
+        "maturity_state": "M1 \u2014 IMPLEMENTED"
+      },
+      "model3_mechanistic_biochemical": {
+        "description": "Coupled hydration diffusion and pectin middle lamella solubilization",
+        "status": "BLOCKED_MISSING_BIOCHEMICAL_DATA",
+        "k_softening_min^-1": null,
+        "predicted_t90_min": null,
+        "maturity_state": "M0 \u2014 SPECIFIED"
+      },
+      "target_dal_validation_status": "NOT_VALIDATED \u2014 PENDING_PHYSICAL_LABORATORY_ASSAYS"
+    },
+    "fidelity_4_treatment_response": [
+      {
+        "name": "Untreated Control",
+        "predicted_cook_time_min": 26.6,
+        "predicted_whistles": 8.0,
+        "calcium_displacement_pct": 0.0,
+        "solids_recovery_pct": 99.71,
+        "retained_sodium_mg_100g": 4.2
+      },
+      {
+        "name": "Plain Water Soak",
+        "predicted_cook_time_min": 26.1,
+        "predicted_whistles": 7.9,
+        "calcium_displacement_pct": 0.0,
+        "solids_recovery_pct": 99.4,
+        "retained_sodium_mg_100g": 4.2
+      },
+      {
+        "name": "0.5% NaHCO3 (Nominal)",
+        "predicted_cook_time_min": 12.2,
+        "predicted_whistles": 3.4,
+        "calcium_displacement_pct": 69.4,
+        "solids_recovery_pct": 99.33,
+        "retained_sodium_mg_100g": 18.9
+      },
+      {
+        "name": "0.5% Na2CO3",
+        "predicted_cook_time_min": 26.1,
+        "predicted_whistles": 7.9,
+        "calcium_displacement_pct": 0.0,
+        "solids_recovery_pct": 99.4,
+        "retained_sodium_mg_100g": 4.2
+      },
+      {
+        "name": "0.5% Sodium Citrate",
+        "predicted_cook_time_min": 12.8,
+        "predicted_whistles": 3.6,
+        "calcium_displacement_pct": 63.0,
+        "solids_recovery_pct": 99.32,
+        "retained_sodium_mg_100g": 4.8
+      },
+      {
+        "name": "Hydrothermal (60 C Water)",
+        "predicted_cook_time_min": 25.2,
+        "predicted_whistles": 7.6,
+        "calcium_displacement_pct": 0.0,
+        "solids_recovery_pct": 99.0,
+        "retained_sodium_mg_100g": 4.2
+      }
+    ]
+  },
+  "gpu_experiment": {
+    "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "cuda_cores": 2560,
+    "compute_capability": "8.9",
+    "total_vram_mb": 6140.5,
+    "benchmark_rows": [
+      {
+        "scenarios_count_N": 100,
+        "cpu_numpy_time_sec": 6.4e-05,
+        "gpu_f32_kernel_ms": 0.732,
+        "gpu_f32_h2d_ms": 5.317,
+        "gpu_f32_total_sec": 0.006427,
+        "gpu_f32_speedup": 0.01,
+        "gpu_f32_vram_mb": 0.16,
+        "gpu_f32_l_inf_evap_kg": 0.0010715045018514502,
+        "gpu_f32_l2_evap_kg": 0.000415006685284807,
+        "gpu_f32_l_inf_duty_kw": 4.626418024145096e-05,
+        "gpu_f64_total_sec": 0.004107,
+        "gpu_f64_speedup": 0.02,
+        "gpu_f64_vram_mb": 0.18,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      },
+      {
+        "scenarios_count_N": 1000,
+        "cpu_numpy_time_sec": 0.000149,
+        "gpu_f32_kernel_ms": 0.499,
+        "gpu_f32_h2d_ms": 0.447,
+        "gpu_f32_total_sec": 0.00111,
+        "gpu_f32_speedup": 0.13,
+        "gpu_f32_vram_mb": 0.23,
+        "gpu_f32_l_inf_evap_kg": 0.0015779698242113227,
+        "gpu_f32_l2_evap_kg": 0.0004222990150136293,
+        "gpu_f32_l_inf_duty_kw": 5.558548659223561e-05,
+        "gpu_f64_total_sec": 0.0007,
+        "gpu_f64_speedup": 0.21,
+        "gpu_f64_vram_mb": 0.34,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      },
+      {
+        "scenarios_count_N": 10000,
+        "cpu_numpy_time_sec": 0.000471,
+        "gpu_f32_kernel_ms": 0.586,
+        "gpu_f32_h2d_ms": 0.708,
+        "gpu_f32_total_sec": 0.001514,
+        "gpu_f32_speedup": 0.31,
+        "gpu_f32_vram_mb": 0.9,
+        "gpu_f32_l_inf_evap_kg": 0.001633604443668446,
+        "gpu_f32_l2_evap_kg": 0.00042760815343522536,
+        "gpu_f32_l_inf_duty_kw": 5.8894571111522964e-05,
+        "gpu_f64_total_sec": 0.002047,
+        "gpu_f64_speedup": 0.23,
+        "gpu_f64_vram_mb": 1.97,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      },
+      {
+        "scenarios_count_N": 50000,
+        "cpu_numpy_time_sec": 0.001469,
+        "gpu_f32_kernel_ms": 1.461,
+        "gpu_f32_h2d_ms": 6.596,
+        "gpu_f32_total_sec": 0.008586,
+        "gpu_f32_speedup": 0.17,
+        "gpu_f32_vram_mb": 4.43,
+        "gpu_f32_l_inf_evap_kg": 0.0017898006535688182,
+        "gpu_f32_l2_evap_kg": 0.00042220360191036997,
+        "gpu_f32_l_inf_duty_kw": 6.450125954415853e-05,
+        "gpu_f64_total_sec": 0.003252,
+        "gpu_f64_speedup": 0.45,
+        "gpu_f64_vram_mb": 9.28,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      },
+      {
+        "scenarios_count_N": 100000,
+        "cpu_numpy_time_sec": 0.001621,
+        "gpu_f32_kernel_ms": 1.706,
+        "gpu_f32_h2d_ms": 2.529,
+        "gpu_f32_total_sec": 0.004949,
+        "gpu_f32_speedup": 0.33,
+        "gpu_f32_vram_mb": 12.37,
+        "gpu_f32_l_inf_evap_kg": 0.0017620236094444408,
+        "gpu_f32_l2_evap_kg": 0.00042383702002299464,
+        "gpu_f32_l_inf_duty_kw": 7.319604304711902e-05,
+        "gpu_f64_total_sec": 0.005993,
+        "gpu_f64_speedup": 0.27,
+        "gpu_f64_vram_mb": 18.85,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      },
+      {
+        "scenarios_count_N": 250000,
+        "cpu_numpy_time_sec": 0.022598,
+        "gpu_f32_kernel_ms": 2.271,
+        "gpu_f32_h2d_ms": 3.97,
+        "gpu_f32_total_sec": 0.007354,
+        "gpu_f32_speedup": 3.07,
+        "gpu_f32_vram_mb": 27.63,
+        "gpu_f32_l_inf_evap_kg": 0.001749584003846394,
+        "gpu_f32_l2_evap_kg": 0.0004236437181225896,
+        "gpu_f32_l_inf_duty_kw": 6.937765590464551e-05,
+        "gpu_f64_total_sec": 0.010129,
+        "gpu_f64_speedup": 2.23,
+        "gpu_f64_vram_mb": 47.44,
+        "gpu_f64_l_inf_evap_kg": 0.0,
+        "gpu_f64_l2_evap_kg": 0.0
+      }
+    ]
+  },
+  "mode_a_vs_mode_b": {
+    "mode_a_unconditioned": {
+      "evaporation_kg_day": {
+        "mean": 3925.762806012224,
+        "std": 455.40267628931025,
+        "p05": 3237.356845485262,
+        "p50": 3911.469816634698,
+        "p95": 4650.855330391362
+      },
+      "thermal_duty_kw": {
+        "mean": 142.7228194044898,
+        "std": 15.691894620669693,
+        "p05": 119.01630115101528,
+        "p50": 142.22645783735834,
+        "p95": 167.7220438401374
+      },
+      "t90_cooking_min": {
+        "mean": 37.192178316659316,
+        "std": 5.546321546850644,
+        "p05": 27.89077187002795,
+        "p50": 37.601851223151094,
+        "p95": 45.265179359548995
+      },
+      "solids_recovery_kg_day": {
+        "mean": 14638.317935292751,
+        "std": 198.12259340495854,
+        "p05": 14328.598875685282,
+        "p50": 14638.037173404777,
+        "p95": 14949.923787241629
+      }
+    },
+    "mode_b_conditioned": {
+      "evaporation_kg_day": {
+        "mean": 3678.3372951073848,
+        "std": 77.46015546364362,
+        "p05": 3551.925916801917,
+        "p50": 3677.9816168540447,
+        "p95": 3806.247614826423
+      },
+      "thermal_duty_kw": {
+        "mean": 134.24210975461347,
+        "std": 2.6690114629424464,
+        "p05": 129.88694605533863,
+        "p50": 134.22967880320445,
+        "p95": 138.64932625881792
+      },
+      "t90_cooking_min": {
+        "mean": 36.564205538960664,
+        "std": 0.2963604975085012,
+        "p05": 36.07508738618448,
+        "p50": 36.56491089764281,
+        "p95": 37.048782029656024
+      },
+      "solids_recovery_kg_day": {
+        "mean": 14712.487832570003,
+        "std": 33.92169468612657,
+        "p05": 14656.799978354882,
+        "p50": 14712.458780788102,
+        "p95": 14768.22081580911
+      }
+    },
+    "variance_reduction_pct": {
+      "evaporation": 97.10688583592002,
+      "thermal_duty": 97.10698881904234,
+      "t90_cooking": 99.71448393985138
+    }
+  },
+  "industrial_scaleup_range": {
+    "raw_feed_capacity_kg_day": 15000.0,
+    "target_product_moisture_wb": 0.1,
+    "product_output_p05_p95_kg_day": [
+      14328.598875685282,
+      14949.923787241629
+    ],
+    "dryer_evaporation_p05_p95_kg_day": [
+      3237.356845485262,
+      4650.855330391362
+    ],
+    "thermal_duty_p05_p95_kw": [
+      119.01630115101528,
+      167.7220438401374
+    ],
+    "design_dryer_capacity_kg_h": 225.1,
+    "design_dryer_margin_scenario_b1_pct": 22.4,
+    "design_dryer_margin_scenario_b2_pct": 16.1
+  },
+  "offline_check": {
+    "network_calls_blocked": true,
+    "local_modules_verified": true,
+    "synthetic_banners_intact": true,
+    "epistemic_tags_enforced": true
+  }
+}

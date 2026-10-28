@@ -9,7 +9,7 @@ from typing import Dict, List, Any, Optional
 from dataclasses import dataclass, field
 import numpy as np
 
-from src.harakutir.foodoscope import FoodoscopeInformaticsEngine
+from src.finnoaq.foodoscope import FoodoscopeInformaticsEngine
 
 @dataclass
 class CandidateTreatment:

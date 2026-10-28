@@ -1,6 +1,6 @@
 # DREAM-RSI DISCOVERY TREE & POLICY EVALUATION REPORT
 
-**Project:** Harakutir Toor Dal Diagnostic R&D (Phase 1)  
+**Project:** FinnoaQ Toor Dal Diagnostic R&D (Phase 1)  
 **Framework:** Dream-RSI Inspired History Replay & Exploration Policy Optimization  
 **State File:** `state/discovery_tree.json`  
 

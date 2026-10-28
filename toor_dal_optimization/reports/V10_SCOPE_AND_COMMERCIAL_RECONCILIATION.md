@@ -1,8 +1,8 @@
 # V10 Scope & Commercial Reconciliation Dossier
 **Project Reference:** FNQ-PR-2026-001 | Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006)  
 **Document Ref:** FNQ-V10-COM-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -10,7 +10,7 @@
 ---
 
 ## 1. Executive Summary & Commercial Objective
-This dossier audits and reconciles the technical scope boundaries, fee line items, milestone payment structure, timeline assumptions, and multi-lot sample implications for the Phase 1 Diagnostic R&D Study. It ensures that the commercial proposal presented to **Harakutir** is completely transparent, mathematically reconciled with the original SOW (`Phase1_Scope_of_Work_Toor_Dal.docx`), and rigorously protected against scope creep or unfunded commitments.
+This dossier audits and reconciles the technical scope boundaries, fee line items, milestone payment structure, timeline assumptions, and multi-lot sample implications for the Phase 1 Diagnostic R&D Study. It ensures that the commercial proposal presented to **Client Organization** is completely transparent, mathematically reconciled with the original SOW (`Phase1_Scope_of_Work_Toor_Dal.docx`), and rigorously protected against scope creep or unfunded commitments.
 
 ---
 
@@ -119,7 +119,7 @@ Client Action Required          Select Option 1 to initiate immediately Select O
 ---
 
 ## 7. Client Decision & Onboarding Actions Required
-To initiate the project under the agreed Phase 1 baseline terms, the client (**Harakutir**) is requested to:
+To initiate the project under the agreed Phase 1 baseline terms, the client (**Client Organization**) is requested to:
 1. Formally approve the technical scope and commercial terms of Proposal Rev V10.
 2. Confirm selection of Option 1 (Baseline ₹1,73,000) or Option 2 (Multi-Lot ₹2,85,000).
 3. Nominate the authorized corporate contact person and billing details.

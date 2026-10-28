@@ -1,0 +1,34 @@
+{
+  "project_ref": "FNQ-PR-2026-001",
+  "lead_engineer": "Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)",
+  "generated_at": "2026-10-27T20:24:15.593554+00:00",
+  "network_independent_execution_ready": true,
+  "artifact_hashes_sha256": {
+    "sources_catalog.json": "01e80b7228a93541cd8cf325b28499f2f3d469d0c9321ea3585b8238163881d1",
+    "sources_catalog.csv": "73bd805f52b193be043003987bf7dbb83702960c510d03316b1c5fd9a0323d00",
+    "extracted_experimental_datasets.json": "90a5e4320fabef6404581d324e9d9b497e80aba4cde4096d3ad1a1cda3df8a55",
+    "parameter_register.json": "f9ca08706813d90a1e2a54e3659d7b7323ab75bd9254b746168f00c489665f79",
+    "fssai_and_iso_standards.json": "fd2db8633562d8a72a8d40403f46410b65f2697ebe65e772f70d24f315b497fe"
+  },
+  "raw_api_query_hashes_sha256": {},
+  "species_transfer_audit": {
+    "direct_cajanus_cajan_split_sources": [
+      "SRC-ANCHOR-03 (Chakraborty et al., 2007)",
+      "SRC-PIGEON-07 (Machinjili et al., 2025)",
+      "SRC-PIGEON-08 (Nisha et al., 2006)",
+      "SRC-PIGEON-09 (Narasimha & Desikachar, 1978)",
+      "SRC-PIGEON-10 (Swami et al., 2013)",
+      "SRC-PIGEON-11 (Shepherd & Bhardwaj, 1988)",
+      "SRC-PIGEON-12 (Silva et al., 2019)",
+      "SRC-PIGEON-13 (Baryeh & Mangope, 2002)"
+    ],
+    "indirect_whole_seed_or_cross_pulse_sources": [
+      "SRC-ANCHOR-01 (Ohanenye et al., 2024 — whole pigeon pea soaked 4-24 h)",
+      "SRC-ANCHOR-02 (Vásquez et al., 2021 — whole Peruvian pigeon pea seeds with intact seed coat)",
+      "SRC-ANCHOR-04 (Perera et al., 2023 — common bean & pulse review)"
+    ],
+    "inaccessible_or_unindexed_records": [
+      "SRC-ANCHOR-05A (ScienceDirect PII S0889157526004576 — unindexed/paywalled; zero claims fabricated; corroborated by open-indexed 2026 review SRC-ANCHOR-05B 10.1021/acsfoodscitech.5c00916)"
+    ]
+  }
+}

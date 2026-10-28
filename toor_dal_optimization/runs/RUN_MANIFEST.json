@@ -1,0 +1,43 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-10-14T15:15:00+05:30",
+  "runs": [
+    {
+      "run_id": "RUN_20261014_103000",
+      "pid": 33556,
+      "task_id": "task-1747",
+      "command": "scripts/longrun_supervisor.py --run-id RUN_20261014_103000 --duration-hours 24.0 --checkpoint-interval 300",
+      "device": "cuda:0",
+      "gpu_model": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "status": "RUNNING",
+      "cycles_completed": 3150,
+      "cumulative_grains_simulated": 78750000,
+      "average_throughput_grains_per_sec": 165000,
+      "gpu_temperature_c": 52.0,
+      "allocated_vram_mb": 2.08,
+      "checkpoint_location": "checkpoints/longrun_RUN_20261014_103000.pt"
+    },
+    {
+      "run_id": "RUN_SPATIAL_8192_BENCHMARK",
+      "command": "src/Client Organization/spatial_3d_engine.py",
+      "device": "cuda:0",
+      "status": "COMPLETED",
+      "grains_simulated": 10000,
+      "nodes_per_grain": 8192,
+      "total_voxels": 81920000,
+      "wall_time_sec": 13.68,
+      "peak_vram_mb": 2684.0,
+      "result": "SUCCESS"
+    },
+    {
+      "run_id": "RUN_NAVIER_STOKES_BOILING",
+      "command": "src/Client Organization/navier_stokes_boiling.py",
+      "device": "cpu",
+      "status": "COMPLETED",
+      "boiling_htc_w_m2_k": 2895.0,
+      "biot_number": 13.44,
+      "cook_time_min": 13.82,
+      "result": "SUCCESS"
+    }
+  ]
+}

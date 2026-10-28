@@ -1,7 +1,7 @@
 # SECURITY.md
 
 ## Security & Scientific Integrity Architecture
-**System:** Harakutir Autonomous Closed-Loop Pulse Engineering Platform  
+**System:** FinnoaQ Autonomous Closed-Loop Pulse Engineering Platform  
 **Owner:** FINNOAQ Security & Scientific Integrity Team  
 **Standard:** Ocean Boiling Protocol v3.0 | Zero-Trust Local Offline Architecture  
 **Audit Status:** PASSED (0 Critical, 0 High Defects — `reports/RED_TEAM_AUDIT_REPORT.md`)  
@@ -49,7 +49,7 @@ The platform assumes a hostile execution environment where improper data flow co
 ## 2. Attack Vectors & Defensive Mitigations
 
 ### 2.1 Synthetic Data Leakage & Hallucination Prevention (Gate G4)
-- **Vulnerability:** AI and computational engines frequently generate plausible-sounding synthetic data. If unverified synthetic results are ingested into commercial reports, Harakutir could make faulty procurement decisions (e.g. contracting 10,000 tonnes of pulse shipments based on simulated rather than measured softening).
+- **Vulnerability:** AI and computational engines frequently generate plausible-sounding synthetic data. If unverified synthetic results are ingested into commercial reports, FinnoaQ could make faulty procurement decisions (e.g. contracting 10,000 tonnes of pulse shipments based on simulated rather than measured softening).
 - **Defense:**
   1. Strict segregation of data directories: `data/raw/` (exclusively for certified external lab CSV/XLSX files), `data/synthetic/` (for computational screening only), and `data/derived/` (for verified transformations).
   2. The statistical engine inspects file provenance; if `data/raw/` contains zero certified assay files, the pipeline automatically forces the entire system into `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED` mode.
@@ -58,7 +58,7 @@ The platform assumes a hostile execution environment where improper data flow co
 ### 2.2 Input Validation & Numerical Sanitization
 - **Vulnerability:** Malformed laboratory CSVs with negative moisture contents, infinite densities, or non-numeric strings could cause division-by-zero or NaN gradient propagation in PyTorch.
 - **Defense:**
-  1. Every incoming parameter is strictly parsed through Pydantic v2 schemas (`src/harakutir/schemas.py`).
+  1. Every incoming parameter is strictly parsed through Pydantic v2 schemas (`src/finnoaq/schemas.py`).
   2. Physical boundary clamping: Moisture dry basis $\in [0.05, 1.50]$, Bulk density $\in [0.50, 1.20]\text{ g/mL}$, Gelatinization onset $T_o \in [40.0, 95.0]^\circ\text{C}$, Pectin degree of esterification $DE \in [10.0, 95.0]\%$.
   3. Out-of-bounds inputs raise immediate `ValidationError`, halting pipeline progression before tensor memory allocation.
 

@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — ECONOMIC MODEL & SENSITIVITY ANALYSIS
+# FINNOAQ TOOR DAL — ECONOMIC MODEL & SENSITIVITY ANALYSIS
 
 **Document ID:** FIN-ECO-15TPD-2026-002  
 **Date:** 15 October 2026  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Cost Summary
 
-This economic assessment details the net incremental operating expenditure (OpEx) and preliminary capital expenditure (CapEx) for adding a 15 MT/day chemical conditioning line to Harakutir's pulse milling facility.
+This economic assessment details the net incremental operating expenditure (OpEx) and preliminary capital expenditure (CapEx) for adding a 15 MT/day chemical conditioning line to FinnoaQ's pulse milling facility.
 
 ### Key Economic Indicators (Base Case: 15,000 kg/day Feed, 16h Schedule)
 - **Net Incremental Processing OpEx:** **₹1.336 per kg** of finished saleable packaged dal.

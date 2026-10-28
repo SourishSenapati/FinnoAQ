@@ -1,4 +1,4 @@
-# HARAKUTIR TOOR DAL — STANDARDIZED EXPERIMENTAL PROTOCOL
+# FINNOAQ TOOR DAL — STANDARDIZED EXPERIMENTAL PROTOCOL
 
 **Document ID:** HKT-PRT-2026-001  
 **Preregistered Confirmatory Assay:** 4-Arm Randomized Block Cooking Evaluation  

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T21:20:14Z",
+  "timestamp": "2026-10-20T23:04:05Z",
   "malawi_genotype_audit": {
     "n_genotypes": 6,
     "dehulled_cook_time_range_min": [
@@ -74,9 +74,9 @@
   },
   "multi_tensor_gpu_benchmark": {
     "n_cases_evaluated": 250,
-    "cpu_runtime_sec": 13.8517,
-    "gpu_runtime_sec": 25.7948,
-    "gpu_speedup_factor": 0.54,
+    "cpu_runtime_sec": 14.8619,
+    "gpu_runtime_sec": 25.0343,
+    "gpu_speedup_factor": 0.59,
     "vram_allocated_mb": 0.0,
     "sobol_variance_decomposition": {
       "S_k_soft": 0.7832,

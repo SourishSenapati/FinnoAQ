@@ -2,12 +2,12 @@
   "manifest_metadata": {
     "title": "V5 Master Cryptographic Checksum Manifest",
     "standard": "V5 Master Directive Section 1(E) Cryptographic Lock",
-    "generated_timestamp": "2026-10-16T07:38:32.353782+00:00",
+    "generated_timestamp": "2026-10-16T09:24:50.759440+00:00",
     "target_plant": "15,000 kg/day Greenfield Imported Pigeon Pea Optimization Facility",
     "git_branch": "v5-integrated-engineering",
     "hash_algorithm": "SHA-256",
     "gate_status": "GATE G-A HOLD ACTIVE",
-    "total_locked_files": 80
+    "total_locked_files": 79
   },
   "master_data": [
     {
@@ -393,12 +393,6 @@
   ],
   "simulation_models": [
     {
-      "relative_path": "engineering/aspen/HARAKUTIR_15TPD_CONVERGED.bkp",
-      "sha256": "528a76737695e9da18477e5f44a676c0ca2d0cd46bcd2feef9337ff6bf3546eb",
-      "size_bytes": 157811,
-      "last_modified": "2026-10-15T15:25:55.512362+00:00"
-    },
-    {
       "relative_path": "data/stream_tables_15tpd.json",
       "sha256": "76173c2efbf8d6c42d11b1e58890c5f81e2469694da797fbdb80fde014a273b3",
       "size_bytes": 8575,
@@ -414,9 +408,9 @@
     },
     {
       "relative_path": "engineering/verification/v5/v5_integration_acceptance_report.json",
-      "sha256": "2259406d52ee23f30164c538a1c0a73236adf9e7736360fb954520d884a7a1b7",
+      "sha256": "2b2a73af83b6f5cb787652ae9470f524f22afc1a24c00b63614b74842326b81e",
       "size_bytes": 5549,
-      "last_modified": "2026-10-16T07:38:03.188977+00:00"
+      "last_modified": "2026-10-16T09:24:12.432986+00:00"
     },
     {
       "relative_path": "engineering/verification/v5/v5_high_definition_plant_audit.json",
@@ -452,9 +446,9 @@
     },
     {
       "relative_path": "reports/V5_ENGINEERING_ACCEPTANCE_REPORT.md",
-      "sha256": "3a66d49da75d5881c5d0d9a7af7fb2f16d9684406e0fb71445427d450b8de33f",
-      "size_bytes": 12955,
-      "last_modified": "2026-10-15T19:07:59.169100+00:00"
+      "sha256": "e436fbabc7d9ce7f50f0967b3f810639b035a55987a3682062f46b8463236276",
+      "size_bytes": 13088,
+      "last_modified": "2026-10-16T07:44:47.808830+00:00"
     },
     {
       "relative_path": "reports/V5_DRAWING_QA_REPORT.md",
@@ -464,9 +458,9 @@
     },
     {
       "relative_path": "reports/V5_BALANCE_AND_ECONOMICS_REPORT.md",
-      "sha256": "eb4cdc9eb2615c62f4df13979ce9697dcf8786318daeaf83d18259ff2b07eb42",
-      "size_bytes": 11353,
-      "last_modified": "2026-10-15T19:09:03.978546+00:00"
+      "sha256": "0a5eff1fd207b4e32f52f83ce30309838cbd3853db121b3bf1a6a92dabb6ec8a",
+      "size_bytes": 11506,
+      "last_modified": "2026-10-16T07:44:47.807830+00:00"
     },
     {
       "relative_path": "reports/V5_CAD_GEOMETRY_AND_NATIVE_MODEL_AUDIT.md",
@@ -476,9 +470,9 @@
     },
     {
       "relative_path": "reports/V5_STANDARDS_AND_HUMAN_HOLD_POINTS.md",
-      "sha256": "3e7224d695173cd1beb39b526dfaed6c3cf33de9e92a586042a28f406f463641",
-      "size_bytes": 9803,
-      "last_modified": "2026-10-15T19:10:10.713823+00:00"
+      "sha256": "9a61629abfba7b3636ec6578f20776eadcb181466dab389db870d2cd345d68dc",
+      "size_bytes": 9912,
+      "last_modified": "2026-10-16T07:44:47.808830+00:00"
     },
     {
       "relative_path": "reports/V5_CROSS_DISCIPLINE_DESIGN_REVIEWS.md",
@@ -488,15 +482,15 @@
     },
     {
       "relative_path": "reports/LOPA_AND_FUNCTIONAL_SAFETY_REPORT.md",
-      "sha256": "56e856076db2410eed8f82fc9476aba9013f56a5b5cb97d0c110839c53e3cb4f",
-      "size_bytes": 16448,
-      "last_modified": "2026-10-16T06:06:52.666963+00:00"
+      "sha256": "acfc53863fb8ac2d106a117e48129f414d9ef78aee72b99412cfd205b6e1d223",
+      "size_bytes": 17430,
+      "last_modified": "2026-10-16T09:16:18.049002+00:00"
     },
     {
       "relative_path": "reports/SCADA_AND_AUTOMATION_SYSTEM_SPECIFICATION.md",
-      "sha256": "7d31937ccfeed1eab3eec4b069bbfef5be6c6fa0aac09c59b1bfc773c8f5261e",
-      "size_bytes": 14060,
-      "last_modified": "2026-10-16T06:07:38.339466+00:00"
+      "sha256": "1119176eff862a4bd8b77da21d4bfb8ceb5c5ac5e2a1ffe690c37ba82d00c6d2",
+      "size_bytes": 15420,
+      "last_modified": "2026-10-16T09:15:26.806228+00:00"
     },
     {
       "relative_path": "NEW_CHAT_HANDOVER_DIRECTIVE.md",

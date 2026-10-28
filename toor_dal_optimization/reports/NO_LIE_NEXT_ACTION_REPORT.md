@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary & Verification Context
 
-In strict compliance with the **No-Lie Corrective Execution Directive**, this report documents the comprehensive audit, mathematical reconciliation, CAD truth inspection, and experimental protocol freeze for Harakutir's 15 MT/day imported Tanzanian split pigeon pea project.
+In strict compliance with the **No-Lie Corrective Execution Directive**, this report documents the comprehensive audit, mathematical reconciliation, CAD truth inspection, and experimental protocol freeze for FinnoaQ's 15 MT/day imported Tanzanian split pigeon pea project.
 
 No synthetic data has been generated. No artificial success has been declared. Every claim is tagged with explicit evidence, and path-based status assumptions have been replaced with a proof-backed inventory.
 
@@ -147,7 +147,7 @@ Every CAD file in `engineering/cad/` was forensically verified for entity types,
 
 ## 4. Code Changes Made & Verified
 
-1. **[`src/harakutir/detailed_machine_and_plant_engineering.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/harakutir/detailed_machine_and_plant_engineering.py):**
+1. **[`src/finnoaq/detailed_machine_and_plant_engineering.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/src/finnoaq/detailed_machine_and_plant_engineering.py):**
    - Added `reconciled_10pct_wb_evap_kg_h` ($242.34\text{ kg/h}$), `reconciled_10pct_wb_daily_evap_kg_day` ($3,877.44\text{ kg/day}$), and `reconciled_10pct_wb_design_evap_kg_h` ($285.11\text{ kg/h}$).
    - Retained explicit historical explanation keys to prevent test regression.
 2. **[`tests/test_audit_reconciliation_and_contradictions.py`](file:///d:/PROJECT/02_INDUSTRIAL_AND_CHEMICAL_ENGINEERING/finnoaq/toor_dal_optimization/tests/test_audit_reconciliation_and_contradictions.py):**

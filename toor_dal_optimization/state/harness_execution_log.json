@@ -1,6 +1,6 @@
 {
-  "evaluation_timestamp": "2026-10-16T05:55:58.226853+00:00",
-  "harness_specification": "Learn Harness Engineering (WalkingLabs) + Harakutir Master Spec",
+  "evaluation_timestamp": "2026-10-28T19:56:35.671622+00:00",
+  "harness_specification": "Learn Harness Engineering (WalkingLabs) + FinnoaQ Master Spec",
   "total_gates": 10,
   "passed_or_gated": 10,
   "failed": 0,
@@ -33,7 +33,7 @@
       "status": "VERIFIED_PASSED",
       "criterion": "Prohibited additives (non-FSSAI) and thermodynamic violations computationally eliminated",
       "evidence_pointers": [
-        "src/harakutir/virtual_screening.py"
+        "src/finnoaq/virtual_screening.py"
       ],
       "notes": "Successfully eliminated 6 unfeasible candidates at Layer 1."
     },
@@ -43,7 +43,7 @@
       "status": "VERIFIED_PASSED",
       "criterion": "Non-dominated Pareto trade-off frontier identified (cooking time vs texture vs OPEX vs lysine)",
       "evidence_pointers": [
-        "src/harakutir/virtual_screening.py",
+        "src/finnoaq/virtual_screening.py",
         "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"
       ],
       "notes": "Identified 8 Pareto-optimal candidate treatments on the virtual frontier."
@@ -54,7 +54,7 @@
       "status": "VERIFIED_PASSED",
       "criterion": "Bayesian Optimal Experimental Design (OED) matrix formulated to discriminate H1-H5 within budget ceiling",
       "evidence_pointers": [
-        "src/harakutir/oed.py",
+        "src/finnoaq/oed.py",
         "PROMPT_PHASE2_OED.txt"
       ],
       "notes": "Phase 1 diagnostic DoE fully specified and separated from subsequent optimization budgets."
@@ -65,8 +65,8 @@
       "status": "VERIFIED_PASSED",
       "criterion": "CTQ specifications established: Whistles <= 3.5, Firmness 20-24 N, Hedonic Sensory Score >= 7.5/9.0",
       "evidence_pointers": [
-        "src/harakutir/foodoscope.py",
-        "src/harakutir/digital_twin.py"
+        "src/finnoaq/foodoscope.py",
+        "src/finnoaq/digital_twin.py"
       ],
       "notes": "Hedonic scoring and CTQ thresholds bound prototype release gates."
     },
@@ -76,7 +76,7 @@
       "status": "VERIFIED_PASSED",
       "criterion": "Industrial 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX modeled",
       "evidence_pointers": [
-        "src/harakutir/digital_twin.py"
+        "src/finnoaq/digital_twin.py"
       ],
       "notes": "Scale-up yield: 99.0%, OPEX: INR 0.2/kg."
     },
@@ -107,7 +107,7 @@
       "status": "VERIFIED_PASSED",
       "criterion": "Bayesian posterior parameter updating engine active for continuous factory feedback",
       "evidence_pointers": [
-        "src/harakutir/digital_twin.py"
+        "src/finnoaq/digital_twin.py"
       ],
       "notes": "Closed-loop update_from_experiment method verified and operational."
     }

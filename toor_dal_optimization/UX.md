@@ -1,7 +1,7 @@
 # UX.md
 
 ## User Experience, Interface Ergonomics & Reporting Strategy
-**System:** Harakutir Autonomous Closed-Loop Pulse Engineering Platform  
+**System:** FinnoaQ Autonomous Closed-Loop Pulse Engineering Platform  
 **Owner:** FINNOAQ Product Experience & Technical Communications  
 **Standard:** Ocean Boiling Protocol v3.0 | Executive & Engineering Ergonomics  
 
@@ -11,7 +11,7 @@
 
 ```mermaid
 journey
-    title Harakutir User Journeys Across the Product Lifecycle
+    title FinnoaQ User Journeys Across the Product Lifecycle
     section Executive Sponsor / Board
       Review Executive Summary : 5: Fast, High-Value (₹18.89/kg)
       Examine SOW Requirements Matrix : 5: Clear 36-section audit
@@ -56,7 +56,7 @@ python scripts/run_gpu_million_scale.py
 ### 3.1 Dual-Format Delivery (Markdown + Native Office DOCX)
 All primary deliverables are compiled simultaneously into:
 1. **GitHub-Flavored Markdown (`.md`):** For instant developer inspection, git diffing, and automated code review in IDEs.
-2. **Native Microsoft Word (`.docx`):** For formal corporate submission to Harakutir management, external testing laboratories, and financial partners. Includes structured title headings, metadata sidebars, styled tables, and executive sign-off lines.
+2. **Native Microsoft Word (`.docx`):** For formal corporate submission to FinnoaQ management, external testing laboratories, and financial partners. Includes structured title headings, metadata sidebars, styled tables, and executive sign-off lines.
 
 ### 3.2 SOW §22 23-Part Structural Fidelity
 The primary deliverable `reports/PHASE1_TECHNICAL_REPORT.docx` and `.md` mirrors the exact 23-part table of contents specified in Section 22 of `inputs/Phase1_Scope_of_Work_Toor_Dal.docx`:
@@ -86,7 +86,7 @@ Part 12: Seed-Coat & Cotyledon Structure
 ## 4. Prompt Engineering & Developer Ergonomics (`docs/prompts/`)
 
 For AI-assisted workflows and operator interaction, dedicated prompt templates are organized in `docs/prompts/`:
-- `HARAKUTIR_MASTER_PROMPT.txt`: The foundational constitutional directive.
+- `FINNOAQ_MASTER_PROMPT.txt`: The foundational constitutional directive.
 - `PROMPT_DREAM_RSI_CYCLE.txt`: Step-by-step instructions for running recursive self-improvement discovery.
 - `PROMPT_INGEST_NEW_LAB_DATA.txt`: Safe ingestion procedures when physical laboratory CSVs arrive.
 - `PROMPT_PHASE2_OED.txt`: Execution commands for Phase 2 optimal experimental designs.

@@ -1,6 +1,6 @@
 RESUME / CONTINUE PROMPT
 
-Resume the existing Harakutir Phase 1 R&D computation from its most recent valid checkpoint. Do not start a new run and do not reset state, rebuild databases destructively, overwrite inputs, or rerun completed expensive tasks.
+Resume the existing Client Organization Phase 1 R&D computation from its most recent valid checkpoint. Do not start a new run and do not reset state, rebuild databases destructively, overwrite inputs, or rerun completed expensive tasks.
 
 1. Locate the project root, read `AGENTS.md`/runbook, inspect the manifest, SQLite event journal, `status.md`, logs and all checkpoint candidates.
 2. Validate checkpoint hashes and input/config/code hashes. If the newest checkpoint is corrupt, fall back to the latest verified previous checkpoint and document the recovery.

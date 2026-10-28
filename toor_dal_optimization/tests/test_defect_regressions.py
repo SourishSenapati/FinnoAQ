@@ -355,3 +355,155 @@ def test_fail_0020_unbounded_daemon_execution():
     default_val = sig.parameters["max_evaluations"].default
     assert default_val is None, f"Default max_evaluations must be None (unbounded), found: {default_val}"
 
+
+# -----------------------------------------------------------------------------
+# FAIL-0021: Drying Stress Differentiation & DimensionalGuard Compliance
+# -----------------------------------------------------------------------------
+def test_fail_0021_drying_stress_and_page_kinetics():
+    """Verify 85C single-stage drying and 65C->55C 2-stage drying produce distinct stresses <= 2.0 MPa."""
+    from finnoaq.omega_modules import PlantOperationsAndEconomicsModule
+
+    dry85 = PlantOperationsAndEconomicsModule.simulate_convective_drying_and_stress(
+        "85C_Single", 85.0, 45.0, 85.0, 0.0
+    )
+    dry65 = PlantOperationsAndEconomicsModule.simulate_convective_drying_and_stress(
+        "65C_55C_2Stage", 65.0, 22.0, 55.0, 25.0, 20.0
+    )
+
+    assert dry85["peak_tensile_stress_MPa"] > dry65["peak_tensile_stress_MPa"] + 0.5, (
+        "FAIL-0021: 85C and 65C->55C drying failed to differentiate peak tensile stress!"
+    )
+    assert dry85["peak_tensile_stress_MPa"] > dry85["yield_threshold_MPa"], (
+        "FAIL-0021: 85C single-stage blast drying should exceed cotyledon fissure threshold (1.65 MPa)"
+    )
+    assert dry65["peak_tensile_stress_MPa"] < dry65["yield_threshold_MPa"], (
+        "FAIL-0021: 65C->55C 2-stage drying must remain safely below fissure threshold"
+    )
+    assert dry85["peak_tensile_stress_MPa"] <= 2.0 and dry65["peak_tensile_stress_MPa"] <= 2.0, (
+        "FAIL-0021: Tissue tensile stress exceeded RAEBYES 2.0 MPa physiological parenchyma bound!"
+    )
+
+
+# -----------------------------------------------------------------------------
+# FAIL-0022: Batch Thickness/Moisture Propagation & Noisy Intake Proxy
+# -----------------------------------------------------------------------------
+def test_fail_0022_batch_geometry_and_noisy_intake_proxy():
+    """Verify that grain thickness alters PDE soaking displacement and intake proxy does not cheat on latent Ca."""
+    from finnoaq.omega_modules import (
+        FeedstockCharacterizationModule,
+        TreatmentChemistryModule,
+        PretreatmentProcessConfig,
+        HydrationAndPenetrationModule,
+        BatchVariabilityAndAdaptationModule,
+    )
+    import copy
+
+    batches = FeedstockCharacterizationModule.get_reference_batches()
+    b_thin = copy.deepcopy(batches["TANZANIAN_HTC_AGED_NOMINAL"])
+    b_thin.half_thickness_m = 0.85e-3
+    b_thick = copy.deepcopy(batches["TANZANIAN_HTC_AGED_NOMINAL"])
+    b_thick.half_thickness_m = 1.30e-3
+
+    chem = TreatmentChemistryModule.design_citrate_buffer("CIT", "Citrate", 0.145, 5.20, 0.90)
+    cfg = PretreatmentProcessConfig(soak_temp_c=55.0, soak_time_min=12.0, ultrasound_w_per_l=17.0)
+
+    res_thin = HydrationAndPenetrationModule.solve_2d_conservative_soaking_pde(b_thin, chem, cfg)
+    res_thick = HydrationAndPenetrationModule.solve_2d_conservative_soaking_pde(b_thick, chem, cfg)
+    assert res_thin["core_ca_displacement_pct"] > res_thick["core_ca_displacement_pct"] + 5.0, (
+        "FAIL-0022: Grain thickness was ignored by PDE solver!"
+    )
+
+    rng = np.random.default_rng(123)
+    diag = BatchVariabilityAndAdaptationModule.simulate_noisy_intake_diagnostics(b_thick, rng)
+    assert abs(diag["ca_est_mol_m3"] - b_thick.bound_ca_mol_m3) > 1e-6, (
+        "FAIL-0022: Intake diagnostic leaked exact latent bound Ca without measurement uncertainty!"
+    )
+
+
+# -----------------------------------------------------------------------------
+# FAIL-0023: Vacuum Impregnation Porosity Limit & Two-Domain Washing Balance
+# -----------------------------------------------------------------------------
+def test_fail_0023_vacuum_impregnation_porosity_and_internal_solute():
+    """Verify VI convected solute obeys Fito (1996) open porosity limit and washing tracks internal pore solute."""
+    from finnoaq.omega_modules import (
+        FeedstockCharacterizationModule,
+        TreatmentChemistryModule,
+        PretreatmentProcessConfig,
+        HydrationAndPenetrationModule,
+        WashingAndResidueModule,
+    )
+
+    b_tza = FeedstockCharacterizationModule.get_reference_batches()["TANZANIAN_HTC_AGED_NOMINAL"]
+    chem = TreatmentChemistryModule.design_citrate_buffer("CIT", "Citrate", 0.145, 5.20, 0.90)
+    cfg_vi = PretreatmentProcessConfig(soak_temp_c=55.0, soak_time_min=4.6, vacuum_pulse_kpa_abs=15.0)
+
+    res_vi = HydrationAndPenetrationModule.solve_2d_conservative_soaking_pde(b_tza, chem, cfg_vi)
+    # Convected solute cannot exceed open_porosity * C_bath
+    max_possible_convected = b_tza.open_porosity * (chem.active_chelator_M * 1000.0)
+    assert res_vi["vi_convected_solute_mol_m3"] <= max_possible_convected + 1e-6, (
+        "FAIL-0023: Vacuum impregnation exceeded physical pore volume capacity!"
+    )
+    assert res_vi["core_ca_displacement_pct"] < 90.0, (
+        "FAIL-0023: Unphysical 4.6-min 95% core Ca chelation recurred!"
+    )
+
+    wash = WashingAndResidueModule.simulate_washing_operation(chem, res_vi, wash_time_s=12.0)
+    assert wash["retained_citrate_mg_100g"] > 20.0, (
+        "FAIL-0023: Washing balance ignored internal cotyledon pore solute retention!"
+    )
+
+
+# -----------------------------------------------------------------------------
+# FAIL-0024: Buffer Recipe Equilibrium pH Verification
+# -----------------------------------------------------------------------------
+def test_fail_0024_buffer_recipe_equilibrium_ph():
+    """Verify that designed citrate buffer hydrate masses actually equilibrate at target_pH."""
+    from finnoaq.omega_modules import TreatmentChemistryModule
+
+    spec = TreatmentChemistryModule.design_citrate_buffer(
+        "TIER2", "Tier 2 Standard", total_citrate_M=0.145, target_pH=5.20, f_K=0.90
+    )
+    check = TreatmentChemistryModule.solve_equilibrium_pH_from_masses(
+        mass_k3cit_monohydrate_g_L=spec.mass_k3cit_monohydrate_g_L,
+        mass_na3cit_dihydrate_g_L=spec.mass_na3cit_dihydrate_g_L,
+        mass_citric_acid_anhydrous_g_L=spec.mass_citric_acid_anhydrous_g_L,
+    )
+    assert abs(check["equilibrium_pH"] - 5.20) < 0.05, (
+        f"FAIL-0024: Recipe equilibrated at pH {check['equilibrium_pH']:.2f} instead of target 5.20!"
+    )
+
+
+# -----------------------------------------------------------------------------
+# FAIL-0025: Reconciled Once-Through vs Recycled Bath OpEx
+# -----------------------------------------------------------------------------
+def test_fail_0025_once_through_vs_recycled_opex_reconciliation():
+    """Verify that once-through (0% recycle) and 85% recycled bath OpEx are explicitly distinguished."""
+    from finnoaq.omega_modules import (
+        TreatmentChemistryModule,
+        PretreatmentProcessConfig,
+        PlantOperationsAndEconomicsModule,
+    )
+
+    chem = TreatmentChemistryModule.design_citrate_buffer("TIER2", "Tier 2", 0.145, 5.20, 0.90)
+    cfg = PretreatmentProcessConfig(55.0, 20.0, 17.0)
+    dry = PlantOperationsAndEconomicsModule.simulate_convective_drying_and_stress(
+        "65C_55C", 65.0, 22.0, 55.0, 25.0, 20.0
+    )
+    econ_once = PlantOperationsAndEconomicsModule.evaluate_15tpd_plant_balance_and_economics(
+        chem, cfg, dry, liquor_recycle_fraction=0.0
+    )
+    econ_rec = PlantOperationsAndEconomicsModule.evaluate_15tpd_plant_balance_and_economics(
+        chem, cfg, dry, liquor_recycle_fraction=0.85
+    )
+
+    assert econ_once["reagent_cost_inr_per_kg"] > 7.50, (
+        "FAIL-0025: Once-through reagent cost understated!"
+    )
+    assert econ_rec["reagent_cost_inr_per_kg"] < econ_once["reagent_cost_inr_per_kg"] * 0.45, (
+        "FAIL-0025: 85% liquor recycle did not reduce reagent make-up consumption as required!"
+    )
+    assert abs(econ_rec["evap_discrepancy_B2_minus_B1_kg_day"] - 199.72) < 0.05, (
+        "Governance rule: 199.72 kg/day Scenario B1 vs B2 pre-dryer moisture bound must be preserved!"
+    )
+
+

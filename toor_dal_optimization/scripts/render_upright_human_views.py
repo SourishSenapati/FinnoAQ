@@ -107,11 +107,15 @@ def main():
     print("RENDERING ALL CAD MODELS IN PROPER HUMAN VIEWING ORIENTATION (Y=UP)")
     print("=================================================================")
     
-    # 1. Master Joined Plant Assembly (PLANT-15T_General_Arrangement.step)
+    OBJ_DIR = os.path.join(WORKSPACE_ROOT, "engineering", "cad", "obj")
+    
+    # 1. Master Joined Plant Assembly (PLANT-15T_General_Arrangement.obj / .step)
+    plant_obj = os.path.join(OBJ_DIR, "PLANT-15T_General_Arrangement.obj")
     plant_step = os.path.join(STEP_DIR, "PLANT-15T_General_Arrangement.step")
-    print("Loading Joined Plant Master Assembly...")
-    sc_plant = trimesh.load(plant_step)
-    geom_plant = sc_plant.to_geometry()
+    plant_path = plant_obj if os.path.exists(plant_obj) else plant_step
+    print(f"Loading Joined Plant Master Assembly from: {plant_path}...")
+    sc_plant = trimesh.load(plant_path)
+    geom_plant = sc_plant.to_geometry() if hasattr(sc_plant, 'to_geometry') else sc_plant
     m_plant = trimesh.util.concatenate(list(geom_plant.values())) if isinstance(geom_plant, dict) else geom_plant
     print(f"Loaded Master Joined Mesh: {len(m_plant.vertices):,} vertices, {len(m_plant.faces):,} faces")
     
@@ -132,24 +136,26 @@ def main():
     
     # 2. Individual Component Models (Standing Upright, Y=UP)
     components = [
-        ("TK-101_Soak_Tank.step", "TK-101_SolidWorks_3D_Iso.png", "TK-101_SolidWorks_3D_Front.png", "TK-101_SolidWorks_3D_Top.png", "#a3c4e0"),
-        ("AG-101_Agitator.step", "AG-101_SolidWorks_3D_Iso.png", None, None, "#c0d0e0"),
-        ("SC-101_Dewatering_Screen.step", "SC-101_SolidWorks_3D_Iso.png", None, None, "#b0c8d8"),
-        ("DR-101_Fluid_Bed_Dryer.step", "DR-101_SolidWorks_3D_Iso.png", "DR-101_SolidWorks_3D_Front.png", "DR-101_SolidWorks_3D_Top.png", "#9ec1db"),
-        ("CY-101_Cyclone_Separator.step", "CY-101_SolidWorks_3D_Iso.png", "CY-101_SolidWorks_3D_Front.png", None, "#a8c6de"),
-        ("SK-100_Dosing_Skid.step", "SK-100_SolidWorks_3D_Iso.png", "SK-100_SolidWorks_3D_Front.png", None, "#adcfe6"),
-        ("EV-101_ZLD_Evaporator.step", "EV-101_SolidWorks_3D_Iso.png", "EV-101_SolidWorks_3D_Front.png", None, "#9dbed6"),
-        ("STR-100_Mezzanine_Platform.step", "STR-100_SolidWorks_3D_Iso.png", None, None, "#b8c4ce"),
-        ("CHU-100_Transfer_Chutes.step", "CHU-100_SolidWorks_3D_Iso.png", None, None, "#b0c8d8"),
-        ("PIP-100_Interconnecting_Piping.step", "PIP-100_SolidWorks_3D_Iso.png", None, None, "#a0c0d8"),
+        ("TK-101_Soak_Tank", "TK-101_SolidWorks_3D_Iso.png", "TK-101_SolidWorks_3D_Front.png", "TK-101_SolidWorks_3D_Top.png", "#a3c4e0"),
+        ("AG-101_Agitator", "AG-101_SolidWorks_3D_Iso.png", None, None, "#c0d0e0"),
+        ("SC-101_Dewatering_Screen", "SC-101_SolidWorks_3D_Iso.png", None, None, "#b0c8d8"),
+        ("DR-101_Fluid_Bed_Dryer", "DR-101_SolidWorks_3D_Iso.png", "DR-101_SolidWorks_3D_Front.png", "DR-101_SolidWorks_3D_Top.png", "#9ec1db"),
+        ("CY-101_Cyclone_Separator", "CY-101_SolidWorks_3D_Iso.png", "CY-101_SolidWorks_3D_Front.png", None, "#a8c6de"),
+        ("SK-100_Dosing_Skid", "SK-100_SolidWorks_3D_Iso.png", "SK-100_SolidWorks_3D_Front.png", None, "#adcfe6"),
+        ("EV-101_ZLD_Evaporator", "EV-101_SolidWorks_3D_Iso.png", "EV-101_SolidWorks_3D_Front.png", None, "#9dbed6"),
+        ("STR-100_Mezzanine_Platform", "STR-100_SolidWorks_3D_Iso.png", None, None, "#b8c4ce"),
+        ("CHU-100_Transfer_Chutes", "CHU-100_SolidWorks_3D_Iso.png", None, None, "#b0c8d8"),
+        ("PIP-100_Interconnecting_Piping", "PIP-100_SolidWorks_3D_Iso.png", None, None, "#a0c0d8"),
     ]
     
-    for step_file, iso_png, front_png, top_png, color in components:
-        step_path = os.path.join(STEP_DIR, step_file)
-        if not os.path.exists(step_path):
+    for base_name, iso_png, front_png, top_png, color in components:
+        obj_path = os.path.join(OBJ_DIR, f"{base_name}.obj")
+        step_path = os.path.join(STEP_DIR, f"{base_name}.step")
+        load_path = obj_path if os.path.exists(obj_path) else step_path
+        if not os.path.exists(load_path):
             continue
-        sc = trimesh.load(step_path)
-        geom = sc.to_geometry()
+        sc = trimesh.load(load_path)
+        geom = sc.to_geometry() if hasattr(sc, 'to_geometry') else sc
         m = trimesh.util.concatenate(list(geom.values())) if isinstance(geom, dict) else geom
         
         render_mesh_upright(m, os.path.join(PNG_DIR, iso_png), "iso", 1.15, color)

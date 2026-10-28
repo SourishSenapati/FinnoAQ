@@ -1,4 +1,4 @@
-# HARAKUTIR VIRTUAL SCENARIO SIMULATION & OPTIMIZATION REPORT
+# FINNOAQ VIRTUAL SCENARIO SIMULATION & OPTIMIZATION REPORT
 ## Offline GPU Monte Carlo Scenarios, Sobol Sensitivity & Multi-Objective Pareto Frontier
 
 **Document ID:** HKT-OPT-2026-006  
@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary
 
-Using the offline **GPU Scientific Computing Engine** (`src/harakutir/gpu_engine.py`), the Harakutir system evaluated $50,000$ Monte Carlo parameter vectors and generated a non-dominated Pareto trade-off frontier across 8 candidate technological families. The simulations demonstrate that **Catalytic Infrared HTST Conditioning (Family 4)** and **Controlled Pre-Hydration & Tempering (Family 2)** achieve the optimal multi-objective balance, cutting cooking time to **$3.0 - 3.9$ whistles** while maintaining **$>96\%$ available lysine retention** and an added direct OPEX **$<\text{INR } 1.00\text{/kg}$**.
+Using the offline **GPU Scientific Computing Engine** (`src/finnoaq/gpu_engine.py`), the FinnoaQ system evaluated $50,000$ Monte Carlo parameter vectors and generated a non-dominated Pareto trade-off frontier across 8 candidate technological families. The simulations demonstrate that **Catalytic Infrared HTST Conditioning (Family 4)** and **Controlled Pre-Hydration & Tempering (Family 2)** achieve the optimal multi-objective balance, cutting cooking time to **$3.0 - 3.9$ whistles** while maintaining **$>96\%$ available lysine retention** and an added direct OPEX **$<\text{INR } 1.00\text{/kg}$**.
 
 ---
 
@@ -78,4 +78,4 @@ Evaluated using vectorized non-dominated sorting on GPU tensors across 4 competi
 ## 4. Engineering Conclusions & Strategic Recommendation
 
 1. **Family 4 (Catalytic Infrared HTST) is the Primary Commercial Winner:** It achieves the lowest whistle count (3.0 whistles) and highest sensory score (8.35) due to beneficial pyrazine formation, with negligible lysine loss ($96.8\%$ retention) and an OPEX well beneath the ₹2.50/kg limit.
-2. **Family 3 (Mineral Chelation) is the Low-CAPEX Alternative:** If Harakutir desires a simple retrofit using existing screw conveyors without purchasing an IR tunnel, ambient soaking in 0.5% $\text{NaHCO}_3$ provides $3.3$-whistle performance at an OPEX of only **INR 0.45 / kg**.
+2. **Family 3 (Mineral Chelation) is the Low-CAPEX Alternative:** If FinnoaQ desires a simple retrofit using existing screw conveyors without purchasing an IR tunnel, ambient soaking in 0.5% $\text{NaHCO}_3$ provides $3.3$-whistle performance at an OPEX of only **INR 0.45 / kg**.

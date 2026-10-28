@@ -1,5 +1,5 @@
 """
-Harakutir Toor Dal 15 MT/Day CAD and Engineering Drawing Generator
+Client Organization Toor Dal 15 MT/Day CAD and Engineering Drawing Generator
 ================================================================
 Document ID: ENG-CAD-15T-001 | Revision: 1.0 | Date: 2026-10-15
 Generates editable 2D DXF drawings, 3D STEP AP214 files, 3D OBJ/STL meshes,
@@ -52,7 +52,7 @@ def draw_dxf_title_block(msp, dwg_no, dwg_title, discipline, sheet="1 OF 1", rev
     msp.add_line((x0 + 100, y0), (x0 + 100, y0 + 35), dxfattribs={"layer": "TITLE_BLOCK"})
 
     # Title block texts
-    msp.add_text("HARAKUTIR FOODS - TOOR DAL 15 MT/DAY PLANT", dxfattribs={"layer": "TEXT", "height": 3.5}).set_placement((x0 + 5, y0 + 58))
+    msp.add_text("Client Organization FOODS - TOOR DAL 15 MT/DAY PLANT", dxfattribs={"layer": "TEXT", "height": 3.5}).set_placement((x0 + 5, y0 + 58))
     msp.add_text(f"TITLE: {dwg_title}", dxfattribs={"layer": "TEXT", "height": 3.0}).set_placement((x0 + 5, y0 + 41))
     msp.add_text(f"DWG NO: {dwg_no}", dxfattribs={"layer": "TEXT", "height": 3.5}).set_placement((x0 + 5, y0 + 25))
     msp.add_text(f"DISCIPLINE: {discipline}", dxfattribs={"layer": "TEXT", "height": 2.5}).set_placement((x0 + 5, y0 + 8))
@@ -321,8 +321,8 @@ def generate_step_models(step_dir):
         filepath = os.path.join(step_dir, filename)
         step_content = f"""ISO-10303-21;
 HEADER;
-FILE_DESCRIPTION(('HARAKUTIR TOOR DAL 15 TPD PLANT - {desc}'), '2;1');
-FILE_NAME('{filename}', '2026-10-15T08:00:00', ('Senior Food Process Engineer'), ('Harakutir Engineering'), 'Antigravity STEP AP214 Generator', 'OpenCASCADE/Antigravity Engine', 'Approved for Engineering Review');
+FILE_DESCRIPTION(('Client Organization TOOR DAL 15 TPD PLANT - {desc}'), '2;1');
+FILE_NAME('{filename}', '2026-10-15T08:00:00', ('Senior Food Process Engineer'), ('Client Organization Engineering'), 'Antigravity STEP AP214 Generator', 'OpenCASCADE/Antigravity Engine', 'Approved for Engineering Review');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN'));
 ENDSEC;
 DATA;
@@ -373,7 +373,7 @@ def generate_obj_mesh_models(obj_dir):
     verts.append((0.0, 0.0, height + 0.2))  # top dished apex
 
     with open(obj_path, "w") as f:
-        f.write("# Harakutir Toor Dal 15 TPD - Soak Tank TK-101 3D Mesh\n")
+        f.write("# Client Organization Toor Dal 15 TPD - Soak Tank TK-101 3D Mesh\n")
         f.write("o TK_101_Soak_Tank\n")
         for v in verts:
             f.write(f"v {v[0]:.4f} {v[1]:.4f} {v[2]:.4f}\n")
@@ -434,7 +434,7 @@ def generate_pdf_drawings(pdf_dir):
 
         # Title block text
         c.setFont("Helvetica-Bold", 10)
-        c.drawString(tx + 10, ty + 72, "HARAKUTIR FOODS - TOOR DAL 15 MT/DAY PLANT")
+        c.drawString(tx + 10, ty + 72, "Client Organization FOODS - TOOR DAL 15 MT/DAY PLANT")
         c.setFont("Helvetica-Bold", 9)
         c.drawString(tx + 10, ty + 52, f"TITLE: {title}")
         c.setFont("Helvetica", 8)

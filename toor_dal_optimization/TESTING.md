@@ -1,7 +1,7 @@
 # TESTING.md
 
 ## Quality Assurance, Verification & Six Sigma Testing Architecture
-**System:** Harakutir Autonomous Closed-Loop Pulse Engineering Platform  
+**System:** FinnoaQ Autonomous Closed-Loop Pulse Engineering Platform  
 **Owner:** FINNOAQ Verification & Quality Engineering  
 **Standard:** Ocean Boiling Protocol v3.0 | Zero Untested Critical Paths  
 **Current Test Status:** 22/22 Passing (100% Pass Rate in ~2.9s)  
@@ -10,7 +10,7 @@
 
 ## 1. Testing Philosophy & Verification Matrix
 
-The Harakutir platform enforces a **Six Sigma ($5\sigma$) Quality Verification Standard**. Every business logic pathway, data transformation, mathematical solver, and resilience boundary is covered by automated regression tests.
+The FinnoaQ platform enforces a **Six Sigma ($5\sigma$) Quality Verification Standard**. Every business logic pathway, data transformation, mathematical solver, and resilience boundary is covered by automated regression tests.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
@@ -56,7 +56,7 @@ The Harakutir platform enforces a **Six Sigma ($5\sigma$) Quality Verification S
 
 1. **Gate 01 (`test_gate_01_complete_sow_coverage`):** Validates that all 36 sections of `inputs/Phase1_Scope_of_Work_Toor_Dal.docx` are mapped into `reports/SOW_REQUIREMENTS_MATRIX.md` with explicit status and deliverables.
 2. **Gate 02 (`test_gate_02_source_hash_reconciliation`):** Verifies SHA-256 hashes of input contracts against `state/provenance_registry.json`. Any modified byte triggers immediate test failure.
-3. **Gate 03 (`test_gate_03_parameter_consistency`):** Asserts all 78 parameters in `src/harakutir/parameters.py` possess valid physical categories, analytical methods, units, and non-empty descriptions.
+3. **Gate 03 (`test_gate_03_parameter_consistency`):** Asserts all 78 parameters in `src/finnoaq/parameters.py` possess valid physical categories, analytical methods, units, and non-empty descriptions.
 4. **Gate 04 (`test_gate_04_synthetic_leakage_prevention`):** Asserts that when `data/raw/` has no laboratory CSVs, the ingestion status is strictly `DATA_READINESS_ONLY` and all empirical root-cause claims are gated.
 5. **Gate 05 (`test_gate_05_data_validation_bounds`):** Tests Pydantic v2 schemas; rejects out-of-bounds moistures ($>1.50$), negative densities, or invalid temperatures.
 6. **Gate 06 (`test_gate_06_statistical_engine`):** Evaluates Welch's t-test, Mann-Whitney U, Cohen's d effect sizes, and Holm-Bonferroni multiplicity correction on sample arrays.
@@ -106,7 +106,7 @@ In industrial pulse processing, process capability is defined across target dome
 python -m pytest tests/ -v
 
 # Run with coverage analysis
-python -m pytest tests/ --cov=src/harakutir --cov-report=term-missing
+python -m pytest tests/ --cov=src/finnoaq --cov-report=term-missing
 ```
 
 ---

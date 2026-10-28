@@ -1,6 +1,6 @@
-# Harakutir Phase 1 Toor Dal Study — Complete Parameter Registry
+# FinnoaQ Phase 1 Toor Dal Study — Complete Parameter Registry
 
-**Generated:** 16 October 2026  
+**Generated:** 28 October 2026  
 **Document Control:** Controlling Source `Phase1_Scope_of_Work_Toor_Dal.docx`  
 **Total Parameters Registered:** `100`  
 

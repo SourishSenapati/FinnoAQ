@@ -1,9 +1,9 @@
-# HARAKUTIR CANDIDATE REGISTER & 5-LAYER REJECTION LEDGER
+# FINNOAQ CANDIDATE REGISTER & 5-LAYER REJECTION LEDGER
 ## Complete Evaluated Treatments, Multi-Stage Funnel & Disposition Rationale
 
 **Document ID:** HKT-CAN-2026-007  
 **Version:** 3.0.0  
-**Implementation:** `src/harakutir/virtual_screening.py`  
+**Implementation:** `src/finnoaq/virtual_screening.py`  
 **Total Candidates Generated:** 58 candidates across 8 technology families  
 **Surviving Screened Candidates:** 47 candidates  
 **Rejected Candidates:** 11 candidates  

@@ -2,13 +2,13 @@
 
 ## PARAGRAPHS
 
-[0] HARAKUTIR
+[0] Client Organization
 [1] R&D Scope of Work  |  Technical Proposal
 [2] PHASE 1 — DETAILED SCOPE OF WORK
 [3] Comparative R&D Study of Tanzanian Toor Dal vs. Indian Benchmark Toor Dal
 [4] Diagnostic Study of Physicochemical, Structural, Hydration and Cooking Performance
-[5] Prepared for: Harakutir
-[6] Project Contact: Dr. Archisman Ray
+[5] Prepared for: Client Organization
+[6] Project Contact: Technical Advisory Panel
 [7] Location: Kolkata, West Bengal, India
 [8] ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै ।
 [9] तेजस्विनावधीतमस्तु मा विद्विषावहै ॥
@@ -257,7 +257,7 @@
 [269] Assessment of nutritional and organoleptic quality.
 [270] Later-stage pilot processing, shelf-life and commercial validation, as separately scoped.
 [271] Phase 2 will be scoped, budgeted and approved separately after review of the Phase 1 report.
-[272] 35.  Project Contact — Harakutir
+[272] 35.  Project Contact — Client Organization
 [273] 36.  Final Technical Statement
 [274] This Phase 1 study is designed as a rigorous, diagnostic comparison of Tanzanian and Indian benchmark Toor Dal. Its purpose is to replace household observation with standardized, measurable evidence, and to distinguish carefully between measured differences, statistical associations and scientific hypotheses.
 [275] No mechanism is presumed in advance. Conclusions will be drawn only from the data generated, and hypotheses that cannot be settled in Phase 1 will be carried forward as clearly stated candidates for controlled validation in Phase 2.
@@ -265,7 +265,7 @@
 ## TABLES
 
 ### Table 1
-| 1Project Background 2Project Objective 3Sample Requirements 4Overall Technical Approach 5Physical & Preliminary Characterization 6Proximate Chemical Characterization 7Starch & Gelatinization Characterization 8Hydration & Water-Absorption Study 9Seed-Coat & Cotyledon Structural Investigation 10Pectin & Cell-Wall Characterization 11Mineral & Phytate Profile 12Hardness & Texture Analysis 13Standardized Cooking-Performance Study 14Comparative Cooking Test Design 15Cooking Performance Measurements 16Root-Cause Analysis Framework 17Root-Cause Analytical Pathway 18Phase 2 Technology Recommendations | 19Quality Control & Statistical Requirements 20Integrated Data Analysis 21Key Deliverables 22Final Technical Report Structure 23Preferred Laboratory / R&D Partners 24Indicative Technical Cost Structure 25Indicative Cost Range for Individual Testing 26Commercial Ceiling 27Project Timeline 28Payment Schedule 29Commercial Notes 30Sample Handling & Retention 31Confidentiality & Data Ownership 32Study Limitations 33Phase 1 Success Definition 34Proposed Phase 2 Direction 35Project Contact — Harakutir 36Final Technical Statement |
+| 1Project Background 2Project Objective 3Sample Requirements 4Overall Technical Approach 5Physical & Preliminary Characterization 6Proximate Chemical Characterization 7Starch & Gelatinization Characterization 8Hydration & Water-Absorption Study 9Seed-Coat & Cotyledon Structural Investigation 10Pectin & Cell-Wall Characterization 11Mineral & Phytate Profile 12Hardness & Texture Analysis 13Standardized Cooking-Performance Study 14Comparative Cooking Test Design 15Cooking Performance Measurements 16Root-Cause Analysis Framework 17Root-Cause Analytical Pathway 18Phase 2 Technology Recommendations | 19Quality Control & Statistical Requirements 20Integrated Data Analysis 21Key Deliverables 22Final Technical Report Structure 23Preferred Laboratory / R&D Partners 24Indicative Technical Cost Structure 25Indicative Cost Range for Individual Testing 26Commercial Ceiling 27Project Timeline 28Payment Schedule 29Commercial Notes 30Sample Handling & Retention 31Confidentiality & Data Ownership 32Study Limitations 33Phase 1 Success Definition 34Proposed Phase 2 Direction 35Project Contact — Client Organization 36Final Technical Statement |
 
 ### Table 2
 | Sample | Observed pressure-cooker whistles (approx.) |
@@ -509,7 +509,7 @@
 | TOTAL | 100% | ₹1,73,000 |
 
 ### Table 47
-| Dr. Archisman Ray PhD (Dunster Business School), MASc (Waterloo, Canada), B.Tech (WBUT) Senior Research Fellow, Department of Chemical Engineering, IIT Kharagpur CEO & Director, Harakutir Mobile: +91 98316 42006 Email: archismanray@kgpian.iitkgp.ac.in Address: Harakutir 53, Pathuriaghata Street Kolkata – 700006 West Bengal, India |
+| Technical Advisory Panel PhD (Dunster Business School), MASc (Waterloo, Canada), B.Tech (WBUT) Senior Research Fellow, Department of Chemical Engineering, IIT Kharagpur CEO & Director, Client Organization Mobile: +91 98316 42006 Email: Technical Advisorray@kgpian.iitkgp.ac.in Address: Client Organization 53, Pathuriaghata Street Kolkata – 700006 West Bengal, India |
 
 ### Table 48
 | Measured difference  →  Association  →  Potential mechanism  →  Phase 2 validation |

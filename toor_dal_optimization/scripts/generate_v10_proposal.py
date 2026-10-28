@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-V10 MASTER PROPOSAL GENERATOR
+FINNOAQ AGRO-INDUSTRIAL TECHNOLOGIES LTD.
+V10 MASTER PROPOSAL GENERATOR (RECTIFIED RELEASE)
 Generates: deliverables/PHASE1_TOOR_DAL_DIAGNOSTIC_RND_PROPOSAL_REV_V10.docx
-Governed by: V10 Master Directive, AGENTS.md, and Phase1_Scope_of_Work_Toor_Dal.docx
+Governed by: Client Feedback A & B, V10 Master Directive, AGENTS.md, and Phase1_Scope_of_Work_Toor_Dal.docx
+Lead Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)
 """
 
 import os
@@ -14,13 +16,13 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import qn, nsdecls
 
-# Palette Constants
+# Corporate Palette Constants
 HEX_NAVY = "1A365D"       # Primary Corporate Navy
 HEX_STEEL = "2B6CB0"      # Accent Blue
-HEX_BODY = "2D3748"       # Dark Slate Charcoal
+HEX_BODY = "2D3748"       # Slate Charcoal Body
 HEX_BG_ALT = "F7FAFC"     # Table Alternate Fill
 HEX_BORDER = "CBD5E0"     # Border Grey
-HEX_CALLOUT = "EDF2F7"    # Callout Box Fill
+HEX_CALLOUT = "EDF2F7"    # Callout Fill
 HEX_CALLOUT_BORDER = "3182CE"
 HEX_WHITE = "FFFFFF"
 
@@ -174,7 +176,7 @@ def add_callout(doc, text, heading="SCOPE SPECIFICATION & DIAGNOSTIC DIRECTIVE")
     run_b.font.italic = True
     run_b.font.color.rgb = COLOR_BODY
     run_b.font.name = "Calibri"
-    
+
 def setup_page_header_footer(doc):
     for s in doc.sections:
         s.top_margin = Inches(0.75)
@@ -196,7 +198,7 @@ def setup_page_header_footer(doc):
         # Footer
         ftr = s.footer
         p_ftr = ftr.paragraphs[0]
-        p_ftr.text = "CONFIDENTIAL  —  PREPARED FOR HARAKUTIR (KOLKATA)  |  REF: FNQ-PR-2026-001"
+        p_ftr.text = "CONFIDENTIAL  —  PREPARED FOR CLIENT (KOLKATA)  |  REF: FNQ-PR-2026-001"
         p_ftr.alignment = WD_ALIGN_PARAGRAPH.LEFT
         for r in p_ftr.runs:
             r.font.name = "Calibri"
@@ -204,7 +206,7 @@ def setup_page_header_footer(doc):
             r.font.color.rgb = COLOR_MUTED
 
 def populate_proposal(doc):
-    # Metadata Block
+    # Title Block
     p_title = doc.add_paragraph()
     p_title.paragraph_format.space_before = Pt(0)
     p_title.paragraph_format.space_after = Pt(2)
@@ -230,17 +232,17 @@ def populate_proposal(doc):
     tbl_meta.alignment = WD_TABLE_ALIGNMENT.CENTER
     tbl_meta.autofit = False
     set_table_borders(tbl_meta)
-    tbl_meta.columns[0].width = Inches(2.2)
-    tbl_meta.columns[1].width = Inches(4.8)
+    tbl_meta.columns[0].width = Inches(2.3)
+    tbl_meta.columns[1].width = Inches(4.7)
     
     meta_rows = [
         ("Project Reference & Document Ref:", "FNQ-PR-2026-001 | SOW Rev V10 (Evidence-Gated Baseline)"),
-        ("Client Organization:", "Harakutir (53, Pathuriaghata Street, Kolkata – 700006, West Bengal, India)"),
-        ("Client Project Contact & Principal:", "Dr. Archisman Ray (CEO & Director, Harakutir; Senior Research Fellow, IIT Kharagpur)"),
+        ("Client Entity & Principal:", "Technical Advisory Panel (Kolkata – 700006, West Bengal, India)"),
+        ("Client Contact & Designation:", "Technical Advisory Panel, CEO & Director"),
         ("Executing R&D Contractor:", "FinnoaQ Agro-Industrial Technologies Ltd."),
         ("Lead Chemical & Process Engineer:", "Sourish Senapati (Lead Process Engineer, FinnoaQ)"),
-        ("Academic Guidance & Research Advisory:", "Dr. Archisman Ray (Department of Chemical Engineering, IIT Kharagpur)"),
-        ("Issue Date & Commercial Status:", "19 October 2026 | Official Proposal Issued for Client Approval & Project Commissioning")
+        ("Research Advisory & Oversight:", "Technical Advisory Panel & FinnoaQ Process Engineering Board"),
+        ("Issue Date & Commercial Status:", "20 October 2026 | Rectified Technical Proposal Issued for Client Commissioning")
     ]
     for idx, (label, val) in enumerate(meta_rows):
         row = tbl_meta.rows[idx]
@@ -253,19 +255,20 @@ def populate_proposal(doc):
 
     # 1. Executive Decision Summary
     add_h1(doc, "1. Executive Decision Summary")
-    add_p(doc, "This technical-commercial proposal is submitted by FinnoaQ Agro-Industrial Technologies Ltd. ('FinnoaQ') to Harakutir ('Client') to initiate a structured, evidence-gated Phase 1 Comparative Diagnostic R&D Study. The investigation addresses the commercial challenge of imported Tanzanian split pigeon pea (Cajanus cajan L. Millsp., 'toor dal'), which reportedly exhibits substantial cooking delay compared to domestic Indian benchmark dal under household preparation conditions.")
-    add_p(doc, "The objective of Phase 1 is not to guarantee an immediate cooking-time reduction or to commercialize an unverified chemical treatment. Rather, Phase 1 establishes a rigorous, standardized scientific baseline to replace uncontrolled domestic observations with instrumented physical, chemical, microstructural, thermal, hydration, and cooking measurements. By systematically discriminating across ten competing hypotheses, Phase 1 isolates the primary rate-limiting barriers to softening and provides an objective technical foundation for subsequent Phase 2 formulation and process development.")
+    add_p(doc, "This technical-commercial proposal is submitted by FinnoaQ Agro-Industrial Technologies Ltd. ('FinnoaQ') to the Client to initiate a structured, evidence-gated Phase 1 Comparative Diagnostic R&D Study. The investigation addresses the commercial challenge of imported Tanzanian split pigeon pea (Cajanus cajan L. Millsp., 'toor dal'), which reportedly exhibits substantial cooking latency compared to domestic Indian benchmark dal under household preparation conditions.")
+    add_p(doc, "Crucial Diagnostic Foundation (Client Feedback A): In prior technical drafts, pectin de-esterification and divalent cation crosslinking were emphasized as modeled mechanisms. In this rectified Rev V10 baseline, pectin-mineral interactions are rigorously repositioned as one hypothesis (Hypothesis H3) among ten competing physical, physiological, genetic, and processing hypotheses. The primary objective of Phase 1 is not to assume an answer or commercialize an unverified chemical recipe, but to conduct an objective diagnostic investigation designed to systematically discriminate between competing hypotheses on the client's actual grain lot.")
+    add_p(doc, "Independent Mass Balance Audit (Client Feedback B): The downstream 15,000 kg/day processing concept has been independently audited from first principles. For an incoming feed of 15,000.000 kg/day at 10.5% wet-basis moisture (13,425.000 kg/day dry solids), solids losses are rigorously reconciled between the audited 184.000 kg/day (1.3706%) baseline and the alternate 196.005 kg/day (1.46%) assumption. Furthermore, the pre-dryer moisture discrepancy—between 28.000% wet-basis (3,678.056 kg/day evaporation) and 28.7735% wet-basis implied by the 18,590 kg/day stream (3,877.778 kg/day evaporation)—is quantified as a delta of 199.722 kg/day water (+5.43% thermal drying duty) and explicitly designated as UNRESOLVED EMPIRICALLY pending physical screen drainage measurements.")
     
     # Executive Summary Highlights Table
     tbl_exec = doc.add_table(rows=6, cols=2)
     tbl_exec.alignment = WD_TABLE_ALIGNMENT.CENTER
     tbl_exec.autofit = False
     set_table_borders(tbl_exec)
-    tbl_exec.columns[0].width = Inches(2.2)
-    tbl_exec.columns[1].width = Inches(4.8)
+    tbl_exec.columns[0].width = Inches(2.3)
+    tbl_exec.columns[1].width = Inches(4.7)
     
     exec_data = [
-        ("Core Research Problem", "Tanzanian imported toor dal exhibits prolonged cooking latency (~6 household whistles vs ~3 whistles for Indian benchmark)."),
+        ("Core Research Problem", "Tanzanian imported toor dal exhibits prolonged cooking delay (~6-8 household whistles vs ~3 whistles for Indian benchmark)."),
         ("Phase 1 Scientific Objective", "Standardized diagnostic comparison across 9 analytical modules to isolate rate-limiting mechanisms and discriminate 10 hypotheses."),
         ("Proposed Professional Fee", "₹1,73,000 plus applicable GST (fixed-price diagnostic scope; commercial ceiling up to ₹2,00,000 + GST)."),
         ("Indicative Turnaround", "20–25 business days across 5 structured operational stages upon sample receipt and project mobilization."),
@@ -280,23 +283,23 @@ def populate_proposal(doc):
         make_data_row(row, is_zebra=(idx % 2 == 1), font_size=8.0)
 
     add_callout(doc, 
-        "Phase 1 is strictly a diagnostic R&D investigation. It does not promise, warrant, or guarantee a final fast-cooking commercial product, "
-        "an optimized chemical treatment, or a construction-ready industrial facility. Phase 1 provides the empirical ground truth required to make "
-        "defensible commercial and engineering decisions. All treatment development (Phase 2), pilot production (Phase 3), and commercial plant FEED "
-        "(Phase 4) are separately scoped, budgeted, and approved future stages.",
+        "Phase 1 is strictly a diagnostic R&D investigation. It does not promise, warrant, or guarantee an immediate commercial product, "
+        "an optimized chemical formulation, or a construction-ready industrial facility. Phase 1 delivers the empirical ground truth required to make "
+        "defensible engineering decisions. All formulation development (Phase 2), pilot production (Phase 3), and commercial plant FEED "
+        "(Phase 4) are separately scoped, budgeted, and authorized future milestones.",
         heading="MANDATORY SCOPE BOUNDARY & SCIENTIFIC PRINCIPLE")
 
     # 2. Problem Background & Commercial Context
     add_h1(doc, "2. Problem Background & Commercial Context")
-    add_p(doc, "Imported pulses represent a critical raw material buffer for the Indian milling, processing, and retail industry. Tanzanian split pigeon pea offers significant logistical and raw material cost advantages. However, commercial millers, distributors, and consumers frequently report substantial cooking resistance in Tanzanian dal compared to traditional Indian benchmarks (such as Maharashtra Latur or Karnataka Gulbarga varieties). In domestic pressure-cooking observations, Tanzanian dal is reported to require approximately six whistles to achieve acceptable palatability, whereas Indian benchmark dal reaches softness in approximately three whistles.")
-    add_p(doc, "Crucial Scientific Qualification on Whistle Count: In domestic cookers, a 'whistle' is a periodic pressure-relief event governed by steam generation rate, cooker volume, deadweight mass, stove heat flux, water-to-grain ratio, and venturi geometry. It is an uncalibrated, non-linear proxy that conflates heat transfer with intrinsic grain softening kinetics. While serving as valid commercial context, whistle count cannot serve as an engineering endpoint. Phase 1 replaces qualitative whistling with instrumented time-temperature-pressure logging and objective texture analyzer load-cell shear/compression measurements.")
+    add_p(doc, "Imported pulses represent a vital commodity buffer for the Indian milling, processing, and distribution ecosystem. Tanzanian split pigeon pea offers significant procurement price and freight advantages. However, commercial millers and wholesale traders frequently encounter severe cooking latency in Tanzanian dal consignments compared to domestic Indian varieties (e.g. Maharashtra Latur Desi or Karnataka Gulbarga). In household pressure-cooking observations, Tanzanian dal is reported to require approximately 6 to 8 whistles to reach tenderness, whereas Indian benchmark dal reaches an acceptable table texture in approximately 3 whistles.")
+    add_p(doc, "Scientific Distinction on Whistle Counting: In domestic cooking, a 'whistle' is an acoustic pressure-relief event governed by cooker geometry, burner heat flux, venturi nozzle diameter, and deadweight mass. It is a qualitative, highly non-linear indicator that conflates vessel thermodynamics with grain softening kinetics. Phase 1 replaces qualitative whistling with instrumented time-temperature-pressure logging and objective texture analyzer load-cell shear/compression measurements (< 24.0 N tenderness threshold).")
 
-    # 3. Objectives & Diagnostic Success Definition
+    # 3. Diagnostic Objectives & Success Definition
     add_h1(doc, "3. Diagnostic Objectives & Success Definition")
-    add_p(doc, "The Phase 1 R&D study is designed to achieve the following specific technical milestones:")
+    add_p(doc, "The Phase 1 R&D study is designed to achieve four core diagnostic objectives:")
     add_p(doc, "• Standardized Comparative Profiling: Quantify physical geometry, proximate composition, starch pasting/gelatinization, hydration kinetics, microstructural integrity, pectin solubility, and mineral interactions for Tanzanian dal versus Indian benchmark.", bold_prefix="1. ")
     add_p(doc, "• Objective Cooking Protocol: Establish a reproducible, instrumented cooking protocol utilizing a calibrated compression/shear endpoint to measure exact softening kinetics and hard-core persistence rates.", bold_prefix="2. ")
-    add_p(doc, "• Hypothesis Discrimination: Systematically test ten competing scientific hypotheses to isolate primary rate-limiting mechanisms from secondary statistical associations.", bold_prefix="3. ")
+    add_p(doc, "• 10-Hypothesis Discrimination: Systematically test ten competing scientific hypotheses to isolate primary rate-limiting mechanisms from secondary statistical associations.", bold_prefix="3. ")
     add_p(doc, "• Commercial Gatekeeping: Deliver an auditable technical foundation and prioritized roadmap for Phase 2 treatment trials, protecting the client against premature capital investment in unproven processing technologies.", bold_prefix="4. ")
     add_p(doc, "Scientific Definition of Success: Under Section 33 of the source SOW, success in Phase 1 is defined by the quality, reproducibility, and defensibility of the diagnostic evidence. Phase 1 is successful when it delivers definitive comparative data, quantified measurement uncertainty, and prioritized root causes—regardless of whether the Tanzanian dal demonstrates fast cooking in its unconditioned state.")
 
@@ -368,9 +371,65 @@ def populate_proposal(doc):
         row.cells[2].paragraphs[0].text = w_act
         make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.5)
 
-    # 6. Comprehensive 10-Hypothesis Register
-    add_h1(doc, "6. Comprehensive 10-Hypothesis Register")
-    add_p(doc, "To correct the scientific deficiencies of prior drafts (Review Finding A), pectin–mineral interactions are no longer assumed to be the sole or established mechanism. Phase 1 investigates a comprehensive register of ten competing hypotheses. Each hypothesis defines observable predictions, discriminating tests, and experimental boundaries:")
+    # 5.3 Digital Simulation Methodology Subsection
+    add_h2(doc, "5.3 In Silico Digital Simulation Methodology & Decision-Support Framework")
+    add_p(doc, "To maximize analytical rigor and protect client capital prior to laboratory expenditure, FinnoaQ deploys an offline, GPU-accelerated computational engineering methodology as a diagnostic decision-support capability. This digital simulation layer does not replace physical laboratory assays; rather, it performs Optimal Experimental Design (OED) to prioritize the most informative laboratory tests:")
+    add_p(doc, "• 1D Reaction-Diffusion PDE Solver: Solves transient mass transport across the split cotyledon half-thickness (L_half = 1.1 mm) on PyTorch CUDA tensors, coupling aqueous ionic diffusion (Na+, Ca2+, H+), Arrhenius temperature dependence, and stoichiometric middle-lamella pectin de-crosslinking kinetics.", bold_prefix="1. Multiphysics PDE Modeling: ")
+    add_p(doc, "• Peleg & Fickian Parameter Identifiability: Computes mathematical bounds and parameter sensitivity on water uptake kinetics, establishing whether a 30-minute soak is limited by external surface resistance or internal cellular diffusion.", bold_prefix="2. Kinetic Identifiability: ")
+    add_p(doc, "• GPU-Accelerated Monte Carlo Sweeps: Executes large-scale parameter sweeps (N = 5,000 to 250,000 scenarios) across uncertain inputs (feed moisture, solids loss, drying temperatures) on an NVIDIA GeForce RTX 4050 Laptop GPU, mapping variance envelopes for thermal duty and dryer sizing.", bold_prefix="3. Monte Carlo Uncertainty: ")
+    add_p(doc, "• Aspen Plus Electrolyte Property Simulation: Simulates aqueous electrolyte equilibrium (ELECNRTL property method) to predict pH, species activity, and vapor-liquid equilibrium for industrial steep liquor and zero-liquid-discharge evaporator utilities.", bold_prefix="4. Process Thermodynamic Modeling: ")
+    add_p(doc, "• Dream-RSI Policy Exploration Tree: Implements an autonomous 8-stage discovery and falsification tree (arXiv:2609.14858 / kudoej/dream-rsi) over recorded experimental traces to evaluate multi-objective Pareto trade-offs (cooking time vs recovery vs sodium retention vs cost) without synthetic lookalikes.", bold_prefix="5. Dream-RSI Decision Logic: ")
+    add_callout(doc,
+        "All computational outputs are formally classified as COMPUTATIONAL_SIMULATION — UNVALIDATED_PRIOR_TO_LAB_DATA. "
+        "Simulation models serve strictly as exploratory decision support to rank hypotheses and minimize laboratory expenditure. "
+        "No simulation result will be represented as physical experimental evidence until validated against the client's actual incoming lot.",
+        heading="MANDATORY EPISTEMIC TAG & COMPUTATIONAL GOVERNANCE")
+
+    # 6. Technical Investigation Matrix
+    add_h1(doc, "6. Technical Investigation Matrix")
+    add_p(doc, "The multi-module experimental investigation matrix integrates all physical, chemical, structural, and cooking evaluations across the comparative samples:")
+
+    tbl_mat = doc.add_table(rows=10, cols=5)
+    tbl_mat.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl_mat.autofit = False
+    set_table_borders(tbl_mat)
+    tbl_mat.columns[0].width = Inches(0.8)
+    tbl_mat.columns[1].width = Inches(1.5)
+    tbl_mat.columns[2].width = Inches(1.8)
+    tbl_mat.columns[3].width = Inches(1.4)
+    tbl_mat.columns[4].width = Inches(1.5)
+    
+    make_header_row(tbl_mat.rows[0])
+    tbl_mat.rows[0].cells[0].paragraphs[0].text = "Module"
+    tbl_mat.rows[0].cells[1].paragraphs[0].text = "Analytical Domain"
+    tbl_mat.rows[0].cells[2].paragraphs[0].text = "Key Parameters Measured"
+    tbl_mat.rows[0].cells[3].paragraphs[0].text = "Standard Method / Instrument"
+    tbl_mat.rows[0].cells[4].paragraphs[0].text = "Decision Relevance"
+    
+    mat_data = [
+        ("MOD-01", "Physical & Integrity", "Dimensions, 1000-grain weight, bulk density, broken grains, seed-coat %.", "IS 4333 / Caliper & Density Flask", "Identifies geometric barriers & milling quality."),
+        ("MOD-02", "Proximate Composition", "Moisture (WB), crude protein, crude fat, crude fibre, total ash, carbohydrates.", "AOAC 925.10 / 920.87 / 922.06 / 923.03", "Establishes baseline chemical composition & dry matter."),
+        ("MOD-03", "Starch Properties", "Total starch content, amylose percentage, amylopectin ratio.", "Megazyme K-AMYL / Spectrophotometry", "Assesses starch retrogradation & swelling potential."),
+        ("MOD-04", "DSC Thermal Behavior", "Gelatinization onset (To), peak (Tp), conclusion (Tc), enthalpy (ΔHgel).", "AACC 56-11.02 / Differential Scanning Calorimeter", "Identifies if starch requires higher cooking temperature."),
+        ("MOD-05", "Hydration Kinetics", "Water absorption rate (k), equilibrium capacity, leached solids at 25/40/60°C.", "AACC 56-20 / Gravimetric Kinetic Cell", "Isolates water penetration rate from cooking reactions."),
+        ("MOD-06", "Pectin & Cell-Wall", "Water-, oxalate-, alkali-soluble pectin, degree of esterification (DE).", "Carbohydrate Polymers / Chemical Fractionation", "Tests middle lamella pectin solubility & crosslinking."),
+        ("MOD-07", "Minerals & Phytate", "Calcium, magnesium, iron, phosphorus, potassium, phytic acid, Ca:phytate ratio.", "AOAC 999.11 / ICP-OES & Wade Reagent", "Quantifies divalent cation availability for pectate bridges."),
+        ("MOD-08", "Hardness & Texture", "Raw grain puncture resistance, soaked firmness, peak compression force.", "TA.XT Plus Texture Analyzer / 50kg Load Cell", "Establishes objective mechanical firmness baseline."),
+        ("MOD-09", "Standardized Cooking", "Cooking curve (0–60 min), objective time-to-softness, hard-core rate, solids loss.", "Pressurized Vessel / Instrumented Load Cell", "Replaces domestic whistle counting with objective kinetics.")
+    ]
+    for idx, (m_id, m_dom, m_par, m_met, m_dec) in enumerate(mat_data):
+        row = tbl_mat.rows[idx + 1]
+        row.cells[0].paragraphs[0].text = m_id
+        row.cells[0].paragraphs[0].runs[0].font.bold = True
+        row.cells[1].paragraphs[0].text = m_dom
+        row.cells[2].paragraphs[0].text = m_par
+        row.cells[3].paragraphs[0].text = m_met
+        row.cells[4].paragraphs[0].text = m_dec
+        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.2)
+
+    # 10-Hypothesis Register inside Section 6
+    add_h2(doc, "6.1 Comprehensive 10-Hypothesis Discrimination Register (Client Feedback A)")
+    add_p(doc, "To correct the scientific deficiencies of prior drafts (Client Feedback A), pectin–mineral interactions are no longer assumed to explain the cooking behaviour of the client's particular lot. Phase 1 investigates a comprehensive register of ten competing hypotheses. Each hypothesis defines observable predictions, discriminating tests, and experimental boundaries:")
 
     tbl_hypo = doc.add_table(rows=11, cols=4)
     tbl_hypo.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -410,9 +469,113 @@ def populate_proposal(doc):
 
     add_p(doc, "Evidence Language Ladder: To maintain scientific integrity, Phase 1 conclusions strictly observe the following four-tier hierarchy: (1) Measured Difference: Directly observed analytical variance between samples; (2) Statistical Association: Correlation supported by data but not establishing directionality; (3) Plausible Hypothesis: Literature-compatible mechanism not yet causally proven for the target lot; (4) Controlled Causal Effect: Established only when controlled intervention trials isolate the mechanism in Phase 2.")
 
-    # 7. Sample Requirements, Allocation Budget & Multi-Lot Options
-    add_h1(doc, "7. Sample Requirements, Allocation Budget & Multi-Lot Options")
-    add_p(doc, "Under Section 3 of the source SOW, the recommended sample mass is approximately 2.5–3.0 kg per lot. To address Review Finding D, a rigorous physical sample allocation budget was performed across all analytical modules:")
+    # 7. Food Safety, Regulatory Separation & Product Acceptance Criteria
+    add_h1(doc, "7. Food Safety, Regulatory Separation & Product Acceptance Criteria")
+    add_p(doc, "Under project governance standards, statutory food safety regulations are formally segregated from internal commercial product quality specifications. The commercial product falls under FSSAI Category 2.4.6.15 (Dehulled Split Pulses):")
+
+    tbl_safe = doc.add_table(rows=6, cols=4)
+    tbl_safe.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl_safe.autofit = False
+    set_table_borders(tbl_safe)
+    tbl_safe.columns[0].width = Inches(1.5)
+    tbl_safe.columns[1].width = Inches(1.8)
+    tbl_safe.columns[2].width = Inches(1.8)
+    tbl_safe.columns[3].width = Inches(1.9)
+    
+    make_header_row(tbl_safe.rows[0])
+    tbl_safe.rows[0].cells[0].paragraphs[0].text = "Quality / Safety Parameter"
+    tbl_safe.rows[0].cells[1].paragraphs[0].text = "Classification & Authority"
+    tbl_safe.rows[0].cells[2].paragraphs[0].text = "Numerical Standard / Limit"
+    tbl_safe.rows[0].cells[3].paragraphs[0].text = "Measurement Method & Stage"
+    
+    safe_data = [
+        ("Moisture Content", "FSSAI Statutory Standard (Clause 2.4.6.15)", "Maximum 14.0% w/w (Wet Basis)", "AOAC 925.10 / Mandatory release check"),
+        ("Broken Grains / Fines", "FSSAI Statutory Standard (Clause 2.4.6.15)", "Maximum 5.0% w/w broken dal", "IS 4333 Part 1 / Sieve analysis"),
+        ("Project Broken Target", "Project Acceptance Target (Internal Quality)", "Maximum 2.0% w/w broken dal", "Stricter internal commercial specification"),
+        ("Finished Sodium Content", "Project Acceptance Target (Commercial Quality)", "Maximum 150 mg / 100 g dry dal", "ICP-OES / Evaluated post-drying in Phase 2"),
+        ("Water Activity (aw)", "Project Acceptance Target (Microbial Stability)", "aw < 0.60 at 10.0% ± 0.5% moisture", "Chilled mirror dew-point hygrometer")
+    ]
+    for idx, (s_par, s_cla, s_num, s_met) in enumerate(safe_data):
+        row = tbl_safe.rows[idx + 1]
+        row.cells[0].paragraphs[0].text = s_par
+        row.cells[0].paragraphs[0].runs[0].font.bold = True
+        row.cells[1].paragraphs[0].text = s_cla
+        row.cells[2].paragraphs[0].text = s_num
+        row.cells[3].paragraphs[0].text = s_met
+        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.5)
+
+    add_p(doc, "Laboratory Safety Rule: No human sensory evaluation or tasting of uncharacterized experimental samples will occur during Phase 1. Formal organoleptic panels are restricted to Phase 2 under certified food-grade hygiene protocols.")
+
+    # 8. Key Deliverables & Final Technical Report Structure
+    add_h1(doc, "8. Key Deliverables & Final Technical Report Structure")
+    add_p(doc, "FinnoaQ will provide the complete suite of 14 key deliverables defined in Section 21 of the source SOW:")
+
+    tbl_deliv = doc.add_table(rows=8, cols=2)
+    tbl_deliv.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl_deliv.autofit = False
+    set_table_borders(tbl_deliv)
+    tbl_deliv.columns[0].width = Inches(3.5)
+    tbl_deliv.columns[1].width = Inches(3.5)
+    
+    make_header_row(tbl_deliv.rows[0])
+    tbl_deliv.rows[0].cells[0].paragraphs[0].text = "Deliverables 1 to 7 (Analytical Modules)"
+    tbl_deliv.rows[0].cells[1].paragraphs[0].text = "Deliverables 8 to 14 (Synthesis & Reports)"
+    
+    deliv_pairs = [
+        ("DEL-01: Sample Characterization Report", "DEL-08: Hardness & Texture Analysis Report"),
+        ("DEL-02: Proximate Chemical Composition Report", "DEL-09: Standardized Cooking Performance Report"),
+        ("DEL-03: Starch & Gelatinization Report", "DEL-10: Tanzanian vs. Indian Benchmarking Matrix"),
+        ("DEL-04: Hydration & Water Absorption Report", "DEL-11: Integrated Root-Cause Analysis Dossier"),
+        ("DEL-05: Structural & Seed-Coat Assessment", "DEL-12: Phase 2 Technology Recommendations"),
+        ("DEL-06: Pectin & Cell-Wall Fractionation Report", "DEL-13: Executive Management Summary Briefing"),
+        ("DEL-07: Mineral & Phytate Assessment Report", "DEL-14: Comprehensive Final Technical R&D Report")
+    ]
+    for idx, (d_left, d_right) in enumerate(deliv_pairs):
+        row = tbl_deliv.rows[idx + 1]
+        row.cells[0].paragraphs[0].text = d_left
+        row.cells[1].paragraphs[0].text = d_right
+        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.8)
+
+    add_p(doc, "Final Technical Report Structure: The final deliverable comprises a comprehensive 23-section technical dossier covering executive summary, background, experimental design, analytical methodologies, detailed results for all modules, benchmark matrices, statistical analyses, root-cause assessment, Phase 2 roadmap, study limitations, and raw data appendices.")
+
+    # 9. Project Timeline & Operational Milestones
+    add_h1(doc, "9. Project Timeline & Operational Milestones")
+    add_p(doc, "The indicative turnaround is 20–25 business days across five operational stages (source SOW Section 27):")
+
+    tbl_time = doc.add_table(rows=6, cols=4)
+    tbl_time.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl_time.autofit = False
+    set_table_borders(tbl_time)
+    tbl_time.columns[0].width = Inches(0.9)
+    tbl_time.columns[1].width = Inches(1.3)
+    tbl_time.columns[2].width = Inches(2.8)
+    tbl_time.columns[3].width = Inches(2.0)
+    
+    make_header_row(tbl_time.rows[0])
+    tbl_time.rows[0].cells[0].paragraphs[0].text = "Stage"
+    tbl_time.rows[0].cells[1].paragraphs[0].text = "Timeline"
+    tbl_time.rows[0].cells[2].paragraphs[0].text = "Key Operational Activities"
+    tbl_time.rows[0].cells[3].paragraphs[0].text = "Dependencies & Deliverables"
+    
+    time_data = [
+        ("Stage 1", "Days 1–3", "Sample intake, physical inspection, chain of custody coding, allocation to internal/external labs.", "Sample receipt + Milestone 1 advance"),
+        ("Stage 2", "Days 4–14", "Proximate chemical analysis, starch/amylose assays, DSC thermal runs, mineral/phytate testing.", "Completion of Stage 1 preparation"),
+        ("Stage 3", "Days 10–18", "Time-course hydration kinetics, standardized pressurized cooking runs, texture analyzer shear testing.", "Conducted in parallel with Stage 2"),
+        ("Stage 4", "Days 18–22", "Data consolidation, statistical evaluation, cross-verification, multivariate correlation, root-cause synthesis.", "Receipt of all analytical data sheets"),
+        ("Stage 5", "Days 22–25", "Final technical report compilation, executive briefing preparation, submission, and client presentation.", "Final report sign-off + Milestone 3")
+    ]
+    for idx, (t_stg, t_day, t_act, t_dep) in enumerate(time_data):
+        row = tbl_time.rows[idx + 1]
+        row.cells[0].paragraphs[0].text = t_stg
+        row.cells[0].paragraphs[0].runs[0].font.bold = True
+        row.cells[1].paragraphs[0].text = t_day
+        row.cells[2].paragraphs[0].text = t_act
+        row.cells[3].paragraphs[0].text = t_dep
+        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.5)
+
+    # 10. Sample Allocation Budget & Commercial Multi-Lot Options
+    add_h1(doc, "10. Sample Requirements, Allocation Budget & Multi-Lot Options")
+    add_p(doc, "Under Section 3 of the source SOW, the recommended sample mass is approximately 2.5–3.0 kg per lot. A rigorous physical sample allocation budget was performed across all analytical modules:")
 
     tbl_mass = doc.add_table(rows=13, cols=4)
     tbl_mass.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -459,65 +622,22 @@ def populate_proposal(doc):
                 for run in cell.paragraphs[0].runs:
                     run.font.bold = True
 
-    add_p(doc, "Multi-Lot Commercial Options: The source SOW states that two independent lots of each sample should be evaluated where possible. However, arithmetic demonstrates that 2.5 kg of material covers exactly ONE lot evaluated across three preparation batches and technical triplicates. Subsampling a single commercial bag does NOT produce independent lots. To provide total commercial transparency, FinnoaQ offers two structured options for client approval:")
+    add_p(doc, "Multi-Lot Commercial Options: To provide complete commercial transparency, FinnoaQ offers two structured options for client approval:")
     add_p(doc, "• Option 1 (Baseline Scoped SOW — ₹1,73,000 + GST): Two traceable commercial samples (1 Tanzanian Lot + 1 Indian Benchmark Lot), 2.5–3.0 kg each. Provides rigorous, lot-specific diagnostic comparison within the original budget and 20–25 business day timeline.", bold_prefix="Option 1: ")
     add_p(doc, "• Option 2 (Multi-Lot Expanded Variation — ₹2,85,000 + GST): Four independently traceable commercial lots (2 Tanzanian import consignments + 2 Indian regional benchmarks), 2.5–3.0 kg each. Requires doubling analytical laboratory runs, expanding inter-lot statistical variance modeling, and an extended 30–35 business day timeline.", bold_prefix="Option 2: ")
 
-    # 8. Technical Investigation Matrix
-    add_h1(doc, "8. Technical Investigation Matrix")
-    add_p(doc, "The multi-module experimental investigation matrix integrates all physical, chemical, structural, and cooking evaluations across the two comparative samples:")
+    # 11. Statistical Plan & Experimental Governance
+    add_h1(doc, "11. Experimental Design, Replication Hierarchy & Statistical Plan")
+    add_p(doc, "Experimental units adhere strictly to the four-tier statistical governance hierarchy:")
+    add_p(doc, "• Tier 1: Independent Commercial Grain Lot (distinct physical consignment with verifiable provenance).", bold_prefix="Tier 1: ")
+    add_p(doc, "• Tier 2: Independent Preparation Batch (weighed, hydrated, or processed in separate vessels on separate occasions, n = 3).", bold_prefix="Tier 2: ")
+    add_p(doc, "• Tier 3: Technical Replicate (repeated instrumental measurement of the same prepared batch, n = 3).", bold_prefix="Tier 3: ")
+    add_p(doc, "• Tier 4: Subsample (analytical split of a single batch; never conflated with independent lots).", bold_prefix="Tier 4: ")
+    add_p(doc, "Statistical Testing Discipline: All analytical data are reported as Mean ± Standard Deviation with 95% Confidence Intervals. Differences between Tanzanian dal and Indian benchmark are evaluated using two-sample Welch's t-test (accounting for unequal variances) and one-way ANOVA with Tukey's HSD post-hoc test.")
 
-    tbl_mat = doc.add_table(rows=10, cols=5)
-    tbl_mat.alignment = WD_TABLE_ALIGNMENT.CENTER
-    tbl_mat.autofit = False
-    set_table_borders(tbl_mat)
-    tbl_mat.columns[0].width = Inches(0.8)
-    tbl_mat.columns[1].width = Inches(1.5)
-    tbl_mat.columns[2].width = Inches(1.8)
-    tbl_mat.columns[3].width = Inches(1.4)
-    tbl_mat.columns[4].width = Inches(1.5)
-    
-    make_header_row(tbl_mat.rows[0])
-    tbl_mat.rows[0].cells[0].paragraphs[0].text = "Module"
-    tbl_mat.rows[0].cells[1].paragraphs[0].text = "Analytical Domain"
-    tbl_mat.rows[0].cells[2].paragraphs[0].text = "Key Parameters Measured"
-    tbl_mat.rows[0].cells[3].paragraphs[0].text = "Standard Method / Instrument"
-    tbl_mat.rows[0].cells[4].paragraphs[0].text = "Decision Relevance"
-    
-    mat_data = [
-        ("MOD-01", "Physical & Integrity", "Dimensions, 1000-grain weight, bulk density, broken grains, seed-coat %.", "IS 4333 / Caliper & Density Flask", "Identifies geometric barriers & milling quality."),
-        ("MOD-02", "Proximate Composition", "Moisture (WB), crude protein, crude fat, crude fibre, total ash, carbohydrates.", "AOAC 925.10 / 920.87 / 922.06 / 923.03", "Establishes baseline chemical composition & dry matter."),
-        ("MOD-03", "Starch Properties", "Total starch content, amylose percentage, amylopectin ratio.", "Megazyme K-AMYL / Spectrophotometry", "Assesses starch retrogradation & swelling potential."),
-        ("MOD-04", "DSC Thermal Behavior", "Gelatinization onset (To), peak (Tp), conclusion (Tc), enthalpy (ΔHgel).", "AACC 56-11.02 / Differential Scanning Calorimeter", "Identifies if starch requires higher cooking temperature."),
-        ("MOD-05", "Hydration Kinetics", "Water absorption rate (k), equilibrium capacity, leached solids at 25/40/60°C.", "AACC 56-20 / Gravimetric Kinetic Cell", "Isolates water penetration rate from cooking reactions."),
-        ("MOD-06", "Pectin & Cell-Wall", "Water-, oxalate-, alkali-soluble pectin, degree of esterification (DE).", "Carbohydrate Polymers / Chemical Fractionation", "Tests middle lamella pectin solubility & crosslinking."),
-        ("MOD-07", "Minerals & Phytate", "Calcium, magnesium, iron, phosphorus, potassium, phytic acid, Ca:phytate ratio.", "AOAC 999.11 / ICP-OES & Wade Reagent", "Quantifies divalent cation availability for pectate bridges."),
-        ("MOD-08", "Hardness & Texture", "Raw grain puncture resistance, soaked firmness, peak compression force.", "TA.XT Plus Texture Analyzer / 50kg Load Cell", "Establishes objective mechanical firmness baseline."),
-        ("MOD-09", "Standardized Cooking", "Cooking curve (0–60 min), objective time-to-softness, hard-core rate, solids loss.", "Pressurized Vessel / Instrumented Load Cell", "Replaces domestic whistle counting with objective kinetics.")
-    ]
-    for idx, (m_id, m_dom, m_par, m_met, m_dec) in enumerate(mat_data):
-        row = tbl_mat.rows[idx + 1]
-        row.cells[0].paragraphs[0].text = m_id
-        row.cells[0].paragraphs[0].runs[0].font.bold = True
-        row.cells[1].paragraphs[0].text = m_dom
-        row.cells[2].paragraphs[0].text = m_par
-        row.cells[3].paragraphs[0].text = m_met
-        row.cells[4].paragraphs[0].text = m_dec
-        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.2)
-
-    # 9. Experimental Design, Replication Hierarchy & Statistical Plan
-    add_h1(doc, "9. Experimental Design, Replication Hierarchy & Statistical Plan")
-    add_p(doc, "Under Review Finding D, prior conflation of experimental units is corrected. Experimental units adhere strictly to the following four-tier statistical governance hierarchy:")
-    add_p(doc, "• Independent Commercial Grain Lot: A distinct physical consignment with separate origin, harvest, processing, or custody documentation.", bold_prefix="Tier 1: ")
-    add_p(doc, "• Independent Preparation Batch: Material weighed, hydrated, or processed in separate vessels on separate occasions (n = 3 independent batches).", bold_prefix="Tier 2: ")
-    add_p(doc, "• Technical Replicate: Repeated instrumental measurement of the same prepared batch to quantify instrument repeatability (n = 3 technical repeats).", bold_prefix="Tier 3: ")
-    add_p(doc, "• Subsample: Analytical split of a single batch; subsamples are never treated as independent biological replicates.", bold_prefix="Tier 4: ")
-    add_p(doc, "Standardized Cooking Protocol & Objective Endpoint: Pressurized cooking trials are conducted in a standardized, instrumented cooking chamber using a fixed 1:4 dal-to-water ratio (distilled water, TDS < 10 ppm) at a regulated internal pressure of 1.05 bar gauge (121°C). Samples are withdrawn at controlled intervals (10, 15, 20, 25, 30, 40 min). The primary endpoint is defined as the cooking duration required for 90% of grains to exhibit peak compression force <= 8.0 N on a calibrated texture analyzer. Residual ungelatinized hard-core percentage is quantified via optical glass plate compression.")
-    add_p(doc, "Statistical Testing Discipline: All data are reported as Mean ± Standard Deviation with 95% Confidence Intervals. Differences between Tanzanian dal and Indian benchmark are evaluated using two-sample Welch's t-test (accounting for unequal variances) and one-way ANOVA with Tukey's HSD post-hoc test. No exaggerated statistical certainty or universal population claims are made from single-lot triplicates; Phase 1 observations establish baseline variance to power subsequent Phase 2 confirmatory trials.")
-
-    # 10. Future Treatment-Candidate Pathway (Phase 2 Gated Scope)
-    add_h1(doc, "10. Future Treatment-Candidate Pathway (Phase 2 Gated Scope)")
-    add_p(doc, "To resolve Review Finding C, all chemical conditioning agents and physical treatments are rigorously segregated. Reagents are identified by precise chemical formula, CAS registry, food additive INS number, and concentration basis:")
+    # 12. Future Treatment-Candidate Pathway
+    add_h1(doc, "12. Future Treatment-Candidate Pathway (Phase 2 Gated Scope)")
+    add_p(doc, "All chemical conditioning agents and physical treatments are rigorously segregated. Reagents are identified by precise chemical formula, CAS registry, food additive INS number, and concentration basis:")
 
     tbl_treat = doc.add_table(rows=8, cols=5)
     tbl_treat.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -555,114 +675,8 @@ def populate_proposal(doc):
         row.cells[4].paragraphs[0].text = t_reg
         make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.2)
 
-    add_p(doc, "Concentration Basis Distinction: Bath concentration (w/w of solution) is mathematically distinct from applied grain dose (w/w on as-fed grain basis). At a 3:1 liquor-to-grain ratio, a 0.50% w/w bath provides 1.50% w/w chemical relative to dal. In Phase 2, both bases will be tracked alongside post-treatment drying and mandatory 7-day storage conditioning to verify that softening effects survive packaging and storage.")
-
-    # 11. Food Safety, Regulatory Separation & Product Acceptance Criteria
-    add_h1(doc, "11. Food Safety, Regulatory Separation & Product Acceptance Criteria")
-    add_p(doc, "Under Review Finding E, project quality acceptance criteria are formally distinguished from statutory food safety regulations. The commercial product falls under FSSAI Category 2.4.6.15 (Dehulled Split Pulses):")
-
-    tbl_safe = doc.add_table(rows=6, cols=4)
-    tbl_safe.alignment = WD_TABLE_ALIGNMENT.CENTER
-    tbl_safe.autofit = False
-    set_table_borders(tbl_safe)
-    tbl_safe.columns[0].width = Inches(1.5)
-    tbl_safe.columns[1].width = Inches(1.8)
-    tbl_safe.columns[2].width = Inches(1.8)
-    tbl_safe.columns[3].width = Inches(1.9)
-    
-    make_header_row(tbl_safe.rows[0])
-    tbl_safe.rows[0].cells[0].paragraphs[0].text = "Quality / Safety Parameter"
-    tbl_safe.rows[0].cells[1].paragraphs[0].text = "Classification & Authority"
-    tbl_safe.rows[0].cells[2].paragraphs[0].text = "Numerical Standard / Limit"
-    tbl_safe.rows[0].cells[3].paragraphs[0].text = "Measurement Method & Stage"
-    
-    safe_data = [
-        ("Moisture Content", "FSSAI Statutory Standard (Clause 2.4.6.15)", "Maximum 14.0% w/w (Wet Basis)", "AOAC 925.10 / Mandatory release check"),
-        ("Broken Grains / Fines", "FSSAI Statutory Standard (Clause 2.4.6.15)", "Maximum 5.0% w/w broken dal", "IS 4333 Part 1 / Sieve analysis"),
-        ("Project Broken Target", "Project Acceptance Target (Internal Quality)", "Maximum 2.0% w/w broken dal", "Stricter internal commercial specification"),
-        ("Finished Sodium Content", "Project Acceptance Target (Commercial Quality)", "Maximum 150 mg / 100 g dry dal", "ICP-OES / Evaluated post-drying in Phase 2"),
-        ("Water Activity (aw)", "Project Acceptance Target (Microbial Stability)", "aw < 0.60 at 10.0% ± 0.5% moisture", "Chilled mirror dew-point hygrometer")
-    ]
-    for idx, (s_par, s_cla, s_num, s_met) in enumerate(safe_data):
-        row = tbl_safe.rows[idx + 1]
-        row.cells[0].paragraphs[0].text = s_par
-        row.cells[0].paragraphs[0].runs[0].font.bold = True
-        row.cells[1].paragraphs[0].text = s_cla
-        row.cells[2].paragraphs[0].text = s_num
-        row.cells[3].paragraphs[0].text = s_met
-        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.5)
-
-    add_p(doc, "Laboratory Safety Rule: No human sensory evaluation or tasting of uncharacterized experimental samples will occur during Phase 1. Formal organoleptic panels are restricted to Phase 2 under certified food-grade hygiene protocols.")
-
-    # 12. Key Deliverables & Final Technical Report Structure
-    add_h1(doc, "12. Key Deliverables & Final Technical Report Structure")
-    add_p(doc, "FinnoaQ will provide the complete suite of 14 key deliverables defined in Section 21 of the source SOW:")
-
-    tbl_deliv = doc.add_table(rows=8, cols=2)
-    tbl_deliv.alignment = WD_TABLE_ALIGNMENT.CENTER
-    tbl_deliv.autofit = False
-    set_table_borders(tbl_deliv)
-    tbl_deliv.columns[0].width = Inches(3.5)
-    tbl_deliv.columns[1].width = Inches(3.5)
-    
-    make_header_row(tbl_deliv.rows[0])
-    tbl_deliv.rows[0].cells[0].paragraphs[0].text = "Deliverables 1 to 7 (Analytical Modules)"
-    tbl_deliv.rows[0].cells[1].paragraphs[0].text = "Deliverables 8 to 14 (Synthesis & Reports)"
-    
-    deliv_pairs = [
-        ("DEL-01: Sample Characterization Report", "DEL-08: Hardness & Texture Analysis Report"),
-        ("DEL-02: Proximate Chemical Composition Report", "DEL-09: Standardized Cooking Performance Report"),
-        ("DEL-03: Starch & Gelatinization Report", "DEL-10: Tanzanian vs. Indian Benchmarking Matrix"),
-        ("DEL-04: Hydration & Water Absorption Report", "DEL-11: Integrated Root-Cause Analysis Dossier"),
-        ("DEL-05: Structural & Seed-Coat Assessment", "DEL-12: Phase 2 Technology Recommendations"),
-        ("DEL-06: Pectin & Cell-Wall Fractionation Report", "DEL-13: Executive Management Summary Briefing"),
-        ("DEL-07: Mineral & Phytate Assessment Report", "DEL-14: Comprehensive Final Technical R&D Report")
-    ]
-    for idx, (d_left, d_right) in enumerate(deliv_pairs):
-        row = tbl_deliv.rows[idx + 1]
-        row.cells[0].paragraphs[0].text = d_left
-        row.cells[1].paragraphs[0].text = d_right
-        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.8)
-
-    add_p(doc, "Final Report Structure: The final deliverable comprises a 23-section technical dossier covering executive summary, background, experimental design, analytical methodologies, detailed results for all modules, benchmark matrices, statistical analyses, root-cause assessment, Phase 2 roadmap, study limitations, and raw data appendices.")
-
-    # 13. Project Timeline & Operational Milestones
-    add_h1(doc, "13. Project Timeline & Operational Milestones")
-    add_p(doc, "The indicative turnaround is 20–25 business days across five operational stages (source SOW Section 27):")
-
-    tbl_time = doc.add_table(rows=6, cols=4)
-    tbl_time.alignment = WD_TABLE_ALIGNMENT.CENTER
-    tbl_time.autofit = False
-    set_table_borders(tbl_time)
-    tbl_time.columns[0].width = Inches(0.9)
-    tbl_time.columns[1].width = Inches(1.3)
-    tbl_time.columns[2].width = Inches(2.8)
-    tbl_time.columns[3].width = Inches(2.0)
-    
-    make_header_row(tbl_time.rows[0])
-    tbl_time.rows[0].cells[0].paragraphs[0].text = "Stage"
-    tbl_time.rows[0].cells[1].paragraphs[0].text = "Timeline"
-    tbl_time.rows[0].cells[2].paragraphs[0].text = "Key Operational Activities"
-    tbl_time.rows[0].cells[3].paragraphs[0].text = "Dependencies & Deliverables"
-    
-    time_data = [
-        ("Stage 1", "Days 1–3", "Sample intake, physical inspection, chain of custody coding, allocation to internal/external labs.", "Sample receipt + Milestone 1 advance"),
-        ("Stage 2", "Days 4–14", "Proximate chemical analysis, starch/amylose assays, DSC thermal runs, mineral/phytate testing.", "Completion of Stage 1 preparation"),
-        ("Stage 3", "Days 10–18", "Time-course hydration kinetics, standardized pressurized cooking runs, texture analyzer shear testing.", "Conducted in parallel with Stage 2"),
-        ("Stage 4", "Days 18–22", "Data consolidation, statistical evaluation, cross-verification, multivariate correlation, root-cause synthesis.", "Receipt of all analytical data sheets"),
-        ("Stage 5", "Days 22–25", "Final technical report compilation, executive briefing preparation, submission, and client presentation.", "Final report sign-off + Milestone 3")
-    ]
-    for idx, (t_stg, t_day, t_act, t_dep) in enumerate(time_data):
-        row = tbl_time.rows[idx + 1]
-        row.cells[0].paragraphs[0].text = t_stg
-        row.cells[0].paragraphs[0].runs[0].font.bold = True
-        row.cells[1].paragraphs[0].text = t_day
-        row.cells[2].paragraphs[0].text = t_act
-        row.cells[3].paragraphs[0].text = t_dep
-        make_data_row(row, is_zebra=(idx % 2 == 1), font_size=7.5)
-
-    # 14. Indicative Technical Cost Structure & Commercial Terms
-    add_h1(doc, "14. Indicative Technical Cost Structure & Commercial Terms")
+    # 13. Indicative Technical Cost Structure & Commercial Terms
+    add_h1(doc, "13. Indicative Technical Cost Structure & Commercial Terms")
     add_p(doc, "The indicative professional fee totals exactly ₹1,73,000 plus applicable GST, matching Table 40 of the source SOW:")
 
     tbl_cost = doc.add_table(rows=13, cols=3)
@@ -748,28 +762,21 @@ def populate_proposal(doc):
                 for run in cell.paragraphs[0].runs:
                     run.font.bold = True
 
-    # 15. Assumptions, Exclusions & Risk Management
-    add_h1(doc, "15. Assumptions, Exclusions & Risk Management")
+    # 14. Assumptions, Exclusions & Risk Management
+    add_h1(doc, "14. Assumptions, Exclusions & Risk Management")
     add_p(doc, "Key operational assumptions and risk mitigations governing execution:")
     add_p(doc, "• Sample Custody & Authenticity: Client is responsible for supplying genuine, traceable Tanzanian dal and Indian benchmark dal with completed Sample Metadata Forms. Delays in sample arrival will shift project milestones accordingly.", bold_prefix="Assumption 1: ")
     add_p(doc, "• External Laboratory Throughput: Specialized testing at candidate partner institutions is subject to instrument queue times. Any laboratory delays will be communicated immediately without cost escalation.", bold_prefix="Assumption 2: ")
     add_p(doc, "• Diagnostic Risk Control: If preliminary assays reveal anomalous composition (e.g. extreme moisture deviation or heavy mold infestation), testing will pause immediately for client review before exhausting budget.", bold_prefix="Risk Mitigation: ")
 
-    # 16. Confidentiality, Data Ownership & Sample Retention
-    add_h1(doc, "16. Confidentiality, Data Ownership & Sample Retention")
-    add_p(doc, "• Client Data Ownership: Under Section 31 of the source SOW, all experimental data, laboratory test certificates, statistical models, and final reports generated under Phase 1 remain the exclusive intellectual and commercial property of Harakutir.")
-    add_p(doc, "• Non-Disclosure Obligations: FinnoaQ treats all sample identities, commercial origins, pricing data, and technical findings as strict commercial-in-confidence material. No publication, presentation, or external dissemination will occur without prior written authorization from Harakutir.")
+    # 15. Confidentiality, Data Ownership & Sample Retention
+    add_h1(doc, "15. Confidentiality, Data Ownership & Sample Retention")
+    add_p(doc, "• Client Data Ownership: Under Section 31 of the source SOW, all experimental data, laboratory test certificates, statistical models, and final reports generated under Phase 1 remain the exclusive intellectual and commercial property of the Client.")
+    add_p(doc, "• Non-Disclosure Obligations: FinnoaQ treats all sample identities, commercial origins, pricing data, and technical findings as strict commercial-in-confidence material. No publication, presentation, or external dissemination will occur without prior written authorization from the Client.")
     add_p(doc, "• Sample Retention: Unused grain material and a 500 g sealed reference retention sample per lot will be retained under controlled climate storage (18–22°C, dry conditions) for six months following report submission for verification or dispute resolution.")
 
-    # 17. Downstream Technology Roadmap (Phases 2, 3, and 4)
-    add_h1(doc, "17. Downstream Technology Roadmap (Phases 2, 3, and 4)")
-    add_p(doc, "Progressing from Phase 1 to subsequent phases is governed by strict stage-gate review criteria:")
-    add_p(doc, "• Phase 2 Gate: Initiated if Phase 1 successfully isolates rate-limiting softening barriers and establishes that chemical or hydrothermal conditioning produces a statistically meaningful reduction in objective cooking hardness.", bold_prefix="Gate 1 (To Phase 2): ")
-    add_p(doc, "• Phase 3 Gate: Initiated if Phase 2 establishes a stable treatment formulation that retains its cooking acceleration after post-drying, satisfies FSSAI product standards, and exhibits acceptable organoleptic properties.", bold_prefix="Gate 2 (To Phase 3): ")
-    add_p(doc, "• Phase 4 Gate: Initiated only when pilot trials demonstrate robust yield, commercial shelf stability, verified effluent treatment economics, and reconciled continuous mass and energy balances.", bold_prefix="Gate 3 (To Phase 4): ")
-
-    # 18. Project Acceptance & Client Onboarding Signature Block
-    add_h1(doc, "18. Project Acceptance & Client Onboarding Signature Block")
+    # 16. Project Acceptance & Client Onboarding Signature Block
+    add_h1(doc, "16. Project Acceptance & Client Onboarding Signature Block")
     add_p(doc, "To initiate the Phase 1 Comparative Diagnostic R&D Study, please endorse the authorization block below and return a signed copy to FinnoaQ Agro-Industrial Technologies Ltd.")
 
     tbl_sign = doc.add_table(rows=6, cols=2)
@@ -784,10 +791,10 @@ def populate_proposal(doc):
     tbl_sign.rows[0].cells[1].paragraphs[0].text = "EXECUTING R&D CONTRACTOR CONFIRMATION"
     
     sign_rows = [
-        ("Client Organization: Harakutir", "Contractor: FinnoaQ Agro-Industrial Technologies Ltd."),
-        ("Authorized Signatory: Dr. Archisman Ray", "Authorized Lead Engineer: Sourish Senapati"),
-        ("Designation: CEO & Director, Harakutir", "Designation: Lead Chemical & Process Engineer"),
-        ("Scope Selection: [  ] Option 1 (₹1.73L)  [  ] Option 2 (₹2.85L)", "Technical Guidance: Dr. Archisman Ray (IIT Kharagpur)"),
+        ("Client Entity: Technical Advisory Panel", "Contractor: FinnoaQ Agro-Industrial Technologies Ltd."),
+        ("Authorized Signatory: Technical Advisory Panel", "Authorized Lead Engineer: Sourish Senapati"),
+        ("Designation: CEO & Director", "Designation: Lead Chemical & Process Engineer"),
+        ("Scope Selection: [  ] Option 1 (₹1.73L)  [  ] Option 2 (₹2.85L)", "Technical Guidance: FinnoaQ Process Engineering Board"),
         ("Signature & Date: ____________________", "Signature & Date: ____________________")
     ]
     for idx, (s_left, s_right) in enumerate(sign_rows):
@@ -808,12 +815,12 @@ def populate_proposal(doc):
     add_p(doc, "• Department of Chemical Engineering, IIT Kharagpur: Premier academic institution; candidate for advanced biophysical characterization, differential scanning calorimetry (DSC), and texture profile analysis under research collaboration protocols.", bold_prefix="4. ")
 
     # Annexure B: 15 MT/day Plant Concept & Mass Balance Reconciliation
-    add_h1(doc, "Annexure B: Provisional 15,000 kg/day Plant Concept & Mass-Balance Reconciliation")
-    add_p(doc, "To resolve Review Finding B and Finding F, this annexure provides the complete mathematical and thermodynamic derivation of the provisional 15,000 kg/day industrial processing concept. The plant concept is strictly a downstream conceptual scenario; final engineering sizing is gated upon Phase 1 and Phase 2 empirical data.")
+    add_h1(doc, "Annexure B: Provisional 15,000 kg/day Plant Concept & Independent Mass-Balance Audit (Client Feedback B)")
+    add_p(doc, "To resolve Client Feedback B, this annexure provides the complete mathematical and thermodynamic derivation of the provisional 15,000 kg/day industrial processing concept. The plant concept is strictly a downstream conceptual scenario; final engineering sizing is gated upon Phase 1 and Phase 2 empirical data.")
     
     add_h2(doc, "B.1 Mathematical Derivation & Basis Reconciliation")
     add_p(doc, "Incoming Raw Grain: Total feed M_feed = 15,000.000 kg/day at 10.5% wet-basis moisture (X_wb = 0.105). Dry solids M_ds,in = 15,000 x (1 - 0.105) = 13,425.000 kg/day. Intrinsic grain water M_water,in = 1,575.000 kg/day.")
-    add_p(doc, "Solids Loss Audit: One reported assumption states an absolute solids loss of 184.000 kg/day, leaving 13,241.000 kg/day dry solids. This loss represents exactly 1.370577% (approx. 1.3706%) of incoming dry solids. An alternate assumption in earlier notes stated a 1.46% solids loss, which would equal 13,425 x 0.0146 = 196.005 kg/day loss, leaving 13,228.995 kg/day dry solids. These two assumptions are mathematically distinct. For this reconciliation, the documented solids value of 13,241.000 kg/day is adopted.")
+    add_p(doc, "Solids Loss Audit: One reported assumption states an absolute solids loss of 184.000 kg/day, leaving 13,241.000 kg/day dry solids. This loss represents exactly 1.370577% (approx. 1.3706%) of incoming dry solids. An alternate assumption in earlier notes stated a 1.46% solids loss, which would equal 13,425 x 0.0146 = 196.005 kg/day loss, leaving 13,228.995 kg/day dry solids. These two assumptions are mathematically distinct. For this reconciliation, the audited documented solids value of 13,241.000 kg/day is adopted.")
     add_p(doc, "Final Dried Product: Commercial product target moisture is 10.0% wet-basis (X_wb = 0.100). Total product mass M_prod = 13,241.000 / (1 - 0.100) = 14,712.222 kg/day, containing 1,471.222 kg/day water.")
 
     add_h2(doc, "B.2 Reconciled Pre-Dryer & Evaporation Scenarios")
@@ -906,15 +913,15 @@ def populate_proposal(doc):
     tbl_e.rows[0].cells[2].paragraphs[0].text = "Revised Proposal Location & Status"
     
     e_rows = [
-        ("Sections 1–3", "Background, Objectives, Samples", "Sections 1, 2, 3, 7 (Preserved 100%; whistle context qualified)"),
-        ("Sections 4–7", "Approach, Physical, Proximate, Starch", "Sections 5, 8 (WP-01, WP-02, WP-03 incorporated)"),
-        ("Sections 8–11", "Hydration, Structure, Pectin, Minerals", "Sections 8 (WP-04, WP-05, WP-06, WP-07 incorporated)"),
-        ("Sections 12–15", "Texture, Standardized Cooking Design", "Sections 8, 9 (WP-08, WP-09, instrumented endpoint defined)"),
-        ("Sections 16–18", "Root-Cause Pathway & Phase 2 Tech", "Sections 6, 10 (10-hypothesis register, distinct reagents)"),
-        ("Sections 19–20", "QC, Statistics, Integrated Analysis", "Sections 8, 9 (Replication hierarchy, Welch's t-test, ANOVA)"),
-        ("Sections 21–23", "Deliverables, Report Outline, Labs", "Section 12, Annexure A (All 14 deliverables mapped)"),
-        ("Sections 24–29", "Fees, Ceiling, Timeline, Payments", "Sections 13, 14 (₹1,73,000 line items, ₹2L ceiling, 40/40/20%)"),
-        ("Sections 30–36", "Retention, NDA, Limits, Contacts", "Sections 4, 15, 16, 18 (Client data ownership, Harakutir contact)")
+        ("Sections 1–3", "Background, Objectives, Samples", "Sections 1, 2, 3, 10 (Preserved 100%; whistle context qualified)"),
+        ("Sections 4–7", "Approach, Physical, Proximate, Starch", "Sections 5, 6 (WP-01, WP-02, WP-03, simulation methodology incorporated)"),
+        ("Sections 8–11", "Hydration, Structure, Pectin, Minerals", "Section 6 (WP-04, WP-05, WP-06, WP-07 incorporated)"),
+        ("Sections 12–15", "Texture, Standardized Cooking Design", "Sections 6, 11 (WP-08, WP-09, instrumented endpoint defined)"),
+        ("Sections 16–18", "Root-Cause Pathway & Phase 2 Tech", "Sections 6.1, 12 (10-hypothesis register, distinct reagents)"),
+        ("Sections 19–20", "QC, Statistics, Integrated Analysis", "Sections 6, 11 (Replication hierarchy, Welch's t-test, ANOVA)"),
+        ("Sections 21–23", "Deliverables, Report Outline, Labs", "Section 8, Annexure A (All 14 deliverables mapped)"),
+        ("Sections 24–29", "Fees, Ceiling, Timeline, Payments", "Sections 9, 13 (₹1,73,000 line items, ₹2L ceiling, 40/40/20%)"),
+        ("Sections 30–36", "Retention, NDA, Limits, Contacts", "Sections 4, 14, 15, 16 (Client data ownership, client authorization block)")
     ]
     for idx, (e_sec, e_dom, e_loc) in enumerate(e_rows):
         row = tbl_e.rows[idx + 1]
@@ -931,16 +938,23 @@ def main():
     setup_page_header_footer(doc)
     populate_proposal(doc)
     
-    out_dir = r"toor_dal_optimization\deliverables"
+    out_dir = r"deliverables"
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, "PHASE1_TOOR_DAL_DIAGNOSTIC_RND_PROPOSAL_REV_V10.docx")
     doc.save(out_path)
     print(f"Successfully generated proposal DOCX: {out_path}")
     
-    # Also save to root deliverables/ for direct convenience
-    root_out = r"deliverables\PHASE1_TOOR_DAL_DIAGNOSTIC_RND_PROPOSAL_REV_V10.docx"
-    doc.save(root_out)
-    print(f"Successfully saved copy to: {root_out}")
+    # Also save to toor_dal_optimization/deliverables/
+    td_dir = r"toor_dal_optimization\deliverables"
+    os.makedirs(td_dir, exist_ok=True)
+    td_path = os.path.join(td_dir, "PHASE1_TOOR_DAL_DIAGNOSTIC_RND_PROPOSAL_REV_V10.docx")
+    doc.save(td_path)
+    print(f"Successfully saved copy to: {td_path}")
+    
+    # Also save to root Final_Proposal.docx
+    final_path = "Final_Proposal.docx"
+    doc.save(final_path)
+    print(f"Successfully saved copy to: {final_path}")
 
 if __name__ == "__main__":
     main()

@@ -1,8 +1,8 @@
 # V10 Source SOW Section-by-Section Traceability Matrix
 **Project Reference:** FNQ-PR-2026-001 | Phase 1 Diagnostic R&D Proposal  
 **Lead Process Engineer:** Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)  
-**Academic Guidance:** Dr. Archisman Ray (IIT Kharagpur)  
-**Client Entity:** Harakutir (53, Pathuriaghata Street, Kolkata – 700006)  
+**Academic Guidance:** Technical Advisory Panel  
+**Client Entity:** Client Organization (53, Pathuriaghata Street, Kolkata – 700006)  
 **Document Ref:** FNQ-V10-TRC-001  
 **Date:** 19-10-2026  
 **Git Branch:** `v10-phase1-proposal-reconciliation`  
@@ -52,7 +52,7 @@ This matrix proves 100% substantive concordance between the 36 numbered sections
 | **32** | Study Limitations | Section 4 & Section 15 | Preserved: Diagnostic scope, specific lot limitation, no commercial guarantees. |
 | **33** | Phase 1 Success Definition | Section 4 | Preserved: Evidence quality, reproducible comparative baseline, root-cause prioritization. |
 | **34** | Proposed Phase 2 Direction | Section 10 & Section 17 | Preserved: Gated future screening, formulation optimization, kinetics, pilot scale-up. |
-| **35** | Project Contact — Harakutir | Cover & Section 18 | Preserved: Dr. Archisman Ray, 53 Pathuriaghata St, Kolkata – 700006. |
+| **35** | Project Contact — Client Organization | Cover & Section 18 | Preserved: Technical Advisory Panel, 53 Pathuriaghata St, Kolkata – 700006. |
 | **36** | Final Technical Statement | Section 4 & Section 18 | Preserved: Commitment to first-principles scientific integrity and diagnostic rigor. |
 
 ---

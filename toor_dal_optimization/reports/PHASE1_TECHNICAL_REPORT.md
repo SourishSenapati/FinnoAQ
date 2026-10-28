@@ -1,9 +1,9 @@
 # Comparative R&D Study of Tanzanian Toor Dal vs. Indian Benchmark Toor Dal
 ## Phase 1 Final Technical R&D Diagnostic Report
 
-**Date:** 16 October 2026  
-**Prepared for:** Harakutir  
-**Project Contact:** Dr. Archisman Ray  
+**Date:** 28 October 2026  
+**Prepared for:** FinnoaQ  
+**Project Contact:** Technical Advisory Panel  
 **Location:** Kolkata, West Bengal, India  
 **Report Status:** `DATA_READINESS_ONLY / COMPUTATIONAL_FRAMEWORK_VERIFIED`  
 

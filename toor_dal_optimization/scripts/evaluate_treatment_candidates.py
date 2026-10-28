@@ -1,6 +1,6 @@
 """
-Harakutir Autonomous Treatment Candidate Multi-Objective Pareto Optimizer.
-Governing Standard: Harakutir Omega Persistent Autonomous R&D Constitution.
+Client Organization Autonomous Treatment Candidate Multi-Objective Pareto Optimizer.
+Governing Standard: Client Organization Omega Persistent Autonomous R&D Constitution.
 
 Systematically evaluates 10 treatment candidates across the full processing lifecycle:
 Stage A (conditioning) -> Stage B (drainage/rinse) -> Stage C (cooking) -> Stage D (fluid-bed drying).
@@ -16,8 +16,8 @@ import numpy as np
 # Add project root to sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from src.harakutir.process_chemistry import SequentialProcessChemistryEngine
-from src.harakutir.drying_model import PulseFluidBedDryingModel
+from src.finnoaq.process_chemistry import SequentialProcessChemistryEngine
+from src.finnoaq.drying_model import PulseFluidBedDryingModel
 
 
 def run_treatment_evaluation_matrix():

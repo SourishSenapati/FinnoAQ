@@ -1,0 +1,446 @@
+[
+  {
+    "param_id": "PAR-A01",
+    "module": "Module_A",
+    "symbol": "H_Indian",
+    "name": "Indian Latur Split Half-Thickness",
+    "value": 0.000925,
+    "units": "m",
+    "bounds": [
+      0.0008,
+      0.00105
+    ],
+    "distribution": "Normal(0.925e-3, 0.05e-3)",
+    "source_id": "SRC-PIGEON-13",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "DIRECTLY_MEASURABLE_CALIPER"
+  },
+  {
+    "param_id": "PAR-A02",
+    "module": "Module_A",
+    "symbol": "H_Tanzanian",
+    "name": "Tanzanian ICEAP Split Half-Thickness",
+    "value": 0.0011,
+    "units": "m",
+    "bounds": [
+      0.00085,
+      0.00135
+    ],
+    "distribution": "Normal(1.10e-3, 0.09e-3)",
+    "source_id": "SRC-PIGEON-07",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "DIRECTLY_MEASURABLE_CALIPER"
+  },
+  {
+    "param_id": "PAR-A03",
+    "module": "Module_A",
+    "symbol": "R_eq",
+    "name": "Split Cotyledon Equivalent Radius",
+    "value": 0.0024,
+    "units": "m",
+    "bounds": [
+      0.002,
+      0.0029
+    ],
+    "distribution": "Normal(2.40e-3, 0.18e-3)",
+    "source_id": "SRC-PIGEON-13",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "DIRECTLY_MEASURABLE_CALIPER"
+  },
+  {
+    "param_id": "PAR-A04",
+    "module": "Module_A",
+    "symbol": "Ca_bound_Indian",
+    "name": "Indian Fresh Reference Bound Calcium",
+    "value": 12.8,
+    "units": "mol/m^3",
+    "bounds": [
+      9.0,
+      18.0
+    ],
+    "distribution": "LogNormal(12.8, 0.15)",
+    "source_id": "SRC-PIGEON-09",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "LATENT_BIOCHEMICAL_ICP_OES"
+  },
+  {
+    "param_id": "PAR-A05",
+    "module": "Module_A",
+    "symbol": "Ca_bound_Tanzanian",
+    "name": "Aged Tanzanian Bound Calcium",
+    "value": 35.37,
+    "units": "mol/m^3",
+    "bounds": [
+      20.0,
+      48.0
+    ],
+    "distribution": "Uniform(22.0, 44.0)",
+    "source_id": "SRC-PIGEON-09",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "LATENT_BIOCHEMICAL_ICP_OES"
+  },
+  {
+    "param_id": "PAR-A06",
+    "module": "Module_A",
+    "symbol": "epsilon_pore",
+    "name": "Dry Split Cotyledon Open Intercellular Porosity",
+    "value": 0.115,
+    "units": "m^3/m^3",
+    "bounds": [
+      0.08,
+      0.15
+    ],
+    "distribution": "Uniform(0.08, 0.15)",
+    "source_id": "SRC-PIGEON-13",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "PYCNOMETRY_MEASURABLE"
+  },
+  {
+    "param_id": "PAR-A07",
+    "module": "Module_A",
+    "symbol": "DE_pectin_aged",
+    "name": "Pectin Degree of Esterification (Aged HTC Lot)",
+    "value": 0.28,
+    "units": "fraction",
+    "bounds": [
+      0.18,
+      0.45
+    ],
+    "distribution": "Normal(0.28, 0.05)",
+    "source_id": "SRC-ANCHOR-04",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "LATENT_FTIR_TITRIMETRIC"
+  },
+  {
+    "param_id": "PAR-B01",
+    "module": "Module_B",
+    "symbol": "D_w_ref_25C",
+    "name": "Effective Water Diffusivity in Cotyledon at 25°C",
+    "value": 1.85e-10,
+    "units": "m^2/s",
+    "bounds": [
+      1.1e-10,
+      2.8e-10
+    ],
+    "distribution": "LogNormal(1.85e-10, 0.18)",
+    "source_id": "SRC-PIGEON-10",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "GRAVIMETRIC_CURVE_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-B02",
+    "module": "Module_B",
+    "symbol": "E_a_water",
+    "name": "Activation Energy for Water Diffusion",
+    "value": 24500.0,
+    "units": "J/mol",
+    "bounds": [
+      19000.0,
+      31000.0
+    ],
+    "distribution": "Normal(24500.0, 2000.0)",
+    "source_id": "SRC-PIGEON-10",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "MULTI_TEMP_HYDRATION_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-B03",
+    "module": "Module_B",
+    "symbol": "D_cit_ref_25C",
+    "name": "Effective Citrate/Chelant Diffusivity in Hydrated Cotyledon at 25°C",
+    "value": 1.35e-10,
+    "units": "m^2/s",
+    "bounds": [
+      8e-11,
+      2.1e-10
+    ],
+    "distribution": "LogNormal(1.35e-10, 0.20)",
+    "source_id": "SRC-PIGEON-10",
+    "evidence_tag": "MODEL_DERIVED",
+    "identifiability": "JOINTLY_IDENTIFIABLE_WITH_K_CHEL"
+  },
+  {
+    "param_id": "PAR-B04",
+    "module": "Module_B",
+    "symbol": "Bi_m",
+    "name": "Surface Mass Transfer Biot Number (Agitated vs Static Bath)",
+    "value": 18.0,
+    "units": "dimensionless",
+    "bounds": [
+      5.0,
+      50.0
+    ],
+    "distribution": "Uniform(8.0, 35.0)",
+    "source_id": "SRC-COMP-20",
+    "evidence_tag": "CALCULATED",
+    "identifiability": "AGITATION_DEPENDENT"
+  },
+  {
+    "param_id": "PAR-B05",
+    "module": "Module_B",
+    "symbol": "alpha_UAE_17WL",
+    "name": "Ultrasound (17 W/L, 40 kHz) Effective Mass-Transfer Enhancement Factor on Splits",
+    "value": 1.35,
+    "units": "dimensionless",
+    "bounds": [
+      1.15,
+      1.65
+    ],
+    "distribution": "Normal(1.35, 0.10)",
+    "source_id": "SRC-ANCHOR-02",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "PAIRED_UAE_SOAK_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-C01",
+    "module": "Module_C",
+    "symbol": "T_cook_2bar",
+    "name": "Indian Pressure Cooker Saturated Steam Temperature (2.0 bar abs)",
+    "value": 120.2,
+    "units": "degC",
+    "bounds": [
+      117.0,
+      122.0
+    ],
+    "distribution": "Normal(120.2, 0.8)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "CALCULATED",
+    "identifiability": "THERMOCOUPLE_VERIFIABLE"
+  },
+  {
+    "param_id": "PAR-C02",
+    "module": "Module_C",
+    "symbol": "t_heatup_whistle1",
+    "name": "Sensible Heat-Up + First Whistle Steam Accumulation Time",
+    "value": 240.0,
+    "units": "s",
+    "bounds": [
+      195.0,
+      300.0
+    ],
+    "distribution": "Normal(240.0, 22.0)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "CALCULATED",
+    "identifiability": "BURNER_POWER_DEPENDENT"
+  },
+  {
+    "param_id": "PAR-C03",
+    "module": "Module_C",
+    "symbol": "dt_whistle",
+    "name": "Inter-Whistle Cycle Interval at 1.4 kW Burner Input",
+    "value": 75.0,
+    "units": "s/whistle",
+    "bounds": [
+      55.0,
+      95.0
+    ],
+    "distribution": "Normal(75.0, 8.0)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "CALCULATED",
+    "identifiability": "BURNER_POWER_DEPENDENT"
+  },
+  {
+    "param_id": "PAR-C04",
+    "module": "Module_C",
+    "symbol": "k_soft_120C_ref",
+    "name": "Baseline Softening Rate Constant at 120°C (Good Cooking Dal)",
+    "value": 0.0033,
+    "units": "1/s",
+    "bounds": [
+      0.0024,
+      0.0042
+    ],
+    "distribution": "Normal(3.30e-3, 0.35e-3)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "TEXTURE_ANALYZER_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-C05",
+    "module": "Module_C",
+    "symbol": "E_a_soft",
+    "name": "Activation Energy for Thermal Cotyledon Softening",
+    "value": 67300.0,
+    "units": "J/mol",
+    "bounds": [
+      58000.0,
+      76000.0
+    ],
+    "distribution": "Normal(67300.0, 3500.0)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "MULTI_TEMP_COOKING_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-C06",
+    "module": "Module_C",
+    "symbol": "F_WB_accept",
+    "name": "Objective Warner-Bratzler / Ottawa Kramer Acceptable Tenderness Threshold",
+    "value": 18.0,
+    "units": "N",
+    "bounds": [
+      15.0,
+      20.0
+    ],
+    "distribution": "Fixed(18.0)",
+    "source_id": "SRC-PIGEON-08",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "SPECIFICATION_LIMIT"
+  },
+  {
+    "param_id": "PAR-D01",
+    "module": "Module_D",
+    "symbol": "pKa_cit_25C",
+    "name": "Citric Acid Thermodynamic Dissociation Constants (pKa1, pKa2, pKa3)",
+    "value": [
+      3.13,
+      4.76,
+      6.4
+    ],
+    "units": "-log10(M)",
+    "bounds": [
+      [
+        3.05,
+        4.65,
+        6.25
+      ],
+      [
+        3.2,
+        4.85,
+        6.55
+      ]
+    ],
+    "distribution": "Fixed_NIST",
+    "source_id": "SRC-CHEM-14",
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "identifiability": "EXACT_THERMODYNAMIC"
+  },
+  {
+    "param_id": "PAR-D02",
+    "module": "Module_D",
+    "symbol": "logK_CaCit",
+    "name": "Calcium-Citrate3- Stability Constant log10(K_ML) at I=0",
+    "value": 4.68,
+    "units": "log10(L/mol)",
+    "bounds": [
+      4.45,
+      4.85
+    ],
+    "distribution": "Normal(4.68, 0.08)",
+    "source_id": "SRC-CHEM-14",
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "identifiability": "EXACT_THERMODYNAMIC"
+  },
+  {
+    "param_id": "PAR-D03",
+    "module": "Module_D",
+    "symbol": "k_chel_55C",
+    "name": "Second-Order Pectate Ca2+ Ligand-Exchange Rate Constant at 55°C",
+    "value": 0.000165,
+    "units": "m^3/(mol*s)",
+    "bounds": [
+      9e-05,
+      0.00026
+    ],
+    "distribution": "LogNormal(1.65e-4, 0.22)",
+    "source_id": "SRC-ANCHOR-04",
+    "evidence_tag": "MODEL_DERIVED",
+    "identifiability": "REQUIRES_PAIRED_SOAK_ICP_DATA"
+  },
+  {
+    "param_id": "PAR-E01",
+    "module": "Module_E",
+    "symbol": "V_film",
+    "name": "External Adhered Liquid Film Volume per kg Drained Dal",
+    "value": 0.045,
+    "units": "L/kg",
+    "bounds": [
+      0.03,
+      0.065
+    ],
+    "distribution": "Normal(0.045, 0.007)",
+    "source_id": "SRC-REG-19",
+    "evidence_tag": "CALCULATED",
+    "identifiability": "CENTRIFUGE_DRAIN_MEASURABLE"
+  },
+  {
+    "param_id": "PAR-E02",
+    "module": "Module_E",
+    "symbol": "k_wash_spray",
+    "name": "High-Pressure Dual-Nozzle Spray Film Displacement Constant",
+    "value": 0.36,
+    "units": "1/s",
+    "bounds": [
+      0.22,
+      0.5
+    ],
+    "distribution": "Normal(0.36, 0.05)",
+    "source_id": "SRC-COMP-20",
+    "evidence_tag": "MODEL_DERIVED",
+    "identifiability": "CONDUCTIVITY_WASHOUT_IDENTIFIABLE"
+  },
+  {
+    "param_id": "PAR-F01",
+    "module": "Module_F",
+    "symbol": "C_thresh_bicarb_dry",
+    "name": "Strict Dry-Dal Bicarbonate/Carbonate Ceiling for Zero Detectable Soapy Note",
+    "value": 65.0,
+    "units": "mg/kg (ppm)",
+    "bounds": [
+      45.0,
+      120.0
+    ],
+    "distribution": "Normal(65.0, 12.0)",
+    "source_id": "SRC-FLAV-17",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "SENSORY_THRESHOLD_PANEL"
+  },
+  {
+    "param_id": "PAR-F02",
+    "module": "Module_F",
+    "symbol": "Delta_TOST_hedonic",
+    "name": "TOST Consumer Hedonic Equivalence Margin (9-Point Scale)",
+    "value": 0.75,
+    "units": "hedonic_points",
+    "bounds": [
+      0.5,
+      1.0
+    ],
+    "distribution": "Fixed(0.75)",
+    "source_id": "SRC-STAT-18",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "PROTOCOL_SPECIFICATION"
+  },
+  {
+    "param_id": "PAR-H01",
+    "module": "Module_H",
+    "symbol": "Q_plant_TPD",
+    "name": "Plant Nominal Finished Production Capacity",
+    "value": 15000.0,
+    "units": "kg/day",
+    "bounds": [
+      14500.0,
+      15500.0
+    ],
+    "distribution": "Fixed(15000.0)",
+    "source_id": "SRC-REG-19",
+    "evidence_tag": "OFFICIAL_SOURCE",
+    "identifiability": "DESIGN_BASIS"
+  },
+  {
+    "param_id": "PAR-H02",
+    "module": "Module_H",
+    "symbol": "sigma_yield_cotyledon",
+    "name": "Split Cotyledon Tensile Fissure Yield Limit (RAEBYES Guard <= 2.0 MPa)",
+    "value": 1650000.0,
+    "units": "Pa",
+    "bounds": [
+      1400000.0,
+      1950000.0
+    ],
+    "distribution": "Normal(1.65e6, 0.12e6)",
+    "source_id": "SRC-PIGEON-13",
+    "evidence_tag": "LITERATURE_SUPPORTED",
+    "identifiability": "INSTRON_RUPTURE_MEASURABLE"
+  }
+]

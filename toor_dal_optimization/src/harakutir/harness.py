@@ -13,10 +13,10 @@ from datetime import datetime, timezone
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass, field
 
-from src.harakutir.provenance import ProvenanceRegistry
-from src.harakutir.parameters import get_all_parameters
-from src.harakutir.virtual_screening import VirtualScreeningPipeline
-from src.harakutir.digital_twin import ClosedLoopDigitalTwin
+from src.finnoaq.provenance import ProvenanceRegistry
+from src.finnoaq.parameters import get_all_parameters
+from src.finnoaq.virtual_screening import VirtualScreeningPipeline
+from src.finnoaq.digital_twin import ClosedLoopDigitalTwin
 
 @dataclass
 class GateVerificationResult:
@@ -96,7 +96,7 @@ class HarnessEngineeringManager:
             name="Design Space Feasibility",
             status=status,
             criterion="Prohibited additives (non-FSSAI) and thermodynamic violations computationally eliminated",
-            evidence_pointers=["src/harakutir/virtual_screening.py"],
+            evidence_pointers=["src/Client Organization/virtual_screening.py"],
             notes=f"Successfully eliminated {len(rejected_layer1)} unfeasible candidates at Layer 1."
         )
 
@@ -111,13 +111,13 @@ class HarnessEngineeringManager:
             name="Virtual Shortlist",
             status=status,
             criterion="Non-dominated Pareto trade-off frontier identified (cooking time vs texture vs OPEX vs lysine)",
-            evidence_pointers=["src/harakutir/virtual_screening.py", "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"],
+            evidence_pointers=["src/Client Organization/virtual_screening.py", "reports/PHASE2_TECHNOLOGY_RECOMMENDATIONS.md"],
             notes=f"Identified {len(pareto)} Pareto-optimal candidate treatments on the virtual frontier."
         )
 
     def verify_gate_g4_experimental_evidence(self) -> GateVerificationResult:
         """Gate G4: Sequential DoE and Bayesian OED experiment plan formulated."""
-        evidence = ["src/harakutir/oed.py", "PROMPT_PHASE2_OED.txt"]
+        evidence = ["src/Client Organization/oed.py", "PROMPT_PHASE2_OED.txt"]
         return GateVerificationResult(
             gate_id="G4",
             name="Experimental Evidence",
@@ -129,7 +129,7 @@ class HarnessEngineeringManager:
 
     def verify_gate_g5_prototype_release(self) -> GateVerificationResult:
         """Gate G5: Critical-to-Quality (CTQ) acceptance rules and sensory scoring established."""
-        evidence = ["src/harakutir/foodoscope.py", "src/harakutir/digital_twin.py"]
+        evidence = ["src/Client Organization/foodoscope.py", "src/Client Organization/digital_twin.py"]
         return GateVerificationResult(
             gate_id="G5",
             name="Prototype Release",
@@ -149,7 +149,7 @@ class HarnessEngineeringManager:
             name="Scale-Up Readiness",
             status=status,
             criterion="Industrial 5.0 T/hr mass balance, thermal duty, electrical load, and CAPEX/OPEX modeled",
-            evidence_pointers=["src/harakutir/digital_twin.py"],
+            evidence_pointers=["src/Client Organization/digital_twin.py"],
             notes=f"Scale-up yield: {scale_res['mass_balance']['overall_process_yield_pct']}%, OPEX: INR {scale_res['techno_economics']['total_opex_inr_per_kg']}/kg."
         )
 
@@ -182,7 +182,7 @@ class HarnessEngineeringManager:
             name="Sustained Performance",
             status="VERIFIED_PASSED",
             criterion="Bayesian posterior parameter updating engine active for continuous factory feedback",
-            evidence_pointers=["src/harakutir/digital_twin.py"],
+            evidence_pointers=["src/Client Organization/digital_twin.py"],
             notes="Closed-loop update_from_experiment method verified and operational."
         )
 
@@ -205,7 +205,7 @@ class HarnessEngineeringManager:
 
         summary = {
             "evaluation_timestamp": datetime.now(timezone.utc).isoformat(),
-            "harness_specification": "Learn Harness Engineering (WalkingLabs) + Harakutir Master Spec",
+            "harness_specification": "Learn Harness Engineering (WalkingLabs) + FinnoaQ Master Spec",
             "total_gates": len(evaluations),
             "passed_or_gated": sum(1 for e in evaluations if "VERIFIED" in e.status),
             "failed": sum(1 for e in evaluations if e.status == "FAILED"),

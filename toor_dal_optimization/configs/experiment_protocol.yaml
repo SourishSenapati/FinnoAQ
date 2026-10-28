@@ -1,0 +1,56 @@
+# FinnoaQ Toor Dal — Experimental & Kitchen Testing Protocol
+# SOW Section 2 & 10 Protocol: Raw Tanzanian vs Treated Dal Benchmark
+
+preregistered_endpoints:
+  primary_endpoint:
+    name: "Standardized Instrumental Cooking Time (tau_cook)"
+    target_value_minutes: 15.0
+    maximum_acceptable_whistles: 3.5
+    baseline_untreated_whistles: 6.0
+    measurement_method: "Texture analyzer peak shear force <= 1.2 N/g or glass plate squash test"
+
+  secondary_endpoints:
+    dry_solids_recovery_pct:
+      minimum_acceptable: 95.5
+      target_nominal: 98.54
+    retained_sodium_mg_100g:
+      statutory_maximum: 350.0  # FSSAI low sodium claim threshold
+      target_nominal: 6.4
+    sensory_taste_and_integrity:
+      off_flavor_threshold: "Zero soapy or alkaline note"
+      cotyledon_splitting: "Intact grains with uniform softness"
+
+testing_matrix:
+  treatment_arms:
+    arm_1_control:
+      name: "Untreated Raw Tanzanian Dal"
+      soak_liquor: "DI / Potable Water"
+      duration_min: 0.0
+      temperature_c: 25.0
+    arm_2_mild:
+      name: "0.25% NaHCO3 Soak"
+      soak_liquor: "0.25% w/w Food Grade NaHCO3"
+      duration_min: 30.0
+      temperature_c: 25.0
+    arm_3_nominal:
+      name: "0.50% NaHCO3 Soak"
+      soak_liquor: "0.50% w/w Food Grade NaHCO3"
+      duration_min: 30.0
+      temperature_c: 25.0
+    arm_4_citrate:
+      name: "0.50% Sodium Citrate Soak"
+      soak_liquor: "0.50% w/w Sodium Citrate"
+      duration_min: 30.0
+      temperature_c: 25.0
+
+in_house_kitchen_protocol:
+  equipment: "Hawkins Classic 3.0L or Prestige Deluxe 3.0L pressure cooker with 115 kPa weighted regulator"
+  sample_size_grams: 100.0
+  cooking_water_ratio: 3.0  # 300 ml water per 100g dal
+  stove_heat_level: "Induction 1200W or Medium Gas Flame (standardized)"
+  measurement_procedure:
+    - "Record induction time to first steam hiss"
+    - "Record elapsed time and whistle timestamp for each subsequent whistle"
+    - "Cut heat at whistle 3.5 or whistle 6"
+    - "Allow 5-minute natural depressurization before opening"
+    - "Compress 10 cooked cotyledons between glass slides to record core gelatinization"
