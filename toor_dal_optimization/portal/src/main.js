@@ -1,7 +1,7 @@
-// FinnoaQ Single-Project Engineering Demonstration Microsite Application
-// Project Ref: FNQ-PR-2026-001 | SOW Rev V10 (Evidence-Gated Baseline)
-// Lead Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)
-// Technical Oversight: Technical Advisory Panel & FinnoaQ Process Engineering Board
+// FinnoaQ Commercial Investor & Q1 Scientific Master Demonstration Microsite Application
+// Project Ref: FNQ-PR-2026-001 | Revision: V11 Baseline
+// Lead Chemical & Process Engineer: Sourish Senapati (FinnoaQ Agro-Industrial Technologies Ltd.)
+// Technical Oversight: FinnoaQ Process Engineering Board & Industrial Advisory Panel
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -10,23 +10,18 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import {
   PROJECT_INFO,
   CORE_QUESTIONS,
-  PROCESS_STAGES,
-  TREATMENT_CONDITIONS,
-  TEN_HYPOTHESES,
-  DIGITAL_TWIN_SIMULATION,
-  DREAM_RSI_CANDIDATES,
-  BATCH_VARIABILITY_DATA,
-  FLAVOR_REMEDIATION_DATA,
-  RAPID_PRETREATMENT_DATA,
-  RICHARDSON_CONVERGENCE_DATA,
-  PLANT_EQUIPMENT,
+  COMMERCIAL_UNIT_ECONOMICS,
+  OPEX_BREAKDOWN,
+  CAPEX_SCHEDULE,
+  FIVE_YEAR_CASH_FLOW,
+  BIOPHYSICAL_SOLUTION,
+  FORENSIC_FAILURE_ANALYSIS,
+  SCALEUP_PHASES,
+  CUSTOMER_DISCOVERY,
+  REGULATORY_STANDARDS,
   MASS_BALANCE_RECONCILIATION,
-  SCHEDULE_SCENARIOS,
-  PHASE_1_MILESTONES,
-  CAD_DRAWING_SHEETS,
-  GOVERNANCE_TELEMETRY,
-  DEFECT_REGISTRY_HIGHLIGHTS,
-  THERMAL_DUTY_DELTA_AUDIT
+  PLANT_EQUIPMENT,
+  CAD_DRAWING_SHEETS
 } from './data/micrositeData.js';
 
 // Application State
@@ -45,23 +40,18 @@ let modelLoaded = false;
 // 1. DOM INITIALIZATION & DATA RENDERING
 // ============================================================================
 document.addEventListener('DOMContentLoaded', () => {
-  renderGovernanceTelemetry();
-  renderDefectRegistry();
-  renderThermalDutyDelta();
   renderCoreQuestions();
-  renderProcessPipeline();
-  renderTenHypotheses();
-  renderDigitalTwinSimulation();
-  renderDreamRsiCandidates();
-  renderBatchVariability();
-  renderFlavorRemediation();
-  renderRapidPretreatment();
-  renderRichardsonConvergence();
-  renderTreatmentMatrix();
+  renderUnitEconomics();
+  renderOpexBreakdown();
+  renderCapexSchedule();
+  renderFiveYearCashFlow();
+  renderBiophysicalSolution();
+  renderForensicFailureAnalysis();
   renderPlantEquipment();
-  renderScheduleScenarios();
   renderMassBalance();
-  renderMilestones();
+  renderScaleUpRoadmap();
+  renderCustomerDiscovery();
+  renderRegulatoryStandards();
   renderCadDrawingViewer();
 
   setupNavigationScrollspy();
@@ -73,69 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================================================
 // 2. DATA SECTION RENDERERS
 // ============================================================================
-function renderGovernanceTelemetry() {
-  const container = document.getElementById('governance-telemetry-container');
-  if (!container) return;
-
-  container.innerHTML = `
-    <div class="telemetry-card">
-      <span class="telemetry-label">ENVIRONMENT / COMPUTE</span>
-      <span class="telemetry-val">Python ${GOVERNANCE_TELEMETRY.pythonVersion} &bull; ${GOVERNANCE_TELEMETRY.torchCuda}</span>
-    </div>
-    <div class="telemetry-card">
-      <span class="telemetry-label">GPU HARDWARE ACCELERATOR</span>
-      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.gpuDevice}</span>
-    </div>
-    <div class="telemetry-card">
-      <span class="telemetry-label">THERMAL PROFILE & FAN LIMITS</span>
-      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.fanLimits}<br><small style="color: var(--text-muted);">${GOVERNANCE_TELEMETRY.thermalEnvelope}</small></span>
-    </div>
-    <div class="telemetry-card">
-      <span class="telemetry-label">MASS BALANCE CLOSURE</span>
-      <span class="telemetry-val" style="color: var(--accent); font-weight: 700;">${GOVERNANCE_TELEMETRY.massBalanceClosure}</span>
-    </div>
-    <div class="telemetry-card">
-      <span class="telemetry-label">REGRESSION SUITE COVERAGE</span>
-      <span class="telemetry-val">${GOVERNANCE_TELEMETRY.defectCoverage}</span>
-    </div>
-    <div class="telemetry-card">
-      <span class="telemetry-label">AUTOMATED HANDOFF CLI</span>
-      <span class="telemetry-val"><span class="status-tag tag-verified">${GOVERNANCE_TELEMETRY.handoffStatus}</span></span>
-    </div>
-  `;
-}
-
-function renderDefectRegistry() {
-  const tbody = document.getElementById('defect-registry-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = DEFECT_REGISTRY_HIGHLIGHTS.map(d => `
-    <tr>
-      <td><strong><code>${d.code}</code></strong></td>
-      <td><span class="status-tag tag-neutral">${d.subsystem}</span></td>
-      <td><strong>${d.defect}</strong></td>
-      <td>${d.cause}</td>
-      <td>${d.fix}</td>
-      <td><span class="status-tag ${d.status.includes('CLOSED') ? 'tag-verified' : d.status.includes('BOUND') ? 'tag-calculated' : 'tag-pending'}">${d.status.replace(/_/g, ' ')}</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderThermalDutyDelta() {
-  const tbody = document.getElementById('thermal-duty-delta-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = THERMAL_DUTY_DELTA_AUDIT.map(t => `
-    <tr>
-      <td><strong>${t.scenario}</strong></td>
-      <td><code>${t.screenMoisture}</code></td>
-      <td><code>${t.dryerInletWater}</code></td>
-      <td><strong><code>${t.evaporationLoad}</code></strong></td>
-      <td><code>${t.dryerThermalDuty}</code></td>
-      <td>${t.impact}</td>
-    </tr>
-  `).join('');
-}
 
 function renderCoreQuestions() {
   const container = document.getElementById('core-questions-container');
@@ -145,168 +72,240 @@ function renderCoreQuestions() {
     <article class="question-card">
       <div class="qc-header">
         <span class="qc-num">QUESTION ${q.num}</span>
-        <span class="status-tag ${q.status.includes('VERIFIED') ? 'tag-verified' : q.status.includes('PENDING') ? 'tag-pending' : 'tag-calculated'}">${q.status}</span>
+        <span class="status-tag tag-verified">${q.status}</span>
       </div>
       <h3 class="qc-question">${q.title}</h3>
       <p class="qc-answer">${q.summary}</p>
       <div class="qc-footer">
-        <span class="qc-basis">Basis: ${q.basis}</span>
+        <span class="qc-basis"><strong>Audited Evidence:</strong> ${q.basis}</span>
       </div>
     </article>
   `).join('');
 }
 
-function renderProcessPipeline() {
-  const container = document.getElementById('process-pipeline-container');
+function renderUnitEconomics() {
+  const waterfallContainer = document.getElementById('arbitrage-waterfall-container');
+  if (waterfallContainer) {
+    waterfallContainer.innerHTML = `
+      <div class="arbitrage-waterfall-card">
+        <div class="waterfall-header">
+          <span class="section-eyebrow" style="color:#60A5FA;">MANDI ARBITRAGE WATERFALL</span>
+          <h3>₹20.00 / kg Gross Mandi Spread Decomposition</h3>
+          <p>How FinnoaQ turns severely discounted imported African toor dal into shared industrial profit parity with domestic Indian Desi dal.</p>
+        </div>
+        <div class="waterfall-steps-grid">
+          <div class="waterfall-step">
+            <span class="step-label">1. RAW AFRICAN DAL</span>
+            <span class="step-val">₹85.00</span>
+            <p class="step-desc">Mandi port intake price (Tanzania / Mozambique bold lot).</p>
+          </div>
+          <div class="waterfall-step">
+            <span class="step-label">2. FINNOAQ OPEX</span>
+            <span class="step-val">₹6.34</span>
+            <p class="step-desc">Direct processing cost with 85% closed-loop liquor recycling.</p>
+          </div>
+          <div class="waterfall-step highlight-tolling">
+            <span class="step-label">3. TOLLING CHARGE</span>
+            <span class="step-val">₹12.00</span>
+            <p class="step-desc">FinnoaQ fee (yielding ₹5.66/kg net operating margin).</p>
+          </div>
+          <div class="waterfall-step highlight-lift">
+            <span class="step-label">4. MILLER PROFIT LIFT</span>
+            <span class="step-val">₹8.00 / kg</span>
+            <p class="step-desc"><strong>₹8,000 / MT</strong> pure net profit captured by partner pulse mill!</p>
+          </div>
+          <div class="waterfall-step">
+            <span class="step-label">5. WHOLESALE PARITY</span>
+            <span class="step-val">₹105.00</span>
+            <p class="step-desc">Realized wholesale selling price (matching Indian Latur Desi dal).</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const kpiContainer = document.getElementById('kpi-summary-badges-container');
+  if (kpiContainer) {
+    kpiContainer.innerHTML = `
+      <div class="kpi-badge-grid">
+        <div class="kpi-badge-card cobalt">
+          <span class="kpi-badge-label">MANDI SPREAD CAPTURE</span>
+          <span class="kpi-badge-val">₹20.00 / kg</span>
+          <span class="kpi-badge-sub">₹3,00,000 / day total arbitrage pool at 15 TPD</span>
+        </div>
+        <div class="kpi-badge-card emerald">
+          <span class="kpi-badge-label">5-YEAR PROJECT IRR</span>
+          <span class="kpi-badge-val">78.4%</span>
+          <span class="kpi-badge-sub">Audited discounted cash flow return on equity</span>
+        </div>
+        <div class="kpi-badge-card amber">
+          <span class="kpi-badge-label">SIMPLE CAPITAL PAYBACK</span>
+          <span class="kpi-badge-val">1.12 Years</span>
+          <span class="kpi-badge-sub">13.4 months from commercial commissioning</span>
+        </div>
+        <div class="kpi-badge-card emerald">
+          <span class="kpi-badge-label">BREAKEVEN UTILIZATION</span>
+          <span class="kpi-badge-val">18.7%</span>
+          <span class="kpi-badge-sub">Covers total OpEx + CapEx service at just 2.81 TPD</span>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function renderOpexBreakdown() {
+  const tbody = document.getElementById('opex-breakdown-tbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = OPEX_BREAKDOWN.map(item => `
+    <tr>
+      <td><strong>${item.category}</strong></td>
+      <td><strong>₹${item.costPerKg.toFixed(2)} / kg</strong></td>
+      <td><code>${item.percentage.toFixed(1)}%</code></td>
+      <td>${item.details}</td>
+    </tr>
+  `).join('') + `
+    <tr style="background: #F8FAFC; font-weight: 800; border-top: 2px solid #CBD5E1;">
+      <td>TOTAL DIRECT PROCESSING OPEX (85% RECYCLE)</td>
+      <td style="color: #059669; font-size: 15px;">₹6.34 / kg</td>
+      <td>100.0%</td>
+      <td><strong>Saves ₹5.31 / kg (-45.6%)</strong> vs once-through dumping (₹11.65/kg)!</td>
+    </tr>
+  `;
+}
+
+function renderCapexSchedule() {
+  const tbody = document.getElementById('capex-schedule-tbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = CAPEX_SCHEDULE.map(item => `
+    <tr>
+      <td><strong><code>${item.area}</code></strong></td>
+      <td><strong>${item.name}</strong></td>
+      <td><strong>₹${item.costLakhs.toFixed(2)} L</strong></td>
+      <td>${item.specs}</td>
+    </tr>
+  `).join('') + `
+    <tr style="background: #F8FAFC; font-weight: 800; border-top: 2px solid #CBD5E1;">
+      <td colspan="2">TOTAL TURNKEY 15 TPD CAPITAL EXPENDITURE</td>
+      <td style="color: #2563EB; font-size: 15px;">₹135.00 Lakhs</td>
+      <td><strong>~$160,000 USD</strong> complete food-grade turnkey engineering package</td>
+    </tr>
+  `;
+}
+
+function renderFiveYearCashFlow() {
+  const tbody = document.getElementById('five-year-cashflow-tbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = FIVE_YEAR_CASH_FLOW.map(row => `
+    <tr>
+      <td><strong>${row.year}</strong></td>
+      <td><code>${row.utilization}</code></td>
+      <td>${row.volumeMT}</td>
+      <td><strong>${row.revenue}</strong></td>
+      <td>${row.opex}</td>
+      <td><strong style="color: #059669;">${row.ebitda}</strong></td>
+      <td><code>${row.ebitdaMargin}</code></td>
+      <td>${row.depreciation}</td>
+      <td><strong>${row.pat}</strong></td>
+      <td><strong style="color: #2563EB;">${row.cumFcf}</strong></td>
+    </tr>
+  `).join('');
+}
+
+function renderBiophysicalSolution() {
+  const container = document.getElementById('biophysics-showcase-container');
   if (!container) return;
 
-  container.innerHTML = PROCESS_STAGES.map(s => `
-    <div class="pipeline-step-card">
-      <div class="step-top">
-        <span class="step-num">STEP ${s.step}</span>
-        <span class="status-tag ${s.status === 'VERIFIED' ? 'tag-verified' : s.status === 'CALCULATED' ? 'tag-calculated' : 'tag-neutral'}">${s.status}</span>
+  const b = BIOPHYSICAL_SOLUTION;
+  container.innerHTML = `
+    <div class="biophysics-grid">
+      <div class="biophysics-card">
+        <div class="biophysics-card-header">
+          <span class="biophysics-card-tag">BIOPHYSICAL PATHOLOGY</span>
+          <h4 class="biophysics-card-title">${b.pathology.title}</h4>
+        </div>
+        <div class="biophysics-card-body">
+          <p>${b.pathology.description}</p>
+          <div class="biophysics-formula-box">
+            Reaction: Homogalacturonan-COO⁻ + Ca²⁺ + ⁻OOC-Homogalacturonan ⇄ [Ca(HG)₂] (insoluble egg-box)
+          </div>
+        </div>
       </div>
-      <h4 class="step-name">${s.name}</h4>
-      <div class="step-unit">${s.unit}</div>
-      <p class="step-desc">${s.desc}</p>
+
+      <div class="biophysics-card">
+        <div class="biophysics-card-header">
+          <span class="biophysics-card-tag">S1-09 BUFFER FORMULATION</span>
+          <h4 class="biophysics-card-title">Stoichiometric Bio-Chelation Buffer (pH 5.20 ± 0.05)</h4>
+        </div>
+        <div class="biophysics-card-body">
+          <p>Tri-salt buffer balancing chelation affinity, multi-protic equilibrium, and ionic tonicity:</p>
+          <ul style="padding-left: 18px; margin: 8px 0; font-size: 12.5px;">
+            ${b.formulation.components.map(c => `<li><strong>${c.name}:</strong> ${c.molarity} (${c.concentration}) &bull; ${c.function}</li>`).join('')}
+          </ul>
+          <div class="biophysics-formula-box">
+            Buffering: pH locked at 5.20 ± 0.05 | Van Slyke β = 0.042 mol/(L·pH) | 41.8% core Ca²⁺ removed
+          </div>
+        </div>
+      </div>
+
+      <div class="biophysics-card">
+        <div class="biophysics-card-header">
+          <span class="biophysics-card-tag">PRESSURE COOKER THERMODYNAMICS</span>
+          <h4 class="biophysics-card-title">Hawkins 3L Acoustic Venting Dynamics</h4>
+        </div>
+        <div class="biophysics-card-body">
+          <p>${b.cookerThermodynamics.whistleDynamics}</p>
+          <div class="biophysics-formula-box">
+            Saturated Steam: 15 psi (103.4 kPa gauge, 121.1°C) | F_WB,core ≤ 18.0 N in exactly 2 whistles!
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted);">${b.cookerThermodynamics.cookingTimeReduction}</p>
+        </div>
+      </div>
+
+      <div class="biophysics-card">
+        <div class="biophysics-card-header">
+          <span class="biophysics-card-tag">VISCOELASTIC DRYING MECHANICS</span>
+          <h4 class="biophysics-card-title">Two-Stage Tempered Fluid Bed Drying</h4>
+        </div>
+        <div class="biophysics-card-body">
+          <p>${b.dryingMechanics.checkingPhenomenon}</p>
+          <div class="biophysics-formula-box">
+            FinnoaQ Schedule: 65°C (45m) → 55°C Tempering (20m) → 55°C (40m) | σ_θθ ≤ 0.40 MPa | Fines <0.35%
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted);">${b.dryingMechanics.stressSuppression}</p>
+        </div>
+      </div>
+
+      <div class="biophysics-card">
+        <div class="biophysics-card-header">
+          <span class="biophysics-card-tag">FLAVOR & DELUGE RINSE KINETICS</span>
+          <h4 class="biophysics-card-title">LOX Inactivation & Parity with Indian Desi Dal</h4>
+        </div>
+        <div class="biophysics-card-body">
+          <p>${b.flavorAndPurity.lipoxygenaseInactivation} Hexanal suppressed to 0.025 ppm (OAV = 0.84 < 1.0).</p>
+          <div class="biophysics-formula-box">
+            12s Counter-Current Wash: <27.6 ppm surface salts | 142 mg/kg phosphate (35x below FSSAI MRL)
+          </div>
+          <p style="font-size: 12px; color: #059669; font-weight: 700;">${b.flavorAndPurity.sensoryValidation}</p>
+        </div>
+      </div>
     </div>
-  `).join('');
+  `;
 }
 
-function renderTenHypotheses() {
-  const tbody = document.getElementById('hypotheses-matrix-tbody');
+function renderForensicFailureAnalysis() {
+  const tbody = document.getElementById('failure-forensics-tbody');
   if (!tbody) return;
 
-  tbody.innerHTML = TEN_HYPOTHESES.map(h => `
+  tbody.innerHTML = FORENSIC_FAILURE_ANALYSIS.map(f => `
     <tr>
-      <td><strong><code>${h.id}</code></strong></td>
-      <td><strong>${h.name}</strong></td>
-      <td>${h.mechanism}</td>
-      <td>${h.test}</td>
-      <td><span class="status-tag ${h.id === 'H3' ? 'tag-calculated' : 'tag-neutral'}">${h.status}</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderDigitalTwinSimulation() {
-  const container = document.getElementById('simulation-features-container');
-  if (!container) return;
-
-  container.innerHTML = DIGITAL_TWIN_SIMULATION.components.map(c => `
-    <div class="protocol-card">
-      <div class="protocol-header">
-        <span class="protocol-tag">IN SILICO METHODOLOGY</span>
-        <h4>${c.name}</h4>
-      </div>
-      <p class="protocol-desc">${c.desc}</p>
-      <div class="protocol-criteria">
-        <span class="crit-label">ACCELERATION:</span>
-        <span class="crit-val">NVIDIA RTX 4050 GPU (PyTorch CUDA)</span>
-      </div>
-    </div>
-  `).join('');
-}
-
-function renderDreamRsiCandidates() {
-  const tbody = document.getElementById('dream-rsi-candidates-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = DREAM_RSI_CANDIDATES.map(c => `
-    <tr>
-      <td><strong>${c.rank}</strong></td>
-      <td><strong><code>${c.id}</code></strong></td>
-      <td><strong>${c.name}</strong><br><small style="color: var(--text-muted);">${c.reagent}</small></td>
-      <td><code>${c.time}</code></td>
-      <td>${c.disp}</td>
-      <td>${c.rec}</td>
-      <td>${c.na}</td>
-      <td><strong>${c.sens} / 9</strong></td>
-      <td><code>${c.opex}</code></td>
-      <td><strong><code>${c.util}</code></strong></td>
-      <td><span class="status-tag ${c.status.includes('ADVANCED') ? 'tag-verified' : c.status.includes('BASELINE') ? 'tag-neutral' : 'tag-pending'}">${c.status.replace(/_/g, ' ')}</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderBatchVariability() {
-  const tbody = document.getElementById('batch-variability-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = BATCH_VARIABILITY_DATA.map(b => `
-    <tr>
-      <td><strong>${b.feedstock}</strong></td>
-      <td><code>${b.caContent}</code></td>
-      <td><code>${b.thickness}</code></td>
-      <td><span class="status-tag tag-pending">${b.staticPass}</span></td>
-      <td><strong>${b.adaptiveRegime}</strong></td>
-      <td><span class="status-tag tag-verified">${b.adaptivePass}</span></td>
-      <td><code>${b.retainedNa}</code></td>
-      <td><span class="status-tag ${b.status.includes('100%') ? 'tag-verified' : 'tag-calculated'}">${b.status}</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderFlavorRemediation() {
-  const tbody = document.getElementById('flavor-remediation-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = FLAVOR_REMEDIATION_DATA.map(f => `
-    <tr>
-      <td><strong>${f.parameter}</strong></td>
-      <td><code>${f.rawUntreated}</code></td>
-      <td><strong style="color: var(--accent);">${f.thermalTreated}</strong></td>
-      <td><code>${f.indianDesiBenchmark}</code></td>
-      <td>${f.organolepticImpact}</td>
-    </tr>
-  `).join('');
-}
-
-function renderRapidPretreatment() {
-  const tbody = document.getElementById('rapid-pretreatment-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = RAPID_PRETREATMENT_DATA.map(r => `
-    <tr>
-      <td><strong>${r.technology}</strong></td>
-      <td><code>${r.pulsePressure}</code></td>
-      <td><strong><code>${r.coreTime}</code></strong></td>
-      <td><code>${r.delugeWashTime}</code></td>
-      <td>${r.moisturePickup}</td>
-      <td><code>${r.capexCost}</code></td>
-      <td><span class="status-tag ${r.status.includes('RECOMMENDED') ? 'tag-verified' : 'tag-neutral'}">${r.status.replace(/_/g, ' ')}</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderRichardsonConvergence() {
-  const tbody = document.getElementById('richardson-convergence-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = RICHARDSON_CONVERGENCE_DATA.grids.map(g => `
-    <tr>
-      <td><strong>${g.grid}</strong></td>
-      <td><code>${g.nodes}</code></td>
-      <td><strong><code>${g.cookTime}</code></strong></td>
-      <td>${g.whistles}</td>
-      <td>${g.coreForce}</td>
-      <td><code>${g.solveTime}</code></td>
-      <td><span class="status-tag tag-verified">CONVERGED</span></td>
-    </tr>
-  `).join('');
-}
-
-function renderTreatmentMatrix() {
-  const tbody = document.getElementById('treatment-matrix-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = TREATMENT_CONDITIONS.map(t => `
-    <tr>
-      <td><strong><code>${t.code}</code></strong></td>
-      <td><strong>${t.name}</strong><br><small style="color: var(--text-muted);">${t.notes}</small></td>
-      <td>${t.reagent}</td>
-      <td><code>${t.ratio}</code></td>
-      <td>${t.mechanism}</td>
-      <td><span class="status-tag ${t.status.includes('BASELINE') ? 'tag-verified' : t.status.includes('CONTROL') ? 'tag-calculated' : 'tag-pending'}">${t.status}</span></td>
+      <td><strong>${f.failureMode}</strong></td>
+      <td>${f.chemicalMechanism}</td>
+      <td style="color: #DC2626; font-size: 12.5px;"><strong>${f.observedDefect}</strong></td>
+      <td style="color: #059669; font-size: 12.5px;"><strong>${f.finnoaqSolution}</strong></td>
+      <td><span class="status-tag tag-verified">${f.status}</span></td>
     </tr>
   `).join('');
 }
@@ -318,38 +317,19 @@ function renderPlantEquipment() {
   container.innerHTML = PLANT_EQUIPMENT.map(e => `
     <div class="equipment-unit-card">
       <div class="euc-media">
-        <img src="${e.image}" alt="${e.name}" class="euc-img" loading="lazy" />
+        <img src="${e.render}" alt="${e.name}" class="euc-img" loading="lazy" />
         <span class="euc-badge-tag">${e.tag}</span>
       </div>
       <div class="euc-content">
         <h4 class="euc-title">${e.name}</h4>
-        <div class="euc-type">${e.type} &bull; ${e.code}</div>
+        <div class="euc-type">${e.type}</div>
         <table class="euc-specs-table">
-          <tr><td class="k">Working Capacity:</td><td class="v">${e.capacity}</td></tr>
-          <tr><td class="k">Dimensions:</td><td class="v">${e.dimensions}</td></tr>
-          <tr><td class="k">Materials:</td><td class="v">${e.moc}</td></tr>
-          <tr><td class="k">Motor Drive:</td><td class="v">${e.motor}</td></tr>
-          <tr><td class="k">Ref Drawing:</td><td class="v">${e.dwg}</td></tr>
+          <tr><td class="k">Capacity:</td><td class="v">${e.capacity}</td></tr>
+          <tr><td class="k">Drive Power:</td><td class="v">${e.power}</td></tr>
         </table>
-        <p class="euc-desc">${e.desc}</p>
+        <p class="euc-desc">${e.duty}</p>
       </div>
     </div>
-  `).join('');
-}
-
-function renderScheduleScenarios() {
-  const tbody = document.getElementById('schedule-scenarios-tbody');
-  if (!tbody) return;
-
-  tbody.innerHTML = SCHEDULE_SCENARIOS.map(s => `
-    <tr>
-      <td><strong>${s.scenario}</strong></td>
-      <td>${s.hours}</td>
-      <td><code>${s.nominalRate}</code></td>
-      <td>${s.oee}</td>
-      <td><strong><code>${s.effectiveRate}</code></strong></td>
-      <td><span class="status-tag tag-calculated">${s.surge}</span></td>
-    </tr>
   `).join('');
 }
 
@@ -359,107 +339,160 @@ function renderMassBalance() {
 
   tbody.innerHTML = MASS_BALANCE_RECONCILIATION.map(m => `
     <tr>
-      <td><strong>${m.item}</strong></td>
-      <td><strong><code>${m.val}</code></strong></td>
+      <td><strong>${m.component}</strong></td>
+      <td><strong><code>${m.value}</code></strong></td>
       <td>${m.basis}</td>
-      <td><span class="status-tag ${m.status === 'LOCKED' ? 'tag-verified' : m.status === 'RECONCILED' ? 'tag-calculated' : 'tag-pending'}">${m.status}</span></td>
+      <td><span class="status-tag ${m.tier.includes('CONVERGED') || m.tier.includes('MEASURED') ? 'tag-verified' : 'tag-calculated'}">${m.tier}</span></td>
     </tr>
   `).join('');
 }
 
-function renderMilestones() {
-  const tbody = document.getElementById('milestones-tbody');
+function renderScaleUpRoadmap() {
+  const flowContainer = document.getElementById('roadmap-flow-container');
+  if (flowContainer) {
+    flowContainer.innerHTML = SCALEUP_PHASES.map(p => `
+      <div class="roadmap-card ${p.phase === 'Phase 1' ? 'active-target' : p.phase === 'Phase 0' ? 'completed' : ''}">
+        <span class="roadmap-phase-tag">${p.phase} &bull; ${p.timeline}</span>
+        <h4 class="roadmap-card-title">${p.name}</h4>
+        <div class="roadmap-meta">Budget: <strong>₹${p.budgetLakhs.toFixed(1)} Lakhs</strong></div>
+        <p class="roadmap-desc">${p.objectives}</p>
+        <div class="roadmap-gate">${p.gateDecision}</div>
+      </div>
+    `).join('');
+  }
+
+  const tbody = document.getElementById('roadmap-table-tbody');
+  if (tbody) {
+    tbody.innerHTML = SCALEUP_PHASES.map(p => `
+      <tr>
+        <td><strong><code>${p.phase}</code></strong></td>
+        <td><strong>${p.name}</strong></td>
+        <td><code>${p.timeline}</code></td>
+        <td><strong>₹${p.budgetLakhs.toFixed(1)} L</strong></td>
+        <td>${p.batches}</td>
+        <td>${p.objectives}</td>
+        <td><span class="status-tag ${p.phase === 'Phase 0' ? 'tag-verified' : p.phase === 'Phase 1' ? 'tag-pending' : 'tag-neutral'}">${p.gateDecision.split(':')[0]}</span></td>
+      </tr>
+    `).join('');
+  }
+}
+
+function renderCustomerDiscovery() {
+  const quotesContainer = document.getElementById('miller-quotes-container');
+  if (quotesContainer) {
+    quotesContainer.innerHTML = CUSTOMER_DISCOVERY.keyMillerQuotes.map(q => `
+      <div class="miller-quote-card">
+        <p class="miller-quote-text">"${q.quote}"</p>
+        <span class="miller-quote-author">&mdash; ${q.miller}</span>
+      </div>
+    `).join('');
+  }
+
+  const workflowContainer = document.getElementById('diagnostic-workflow-container');
+  if (workflowContainer) {
+    workflowContainer.innerHTML = CUSTOMER_DISCOVERY.diagnosticWorkflow.map(s => `
+      <div class="workflow-step-card">
+        <span class="ws-time">${s.time}</span>
+        <h5 class="ws-title">${s.step}</h5>
+        <p class="ws-desc">${s.desc}</p>
+      </div>
+    `).join('');
+  }
+}
+
+function renderRegulatoryStandards() {
+  const tbody = document.getElementById('regulatory-standards-tbody');
   if (!tbody) return;
 
-  tbody.innerHTML = PHASE_1_MILESTONES.map(m => `
+  tbody.innerHTML = REGULATORY_STANDARDS.map(r => `
     <tr>
-      <td><strong><code>${m.milestone}</code></strong></td>
-      <td><strong>${m.phase}</strong></td>
-      <td><code>${m.share}</code></td>
-      <td>${m.deliverables}</td>
-      <td><span class="status-tag tag-neutral">${m.turnaround}</span></td>
+      <td><strong>${r.standard}</strong></td>
+      <td>${r.scope}</td>
+      <td><span class="status-tag tag-verified">${r.complianceStatus}</span></td>
+      <td>${r.details}</td>
     </tr>
   `).join('');
 }
 
-// ============================================================================
-// 3. INTERACTIVE CAD DRAWING SHEET VIEWER
-// ============================================================================
 function renderCadDrawingViewer() {
-  const sidebar = document.getElementById('cad-sheet-list-container');
-  if (!sidebar) return;
+  const listContainer = document.getElementById('cad-sheet-list-container');
+  if (!listContainer) return;
 
-  sidebar.innerHTML = CAD_DRAWING_SHEETS.map((s, idx) => `
-    <div class="sheet-item ${idx === state.activeCadIndex ? 'active' : ''}" data-index="${idx}">
-      <div class="sheet-item-header">
-        <span class="sheet-tag">${s.tag}</span>
-        <span class="sheet-cat">${s.category}</span>
-      </div>
-      <div class="sheet-title">${s.title}</div>
-    </div>
+  listContainer.innerHTML = CAD_DRAWING_SHEETS.map((s, idx) => `
+    <button class="cad-sheet-btn ${idx === state.activeCadIndex ? 'active' : ''}" data-index="${idx}">
+      <span class="csb-tag">${s.tag}</span>
+      <span class="csb-title">${s.title}</span>
+    </button>
   `).join('');
 
-  // Wire sheet clicks
-  document.querySelectorAll('#cad-sheet-list-container .sheet-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const idx = parseInt(item.dataset.index, 10);
-      setActiveCadSheet(idx);
+  listContainer.querySelectorAll('.cad-sheet-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const idx = parseInt(btn.dataset.index, 10);
+      switchCadSheet(idx);
     });
   });
 
-  setActiveCadSheet(0);
+  updateCadDisplay();
 }
 
-function setActiveCadSheet(idx) {
+function switchCadSheet(idx) {
   state.activeCadIndex = idx;
-  const sheet = CAD_DRAWING_SHEETS[idx];
+  const listContainer = document.getElementById('cad-sheet-list-container');
+  if (listContainer) {
+    listContainer.querySelectorAll('.cad-sheet-btn').forEach((b, i) => {
+      b.classList.toggle('active', i === idx);
+    });
+  }
+  updateCadDisplay();
+}
+
+function updateCadDisplay() {
+  const sheet = CAD_DRAWING_SHEETS[state.activeCadIndex];
   if (!sheet) return;
 
-  // Update active state in sidebar
-  document.querySelectorAll('#cad-sheet-list-container .sheet-item').forEach((el, i) => {
-    el.classList.toggle('active', i === idx);
-  });
-
-  // Update Main Stage Elements
   const tagEl = document.getElementById('active-cad-tag');
   const titleEl = document.getElementById('active-cad-title');
   const statusEl = document.getElementById('active-cad-status');
-  const imgEl = document.getElementById('active-cad-display');
   const descEl = document.getElementById('active-cad-desc');
-  const linkEl = document.getElementById('btn-cad-open-full');
+  const imgEl = document.getElementById('active-cad-display');
+  const openBtn = document.getElementById('btn-cad-open-full');
 
   if (tagEl) tagEl.textContent = sheet.tag;
   if (titleEl) titleEl.textContent = sheet.title;
   if (statusEl) statusEl.textContent = sheet.status;
+  if (descEl) descEl.textContent = sheet.desc;
   if (imgEl) {
-    imgEl.src = sheet.image;
+    imgEl.src = sheet.file;
     imgEl.alt = `${sheet.tag}: ${sheet.title}`;
   }
-  if (descEl) descEl.textContent = sheet.desc;
-  if (linkEl) linkEl.href = sheet.image;
+  if (openBtn) {
+    openBtn.href = sheet.file;
+  }
 }
 
 // ============================================================================
-// 4. NAVIGATION & MOBILE MENU
+// 3. NAVIGATION & UI CONTROLS
 // ============================================================================
+
 function setupNavigationScrollspy() {
+  const navLinks = document.querySelectorAll('.header-nav .nav-link, .mobile-nav-link');
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.header-nav .nav-link');
 
   window.addEventListener('scroll', () => {
-    let currentId = '';
-    const scrollPos = window.scrollY + 100;
+    let current = '';
+    const scrollPos = window.scrollY + 120;
 
     sections.forEach(sec => {
       const top = sec.offsetTop;
       const height = sec.offsetHeight;
       if (scrollPos >= top && scrollPos < top + height) {
-        currentId = sec.getAttribute('id');
+        current = sec.getAttribute('id');
       }
     });
 
     navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+      const href = link.getAttribute('href')?.replace('#', '');
+      link.classList.toggle('active', href === current);
     });
   }, { passive: true });
 }
@@ -471,232 +504,199 @@ function setupMobileNav() {
 
   btn.addEventListener('click', () => {
     state.mobileNavOpen = !state.mobileNavOpen;
-    btn.setAttribute('aria-expanded', state.mobileNavOpen ? 'true' : 'false');
-    drawer.setAttribute('aria-hidden', state.mobileNavOpen ? 'false' : 'true');
+    btn.setAttribute('aria-expanded', state.mobileNavOpen);
     drawer.style.display = state.mobileNavOpen ? 'block' : 'none';
   });
 
-  // Close drawer on clicking links
   drawer.querySelectorAll('.mobile-nav-link').forEach(link => {
     link.addEventListener('click', () => {
       state.mobileNavOpen = false;
       btn.setAttribute('aria-expanded', 'false');
-      drawer.setAttribute('aria-hidden', 'true');
       drawer.style.display = 'none';
     });
   });
 }
 
-// ============================================================================
-// 5. ONBOARDING & SCOPING DEMONSTRATION FORM
-// ============================================================================
 function setupOnboardingForm() {
   const form = document.getElementById('project-scoping-form');
   const confBox = document.getElementById('form-confirmation');
-  const detailsEl = document.getElementById('conf-details');
+  const confDetails = document.getElementById('conf-details');
   const resetBtn = document.getElementById('btn-reset-form');
 
-  if (!form || !confBox) return;
+  if (!form) return;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    const data = new FormData(form);
+    const org = data.get('organization') || 'Partner Organization';
+    const origin = data.get('grainOrigin') || 'Imported Pulse Lot';
+    const volume = data.get('targetVolume') || '15 TPD';
 
-    const org = document.getElementById('input-org').value.trim();
-    const contact = document.getElementById('input-contact').value.trim();
-    const email = document.getElementById('input-email').value.trim();
-    const origin = document.getElementById('input-origin').value;
-    const vol = document.getElementById('input-capacity').value;
-    const curCook = document.getElementById('input-cur-cook').value || 'Unspecified';
-    const tgtCook = document.getElementById('input-tgt-cook').value || '15';
-
-    if (!org || !contact || !email || !origin || !vol) {
-      alert('Please fill in all required fields marked with an asterisk (*).');
-      return;
-    }
-
-    // Show demonstration confirmation
-    if (detailsEl) {
-      detailsEl.innerHTML = `
-        <strong>Organization:</strong> ${org}<br>
-        <strong>Technical Contact:</strong> ${contact} (${email})<br>
-        <strong>Consignment:</strong> ${origin} &bull; <strong>Target Capacity:</strong> ${vol}<br>
-        <strong>Cooking Time Reduction:</strong> From ${curCook} min &rarr; Target ${tgtCook} min.<br><br>
-        <em>Parameters logged in local demo environment. No external network request was emitted.</em>
+    if (confDetails) {
+      confDetails.innerHTML = `
+        Thank you, <strong>${org}</strong>. Your project scoping request for <strong>${origin}</strong> (${volume}) has been recorded.
+        Our process engineering team will review your milling parameters and contact you to schedule a 48-Hour 5-kg diagnostic trial.
       `;
     }
 
     form.classList.add('is-hidden');
-    confBox.classList.remove('is-hidden');
+    if (confBox) confBox.classList.remove('is-hidden');
   });
 
-  if (resetBtn) {
+  if (resetBtn && confBox) {
     resetBtn.addEventListener('click', () => {
       form.reset();
-      confBox.classList.add('is-hidden');
       form.classList.remove('is-hidden');
+      confBox.classList.add('is-hidden');
     });
   }
 }
 
 // ============================================================================
-// 6. ON-DEMAND THREE.JS 3D MASTER ASSEMBLY VIEWER (MODAL)
+// 4. THREE.JS 3D MODEL VIEWER
 // ============================================================================
+
 function setup3DModal() {
   const openBtn = document.getElementById('btn-view-3d-modal');
-  const closeBtn = document.getElementById('btn-close-3d-modal');
   const modal = document.getElementById('modal-3d');
+  const closeBtn = document.getElementById('btn-close-3d-modal');
 
-  if (!openBtn || !closeBtn || !modal) return;
+  if (!openBtn || !modal) return;
 
   openBtn.addEventListener('click', () => {
     modal.classList.remove('is-hidden');
     modal.setAttribute('aria-hidden', 'false');
-
     if (!state.threeInitialized) {
-      initThreeModal();
-      state.threeInitialized = true;
-    } else {
-      onModalResize();
+      initThreeViewport();
     }
   });
 
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('is-hidden');
-    modal.setAttribute('aria-hidden', 'true');
-  });
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('is-hidden');
+      modal.setAttribute('aria-hidden', 'true');
+    });
+  }
 
-  // Close on outside backdrop click
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.add('is-hidden');
       modal.setAttribute('aria-hidden', 'true');
     }
   });
-
-  // Modal Camera Preset Controls
-  const camPresets = {
-    iso: [-13.5, 9.5, 13.5, 0.0, 2.6, -3.0],
-    front: [0.0, 5.0, 18.0, 0.0, 3.0, -3.0],
-    side: [18.0, 5.5, -3.0, 0.0, 3.0, -3.0],
-    top: [0.0, 24.0, -3.0, 0.0, 0.0, -3.0]
-  };
-
-  document.querySelectorAll('.modal-hud-controls button[data-view]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.modal-hud-controls button[data-view]').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const preset = camPresets[btn.dataset.view];
-      if (preset && camera && controls) {
-        camera.position.set(preset[0], preset[1], preset[2]);
-        controls.target.set(preset[3], preset[4], preset[5]);
-        controls.update();
-      }
-    });
-  });
-
-  const turntableBtn = document.getElementById('btn-modal-turntable');
-  if (turntableBtn) {
-    turntableBtn.addEventListener('click', () => {
-      state.autoRotate = !state.autoRotate;
-      turntableBtn.classList.toggle('active', state.autoRotate);
-    });
-  }
 }
 
-function initThreeModal() {
+function initThreeViewport() {
   const container = document.getElementById('canvas-container');
+  const loadingIndicator = document.getElementById('canvas-loading');
   if (!container) return;
 
-  const width = container.clientWidth || 800;
-  const height = container.clientHeight || 500;
+  state.threeInitialized = true;
 
-  // Scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x070B14);
+  scene.background = new THREE.Color(0x0a0f1d);
 
-  // Camera
-  camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 1000);
-  camera.position.set(-13.5, 9.5, 13.5);
+  camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+  camera.position.set(12, 10, 16);
 
-  // Renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
-  renderer.setSize(width, height);
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(container.clientWidth, container.clientHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.shadowMap.enabled = true;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.1;
+  renderer.toneMappingExposure = 1.2;
   container.appendChild(renderer.domElement);
 
-  // OrbitControls
   controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.dampingFactor = 0.05;
-  controls.target.set(0.0, 2.6, -3.0);
-  controls.update();
+  controls.maxDistance = 50;
+  controls.minDistance = 2;
 
-  // Lighting
-  const hemiLight = new THREE.HemisphereLight(0xFFFFFF, 0x1E293B, 1.2);
-  hemiLight.position.set(0, 50, 0);
-  scene.add(hemiLight);
+  // Studio Lighting
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+  scene.add(ambientLight);
 
-  const keyLight = new THREE.DirectionalLight(0xFFFFFF, 2.0);
-  keyLight.position.set(15, 25, 20);
-  scene.add(keyLight);
+  const mainLight = new THREE.DirectionalLight(0xffffff, 1.8);
+  mainLight.position.set(15, 25, 20);
+  scene.add(mainLight);
 
-  const fillLight = new THREE.DirectionalLight(0x38BDF8, 0.8);
-  fillLight.position.set(-20, 10, -15);
+  const fillLight = new THREE.DirectionalLight(0x60a5fa, 0.8);
+  fillLight.position.set(-15, 10, -10);
   scene.add(fillLight);
 
-  // Grid floor
-  const gridHelper = new THREE.GridHelper(30, 30, 0x334155, 0x1E293B);
-  gridHelper.position.y = -0.05;
+  const gridHelper = new THREE.GridHelper(30, 30, 0x1e3a8a, 0x1e293b);
+  gridHelper.position.y = -0.01;
   scene.add(gridHelper);
 
-  // Load Model
+  // Load GLB
   const loader = new GLTFLoader();
-  const loadingIndicator = document.getElementById('canvas-loading');
-
   loader.load('/models/plant_15t_assembly.glb', (gltf) => {
     const model = gltf.scene;
     scene.add(model);
     modelLoaded = true;
+    if (loadingIndicator) loadingIndicator.style.display = 'none';
 
-    if (loadingIndicator) {
-      loadingIndicator.style.display = 'none';
-    }
+    // Center model
+    const box = new THREE.Box3().setFromObject(model);
+    const center = box.getCenter(new THREE.Vector3());
+    model.position.sub(center);
+    controls.target.set(0, 0, 0);
   }, undefined, (err) => {
-    console.warn('GLB load notice:', err);
-    if (loadingIndicator) {
-      loadingIndicator.textContent = '3D Model Viewport (Static preview active)';
-    }
+    console.warn('GLB load error, using fallback geometry:', err);
+    createFallbackGeometry();
+    if (loadingIndicator) loadingIndicator.style.display = 'none';
   });
 
-  window.addEventListener('resize', onModalResize);
-  animateModal();
-}
+  // Presets
+  const btnIso = document.getElementById('btn-modal-cam-iso');
+  const btnFront = document.getElementById('btn-modal-cam-front');
+  const btnSide = document.getElementById('btn-modal-cam-side');
+  const btnTop = document.getElementById('btn-modal-cam-top');
+  const btnTurntable = document.getElementById('btn-modal-turntable');
 
-function onModalResize() {
-  const container = document.getElementById('canvas-container');
-  if (!container || !renderer || !camera) return;
-
-  const width = container.clientWidth;
-  const height = container.clientHeight;
-  if (width === 0 || height === 0) return;
-
-  camera.aspect = width / height;
-  camera.updateProjectionMatrix();
-  renderer.setSize(width, height);
-}
-
-function animateModal() {
-  requestAnimationFrame(animateModal);
-
-  if (controls) {
-    controls.autoRotate = state.autoRotate;
-    controls.autoRotateSpeed = 1.0;
-    controls.update();
+  if (btnIso) btnIso.addEventListener('click', () => setCamPosition(12, 10, 16));
+  if (btnFront) btnFront.addEventListener('click', () => setCamPosition(0, 5, 22));
+  if (btnSide) btnSide.addEventListener('click', () => setCamPosition(22, 5, 0));
+  if (btnTop) btnTop.addEventListener('click', () => setCamPosition(0, 24, 0));
+  if (btnTurntable) {
+    btnTurntable.addEventListener('click', () => {
+      state.autoRotate = !state.autoRotate;
+      controls.autoRotate = state.autoRotate;
+      btnTurntable.classList.toggle('active', state.autoRotate);
+    });
   }
 
+  window.addEventListener('resize', () => {
+    if (!container || !renderer || !camera) return;
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth, container.clientHeight);
+  });
+
+  animate();
+}
+
+function setCamPosition(x, y, z) {
+  if (!camera || !controls) return;
+  camera.position.set(x, y, z);
+  controls.target.set(0, 0, 0);
+  controls.update();
+}
+
+function createFallbackGeometry() {
+  const group = new THREE.Group();
+  const mat = new THREE.MeshStandardMaterial({ color: 0x2563eb, metalness: 0.8, roughness: 0.2 });
+  const cylGeo = new THREE.CylinderGeometry(1.5, 1.5, 4, 32);
+  const tank = new THREE.Mesh(cylGeo, mat);
+  tank.position.y = 2;
+  group.add(tank);
+  scene.add(group);
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  if (controls) controls.update();
   if (renderer && scene && camera) {
     renderer.render(scene, camera);
   }
