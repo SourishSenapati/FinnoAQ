@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Module1Hero from './components/Module1Hero';
+import SolidWorksViewer from './components/SolidWorksViewer';
 import Module2Arbitrage from './components/Module2Arbitrage';
 import Module3Biophysics from './components/Module3Biophysics';
 import Module4PfdAspen from './components/Module4PfdAspen';
@@ -16,10 +17,13 @@ export default function App() {
       {/* Sticky Top Command Bar */}
       <Navbar />
 
-      {/* Main 7 Engineering Modules */}
+      {/* Main Engineering Sections */}
       <main>
         {/* MODULE 1: Sticky Top Command Bar & Executive Hero */}
         <Module1Hero />
+
+        {/* INTERACTIVE SOLIDWORKS 3D CAD ENGINE & ASSEMBLY VIEWER */}
+        <SolidWorksViewer />
 
         {/* MODULE 2: Unified Mandi Arbitrage & Live Mill ROI Workstation (DEDUPLICATED) */}
         <Module2Arbitrage />

@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
 
         {/* Center: Clean Anchor Links */}
-        <nav className="hidden lg:flex items-center space-x-6 font-mono text-xs text-[#9CA3AF]">
+        <nav className="hidden lg:flex items-center space-x-5 font-mono text-xs text-[#9CA3AF]">
           <button 
             onClick={() => scrollTo('hero')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
@@ -31,40 +31,46 @@ export default function Navbar() {
             [00 // OVERVIEW]
           </button>
           <button 
+            onClick={() => scrollTo('solidworks-cad')} 
+            className="text-[#F59E0B] hover:text-[#D97706] font-semibold transition-colors cursor-pointer"
+          >
+            [01 // 3D SOLIDWORKS CAD]
+          </button>
+          <button 
             onClick={() => scrollTo('arbitrage')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [01 // ROI WORKSTATION]
+            [02 // ROI SIMULATOR]
           </button>
           <button 
             onClick={() => scrollTo('biophysics')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [02 // BIOPHYSICS]
+            [03 // BIOPHYSICS]
           </button>
           <button 
             onClick={() => scrollTo('pfd-aspen')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [03 // PFD & ASPEN]
+            [04 // PFD & ASPEN]
           </button>
           <button 
             onClick={() => scrollTo('roadmap')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [04 // ROADMAP]
+            [05 // ROADMAP]
           </button>
           <button 
             onClick={() => scrollTo('scoping')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [05 // 48-HR TRIAL]
+            [06 // 48-HR TRIAL]
           </button>
           <button 
             onClick={() => scrollTo('data-room')} 
             className="hover:text-[#F3F4F6] transition-colors cursor-pointer"
           >
-            [06 // DATA ROOM]
+            [07 // DATA ROOM]
           </button>
         </nav>
 
