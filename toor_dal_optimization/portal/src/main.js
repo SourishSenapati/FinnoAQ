@@ -24,6 +24,8 @@ import {
   CAD_DRAWING_SHEETS
 } from './data/micrositeData.js';
 
+import { initDynamicVisualizations } from './dynamicCharts.js';
+
 // Application State
 const state = {
   activeCadIndex: 0,
@@ -53,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCustomerDiscovery();
   renderRegulatoryStandards();
   renderCadDrawingViewer();
+
+  // Initialize Dynamic Vector Visualizations & Mill Simulator
+  initDynamicVisualizations();
 
   setupNavigationScrollspy();
   setupMobileNav();
