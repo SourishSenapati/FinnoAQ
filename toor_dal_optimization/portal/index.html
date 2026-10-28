@@ -400,26 +400,127 @@
             <!-- Dynamically populated from micrositeData.js PLANT_EQUIPMENT -->
           </div>
 
-          <!-- EMBEDDED REAL AUTOCAD PFD PREVIEW -->
-          <div class="featured-drawing-container">
-            <div class="drawing-preview-header">
-              <div class="dph-info">
-                <span class="dph-tag">AUTOCAD / PLANT 3D EXPORT</span>
-                <h3 class="dph-title">DWG-FIN-15T-001: Process Flow Diagram & Mass Balance Stream Table</h3>
-                <p class="dph-sub">Converged 12-stream thermodynamic balance generated from Aspen Plus V14 simulation model (Property Method: ELECNRTL / STEAM-TA, 0.000000% balance closure).</p>
-              </div>
-              <div class="dph-actions">
-                <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-sm" id="btn-view-pfd-full">View Full Resolution CAD Sheet</a>
-              </div>
+          <!-- ASPEN PLUS 12-STREAM PROCESS THERMODYNAMICS TABLE -->
+          <div class="balance-reconciliation-wrap" style="margin-bottom: 2.5rem;">
+            <div class="table-header-bar">
+              <h3 class="table-title">Aspen Plus V14 Process Thermodynamics & Stream Balance Table</h3>
+              <span class="table-badge">ELECNRTL / STEAM-TA Converged (0.000000% Closure Error)</span>
             </div>
-            <div class="drawing-image-frame">
-              <img src="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" alt="AutoCAD Process Flow Diagram DWG-FIN-15T-001" class="drawing-preview-img" loading="lazy" />
+            <div class="table-responsive">
+              <table class="engineering-table">
+                <thead>
+                  <tr>
+                    <th>Stream No. & Description</th>
+                    <th>Mass Flow (kg/h)</th>
+                    <th>Temp (°C)</th>
+                    <th>Moisture (% wb)</th>
+                    <th>Solids / Solute Profile</th>
+                    <th>Unit Operation / Stage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>STR-01:</strong> Raw HTC Pigeon Pea Intake</td>
+                    <td>625.0 kg/h</td>
+                    <td>25.0°C</td>
+                    <td>11.5% wb</td>
+                    <td>553.1 kg/h dry pulse cotyledons</td>
+                    <td>Air Classification & Destoning (D-101)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-02:</strong> S1-09 Multi-Salt Steep Buffer</td>
+                    <td>1,250.0 kg/h</td>
+                    <td>48.0°C</td>
+                    <td>97.5% wb</td>
+                    <td>0.085M K₃Cit, 0.025M Citric, 0.035M SHMP</td>
+                    <td>Recycled Steep Liquor Makeup (TK-100)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-03:</strong> Ultrasonic Chelation Slurry</td>
+                    <td>1,875.0 kg/h</td>
+                    <td>48.0°C</td>
+                    <td>--</td>
+                    <td>41.8% Bound Ca²+ Extracted in 24 min</td>
+                    <td>Ultrasonic Steeping Battery (TK-101A/B)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-04:</strong> Hydrated Pulse Cotyledons</td>
+                    <td>768.2 kg/h</td>
+                    <td>46.5°C</td>
+                    <td>28.0% wb</td>
+                    <td>538.6 kg/h dry solids + 229.6 kg/h water</td>
+                    <td>Vibrating Dewatering Screen (SC-101)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-05:</strong> High-Pressure Deluge Wash</td>
+                    <td>450.0 kg/h</td>
+                    <td>35.0°C</td>
+                    <td>100.0%</td>
+                    <td>98.2% Recycled Evaporator Condensate</td>
+                    <td>Counter-Current Deluge Rinse (12s exposure)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-06:</strong> Washed Surface-Dry Pulses</td>
+                    <td>768.2 kg/h</td>
+                    <td>44.0°C</td>
+                    <td>28.0% wb</td>
+                    <td>Residual Citrate 48.2 mg/kg (&lt;120 mg/kg limit)</td>
+                    <td>Dryer Infeed Screw (CV-102)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-07:</strong> Zone 1 Fluidized Pulses</td>
+                    <td>665.4 kg/h</td>
+                    <td>52.0°C</td>
+                    <td>19.0% wb</td>
+                    <td>Hoop Stress &lt;0.38 MPa (Sub-critical)</td>
+                    <td>Continuous Fluid Bed Dryer - Deck 1 (DR-101A)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-08:</strong> Adiabatic Tempering Stream</td>
+                    <td>665.4 kg/h</td>
+                    <td>50.0°C</td>
+                    <td>19.0% wb</td>
+                    <td>20-min Moisture Gradient Equilibration</td>
+                    <td>Inter-Stage Tempering Chute (TC-101)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-09:</strong> Zone 2 Final Dried Pulses</td>
+                    <td>602.8 kg/h</td>
+                    <td>55.0°C</td>
+                    <td>10.5% wb</td>
+                    <td>538.6 kg/h dry solids + 64.2 kg/h moisture</td>
+                    <td>Continuous Fluid Bed Dryer - Deck 2 (DR-101B)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-10:</strong> Finished 2-Whistle Split Toor Dal</td>
+                    <td>598.3 kg/h</td>
+                    <td>28.0°C</td>
+                    <td>10.5% wb</td>
+                    <td>97.37% Dry Solids Yield (FWB = 15.2 N)</td>
+                    <td>Optical Sorting & Packaging (B-101)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-11:</strong> Spent Liquor 15% Bleed</td>
+                    <td>166.5 kg/h</td>
+                    <td>46.0°C</td>
+                    <td>95.2% wb</td>
+                    <td>Bleed stream preventing salt saturation</td>
+                    <td>ZLD Falling Film Evaporator (EV-101)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>STR-12:</strong> ZLD Byproduct Syrup</td>
+                    <td>18.5 kg/h</td>
+                    <td>72.0°C</td>
+                    <td>55.0% wb</td>
+                    <td>45.0% dry solids animal feed syrup</td>
+                    <td>Concentrate Storage & Offtake (TK-103)</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="drawing-footer-notes">
-              <div class="note-item"><span>DRAWING STATUS:</span> <strong>Turnkey Commercial Baseline</strong></div>
-              <div class="note-item"><span>DATE OF REVISION:</span> <strong>October 2026 (Rev V11)</strong></div>
-              <div class="note-item"><span>LEAD ENGINEER:</span> <strong>Sourish Senapati (FinnoaQ)</strong></div>
-              <div class="note-item"><span>TECHNICAL OVERSIGHT:</span> <strong>FinnoaQ Process Engineering Board</strong></div>
+            <div class="table-footer-bar" style="display:flex; justify-content:space-between; align-items:center; padding:10px 14px; background:rgba(255,255,255,0.02); border-top:1px solid var(--border-subtle); font-size:0.8rem; color:var(--text-muted);">
+              <span><strong>Total Mass Balance Closure:</strong> 0.000000% Error &bull; <strong>Lead Process Engineer:</strong> Sourish Senapati (FinnoaQ)</span>
+              <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-xs">View Engineering CAD Flowsheet (DWG-FIN-15T-001)</a>
             </div>
           </div>
         </div>
@@ -782,42 +883,48 @@
             </div>
           </div>
 
-          <!-- INTERACTIVE DRAWING SHEET VIEWER -->
-          <div class="cad-viewer-container">
-            <aside class="cad-sidebar">
-              <div class="cad-sidebar-header">
-                <h3>Engineering Drawing Suite</h3>
-                <span class="sheet-count-tag">7 Disclosable Sheets</span>
-              </div>
-              <div class="cad-sheet-list" id="cad-sheet-list-container">
-                <!-- Dynamically populated from micrositeData.js CAD_DRAWING_SHEETS -->
-              </div>
-            </aside>
-
-            <div class="cad-main-stage">
-              <div class="cad-stage-toolbar">
-                <div class="stage-sheet-meta">
-                  <span class="stage-tag" id="active-cad-tag">DWG-FIN-15T-001</span>
-                  <span class="stage-title" id="active-cad-title">Process Flow Diagram (PFD) & Stream Table</span>
+          <!-- ON-DEMAND TECHNICAL CAD DRAWING DRAWER -->
+          <details class="cad-drawer-wrapper" style="border:1px solid var(--border-subtle); border-radius:8px; background:var(--bg-surface-card); margin-top:2rem; overflow:hidden;">
+            <summary style="padding:14px 20px; font-weight:600; font-size:0.95rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center; color:var(--accent-gold);">
+              <span><span>&#9881;</span> Expand Technical Drawing Suite & Orthographic Projections (7 Verified ASME/AutoCAD Sheets)</span>
+              <span style="font-size:0.8rem; opacity:0.7;">Click to View CAD Sheets &darr;</span>
+            </summary>
+            <div class="cad-viewer-container" style="border-top:1px solid var(--border-subtle); padding:1rem;">
+              <aside class="cad-sidebar">
+                <div class="cad-sidebar-header">
+                  <h3>Engineering Drawing Suite</h3>
+                  <span class="sheet-count-tag">7 Disclosable Sheets</span>
                 </div>
-                <div class="stage-controls">
-                  <span class="cad-status-badge" id="active-cad-status">Aspen Plus Converged</span>
-                  <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-sm" id="btn-cad-open-full">Open Full Vector Sheet</a>
+                <div class="cad-sheet-list" id="cad-sheet-list-container">
+                  <!-- Dynamically populated from micrositeData.js CAD_DRAWING_SHEETS -->
                 </div>
-              </div>
+              </aside>
 
-              <div class="cad-canvas-viewport">
-                <img src="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" alt="Active Engineering Drawing" class="active-cad-img" id="active-cad-display" />
-              </div>
+              <div class="cad-main-stage">
+                <div class="cad-stage-toolbar">
+                  <div class="stage-sheet-meta">
+                    <span class="stage-tag" id="active-cad-tag">DWG-FIN-15T-001</span>
+                    <span class="stage-title" id="active-cad-title">Process Flow Diagram (PFD) & Stream Table</span>
+                  </div>
+                  <div class="stage-controls">
+                    <span class="cad-status-badge" id="active-cad-status">Aspen Plus Converged</span>
+                    <a href="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" target="_blank" class="btn btn-secondary btn-sm" id="btn-cad-open-full">Open Full Vector Sheet</a>
+                  </div>
+                </div>
 
-              <div class="cad-sheet-description">
-                <span class="desc-label">SHEET SPECIFICATION & BOUNDARY LIMITS:</span>
-                <p class="desc-text" id="active-cad-desc">
-                  Converged 12-stream mass and enthalpy balance from raw pulse intake through soaking, screen dewatering, fluid bed drying, and ZLD concentration.
-                </p>
+                <div class="cad-canvas-viewport">
+                  <img src="/drawings/DWG-FIN-15T-001_PROCESS_FLOW_DIAGRAM.png" alt="Active Engineering Drawing" class="active-cad-img" id="active-cad-display" />
+                </div>
+
+                <div class="cad-sheet-description">
+                  <span class="desc-label">SHEET SPECIFICATION & BOUNDARY LIMITS:</span>
+                  <p class="desc-text" id="active-cad-desc">
+                    Converged 12-stream mass and enthalpy balance from raw pulse intake through soaking, screen dewatering, fluid bed drying, and ZLD concentration.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </details>
         </div>
       </section>
     </main>
