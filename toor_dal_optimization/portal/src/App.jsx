@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0A0B0D] text-[#F3F4F6] selection:bg-[#F59E0B]/20 selection:text-[#F59E0B]">
+    <div className="min-h-screen bg-[#0C0E12] text-[#E6E8EC] selection:bg-[#D97706]/20 selection:text-[#D97706]">
       
       {/* Sticky Top Command Bar */}
       <Navbar />

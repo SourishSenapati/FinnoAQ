@@ -18,11 +18,11 @@ export function renderInteractiveArbitrageWaterfall(containerId) {
   if (!container) return;
 
   const data = [
-    { label: "African HTC Infeed", val: 85.00, type: "base", color: "#64748B", desc: "Mandi port wholesale landing price" },
-    { label: "S1-09 Reagents", val: 2.22, type: "step", color: "#F59E0B", desc: "Citrate, citric acid, SHMP (85% recycle)" },
-    { label: "Biomass Steam", val: 2.12, type: "step", color: "#F59E0B", desc: "250 kg/h boiler @ ₹3.50/kg briquettes" },
-    { label: "Electric Power", val: 0.72, type: "step", color: "#F59E0B", desc: "54.2 kW connected load @ ₹8.50/kWh" },
-    { label: "Labor & O&M", val: 1.28, type: "step", color: "#F59E0B", desc: "Technicians, ZLD water, maintenance" },
+    { label: "African HTC Infeed", val: 85.00, type: "base", color: "#5E6573", desc: "Mandi port wholesale landing price" },
+    { label: "S1-09 Reagents", val: 2.22, type: "step", color: "#D97706", desc: "Citrate, citric acid, SHMP (85% recycle)" },
+    { label: "Biomass Steam", val: 2.12, type: "step", color: "#D97706", desc: "250 kg/h boiler @ ₹3.50/kg briquettes" },
+    { label: "Electric Power", val: 0.72, type: "step", color: "#D97706", desc: "54.2 kW connected load @ ₹8.50/kWh" },
+    { label: "Labor & O&M", val: 1.28, type: "step", color: "#D97706", desc: "Technicians, ZLD water, maintenance" },
     { label: "FinnoaQ Margin", val: 5.66, type: "step", color: "#38BDF8", desc: "Technology & operations gross profit" },
     { label: "Partner Net Lift", val: 8.00, type: "step", color: "#10B981", desc: "Pure profit captured by dal miller" },
     { label: "Finished Dal Parity", val: 105.00, type: "total", color: "#FBBF24", desc: "Domestic Indian Latur Desi wholesale" }
@@ -70,7 +70,7 @@ export function renderInteractiveArbitrageWaterfall(containerId) {
 
   const gridLines = [80, 90, 100, 110].map(val => `
     <line x1="${margin.left}" y1="${margin.top + scaleY(val)}" x2="${margin.left + chartW}" y2="${margin.top + scaleY(val)}" stroke="#1E293B" stroke-dasharray="3,3" />
-    <text x="${margin.left - 10}" y="${margin.top + scaleY(val) + 4}" fill="#64748B" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">₹${val}</text>
+    <text x="${margin.left - 10}" y="${margin.top + scaleY(val) + 4}" fill="#5E6573" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">₹${val}</text>
   `).join('');
 
   const svgBars = bars.map((b, i) => {
@@ -100,8 +100,8 @@ export function renderInteractiveArbitrageWaterfall(containerId) {
           <h4 class="chart-title">Mandi Arbitrage Unit Economics Waterfall (₹/kg)</h4>
         </div>
         <div class="chart-legend">
-          <span class="legend-pill" style="--c:#64748B">Base Intake</span>
-          <span class="legend-pill" style="--c:#F59E0B">Direct OpEx (₹6.34)</span>
+          <span class="legend-pill" style="--c:#5E6573">Base Intake</span>
+          <span class="legend-pill" style="--c:#D97706">Direct OpEx (₹6.34)</span>
           <span class="legend-pill" style="--c:#38BDF8">Tolling Margin (₹5.66)</span>
           <span class="legend-pill" style="--c:#10B981">Miller Lift (+₹8.00)</span>
         </div>
@@ -114,7 +114,7 @@ export function renderInteractiveArbitrageWaterfall(containerId) {
         <div class="chart-tooltip is-hidden" id="wf-tooltip"></div>
       </div>
       <div class="chart-caption-bar">
-        <span><strong>Key Takeaway:</strong> African imported dal bought at ₹85.00/kg processed at ₹6.34 direct OpEx unlocks ₹8.00/kg (₹3.60 Cr/yr) in net miller value lift.</span>
+        <span><strong>Key Takeaway:</strong> African imported dal bought at ₹85.00/kg processed at ₹6.34 direct OpEx yields ₹8.00/kg (₹3.60 Cr/yr) in net miller value lift.</span>
       </div>
     </div>
   `;
@@ -183,7 +183,7 @@ export function renderBiophysicsKineticsChart(containerId) {
   // Gridlines
   const gridX = [0, 5, 10, 15, 20, 24, 30].map(t => `
     <line x1="${scaleX(t)}" y1="${margin.top}" x2="${scaleX(t)}" y2="${margin.top + chartH}" stroke="#1E293B" stroke-dasharray="2,2" />
-    <text x="${scaleX(t)}" y="${margin.top + chartH + 18}" fill="#64748B" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${t}m</text>
+    <text x="${scaleX(t)}" y="${margin.top + chartH + 18}" fill="#5E6573" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle">${t}m</text>
   `).join('');
 
   const gridYLeft = [0, 10, 20, 30, 40, 50].map(ca => `
@@ -191,7 +191,7 @@ export function renderBiophysicsKineticsChart(containerId) {
   `).join('');
 
   const gridYRight = [15, 20, 30, 40, 50].map(f => `
-    <text x="${margin.left + chartW + 10}" y="${scaleForce(f) + 4}" fill="#F59E0B" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="start">${f}N</text>
+    <text x="${margin.left + chartW + 10}" y="${scaleForce(f) + 4}" fill="#D97706" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="start">${f}N</text>
   `).join('');
 
   // 24 min optimum callout
@@ -213,7 +213,7 @@ export function renderBiophysicsKineticsChart(containerId) {
         </div>
         <div class="chart-legend">
           <span class="legend-pill" style="--c:#38BDF8">Bound Ca²+ Extracted (%)</span>
-          <span class="legend-pill" style="--c:#F59E0B">Core Shear Force (N)</span>
+          <span class="legend-pill" style="--c:#D97706">Core Shear Force (N)</span>
           <span class="legend-pill" style="--c:#EF4444">18N Limit Threshold</span>
         </div>
       </div>
@@ -224,7 +224,7 @@ export function renderBiophysicsKineticsChart(containerId) {
           ${gridYRight}
           ${targetLine}
           <path d="${caPath}" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" />
-          <path d="${forcePath}" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+          <path d="${forcePath}" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" />
           ${marker24}
         </svg>
       </div>
@@ -263,7 +263,7 @@ export function renderFiveYearFinancialChart(containerId) {
 
   const gridY = [0, 150, 300, 450, 600].map(v => `
     <line x1="${margin.left}" y1="${margin.top + scaleY(v)}" x2="${margin.left + chartW}" y2="${margin.top + scaleY(v)}" stroke="#1E293B" stroke-dasharray="2,2" />
-    <text x="${margin.left - 10}" y="${margin.top + scaleY(v) + 4}" fill="#64748B" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">₹${v}L</text>
+    <text x="${margin.left - 10}" y="${margin.top + scaleY(v) + 4}" fill="#5E6573" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="end">₹${v}L</text>
   `).join('');
 
   const groups = data.map((d, i) => {
@@ -275,7 +275,7 @@ export function renderFiveYearFinancialChart(containerId) {
         <text x="${gx + subBarW / 2}" y="${margin.top + scaleY(d.rev) - 6}" fill="#94A3B8" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle">₹${d.rev.toFixed(0)}</text>
         
         <!-- OpEx Bar -->
-        <rect x="${gx + subBarW + 2}" y="${margin.top + scaleY(d.opex)}" width="${subBarW}" height="${chartH - scaleY(d.opex)}" fill="#64748B" rx="2" />
+        <rect x="${gx + subBarW + 2}" y="${margin.top + scaleY(d.opex)}" width="${subBarW}" height="${chartH - scaleY(d.opex)}" fill="#5E6573" rx="2" />
         
         <!-- EBITDA Bar -->
         <rect x="${gx + (subBarW + 2) * 2}" y="${margin.top + scaleY(d.ebitda)}" width="${subBarW}" height="${chartH - scaleY(d.ebitda)}" fill="#10B981" rx="2" />
@@ -296,7 +296,7 @@ export function renderFiveYearFinancialChart(containerId) {
         </div>
         <div class="chart-legend">
           <span class="legend-pill" style="--c:#38BDF8">Tolling Revenue</span>
-          <span class="legend-pill" style="--c:#64748B">Operating Costs</span>
+          <span class="legend-pill" style="--c:#5E6573">Operating Costs</span>
           <span class="legend-pill" style="--c:#10B981">EBITDA (47.2% Margin)</span>
         </div>
       </div>

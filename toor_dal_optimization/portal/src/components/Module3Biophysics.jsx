@@ -20,38 +20,38 @@ export default function Module3Biophysics() {
   const whistleCount = shearForce <= 18.0 ? '2 Whistles (7.0 min)' : shearForce <= 22.0 ? '4 Whistles (14.0 min)' : '8+ Whistles (HTC Failure)';
 
   return (
-    <section id="biophysics" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
-      <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
+    <section id="biophysics" className="w-full bg-[#0C0E12] border-b border-[#1E232E] scroll-mt-20">
+      <div className="max-w-[1440px] mx-auto border-x border-[#1E232E]">
         
         {/* Module Header with 2-View Toggle */}
-        <div className="p-6 border-b border-[#222630] bg-[#111317] flex flex-wrap items-center justify-between gap-4">
+        <div className="p-6 border-b border-[#1E232E] bg-[#111319] flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center space-x-3">
-            <span className="px-2.5 py-0.5 bg-[#1E222A] text-[#94A3B8] border border-[#2E3440] font-mono text-xs rounded-sm">
+            <span className="px-2.5 py-0.5 bg-[#151821] text-[#94A3B8] border border-[#232836] font-mono text-xs rounded-xs">
               [02 // BIOPHYSICS & FAILURE FORENSICS]
             </span>
-            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#F3F4F6]">
+            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#E6E8EC]">
               Interactive Biophysics & Failure Forensics Workbench
             </h2>
           </div>
 
           {/* 2-View Interactive Segmented Toggle */}
-          <div className="flex items-center bg-[#0A0B0D] p-1 border border-[#222630] rounded-sm">
+          <div className="flex items-center bg-[#0C0E12] p-1 border border-[#1E232E] rounded-xs">
             <button
               onClick={() => setActiveView('viewA')}
-              className={`px-3 py-1.5 font-mono text-xs rounded-sm transition-colors cursor-pointer ${
+              className={`px-3 py-1.5 font-mono text-xs rounded-xs transition-colors cursor-pointer ${
                 activeView === 'viewA'
-                  ? 'bg-[#171A21] text-[#F59E0B] border border-[#F59E0B] font-semibold'
-                  : 'text-[#9CA3AF] hover:text-[#F3F4F6] border border-transparent'
+                  ? 'bg-[#151821] text-[#D97706] border border-[#D97706] font-semibold'
+                  : 'text-[#8E95A2] hover:text-[#E6E8EC] border border-transparent'
               }`}
             >
               [View A: S1-09 Chelation Kinetics & Physics]
             </button>
             <button
               onClick={() => setActiveView('viewB')}
-              className={`px-3 py-1.5 font-mono text-xs rounded-sm transition-colors cursor-pointer ${
+              className={`px-3 py-1.5 font-mono text-xs rounded-xs transition-colors cursor-pointer ${
                 activeView === 'viewB'
-                  ? 'bg-[#171A21] text-[#F59E0B] border border-[#F59E0B] font-semibold'
-                  : 'text-[#9CA3AF] hover:text-[#F3F4F6] border border-transparent'
+                  ? 'bg-[#151821] text-[#D97706] border border-[#D97706] font-semibold'
+                  : 'text-[#8E95A2] hover:text-[#E6E8EC] border border-transparent'
               }`}
             >
               [View B: Forensic Industry Failure Analysis]
@@ -63,177 +63,173 @@ export default function Module3Biophysics() {
         {activeView === 'viewA' && (
           <div>
             {/* 1. Interactive Before vs After Split Comparator */}
-            <div className="p-6 sm:p-10 bg-gradient-to-b from-[#12141A] to-[#0E1015] border-b border-[#222630]">
-              <div className="flex flex-wrap justify-between items-center gap-3 mb-6">
+            <div className="p-6 sm:p-8 bg-[#111319] border-b border-[#1E232E]">
+              <div className="flex flex-wrap justify-between items-center gap-3 mb-5">
                 <div>
-                  <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider block mb-1">
-                    VISUAL GRAIN TISSUE COMPARATOR // CELLULAR ULTRASTRUCTURE DYNAMICS
+                  <span className="font-mono text-xs text-[#5E6573] uppercase tracking-wider block mb-1">
+                    CELLULAR ULTRASTRUCTURE EVALUATION
                   </span>
-                  <h3 className="text-lg sm:text-xl font-semibold text-white tracking-tight">
-                    The 8-Whistle Problem vs. The 2-Whistle Solution
+                  <h3 className="text-base sm:text-lg font-semibold text-[#E6E8EC] tracking-tight">
+                    Untreated Hard-to-Cook Matrix vs. S1-09 Conditioned Grain
                   </h3>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="font-mono text-xs text-[#F59E0B] bg-[#1A1F2C] px-3 py-1 border border-[#F59E0B]/30 rounded">
-                    Transition Progress: <strong className="text-white">{compareSplit}%</strong>
+                  <span className="font-mono text-xs text-[#D97706] bg-[#151821] px-2.5 py-1 border border-[#262C3A] rounded-xs">
+                    Progress: <strong className="text-[#E6E8EC]">{compareSplit}%</strong>
                   </span>
                 </div>
               </div>
 
-              {/* Quick State Presets */}
-              <div className="flex items-center space-x-2 mb-4 font-mono text-xs">
-                <span className="text-[#64748B]">PRESETS:</span>
+              {/* State Presets */}
+              <div className="flex flex-wrap items-center gap-2 mb-4 font-mono text-xs">
+                <span className="text-[#5E6573]">PRESETS:</span>
                 <button
                   onClick={() => setCompareSplit(0)}
-                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-xs border transition-colors cursor-pointer ${
                     compareSplit === 0 
-                      ? 'bg-[#EF4444]/20 border-[#EF4444] text-[#EF4444] font-semibold' 
-                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                      ? 'bg-[#DC2626]/10 border-[#DC2626]/50 text-[#DC2626] font-medium' 
+                      : 'bg-[#151821] border-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC]'
                   }`}
                 >
                   [0% Untreated HTC 8-Whistles]
                 </button>
                 <button
                   onClick={() => setCompareSplit(50)}
-                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-xs border transition-colors cursor-pointer ${
                     compareSplit === 50 
-                      ? 'bg-[#F59E0B]/20 border-[#F59E0B] text-[#F59E0B] font-semibold' 
-                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                      ? 'bg-[#D97706]/10 border-[#D97706]/50 text-[#D97706] font-medium' 
+                      : 'bg-[#151821] border-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC]'
                   }`}
                 >
-                  [50% Acoustic Reaction Front]
+                  [50% Reaction Progression]
                 </button>
                 <button
                   onClick={() => setCompareSplit(100)}
-                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                  className={`px-2.5 py-1 rounded-xs border transition-colors cursor-pointer ${
                     compareSplit === 100 
-                      ? 'bg-[#10B981]/20 border-[#10B981] text-[#10B981] font-semibold' 
-                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                      ? 'bg-[#10B981]/10 border-[#10B981]/50 text-[#10B981] font-medium' 
+                      : 'bg-[#151821] border-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC]'
                   }`}
                 >
-                  [100% FinnoaQ S1-09 2-Whistles]
+                  [100% S1-09 Conditioned (2 Whistles)]
                 </button>
               </div>
 
-              {/* Interactive Split Comparator Visual Box */}
-              <div className="relative border border-[#222630] rounded overflow-hidden bg-[#090A0E] p-4 sm:p-6 mb-4">
+              {/* Split Comparator Visual Container */}
+              <div className="relative border border-[#1E232E] rounded-xs overflow-hidden bg-[#0C0E12] p-4 sm:p-5 mb-4">
                 
-                {/* Visual Grain Cellular Cross-Section Illustration */}
-                <div className="w-full h-24 mb-6 rounded bg-[#141720] border border-[#222630] relative overflow-hidden flex items-center justify-between px-6">
-                  {/* Left State Tint */}
+                {/* Cellular Cross-Section Visual Bar */}
+                <div className="w-full h-20 mb-5 rounded-xs bg-[#13151B] border border-[#1E232E] relative overflow-hidden flex items-center justify-between px-5">
                   <div 
-                    className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#EF4444]/20 to-transparent transition-all duration-300"
+                    className="absolute inset-y-0 left-0 bg-[#DC2626]/10 transition-all duration-200"
                     style={{ width: `${100 - compareSplit}%` }}
                   />
-                  {/* Right State Tint */}
                   <div 
-                    className="absolute inset-y-0 right-0 bg-gradient-to-l from-[#10B981]/20 to-transparent transition-all duration-300"
+                    className="absolute inset-y-0 right-0 bg-[#10B981]/10 transition-all duration-200"
                     style={{ width: `${compareSplit}%` }}
                   />
 
                   {/* Left Label */}
                   <div className="relative z-10 font-mono text-xs">
-                    <span className="text-[#EF4444] font-bold block">UNTREATED GRAIN MATRIX</span>
-                    <span className="text-[#9CA3AF] text-[11px]">Rigid Middle Lamella Egg-Boxes (33.5 mol/m³)</span>
+                    <span className="text-[#DC2626] font-medium block">UNTREATED GRAIN</span>
+                    <span className="text-[#8E95A2] text-[11px]">Insoluble Ca-Pectate (33.5 mol/m³)</span>
                   </div>
 
-                  {/* Dynamic Transition Node in Center */}
-                  <div 
-                    className="relative z-10 w-10 h-10 rounded-full border-2 border-[#F59E0B] bg-[#090A0E] flex items-center justify-center font-mono text-xs font-bold text-[#F59E0B] shadow-[0_0_15px_#F59E0B] transition-all"
-                  >
+                  {/* Center Node */}
+                  <div className="relative z-10 px-2 py-0.5 rounded-xs border border-[#232836] bg-[#151821] font-mono text-[11px] text-[#D97706] font-medium">
                     {compareSplit}%
                   </div>
 
                   {/* Right Label */}
                   <div className="relative z-10 font-mono text-xs text-right">
-                    <span className="text-[#10B981] font-bold block">FINNOAQ CHELATED MATRIX</span>
-                    <span className="text-[#9CA3AF] text-[11px]">Unzipped Pectin Chains // 41.8% Ca²⁺ Extracted</span>
+                    <span className="text-[#10B981] font-medium block">S1-09 CONDITIONED</span>
+                    <span className="text-[#8E95A2] text-[11px]">41.8% Ca²⁺ Extracted // 15.2 N</span>
                   </div>
                 </div>
 
-                {/* Split Comparison Data Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Data Comparison Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
                   
                   {/* State 1: Untreated Raw Hard-to-Cook Dal */}
-                  <div className={`p-5 rounded border transition-all ${
-                    compareSplit <= 50 ? 'bg-[#141720] border-[#EF4444] shadow-[0_0_20px_rgba(239,68,68,0.15)]' : 'bg-[#0E1015] border-[#222630] opacity-75'
+                  <div className={`p-4 rounded-xs border transition-all ${
+                    compareSplit <= 50 ? 'bg-[#13151B] border-[#DC2626]/50' : 'bg-[#0C0E12] border-[#1E232E] opacity-70'
                   }`}>
-                    <div className="flex justify-between items-center mb-3">
-                      <span className="font-mono text-xs font-bold text-[#EF4444] tracking-wider">
+                    <div className="flex justify-between items-center mb-2.5">
+                      <span className="font-mono text-xs font-semibold text-[#DC2626] tracking-wide">
                         UNTREATED IMPORTED TOOR DAL
                       </span>
-                      <span className="px-2.5 py-0.5 bg-[#EF4444]/10 text-[#EF4444] border border-[#EF4444]/30 font-mono text-[11px] rounded font-semibold">
+                      <span className="px-2 py-0.5 bg-[#DC2626]/10 text-[#DC2626] border border-[#DC2626]/30 font-mono text-[10px] rounded-xs font-medium">
                         8+ WHISTLES (60–70 MIN)
                       </span>
                     </div>
-                    <div className="space-y-2.5 font-mono text-xs">
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Core Shear Force:</span>
-                        <span className="text-[#EF4444] font-bold">26.4 N (Rock Hard)</span>
+                    <div className="space-y-2 font-mono text-xs">
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Core Shear Force:</span>
+                        <span className="text-[#DC2626] font-medium">26.4 N (Rock Hard)</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Middle Lamella:</span>
-                        <span className="text-[#9CA3AF]">33.5 mol/m³ Ca-Pectate</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Middle Lamella:</span>
+                        <span className="text-[#8E95A2]">33.5 mol/m³ Ca-Pectate</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
-                        <span className="text-[#EF4444] font-medium">100% Active (Beany Flavor)</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Lipoxygenase (LOX):</span>
+                        <span className="text-[#DC2626]">100% Active</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Headspace Hexanal:</span>
-                        <span className="text-[#EF4444]">0.380 ppm (Grassy/Oxidized)</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Headspace Hexanal:</span>
+                        <span className="text-[#DC2626]">0.380 ppm</span>
                       </div>
-                      <div className="flex justify-between pt-1">
-                        <span className="text-[#64748B]">Mandi Valuation:</span>
-                        <span className="text-[#EF4444] font-bold">₹85.00 / kg (-₹20 discount)</span>
+                      <div className="flex justify-between pt-0.5">
+                        <span className="text-[#5E6573]">Mandi Valuation:</span>
+                        <span className="text-[#DC2626] font-medium">₹85.00 / kg (-₹20 discount)</span>
                       </div>
                     </div>
                   </div>
 
                   {/* State 2: FinnoaQ S1-09 Conditioned Dal */}
-                  <div className={`p-5 rounded border transition-all ${
-                    compareSplit > 50 ? 'bg-[#141720] border-[#10B981] shadow-[0_0_20px_rgba(16,185,129,0.15)]' : 'bg-[#0E1015] border-[#222630] opacity-75'
+                  <div className={`p-4 rounded-xs border transition-all ${
+                    compareSplit > 50 ? 'bg-[#13151B] border-[#10B981]/50' : 'bg-[#0C0E12] border-[#1E232E] opacity-70'
                   }`}>
-                    <div className="flex justify-between items-center mb-3">
-                      <span className="font-mono text-xs font-bold text-[#10B981] tracking-wider">
+                    <div className="flex justify-between items-center mb-2.5">
+                      <span className="font-mono text-xs font-semibold text-[#10B981] tracking-wide">
                         FINNOAQ S1-09 CONDITIONED DAL
                       </span>
-                      <span className="px-2.5 py-0.5 bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/30 font-mono text-[11px] rounded font-semibold">
+                      <span className="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/30 font-mono text-[10px] rounded-xs font-medium">
                         2 WHISTLES (7.0 MIN)
                       </span>
                     </div>
-                    <div className="space-y-2.5 font-mono text-xs">
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Core Shear Force:</span>
-                        <span className="text-[#10B981] font-bold">15.2 N (≤ 18.0 N tender limit)</span>
+                    <div className="space-y-2 font-mono text-xs">
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Core Shear Force:</span>
+                        <span className="text-[#10B981] font-medium">15.2 N (≤ 18.0 N limit)</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Middle Lamella:</span>
-                        <span className="text-[#10B981] font-medium">41.8% Ca2+ Extracted</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Middle Lamella:</span>
+                        <span className="text-[#10B981]">41.8% Ca2+ Extracted</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Lipoxygenase (LOX):</span>
                         <span className="text-[#10B981]">86.4% Denatured (pH 5.20)</span>
                       </div>
-                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
-                        <span className="text-[#64748B]">Headspace Hexanal:</span>
+                      <div className="flex justify-between border-b border-[#1E232E] pb-1">
+                        <span className="text-[#5E6573]">Headspace Hexanal:</span>
                         <span className="text-[#10B981]">0.025 ppm (OAV = 0.84 &lt; 1.0)</span>
                       </div>
-                      <div className="flex justify-between pt-1">
-                        <span className="text-[#64748B]">Mandi Valuation:</span>
-                        <span className="text-[#10B981] font-bold">₹105.00 / kg (Desi Parity)</span>
+                      <div className="flex justify-between pt-0.5">
+                        <span className="text-[#5E6573]">Mandi Valuation:</span>
+                        <span className="text-[#10B981] font-medium">₹105.00 / kg (Desi Parity)</span>
                       </div>
                     </div>
                   </div>
 
                 </div>
 
-                {/* Tactile Range Slider Controller */}
-                <div className="mt-5 pt-3 border-t border-[#222630]">
-                  <div className="flex justify-between text-[11px] font-mono text-[#64748B] mb-2">
-                    <span>◀ SLIDE TO INSPECT UNTREATED GRAIN</span>
-                    <span className="text-[#F59E0B]">DRAG INTERACTIVE ULTRASTRUCTURE SCRUBBER</span>
-                    <span>SLIDE TO INSPECT CONDITIONED GRAIN ▶</span>
+                {/* Range Slider Controller */}
+                <div className="mt-4 pt-3 border-t border-[#1E232E]">
+                  <div className="flex justify-between text-[11px] font-mono text-[#5E6573] mb-1.5">
+                    <span>◀ Untreated Grain State</span>
+                    <span className="text-[#D97706]">Scrub Transition Level</span>
+                    <span>Conditioned Grain State ▶</span>
                   </div>
                   <input
                     type="range"
@@ -241,20 +237,19 @@ export default function Module3Biophysics() {
                     max="100"
                     value={compareSplit}
                     onChange={(e) => setCompareSplit(Number(e.target.value))}
-                    className="w-full h-2 bg-[#1A1F2C] rounded-lg appearance-none cursor-pointer accent-[#F59E0B]"
+                    className="w-full h-1.5 bg-[#171B24] rounded-xs appearance-none cursor-pointer accent-[#D97706]"
                   />
                 </div>
               </div>
             </div>
-
             {/* 2. Main Kinetics & Mechanism Workbench */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 border-b border-[#222630]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 border-b border-[#1E232E]">
               
               {/* Left 6 Columns: Interactive 24-Minute Kinetic Curve & Scrubber */}
-              <div className="lg:col-span-6 p-6 sm:p-8 bg-[#0A0B0D] border-b lg:border-b-0 lg:border-r border-[#222630] flex flex-col justify-between">
+              <div className="lg:col-span-6 p-6 sm:p-8 bg-[#0C0E12] border-b lg:border-b-0 lg:border-r border-[#1E232E] flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-center mb-3">
-                    <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider">
+                    <span className="font-mono text-xs text-[#5E6573] uppercase tracking-wider">
                       24-MIN CALCIUM EXTRACTION & TEXTURE KINETICS
                     </span>
                     <span className="font-mono text-xs text-[#10B981]">
@@ -263,18 +258,18 @@ export default function Module3Biophysics() {
                   </div>
 
                   {/* SVG Kinetics Chart */}
-                  <div className="p-4 bg-[#111317] border border-[#222630] rounded-sm mb-4">
+                  <div className="p-4 bg-[#111319] border border-[#1E232E] rounded-xs mb-4">
                     <svg viewBox="0 0 400 200" className="w-full h-48 overflow-visible">
                       {/* Grid Lines */}
-                      <line x1="40" y1="20" x2="380" y2="20" stroke="#222630" strokeDasharray="2,2" />
-                      <line x1="40" y1="60" x2="380" y2="60" stroke="#222630" strokeDasharray="2,2" />
-                      <line x1="40" y1="100" x2="380" y2="100" stroke="#222630" strokeDasharray="2,2" />
-                      <line x1="40" y1="140" x2="380" y2="140" stroke="#222630" strokeDasharray="2,2" />
-                      <line x1="40" y1="170" x2="380" y2="170" stroke="#222630" />
+                      <line x1="40" y1="20" x2="380" y2="20" stroke="#1E232E" strokeDasharray="2,2" />
+                      <line x1="40" y1="60" x2="380" y2="60" stroke="#1E232E" strokeDasharray="2,2" />
+                      <line x1="40" y1="100" x2="380" y2="100" stroke="#1E232E" strokeDasharray="2,2" />
+                      <line x1="40" y1="140" x2="380" y2="140" stroke="#1E232E" strokeDasharray="2,2" />
+                      <line x1="40" y1="170" x2="380" y2="170" stroke="#1E232E" />
 
                       {/* 18.0 N Threshold Line */}
-                      <line x1="40" y1="120" x2="380" y2="120" stroke="#F59E0B" strokeDasharray="4,4" strokeWidth="1.5" />
-                      <text x="375" y="115" fill="#F59E0B" fontSize="9" textAnchor="end" fontFamily="monospace">
+                      <line x1="40" y1="120" x2="380" y2="120" stroke="#D97706" strokeDasharray="4,4" strokeWidth="1.5" />
+                      <text x="375" y="115" fill="#D97706" fontSize="9" textAnchor="end" fontFamily="monospace">
                         18.0 N (2-Whistle Tenderness Limit)
                       </text>
 
@@ -282,7 +277,7 @@ export default function Module3Biophysics() {
                       <path
                         d="M 40 170 Q 120 70 380 40"
                         fill="none"
-                        stroke="#F59E0B"
+                        stroke="#D97706"
                         strokeWidth="2.5"
                       />
 
@@ -299,37 +294,37 @@ export default function Module3Biophysics() {
                         const xPos = 40 + (timeMin / 30) * 340;
                         return (
                           <g>
-                            <line x1={xPos} y1="15" x2={xPos} y2="175" stroke="#F3F4F6" strokeWidth="1" strokeDasharray="2,2" />
-                            <circle cx={xPos} cy={170 - (caExtraction / 50) * 150} r="4" fill="#F59E0B" stroke="#0A0B0D" strokeWidth="2" />
-                            <circle cx={xPos} cy={30 + ((26.4 - shearForce) / 15) * 115} r="4" fill="#10B981" stroke="#0A0B0D" strokeWidth="2" />
+                            <line x1={xPos} y1="15" x2={xPos} y2="175" stroke="#E6E8EC" strokeWidth="1" strokeDasharray="2,2" />
+                            <circle cx={xPos} cy={170 - (caExtraction / 50) * 150} r="4" fill="#D97706" stroke="#0C0E12" strokeWidth="2" />
+                            <circle cx={xPos} cy={30 + ((26.4 - shearForce) / 15) * 115} r="4" fill="#10B981" stroke="#0C0E12" strokeWidth="2" />
                           </g>
                         );
                       })()}
 
                       {/* Axis Labels */}
-                      <text x="40" y="185" fill="#64748B" fontSize="9" fontFamily="monospace">0m</text>
-                      <text x="153" y="185" fill="#64748B" fontSize="9" fontFamily="monospace">10m</text>
-                      <text x="312" y="185" fill="#F59E0B" fontSize="9" fontWeight="bold" fontFamily="monospace">24m [Optimum]</text>
-                      <text x="380" y="185" fill="#64748B" fontSize="9" textAnchor="end" fontFamily="monospace">30m</text>
+                      <text x="40" y="185" fill="#5E6573" fontSize="9" fontFamily="monospace">0m</text>
+                      <text x="153" y="185" fill="#5E6573" fontSize="9" fontFamily="monospace">10m</text>
+                      <text x="312" y="185" fill="#D97706" fontSize="9" fontWeight="bold" fontFamily="monospace">24m [Optimum]</text>
+                      <text x="380" y="185" fill="#5E6573" fontSize="9" textAnchor="end" fontFamily="monospace">30m</text>
                     </svg>
 
-                    <div className="flex justify-between items-center text-[11px] font-mono mt-2 pt-2 border-t border-[#222630]">
+                    <div className="flex justify-between items-center text-[11px] font-mono mt-2 pt-2 border-t border-[#1E232E]">
                       <div className="flex items-center space-x-2">
-                        <span className="w-2.5 h-2.5 bg-[#F59E0B] inline-block rounded-xs"></span>
-                        <span className="text-[#9CA3AF]">Core Ca2+ Displaced (%): <strong className="text-[#F59E0B]">{caExtraction}%</strong></span>
+                        <span className="w-2.5 h-2.5 bg-[#D97706] inline-block rounded-xs"></span>
+                        <span className="text-[#8E95A2]">Core Ca2+ Displaced (%): <strong className="text-[#D97706]">{caExtraction}%</strong></span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <span className="w-2.5 h-2.5 bg-[#10B981] inline-block rounded-xs"></span>
-                        <span className="text-[#9CA3AF]">WB Shear Force: <strong className="text-[#10B981]">{shearForce} N</strong></span>
+                        <span className="text-[#8E95A2]">WB Shear Force: <strong className="text-[#10B981]">{shearForce} N</strong></span>
                       </div>
                     </div>
                   </div>
 
                   {/* Interactive Time Slider */}
-                  <div className="p-4 bg-[#111317] border border-[#222630] rounded-sm mb-4">
+                  <div className="p-4 bg-[#111319] border border-[#1E232E] rounded-xs mb-4">
                     <div className="flex justify-between items-center mb-2 font-mono text-xs">
-                      <span className="text-[#9CA3AF]">Interactive Steeping Duration Scrubber:</span>
-                      <span className="text-[#F59E0B] font-semibold text-sm tabular-nums">{timeMin} Minutes</span>
+                      <span className="text-[#8E95A2]">Interactive Steeping Duration Scrubber:</span>
+                      <span className="text-[#D97706] font-semibold text-sm tabular-nums">{timeMin} Minutes</span>
                     </div>
                     <input
                       type="range"
@@ -338,21 +333,21 @@ export default function Module3Biophysics() {
                       step="1"
                       value={timeMin}
                       onChange={(e) => setTimeMin(Number(e.target.value))}
-                      className="w-full accent-[#F59E0B] cursor-pointer"
+                      className="w-full accent-[#D97706] cursor-pointer"
                     />
-                    <div className="flex justify-between font-mono text-[10px] text-[#64748B] mt-1">
+                    <div className="flex justify-between font-mono text-[10px] text-[#5E6573] mt-1">
                       <span>0m (Raw Dry)</span>
                       <span>12m (Superficial)</span>
-                      <span className="text-[#F59E0B]">24m (Core Extraction)</span>
+                      <span className="text-[#D97706]">24m (Core Extraction)</span>
                       <span>30m (Over-leach)</span>
                     </div>
                   </div>
 
                   {/* Real-Time Live Readout Metrics */}
                   <div className="grid grid-cols-2 gap-2 font-mono text-xs">
-                    <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm">
-                      <div className="text-[10px] text-[#64748B]">BOUNDARY LAYER THICKNESS</div>
-                      <div className="text-base font-semibold text-[#F3F4F6] my-0.5 tabular-nums">
+                    <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs">
+                      <div className="text-[10px] text-[#5E6573]">BOUNDARY LAYER THICKNESS</div>
+                      <div className="text-base font-semibold text-[#E6E8EC] my-0.5 tabular-nums">
                         {boundaryLayerUm} μm
                       </div>
                       <div className="text-[10px] text-[#10B981]">
@@ -360,12 +355,12 @@ export default function Module3Biophysics() {
                       </div>
                     </div>
 
-                    <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm">
-                      <div className="text-[10px] text-[#64748B]">HAWKINS COOKER EQUIVALENT</div>
-                      <div className="text-sm font-semibold text-[#F59E0B] my-0.5 tabular-nums truncate">
+                    <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs">
+                      <div className="text-[10px] text-[#5E6573]">HAWKINS COOKER EQUIVALENT</div>
+                      <div className="text-sm font-semibold text-[#D97706] my-0.5 tabular-nums truncate">
                         {whistleCount}
                       </div>
-                      <div className="text-[10px] text-[#9CA3AF]">
+                      <div className="text-[10px] text-[#8E95A2]">
                         Benchmark Desi: 3 Whistles (9.8m)
                       </div>
                     </div>
@@ -373,20 +368,20 @@ export default function Module3Biophysics() {
 
                 </div>
 
-                <div className="font-mono text-[11px] text-[#64748B] pt-4 border-t border-[#222630]">
+                <div className="font-mono text-[11px] text-[#5E6573] pt-4 border-t border-[#1E232E]">
                   Governing Equation: ∂c/∂t = ∇·(D_eff ∇c) - R_chelate // Hawkins 103.4 kPa Saturated Steam Model
                 </div>
               </div>
 
               {/* Right 6 Columns: 5-Tab Technical Mechanism Selector */}
-              <div className="lg:col-span-6 p-6 sm:p-8 bg-[#111317] flex flex-col justify-between">
+              <div className="lg:col-span-6 p-6 sm:p-8 bg-[#111319] flex flex-col justify-between">
                 <div>
-                  <div className="font-mono text-xs text-[#64748B] uppercase tracking-wider mb-4">
+                  <div className="font-mono text-xs text-[#5E6573] uppercase tracking-wider mb-4">
                     BIOPHYSICAL MECHANISMS & EXPERIMENTAL PROOF
                   </div>
 
                   {/* 5 Tabs */}
-                  <div className="flex flex-wrap gap-1 border-b border-[#222630] pb-2 mb-4 font-mono text-xs">
+                  <div className="flex flex-wrap gap-1 border-b border-[#1E232E] pb-2 mb-4 font-mono text-xs">
                     {[
                       { id: 'pathology', label: '1. Pathology' },
                       { id: 'stoichiometry', label: '2. S1-09 Buffer' },
@@ -397,10 +392,10 @@ export default function Module3Biophysics() {
                       <button
                         key={tab.id}
                         onClick={() => setActiveMechanism(tab.id)}
-                        className={`px-3 py-1.5 rounded-sm transition-colors cursor-pointer ${
+                        className={`px-3 py-1.5 rounded-xs transition-colors cursor-pointer ${
                           activeMechanism === tab.id
-                            ? 'bg-[#171A21] border border-[#F59E0B] text-[#F59E0B] font-semibold'
-                            : 'bg-[#0A0B0D] border border-[#222630] text-[#9CA3AF] hover:text-[#F3F4F6]'
+                            ? 'bg-[#151821] border border-[#D97706] text-[#D97706] font-semibold'
+                            : 'bg-[#0C0E12] border border-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC]'
                         }`}
                       >
                         {tab.label}
@@ -409,26 +404,26 @@ export default function Module3Biophysics() {
                   </div>
 
                   {/* Tab Content Display */}
-                  <div className="p-5 bg-[#0A0B0D] border border-[#222630] rounded-sm min-h-[300px]">
+                  <div className="p-5 bg-[#0C0E12] border border-[#1E232E] rounded-xs min-h-[300px]">
                     
                     {activeMechanism === 'pathology' && (
                       <div>
-                        <div className="font-mono text-xs text-[#F59E0B] font-semibold uppercase mb-2">
+                        <div className="font-mono text-xs text-[#D97706] font-semibold uppercase mb-2">
                           {BIOPHYSICAL_SOLUTION.pathology.title}
                         </div>
-                        <p className="text-xs sm:text-sm text-[#9CA3AF] leading-relaxed mb-4">
+                        <p className="text-xs sm:text-sm text-[#8E95A2] leading-relaxed mb-4">
                           {BIOPHYSICAL_SOLUTION.pathology.description}
                         </p>
-                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#222630]">
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">AGED AFRICAN DAL CA-PECTATE</div>
+                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#1E232E]">
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">AGED AFRICAN DAL CA-PECTATE</div>
                             <div className="text-sm font-semibold text-[#EF4444] tabular-nums">33.5 mol / m³</div>
-                            <div className="text-[10px] text-[#9CA3AF]">Severe HTC Egg-Box Matrices</div>
+                            <div className="text-[10px] text-[#8E95A2]">Severe HTC Egg-Box Matrices</div>
                           </div>
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">DOMESTIC DESI BENCHMARK</div>
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">DOMESTIC DESI BENCHMARK</div>
                             <div className="text-sm font-semibold text-[#10B981] tabular-nums">14.0 mol / m³</div>
-                            <div className="text-[10px] text-[#9CA3AF]">Natural Tender Cleaving</div>
+                            <div className="text-[10px] text-[#8E95A2]">Natural Tender Cleaving</div>
                           </div>
                         </div>
                       </div>
@@ -436,22 +431,22 @@ export default function Module3Biophysics() {
 
                     {activeMechanism === 'stoichiometry' && (
                       <div>
-                        <div className="font-mono text-xs text-[#F59E0B] font-semibold uppercase mb-2">
+                        <div className="font-mono text-xs text-[#D97706] font-semibold uppercase mb-2">
                           {BIOPHYSICAL_SOLUTION.formulation.code}
                         </div>
                         <div className="space-y-2 mb-4 font-mono text-xs">
                           {BIOPHYSICAL_SOLUTION.formulation.components.map((comp, idx) => (
-                            <div key={idx} className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
+                            <div key={idx} className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
                               <div className="flex justify-between items-center mb-1">
-                                <span className="text-[#F3F4F6] font-semibold">{comp.name}</span>
-                                <span className="text-[#F59E0B]">{comp.molarity} ({comp.concentration})</span>
+                                <span className="text-[#E6E8EC] font-semibold">{comp.name}</span>
+                                <span className="text-[#D97706]">{comp.molarity} ({comp.concentration})</span>
                               </div>
-                              <div className="text-[#9CA3AF] text-[11px] font-sans">{comp.function}</div>
+                              <div className="text-[#8E95A2] text-[11px] font-sans">{comp.function}</div>
                             </div>
                           ))}
                         </div>
-                        <div className="flex justify-between items-center font-mono text-xs p-2.5 bg-[#171A21] border border-[#222630] rounded-sm">
-                          <span className="text-[#9CA3AF]">Equilibrium pH Envelope:</span>
+                        <div className="flex justify-between items-center font-mono text-xs p-2.5 bg-[#151821] border border-[#1E232E] rounded-xs">
+                          <span className="text-[#8E95A2]">Equilibrium pH Envelope:</span>
                           <span className="text-[#10B981] font-semibold">{BIOPHYSICAL_SOLUTION.formulation.equilibriumPh}</span>
                         </div>
                       </div>
@@ -459,22 +454,22 @@ export default function Module3Biophysics() {
 
                     {activeMechanism === 'acoustics' && (
                       <div>
-                        <div className="font-mono text-xs text-[#F59E0B] font-semibold uppercase mb-2">
+                        <div className="font-mono text-xs text-[#D97706] font-semibold uppercase mb-2">
                           Hawkins Classic 3L Pressure Cooker Acoustics & Venting
                         </div>
-                        <p className="text-xs sm:text-sm text-[#9CA3AF] leading-relaxed mb-4">
+                        <p className="text-xs sm:text-sm text-[#8E95A2] leading-relaxed mb-4">
                           {BIOPHYSICAL_SOLUTION.cookerThermodynamics.whistleDynamics}
                         </p>
-                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#222630]">
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">OPERATING PRESSURE</div>
-                            <div className="text-sm font-semibold text-[#F3F4F6] tabular-nums">15 psi (103.4 kPa g)</div>
-                            <div className="text-[10px] text-[#9CA3AF]">T_sat = 121.1°C (394.3 K)</div>
+                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#1E232E]">
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">OPERATING PRESSURE</div>
+                            <div className="text-sm font-semibold text-[#E6E8EC] tabular-nums">15 psi (103.4 kPa g)</div>
+                            <div className="text-[10px] text-[#8E95A2]">T_sat = 121.1°C (394.3 K)</div>
                           </div>
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">VENT VALVE SPEC</div>
-                            <div className="text-sm font-semibold text-[#F59E0B] tabular-nums">48.5g Deadweight</div>
-                            <div className="text-[10px] text-[#9CA3AF]">Throat Dia: 2.1 mm (1.8g steam/chuff)</div>
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">VENT VALVE SPEC</div>
+                            <div className="text-sm font-semibold text-[#D97706] tabular-nums">48.5g Deadweight</div>
+                            <div className="text-[10px] text-[#8E95A2]">Throat Dia: 2.1 mm (1.8g steam/chuff)</div>
                           </div>
                         </div>
                       </div>
@@ -482,22 +477,22 @@ export default function Module3Biophysics() {
 
                     {activeMechanism === 'drying' && (
                       <div>
-                        <div className="font-mono text-xs text-[#F59E0B] font-semibold uppercase mb-2">
+                        <div className="font-mono text-xs text-[#D97706] font-semibold uppercase mb-2">
                           Viscoelastic Two-Stage Tempered Fluid Bed Drying
                         </div>
-                        <p className="text-xs sm:text-sm text-[#9CA3AF] leading-relaxed mb-4">
+                        <p className="text-xs sm:text-sm text-[#8E95A2] leading-relaxed mb-4">
                           {BIOPHYSICAL_SOLUTION.dryingMechanics.twoStageSchedule}
                         </p>
-                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#222630]">
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">PEAK TENSILE HOOP STRESS</div>
+                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#1E232E]">
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">PEAK TENSILE HOOP STRESS</div>
                             <div className="text-sm font-semibold text-[#10B981] tabular-nums">0.40 MPa</div>
-                            <div className="text-[10px] text-[#9CA3AF]">0.431x Yield Strength (1.65 MPa)</div>
+                            <div className="text-[10px] text-[#8E95A2]">0.431x Yield Strength (1.65 MPa)</div>
                           </div>
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">BROKEN COTYLEDON FINES</div>
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">BROKEN COTYLEDON FINES</div>
                             <div className="text-sm font-semibold text-[#10B981] tabular-nums">&lt;0.35% Fines</div>
-                            <div className="text-[10px] text-[#9CA3AF]">Commercial Limit: 1.50%</div>
+                            <div className="text-[10px] text-[#8E95A2]">Commercial Limit: 1.50%</div>
                           </div>
                         </div>
                       </div>
@@ -505,24 +500,24 @@ export default function Module3Biophysics() {
 
                     {activeMechanism === 'flavor' && (
                       <div>
-                        <div className="font-mono text-xs text-[#F59E0B] font-semibold uppercase mb-2">
+                        <div className="font-mono text-xs text-[#D97706] font-semibold uppercase mb-2">
                           Lipoxygenase Inactivation & Volatile Headspace Kinetics
                         </div>
-                        <p className="text-xs sm:text-sm text-[#9CA3AF] leading-relaxed mb-4">
+                        <p className="text-xs sm:text-sm text-[#8E95A2] leading-relaxed mb-4">
                           Steeping at pH 5.20 acidic buffer holding denatures 86.4% of endogenous lipoxygenase (LOX), 
                           permanently arresting hexanal formation. High-pressure 12s counter-current deluge rinse strips 
                           98.7% of superficial salt film.
                         </p>
-                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#222630]">
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">HEADSPACE HEXANAL</div>
+                        <div className="grid grid-cols-2 gap-2 font-mono text-xs pt-3 border-t border-[#1E232E]">
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">HEADSPACE HEXANAL</div>
                             <div className="text-sm font-semibold text-[#10B981] tabular-nums">0.025 ppm</div>
-                            <div className="text-[10px] text-[#9CA3AF]">OAV = 0.84 &lt; 1.0 (Untreated: 0.380 ppm)</div>
+                            <div className="text-[10px] text-[#8E95A2]">OAV = 0.84 &lt; 1.0 (Untreated: 0.380 ppm)</div>
                           </div>
-                          <div className="p-2.5 bg-[#111317] border border-[#222630] rounded-sm">
-                            <div className="text-[10px] text-[#64748B]">RETAINED PHOSPHATE</div>
+                          <div className="p-2.5 bg-[#111319] border border-[#1E232E] rounded-xs">
+                            <div className="text-[10px] text-[#5E6573]">RETAINED PHOSPHATE</div>
                             <div className="text-sm font-semibold text-[#10B981] tabular-nums">142 mg / kg</div>
-                            <div className="text-[10px] text-[#9CA3AF]">35.2x Margin Below FSSAI 5,000 mg/kg</div>
+                            <div className="text-[10px] text-[#8E95A2]">35.2x Margin Below FSSAI 5,000 mg/kg</div>
                           </div>
                         </div>
                       </div>
@@ -531,7 +526,7 @@ export default function Module3Biophysics() {
                   </div>
                 </div>
 
-                <div className="font-mono text-[11px] text-[#64748B] pt-4 border-t border-[#222630]">
+                <div className="font-mono text-[11px] text-[#5E6573] pt-4 border-t border-[#1E232E]">
                   Validated via ISO 4120 3-AFC Triangular Sensory Panel (N=72, p = 0.420)
                 </div>
               </div>
@@ -542,20 +537,20 @@ export default function Module3Biophysics() {
 
         {/* VIEW B: Forensic Industry Failure Analysis */}
         {activeView === 'viewB' && (
-          <div className="p-6 sm:p-8 bg-[#0A0B0D]">
+          <div className="p-6 sm:p-8 bg-[#0C0E12]">
             <div className="flex justify-between items-center mb-4">
-              <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider">
+              <span className="font-mono text-xs text-[#5E6573] uppercase tracking-wider">
                 5-ROW FORENSIC FAILURE REGISTER & FIRST-PRINCIPLES COUNTERMEASURES
               </span>
-              <span className="font-mono text-xs px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-sm">
+              <span className="font-mono text-xs px-2 py-0.5 bg-[#151821] text-[#10B981] border border-[#232836] rounded-xs">
                 5 / 5 DEFECTS ELIMINATED
               </span>
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-left font-mono text-xs border border-[#222630]">
+              <table className="w-full text-left font-mono text-xs border border-[#1E232E]">
                 <thead>
-                  <tr className="bg-[#111317] border-b border-[#222630] text-[#64748B]">
+                  <tr className="bg-[#111319] border-b border-[#1E232E] text-[#5E6573]">
                     <th className="p-3 w-1/5">Industry Failure Mode</th>
                     <th className="p-3 w-1/4">Chemical & Physical Mechanism</th>
                     <th className="p-3 w-1/4">Observed Commercial Defect</th>
@@ -563,15 +558,15 @@ export default function Module3Biophysics() {
                     <th className="p-3 text-right">Status</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#222630]">
+                <tbody className="divide-y divide-[#1E232E]">
                   {FORENSIC_FAILURE_ANALYSIS.map((row, idx) => (
-                    <tr key={idx} className="hover:bg-[#111317] transition-colors">
-                      <td className="p-3 text-[#F3F4F6] font-semibold">{row.failureMode}</td>
-                      <td className="p-3 text-[#9CA3AF] font-sans text-xs">{row.chemicalMechanism}</td>
+                    <tr key={idx} className="hover:bg-[#111319] transition-colors">
+                      <td className="p-3 text-[#E6E8EC] font-semibold">{row.failureMode}</td>
+                      <td className="p-3 text-[#8E95A2] font-sans text-xs">{row.chemicalMechanism}</td>
                       <td className="p-3 text-[#EF4444] font-sans text-xs">{row.observedDefect}</td>
                       <td className="p-3 text-[#10B981] font-sans text-xs">{row.finnoaqSolution}</td>
                       <td className="p-3 text-right">
-                        <span className="px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-sm text-[10px]">
+                        <span className="px-2 py-0.5 bg-[#151821] text-[#10B981] border border-[#232836] rounded-xs text-[10px]">
                           {row.status}
                         </span>
                       </td>
@@ -581,7 +576,7 @@ export default function Module3Biophysics() {
               </table>
             </div>
 
-            <div className="mt-4 p-4 bg-[#111317] border border-[#222630] rounded-sm flex flex-wrap justify-between items-center gap-2 font-mono text-xs text-[#64748B]">
+            <div className="mt-4 p-4 bg-[#111319] border border-[#1E232E] rounded-xs flex flex-wrap justify-between items-center gap-2 font-mono text-xs text-[#5E6573]">
               <span>FAIL-0001 to FAIL-0025 Verified Closed in Governance Ledger</span>
               <span>Tested under ISO 11136:2014 & FSSAI Guidelines</span>
             </div>

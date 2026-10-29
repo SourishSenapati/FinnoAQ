@@ -20,20 +20,20 @@ export default function Module6MillerScoping() {
   };
 
   return (
-    <section id="scoping" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
-      <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
+    <section id="scoping" className="w-full bg-[#0C0E12] border-b border-[#1E232E] scroll-mt-20">
+      <div className="max-w-[1440px] mx-auto border-x border-[#1E232E]">
         
         {/* Module Header */}
-        <div className="p-6 border-b border-[#222630] bg-[#111317] flex flex-wrap items-center justify-between gap-4">
+        <div className="p-6 border-b border-[#1E232E] bg-[#111319] flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center space-x-3">
-            <span className="px-2.5 py-0.5 bg-[#1E222A] text-[#94A3B8] border border-[#2E3440] font-mono text-xs rounded-sm">
+            <span className="px-2.5 py-0.5 bg-[#151821] text-[#94A3B8] border border-[#232836] font-mono text-xs rounded-xs font-medium">
               [05 // MILLER DISCOVERY & 48-HR DIAGNOSTIC WORKFLOW]
             </span>
-            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#F3F4F6]">
+            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#E6E8EC]">
               Miller Discovery, 48-Hour Diagnostic Trial & Scoping Portal
             </h2>
           </div>
-          <span className="font-mono text-xs px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-sm">
+          <span className="font-mono text-xs px-2 py-0.5 bg-[#151821] text-[#10B981] border border-[#232836] rounded-xs font-medium">
             15/15 MILLS CONFIRMED HTC PAIN // 86.7% WTP
           </span>
         </div>
@@ -42,43 +42,43 @@ export default function Module6MillerScoping() {
         <div className="grid grid-cols-1 lg:grid-cols-12">
           
           {/* Left Column: 4 Metrics, 2 Editorial Blockquotes & 5-Step Timeline (6 Cols) */}
-          <div className="lg:col-span-6 p-6 sm:p-8 bg-[#0A0B0D] border-b lg:border-b-0 lg:border-r border-[#222630] flex flex-col justify-between">
+          <div className="lg:col-span-6 p-6 sm:p-8 bg-[#0C0E12] border-b lg:border-b-0 lg:border-r border-[#1E232E] flex flex-col justify-between">
             <div>
-              <div className="font-mono text-xs text-[#64748B] uppercase tracking-wider mb-4">
+              <div className="font-mono text-xs text-[#5E6573] uppercase tracking-wider mb-4">
                 COMMERCIAL MILLER VALIDATION & PAIN-POINT AUDIT
               </div>
 
               {/* 4 Validation Metrics */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6">
-                <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm text-center">
-                  <div className="font-mono text-xl sm:text-2xl font-bold text-[#F3F4F6] tabular-nums">
+                <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs text-center">
+                  <div className="font-mono text-xl sm:text-2xl font-bold text-[#E6E8EC] tabular-nums">
                     {CUSTOMER_DISCOVERY.totalMillersInterviewed}
                   </div>
-                  <div className="font-mono text-[10px] text-[#64748B]">Millers Audited</div>
-                  <div className="font-mono text-[9px] text-[#9CA3AF]">Latur, Akola, Indore</div>
+                  <div className="font-mono text-[10px] text-[#5E6573]">Millers Audited</div>
+                  <div className="font-mono text-[9px] text-[#8E95A2]">Latur, Akola, Indore</div>
                 </div>
 
-                <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm text-center">
+                <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs text-center">
                   <div className="font-mono text-xl sm:text-2xl font-bold text-[#EF4444] tabular-nums">
                     100%
                   </div>
-                  <div className="font-mono text-[10px] text-[#64748B]">Confirmed HTC</div>
+                  <div className="font-mono text-[10px] text-[#5E6573]">Confirmed HTC</div>
                   <div className="font-mono text-[9px] text-[#EF4444]">8+ Whistles Rejection</div>
                 </div>
 
-                <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm text-center">
-                  <div className="font-mono text-xl sm:text-2xl font-bold text-[#F59E0B] tabular-nums">
+                <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs text-center">
+                  <div className="font-mono text-xl sm:text-2xl font-bold text-[#D97706] tabular-nums">
                     86.7%
                   </div>
-                  <div className="font-mono text-[10px] text-[#64748B]">WTP Tolling</div>
-                  <div className="font-mono text-[9px] text-[#F59E0B]">₹10–₹12/kg Fee</div>
+                  <div className="font-mono text-[10px] text-[#5E6573]">WTP Tolling</div>
+                  <div className="font-mono text-[9px] text-[#D97706]">₹10–₹12/kg Fee</div>
                 </div>
 
-                <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm text-center">
+                <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs text-center">
                   <div className="font-mono text-xl sm:text-2xl font-bold text-[#10B981] tabular-nums">
                     6
                   </div>
-                  <div className="font-mono text-[10px] text-[#64748B]">Host Mills</div>
+                  <div className="font-mono text-[10px] text-[#5E6573]">Host Mills</div>
                   <div className="font-mono text-[9px] text-[#10B981]">Signed EOIs for Demo</div>
                 </div>
               </div>
@@ -88,13 +88,13 @@ export default function Module6MillerScoping() {
                 {CUSTOMER_DISCOVERY.keyMillerQuotes.map((q, idx) => (
                   <blockquote 
                     key={idx}
-                    className="p-3.5 bg-[#111317] border-l-2 border-[#F59E0B] border-y border-r border-[#222630] rounded-sm"
+                    className="p-3.5 bg-[#111319] border-l-2 border-[#D97706] border-y border-r border-[#1E232E] rounded-xs"
                   >
-                    <p className="text-xs sm:text-sm text-[#F3F4F6] italic leading-relaxed mb-2 font-serif">
+                    <p className="text-xs sm:text-sm text-[#E6E8EC] italic leading-relaxed mb-2 font-serif">
                       "{q.quote}"
                     </p>
-                    <footer className="font-mono text-[11px] text-[#64748B] flex items-center space-x-2">
-                      <span className="text-[#F59E0B]">—</span>
+                    <footer className="font-mono text-[11px] text-[#5E6573] flex items-center space-x-2">
+                      <span className="text-[#D97706]">—</span>
                       <span>{q.miller}</span>
                     </footer>
                   </blockquote>
@@ -102,22 +102,22 @@ export default function Module6MillerScoping() {
               </div>
 
               {/* 5-Step Vertical 48-Hour Diagnostic Timeline */}
-              <div className="mt-6 pt-4 border-t border-[#222630]">
-                <div className="font-mono text-xs text-[#64748B] uppercase tracking-wider mb-3">
+              <div className="mt-6 pt-4 border-t border-[#1E232E]">
+                <div className="font-mono text-xs text-[#5E6573] uppercase tracking-wider mb-3">
                   48-HOUR 5-KG DIAGNOSTIC TRIAL PROTOCOL
                 </div>
                 <div className="space-y-2">
                   {CUSTOMER_DISCOVERY.diagnosticWorkflow.map((step, idx) => (
                     <div 
                       key={idx}
-                      className="p-3 bg-[#111317] border border-[#222630] rounded-sm flex items-start space-x-3 font-mono text-xs"
+                      className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs flex items-start space-x-3 font-mono text-xs"
                     >
-                      <div className="px-2 py-0.5 bg-[#0A0B0D] text-[#F59E0B] border border-[#222630] rounded-xs font-semibold shrink-0">
+                      <div className="px-2 py-0.5 bg-[#0C0E12] text-[#D97706] border border-[#1E232E] rounded-xs font-semibold shrink-0">
                         {step.time}
                       </div>
                       <div className="flex-1">
-                        <div className="text-[#F3F4F6] font-medium mb-0.5">{step.step}</div>
-                        <div className="text-[#9CA3AF] text-[11px] font-sans">{step.desc}</div>
+                        <div className="text-[#E6E8EC] font-medium mb-0.5">{step.step}</div>
+                        <div className="text-[#8E95A2] text-[11px] font-sans">{step.desc}</div>
                       </div>
                     </div>
                   ))}
@@ -126,43 +126,43 @@ export default function Module6MillerScoping() {
 
             </div>
 
-            <div className="font-mono text-[11px] text-[#64748B] pt-4 mt-6 border-t border-[#222630]">
+            <div className="font-mono text-[11px] text-[#5E6573] pt-4 mt-6 border-t border-[#1E232E]">
               Empirical Customer Discovery Interviews Audited under FNQ-PR-2026-COMM-001
             </div>
           </div>
 
           {/* Right Column: Industrial Laboratory Intake Manifest Form (6 Cols) */}
-          <div className="lg:col-span-6 p-6 sm:p-8 bg-[#111317] flex flex-col justify-between">
+          <div className="lg:col-span-6 p-6 sm:p-8 bg-[#111319] flex flex-col justify-between">
             <div>
               <div className="flex justify-between items-center mb-4">
-                <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider">
+                <span className="font-mono text-xs text-[#5E6573] uppercase tracking-wider">
                   LABORATORY INTAKE MANIFEST // 48-HR DIAGNOSTIC
                 </span>
-                <span className="font-mono text-xs text-[#F59E0B]">
+                <span className="font-mono text-xs text-[#D97706] font-medium">
                   SECURE MILL INTAKE
                 </span>
               </div>
 
               {submitted ? (
-                <div className="p-6 bg-[#0A0B0D] border border-[#10B981] rounded-sm text-left">
+                <div className="p-6 bg-[#0C0E12] border border-[#10B981] rounded-xs text-left">
                   <div className="flex items-center space-x-2 text-[#10B981] font-mono text-sm font-semibold mb-2">
                     <span>✓</span>
                     <span>INTAKE MANIFEST REGISTERED // TICKET #FNQ-DT-2026-088</span>
                   </div>
-                  <p className="text-xs text-[#9CA3AF] leading-relaxed mb-4 font-mono">
-                    Diagnostic trial protocol dispatched for <strong className="text-[#F3F4F6]">{formData.millName || 'Your Pulse Mill'}</strong>. 
+                  <p className="text-xs text-[#8E95A2] leading-relaxed mb-4 font-mono">
+                    Diagnostic trial protocol dispatched for <strong className="text-[#E6E8EC]">{formData.millName || 'Your Pulse Mill'}</strong>. 
                     Our laboratory coordination desk will transmit courier sample packaging guidelines 
                     for your 5.0 kg unconditioned consignment.
                   </p>
-                  <div className="p-3 bg-[#111317] border border-[#222630] rounded-sm font-mono text-xs space-y-1 text-[#64748B]">
-                    <div>Facility: <span className="text-[#F3F4F6]">{formData.millName}</span></div>
-                    <div>Contact: <span className="text-[#F3F4F6]">{formData.contactPerson} ({formData.phoneEmail})</span></div>
-                    <div>Consignment: <span className="text-[#F59E0B]">{formData.origin} // {formData.whistleCount}</span></div>
+                  <div className="p-3 bg-[#111319] border border-[#1E232E] rounded-xs font-mono text-xs space-y-1 text-[#5E6573]">
+                    <div>Facility: <span className="text-[#E6E8EC]">{formData.millName}</span></div>
+                    <div>Contact: <span className="text-[#E6E8EC]">{formData.contactPerson} ({formData.phoneEmail})</span></div>
+                    <div>Consignment: <span className="text-[#D97706]">{formData.origin} // {formData.whistleCount}</span></div>
                     <div>Assay: Hawkins 3L Venting + FWB Shear Force + ISO 4120 Sensory</div>
                   </div>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-4 px-4 py-1.5 bg-[#171A21] hover:bg-[#222630] text-[#9CA3AF] hover:text-[#F3F4F6] border border-[#222630] rounded-sm font-mono text-xs cursor-pointer transition-colors"
+                    className="mt-4 px-4 py-1.5 bg-[#151821] hover:bg-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC] border border-[#1E232E] rounded-xs font-mono text-xs cursor-pointer transition-colors"
                   >
                     ← Submit Another Manifest
                   </button>
@@ -172,7 +172,7 @@ export default function Module6MillerScoping() {
                   
                   {/* Field 1: Mill Name */}
                   <div>
-                    <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                    <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                       01 // Mill / Processing Facility Name *
                     </label>
                     <input
@@ -181,14 +181,14 @@ export default function Module6MillerScoping() {
                       placeholder="e.g. Sri Balaji Dal Mill / Latur Agro"
                       value={formData.millName}
                       onChange={(e) => setFormData({ ...formData, millName: e.target.value })}
-                      className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors"
+                      className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors"
                     />
                   </div>
 
                   {/* Field 2 & 3: Contact Person & Phone/Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                      <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                         02 // Representative Name & Role *
                       </label>
                       <input
@@ -197,11 +197,11 @@ export default function Module6MillerScoping() {
                         placeholder="e.g. Rajesh Patil (Managing Partner)"
                         value={formData.contactPerson}
                         onChange={(e) => setFormData({ ...formData, contactPerson: e.target.value })}
-                        className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors"
+                        className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors"
                       />
                     </div>
                     <div>
-                      <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                      <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                         03 // Mobile / Business Email *
                       </label>
                       <input
@@ -210,7 +210,7 @@ export default function Module6MillerScoping() {
                         placeholder="e.g. +91 98230 XXXXX / info@dalmill.in"
                         value={formData.phoneEmail}
                         onChange={(e) => setFormData({ ...formData, phoneEmail: e.target.value })}
-                        className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors"
+                        className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -218,13 +218,13 @@ export default function Module6MillerScoping() {
                   {/* Field 4 & 5: Daily Capacity & Consignment Origin */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                      <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                         04 // Daily Milling Capacity
                       </label>
                       <select
                         value={formData.dailyCapacityTpd}
                         onChange={(e) => setFormData({ ...formData, dailyCapacityTpd: e.target.value })}
-                        className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors cursor-pointer"
+                        className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors cursor-pointer"
                       >
                         <option value="50 TPD">50 TPD (Medium Mill)</option>
                         <option value="100 TPD">100 TPD (Standard Commercial)</option>
@@ -234,13 +234,13 @@ export default function Module6MillerScoping() {
                     </div>
 
                     <div>
-                      <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                      <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                         05 // Consignment Origin
                       </label>
                       <select
                         value={formData.origin}
                         onChange={(e) => setFormData({ ...formData, origin: e.target.value })}
-                        className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors cursor-pointer"
+                        className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors cursor-pointer"
                       >
                         <option value="Tanzania (Shinyanga / Dar)">Tanzania (Shinyanga / Dar)</option>
                         <option value="Mozambique (Nampula / Nacala)">Mozambique (Nampula / Nacala)</option>
@@ -252,13 +252,13 @@ export default function Module6MillerScoping() {
 
                   {/* Field 6: Observed Whistle Count */}
                   <div>
-                    <label className="block text-[#9CA3AF] mb-1.5 uppercase tracking-wide">
+                    <label className="block text-[#8E95A2] mb-1.5 uppercase tracking-wide">
                       06 // Observed Pressure Cooker Whistle Count
                     </label>
                     <select
                       value={formData.whistleCount}
                       onChange={(e) => setFormData({ ...formData, whistleCount: e.target.value })}
-                      className="w-full px-3 py-2 bg-[#0A0B0D] border border-[#222630] focus:border-[#F59E0B] text-[#F3F4F6] rounded-sm outline-none transition-colors cursor-pointer"
+                      className="w-full px-3 py-2 bg-[#0C0E12] border border-[#1E232E] focus:border-[#D97706] text-[#E6E8EC] rounded-xs outline-none transition-colors cursor-pointer"
                     >
                       <option value="8+ Whistles (60–70 min)">8+ Whistles (Severe HTC Defect)</option>
                       <option value="6 to 8 Whistles (45–60 min)">6 to 8 Whistles (Moderate Hardening)</option>
@@ -268,12 +268,12 @@ export default function Module6MillerScoping() {
 
                   {/* Sample Ready Checkbox */}
                   <div className="pt-2">
-                    <label className="flex items-center space-x-2 text-[#9CA3AF] cursor-pointer">
+                    <label className="flex items-center space-x-2 text-[#8E95A2] cursor-pointer">
                       <input
                         type="checkbox"
                         checked={formData.sampleReady}
                         onChange={(e) => setFormData({ ...formData, sampleReady: e.target.checked })}
-                        className="accent-[#F59E0B] rounded-xs cursor-pointer"
+                        className="accent-[#D97706] rounded-xs cursor-pointer"
                       />
                       <span className="text-[11px]">
                         5.0 kg representative split dal lot ready for courier dispatch to FinnoaQ bench
@@ -285,7 +285,7 @@ export default function Module6MillerScoping() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-2.5 bg-[#F59E0B] hover:bg-[#D97706] text-black font-semibold rounded-sm transition-colors cursor-pointer font-mono text-xs uppercase tracking-tight"
+                      className="w-full py-2.5 bg-[#D97706] hover:bg-[#B45309] text-black font-semibold rounded-xs transition-colors cursor-pointer font-mono text-xs uppercase tracking-tight"
                     >
                       Transmit Diagnostic Trial Request (48-Hr Protocol)
                     </button>
@@ -295,7 +295,7 @@ export default function Module6MillerScoping() {
               )}
             </div>
 
-            <div className="font-mono text-[11px] text-[#64748B] pt-4 mt-6 border-t border-[#222630]">
+            <div className="font-mono text-[11px] text-[#5E6573] pt-4 mt-6 border-t border-[#1E232E]">
               Confidentiality Notice: Consignment assays protected under mutual FinnoaQ Industrial NDA
             </div>
           </div>
@@ -306,4 +306,3 @@ export default function Module6MillerScoping() {
     </section>
   );
 }
-

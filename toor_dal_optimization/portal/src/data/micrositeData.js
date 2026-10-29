@@ -31,7 +31,7 @@ export const CORE_QUESTIONS = [
   {
     num: "01",
     title: "What is the industrial problem and market arbitrage opportunity?",
-    summary: "Imported African (Tanzania, Mozambique, Malawi) and Myanmar split pigeon peas suffer from severe Hard-to-Cook (HTC) cellular defect, requiring 8+ pressure cooker whistles (50–70 min boiling) vs 3 whistles for domestic Indian toor dal. This forces an audited ₹18.00 to ₹24.00/kg wholesale discount on Indian mandis. FinnoaQ unlocks this ₹20.00/kg arbitrage spread.",
+    summary: "Imported African (Tanzania, Mozambique, Malawi) and Myanmar split pigeon peas suffer from a severe Hard-to-Cook (HTC) cellular defect, requiring 8+ pressure cooker whistles (50–70 min boiling) compared to 3 whistles for domestic Indian toor dal. This results in an audited ₹18.00 to ₹24.00/kg wholesale discount on Indian mandis. FinnoaQ captures this ₹20.00/kg Mandi price differential.",
     status: "MARKET VERIFIED",
     basis: "Commercial mill intake audits (Latur, Akola, Indore) & Mandi wholesale price feeds"
   },
@@ -45,7 +45,7 @@ export const CORE_QUESTIONS = [
   {
     num: "03",
     title: "How does the commercial business make money?",
-    summary: "FinnoaQ deploys a high-margin B2B Tolling & Technology Licensing model. FinnoaQ charges partner millers ₹12.00/kg tolling fee against ₹6.34/kg direct OpEx (yielding ₹5.66/kg FinnoaQ gross margin). The partner miller captures ₹8.00/kg (₹8,000/MT) in pure net profit lift. At 15 TPD, this unlocks ₹3.00 Lakhs/day in total shared arbitrage value.",
+    summary: "FinnoaQ operates a B2B Tolling & Technology Licensing structure. FinnoaQ charges partner millers ₹12.00/kg tolling fee against ₹6.34/kg direct OpEx (yielding ₹5.66/kg FinnoaQ gross margin). The partner miller retains ₹8.00/kg (₹8,000/MT) in net margin lift. At 15 TPD, this establishes a ₹3.00 Lakhs/day total shared arbitrage pool.",
     status: "INVESTOR AUDITED",
     basis: "FINANCIAL_MODEL_15TPD.xlsx & 15-Miller Customer Discovery Field Interviews"
   },
@@ -252,7 +252,7 @@ export const FIVE_YEAR_CASH_FLOW = [
   }
 ];
 
-// 3. FIRST-PRINCIPLES BIOPHYSICS & KINETIC BREAKTHROUGHS (Q1 TREATISE)
+// 3. FIRST-PRINCIPLES BIOPHYSICS & CHELATION KINETICS (Q1 TREATISE)
 export const BIOPHYSICAL_SOLUTION = {
   pathology: {
     title: "Supramolecular Middle Lamella Calcium Pectate Cross-Linking",

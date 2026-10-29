@@ -96,7 +96,7 @@ export default function SolidWorksViewer() {
 
     // 1. Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x0a0b0d);
+    scene.background = new THREE.Color(0x0c0e12);
     sceneRef.current = scene;
 
     // 2. Camera
@@ -111,7 +111,7 @@ export default function SolidWorksViewer() {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.2;
+    renderer.toneMappingExposure = 1.1;
     rendererRef.current = renderer;
 
     // Clear previous children and attach canvas
@@ -124,30 +124,30 @@ export default function SolidWorksViewer() {
     controls.dampingFactor = 0.05;
     controls.maxDistance = 50;
     controls.minDistance = 2;
-    controls.maxPolarAngle = Math.PI / 2 + 0.1; // Allow slightly below horizon
+    controls.maxPolarAngle = Math.PI / 2 + 0.1;
     controlsRef.current = controls;
 
     // 5. Lighting Setup (Photorealistic Engineering Studio Lighting)
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.1);
     scene.add(ambientLight);
 
-    const dirLight1 = new THREE.DirectionalLight(0xfff5e6, 2.5); // Key light (warm industrial amber)
+    const dirLight1 = new THREE.DirectionalLight(0xfff5e6, 2.2);
     dirLight1.position.set(15, 25, 20);
     dirLight1.castShadow = true;
     dirLight1.shadow.mapSize.width = 1024;
     dirLight1.shadow.mapSize.height = 1024;
     scene.add(dirLight1);
 
-    const dirLight2 = new THREE.DirectionalLight(0xb0c4de, 1.5); // Fill light (cool metallic blue)
+    const dirLight2 = new THREE.DirectionalLight(0xb0c4de, 1.2);
     dirLight2.position.set(-15, 15, -15);
     scene.add(dirLight2);
 
-    const rimLight = new THREE.DirectionalLight(0xf59e0b, 1.0); // Rim light for SS316L edges
+    const rimLight = new THREE.DirectionalLight(0xd97706, 0.8);
     rimLight.position.set(0, -10, 15);
     scene.add(rimLight);
 
     // 6. ASME Datum Grid
-    const gridHelper = new THREE.GridHelper(30, 30, 0xf59e0b, 0x222630);
+    const gridHelper = new THREE.GridHelper(30, 30, 0xd97706, 0x1e232e);
     gridHelper.position.y = -0.01;
     scene.add(gridHelper);
     gridHelperRef.current = gridHelper;
@@ -216,7 +216,7 @@ export default function SolidWorksViewer() {
         model.position.y = -box.min.y;
         model.position.z = -center.z;
 
-        // Apply authentic SS316L / SS304 PBR metallic materials if textures are plain
+        // Apply authentic SS316L / SS304 PBR metallic materials
         model.traverse((child) => {
           if (child.isMesh) {
             child.castShadow = true;
@@ -236,7 +236,7 @@ export default function SolidWorksViewer() {
         const maxDim = Math.max(size.x, size.y, size.z);
         const fov = cameraRef.current.fov * (Math.PI / 180);
         let cameraDist = maxDim / (2 * Math.tan(fov / 2));
-        cameraDist *= 1.5; // Padding
+        cameraDist *= 1.5;
 
         cameraRef.current.position.set(cameraDist * 0.8, cameraDist * 0.6, cameraDist);
         controlsRef.current.target.set(0, size.y * 0.4, 0);
@@ -312,7 +312,7 @@ export default function SolidWorksViewer() {
   const createProceduralCadFallback = () => {
     if (!modelGroupRef.current) return;
     const group = new THREE.Group();
-    const mat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.85, roughness: 0.25 });
+    const mat = new THREE.MeshStandardMaterial({ color: 0x8e95a2, metalness: 0.85, roughness: 0.25 });
     
     // Cylindrical Soak Tank
     const cyl = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.5, 4.0, 32), mat);
@@ -328,43 +328,43 @@ export default function SolidWorksViewer() {
   };
 
   return (
-    <section id="solidworks-cad" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
-      <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
+    <section id="solidworks-cad" className="w-full bg-[#0C0E12] border-b border-[#1E232E] scroll-mt-20">
+      <div className="max-w-[1440px] mx-auto border-x border-[#1E232E]">
         
         {/* Workstation Header */}
-        <div className="p-6 border-b border-[#222630] bg-[#111317] flex flex-wrap items-center justify-between gap-4">
+        <div className="p-5 sm:p-6 border-b border-[#1E232E] bg-[#111319] flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center space-x-3">
-            <span className="px-2.5 py-0.5 bg-[#1E222A] text-[#94A3B8] border border-[#2E3440] font-mono text-xs rounded-sm">
-              [INTERACTIVE SOLIDWORKS 3D CAD ENGINE]
+            <span className="px-2.5 py-1 bg-[#151821] text-[#94A3B8] border border-[#232836] font-mono text-xs rounded-xs font-medium">
+              [3D CAD WORKSTATION]
             </span>
-            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#F3F4F6]">
-              Parametric 3D Solid Model & Assembly Workstation
+            <h2 className="text-base sm:text-lg font-semibold tracking-tight text-[#E6E8EC]">
+              Parametric Solid Model & Assembly Workstation
             </h2>
           </div>
           <div className="flex items-center space-x-2 font-mono text-xs">
-            <span className="px-2 py-0.5 bg-[#1E222A] text-[#F59E0B] border border-[#2E3440] rounded-sm font-semibold">
+            <span className="px-2 py-0.5 bg-[#151821] text-[#D97706] border border-[#232836] rounded-xs font-medium">
               SOLIDWORKS 2025 SP01.2
             </span>
-            <span className="px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-sm font-semibold">
+            <span className="px-2 py-0.5 bg-[#151821] text-[#10B981] border border-[#232836] rounded-xs font-medium">
               ASME SEC VIII DIV 1
             </span>
           </div>
         </div>
 
         {/* CAD Model Selector Bar */}
-        <div className="p-4 bg-[#0A0B0D] border-b border-[#222630] overflow-x-auto">
+        <div className="p-3.5 bg-[#0C0E12] border-b border-[#1E232E] overflow-x-auto">
           <div className="flex items-center space-x-2 min-w-max">
-            <span className="font-mono text-xs text-[#64748B] uppercase mr-2">
-              ACTIVE CAD MODEL:
+            <span className="font-mono text-xs text-[#5E6573] uppercase mr-2">
+              CAD MODEL:
             </span>
             {CAD_MODELS.map((m, idx) => (
               <button
                 key={m.id}
                 onClick={() => setSelectedModelIdx(idx)}
-                className={`px-3 py-1.5 font-mono text-xs rounded-sm border transition-colors cursor-pointer ${
+                className={`px-3 py-1 font-mono text-xs rounded-xs border transition-colors cursor-pointer ${
                   selectedModelIdx === idx
-                    ? 'bg-[#171A21] border-[#F59E0B] text-[#F59E0B] font-semibold shadow-sm'
-                    : 'bg-[#111317] border-[#222630] text-[#9CA3AF] hover:text-[#F3F4F6]'
+                    ? 'bg-[#151821] border-[#D97706] text-[#D97706] font-medium'
+                    : 'bg-[#13151B] border-[#1E232E] text-[#8E95A2] hover:text-[#E6E8EC]'
                 }`}
               >
                 {m.tag} ({m.name.split(' ')[0]})
@@ -377,62 +377,62 @@ export default function SolidWorksViewer() {
         <div className="grid grid-cols-1 lg:grid-cols-12">
           
           {/* Main 3D Canvas (8 Cols) */}
-          <div className="lg:col-span-8 relative bg-[#0A0B0D] border-b lg:border-b-0 lg:border-r border-[#222630] min-h-[480px] lg:min-h-[580px] flex flex-col justify-between">
+          <div className="lg:col-span-8 relative bg-[#0C0E12] border-b lg:border-b-0 lg:border-r border-[#1E232E] min-h-[480px] lg:min-h-[580px] flex flex-col justify-between">
             
             {/* Canvas Mount Container */}
             <div ref={mountRef} className="w-full h-full min-h-[480px] lg:min-h-[580px] cursor-grab active:cursor-grabbing relative" />
 
             {/* Loading Overlay */}
             {loading && (
-              <div className="absolute inset-0 bg-[#0A0B0D]/85 backdrop-blur-xs flex flex-col items-center justify-center font-mono text-xs text-[#F3F4F6] z-20">
-                <div className="w-48 h-1.5 bg-[#1E222A] border border-[#2E3440] rounded-xs overflow-hidden mb-3">
+              <div className="absolute inset-0 bg-[#0C0E12]/90 flex flex-col items-center justify-center font-mono text-xs text-[#E6E8EC] z-20">
+                <div className="w-48 h-1.5 bg-[#151821] border border-[#232836] rounded-xs overflow-hidden mb-3">
                   <div 
-                    className="h-full bg-[#F59E0B] transition-all duration-200" 
+                    className="h-full bg-[#D97706] transition-all duration-200" 
                     style={{ width: `${loadProgress}%` }}
                   />
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-[#F59E0B] animate-ping"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D97706]"></span>
                   <span>Tesselating Parametric Solid ({loadProgress > 0 ? `${loadProgress}%` : 'Loading...'})</span>
                 </div>
-                <span className="text-[10px] text-[#64748B] mt-1">{currentModel.file}</span>
+                <span className="text-[10px] text-[#5E6573] mt-1">{currentModel.file}</span>
               </div>
             )}
 
             {/* Floating Camera & Shading Toolbar (Top Left) */}
-            <div className="absolute top-4 left-4 z-10 flex flex-wrap gap-1 font-mono text-[11px] bg-[#111317]/90 p-1.5 border border-[#222630] rounded-sm backdrop-blur-xs shadow-lg">
-              <span className="text-[#64748B] px-1 py-0.5 text-[10px] uppercase font-semibold">VIEW:</span>
+            <div className="absolute top-4 left-4 z-10 flex flex-wrap gap-1 font-mono text-[11px] bg-[#111319]/95 p-1.5 border border-[#1E232E] rounded-xs shadow-sm">
+              <span className="text-[#5E6573] px-1 py-0.5 text-[10px] uppercase font-semibold">VIEW:</span>
               <button 
                 onClick={() => setCameraPreset('iso')}
-                className="px-2 py-0.5 bg-[#1E222A] hover:bg-[#2E3440] text-[#F3F4F6] rounded-xs cursor-pointer border border-[#2E3440]"
+                className="px-2 py-0.5 bg-[#151821] hover:bg-[#232836] text-[#E6E8EC] rounded-xs cursor-pointer border border-[#232836]"
                 title="Isometric Projection"
               >
                 [ISO]
               </button>
               <button 
                 onClick={() => setCameraPreset('front')}
-                className="px-2 py-0.5 bg-[#1E222A] hover:bg-[#2E3440] text-[#F3F4F6] rounded-xs cursor-pointer border border-[#2E3440]"
+                className="px-2 py-0.5 bg-[#151821] hover:bg-[#232836] text-[#E6E8EC] rounded-xs cursor-pointer border border-[#232836]"
                 title="Front Elevation"
               >
                 [FRONT]
               </button>
               <button 
                 onClick={() => setCameraPreset('side')}
-                className="px-2 py-0.5 bg-[#1E222A] hover:bg-[#2E3440] text-[#F3F4F6] rounded-xs cursor-pointer border border-[#2E3440]"
+                className="px-2 py-0.5 bg-[#151821] hover:bg-[#232836] text-[#E6E8EC] rounded-xs cursor-pointer border border-[#232836]"
                 title="Right Side Elevation"
               >
                 [SIDE]
               </button>
               <button 
                 onClick={() => setCameraPreset('top')}
-                className="px-2 py-0.5 bg-[#1E222A] hover:bg-[#2E3440] text-[#F3F4F6] rounded-xs cursor-pointer border border-[#2E3440]"
+                className="px-2 py-0.5 bg-[#151821] hover:bg-[#232836] text-[#E6E8EC] rounded-xs cursor-pointer border border-[#232836]"
                 title="Top Plan View"
               >
                 [TOP]
               </button>
               <button 
                 onClick={() => setCameraPreset('reset')}
-                className="px-2 py-0.5 bg-[#171A21] hover:bg-[#222630] text-[#F59E0B] rounded-xs cursor-pointer border border-[#F59E0B]/40 font-semibold"
+                className="px-2 py-0.5 bg-[#151821] hover:bg-[#1E232E] text-[#D97706] rounded-xs cursor-pointer border border-[#D97706]/40 font-medium"
                 title="Reset Camera Target"
               >
                 [RESET]
@@ -440,13 +440,13 @@ export default function SolidWorksViewer() {
             </div>
 
             {/* Floating Display Mode Toggles (Top Right) */}
-            <div className="absolute top-4 right-4 z-10 flex items-center space-x-1 font-mono text-[11px] bg-[#111317]/90 p-1.5 border border-[#222630] rounded-sm backdrop-blur-xs shadow-lg">
+            <div className="absolute top-4 right-4 z-10 flex items-center space-x-1 font-mono text-[11px] bg-[#111319]/95 p-1.5 border border-[#1E232E] rounded-xs shadow-sm">
               <button
                 onClick={() => setAutoRotate(!autoRotate)}
                 className={`px-2 py-0.5 rounded-xs border cursor-pointer transition-colors ${
                   autoRotate 
-                    ? 'bg-[#F59E0B]/20 text-[#F59E0B] border-[#F59E0B]' 
-                    : 'bg-[#1E222A] text-[#9CA3AF] border-[#2E3440] hover:text-[#F3F4F6]'
+                    ? 'bg-[#D97706]/20 text-[#D97706] border-[#D97706]' 
+                    : 'bg-[#151821] text-[#8E95A2] border-[#232836] hover:text-[#E6E8EC]'
                 }`}
                 title="Auto-Turntable Rotation"
               >
@@ -457,7 +457,7 @@ export default function SolidWorksViewer() {
                 className={`px-2 py-0.5 rounded-xs border cursor-pointer transition-colors ${
                   wireframe 
                     ? 'bg-[#10B981]/20 text-[#10B981] border-[#10B981]' 
-                    : 'bg-[#1E222A] text-[#9CA3AF] border-[#2E3440] hover:text-[#F3F4F6]'
+                    : 'bg-[#151821] text-[#8E95A2] border-[#232836] hover:text-[#E6E8EC]'
                 }`}
                 title="Wireframe Mesh Tessellation Mode"
               >
@@ -467,8 +467,8 @@ export default function SolidWorksViewer() {
                 onClick={() => setShowGrid(!showGrid)}
                 className={`px-2 py-0.5 rounded-xs border cursor-pointer transition-colors ${
                   showGrid 
-                    ? 'bg-[#171A21] text-[#F3F4F6] border-[#222630]' 
-                    : 'bg-[#1E222A] text-[#64748B] border-[#2E3440]'
+                    ? 'bg-[#151821] text-[#E6E8EC] border-[#1E232E]' 
+                    : 'bg-[#151821] text-[#5E6573] border-[#232836]'
                 }`}
                 title="Toggle ASME Coordinate Grid"
               >
@@ -477,9 +477,9 @@ export default function SolidWorksViewer() {
             </div>
 
             {/* Bottom HUD: Live Interaction Hints */}
-            <div className="p-3 bg-[#111317]/90 border-t border-[#222630] flex flex-wrap justify-between items-center font-mono text-[11px] text-[#64748B]">
+            <div className="p-3 bg-[#111319]/95 border-t border-[#1E232E] flex flex-wrap justify-between items-center font-mono text-[11px] text-[#5E6573]">
               <div className="flex items-center space-x-3">
-                <span className="text-[#F59E0B] font-semibold">● ORBIT CONTROLS ACTIVE</span>
+                <span className="text-[#D97706] font-medium">● ORBIT CONTROLS ACTIVE</span>
                 <span>Left Click: 360° Rotate</span>
                 <span>Right Click: Pan</span>
                 <span>Scroll: Zoom</span>
@@ -490,55 +490,55 @@ export default function SolidWorksViewer() {
           </div>
 
           {/* Right Inspection & Telemetry Panel (4 Cols) */}
-          <div className="lg:col-span-4 p-6 sm:p-8 bg-[#111317] flex flex-col justify-between">
+          <div className="lg:col-span-4 p-6 sm:p-8 bg-[#111319] flex flex-col justify-between">
             <div>
-              <div className="flex justify-between items-center mb-4 pb-2 border-b border-[#222630]">
+              <div className="flex justify-between items-center mb-4 pb-2 border-b border-[#1E232E]">
                 <div>
-                  <span className="font-mono text-base font-bold text-[#F59E0B] mr-2">
+                  <span className="font-mono text-base font-bold text-[#D97706] mr-2">
                     {currentModel.tag}
                   </span>
-                  <span className="font-mono text-xs px-2 py-0.5 bg-[#1E222A] text-[#10B981] border border-[#2E3440] rounded-xs font-semibold">
+                  <span className="font-mono text-xs px-2 py-0.5 bg-[#151821] text-[#10B981] border border-[#232836] rounded-xs font-semibold">
                     SOLID BODY
                   </span>
                 </div>
-                <span className="font-mono text-[11px] text-[#64748B]">
+                <span className="font-mono text-[11px] text-[#5E6573]">
                   {currentModel.standard}
                 </span>
               </div>
 
-              <h3 className="text-base font-semibold text-[#F3F4F6] mb-2">
+              <h3 className="text-base font-semibold text-[#E6E8EC] mb-2">
                 {currentModel.name}
               </h3>
 
-              <p className="text-xs text-[#9CA3AF] leading-relaxed mb-6 font-normal">
+              <p className="text-xs text-[#8E95A2] leading-relaxed mb-6 font-normal">
                 {currentModel.description}
               </p>
 
               {/* Dimensional & Physical HUD Box */}
               <div className="space-y-2 font-mono text-xs mb-6">
-                <div className="p-3 bg-[#0A0B0D] border border-[#222630] rounded-sm flex justify-between items-center">
-                  <span className="text-[#64748B]">BOUNDING ENVELOPE:</span>
-                  <span className="text-[#F3F4F6] font-semibold">{currentModel.dimensions}</span>
+                <div className="p-3 bg-[#0C0E12] border border-[#1E232E] rounded-xs flex justify-between items-center">
+                  <span className="text-[#5E6573]">BOUNDING ENVELOPE:</span>
+                  <span className="text-[#E6E8EC] font-medium">{currentModel.dimensions}</span>
                 </div>
-                <div className="p-3 bg-[#0A0B0D] border border-[#222630] rounded-sm flex justify-between items-center">
-                  <span className="text-[#64748B]">DESIGN CAPACITY:</span>
-                  <span className="text-[#F59E0B] font-semibold">{currentModel.scale}</span>
+                <div className="p-3 bg-[#0C0E12] border border-[#1E232E] rounded-xs flex justify-between items-center">
+                  <span className="text-[#5E6573]">DESIGN CAPACITY:</span>
+                  <span className="text-[#D97706] font-medium">{currentModel.scale}</span>
                 </div>
-                <div className="p-3 bg-[#0A0B0D] border border-[#222630] rounded-sm flex justify-between items-center">
-                  <span className="text-[#64748B]">WETTED METALLURGY:</span>
-                  <span className="text-[#10B981] font-semibold">SS316L / SS304 Tri-Clamp</span>
+                <div className="p-3 bg-[#0C0E12] border border-[#1E232E] rounded-xs flex justify-between items-center">
+                  <span className="text-[#5E6573]">WETTED METALLURGY:</span>
+                  <span className="text-[#10B981] font-medium">SS316L / SS304 Tri-Clamp</span>
                 </div>
-                <div className="p-3 bg-[#0A0B0D] border border-[#222630] rounded-sm flex justify-between items-center">
-                  <span className="text-[#64748B]">NATIVE CAD ARTIFACT:</span>
-                  <span className="text-[#F3F4F6] text-[11px]">{currentModel.file.split('/').pop()}</span>
+                <div className="p-3 bg-[#0C0E12] border border-[#1E232E] rounded-xs flex justify-between items-center">
+                  <span className="text-[#5E6573]">NATIVE CAD ARTIFACT:</span>
+                  <span className="text-[#E6E8EC] text-[11px]">{currentModel.file.split('/').pop()}</span>
                 </div>
               </div>
             </div>
 
             {/* Engineering Attributions */}
-            <div className="pt-4 border-t border-[#222630] font-mono text-[11px] text-[#64748B] space-y-1">
+            <div className="pt-4 border-t border-[#1E232E] font-mono text-[11px] text-[#5E6573] space-y-1">
               <div>SolidWorks Model Derived from STEP AP214</div>
-              <div>Lead Engineer: <span className="text-[#F3F4F6]">Sourish Senapati</span></div>
+              <div>Lead Engineer: <span className="text-[#E6E8EC]">Sourish Senapati</span></div>
               <div className="text-[#10B981]">FinnoaQ Agro-Industrial Technologies Ltd.</div>
             </div>
 
