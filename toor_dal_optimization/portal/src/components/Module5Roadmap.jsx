@@ -7,7 +7,7 @@ export default function Module5Roadmap() {
   const selectedPhase = SCALEUP_PHASES[selectedPhaseIdx];
 
   return (
-    <section id="roadmap" className="w-full bg-[#0A0B0D] border-b border-[#222630]">
+    <section id="roadmap" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
       <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
         
         {/* Module Header */}

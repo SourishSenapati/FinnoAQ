@@ -66,7 +66,7 @@ export default function Module7DataRoom() {
   const selectedDrawing = CAD_DRAWING_SHEETS[selectedDrawingIdx];
 
   return (
-    <section id="data-room" className="w-full bg-[#0A0B0D] border-b border-[#222630]">
+    <section id="data-room" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
       <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
         
         {/* Module Header */}

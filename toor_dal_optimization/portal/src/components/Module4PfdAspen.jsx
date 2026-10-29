@@ -12,7 +12,7 @@ const PFD_NODES = [
     power: '3.7 kW drive motor + 2.2 kW aspiration fan',
     envelope: 'Ambient (25°C), 1.0 atm, continuous feed',
     linkedStreams: ['STR-01', 'STR-02'],
-    render: '/drawings/CHU-100_SolidWorks_3D_Iso.png',
+    render: '/drawings/CHU-100_SolidWorks_3D_Iso_transparent.png',
     duty: 'Removes foreign debris, stones, dust, and shriveled grains prior to steeping.'
   },
   {
@@ -24,7 +24,7 @@ const PFD_NODES = [
     power: '2x 2.2 kW geared hydrofoil agitators + 17 W/L ultrasonic horns',
     envelope: '48.0°C ± 0.5°C, pH 5.20 ± 0.05, 24.0 min batch hold',
     linkedStreams: ['STR-02', 'STR-03', 'STR-04'],
-    render: '/drawings/TK-101_SolidWorks_3D_Iso.png',
+    render: '/drawings/TK-101_SolidWorks_3D_Iso_transparent.png',
     duty: '40 kHz acoustic cavitation thinning boundary layer; S1-09 buffer unzips middle lamella Ca-pectate egg-boxes.'
   },
   {
@@ -36,7 +36,7 @@ const PFD_NODES = [
     power: '2x 1.1 kW vibro-motors + 3.0 kW high-pressure deluge pump',
     envelope: 'Ambient, 12.0s counter-current deluge rinse (<27.6 ppm surface salts)',
     linkedStreams: ['STR-04', 'STR-05', 'STR-06', 'STR-10'],
-    render: '/drawings/SC-101_SolidWorks_3D_Iso.png',
+    render: '/drawings/SC-101_SolidWorks_3D_Iso_transparent.png',
     duty: 'Drains bulk steep liquor to 28.0% WB moisture; washes surface salts to prevent drying bloom.'
   },
   {
@@ -48,7 +48,7 @@ const PFD_NODES = [
     power: '15.0 kW fluidizing supply fan + 7.5 kW exhaust blower',
     envelope: 'Stage 1: 65°C (45m) → Tempering: 55°C (20m) → Stage 2: 55°C (40m)',
     linkedStreams: ['STR-05', 'STR-07', 'STR-08'],
-    render: '/drawings/DR-101_SolidWorks_3D_Iso.png',
+    render: '/drawings/DR-101_SolidWorks_3D_Iso_transparent.png',
     duty: 'Removes 3,678 kg/day moisture while suppressing peak hoop stress below 0.40 MPa and breakage <0.35%.'
   },
   {
@@ -60,7 +60,7 @@ const PFD_NODES = [
     power: '11.0 kW MVR vapor compressor + 1.5 kW circulation pump',
     envelope: '58.0°C – 85.0°C under vacuum (0.18 – 0.58 bar a)',
     linkedStreams: ['STR-10', 'STR-11', 'STR-12'],
-    render: '/drawings/EV-101_SolidWorks_3D_Iso.png',
+    render: '/drawings/EV-101_SolidWorks_3D_Iso_transparent.png',
     duty: 'Concentrates 15% purge liquor to 45% solids for cattle feed; recovers 948 kg/day pure distillate.'
   },
   {
@@ -72,7 +72,7 @@ const PFD_NODES = [
     power: '4.0 kW polisher drive + 1.5 kW dust collector',
     envelope: 'Ambient (25°C), 10.5% WB stable equilibrium moisture',
     linkedStreams: ['STR-08', 'STR-09'],
-    render: '/drawings/STR-100_SolidWorks_3D_Iso.png',
+    render: '/drawings/STR-100_SolidWorks_3D_Iso_transparent.png',
     duty: 'Restores golden translucent sheen, removes loose fines, and packages into 25kg/50kg HDPE bags.'
   }
 ];
@@ -100,7 +100,7 @@ export default function Module4PfdAspen() {
   const activeNode = PFD_NODES[activeNodeIndex];
 
   return (
-    <section id="pfd-aspen" className="w-full bg-[#0A0B0D] border-b border-[#222630]">
+    <section id="pfd-aspen" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
       <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
         
         {/* Module Header */}
@@ -191,22 +191,27 @@ export default function Module4PfdAspen() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             
-            {/* Left 4 Cols: Authentic SolidWorks 3D CAD Isometric Render */}
-            <div className="lg:col-span-4 p-4 bg-[#0A0B0D] border border-[#222630] rounded-sm text-center">
-              <div className="flex justify-between items-center mb-2 font-mono text-[10px] text-[#64748B]">
-                <span>SOLIDWORKS 2025 SP01.2</span>
-                <span className="text-[#F59E0B]">ASME SEC VIII DIV 1</span>
+            {/* Left 4 Cols: Authentic SolidWorks 3D CAD Isometric Render (Seamless Transparent PBR) */}
+            <div 
+              className="lg:col-span-4 p-5 border border-[#222630] rounded text-center relative overflow-hidden"
+              style={{
+                background: 'radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.12) 0%, rgba(13, 15, 20, 0.98) 75%)'
+              }}
+            >
+              <div className="flex justify-between items-center mb-3 font-mono text-[11px] text-[#64748B]">
+                <span className="text-[#94A3B8]">SOLIDWORKS 2025 SP01.2</span>
+                <span className="text-[#F59E0B] font-medium">ASME SEC VIII DIV 1</span>
               </div>
               <img
                 src={activeNode.render}
                 alt={activeNode.name}
-                className="w-full h-48 object-contain mx-auto bg-[#0A0B0D] rounded-xs"
+                className="w-full h-52 object-contain mx-auto filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.85)] transition-transform duration-300 hover:scale-105"
                 onError={(e) => {
-                  e.target.style.display = 'none';
+                  e.target.src = activeNode.render.replace('_transparent', '');
                 }}
               />
-              <div className="font-mono text-[11px] text-[#9CA3AF] mt-2">
-                Tag: <strong className="text-[#F3F4F6]">{activeNode.tag}</strong> // {activeNode.category}
+              <div className="font-mono text-xs text-[#9CA3AF] mt-3">
+                Tag: <strong className="text-white">{activeNode.tag}</strong> // {activeNode.category}
               </div>
             </div>
 

@@ -39,7 +39,7 @@ export default function Module2Arbitrage() {
   const paybackYears = +(turnkeyCapex / (annualFinnoaqEbitdaLakhs || 1)).toFixed(2);
 
   return (
-    <section id="arbitrage" className="w-full bg-[#0A0B0D] border-b border-[#222630]">
+    <section id="arbitrage" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
       <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
         
         {/* Module Header */}

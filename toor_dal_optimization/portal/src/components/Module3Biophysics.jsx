@@ -20,7 +20,7 @@ export default function Module3Biophysics() {
   const whistleCount = shearForce <= 18.0 ? '2 Whistles (7.0 min)' : shearForce <= 22.0 ? '4 Whistles (14.0 min)' : '8+ Whistles (HTC Failure)';
 
   return (
-    <section id="biophysics" className="w-full bg-[#0A0B0D] border-b border-[#222630]">
+    <section id="biophysics" className="w-full bg-[#0A0B0D] border-b border-[#222630] scroll-mt-20">
       <div className="max-w-[1440px] mx-auto border-x border-[#222630]">
         
         {/* Module Header with 2-View Toggle */}
@@ -63,103 +63,187 @@ export default function Module3Biophysics() {
         {activeView === 'viewA' && (
           <div>
             {/* 1. Interactive Before vs After Split Comparator */}
-            <div className="p-6 sm:p-8 bg-[#111317] border-b border-[#222630]">
-              <div className="flex justify-between items-center mb-3">
-                <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider">
-                  VISUAL GRAIN TISSUE COMPARATOR // CELLULAR ULTRASTRUCTURE TRANSITION
-                </span>
-                <span className="font-mono text-xs text-[#F59E0B]">
-                  Drag Slider to Compare States ({compareSplit}% Transition)
-                </span>
+            <div className="p-6 sm:p-10 bg-gradient-to-b from-[#12141A] to-[#0E1015] border-b border-[#222630]">
+              <div className="flex flex-wrap justify-between items-center gap-3 mb-6">
+                <div>
+                  <span className="font-mono text-xs text-[#64748B] uppercase tracking-wider block mb-1">
+                    VISUAL GRAIN TISSUE COMPARATOR // CELLULAR ULTRASTRUCTURE DYNAMICS
+                  </span>
+                  <h3 className="text-lg sm:text-xl font-semibold text-white tracking-tight">
+                    The 8-Whistle Problem vs. The 2-Whistle Solution
+                  </h3>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="font-mono text-xs text-[#F59E0B] bg-[#1A1F2C] px-3 py-1 border border-[#F59E0B]/30 rounded">
+                    Transition Progress: <strong className="text-white">{compareSplit}%</strong>
+                  </span>
+                </div>
               </div>
 
-              {/* Split Cards Container */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[#0A0B0D] p-4 border border-[#222630] rounded-sm">
+              {/* Quick State Presets */}
+              <div className="flex items-center space-x-2 mb-4 font-mono text-xs">
+                <span className="text-[#64748B]">PRESETS:</span>
+                <button
+                  onClick={() => setCompareSplit(0)}
+                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                    compareSplit === 0 
+                      ? 'bg-[#EF4444]/20 border-[#EF4444] text-[#EF4444] font-semibold' 
+                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                  }`}
+                >
+                  [0% Untreated HTC 8-Whistles]
+                </button>
+                <button
+                  onClick={() => setCompareSplit(50)}
+                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                    compareSplit === 50 
+                      ? 'bg-[#F59E0B]/20 border-[#F59E0B] text-[#F59E0B] font-semibold' 
+                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                  }`}
+                >
+                  [50% Acoustic Reaction Front]
+                </button>
+                <button
+                  onClick={() => setCompareSplit(100)}
+                  className={`px-3 py-1 rounded border transition-colors cursor-pointer ${
+                    compareSplit === 100 
+                      ? 'bg-[#10B981]/20 border-[#10B981] text-[#10B981] font-semibold' 
+                      : 'bg-[#141720] border-[#222630] text-[#9CA3AF] hover:text-white'
+                  }`}
+                >
+                  [100% FinnoaQ S1-09 2-Whistles]
+                </button>
+              </div>
+
+              {/* Interactive Split Comparator Visual Box */}
+              <div className="relative border border-[#222630] rounded overflow-hidden bg-[#090A0E] p-4 sm:p-6 mb-4">
                 
-                {/* State 1: Untreated Raw Hard-to-Cook Dal */}
-                <div className={`p-4 rounded-sm border transition-all ${
-                  compareSplit <= 50 ? 'bg-[#111317] border-[#EF4444]' : 'bg-[#0A0B0D] border-[#222630] opacity-75'
-                }`}>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-mono text-xs font-bold text-[#EF4444]">
-                      UNTREATED AFRICAN TOOR DAL
-                    </span>
-                    <span className="px-2 py-0.5 bg-[#EF4444]/10 text-[#EF4444] border border-[#EF4444]/30 font-mono text-[10px] rounded-xs">
-                      8+ WHISTLES (60–70 MIN)
-                    </span>
+                {/* Visual Grain Cellular Cross-Section Illustration */}
+                <div className="w-full h-24 mb-6 rounded bg-[#141720] border border-[#222630] relative overflow-hidden flex items-center justify-between px-6">
+                  {/* Left State Tint */}
+                  <div 
+                    className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#EF4444]/20 to-transparent transition-all duration-300"
+                    style={{ width: `${100 - compareSplit}%` }}
+                  />
+                  {/* Right State Tint */}
+                  <div 
+                    className="absolute inset-y-0 right-0 bg-gradient-to-l from-[#10B981]/20 to-transparent transition-all duration-300"
+                    style={{ width: `${compareSplit}%` }}
+                  />
+
+                  {/* Left Label */}
+                  <div className="relative z-10 font-mono text-xs">
+                    <span className="text-[#EF4444] font-bold block">UNTREATED GRAIN MATRIX</span>
+                    <span className="text-[#9CA3AF] text-[11px]">Rigid Middle Lamella Egg-Boxes (33.5 mol/m³)</span>
                   </div>
-                  <div className="space-y-2 font-mono text-xs">
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Core Shear Force:</span>
-                      <span className="text-[#EF4444] font-semibold">26.4 N (Rock Hard)</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Middle Lamella:</span>
-                      <span className="text-[#9CA3AF]">33.5 mol/m³ Ca-Pectate</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
-                      <span className="text-[#EF4444]">100% Active (Beany)</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Headspace Hexanal:</span>
-                      <span className="text-[#EF4444]">0.380 ppm (Grassy/Oxidized)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-[#64748B]">Mandi Valuation:</span>
-                      <span className="text-[#EF4444] font-bold">₹85.00 / kg (-₹20 discount)</span>
-                    </div>
+
+                  {/* Dynamic Transition Node in Center */}
+                  <div 
+                    className="relative z-10 w-10 h-10 rounded-full border-2 border-[#F59E0B] bg-[#090A0E] flex items-center justify-center font-mono text-xs font-bold text-[#F59E0B] shadow-[0_0_15px_#F59E0B] transition-all"
+                  >
+                    {compareSplit}%
+                  </div>
+
+                  {/* Right Label */}
+                  <div className="relative z-10 font-mono text-xs text-right">
+                    <span className="text-[#10B981] font-bold block">FINNOAQ CHELATED MATRIX</span>
+                    <span className="text-[#9CA3AF] text-[11px]">Unzipped Pectin Chains // 41.8% Ca²⁺ Extracted</span>
                   </div>
                 </div>
 
-                {/* State 2: FinnoaQ S1-09 Conditioned Dal */}
-                <div className={`p-4 rounded-sm border transition-all ${
-                  compareSplit > 50 ? 'bg-[#111317] border-[#10B981]' : 'bg-[#0A0B0D] border-[#222630] opacity-75'
-                }`}>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-mono text-xs font-bold text-[#10B981]">
-                      FINNOAQ S1-09 CONDITIONED DAL
-                    </span>
-                    <span className="px-2 py-0.5 bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/30 font-mono text-[10px] rounded-xs">
-                      2 WHISTLES (7.0 MIN)
-                    </span>
+                {/* Split Comparison Data Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  
+                  {/* State 1: Untreated Raw Hard-to-Cook Dal */}
+                  <div className={`p-5 rounded border transition-all ${
+                    compareSplit <= 50 ? 'bg-[#141720] border-[#EF4444] shadow-[0_0_20px_rgba(239,68,68,0.15)]' : 'bg-[#0E1015] border-[#222630] opacity-75'
+                  }`}>
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="font-mono text-xs font-bold text-[#EF4444] tracking-wider">
+                        UNTREATED IMPORTED TOOR DAL
+                      </span>
+                      <span className="px-2.5 py-0.5 bg-[#EF4444]/10 text-[#EF4444] border border-[#EF4444]/30 font-mono text-[11px] rounded font-semibold">
+                        8+ WHISTLES (60–70 MIN)
+                      </span>
+                    </div>
+                    <div className="space-y-2.5 font-mono text-xs">
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Core Shear Force:</span>
+                        <span className="text-[#EF4444] font-bold">26.4 N (Rock Hard)</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Middle Lamella:</span>
+                        <span className="text-[#9CA3AF]">33.5 mol/m³ Ca-Pectate</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
+                        <span className="text-[#EF4444] font-medium">100% Active (Beany Flavor)</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Headspace Hexanal:</span>
+                        <span className="text-[#EF4444]">0.380 ppm (Grassy/Oxidized)</span>
+                      </div>
+                      <div className="flex justify-between pt-1">
+                        <span className="text-[#64748B]">Mandi Valuation:</span>
+                        <span className="text-[#EF4444] font-bold">₹85.00 / kg (-₹20 discount)</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="space-y-2 font-mono text-xs">
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Core Shear Force:</span>
-                      <span className="text-[#10B981] font-semibold">15.2 N (≤ 18.0 N tender limit)</span>
+
+                  {/* State 2: FinnoaQ S1-09 Conditioned Dal */}
+                  <div className={`p-5 rounded border transition-all ${
+                    compareSplit > 50 ? 'bg-[#141720] border-[#10B981] shadow-[0_0_20px_rgba(16,185,129,0.15)]' : 'bg-[#0E1015] border-[#222630] opacity-75'
+                  }`}>
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="font-mono text-xs font-bold text-[#10B981] tracking-wider">
+                        FINNOAQ S1-09 CONDITIONED DAL
+                      </span>
+                      <span className="px-2.5 py-0.5 bg-[#10B981]/10 text-[#10B981] border border-[#10B981]/30 font-mono text-[11px] rounded font-semibold">
+                        2 WHISTLES (7.0 MIN)
+                      </span>
                     </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Middle Lamella:</span>
-                      <span className="text-[#10B981]">41.8% Ca2+ Extracted</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
-                      <span className="text-[#10B981]">86.4% Denatured (pH 5.20)</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#222630] pb-1">
-                      <span className="text-[#64748B]">Headspace Hexanal:</span>
-                      <span className="text-[#10B981]">0.025 ppm (OAV = 0.84 &lt; 1.0)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-[#64748B]">Mandi Valuation:</span>
-                      <span className="text-[#10B981] font-bold">₹105.00 / kg (Desi Parity)</span>
+                    <div className="space-y-2.5 font-mono text-xs">
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Core Shear Force:</span>
+                        <span className="text-[#10B981] font-bold">15.2 N (≤ 18.0 N tender limit)</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Middle Lamella:</span>
+                        <span className="text-[#10B981] font-medium">41.8% Ca2+ Extracted</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Lipoxygenase (LOX):</span>
+                        <span className="text-[#10B981]">86.4% Denatured (pH 5.20)</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#222630] pb-1.5">
+                        <span className="text-[#64748B]">Headspace Hexanal:</span>
+                        <span className="text-[#10B981]">0.025 ppm (OAV = 0.84 &lt; 1.0)</span>
+                      </div>
+                      <div className="flex justify-between pt-1">
+                        <span className="text-[#64748B]">Mandi Valuation:</span>
+                        <span className="text-[#10B981] font-bold">₹105.00 / kg (Desi Parity)</span>
+                      </div>
                     </div>
                   </div>
+
                 </div>
 
-              </div>
-
-              {/* Slider Controller */}
-              <div className="mt-3">
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={compareSplit}
-                  onChange={(e) => setCompareSplit(Number(e.target.value))}
-                  className="w-full accent-[#F59E0B] cursor-pointer"
-                />
+                {/* Tactile Range Slider Controller */}
+                <div className="mt-5 pt-3 border-t border-[#222630]">
+                  <div className="flex justify-between text-[11px] font-mono text-[#64748B] mb-2">
+                    <span>◀ SLIDE TO INSPECT UNTREATED GRAIN</span>
+                    <span className="text-[#F59E0B]">DRAG INTERACTIVE ULTRASTRUCTURE SCRUBBER</span>
+                    <span>SLIDE TO INSPECT CONDITIONED GRAIN ▶</span>
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value={compareSplit}
+                    onChange={(e) => setCompareSplit(Number(e.target.value))}
+                    className="w-full h-2 bg-[#1A1F2C] rounded-lg appearance-none cursor-pointer accent-[#F59E0B]"
+                  />
+                </div>
               </div>
             </div>
 
